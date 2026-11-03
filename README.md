@@ -97,4 +97,4 @@ vivado -mode batch -source lung_planer/sim/run_sim.tcl
 本仓库自有代码与文档按 [Apache License 2.0](LICENSE) 发布。第三方内容：
 
 - `resunet_deployment`：见其 README 的"许可"一节，含训练数据集的许可和 SpinalHDL 生成物说明。
-- `lung_planer`：随附的 Qt 运行库按 LGPL-3.0 提供，许可文本和对应源码地址见 [`lung_planer/src/ps/runtime-deps/README.md`](lung_planer/src/ps/runtime-deps/README.md)，其他上游许可文件保留在 `lung_planer/src/ps/` 下对应目录。
+- `lung_planer`：随附的 Qt 运行库按 LGPL-3.0 提供，许可文本和对应源码地址见 [`lung_planer/src/ps/runtime-deps/README.md`](lung_planer/src/ps/runtime-deps/README.md)，其他上游许可文件保留在 `lung_planer/src/ps/` 下对应目录。。
