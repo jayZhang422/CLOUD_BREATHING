@@ -1,0 +1,2 @@
+02000000 16 sim/xsim/tests/fuse_upconcat_20261024/vectors/fuse_tiny/input.hex
+02800000 64 sim/xsim/tests/fuse_upconcat_20261024/vectors/fuse_tiny/skip.hex

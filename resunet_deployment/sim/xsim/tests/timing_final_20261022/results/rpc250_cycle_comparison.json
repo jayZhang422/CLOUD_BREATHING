@@ -1,0 +1,128 @@
+[
+  {
+    "case": "lobe_mid_expand",
+    "before": 8859,
+    "after": 8859,
+    "delta": 0
+  },
+  {
+    "case": "lobe_mid_mix",
+    "before": 8825,
+    "after": 8825,
+    "delta": 0
+  },
+  {
+    "case": "lobe_mid_project",
+    "before": 19597,
+    "after": 19597,
+    "delta": 0
+  },
+  {
+    "case": "lobe_mid_out",
+    "before": 8822,
+    "after": 8822,
+    "delta": 0
+  },
+  {
+    "case": "legacy_lobe_head",
+    "before": 566,
+    "after": 566,
+    "delta": 0
+  },
+  {
+    "case": "legacy_pool_odd_two_groups",
+    "before": 196,
+    "after": 196,
+    "delta": 0
+  },
+  {
+    "case": "legacy_pool_groups32",
+    "before": 1130,
+    "after": 1130,
+    "delta": 0
+  },
+  {
+    "case": "tumor_mid_expand",
+    "before": 74567,
+    "after": 74567,
+    "delta": 0
+  },
+  {
+    "case": "legacy_tumor_e1_fast",
+    "before": 5455,
+    "after": 5455,
+    "delta": 0
+  },
+  {
+    "case": "upsample",
+    "before": 209,
+    "after": 209,
+    "delta": 0
+  },
+  {
+    "case": "concat",
+    "before": 204,
+    "after": 204,
+    "delta": 0
+  },
+  {
+    "case": "fused_dw11",
+    "before": 1616,
+    "after": 1616,
+    "delta": 0
+  },
+  {
+    "case": "pw_tail_clear",
+    "before": 405,
+    "after": 405,
+    "delta": 0
+  },
+  {
+    "case": "move_pool_512",
+    "before": 9494,
+    "after": 9494,
+    "delta": 0
+  },
+  {
+    "case": "move_pool_odd",
+    "before": 305,
+    "after": 305,
+    "delta": 0
+  },
+  {
+    "case": "move_up_256",
+    "before": 16461,
+    "after": 16461,
+    "delta": 0
+  },
+  {
+    "case": "move_up_tail",
+    "before": 234,
+    "after": 234,
+    "delta": 0
+  },
+  {
+    "case": "move_concat",
+    "before": 8428,
+    "after": 8428,
+    "delta": 0
+  },
+  {
+    "case": "move_concat_tail",
+    "before": 282,
+    "after": 282,
+    "delta": 0
+  },
+  {
+    "case": "move_concat_odd",
+    "before": 274,
+    "after": 274,
+    "delta": 0
+  },
+  {
+    "case": "move_pool_single",
+    "before": 175,
+    "after": 175,
+    "delta": 0
+  }
+]

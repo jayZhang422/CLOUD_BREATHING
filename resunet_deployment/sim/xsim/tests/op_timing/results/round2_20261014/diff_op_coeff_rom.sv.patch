@@ -1,0 +1,48 @@
+--- round2-before/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_coeff_rom.sv
++++ prj/Model_Deployment.srcs/sources_1/new/Op/control/op_coeff_rom.sv
+@@ -14,14 +14,14 @@
+ );
+     localparam logic [30:0] COEFF_BASE  = 31'h00100000;
+     localparam logic [30:0] COEFF_LIMIT = 31'h002C0000; // 229376 个 64-bit 字
+-    typedef enum logic [2:0] {IDLE, ISSUE, WAIT_ROM, CAPTURE, RESPONSE} state_t;
++    typedef enum logic [2:0] {IDLE, ISSUE, WAIT_ROM, CAPTURE, PACK, RESPONSE} state_t;
+     state_t state_r, state_nxt;
+     logic [17:0] word_addr_r;
+     logic [1:0] part_r;
+     logic error_r;
+     logic address_ok_w, rom_enable_w;
+     logic [30:0] offset_w;
+-    logic [63:0] rom_data_w;
++    logic [63:0] rom_data_w, rom_data_r;
+     logic [255:0] data_r;
+ 
+     assign offset_w = req_addr_i - COEFF_BASE;
+@@ -47,7 +47,8 @@
+             IDLE: if (req_valid_i) state_nxt = address_ok_w ? ISSUE : RESPONSE;
+             ISSUE: state_nxt = WAIT_ROM;
+             WAIT_ROM: state_nxt = CAPTURE;
+-            CAPTURE: state_nxt = part_r == 2'd3 ? RESPONSE : ISSUE;
++            CAPTURE: state_nxt = PACK;
++            PACK: state_nxt = part_r == 2'd3 ? RESPONSE : ISSUE;
+             RESPONSE: if (rsp_ready_i) state_nxt = IDLE;
+             default: state_nxt = IDLE;
+         endcase
+@@ -63,7 +64,7 @@
+                 part_r <= 2'd0;
+                 error_r <= !address_ok_w;
+             end
+-            if (state_r == CAPTURE) begin
++            if (state_r == PACK) begin
+                 word_addr_r <= word_addr_r + 18'd1;
+                 part_r <= part_r + 2'd1;
+             end
+@@ -72,6 +73,8 @@
+     // 数据寄存器不复位；有效控制保证复位后的旧数据不会被交付。
+     always_ff @(posedge clk_i) begin
+         if (state_r == IDLE && req_valid_i) data_r <= 256'd0;
+-        if (state_r == CAPTURE) data_r[part_r*64 +: 64] <= rom_data_w;
++        // IP外先捕获64位输出，下一拍分发到四个响应槽位，降低ROM输出布线扇出。
++        if (state_r == CAPTURE) rom_data_r <= rom_data_w;
++        if (state_r == PACK) data_r[part_r*64 +: 64] <= rom_data_r;
+     end
+ endmodule

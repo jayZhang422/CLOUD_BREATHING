@@ -1,0 +1,52 @@
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_op_rom.rom.u_rom.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[CASE PASS] read_only_coefficients
+[CASE] airway_e1 cycle=128
+[CASE PASS] airway_e1 bytes=16384 mac_bytes=65536 cycle=374811
+[CASE] lobe_e1 cycle=374811
+[CASE PASS] lobe_e1 bytes=16384 mac_bytes=65536 cycle=749494
+[CASE] vessel_e1 cycle=749494
+[CASE PASS] vessel_e1 bytes=16384 mac_bytes=65536 cycle=1124175
+[CASE] tumor_e1 cycle=1124175
+[CASE PASS] tumor_e1 bytes=65536 mac_bytes=262144 cycle=2577011
+[CASE] pool_from_tumor_pw cycle=2577011
+[CASE PASS] pool_from_tumor_pw bytes=16384 mac_bytes=0 cycle=2688276
+[CASE] concat_pool cycle=2688276
+[CASE PASS] concat_pool bytes=32768 mac_bytes=0 cycle=2827743
+[CASE] pw_from_concat_rom cycle=2827743
+[CASE PASS] pw_from_concat_rom bytes=65536 mac_bytes=0 cycle=3400179
+[CASE] tumor_mid_expand_frozen cycle=3400179
+[CASE PASS] tumor_mid_expand_frozen bytes=2048 mac_bytes=8192 cycle=3516064
+[CASE] tumor_d3_expand cycle=3516064
+[CASE PASS] tumor_d3_expand bytes=1024 mac_bytes=4096 cycle=3642979
+[CASE] airway_head cycle=3642979
+[CASE PASS] airway_head bytes=32 mac_bytes=64 cycle=3644620
+[CASE] lobe_head cycle=3644620
+[CASE PASS] lobe_head bytes=64 mac_bytes=128 cycle=3646450
+[CASE] vessel_head cycle=3646450
+[CASE PASS] vessel_head bytes=32 mac_bytes=64 cycle=3648088
+[CASE] tumor_head cycle=3648088
+[CASE PASS] tumor_head bytes=32 mac_bytes=64 cycle=3649728
+[CASE] tumor_mid_mix cycle=3649728
+[CASE PASS] tumor_mid_mix bytes=2048 mac_bytes=0 cycle=3668126
+[CASE] pool_odd_two_groups cycle=3668126
+[CASE PASS] pool_odd_two_groups bytes=64 mac_bytes=0 cycle=3669623
+[CASE] linebuffer3 cycle=3669623
+[CASE PASS] linebuffer3 bytes=1728 mac_bytes=0 cycle=3674478
+[CASE] linebuffer5 cycle=3674478
+[CASE PASS] linebuffer5 bytes=1600 mac_bytes=0 cycle=3679079
+[CASE] shuffle16 cycle=3679079
+[CASE PASS] shuffle16 bytes=64 mac_bytes=0 cycle=3680575
+[CASE] pool_groups32 cycle=3680575
+[CASE PASS] pool_groups32 bytes=1024 mac_bytes=0 cycle=3691494
+[CASE] linebuffer3_groups32 cycle=3691494
+[CASE PASS] linebuffer3_groups32 bytes=27648 mac_bytes=0 cycle=3764506
+[CASE] linebuffer5_groups32 cycle=3764506
+[CASE PASS] linebuffer5_groups32 bytes=51200 mac_bytes=0 cycle=3892227
+[CASE] bin512_online_first cycle=3892227
+[CASE PASS] bin512_online_first bytes=4194304 mac_bytes=0 cycle=30311359
+[TB PASSED] 全部数据验证一致 cases=22 cycles=30311359 rom_reads=12186 ddr_reads=1190729 ddr_writes=1129888
+$finish called at time : 303113592 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Op_ROM/tb_op_rom.sv" Line 252
+INFO: xsimkernel Simulation Memory Usage: 459796 KB (Peak: 459796 KB), Simulation CPU Usage: 162202 ms

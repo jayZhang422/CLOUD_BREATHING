@@ -1,0 +1,65 @@
+Time resolution is 1 ps
+Block Memory Generator module tb_pwstream_after.dut.u_transport.u_request_ram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_pwstream_after.dut.u_transport.u_reply_ram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_pwstream_after.dut.u_service.u_engine.u_bank.u_p12_project_mem.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_pwstream_after.dut.u_service.u_engine.u_bank.u_p12_skip_mem.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_pwstream_after.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_pwstream_after.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_pwstream_after.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_pwstream_after.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_pwstream_after.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_pwstream_after.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_pwstream_after.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_pwstream_after.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_pwstream_after.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_pwstream_after.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_pwstream_after.dut.u_service.u_engine.u_op12_add_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_pwstream_after.dut.u_service.u_engine.u_pw_pack.u_tiles.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_pwstream_after.dut.u_service.u_perf_memory.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+Block Memory Generator module tb_pwstream_after.dut.u_port.g_memory[0].u_write_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_pwstream_after.dut.u_port.g_memory[0].u_read_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_pwstream_after.dut.u_port.g_memory[1].u_write_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_pwstream_after.dut.u_port.g_memory[1].u_read_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_pwstream_after.rom.u_rom.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[CASE PASS] read_only_coefficients
+[CASE PASS] image_metadata_snapshot_and_online_rejection
+[CASE PASS] DW_P16_descriptor_rejection cases=6
+[CASE PASS] RPC_RAM all_32_lengths upload_read_backpressure invalid_lengths control_errors
+[CASE] lobe_mid_expand cycle=237949
+[TIMING] lobe_mid_expand hardware_cycles=8735
+[PERF] lobe_mid_expand hardware_cycles=8735 load=7200 run=1449 output_blocked=0
+[CASE PASS] lobe_mid_expand bytes=2048 mac_bytes=0 cycle=271059
+[CASE] lobe_mid_mix cycle=271059
+[TIMING] lobe_mid_mix hardware_cycles=9716
+[PERF] lobe_mid_mix hardware_cycles=9716 load=1440 run=8185 output_blocked=0
+[CASE PASS] lobe_mid_mix bytes=2048 mac_bytes=0 cycle=305507
+[CASE] lobe_mid_project cycle=305507
+[TIMING] lobe_mid_project hardware_cycles=19114
+[PERF] lobe_mid_project hardware_cycles=19114 load=12960 run=6068 output_blocked=4536
+[CASE PASS] lobe_mid_project bytes=8192 mac_bytes=0 cycle=407123
+[CASE] fused_dw11 cycle=407123
+[TIMING] fused_dw11 hardware_cycles=1769
+[PERF] fused_dw11 hardware_cycles=1769 load=751 run=887 output_blocked=0
+[CASE PASS] fused_dw11 bytes=784 mac_bytes=0 cycle=420051
+[CASE] pw_tail_clear cycle=420051
+[TIMING] pw_tail_clear hardware_cycles=380
+[PERF] pw_tail_clear hardware_cycles=380 load=184 run=108 output_blocked=0
+[CASE PASS] pw_tail_clear bytes=48 mac_bytes=0 cycle=425437
+[CASE] lobe_e1.expand cycle=425437
+[TIMING] lobe_e1.expand hardware_cycles=6413
+[PERF] lobe_e1.expand hardware_cycles=6413 load=299 run=6028 output_blocked=0
+[CASE PASS] lobe_e1.expand bytes=16384 mac_bytes=0 cycle=581427
+[CASE] tumor_d3.expand cycle=581427
+[TIMING] tumor_d3.expand hardware_cycles=153707
+[PERF] tumor_d3.expand hardware_cycles=153707 load=96211 run=57350 output_blocked=0
+[CASE PASS] tumor_d3.expand bytes=16384 mac_bytes=0 cycle=933811
+[CASE] tumor_head cycle=933811
+[TIMING] tumor_head hardware_cycles=19566
+[PERF] tumor_head hardware_cycles=19566 load=211 run=19269 output_blocked=8640
+[CASE PASS] tumor_head bytes=8192 mac_bytes=0 cycle=1035427
+[TB PASSED] 全部数据验证一致 cases=8 cycles=1035427 rom_reads=960 ddr_reads=1042 ddr_writes=131
+$finish called at time : 3106280 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/PW_Stream_20261022/tb_pwstream_after.sv" Line 461

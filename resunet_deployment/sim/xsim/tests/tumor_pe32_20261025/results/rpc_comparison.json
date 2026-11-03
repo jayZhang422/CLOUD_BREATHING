@@ -1,0 +1,46 @@
+[
+  {
+    "case": "tumor_mid_expand",
+    "before_total": 80129,
+    "after_total": 75897,
+    "before_load": 70212,
+    "after_load": 70212,
+    "before_run": 9831,
+    "after_run": 5599,
+    "total_reduction_percent": 5.28,
+    "run_reduction_percent": 43.05
+  },
+  {
+    "case": "lobe_e1.expand",
+    "before_total": 5964,
+    "after_total": 5961,
+    "before_load": 313,
+    "after_load": 312,
+    "before_run": 5565,
+    "after_run": 5563,
+    "total_reduction_percent": 0.05,
+    "run_reduction_percent": 0.04
+  },
+  {
+    "case": "tumor_d3.expand",
+    "before_total": 154925,
+    "after_total": 130106,
+    "before_load": 101137,
+    "after_load": 101137,
+    "before_run": 53640,
+    "after_run": 28821,
+    "total_reduction_percent": 16.02,
+    "run_reduction_percent": 46.27
+  },
+  {
+    "case": "tumor_head",
+    "before_total": 21013,
+    "after_total": 21010,
+    "before_load": 222,
+    "after_load": 221,
+    "before_run": 20705,
+    "after_run": 20703,
+    "total_reduction_percent": 0.01,
+    "run_reduction_percent": 0.01
+  }
+]

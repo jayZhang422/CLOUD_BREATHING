@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"elapsed_seconds\": 1.025,\n  \"exit_code\": 0,\n  \"output\": \"check_syntax -fileset sources_1\\nINFO: [Vivado 12-4796] No errors or warning reported.\\nINFO: [MCP 00-101]\",\n  \"task_progress\": \"4/5: 清理大文件、恢复工程入口并交付 (active, 3m37s)\"\n}"
+    }
+  ]
+}

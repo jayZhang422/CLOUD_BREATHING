@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sun Nov  1 18:00:55 2026
+# Process ID         : 33600
+# Current directory  : E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Volume_DDR_20261025
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/voltr_mcp/xsim_script.tcl}
+# Log file           : E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Volume_DDR_20261025/xsim.log
+# Journal file       : E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Volume_DDR_20261025\xsim.jou
+# Running On         : MSI
+# Platform           : Windows 11
+# Operating System   : 22631
+# Processor Detail   : Intel(R) Core(TM) i7-14700HX
+# CPU Frequency      : 2304 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 16940 MB
+# Swap memory        : 23622 MB
+# Total Virtual      : 40563 MB
+# Available Virtual  : 15995 MB
+#-----------------------------------------------------------
+source xsim.dir/voltr_mcp/xsim_script.tcl
+# xsim {voltr_mcp} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+[CASE PASSED] transform orientation=0 packing=0
+[TRANSFORM PERF] orientation=0 packing=0 cycles=6336 gather_writes=16 result_reads=0
+[CASE PASSED] transform orientation=1 packing=0
+[TRANSFORM PERF] orientation=1 packing=0 cycles=6297 gather_writes=16 result_reads=0
+[CASE PASSED] transform orientation=2 packing=0
+[TRANSFORM PERF] orientation=2 packing=0 cycles=6300 gather_writes=16 result_reads=0
+[CASE PASSED] transform orientation=0 packing=1
+[TRANSFORM PERF] orientation=0 packing=1 cycles=708 gather_writes=0 result_reads=0
+[CASE PASSED] transform orientation=1 packing=1
+[TRANSFORM PERF] orientation=1 packing=1 cycles=814 gather_writes=0 result_reads=0
+[CASE PASSED] transform orientation=2 packing=1
+[TRANSFORM PERF] orientation=2 packing=1 cycles=810 gather_writes=0 result_reads=0
+[CASE PASSED] VOL2 direction=0 lobe_q16_rne=1 boundary_neighbors=000000010000000000000000
+[VOL2 PERF] direction=0 cycles=381 compact_line_reads=2 cache_hits=46 cache_misses=2
+[CASE PASSED] VOL2 direction=4 lobe_q16_rne=1 boundary_neighbors=000000010000000100000000
+[VOL2 PERF] direction=4 cycles=384 compact_line_reads=2 cache_hits=46 cache_misses=2
+[CASE PASSED] VOL2 direction=0 lobe_q16_rne=1 boundary_neighbors=000000000000000000000001
+[VOL2 PERF] direction=0 cycles=385 compact_line_reads=2 cache_hits=46 cache_misses=2
+[TB PASSED] VOL1 gather/classify and VOL2 compact continuous-read Golden
+$finish called at time : 89872 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Volume_DDR_20261025/tb_volume_transform.sv" Line 119
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Nov  1 18:00:58 2026...

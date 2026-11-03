@@ -1,0 +1,376 @@
+{
+  "partition": "train only",
+  "selection": [
+    {
+      "dataset": "Task06",
+      "case": "lung_084",
+      "slices": [
+        0,
+        161,
+        196,
+        240
+      ]
+    },
+    {
+      "dataset": "Task06",
+      "case": "lung_004",
+      "slices": [
+        0,
+        217,
+        231,
+        275
+      ]
+    },
+    {
+      "dataset": "Task06",
+      "case": "lung_086",
+      "slices": [
+        0,
+        179,
+        219,
+        266
+      ]
+    },
+    {
+      "dataset": "Task06",
+      "case": "lung_031",
+      "slices": [
+        0,
+        216,
+        285,
+        303
+      ]
+    },
+    {
+      "dataset": "Task06",
+      "case": "lung_044",
+      "slices": [
+        0,
+        135,
+        169,
+        281
+      ]
+    },
+    {
+      "dataset": "Task06",
+      "case": "lung_027",
+      "slices": [
+        0,
+        77,
+        104,
+        263
+      ]
+    },
+    {
+      "dataset": "Task06",
+      "case": "lung_038",
+      "slices": [
+        0,
+        79,
+        87,
+        124
+      ]
+    },
+    {
+      "dataset": "Task06",
+      "case": "lung_025",
+      "slices": [
+        0,
+        219,
+        237,
+        375
+      ]
+    },
+    {
+      "dataset": "Task06",
+      "case": "lung_069",
+      "slices": [
+        0,
+        91,
+        105,
+        241
+      ]
+    },
+    {
+      "dataset": "Task06",
+      "case": "lung_048",
+      "slices": [
+        0,
+        128,
+        141,
+        321
+      ]
+    },
+    {
+      "dataset": "Task06",
+      "case": "lung_036",
+      "slices": [
+        0,
+        88,
+        101,
+        270
+      ]
+    },
+    {
+      "dataset": "Task06",
+      "case": "lung_061",
+      "slices": [
+        0,
+        87,
+        97,
+        210
+      ]
+    },
+    {
+      "dataset": "Task06",
+      "case": "lung_081",
+      "slices": [
+        0,
+        186,
+        199,
+        248
+      ]
+    },
+    {
+      "dataset": "Task06",
+      "case": "lung_034",
+      "slices": [
+        0,
+        160,
+        186,
+        295
+      ]
+    },
+    {
+      "dataset": "Task06",
+      "case": "lung_054",
+      "slices": [
+        0,
+        156,
+        176,
+        240
+      ]
+    },
+    {
+      "dataset": "Task06",
+      "case": "lung_023",
+      "slices": [
+        0,
+        364,
+        407,
+        530
+      ]
+    },
+    {
+      "dataset": "NSCLC",
+      "case": "LUNG1-159",
+      "slices": [
+        0,
+        36,
+        49,
+        104
+      ]
+    },
+    {
+      "dataset": "NSCLC",
+      "case": "LUNG1-260",
+      "slices": [
+        0,
+        73,
+        86,
+        133
+      ]
+    },
+    {
+      "dataset": "NSCLC",
+      "case": "LUNG1-253",
+      "slices": [
+        0,
+        64,
+        71,
+        90
+      ]
+    },
+    {
+      "dataset": "NSCLC",
+      "case": "LUNG1-178",
+      "slices": [
+        0,
+        50,
+        56,
+        125
+      ]
+    },
+    {
+      "dataset": "NSCLC",
+      "case": "LUNG1-056",
+      "slices": [
+        0,
+        69,
+        98,
+        133
+      ]
+    },
+    {
+      "dataset": "NSCLC",
+      "case": "LUNG1-225",
+      "slices": [
+        0,
+        72,
+        93,
+        133
+      ]
+    },
+    {
+      "dataset": "NSCLC",
+      "case": "LUNG1-047",
+      "slices": [
+        0,
+        44,
+        70,
+        109
+      ]
+    },
+    {
+      "dataset": "NSCLC",
+      "case": "LUNG1-221",
+      "slices": [
+        0,
+        56,
+        88,
+        93
+      ]
+    },
+    {
+      "dataset": "NSCLC",
+      "case": "LUNG1-136",
+      "slices": [
+        0,
+        61,
+        71,
+        109
+      ]
+    },
+    {
+      "dataset": "NSCLC",
+      "case": "LUNG1-079",
+      "slices": [
+        0,
+        38,
+        55,
+        134
+      ]
+    },
+    {
+      "dataset": "NSCLC",
+      "case": "LUNG1-292",
+      "slices": [
+        0,
+        50,
+        71,
+        124
+      ]
+    },
+    {
+      "dataset": "NSCLC",
+      "case": "LUNG1-115",
+      "slices": [
+        0,
+        59,
+        88,
+        105
+      ]
+    },
+    {
+      "dataset": "NSCLC",
+      "case": "LUNG1-168",
+      "slices": [
+        0,
+        61,
+        74,
+        133
+      ]
+    },
+    {
+      "dataset": "NSCLC",
+      "case": "LUNG1-055",
+      "slices": [
+        0,
+        82,
+        99,
+        124
+      ]
+    },
+    {
+      "dataset": "NSCLC",
+      "case": "LUNG1-031",
+      "slices": [
+        0,
+        63,
+        80,
+        152
+      ]
+    },
+    {
+      "dataset": "NSCLC",
+      "case": "LUNG1-024",
+      "slices": [
+        0,
+        53,
+        65,
+        94
+      ]
+    }
+  ],
+  "activation_max_abs": {
+    "e1.expand": 6.0,
+    "e1.mix": 6.0,
+    "e1.out": 6.0,
+    "e2.expand": 6.0,
+    "e2.mix": 6.0,
+    "e2.out": 6.0,
+    "e3.expand": 6.0,
+    "e3.mix": 6.0,
+    "e3.out": 6.0,
+    "mid.expand": 6.0,
+    "mid.mix": 6.0,
+    "mid.out": 6.0,
+    "d3.expand": 6.0,
+    "d3.mix": 6.0,
+    "d3.out": 6.0,
+    "d2.expand": 6.0,
+    "d2.mix": 6.0,
+    "d2.out": 6.0,
+    "d1.expand": 6.0,
+    "d1.mix": 6.0,
+    "d1.out": 6.0,
+    "head": 55.90414047241211
+  },
+  "activation_scales": {
+    "input": 1.0,
+    "e1.expand": 0.047244094488188976,
+    "e1.mix": 0.047244094488188976,
+    "e1.out": 0.047244094488188976,
+    "e2.expand": 0.047244094488188976,
+    "e2.mix": 0.047244094488188976,
+    "e2.out": 0.047244094488188976,
+    "e3.expand": 0.047244094488188976,
+    "e3.mix": 0.047244094488188976,
+    "e3.out": 0.047244094488188976,
+    "mid.expand": 0.047244094488188976,
+    "mid.mix": 0.047244094488188976,
+    "mid.out": 0.047244094488188976,
+    "d3.expand": 0.047244094488188976,
+    "d3.mix": 0.047244094488188976,
+    "d3.out": 0.047244094488188976,
+    "d2.expand": 0.047244094488188976,
+    "d2.mix": 0.047244094488188976,
+    "d2.out": 0.047244094488188976,
+    "d1.expand": 0.047244094488188976,
+    "d1.mix": 0.047244094488188976,
+    "d1.out": 0.047244094488188976,
+    "head": 0.001706111040754787
+  },
+  "zero_point": 0,
+  "policy": "per-node symmetric activation max calibration; no normalization change"
+}

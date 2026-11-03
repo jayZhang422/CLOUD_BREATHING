@@ -1,0 +1,51 @@
+{
+  "pw": {
+    "passed": true,
+    "terminal": [
+      "[TB PASSED] PW two independent branches, SHARED=1, 22 Golden cases, contention=88085"
+    ],
+    "warnings": 0,
+    "cases": 22,
+    "outputs": 27880,
+    "contention_cycles": 88085
+  },
+  "op12_slow": {
+    "passed": true,
+    "terminal": [
+      "[TB PASSED] op12 shared/reference Golden, two cases, speed regression <=2 percent, FAST=0"
+    ],
+    "warnings": 0,
+    "cycles": {
+      "small_tail": {
+        "before": 4112,
+        "shared": 4150
+      },
+      "max_banks": {
+        "before": 360885,
+        "shared": 361042
+      }
+    }
+  },
+  "op12_fast": {
+    "passed": true,
+    "terminal": [
+      "[TB PASSED] op12 shared/reference Golden, two cases, speed regression <=2 percent, FAST=1"
+    ],
+    "warnings": 0,
+    "cycles": {
+      "small_tail": {
+        "before": 3067,
+        "shared": 3077
+      },
+      "max_banks": {
+        "before": 253988,
+        "shared": 254116
+      }
+    }
+  },
+  "source_structure": {
+    "int8_multiplier_attributes": 256,
+    "weight_banks_per_branch": 4,
+    "shared_dot_arrays": 1
+  }
+}

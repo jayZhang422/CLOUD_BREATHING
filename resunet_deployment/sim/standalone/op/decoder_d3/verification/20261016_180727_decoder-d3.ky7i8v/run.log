@@ -1,0 +1,18 @@
+[info] welcome to sbt 1.10.2 (Eclipse Adoptium Java 17.0.20.1)
+[info] loading project definition from /home/jayzhang/.cache/decoder-d3.ky7i8v/project/project
+[info] loading settings for project project from build.sbt ...
+[info] set current project to project (in build file:/home/jayzhang/.cache/decoder-d3.ky7i8v/project/)
+[info] compiling 8 Scala sources to /home/jayzhang/.cache/decoder-d3.ky7i8v/project/target/scala-2.13/classes ...
+[error] /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Decoder_D3/DecoderD3Sim.scala:179:42: type mismatch;
+[error]  found   : scala.collection.IndexedSeq[BigInt]
+[error]  required: Seq[BigInt]
+[error]       equalWord("dw3",dw3N,pack(p.mac.map(_.toBigInt),32),macGolden("dw3"))
+[error]                                          ^
+[error] /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Decoder_D3/DecoderD3Sim.scala:186:42: type mismatch;
+[error]  found   : scala.collection.IndexedSeq[BigInt]
+[error]  required: Seq[BigInt]
+[error]       equalWord("dw5",dw5N,pack(p.mac.map(_.toBigInt),32),macGolden("dw5"))
+[error]                                          ^
+[error] two errors found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 6 s, completed Oct 16, 2026, 6:07:40 PM

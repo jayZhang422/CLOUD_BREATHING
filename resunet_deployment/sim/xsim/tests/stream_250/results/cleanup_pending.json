@@ -1,0 +1,21 @@
+{
+  "status": "blocked_by_automatic_review",
+  "reason": "blocked by policy",
+  "attempts": [
+    "recursive removal of explicitly bounded completed simulation directories",
+    "per-file removal from an inspected generated-file manifest"
+  ],
+  "filesets_restored": true,
+  "directories": [
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_stall",
+      "files": 62,
+      "bytes": 76397244
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_restart",
+      "files": 60,
+      "bytes": 46827037
+    }
+  ]
+}

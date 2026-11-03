@@ -1,0 +1,38 @@
+{
+ "triangles": 20480,
+ "candidates": 780,
+ "compared": 778,
+ "tolerance": 1e-05,
+ "pl_flagged": {
+  "count": 2,
+  "indices": [
+   247,
+   458
+  ],
+  "flags": [
+   "0x20"
+  ],
+  "returned_all_zero": true
+ },
+ "max_abs_delta": {
+  "volume_mm3": 3.725290298461914e-09,
+  "surface_area_mm2": 1.3096723705530167e-10,
+  "cut_area_mm2": 5.820766091346741e-11
+ },
+ "parity_pass": true,
+ "ps_runs_total_s": [
+  77.57575501799988,
+  78.3347182979985,
+  77.69780531500123
+ ],
+ "ps_per_candidate_ms": 99.61257091666825,
+ "ps_total_s": 77.69780531500123,
+ "pl_candidates": 780,
+ "pl_cold_wall_s": 15.07505488400011,
+ "pl_warm_wall_s": 9.062018904499837,
+ "pl_core_s": 8.631938059380595,
+ "pl_clock_mhz": 99.999,
+ "speedup_cold": 5.154064506754512,
+ "speedup_warm": 8.574006094427766,
+ "speedup_core_only": 9.001200516095528
+}

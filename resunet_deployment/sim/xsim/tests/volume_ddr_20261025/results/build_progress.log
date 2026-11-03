@@ -1,0 +1,9 @@
+2026-10-25 17:05:35 ARMED: one synthesis run; launch implementation once only after successful synthesis; no bitstream and no retry
+2026-10-25 17:06:33 SYNTHESIS_LAUNCHED: Running synth_design...; implementation callback scheduled after#0
+2026-10-25 17:22:33 SYNTHESIS_COMPLETE: synth_design Complete!; starting impl_1 once through route_design
+2026-10-25 17:22:33 IMPLEMENTATION_LAUNCH_FAILED: ERROR: [Common 17-69] Command failed:  Run'impl_1' is already running and cannot be relaunched.
+
+2026-10-26 21:31:03 BATCH1_ARMED: synthesis launched once; implementation will launch once after synthesis Complete; no bitstream
+2026-10-26 21:47:33 SYNTHESIS_COMPLETE: synth_design Complete! 100%; starting impl_1 through route_design
+2026-10-26 21:47:33 IMPLEMENTATION_LAUNCH_FAILED: ERROR: [Common 17-69] Command failed:  Run'impl_1' is already running and cannot be relaunched.
+

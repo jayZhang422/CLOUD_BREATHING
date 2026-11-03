@@ -1,0 +1,166 @@
+{
+  "format": "ct-segmentation-bitmask-v2",
+  "dtype": "uint16",
+  "byte_order": "little_endian",
+  "layout": "Z,Y,X",
+  "shape": [
+    334,
+    512,
+    512
+  ],
+  "bytes": 175112192,
+  "channels": [
+    "LeftUpperLobe",
+    "LeftLowerLobe",
+    "RightUpperLobe",
+    "RightMiddleLobe",
+    "RightLowerLobe",
+    "Bronchus",
+    "PulmonaryArtery",
+    "PulmonaryVenous",
+    "LungTumor"
+  ],
+  "channel_bits": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "reserved_bits": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "coordinate_system": "DICOM LPS millimetres",
+  "affine_z_y_x_to_lps_mm": [
+    [
+      0.0,
+      0.0,
+      0.80078125,
+      -213.599609375
+    ],
+    [
+      0.0,
+      0.80078125,
+      0.0,
+      -334.099609375
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      -995.9
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "file": "segmentation_uint16.bin",
+  "order": "C",
+  "sha256": "3304aa80c4360e87973e116a167f50bb89a455a25e1b0b8de5f432aed8bb0ebb",
+  "ddr_released": true,
+  "semantics": "FPGA classification, native CT grid, no mesh processing applied",
+  "provenance": {
+    "result_ready": {
+      "format": "pc-fpga-result-ready-v2",
+      "state": "complete",
+      "transfer_id": 1958361580,
+      "input_sha256": "95fe9273ccb85e62bb0bcab2ac1407fc9dfb25826f9bc5794289469fab40a716",
+      "tasks": [
+        "lobe",
+        "airway",
+        "vessel",
+        "tumor"
+      ],
+      "elapsed_seconds": 487.188822402,
+      "schedule_sha256": "3042c9c1e9c7df5d77000073adb5c1cce95c01c1085905b763ba10a17c3a0bc3",
+      "result": {
+        "format": "ct-segmentation-bitmask-v2",
+        "dtype": "uint16",
+        "byte_order": "little_endian",
+        "layout": "Z,Y,X",
+        "shape": [
+          334,
+          512,
+          512
+        ],
+        "bytes": 175112192,
+        "channels": [
+          "LeftUpperLobe",
+          "LeftLowerLobe",
+          "RightUpperLobe",
+          "RightMiddleLobe",
+          "RightLowerLobe",
+          "Bronchus",
+          "PulmonaryArtery",
+          "PulmonaryVenous",
+          "LungTumor"
+        ],
+        "channel_bits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "reserved_bits": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "coordinate_system": "DICOM LPS millimetres",
+        "affine_z_y_x_to_lps_mm": [
+          [
+            0.0,
+            0.0,
+            0.80078125,
+            -213.599609375
+          ],
+          [
+            0.0,
+            0.80078125,
+            0.0,
+            -334.099609375
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            -995.9
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "ddr_base": 268435456
+      },
+      "integrity": "V1 CRC32 per READ frame; local SHA256 after complete readback"
+    },
+    "input_sha256": "95fe9273ccb85e62bb0bcab2ac1407fc9dfb25826f9bc5794289469fab40a716"
+  },
+  "receive_seconds": 18.73469663900005,
+  "receive_mib_s": 8.913941917518489
+}

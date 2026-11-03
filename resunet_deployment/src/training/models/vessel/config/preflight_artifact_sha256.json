@@ -1,0 +1,10 @@
+{
+  "source/historical_model.py": "0acee2dfc58a2a5b2f145ed9f6d5f332327c5daee5289682fabdfeb076580ae8",
+  "source/compact_cache_reader.py": "d6d8a81722b60bc28ceec9fb05d4a14161bd322bbd783d9a9229722d804bef8a",
+  "source/vessel_joint_20261008.py": "32024cb607f58a292a235731bbff1e5b1ef694db02c610be81cd97b69abbad63",
+  "audit/cross_dataset_check.json": "7e8337581d1023b343888a9caf6c7645b31b9b8b7582334f207177bb284b6dd1",
+  "audit/e94_reproduction.json": "2e46d551b5564a20342327647ba92b8665aa8cc78bc7c4c3955296a2ca8c3a72",
+  "audit/duplicate_similarity_check.json": "3f93db77a8421bd61ed579e29f96726c4f726290e700f2561444ad5a1f1cec40",
+  "audit/parse_sample_checks.json": "5e7cfef5d22974e55f6719c4477d63711865bc69b5faac0225ec6a3fd3d659a3",
+  "audit/parse_official_dataset_20261008.txt": "2d7ee58369162c6cc40f7a167288307edb873bc6c69e953961413c79bfda1892"
+}

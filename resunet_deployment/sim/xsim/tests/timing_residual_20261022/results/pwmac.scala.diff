@@ -1,0 +1,49 @@
+diff --git a/prj/Model_Deployment.srcs/sim_1/new/Timing_Residual_20261022/before/script/scala/PW/PwMac.scala b/script/scala/PW/PwMac.scala
+index df6e0f2..745f906 100644
+--- a/prj/Model_Deployment.srcs/sim_1/new/Timing_Residual_20261022/before/script/scala/PW/PwMac.scala
++++ b/script/scala/PW/PwMac.scala
+@@ -311,6 +311,7 @@ class PwMac(config: PwConfig = PwConfig(), useUramWeights: Boolean = false,
+   val ogCount_r = Reg(UInt(log2Up(config.OG + 1) bits))
+   val weightCount_r = Reg(UInt(log2Up(config.WEIGHT_DEPTH + 1) bits)) init(0)
+   val paramCount_r = Reg(UInt(log2Up(config.PARAM_GROUPS + 1) bits)) init(0)
++  val paramTotal_r = Reg(UInt(log2Up(config.PARAM_GROUPS + 1) bits))
+   val weightTotal_r = Reg(UInt(log2Up(config.WEIGHT_DEPTH + 1) bits))
+   val weightGroup_r = Reg(UInt(log2Up(config.PARAM_GROUPS + 1) bits)) init(0)
+   val weightInput_r = Reg(UInt(log2Up(config.IG + 1) bits)) init(0)
+@@ -358,6 +359,7 @@ class PwMac(config: PwConfig = PwConfig(), useUramWeights: Boolean = false,
+     igCount_r := cfgIg_w
+     ogCount_r := cfgOg_w
+     weightTotal_r := (cfgIg_w * cfgParamGroups_w).resize(weightTotal_r.getWidth)
++    paramTotal_r := cfgParamGroups_w
+     weightCount_r := 0
+     weightGroup_r := 0
+     weightInput_r := 0
+@@ -367,7 +369,8 @@ class PwMac(config: PwConfig = PwConfig(), useUramWeights: Boolean = false,
+     state_r := LOAD
+   }
+   io.weights_i.ready := state_r === LOAD && weightCount_r < weightTotal_r
+-  io.params_i.ready := state_r === LOAD && paramCount_r < ((run_r.cout.resize(10) + U(3, 10 bits)) >> 2)
++  // 配置握手时预存参数总组数，避免cout取整加法贯穿参数ready和外部装载CE。
++  io.params_i.ready := state_r === LOAD && paramCount_r < paramTotal_r
+   when(io.weights_i.fire) {
+     weightCount_r := weightCount_r + 1
+     when(weightInput_r === igCount_r - 1) {
+@@ -379,7 +382,7 @@ class PwMac(config: PwConfig = PwConfig(), useUramWeights: Boolean = false,
+     } otherwise { weightInput_r := weightInput_r + 1 }
+   }
+   when(io.params_i.fire) { paramCount_r := paramCount_r + 1; paramGroup_r := paramGroup_r + 1 }
+-  when(state_r === LOAD && weightCount_r === weightTotal_r && paramCount_r === ((run_r.cout.resize(10) + U(3, 10 bits)) >> 2)) {
++  when(state_r === LOAD && weightCount_r === weightTotal_r && paramCount_r === paramTotal_r) {
+     state_r := READY
+   }
+   io.start_i.ready := state_r === READY && !io.cfg_i.valid
+@@ -604,7 +607,8 @@ class PwMac(config: PwConfig = PwConfig(), useUramWeights: Boolean = false,
+   val requant = new PwRequant
+   if (sharedDot) requant.setDefinitionName("PwSharedRequant")
+   requant.io.input_i << quantResponse.translateWith(quantInput_w)
+-  io.output_o << requant.io.output_o
++  // 弹性缓存切断写回端到整个量化流水的ready链，数据和标签一起保持。
++  io.output_o << requant.io.output_o.s2mPipe().m2sPipe()
+   // 结果进入带反压的再量化流水后即可复用累加器；writer 的官方 FIFO 后台排空。
+   // 最末输出仍须真实握手，才允许 done/重新配置，禁止仅凭入队提前完成。
+   when(io.output_o.fire && io.output_o.last) {

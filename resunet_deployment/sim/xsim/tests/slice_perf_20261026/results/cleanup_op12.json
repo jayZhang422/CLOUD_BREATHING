@@ -1,0 +1,18 @@
+[
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_hotspot_op12\\behav\\xsim\\sim_trace_fast.csv",
+    "Length": 8618297
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_hotspot_op12\\behav\\xsim\\sim_trace_slow.csv",
+    "Length": 13199545
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_hotspot_op12\\behav\\xsim\\tb_hotspot_op12_behav.wdb",
+    "Length": 11398336
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_hotspot_op12\\behav\\xsim\\waveform.vcd",
+    "Length": 11261698
+  }
+]

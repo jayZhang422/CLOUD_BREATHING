@@ -1,0 +1,5233 @@
+{
+  "protocol": 1,
+  "epoch": 18,
+  "historical_initial_epoch": 94,
+  "run_config_sha256": "518b7c134609309c2a5e87c9df396fabf7c4cd52d48a62e70387ea15da4f8623",
+  "previous_decision_sha256": "d10ba7d92f8b1e800843b6895fa9a5228fbcb4888cafb83c8838e0a4fe89919a",
+  "lr": 9.297017895513137e-05,
+  "best_epoch": 18,
+  "best_kind": "joint_finetune",
+  "best_refreshed": true,
+  "best_eligible": true,
+  "training": {
+    "train_loss": 0.18126499601884893,
+    "dataset_losses": {
+      "hipas": 0.1816141914380224,
+      "parse": 0.18091579997225812
+    },
+    "attempted_steps": 190,
+    "optimizer_updates": 190,
+    "amp_skipped_steps": 0,
+    "cumulative_optimizer_updates": 3420,
+    "gradient_norm_max": 0.85432441784118,
+    "parameter_sha256_before": "a2f4a005a945df300fa4f67519d6da7aecd9335055a79087c5caebf584ec5d97",
+    "parameter_sha256_after": "3e10c8157e57845eeeaedd251a3f0342df3c3da687e55c46a1f1195e397442ec",
+    "train_mode_all_batches": true,
+    "grad_enabled_all_batches": true,
+    "loss_finite_all_batches": true,
+    "finite_gradients_all_applied_steps": true,
+    "amp_dtype": "float16",
+    "scaler_enabled": true,
+    "scaler_scale": 2048.0,
+    "sampling": {
+      "hipas": {
+        "samples": 1520,
+        "positive_slices": 1140,
+        "negative_slices": 380,
+        "supervised_voxels": [
+          398436025,
+          398436025
+        ],
+        "positive_supervised_voxels": [
+          1890522,
+          2098693
+        ],
+        "cases": {
+          "045": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194189,
+              4194189
+            ],
+            "positive_supervised_voxels": [
+              15401,
+              19168
+            ]
+          },
+          "012": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194233,
+              4194233
+            ],
+            "positive_supervised_voxels": [
+              13967,
+              10616
+            ]
+          },
+          "067": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194072,
+              4194072
+            ],
+            "positive_supervised_voxels": [
+              18879,
+              23668
+            ]
+          },
+          "053": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194001,
+              4194001
+            ],
+            "positive_supervised_voxels": [
+              23003,
+              26287
+            ]
+          },
+          "017": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4193945,
+              4193945
+            ],
+            "positive_supervised_voxels": [
+              26126,
+              28332
+            ]
+          },
+          "148": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194044,
+              4194044
+            ],
+            "positive_supervised_voxels": [
+              35032,
+              25236
+            ]
+          },
+          "086": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194211,
+              4194211
+            ],
+            "positive_supervised_voxels": [
+              10871,
+              14688
+            ]
+          },
+          "075": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194174,
+              4194174
+            ],
+            "positive_supervised_voxels": [
+              21461,
+              21339
+            ]
+          },
+          "087": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4193841,
+              4193841
+            ],
+            "positive_supervised_voxels": [
+              33067,
+              35581
+            ]
+          },
+          "072": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194130,
+              4194130
+            ],
+            "positive_supervised_voxels": [
+              19301,
+              29465
+            ]
+          },
+          "111": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4193515,
+              4193515
+            ],
+            "positive_supervised_voxels": [
+              43812,
+              26187
+            ]
+          },
+          "005": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194107,
+              4194107
+            ],
+            "positive_supervised_voxels": [
+              22162,
+              25559
+            ]
+          },
+          "014": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194163,
+              4194163
+            ],
+            "positive_supervised_voxels": [
+              22065,
+              21370
+            ]
+          },
+          "070": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194094,
+              4194094
+            ],
+            "positive_supervised_voxels": [
+              34327,
+              38784
+            ]
+          },
+          "040": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4193846,
+              4193846
+            ],
+            "positive_supervised_voxels": [
+              25103,
+              27844
+            ]
+          },
+          "088": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194111,
+              4194111
+            ],
+            "positive_supervised_voxels": [
+              10759,
+              19144
+            ]
+          },
+          "006": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4193889,
+              4193889
+            ],
+            "positive_supervised_voxels": [
+              32951,
+              27955
+            ]
+          },
+          "138": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194065,
+              4194065
+            ],
+            "positive_supervised_voxels": [
+              11723,
+              11257
+            ]
+          },
+          "077": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4193891,
+              4193891
+            ],
+            "positive_supervised_voxels": [
+              25401,
+              21949
+            ]
+          },
+          "064": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194130,
+              4194130
+            ],
+            "positive_supervised_voxels": [
+              14105,
+              8166
+            ]
+          },
+          "143": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194089,
+              4194089
+            ],
+            "positive_supervised_voxels": [
+              16059,
+              29153
+            ]
+          },
+          "022": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194124,
+              4194124
+            ],
+            "positive_supervised_voxels": [
+              37320,
+              25285
+            ]
+          },
+          "066": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4193968,
+              4193968
+            ],
+            "positive_supervised_voxels": [
+              29847,
+              21830
+            ]
+          },
+          "164": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4193939,
+              4193939
+            ],
+            "positive_supervised_voxels": [
+              19370,
+              32237
+            ]
+          },
+          "056": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194051,
+              4194051
+            ],
+            "positive_supervised_voxels": [
+              27379,
+              41886
+            ]
+          },
+          "023": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194228,
+              4194228
+            ],
+            "positive_supervised_voxels": [
+              3801,
+              10017
+            ]
+          },
+          "137": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194051,
+              4194051
+            ],
+            "positive_supervised_voxels": [
+              14223,
+              15058
+            ]
+          },
+          "158": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194079,
+              4194079
+            ],
+            "positive_supervised_voxels": [
+              18396,
+              10734
+            ]
+          },
+          "008": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194043,
+              4194043
+            ],
+            "positive_supervised_voxels": [
+              14090,
+              29997
+            ]
+          },
+          "097": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194219,
+              4194219
+            ],
+            "positive_supervised_voxels": [
+              9983,
+              19956
+            ]
+          },
+          "091": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194113,
+              4194113
+            ],
+            "positive_supervised_voxels": [
+              18309,
+              20224
+            ]
+          },
+          "076": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194074,
+              4194074
+            ],
+            "positive_supervised_voxels": [
+              17970,
+              24816
+            ]
+          },
+          "026": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194135,
+              4194135
+            ],
+            "positive_supervised_voxels": [
+              21229,
+              23015
+            ]
+          },
+          "080": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194034,
+              4194034
+            ],
+            "positive_supervised_voxels": [
+              10838,
+              34512
+            ]
+          },
+          "046": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194179,
+              4194179
+            ],
+            "positive_supervised_voxels": [
+              17600,
+              13254
+            ]
+          },
+          "001": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4193807,
+              4193807
+            ],
+            "positive_supervised_voxels": [
+              18239,
+              35016
+            ]
+          },
+          "078": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194029,
+              4194029
+            ],
+            "positive_supervised_voxels": [
+              17586,
+              19366
+            ]
+          },
+          "189": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194183,
+              4194183
+            ],
+            "positive_supervised_voxels": [
+              9322,
+              12158
+            ]
+          },
+          "186": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194248,
+              4194248
+            ],
+            "positive_supervised_voxels": [
+              11147,
+              24614
+            ]
+          },
+          "055": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194047,
+              4194047
+            ],
+            "positive_supervised_voxels": [
+              35027,
+              34938
+            ]
+          },
+          "031": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194058,
+              4194058
+            ],
+            "positive_supervised_voxels": [
+              21798,
+              37539
+            ]
+          },
+          "042": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194153,
+              4194153
+            ],
+            "positive_supervised_voxels": [
+              12664,
+              26643
+            ]
+          },
+          "177": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194083,
+              4194083
+            ],
+            "positive_supervised_voxels": [
+              9024,
+              12581
+            ]
+          },
+          "156": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4193537,
+              4193537
+            ],
+            "positive_supervised_voxels": [
+              30289,
+              22227
+            ]
+          },
+          "095": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194229,
+              4194229
+            ],
+            "positive_supervised_voxels": [
+              14306,
+              20672
+            ]
+          },
+          "192": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4193812,
+              4193812
+            ],
+            "positive_supervised_voxels": [
+              19908,
+              17081
+            ]
+          },
+          "149": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4193961,
+              4193961
+            ],
+            "positive_supervised_voxels": [
+              37330,
+              27567
+            ]
+          },
+          "161": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194080,
+              4194080
+            ],
+            "positive_supervised_voxels": [
+              16832,
+              17901
+            ]
+          },
+          "166": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4193758,
+              4193758
+            ],
+            "positive_supervised_voxels": [
+              38114,
+              43069
+            ]
+          },
+          "048": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4193838,
+              4193838
+            ],
+            "positive_supervised_voxels": [
+              44575,
+              32504
+            ]
+          },
+          "021": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4193754,
+              4193754
+            ],
+            "positive_supervised_voxels": [
+              21921,
+              36760
+            ]
+          },
+          "003": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194155,
+              4194155
+            ],
+            "positive_supervised_voxels": [
+              27487,
+              22052
+            ]
+          },
+          "135": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4193988,
+              4193988
+            ],
+            "positive_supervised_voxels": [
+              14303,
+              13145
+            ]
+          },
+          "142": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194085,
+              4194085
+            ],
+            "positive_supervised_voxels": [
+              15464,
+              12545
+            ]
+          },
+          "180": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4193960,
+              4193960
+            ],
+            "positive_supervised_voxels": [
+              12450,
+              12317
+            ]
+          },
+          "079": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194142,
+              4194142
+            ],
+            "positive_supervised_voxels": [
+              26348,
+              18653
+            ]
+          },
+          "037": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194127,
+              4194127
+            ],
+            "positive_supervised_voxels": [
+              14840,
+              9219
+            ]
+          },
+          "015": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194090,
+              4194090
+            ],
+            "positive_supervised_voxels": [
+              12801,
+              20313
+            ]
+          },
+          "036": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194095,
+              4194095
+            ],
+            "positive_supervised_voxels": [
+              14770,
+              23908
+            ]
+          },
+          "151": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194201,
+              4194201
+            ],
+            "positive_supervised_voxels": [
+              17985,
+              13301
+            ]
+          },
+          "108": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194084,
+              4194084
+            ],
+            "positive_supervised_voxels": [
+              14493,
+              19846
+            ]
+          },
+          "154": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194109,
+              4194109
+            ],
+            "positive_supervised_voxels": [
+              22603,
+              15633
+            ]
+          },
+          "016": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194180,
+              4194180
+            ],
+            "positive_supervised_voxels": [
+              20337,
+              25407
+            ]
+          },
+          "195": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4193886,
+              4193886
+            ],
+            "positive_supervised_voxels": [
+              23043,
+              16557
+            ]
+          },
+          "084": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4193959,
+              4193959
+            ],
+            "positive_supervised_voxels": [
+              19121,
+              25939
+            ]
+          },
+          "196": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194042,
+              4194042
+            ],
+            "positive_supervised_voxels": [
+              13129,
+              8939
+            ]
+          },
+          "052": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194102,
+              4194102
+            ],
+            "positive_supervised_voxels": [
+              22532,
+              24959
+            ]
+          },
+          "176": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4193895,
+              4193895
+            ],
+            "positive_supervised_voxels": [
+              13387,
+              9341
+            ]
+          },
+          "018": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194056,
+              4194056
+            ],
+            "positive_supervised_voxels": [
+              18680,
+              31862
+            ]
+          },
+          "068": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194203,
+              4194203
+            ],
+            "positive_supervised_voxels": [
+              20939,
+              26294
+            ]
+          },
+          "007": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194226,
+              4194226
+            ],
+            "positive_supervised_voxels": [
+              12791,
+              23875
+            ]
+          },
+          "193": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4193962,
+              4193962
+            ],
+            "positive_supervised_voxels": [
+              29870,
+              23456
+            ]
+          },
+          "089": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194133,
+              4194133
+            ],
+            "positive_supervised_voxels": [
+              12905,
+              18991
+            ]
+          },
+          "162": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194242,
+              4194242
+            ],
+            "positive_supervised_voxels": [
+              11545,
+              14613
+            ]
+          },
+          "011": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194240,
+              4194240
+            ],
+            "positive_supervised_voxels": [
+              13854,
+              17555
+            ]
+          },
+          "069": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194168,
+              4194168
+            ],
+            "positive_supervised_voxels": [
+              15217,
+              9908
+            ]
+          },
+          "092": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194285,
+              4194285
+            ],
+            "positive_supervised_voxels": [
+              8561,
+              15905
+            ]
+          },
+          "043": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194184,
+              4194184
+            ],
+            "positive_supervised_voxels": [
+              13659,
+              22524
+            ]
+          },
+          "054": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194106,
+              4194106
+            ],
+            "positive_supervised_voxels": [
+              6903,
+              23095
+            ]
+          },
+          "063": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194245,
+              4194245
+            ],
+            "positive_supervised_voxels": [
+              13209,
+              19632
+            ]
+          },
+          "074": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194222,
+              4194222
+            ],
+            "positive_supervised_voxels": [
+              14847,
+              32982
+            ]
+          },
+          "013": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194155,
+              4194155
+            ],
+            "positive_supervised_voxels": [
+              8234,
+              13520
+            ]
+          },
+          "002": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194120,
+              4194120
+            ],
+            "positive_supervised_voxels": [
+              22312,
+              22751
+            ]
+          },
+          "057": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194010,
+              4194010
+            ],
+            "positive_supervised_voxels": [
+              26767,
+              37633
+            ]
+          },
+          "029": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194197,
+              4194197
+            ],
+            "positive_supervised_voxels": [
+              29623,
+              24416
+            ]
+          },
+          "085": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4193736,
+              4193736
+            ],
+            "positive_supervised_voxels": [
+              38077,
+              23692
+            ]
+          },
+          "105": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194212,
+              4194212
+            ],
+            "positive_supervised_voxels": [
+              30292,
+              23740
+            ]
+          },
+          "009": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194065,
+              4194065
+            ],
+            "positive_supervised_voxels": [
+              20406,
+              31128
+            ]
+          },
+          "081": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194070,
+              4194070
+            ],
+            "positive_supervised_voxels": [
+              15384,
+              14510
+            ]
+          },
+          "038": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194067,
+              4194067
+            ],
+            "positive_supervised_voxels": [
+              37513,
+              20214
+            ]
+          },
+          "059": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194128,
+              4194128
+            ],
+            "positive_supervised_voxels": [
+              5225,
+              13750
+            ]
+          },
+          "019": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4193962,
+              4193962
+            ],
+            "positive_supervised_voxels": [
+              21851,
+              19523
+            ]
+          },
+          "119": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194279,
+              4194279
+            ],
+            "positive_supervised_voxels": [
+              8364,
+              13450
+            ]
+          },
+          "082": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194132,
+              4194132
+            ],
+            "positive_supervised_voxels": [
+              24783,
+              15670
+            ]
+          },
+          "179": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4193966,
+              4193966
+            ],
+            "positive_supervised_voxels": [
+              9606,
+              16725
+            ]
+          }
+        }
+      },
+      "parse": {
+        "samples": 1520,
+        "positive_slices": 1140,
+        "negative_slices": 380,
+        "supervised_voxels": [
+          398458880,
+          0
+        ],
+        "positive_supervised_voxels": [
+          1528713,
+          0
+        ],
+        "cases": {
+          "PA000138": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              12849,
+              0
+            ]
+          },
+          "PA000242": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              21413,
+              0
+            ]
+          },
+          "PA000301": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              9592,
+              0
+            ]
+          },
+          "PA000310": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              19062,
+              0
+            ]
+          },
+          "PA000099": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              17191,
+              0
+            ]
+          },
+          "PA000078": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              25959,
+              0
+            ]
+          },
+          "PA000090": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              36827,
+              0
+            ]
+          },
+          "PA000016": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              8014,
+              0
+            ]
+          },
+          "PA000298": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              25728,
+              0
+            ]
+          },
+          "PA000273": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              40857,
+              0
+            ]
+          },
+          "PA000116": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              9942,
+              0
+            ]
+          },
+          "PA000195": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              18160,
+              0
+            ]
+          },
+          "PA000209": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              27156,
+              0
+            ]
+          },
+          "PA000132": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              26853,
+              0
+            ]
+          },
+          "PA000263": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              24026,
+              0
+            ]
+          },
+          "PA000162": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              22022,
+              0
+            ]
+          },
+          "PA000005": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              35675,
+              0
+            ]
+          },
+          "PA000202": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              19523,
+              0
+            ]
+          },
+          "PA000305": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              13139,
+              0
+            ]
+          },
+          "PA000124": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              32647,
+              0
+            ]
+          },
+          "PA000056": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              18983,
+              0
+            ]
+          },
+          "PA000234": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              21660,
+              0
+            ]
+          },
+          "PA000261": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              28837,
+              0
+            ]
+          },
+          "PA000148": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              23161,
+              0
+            ]
+          },
+          "PA000300": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              29002,
+              0
+            ]
+          },
+          "PA000047": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              9043,
+              0
+            ]
+          },
+          "PA000309": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              39908,
+              0
+            ]
+          },
+          "PA000292": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              16539,
+              0
+            ]
+          },
+          "PA000036": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              38353,
+              0
+            ]
+          },
+          "PA000096": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              33536,
+              0
+            ]
+          },
+          "PA000296": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              10628,
+              0
+            ]
+          },
+          "PA000027": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              22099,
+              0
+            ]
+          },
+          "PA000024": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              28581,
+              0
+            ]
+          },
+          "PA000236": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              8740,
+              0
+            ]
+          },
+          "PA000092": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              17041,
+              0
+            ]
+          },
+          "PA000238": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              7706,
+              0
+            ]
+          },
+          "PA000046": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              38007,
+              0
+            ]
+          },
+          "PA000174": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              25451,
+              0
+            ]
+          },
+          "PA000150": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              35855,
+              0
+            ]
+          },
+          "PA000074": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              24935,
+              0
+            ]
+          },
+          "PA000235": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              34439,
+              0
+            ]
+          },
+          "PA000073": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              11330,
+              0
+            ]
+          },
+          "PA000233": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              33089,
+              0
+            ]
+          },
+          "PA000198": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              20038,
+              0
+            ]
+          },
+          "PA000121": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              20448,
+              0
+            ]
+          },
+          "PA000038": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              20704,
+              0
+            ]
+          },
+          "PA000317": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              15828,
+              0
+            ]
+          },
+          "PA000120": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              31628,
+              0
+            ]
+          },
+          "PA000042": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              17558,
+              0
+            ]
+          },
+          "PA000314": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              19619,
+              0
+            ]
+          },
+          "PA000133": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              29058,
+              0
+            ]
+          },
+          "PA000303": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              26425,
+              0
+            ]
+          },
+          "PA000315": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              7836,
+              0
+            ]
+          },
+          "PA000070": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              11247,
+              0
+            ]
+          },
+          "PA000082": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              16020,
+              0
+            ]
+          },
+          "PA000239": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              47952,
+              0
+            ]
+          },
+          "PA000063": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              11290,
+              0
+            ]
+          },
+          "PA000203": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              20067,
+              0
+            ]
+          },
+          "PA000100": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              20978,
+              0
+            ]
+          },
+          "PA000137": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              5946,
+              0
+            ]
+          },
+          "PA000157": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              18321,
+              0
+            ]
+          },
+          "PA000125": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              32109,
+              0
+            ]
+          },
+          "PA000282": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              16663,
+              0
+            ]
+          },
+          "PA000237": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              17513,
+              0
+            ]
+          },
+          "PA000229": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              18815,
+              0
+            ]
+          },
+          "PA000302": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              29380,
+              0
+            ]
+          },
+          "PA000080": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              12360,
+              0
+            ]
+          },
+          "PA000284": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              7974,
+              0
+            ]
+          },
+          "PA000207": {
+            "visits": 1,
+            "samples": 16,
+            "positive_slices": 12,
+            "negative_slices": 4,
+            "supervised_voxels": [
+              4194304,
+              0
+            ],
+            "positive_supervised_voxels": [
+              8373,
+              0
+            ]
+          },
+          "PA000255": {
+            "visits": 2,
+            "samples": 32,
+            "positive_slices": 24,
+            "negative_slices": 8,
+            "supervised_voxels": [
+              8388608,
+              0
+            ],
+            "positive_supervised_voxels": [
+              21005,
+              0
+            ]
+          }
+        }
+      }
+    }
+  },
+  "validation": {
+    "hipas": {
+      "dataset": "hipas",
+      "primary_name": "vessel_union",
+      "primary": {
+        "dice": 0.8572697548395346,
+        "precision": 0.8661569945980157,
+        "recall": 0.8485630385961483,
+        "tp": 15005147,
+        "fp": 2318672,
+        "fn": 2677861,
+        "positive_layers": 4819,
+        "hit_positive_layers": 4759,
+        "positive_layer_recall": 0.9875492840838348
+      },
+      "classes": [
+        {
+          "name": "artery",
+          "dice": 0.7781108806592206,
+          "precision": 0.7847247846250213,
+          "recall": 0.7716075329604128,
+          "tp": 6237629,
+          "fp": 1711182,
+          "fn": 1846311,
+          "positive_layers": 4740,
+          "hit_positive_layers": 4613,
+          "positive_layer_recall": 0.9732067510548523
+        },
+        {
+          "name": "vein",
+          "dice": 0.7621749984872682,
+          "precision": 0.7122748586696056,
+          "recall": 0.8195936135213101,
+          "tp": 7796926,
+          "fp": 3149587,
+          "fn": 1716235,
+          "positive_layers": 4778,
+          "hit_positive_layers": 4718,
+          "positive_layer_recall": 0.9874424445374633
+        }
+      ],
+      "macro": {
+        "primary": {
+          "dice": 0.8533811435989271,
+          "recall": 0.8470754988245417,
+          "precision": 0.8620776765364278,
+          "positive_layer_recall": 0.9879878065180125
+        },
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.7769276725109985,
+            "recall": 0.7738734673691212,
+            "precision": 0.7819686094830655,
+            "positive_layer_recall": 0.9736975235127655
+          },
+          {
+            "name": "vein",
+            "dice": 0.757420971927095,
+            "recall": 0.816674123446575,
+            "precision": 0.7085438040560683,
+            "positive_layer_recall": 0.9873067506737921
+          }
+        ]
+      },
+      "case_count": 20,
+      "slices": 6340,
+      "loss": 0.26987598706565635,
+      "eval_mode": true,
+      "grad_enabled": false,
+      "cases": [
+        {
+          "case": "004",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 96556,
+          "shape_h_w_z": [
+            512,
+            512,
+            314
+          ],
+          "spacing_xyz_mm": null,
+          "affine": null,
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.7993047300248047,
+              "precision": 0.8044892349977095,
+              "recall": 0.7941866199230366,
+              "tp": 368802,
+              "fp": 89628,
+              "fn": 95575,
+              "positive_layers": 224,
+              "hit_positive_layers": 222,
+              "positive_layer_recall": 0.9910714285714286
+            },
+            {
+              "name": "vein",
+              "dice": 0.7721563185866391,
+              "precision": 0.7344075494158088,
+              "recall": 0.8139959558102959,
+              "tp": 510837,
+              "fp": 184740,
+              "fn": 116730,
+              "positive_layers": 226,
+              "hit_positive_layers": 224,
+              "positive_layer_recall": 0.9911504424778761
+            }
+          ],
+          "union": {
+            "dice": 0.8690802251345253,
+            "precision": 0.8827183029942621,
+            "recall": 0.8558571544564879,
+            "tp": 938123,
+            "fp": 124643,
+            "fn": 157998,
+            "positive_layers": 226,
+            "hit_positive_layers": 224,
+            "positive_layer_recall": 0.9911504424778761
+          },
+          "loss": 0.29033545210103323,
+          "spacing_z_y_x_mm": [
+            1.0,
+            0.5527344,
+            0.5527344
+          ],
+          "primary": {
+            "dice": 0.8690802251345253,
+            "precision": 0.8827183029942621,
+            "recall": 0.8558571544564879,
+            "tp": 938123,
+            "fp": 124643,
+            "fn": 157998,
+            "positive_layers": 226,
+            "hit_positive_layers": 224,
+            "positive_layer_recall": 0.9911504424778761
+          }
+        },
+        {
+          "case": "027",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 76802,
+          "shape_h_w_z": [
+            512,
+            512,
+            300
+          ],
+          "spacing_xyz_mm": null,
+          "affine": null,
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.7838520975030879,
+              "precision": 0.7661576271235103,
+              "recall": 0.8023832003319522,
+              "tp": 266855,
+              "fp": 81448,
+              "fn": 65723,
+              "positive_layers": 212,
+              "hit_positive_layers": 209,
+              "positive_layer_recall": 0.9858490566037735
+            },
+            {
+              "name": "vein",
+              "dice": 0.8038029104571888,
+              "precision": 0.7639819274425163,
+              "recall": 0.8480033361923126,
+              "tp": 394492,
+              "fp": 121871,
+              "fn": 70709,
+              "positive_layers": 226,
+              "hit_positive_layers": 225,
+              "positive_layer_recall": 0.995575221238938
+            }
+          ],
+          "union": {
+            "dice": 0.882932586186138,
+            "precision": 0.8876416252896809,
+            "recall": 0.8782732473857685,
+            "tp": 704001,
+            "fp": 89113,
+            "fn": 97573,
+            "positive_layers": 226,
+            "hit_positive_layers": 225,
+            "positive_layer_recall": 0.995575221238938
+          },
+          "loss": 0.25104888280232746,
+          "spacing_z_y_x_mm": [
+            1.0,
+            0.64453125,
+            0.64453125
+          ],
+          "primary": {
+            "dice": 0.882932586186138,
+            "precision": 0.8876416252896809,
+            "recall": 0.8782732473857685,
+            "tp": 704001,
+            "fp": 89113,
+            "fn": 97573,
+            "positive_layers": 226,
+            "hit_positive_layers": 225,
+            "positive_layer_recall": 0.995575221238938
+          }
+        },
+        {
+          "case": "030",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 77405,
+          "shape_h_w_z": [
+            512,
+            512,
+            324
+          ],
+          "spacing_xyz_mm": null,
+          "affine": null,
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.8522046351035321,
+              "precision": 0.8375726905491189,
+              "recall": 0.8673568936720111,
+              "tp": 339624,
+              "fp": 65862,
+              "fn": 51938,
+              "positive_layers": 225,
+              "hit_positive_layers": 224,
+              "positive_layer_recall": 0.9955555555555555
+            },
+            {
+              "name": "vein",
+              "dice": 0.803479142852543,
+              "precision": 0.7511924002476054,
+              "recall": 0.8635892688350201,
+              "tp": 399252,
+              "fp": 132239,
+              "fn": 63065,
+              "positive_layers": 222,
+              "hit_positive_layers": 221,
+              "positive_layer_recall": 0.9954954954954955
+            }
+          ],
+          "union": {
+            "dice": 0.9046407867885476,
+            "precision": 0.9010214159656382,
+            "recall": 0.9082893526533553,
+            "tp": 779097,
+            "fp": 85585,
+            "fn": 78666,
+            "positive_layers": 225,
+            "hit_positive_layers": 225,
+            "positive_layer_recall": 1.0
+          },
+          "loss": 0.2406204170834871,
+          "spacing_z_y_x_mm": [
+            1.0,
+            0.7402344,
+            0.7402344
+          ],
+          "primary": {
+            "dice": 0.9046407867885476,
+            "precision": 0.9010214159656382,
+            "recall": 0.9082893526533553,
+            "tp": 779097,
+            "fp": 85585,
+            "fn": 78666,
+            "positive_layers": 225,
+            "hit_positive_layers": 225,
+            "positive_layer_recall": 1.0
+          }
+        },
+        {
+          "case": "034",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 84299,
+          "shape_h_w_z": [
+            512,
+            512,
+            270
+          ],
+          "spacing_xyz_mm": null,
+          "affine": null,
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.7776413339541661,
+              "precision": 0.7923997669484755,
+              "recall": 0.7634226002268976,
+              "tp": 322330,
+              "fp": 84447,
+              "fn": 99887,
+              "positive_layers": 228,
+              "hit_positive_layers": 222,
+              "positive_layer_recall": 0.9736842105263158
+            },
+            {
+              "name": "vein",
+              "dice": 0.7971609060724192,
+              "precision": 0.751790089260057,
+              "recall": 0.848359737771998,
+              "tp": 507538,
+              "fp": 167568,
+              "fn": 90720,
+              "positive_layers": 226,
+              "hit_positive_layers": 223,
+              "positive_layer_recall": 0.9867256637168141
+            }
+          ],
+          "union": {
+            "dice": 0.864973618291318,
+            "precision": 0.874401986676338,
+            "recall": 0.8557464064515437,
+            "tp": 876393,
+            "fp": 125884,
+            "fn": 147734,
+            "positive_layers": 228,
+            "hit_positive_layers": 224,
+            "positive_layer_recall": 0.9824561403508771
+          },
+          "loss": 0.24642677042219374,
+          "spacing_z_y_x_mm": [
+            1.0,
+            0.58203125,
+            0.58203125
+          ],
+          "primary": {
+            "dice": 0.864973618291318,
+            "precision": 0.874401986676338,
+            "recall": 0.8557464064515437,
+            "tp": 876393,
+            "fp": 125884,
+            "fn": 147734,
+            "positive_layers": 228,
+            "hit_positive_layers": 224,
+            "positive_layer_recall": 0.9824561403508771
+          }
+        },
+        {
+          "case": "041",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 49846,
+          "shape_h_w_z": [
+            512,
+            512,
+            250
+          ],
+          "spacing_xyz_mm": null,
+          "affine": null,
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.8075239498894621,
+              "precision": 0.789167233798922,
+              "recall": 0.8267549898712498,
+              "tp": 219162,
+              "fp": 58551,
+              "fn": 45925,
+              "positive_layers": 190,
+              "hit_positive_layers": 186,
+              "positive_layer_recall": 0.9789473684210527
+            },
+            {
+              "name": "vein",
+              "dice": 0.7772807216611823,
+              "precision": 0.716099812355281,
+              "recall": 0.8498923703947246,
+              "tp": 274007,
+              "fp": 108631,
+              "fn": 48395,
+              "positive_layers": 194,
+              "hit_positive_layers": 190,
+              "positive_layer_recall": 0.979381443298969
+            }
+          ],
+          "union": {
+            "dice": 0.8704235528762672,
+            "precision": 0.8537802555987759,
+            "recall": 0.8877286279943221,
+            "tp": 522826,
+            "fp": 89540,
+            "fn": 66122,
+            "positive_layers": 194,
+            "hit_positive_layers": 193,
+            "positive_layer_recall": 0.9948453608247423
+          },
+          "loss": 0.2443475036621094,
+          "spacing_z_y_x_mm": [
+            1.0,
+            0.734375,
+            0.734375
+          ],
+          "primary": {
+            "dice": 0.8704235528762672,
+            "precision": 0.8537802555987759,
+            "recall": 0.8877286279943221,
+            "tp": 522826,
+            "fp": 89540,
+            "fn": 66122,
+            "positive_layers": 194,
+            "hit_positive_layers": 193,
+            "positive_layer_recall": 0.9948453608247423
+          }
+        },
+        {
+          "case": "047",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 73500,
+          "shape_h_w_z": [
+            512,
+            512,
+            324
+          ],
+          "spacing_xyz_mm": null,
+          "affine": null,
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.8239791080051938,
+              "precision": 0.8534912666815039,
+              "recall": 0.796439688017599,
+              "tp": 310629,
+              "fp": 53322,
+              "fn": 79393,
+              "positive_layers": 278,
+              "hit_positive_layers": 273,
+              "positive_layer_recall": 0.9820143884892086
+            },
+            {
+              "name": "vein",
+              "dice": 0.8104383338255111,
+              "precision": 0.7777831514558261,
+              "recall": 0.845955738470667,
+              "tp": 402054,
+              "fp": 114869,
+              "fn": 73212,
+              "positive_layers": 281,
+              "hit_positive_layers": 279,
+              "positive_layer_recall": 0.9928825622775801
+            }
+          ],
+          "union": {
+            "dice": 0.896840187975631,
+            "precision": 0.928297785559993,
+            "recall": 0.867444741775172,
+            "tp": 753348,
+            "fp": 58189,
+            "fn": 115120,
+            "positive_layers": 283,
+            "hit_positive_layers": 281,
+            "positive_layer_recall": 0.9929328621908127
+          },
+          "loss": 0.21178859729825714,
+          "spacing_z_y_x_mm": [
+            1.0,
+            0.7597656,
+            0.7597656
+          ],
+          "primary": {
+            "dice": 0.896840187975631,
+            "precision": 0.928297785559993,
+            "recall": 0.867444741775172,
+            "tp": 753348,
+            "fp": 58189,
+            "fn": 115120,
+            "positive_layers": 283,
+            "hit_positive_layers": 281,
+            "positive_layer_recall": 0.9929328621908127
+          }
+        },
+        {
+          "case": "050",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 69474,
+          "shape_h_w_z": [
+            512,
+            512,
+            302
+          ],
+          "spacing_xyz_mm": null,
+          "affine": null,
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.8350178363227297,
+              "precision": 0.8131114797844614,
+              "recall": 0.8581372498614706,
+              "tp": 300439,
+              "fp": 69054,
+              "fn": 49667,
+              "positive_layers": 225,
+              "hit_positive_layers": 221,
+              "positive_layer_recall": 0.9822222222222222
+            },
+            {
+              "name": "vein",
+              "dice": 0.7861022571509889,
+              "precision": 0.7347363099703206,
+              "recall": 0.8451901093876403,
+              "tp": 360444,
+              "fp": 130132,
+              "fn": 66021,
+              "positive_layers": 230,
+              "hit_positive_layers": 229,
+              "positive_layer_recall": 0.9956521739130435
+            }
+          ],
+          "union": {
+            "dice": 0.8863714226983076,
+            "precision": 0.8777586083407575,
+            "recall": 0.8951549347032975,
+            "tp": 698544,
+            "fp": 97283,
+            "fn": 81817,
+            "positive_layers": 230,
+            "hit_positive_layers": 229,
+            "positive_layer_recall": 0.9956521739130435
+          },
+          "loss": 0.24006125725657734,
+          "spacing_z_y_x_mm": [
+            1.0,
+            0.65234375,
+            0.65234375
+          ],
+          "primary": {
+            "dice": 0.8863714226983076,
+            "precision": 0.8777586083407575,
+            "recall": 0.8951549347032975,
+            "tp": 698544,
+            "fp": 97283,
+            "fn": 81817,
+            "positive_layers": 230,
+            "hit_positive_layers": 229,
+            "positive_layer_recall": 0.9956521739130435
+          }
+        },
+        {
+          "case": "051",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 90553,
+          "shape_h_w_z": [
+            512,
+            512,
+            290
+          ],
+          "spacing_xyz_mm": null,
+          "affine": null,
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.8309433183174939,
+              "precision": 0.8166813456291231,
+              "recall": 0.8457122674618751,
+              "tp": 378326,
+              "fp": 84922,
+              "fn": 69020,
+              "positive_layers": 226,
+              "hit_positive_layers": 224,
+              "positive_layer_recall": 0.9911504424778761
+            },
+            {
+              "name": "vein",
+              "dice": 0.7423248393529803,
+              "precision": 0.7172704383125225,
+              "recall": 0.7691929025384813,
+              "tp": 418764,
+              "fp": 165066,
+              "fn": 125656,
+              "positive_layers": 232,
+              "hit_positive_layers": 232,
+              "positive_layer_recall": 1.0
+            }
+          ],
+          "union": {
+            "dice": 0.859617318785863,
+            "precision": 0.8743314842914356,
+            "recall": 0.8453902073850483,
+            "tp": 843576,
+            "fp": 121248,
+            "fn": 154278,
+            "positive_layers": 233,
+            "hit_positive_layers": 233,
+            "positive_layer_recall": 1.0
+          },
+          "loss": 0.2676630057137588,
+          "spacing_z_y_x_mm": [
+            1.0,
+            0.6484375,
+            0.6484375
+          ],
+          "primary": {
+            "dice": 0.859617318785863,
+            "precision": 0.8743314842914356,
+            "recall": 0.8453902073850483,
+            "tp": 843576,
+            "fp": 121248,
+            "fn": 154278,
+            "positive_layers": 233,
+            "hit_positive_layers": 233,
+            "positive_layer_recall": 1.0
+          }
+        },
+        {
+          "case": "058",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 93540,
+          "shape_h_w_z": [
+            512,
+            512,
+            312
+          ],
+          "spacing_xyz_mm": null,
+          "affine": null,
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.8282708152852527,
+              "precision": 0.8422562591444387,
+              "recall": 0.8147422345740596,
+              "tp": 411598,
+              "fp": 77087,
+              "fn": 93590,
+              "positive_layers": 246,
+              "hit_positive_layers": 243,
+              "positive_layer_recall": 0.9878048780487805
+            },
+            {
+              "name": "vein",
+              "dice": 0.7960759248005479,
+              "precision": 0.7450586010917924,
+              "recall": 0.854593572778828,
+              "tp": 531194,
+              "fp": 181762,
+              "fn": 90381,
+              "positive_layers": 249,
+              "hit_positive_layers": 247,
+              "positive_layer_recall": 0.9919678714859438
+            }
+          ],
+          "union": {
+            "dice": 0.900629551907172,
+            "precision": 0.9076297789973369,
+            "recall": 0.8937364789208255,
+            "tp": 1010496,
+            "fp": 102839,
+            "fn": 120146,
+            "positive_layers": 252,
+            "hit_positive_layers": 252,
+            "positive_layer_recall": 1.0
+          },
+          "loss": 0.23075773700689658,
+          "spacing_z_y_x_mm": [
+            1.0,
+            0.609375,
+            0.609375
+          ],
+          "primary": {
+            "dice": 0.900629551907172,
+            "precision": 0.9076297789973369,
+            "recall": 0.8937364789208255,
+            "tp": 1010496,
+            "fp": 102839,
+            "fn": 120146,
+            "positive_layers": 252,
+            "hit_positive_layers": 252,
+            "positive_layer_recall": 1.0
+          }
+        },
+        {
+          "case": "062",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 90073,
+          "shape_h_w_z": [
+            512,
+            512,
+            268
+          ],
+          "spacing_xyz_mm": null,
+          "affine": null,
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.8169870394641037,
+              "precision": 0.7935991512686765,
+              "recall": 0.841795299810567,
+              "tp": 314174,
+              "fp": 81711,
+              "fn": 59045,
+              "positive_layers": 198,
+              "hit_positive_layers": 193,
+              "positive_layer_recall": 0.9747474747474747
+            },
+            {
+              "name": "vein",
+              "dice": 0.7792675674933902,
+              "precision": 0.7035828627879853,
+              "recall": 0.873197825088571,
+              "tp": 425897,
+              "fp": 179429,
+              "fn": 61847,
+              "positive_layers": 206,
+              "hit_positive_layers": 204,
+              "positive_layer_recall": 0.9902912621359223
+            }
+          ],
+          "union": {
+            "dice": 0.8911101529921381,
+            "precision": 0.8659748932061081,
+            "recall": 0.9177481518484985,
+            "tp": 793653,
+            "fp": 122832,
+            "fn": 71130,
+            "positive_layers": 206,
+            "hit_positive_layers": 204,
+            "positive_layer_recall": 0.9902912621359223
+          },
+          "loss": 0.24236793260076153,
+          "spacing_z_y_x_mm": [
+            0.99999976,
+            0.6640625,
+            0.6640625
+          ],
+          "primary": {
+            "dice": 0.8911101529921381,
+            "precision": 0.8659748932061081,
+            "recall": 0.9177481518484985,
+            "tp": 793653,
+            "fp": 122832,
+            "fn": 71130,
+            "positive_layers": 206,
+            "hit_positive_layers": 204,
+            "positive_layer_recall": 0.9902912621359223
+          }
+        },
+        {
+          "case": "065",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 95123,
+          "shape_h_w_z": [
+            512,
+            512,
+            288
+          ],
+          "spacing_xyz_mm": null,
+          "affine": null,
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.7912002271324414,
+              "precision": 0.8358319510589881,
+              "recall": 0.7510933708120188,
+              "tp": 344163,
+              "fp": 67598,
+              "fn": 114053,
+              "positive_layers": 245,
+              "hit_positive_layers": 236,
+              "positive_layer_recall": 0.963265306122449
+            },
+            {
+              "name": "vein",
+              "dice": 0.7510664303240184,
+              "precision": 0.6584028646780768,
+              "recall": 0.8740850956171281,
+              "tp": 494053,
+              "fp": 256328,
+              "fn": 71170,
+              "positive_layers": 240,
+              "hit_positive_layers": 239,
+              "positive_layer_recall": 0.9958333333333333
+            }
+          ],
+          "union": {
+            "dice": 0.8786431684308132,
+            "precision": 0.8602161773830128,
+            "recall": 0.8978769030305332,
+            "tp": 921984,
+            "fp": 149821,
+            "fn": 104865,
+            "positive_layers": 245,
+            "hit_positive_layers": 242,
+            "positive_layer_recall": 0.9877551020408163
+          },
+          "loss": 0.23894167194763818,
+          "spacing_z_y_x_mm": [
+            1.0,
+            0.6328125,
+            0.6328125
+          ],
+          "primary": {
+            "dice": 0.8786431684308132,
+            "precision": 0.8602161773830128,
+            "recall": 0.8978769030305332,
+            "tp": 921984,
+            "fp": 149821,
+            "fn": 104865,
+            "positive_layers": 245,
+            "hit_positive_layers": 242,
+            "positive_layer_recall": 0.9877551020408163
+          }
+        },
+        {
+          "case": "071",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 74123,
+          "shape_h_w_z": [
+            512,
+            512,
+            324
+          ],
+          "spacing_xyz_mm": null,
+          "affine": null,
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.7983583078600286,
+              "precision": 0.7990358283888636,
+              "recall": 0.7976819353277043,
+              "tp": 336132,
+              "fp": 84540,
+              "fn": 85254,
+              "positive_layers": 223,
+              "hit_positive_layers": 220,
+              "positive_layer_recall": 0.9865470852017937
+            },
+            {
+              "name": "vein",
+              "dice": 0.7321797971622435,
+              "precision": 0.6711495332910279,
+              "recall": 0.8054197822957695,
+              "tp": 356420,
+              "fp": 174639,
+              "fn": 86107,
+              "positive_layers": 223,
+              "hit_positive_layers": 221,
+              "positive_layer_recall": 0.9910313901345291
+            }
+          ],
+          "union": {
+            "dice": 0.8688634942839282,
+            "precision": 0.861545679443259,
+            "recall": 0.8763066864770845,
+            "tp": 760246,
+            "fp": 122175,
+            "fn": 107311,
+            "positive_layers": 230,
+            "hit_positive_layers": 229,
+            "positive_layer_recall": 0.9956521739130435
+          },
+          "loss": 0.2562713302028032,
+          "spacing_z_y_x_mm": [
+            1.0,
+            0.64453125,
+            0.64453125
+          ],
+          "primary": {
+            "dice": 0.8688634942839282,
+            "precision": 0.861545679443259,
+            "recall": 0.8763066864770845,
+            "tp": 760246,
+            "fp": 122175,
+            "fn": 107311,
+            "positive_layers": 230,
+            "hit_positive_layers": 229,
+            "positive_layer_recall": 0.9956521739130435
+          }
+        },
+        {
+          "case": "090",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 68703,
+          "shape_h_w_z": [
+            512,
+            512,
+            346
+          ],
+          "spacing_xyz_mm": null,
+          "affine": null,
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.7878905369932777,
+              "precision": 0.8296332259345898,
+              "recall": 0.7501471600602608,
+              "tp": 300752,
+              "fp": 61760,
+              "fn": 100172,
+              "positive_layers": 220,
+              "hit_positive_layers": 217,
+              "positive_layer_recall": 0.9863636363636363
+            },
+            {
+              "name": "vein",
+              "dice": 0.812621487274512,
+              "precision": 0.762579461780228,
+              "recall": 0.8696924888984535,
+              "tp": 375835,
+              "fp": 117012,
+              "fn": 56312,
+              "positive_layers": 217,
+              "hit_positive_layers": 215,
+              "positive_layer_recall": 0.9907834101382489
+            }
+          ],
+          "union": {
+            "dice": 0.886614668658918,
+            "precision": 0.9124085926402741,
+            "recall": 0.8622390451032563,
+            "tp": 720061,
+            "fp": 69126,
+            "fn": 115045,
+            "positive_layers": 221,
+            "hit_positive_layers": 219,
+            "positive_layer_recall": 0.9909502262443439
+          },
+          "loss": 0.29111130440855304,
+          "spacing_z_y_x_mm": [
+            1.0,
+            0.7109375,
+            0.7109375
+          ],
+          "primary": {
+            "dice": 0.886614668658918,
+            "precision": 0.9124085926402741,
+            "recall": 0.8622390451032563,
+            "tp": 720061,
+            "fp": 69126,
+            "fn": 115045,
+            "positive_layers": 221,
+            "hit_positive_layers": 219,
+            "positive_layer_recall": 0.9909502262443439
+          }
+        },
+        {
+          "case": "094",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 81083,
+          "shape_h_w_z": [
+            512,
+            512,
+            354
+          ],
+          "spacing_xyz_mm": null,
+          "affine": null,
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.8372263885289568,
+              "precision": 0.8270817387632294,
+              "recall": 0.8476229889534443,
+              "tp": 313373,
+              "fp": 65517,
+              "fn": 56335,
+              "positive_layers": 233,
+              "hit_positive_layers": 230,
+              "positive_layer_recall": 0.9871244635193133
+            },
+            {
+              "name": "vein",
+              "dice": 0.7854304028425153,
+              "precision": 0.7401683840716466,
+              "recall": 0.8365886126558354,
+              "tp": 368273,
+              "fp": 129280,
+              "fn": 71935,
+              "positive_layers": 237,
+              "hit_positive_layers": 236,
+              "positive_layer_recall": 0.9957805907172996
+            }
+          ],
+          "union": {
+            "dice": 0.90152835877714,
+            "precision": 0.9086797981320613,
+            "recall": 0.8944886061233349,
+            "tp": 729400,
+            "fp": 73303,
+            "fn": 86038,
+            "positive_layers": 238,
+            "hit_positive_layers": 238,
+            "positive_layer_recall": 1.0
+          },
+          "loss": 0.25147119840070353,
+          "spacing_z_y_x_mm": [
+            1.0,
+            0.7753906,
+            0.7753906
+          ],
+          "primary": {
+            "dice": 0.90152835877714,
+            "precision": 0.9086797981320613,
+            "recall": 0.8944886061233349,
+            "tp": 729400,
+            "fp": 73303,
+            "fn": 86038,
+            "positive_layers": 238,
+            "hit_positive_layers": 238,
+            "positive_layer_recall": 1.0
+          }
+        },
+        {
+          "case": "096",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 100884,
+          "shape_h_w_z": [
+            512,
+            512,
+            340
+          ],
+          "spacing_xyz_mm": null,
+          "affine": null,
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.8114700368327317,
+              "precision": 0.8225616775550949,
+              "recall": 0.8006735415652397,
+              "tp": 397994,
+              "fp": 85853,
+              "fn": 99080,
+              "positive_layers": 256,
+              "hit_positive_layers": 252,
+              "positive_layer_recall": 0.984375
+            },
+            {
+              "name": "vein",
+              "dice": 0.7814861033669944,
+              "precision": 0.7446173652602034,
+              "recall": 0.822196046662849,
+              "tp": 529796,
+              "fp": 181705,
+              "fn": 114571,
+              "positive_layers": 259,
+              "hit_positive_layers": 258,
+              "positive_layer_recall": 0.9961389961389961
+            }
+          ],
+          "union": {
+            "dice": 0.8802032802032802,
+            "precision": 0.89825635427443,
+            "recall": 0.8628615673237464,
+            "tp": 990704,
+            "fp": 112215,
+            "fn": 157457,
+            "positive_layers": 259,
+            "hit_positive_layers": 258,
+            "positive_layer_recall": 0.9961389961389961
+          },
+          "loss": 0.24420561102383276,
+          "spacing_z_y_x_mm": [
+            1.0,
+            0.6796875,
+            0.6796875
+          ],
+          "primary": {
+            "dice": 0.8802032802032802,
+            "precision": 0.89825635427443,
+            "recall": 0.8628615673237464,
+            "tp": 990704,
+            "fp": 112215,
+            "fn": 157457,
+            "positive_layers": 259,
+            "hit_positive_layers": 258,
+            "positive_layer_recall": 0.9961389961389961
+          }
+        },
+        {
+          "case": "100",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 123179,
+          "shape_h_w_z": [
+            512,
+            512,
+            330
+          ],
+          "spacing_xyz_mm": null,
+          "affine": null,
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.6478016065568448,
+              "precision": 0.6629677908565197,
+              "recall": 0.6333137930648227,
+              "tp": 339232,
+              "fp": 172455,
+              "fn": 196414,
+              "positive_layers": 268,
+              "hit_positive_layers": 254,
+              "positive_layer_recall": 0.9477611940298507
+            },
+            {
+              "name": "vein",
+              "dice": 0.6577258324725217,
+              "precision": 0.5921389476939924,
+              "recall": 0.7396516123306158,
+              "tp": 283345,
+              "fp": 195166,
+              "fn": 99734,
+              "positive_layers": 267,
+              "hit_positive_layers": 253,
+              "positive_layer_recall": 0.947565543071161
+            }
+          ],
+          "union": {
+            "dice": 0.7534252372774515,
+            "precision": 0.775205204276087,
+            "recall": 0.7328356737632444,
+            "tp": 676496,
+            "fp": 196171,
+            "fn": 246625,
+            "positive_layers": 271,
+            "hit_positive_layers": 256,
+            "positive_layer_recall": 0.9446494464944649
+          },
+          "loss": 0.33683594754247953,
+          "spacing_z_y_x_mm": [
+            1.0,
+            0.68359375,
+            0.68359375
+          ],
+          "primary": {
+            "dice": 0.7534252372774515,
+            "precision": 0.775205204276087,
+            "recall": 0.7328356737632444,
+            "tp": 676496,
+            "fp": 196171,
+            "fn": 246625,
+            "positive_layers": 271,
+            "hit_positive_layers": 256,
+            "positive_layer_recall": 0.9446494464944649
+          }
+        },
+        {
+          "case": "122",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 75628,
+          "shape_h_w_z": [
+            512,
+            512,
+            306
+          ],
+          "spacing_xyz_mm": null,
+          "affine": null,
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.6551131131353253,
+              "precision": 0.7039605680436286,
+              "recall": 0.6126047879341214,
+              "tp": 206661,
+              "fp": 86908,
+              "fn": 130687,
+              "positive_layers": 235,
+              "hit_positive_layers": 208,
+              "positive_layer_recall": 0.8851063829787233
+            },
+            {
+              "name": "vein",
+              "dice": 0.6122877296352183,
+              "precision": 0.6516138282619085,
+              "recall": 0.5774382634132017,
+              "tp": 204509,
+              "fp": 109341,
+              "fn": 149657,
+              "positive_layers": 234,
+              "hit_positive_layers": 217,
+              "positive_layer_recall": 0.9273504273504274
+            }
+          ],
+          "union": {
+            "dice": 0.7147496547017173,
+            "precision": 0.8194935070473987,
+            "recall": 0.6337470512737781,
+            "tp": 441934,
+            "fp": 97343,
+            "fn": 255401,
+            "positive_layers": 237,
+            "hit_positive_layers": 221,
+            "positive_layer_recall": 0.9324894514767933
+          },
+          "loss": 0.36769963576902753,
+          "spacing_z_y_x_mm": [
+            1.0,
+            0.68359375,
+            0.68359375
+          ],
+          "primary": {
+            "dice": 0.7147496547017173,
+            "precision": 0.8194935070473987,
+            "recall": 0.6337470512737781,
+            "tp": 441934,
+            "fp": 97343,
+            "fn": 255401,
+            "positive_layers": 237,
+            "hit_positive_layers": 221,
+            "positive_layer_recall": 0.9324894514767933
+          }
+        },
+        {
+          "case": "159",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 94127,
+          "shape_h_w_z": [
+            512,
+            512,
+            426
+          ],
+          "spacing_xyz_mm": null,
+          "affine": null,
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.709460570916396,
+              "precision": 0.6972425679683701,
+              "recall": 0.7221144110698616,
+              "tp": 273872,
+              "fp": 118921,
+              "fn": 105392,
+              "positive_layers": 313,
+              "hit_positive_layers": 298,
+              "positive_layer_recall": 0.952076677316294
+            },
+            {
+              "name": "vein",
+              "dice": 0.6858712562683682,
+              "precision": 0.6187432533341587,
+              "recall": 0.7693373454852467,
+              "tp": 319842,
+              "fp": 197080,
+              "fn": 95895,
+              "positive_layers": 312,
+              "hit_positive_layers": 311,
+              "positive_layer_recall": 0.9967948717948718
+            }
+          ],
+          "union": {
+            "dice": 0.7758118364331873,
+            "precision": 0.765297105580142,
+            "recall": 0.7866195247495065,
+            "tp": 629626,
+            "fp": 193095,
+            "fn": 170794,
+            "positive_layers": 316,
+            "hit_positive_layers": 311,
+            "positive_layer_recall": 0.9841772151898734
+          },
+          "loss": 0.3039932108261216,
+          "spacing_z_y_x_mm": [
+            1.0,
+            0.708984375,
+            0.708984375
+          ],
+          "primary": {
+            "dice": 0.7758118364331873,
+            "precision": 0.765297105580142,
+            "recall": 0.7866195247495065,
+            "tp": 629626,
+            "fp": 193095,
+            "fn": 170794,
+            "positive_layers": 316,
+            "hit_positive_layers": 311,
+            "positive_layer_recall": 0.9841772151898734
+          }
+        },
+        {
+          "case": "178",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 105950,
+          "shape_h_w_z": [
+            512,
+            512,
+            426
+          ],
+          "spacing_xyz_mm": null,
+          "affine": null,
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.6898840562587603,
+              "precision": 0.7437272043073004,
+              "recall": 0.6433106984756525,
+              "tp": 321160,
+              "fp": 110665,
+              "fn": 178070,
+              "positive_layers": 319,
+              "hit_positive_layers": 312,
+              "positive_layer_recall": 0.9780564263322884
+            },
+            {
+              "name": "vein",
+              "dice": 0.7372766917136224,
+              "precision": 0.7101047024770256,
+              "recall": 0.7666108763898565,
+              "tp": 423679,
+              "fp": 172964,
+              "fn": 128986,
+              "positive_layers": 317,
+              "hit_positive_layers": 316,
+              "positive_layer_recall": 0.9968454258675079
+            }
+          ],
+          "union": {
+            "dice": 0.8005092550208702,
+            "precision": 0.8554554289818052,
+            "recall": 0.7521954991558317,
+            "tp": 795707,
+            "fp": 134449,
+            "fn": 262139,
+            "positive_layers": 319,
+            "hit_positive_layers": 316,
+            "positive_layer_recall": 0.9905956112852664
+          },
+          "loss": 0.2923216705031238,
+          "spacing_z_y_x_mm": [
+            1.0,
+            0.6171875,
+            0.6171875
+          ],
+          "primary": {
+            "dice": 0.8005092550208702,
+            "precision": 0.8554554289818052,
+            "recall": 0.7521954991558317,
+            "tp": 795707,
+            "fp": 134449,
+            "fn": 262139,
+            "positive_layers": 319,
+            "hit_positive_layers": 316,
+            "positive_layer_recall": 0.9905956112852664
+          }
+        },
+        {
+          "case": "191",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 63031,
+          "shape_h_w_z": [
+            512,
+            512,
+            246
+          ],
+          "spacing_xyz_mm": null,
+          "affine": null,
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.6544237421353797,
+              "precision": 0.6084035808587849,
+              "recall": 0.7079756163685806,
+              "tp": 172351,
+              "fp": 110933,
+              "fn": 71091,
+              "positive_layers": 176,
+              "hit_positive_layers": 169,
+              "positive_layer_recall": 0.9602272727272727
+            },
+            {
+              "name": "vein",
+              "dice": 0.724384785228494,
+              "precision": 0.6254545979333833,
+              "recall": 0.8604915279140044,
+              "tp": 216695,
+              "fp": 129765,
+              "fn": 35132,
+              "positive_layers": 180,
+              "hit_positive_layers": 178,
+              "positive_layer_recall": 0.9888888888888889
+            }
+          ],
+          "union": {
+            "dice": 0.7806545145553274,
+            "precision": 0.7314395460497599,
+            "recall": 0.8369701159162015,
+            "tp": 418932,
+            "fp": 153818,
+            "fn": 81602,
+            "positive_layers": 180,
+            "hit_positive_layers": 179,
+            "positive_layer_recall": 0.9944444444444445
+          },
+          "loss": 0.3290037352864335,
+          "spacing_z_y_x_mm": [
+            1.0,
+            0.68359375,
+            0.68359375
+          ],
+          "primary": {
+            "dice": 0.7806545145553274,
+            "precision": 0.7314395460497599,
+            "recall": 0.8369701159162015,
+            "tp": 418932,
+            "fp": 153818,
+            "fn": 81602,
+            "positive_layers": 180,
+            "hit_positive_layers": 179,
+            "positive_layer_recall": 0.9944444444444445
+          }
+        }
+      ]
+    },
+    "parse": {
+      "dataset": "parse",
+      "primary_name": "artery",
+      "primary": {
+        "dice": 0.7321142919017556,
+        "precision": 0.6748892904501813,
+        "recall": 0.799942790591099,
+        "tp": 3204838,
+        "fp": 1543849,
+        "fn": 801496,
+        "positive_layers": 2990,
+        "hit_positive_layers": 2879,
+        "positive_layer_recall": 0.962876254180602
+      },
+      "classes": [
+        {
+          "name": "artery",
+          "dice": 0.7321142919017556,
+          "precision": 0.6748892904501813,
+          "recall": 0.799942790591099,
+          "tp": 3204838,
+          "fp": 1543849,
+          "fn": 801496,
+          "positive_layers": 2990,
+          "hit_positive_layers": 2879,
+          "positive_layer_recall": 0.962876254180602
+        }
+      ],
+      "macro": {
+        "primary": {
+          "dice": 0.7279907309804247,
+          "recall": 0.8011266474009345,
+          "precision": 0.6734421260980982,
+          "positive_layer_recall": 0.9616401748084846
+        },
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.7279907309804247,
+            "recall": 0.8011266474009345,
+            "precision": 0.6734421260980982,
+            "positive_layer_recall": 0.9616401748084846
+          }
+        ]
+      },
+      "case_count": 13,
+      "slices": 3934,
+      "loss": 0.29132736751920507,
+      "eval_mode": true,
+      "grad_enabled": false,
+      "cases": [
+        {
+          "case": "PA000026",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 0,
+          "shape_h_w_z": [
+            512,
+            512,
+            314
+          ],
+          "spacing_xyz_mm": [
+            0.552734375,
+            0.552734375,
+            1.0
+          ],
+          "affine": [
+            [
+              -0.552734375,
+              0.0,
+              0.0,
+              160.2236328125
+            ],
+            [
+              0.0,
+              -0.552734375,
+              0.0,
+              279.2236328125
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -778.4000244140625
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.7355553013720709,
+              "precision": 0.6977109476523836,
+              "recall": 0.777740517689227,
+              "tp": 282949,
+              "fp": 122590,
+              "fn": 80860,
+              "positive_layers": 227,
+              "hit_positive_layers": 223,
+              "positive_layer_recall": 0.9823788546255506
+            }
+          ],
+          "loss": 0.30402667393350297,
+          "spacing_z_y_x_mm": null,
+          "primary": {
+            "name": "artery",
+            "dice": 0.7355553013720709,
+            "precision": 0.6977109476523836,
+            "recall": 0.777740517689227,
+            "tp": 282949,
+            "fp": 122590,
+            "fn": 80860,
+            "positive_layers": 227,
+            "hit_positive_layers": 223,
+            "positive_layer_recall": 0.9823788546255506
+          },
+          "vein_metric": null
+        },
+        {
+          "case": "PA000107",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 0,
+          "shape_h_w_z": [
+            512,
+            512,
+            281
+          ],
+          "spacing_xyz_mm": [
+            0.65234375,
+            0.65234375,
+            1.0
+          ],
+          "affine": [
+            [
+              -0.65234375,
+              0.0,
+              0.0,
+              166.673828125
+            ],
+            [
+              0.0,
+              -0.65234375,
+              0.0,
+              309.673828125
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -717.7000122070312
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.7809728806857534,
+              "precision": 0.7481362003572074,
+              "recall": 0.8168243752139678,
+              "tp": 298243,
+              "fp": 100405,
+              "fn": 66882,
+              "positive_layers": 217,
+              "hit_positive_layers": 205,
+              "positive_layer_recall": 0.9447004608294931
+            }
+          ],
+          "loss": 0.2785253736896447,
+          "spacing_z_y_x_mm": null,
+          "primary": {
+            "name": "artery",
+            "dice": 0.7809728806857534,
+            "precision": 0.7481362003572074,
+            "recall": 0.8168243752139678,
+            "tp": 298243,
+            "fp": 100405,
+            "fn": 66882,
+            "positive_layers": 217,
+            "hit_positive_layers": 205,
+            "positive_layer_recall": 0.9447004608294931
+          },
+          "vein_metric": null
+        },
+        {
+          "case": "PA000109",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 0,
+          "shape_h_w_z": [
+            512,
+            512,
+            301
+          ],
+          "spacing_xyz_mm": [
+            0.64453125,
+            0.64453125,
+            1.0
+          ],
+          "affine": [
+            [
+              -0.64453125,
+              0.0,
+              0.0,
+              174.677734375
+            ],
+            [
+              0.0,
+              -0.64453125,
+              0.0,
+              302.677734375
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -702.0999755859375
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.6863903006231954,
+              "precision": 0.649926857404412,
+              "recall": 0.7271884202403568,
+              "tp": 210148,
+              "fp": 113193,
+              "fn": 78839,
+              "positive_layers": 222,
+              "hit_positive_layers": 213,
+              "positive_layer_recall": 0.9594594594594594
+            }
+          ],
+          "loss": 0.3349713997983457,
+          "spacing_z_y_x_mm": null,
+          "primary": {
+            "name": "artery",
+            "dice": 0.6863903006231954,
+            "precision": 0.649926857404412,
+            "recall": 0.7271884202403568,
+            "tp": 210148,
+            "fp": 113193,
+            "fn": 78839,
+            "positive_layers": 222,
+            "hit_positive_layers": 213,
+            "positive_layer_recall": 0.9594594594594594
+          },
+          "vein_metric": null
+        },
+        {
+          "case": "PA000118",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 0,
+          "shape_h_w_z": [
+            512,
+            512,
+            325
+          ],
+          "spacing_xyz_mm": [
+            0.740234375,
+            0.740234375,
+            1.0
+          ],
+          "affine": [
+            [
+              -0.740234375,
+              0.0,
+              0.0,
+              190.1298828125
+            ],
+            [
+              0.0,
+              -0.740234375,
+              0.0,
+              329.6298828125
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -728.9000244140625
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.7585991307592244,
+              "precision": 0.6662601091126249,
+              "recall": 0.8806512788438061,
+              "tp": 263298,
+              "fp": 131890,
+              "fn": 35683,
+              "positive_layers": 228,
+              "hit_positive_layers": 223,
+              "positive_layer_recall": 0.9780701754385965
+            }
+          ],
+          "loss": 0.2852456742983598,
+          "spacing_z_y_x_mm": null,
+          "primary": {
+            "name": "artery",
+            "dice": 0.7585991307592244,
+            "precision": 0.6662601091126249,
+            "recall": 0.8806512788438061,
+            "tp": 263298,
+            "fp": 131890,
+            "fn": 35683,
+            "positive_layers": 228,
+            "hit_positive_layers": 223,
+            "positive_layer_recall": 0.9780701754385965
+          },
+          "vein_metric": null
+        },
+        {
+          "case": "PA000147",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 0,
+          "shape_h_w_z": [
+            512,
+            512,
+            251
+          ],
+          "spacing_xyz_mm": [
+            0.734375,
+            0.734375,
+            1.0
+          ],
+          "affine": [
+            [
+              -0.734375,
+              0.0,
+              0.0,
+              200.6328125
+            ],
+            [
+              0.0,
+              -0.734375,
+              0.0,
+              348.6328125
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -636.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.7775889369379135,
+              "precision": 0.7116077533826275,
+              "recall": 0.8570562958980333,
+              "tp": 200852,
+              "fp": 81399,
+              "fn": 33499,
+              "positive_layers": 188,
+              "hit_positive_layers": 185,
+              "positive_layer_recall": 0.9840425531914894
+            }
+          ],
+          "loss": 0.255637549427876,
+          "spacing_z_y_x_mm": null,
+          "primary": {
+            "name": "artery",
+            "dice": 0.7775889369379135,
+            "precision": 0.7116077533826275,
+            "recall": 0.8570562958980333,
+            "tp": 200852,
+            "fp": 81399,
+            "fn": 33499,
+            "positive_layers": 188,
+            "hit_positive_layers": 185,
+            "positive_layer_recall": 0.9840425531914894
+          },
+          "vein_metric": null
+        },
+        {
+          "case": "PA000169",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 0,
+          "shape_h_w_z": [
+            512,
+            512,
+            324
+          ],
+          "spacing_xyz_mm": [
+            0.759765625,
+            0.759765625,
+            1.0
+          ],
+          "affine": [
+            [
+              -0.759765625,
+              0.0,
+              0.0,
+              202.1201171875
+            ],
+            [
+              0.0,
+              -0.759765625,
+              0.0,
+              323.6201171875
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -766.5
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.7536805786987121,
+              "precision": 0.7630467203865107,
+              "recall": 0.7445415813644664,
+              "tp": 269122,
+              "fp": 83572,
+              "fn": 92338,
+              "positive_layers": 284,
+              "hit_positive_layers": 275,
+              "positive_layer_recall": 0.9683098591549296
+            }
+          ],
+          "loss": 0.26864038352613095,
+          "spacing_z_y_x_mm": null,
+          "primary": {
+            "name": "artery",
+            "dice": 0.7536805786987121,
+            "precision": 0.7630467203865107,
+            "recall": 0.7445415813644664,
+            "tp": 269122,
+            "fp": 83572,
+            "fn": 92338,
+            "positive_layers": 284,
+            "hit_positive_layers": 275,
+            "positive_layer_recall": 0.9683098591549296
+          },
+          "vein_metric": null
+        },
+        {
+          "case": "PA000190",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 0,
+          "shape_h_w_z": [
+            512,
+            512,
+            302
+          ],
+          "spacing_xyz_mm": [
+            0.65234375,
+            0.65234375,
+            1.0
+          ],
+          "affine": [
+            [
+              -0.65234375,
+              0.0,
+              0.0,
+              163.673828125
+            ],
+            [
+              0.0,
+              -0.65234375,
+              0.0,
+              319.673828125
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -955.2000122070312
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.704616770944508,
+              "precision": 0.5877381196708771,
+              "recall": 0.8795196100720745,
+              "tp": 220507,
+              "fp": 154672,
+              "fn": 30206,
+              "positive_layers": 234,
+              "hit_positive_layers": 224,
+              "positive_layer_recall": 0.9572649572649573
+            }
+          ],
+          "loss": 0.2978904164390059,
+          "spacing_z_y_x_mm": null,
+          "primary": {
+            "name": "artery",
+            "dice": 0.704616770944508,
+            "precision": 0.5877381196708771,
+            "recall": 0.8795196100720745,
+            "tp": 220507,
+            "fp": 154672,
+            "fn": 30206,
+            "positive_layers": 234,
+            "hit_positive_layers": 224,
+            "positive_layer_recall": 0.9572649572649573
+          },
+          "vein_metric": null
+        },
+        {
+          "case": "PA000194",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 0,
+          "shape_h_w_z": [
+            512,
+            512,
+            290
+          ],
+          "spacing_xyz_mm": [
+            0.6484375,
+            0.6484375,
+            1.0
+          ],
+          "affine": [
+            [
+              -0.6484375,
+              0.0,
+              0.0,
+              170.67578125
+            ],
+            [
+              0.0,
+              -0.6484375,
+              0.0,
+              303.67578125
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -980.7999877929688
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.7619857353161513,
+              "precision": 0.6761441094664692,
+              "recall": 0.8727934927103537,
+              "tp": 320399,
+              "fp": 153463,
+              "fn": 46697,
+              "positive_layers": 239,
+              "hit_positive_layers": 234,
+              "positive_layer_recall": 0.9790794979079498
+            }
+          ],
+          "loss": 0.28051599572444785,
+          "spacing_z_y_x_mm": null,
+          "primary": {
+            "name": "artery",
+            "dice": 0.7619857353161513,
+            "precision": 0.6761441094664692,
+            "recall": 0.8727934927103537,
+            "tp": 320399,
+            "fp": 153463,
+            "fn": 46697,
+            "positive_layers": 239,
+            "hit_positive_layers": 234,
+            "positive_layer_recall": 0.9790794979079498
+          },
+          "vein_metric": null
+        },
+        {
+          "case": "PA000212",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 0,
+          "shape_h_w_z": [
+            512,
+            512,
+            297
+          ],
+          "spacing_xyz_mm": [
+            0.923828125,
+            0.923828125,
+            1.0
+          ],
+          "affine": [
+            [
+              -0.923828125,
+              0.0,
+              0.0,
+              223.0380859375
+            ],
+            [
+              0.0,
+              -0.923828125,
+              0.0,
+              381.0380859375
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -970.5999755859375
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.6906788975563966,
+              "precision": 0.5914256934128325,
+              "recall": 0.8299635896337546,
+              "tp": 116253,
+              "fp": 80311,
+              "fn": 23817,
+              "positive_layers": 207,
+              "hit_positive_layers": 191,
+              "positive_layer_recall": 0.9227053140096618
+            }
+          ],
+          "loss": 0.27838411114432593,
+          "spacing_z_y_x_mm": null,
+          "primary": {
+            "name": "artery",
+            "dice": 0.6906788975563966,
+            "precision": 0.5914256934128325,
+            "recall": 0.8299635896337546,
+            "tp": 116253,
+            "fp": 80311,
+            "fn": 23817,
+            "positive_layers": 207,
+            "hit_positive_layers": 191,
+            "positive_layer_recall": 0.9227053140096618
+          },
+          "vein_metric": null
+        },
+        {
+          "case": "PA000217",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 0,
+          "shape_h_w_z": [
+            512,
+            512,
+            285
+          ],
+          "spacing_xyz_mm": [
+            0.556640625,
+            0.556640625,
+            1.0
+          ],
+          "affine": [
+            [
+              -0.556640625,
+              0.0,
+              0.0,
+              150.2216796875
+            ],
+            [
+              0.0,
+              -0.556640625,
+              0.0,
+              276.2216796875
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -957.7999877929688
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.7223651546972142,
+              "precision": 0.6387005452973735,
+              "recall": 0.8312525160426881,
+              "tp": 311797,
+              "fp": 176377,
+              "fn": 63296,
+              "positive_layers": 229,
+              "hit_positive_layers": 225,
+              "positive_layer_recall": 0.982532751091703
+            }
+          ],
+          "loss": 0.2929206953759779,
+          "spacing_z_y_x_mm": null,
+          "primary": {
+            "name": "artery",
+            "dice": 0.7223651546972142,
+            "precision": 0.6387005452973735,
+            "recall": 0.8312525160426881,
+            "tp": 311797,
+            "fp": 176377,
+            "fn": 63296,
+            "positive_layers": 229,
+            "hit_positive_layers": 225,
+            "positive_layer_recall": 0.982532751091703
+          },
+          "vein_metric": null
+        },
+        {
+          "case": "PA000245",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 0,
+          "shape_h_w_z": [
+            512,
+            512,
+            323
+          ],
+          "spacing_xyz_mm": [
+            0.60546875,
+            0.60546875,
+            1.0
+          ],
+          "affine": [
+            [
+              -0.60546875,
+              0.0,
+              0.0,
+              160.697265625
+            ],
+            [
+              0.0,
+              -0.60546875,
+              0.0,
+              287.697265625
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -1019.0999755859375
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.6964612215158674,
+              "precision": 0.6184411534920059,
+              "recall": 0.797008652657602,
+              "tp": 354629,
+              "fp": 218795,
+              "fn": 90321,
+              "positive_layers": 285,
+              "hit_positive_layers": 280,
+              "positive_layer_recall": 0.9824561403508771
+            }
+          ],
+          "loss": 0.2550941845027286,
+          "spacing_z_y_x_mm": null,
+          "primary": {
+            "name": "artery",
+            "dice": 0.6964612215158674,
+            "precision": 0.6184411534920059,
+            "recall": 0.797008652657602,
+            "tp": 354629,
+            "fp": 218795,
+            "fn": 90321,
+            "positive_layers": 285,
+            "hit_positive_layers": 280,
+            "positive_layer_recall": 0.9824561403508771
+          },
+          "vein_metric": null
+        },
+        {
+          "case": "PA000286",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 0,
+          "shape_h_w_z": [
+            512,
+            512,
+            295
+          ],
+          "spacing_xyz_mm": [
+            0.921875,
+            0.921875,
+            1.0
+          ],
+          "affine": [
+            [
+              -0.921875,
+              0.0,
+              0.0,
+              222.5390625
+            ],
+            [
+              0.0,
+              -0.921875,
+              0.0,
+              370.5390625
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -688.7999877929688
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.6616634941894532,
+              "precision": 0.6144398329029729,
+              "recall": 0.7167503804574952,
+              "tp": 90899,
+              "fp": 57039,
+              "fn": 35922,
+              "positive_layers": 193,
+              "hit_positive_layers": 175,
+              "positive_layer_recall": 0.9067357512953368
+            }
+          ],
+          "loss": 0.30199922303021964,
+          "spacing_z_y_x_mm": null,
+          "primary": {
+            "name": "artery",
+            "dice": 0.6616634941894532,
+            "precision": 0.6144398329029729,
+            "recall": 0.7167503804574952,
+            "tp": 90899,
+            "fp": 57039,
+            "fn": 35922,
+            "positive_layers": 193,
+            "hit_positive_layers": 175,
+            "positive_layer_recall": 0.9067357512953368
+          },
+          "vein_metric": null
+        },
+        {
+          "case": "PA000307",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 0,
+          "shape_h_w_z": [
+            512,
+            512,
+            346
+          ],
+          "spacing_xyz_mm": [
+            0.7109375,
+            0.7109375,
+            1.0
+          ],
+          "affine": [
+            [
+              -0.7109375,
+              0.0,
+              0.0,
+              188.64453125
+            ],
+            [
+              0.0,
+              -0.7109375,
+              0.0,
+              341.64453125
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -494.29998779296875
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.7333210994490613,
+              "precision": 0.7911695967369784,
+              "recall": 0.6833557053883224,
+              "tp": 265742,
+              "fp": 70143,
+              "fn": 123136,
+              "positive_layers": 237,
+              "hit_positive_layers": 226,
+              "positive_layer_recall": 0.9535864978902954
+            }
+          ],
+          "loss": 0.3429361197645265,
+          "spacing_z_y_x_mm": null,
+          "primary": {
+            "name": "artery",
+            "dice": 0.7333210994490613,
+            "precision": 0.7911695967369784,
+            "recall": 0.6833557053883224,
+            "tp": 265742,
+            "fp": 70143,
+            "fn": 123136,
+            "positive_layers": 237,
+            "hit_positive_layers": 226,
+            "positive_layer_recall": 0.9535864978902954
+          },
+          "vein_metric": null
+        }
+      ]
+    }
+  },
+  "train_evaluation": {
+    "hipas": {
+      "dataset": "hipas",
+      "primary_name": "vessel_union",
+      "primary": {
+        "dice": 0.8899791915801445,
+        "precision": 0.8806317936301665,
+        "recall": 0.8995271528567893,
+        "tp": 1693484,
+        "fp": 229549,
+        "fn": 189154,
+        "positive_layers": 488,
+        "hit_positive_layers": 476,
+        "positive_layer_recall": 0.9754098360655737
+      },
+      "classes": [
+        {
+          "name": "artery",
+          "dice": 0.8014038253525815,
+          "precision": 0.763863313613867,
+          "recall": 0.8428249533075739,
+          "tp": 616427,
+          "fp": 190559,
+          "fn": 114955,
+          "positive_layers": 485,
+          "hit_positive_layers": 470,
+          "positive_layer_recall": 0.9690721649484536
+        },
+        {
+          "name": "vein",
+          "dice": 0.8007846520281862,
+          "precision": 0.7574685025549012,
+          "recall": 0.8493553912177849,
+          "tp": 970961,
+          "fp": 310889,
+          "fn": 172213,
+          "positive_layers": 474,
+          "hit_positive_layers": 469,
+          "positive_layer_recall": 0.989451476793249
+        }
+      ],
+      "macro": {
+        "primary": {
+          "dice": 0.8901529378959039,
+          "recall": 0.8996566722705123,
+          "precision": 0.8808520544258902,
+          "positive_layer_recall": 0.975777789007361
+        },
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.8022579783657586,
+            "recall": 0.8428267047369099,
+            "precision": 0.7664376438831582,
+            "positive_layer_recall": 0.9693323776366988
+          },
+          {
+            "name": "vein",
+            "dice": 0.8010501546469531,
+            "recall": 0.8500905265122511,
+            "precision": 0.757503315163883,
+            "positive_layer_recall": 0.9895268341421639
+          }
+        ]
+      },
+      "case_count": 2,
+      "slices": 622,
+      "loss": 0.23913425451497938,
+      "eval_mode": true,
+      "grad_enabled": false,
+      "cases": [
+        {
+          "case": "029",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 95750,
+          "shape_h_w_z": [
+            512,
+            512,
+            320
+          ],
+          "spacing_xyz_mm": null,
+          "affine": null,
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.7798316801923655,
+              "precision": 0.7257241157466329,
+              "recall": 0.8426573994381201,
+              "tp": 311340,
+              "fp": 117666,
+              "fn": 58134,
+              "positive_layers": 257,
+              "hit_positive_layers": 248,
+              "positive_layer_recall": 0.9649805447470817
+            },
+            {
+              "name": "vein",
+              "dice": 0.7914398760844616,
+              "precision": 0.7555867826598648,
+              "recall": 0.8308649693399366,
+              "tp": 493071,
+              "fp": 159496,
+              "fn": 100372,
+              "positive_layers": 248,
+              "hit_positive_layers": 245,
+              "positive_layer_recall": 0.9879032258064516
+            }
+          ],
+          "union": {
+            "dice": 0.8837648816375813,
+            "precision": 0.8731844021606714,
+            "recall": 0.8946049160342348,
+            "tp": 863699,
+            "fp": 125438,
+            "fn": 101754,
+            "positive_layers": 257,
+            "hit_positive_layers": 249,
+            "positive_layer_recall": 0.9688715953307393
+          },
+          "loss": 0.25268715992569923,
+          "spacing_z_y_x_mm": [
+            1.0,
+            0.625,
+            0.625
+          ],
+          "primary": {
+            "dice": 0.8837648816375813,
+            "precision": 0.8731844021606714,
+            "recall": 0.8946049160342348,
+            "tp": 863699,
+            "fp": 125438,
+            "fn": 101754,
+            "positive_layers": 257,
+            "hit_positive_layers": 249,
+            "positive_layer_recall": 0.9688715953307393
+          }
+        },
+        {
+          "case": "017",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 80523,
+          "shape_h_w_z": [
+            512,
+            512,
+            302
+          ],
+          "spacing_xyz_mm": null,
+          "affine": null,
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.8246842765391519,
+              "precision": 0.8071511720196836,
+              "recall": 0.8429960100356997,
+              "tp": 305087,
+              "fp": 72893,
+              "fn": 56821,
+              "positive_layers": 228,
+              "hit_positive_layers": 222,
+              "positive_layer_recall": 0.9736842105263158
+            },
+            {
+              "name": "vein",
+              "dice": 0.8106604332094445,
+              "precision": 0.7594198476679014,
+              "recall": 0.8693160836845657,
+              "tp": 477890,
+              "fp": 151393,
+              "fn": 71841,
+              "positive_layers": 226,
+              "hit_positive_layers": 224,
+              "positive_layer_recall": 0.9911504424778761
+            }
+          ],
+          "union": {
+            "dice": 0.8965409941542266,
+            "precision": 0.888519706691109,
+            "recall": 0.9047084285067898,
+            "tp": 829785,
+            "fp": 104111,
+            "fn": 87400,
+            "positive_layers": 231,
+            "hit_positive_layers": 227,
+            "positive_layer_recall": 0.9826839826839827
+          },
+          "loss": 0.22477356004004448,
+          "spacing_z_y_x_mm": [
+            1.0,
+            0.66796875,
+            0.66796875
+          ],
+          "primary": {
+            "dice": 0.8965409941542266,
+            "precision": 0.888519706691109,
+            "recall": 0.9047084285067898,
+            "tp": 829785,
+            "fp": 104111,
+            "fn": 87400,
+            "positive_layers": 231,
+            "hit_positive_layers": 227,
+            "positive_layer_recall": 0.9826839826839827
+          }
+        }
+      ]
+    },
+    "parse": {
+      "dataset": "parse",
+      "primary_name": "artery",
+      "primary": {
+        "dice": 0.7489308779891779,
+        "precision": 0.6932361220723212,
+        "recall": 0.8143564717819939,
+        "tp": 446225,
+        "fp": 197459,
+        "fn": 101723,
+        "positive_layers": 470,
+        "hit_positive_layers": 441,
+        "positive_layer_recall": 0.9382978723404255
+      },
+      "classes": [
+        {
+          "name": "artery",
+          "dice": 0.7489308779891779,
+          "precision": 0.6932361220723212,
+          "recall": 0.8143564717819939,
+          "tp": 446225,
+          "fp": 197459,
+          "fn": 101723,
+          "positive_layers": 470,
+          "hit_positive_layers": 441,
+          "positive_layer_recall": 0.9382978723404255
+        }
+      ],
+      "macro": {
+        "primary": {
+          "dice": 0.7419670691376006,
+          "recall": 0.8039914623311197,
+          "precision": 0.6896384318423037,
+          "positive_layer_recall": 0.9347469220246238
+        },
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.7419670691376006,
+            "recall": 0.8039914623311197,
+            "precision": 0.6896384318423037,
+            "positive_layer_recall": 0.9347469220246238
+          }
+        ]
+      },
+      "case_count": 2,
+      "slices": 611,
+      "loss": 0.2726917871496596,
+      "eval_mode": true,
+      "grad_enabled": false,
+      "cases": [
+        {
+          "case": "PA000027",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 0,
+          "shape_h_w_z": [
+            512,
+            512,
+            338
+          ],
+          "spacing_xyz_mm": [
+            0.7109375,
+            0.7109375,
+            1.0
+          ],
+          "affine": [
+            [
+              -0.7109375,
+              0.0,
+              0.0,
+              190.64453125
+            ],
+            [
+              0.0,
+              -0.7109375,
+              0.0,
+              316.14453125
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -775.7999877929688
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.7766264912064936,
+              "precision": 0.7057540050445654,
+              "recall": 0.86332211647511,
+              "tp": 277849,
+              "fp": 115842,
+              "fn": 43988,
+              "positive_layers": 255,
+              "hit_positive_layers": 249,
+              "positive_layer_recall": 0.9764705882352941
+            }
+          ],
+          "loss": 0.2528921799546868,
+          "spacing_z_y_x_mm": null,
+          "primary": {
+            "name": "artery",
+            "dice": 0.7766264912064936,
+            "precision": 0.7057540050445654,
+            "recall": 0.86332211647511,
+            "tp": 277849,
+            "fp": 115842,
+            "fn": 43988,
+            "positive_layers": 255,
+            "hit_positive_layers": 249,
+            "positive_layer_recall": 0.9764705882352941
+          },
+          "vein_metric": null
+        },
+        {
+          "case": "PA000229",
+          "complete_lung_candidate": false,
+          "empty_label": false,
+          "predicted_overlap_voxels": 0,
+          "shape_h_w_z": [
+            512,
+            512,
+            273
+          ],
+          "spacing_xyz_mm": [
+            0.71875,
+            0.71875,
+            1.0
+          ],
+          "affine": [
+            [
+              -0.71875,
+              0.0,
+              0.0,
+              180.640625
+            ],
+            [
+              0.0,
+              -0.71875,
+              0.0,
+              336.140625
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              -772.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lung_coverage": {},
+          "classes": [
+            {
+              "name": "artery",
+              "dice": 0.7073076470687076,
+              "precision": 0.6735228586400419,
+              "recall": 0.7446608081871293,
+              "tp": 168376,
+              "fp": 81617,
+              "fn": 57735,
+              "positive_layers": 215,
+              "hit_positive_layers": 192,
+              "positive_layer_recall": 0.8930232558139535
+            }
+          ],
+          "loss": 0.2972055865339116,
+          "spacing_z_y_x_mm": null,
+          "primary": {
+            "name": "artery",
+            "dice": 0.7073076470687076,
+            "precision": 0.6735228586400419,
+            "recall": 0.7446608081871293,
+            "tp": 168376,
+            "fp": 81617,
+            "fn": 57735,
+            "positive_layers": 215,
+            "hit_positive_layers": 192,
+            "positive_layer_recall": 0.8930232558139535
+          },
+          "vein_metric": null
+        }
+      ]
+    }
+  },
+  "seconds": 138.36589336395264,
+  "gpu_peak_allocated_bytes": 6335343616,
+  "gpu_peak_reserved_bytes": 7398752256,
+  "resources": {
+    "disk_free_bytes": 29574152192,
+    "disk_total_bytes": 268435456000,
+    "gpu_util_percent": 35,
+    "gpu_used_mib": 7505,
+    "gpu_total_mib": 24564
+  },
+  "checkpoints": {
+    "epoch": {
+      "path": "checkpoints/epoch_0018.pt",
+      "sha256": "35b490975de4b22f895498d90f573f273d7590f5c1d1aaa77a2b8a0f5c998c29"
+    },
+    "last": {
+      "path": "last.pt",
+      "sha256": "35b490975de4b22f895498d90f573f273d7590f5c1d1aaa77a2b8a0f5c998c29"
+    },
+    "best": {
+      "path": "best.pt",
+      "sha256": "35b490975de4b22f895498d90f573f273d7590f5c1d1aaa77a2b8a0f5c998c29"
+    },
+    "best_immutable": {
+      "path": "best_records/best_epoch_0018.pt",
+      "sha256": "35b490975de4b22f895498d90f573f273d7590f5c1d1aaa77a2b8a0f5c998c29"
+    }
+  }
+}

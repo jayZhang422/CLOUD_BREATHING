@@ -1,0 +1,20 @@
+--- before/sim/Op_Board/README.md
++++ after/sim/Op_Board/README.md
+@@ -2,7 +2,7 @@
+ 
+ 本目录验证当前算子服务、调度器、算子连接和特征存储接口的 RTL 联合行为。权重/量化参数经独立只读参数端口读取；特征与结果仍经 DDR 模拟接口传输。参数区写请求必须被拒绝。
+ 
+-仿真使用工程中的 `op_service`、特征读写器、特征写入器、DDR 端口、Concat/Shuffle，以及 `rtl/` 中为本次上板准备扩宽的 `op_engine`/`op_core_bank` 候选连接；PW、MaxPool、LineBuffer、Element Add 取各自已修复的仿真 RTL。`tb_op_candidate.sv` 只负责连接边界；C++ 驱动模拟 256-bit DDR 与只读参数存储，并提供确定性反压。Golden 由 Python 离线生成，仿真驱动逐字节比较。
++仿真使用工程中的 `op_service`、`op_engine`、`op_descriptor_check`、特征读写器、DDR 端口、Concat/Shuffle，以及 `rtl/` 中的 `op_core_bank` 候选连接；PW、MaxPool、LineBuffer、Element Add 取各自已修复的仿真 RTL。`rtl/op_engine.sv` 保留为历史候选，不参与当前构建。`tb_op_candidate.sv` 只负责连接边界；C++ 驱动模拟 256-bit DDR 与只读参数存储，并提供确定性反压。Golden 由 Python 离线生成，仿真驱动逐字节比较。
+ 
+ 候选描述符兼容旧 byte2/3 通道数；Cin/Cout 超过 255 时，在 byte52/54 写入 LE16 扩展值。接入板级 RPC 前，主机端描述符生成器也必须采用这项格式扩展。
+ 
+@@ -24,7 +24,7 @@
+ 
+ 要求 WSL Ubuntu 中有 Python 3 和 Verilator。成功条件是脚本以退出码 0 结束，`results/run.log` 中出现 `[TB PASSED] all joint cases matched golden data`。脚本在 `/tmp` 中生成向量和构建产物，成功后删除临时向量、二进制、FST 与 CSV；失败时保留临时目录以供诊断。设置 `KEEP_ARTIFACTS=1` 可保留一次成功运行的临时证据。
+ 
+-Verilator 5.032 运行结果：18 个算子任务及只读参数写保护检查全部通过；其中 `tumor_d3_expand_frozen_pixel0` 在 Python 侧先校验导出文件 SHA256、256 路 INT32 MAC 和量化 Golden。构建仍报告 PW 生成 RTL 中 Cin/Cout 组数结果窄化警告（最大合法值分别可由 6/8 bit 容纳），并报告 `op_engine.mem_ready_i → op_feature_reader → op_service/op_coeff_split → mem_ready_i` 的 `UNOPTFLAT` 组合依赖环；这些是待上板集成前复核项。本次没有通过 waive/关闭告警来获得通过。
++2026-10-14 第一轮时序修改后，Verilator 5.032 补充回归：18 个算子任务及只读参数写保护检查全部通过；其中 `tumor_d3_expand_frozen_pixel0` 在 Python 侧先校验导出文件 SHA256、256 路 INT32 MAC 和量化 Golden。仅将三个用例的模拟参数基址移入当前工程的 `[0x00100000,0x00300000)` 范围，算法和 Golden 不变。构建仍报告 PW 生成 RTL 中 Cin/Cout 组数结果窄化警告（最大合法值分别可由 6/8 bit 容纳），并报告 `op_engine.mem_ready_i → op_feature_reader → op_service/op_coeff_split → mem_ready_i` 的 `UNOPTFLAT` 组合依赖环；这些是待上板集成前复核项。本次没有新增告警豁免。
+ 
+ ## 范围
+ 

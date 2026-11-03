@@ -1,0 +1,8 @@
+Vivado 2026.1 XSim, behavioral simulation through the existing Vivado MCP session.
+Top: tb_coeff_split_ddr
+Compile: PASS
+Elaboration: PASS
+Runtime: 205 ns
+[TB PASSED] coeff_split DDR/ROM routing checks=3
+Checks: DDR 0x08000000 read route; DDR 0x081ffff0 read route; ROM 0x00100000 read route; ROM write rejected.
+This is a routing self-check only. It does not claim full tumor inference or STA convergence.

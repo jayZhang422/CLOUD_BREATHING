@@ -1,0 +1,9 @@
+/ps/Data/SEG_centerline_distance_reg0 0x00A0090000 0x0000010000
+/ps/Data/SEG_dual_plane_filter_reg0 0x00A0011000 0x0000001000
+/ps/Data/SEG_dual_plane_mesh_reg0 0x00A0012000 0x0000001000
+/ps/Data/SEG_mesh_dma_Reg 0x00A0050000 0x0000010000
+/ps/Data/SEG_mesh_ray_dma_Reg 0x00A0060000 0x0000010000
+/ps/Data/SEG_mesh_ray_reg0 0x00A0040000 0x0000001000
+/ps/Data/SEG_centerline_dma_Reg 0x00A0080000 0x0000010000
+/ps/Data/SEG_dual_plane_dma_Reg 0x00A00A0000 0x0000010000
+/ps/Data/SEG_mesh_result_dma_Reg 0x00A0070000 0x0000010000

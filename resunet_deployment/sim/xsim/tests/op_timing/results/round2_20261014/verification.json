@@ -1,0 +1,35 @@
+{
+  "backend": "XSim 2026.1",
+  "mode": "behavioral",
+  "ui_period_ns": 3,
+  "rx_period_ns": 8,
+  "tests": [
+    {
+      "test": "reader",
+      "log": "prj\\Model_Deployment.srcs\\sim_1\\new\\Op_Timing\\results\\round2_20261014\\reader\\simulate.log",
+      "pass_line": 2,
+      "launch_exit_code": 0,
+      "run_exit_code": 0,
+      "pass": true
+    },
+    {
+      "test": "targeted_clean",
+      "log": "prj\\Model_Deployment.srcs\\sim_1\\new\\Op_Timing\\results\\round2_20261014\\targeted_clean\\simulate.log",
+      "pass_line": 4,
+      "launch_exit_code": 0,
+      "run_exit_code": 0,
+      "pass": true
+    },
+    {
+      "test": "rom_joint",
+      "log": "prj\\Model_Deployment.srcs\\sim_1\\new\\Op_Timing\\results\\round2_20261014\\rom_joint\\simulate.log",
+      "pass_line": 61,
+      "launch_exit_code": 0,
+      "run_exit_code": 0,
+      "pass": true
+    }
+  ],
+  "post_change_STA": false,
+  "synthesis_implementation_launched": false,
+  "csv_read_after_pass": false
+}

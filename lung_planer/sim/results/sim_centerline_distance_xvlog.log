@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/src/rtl/centerline_distance_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module centerline_distance_axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/src/rtl/centerline_distance_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module centerline_distance_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/src/rtl/centerline_lee_axis.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module centerline_lee_axis
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/src/rtl/centerline_lee_candidate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module centerline_lee_candidate
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA/ESDC/lung_planer/sim/tb/tb_centerline_distance_core.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_centerline_distance_core
+INFO: [VRFC 10-311] analyzing module tb_centerline_distance_axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/build/work/lung_planner/lung_planner.sim/sim_centerline_distance/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,3 @@
+before op12 small_tail bytes=1056 writes=1056 run_cycles=4112 independent-Golden
+before op12 max_banks bytes=8704 writes=8704 run_cycles=360885 independent-Golden
+[RUNNER PASSED] op12 cases=2 mem_stalls=27307 p12_max_addr=2047 add_checks=1790

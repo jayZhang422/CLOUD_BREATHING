@@ -1,0 +1,275 @@
+--- round2-before/prj/Model_Deployment.srcs/sources_1/new/Op/LineBuffer/LineBuffer_3x3.v
++++ prj/Model_Deployment.srcs/sources_1/new/Op/LineBuffer/LineBuffer_3x3.v
+@@ -43,8 +43,8 @@
+   wire       [8:0]    _zz_memoryAddress_w;
+   wire                _zz_lineMem_0_port;
+   wire                _zz_lineMem_1_port;
+-  wire       [9:0]    _zz_when_LineBuffer_l97;
+-  wire       [9:0]    _zz_when_LineBuffer_l100;
++  wire       [9:0]    _zz_when_LineBuffer_l99;
++  wire       [9:0]    _zz_when_LineBuffer_l102;
+   reg        [127:0]  _zz__zz_horizontal_r_0_1;
+   wire       [0:0]    _zz__zz_horizontal_r_0_1_1;
+   reg        [127:0]  _zz__zz_horizontal_r_1_1;
+@@ -65,6 +65,15 @@
+   wire                realPixel_w;
+   wire                groupLast_w;
+   wire                lastGroup_w;
++  wire                _zz_io_input_i_ready;
++  wire                io_input_i_haltWhen_valid;
++  wire                io_input_i_haltWhen_ready;
++  wire       [127:0]  io_input_i_haltWhen_payload;
++  wire                input_valid;
++  wire                input_ready;
++  wire       [127:0]  input_payload;
++  reg                 io_input_i_haltWhen_rValidN;
++  reg        [127:0]  io_input_i_haltWhen_rData;
+   wire                request_valid;
+   reg                 request_ready;
+   wire       [127:0]  request_payload_pixel;
+@@ -98,8 +107,8 @@
+   wire       [127:0]  history_w_0;
+   wire                _zz_history_w_1;
+   wire       [127:0]  history_w_1;
+-  wire                when_LineBuffer_l97;
+-  wire                when_LineBuffer_l100;
++  wire                when_LineBuffer_l99;
++  wire                when_LineBuffer_l102;
+   reg        [127:0]  horizontal_r_0_0;
+   reg        [127:0]  horizontal_r_0_1;
+   reg        [127:0]  horizontal_r_1_0;
+@@ -107,7 +116,7 @@
+   reg        [127:0]  horizontal_r_2_0;
+   reg        [127:0]  horizontal_r_2_1;
+   wire                window_valid;
+-  reg                 window_ready;
++  wire                window_ready;
+   wire                window_payload_last;
+   wire       [127:0]  window_payload_fragment_window_0_0;
+   wire       [127:0]  window_payload_fragment_window_0_1;
+@@ -124,21 +133,22 @@
+   wire                response_fire;
+   wire       [127:0]  _zz_horizontal_r_1_1;
+   wire       [127:0]  _zz_horizontal_r_2_1;
+-  wire                window_m2sPipe_valid;
+-  wire                window_m2sPipe_ready;
+-  wire                window_m2sPipe_payload_last;
+-  wire       [127:0]  window_m2sPipe_payload_fragment_window_0_0;
+-  wire       [127:0]  window_m2sPipe_payload_fragment_window_0_1;
+-  wire       [127:0]  window_m2sPipe_payload_fragment_window_0_2;
+-  wire       [127:0]  window_m2sPipe_payload_fragment_window_1_0;
+-  wire       [127:0]  window_m2sPipe_payload_fragment_window_1_1;
+-  wire       [127:0]  window_m2sPipe_payload_fragment_window_1_2;
+-  wire       [127:0]  window_m2sPipe_payload_fragment_window_2_0;
+-  wire       [127:0]  window_m2sPipe_payload_fragment_window_2_1;
+-  wire       [127:0]  window_m2sPipe_payload_fragment_window_2_2;
+-  wire       [5:0]    window_m2sPipe_payload_fragment_group;
+-  wire                window_m2sPipe_payload_fragment_group_last;
++  wire                window_halfPipe_valid;
++  wire                window_halfPipe_ready;
++  wire                window_halfPipe_payload_last;
++  wire       [127:0]  window_halfPipe_payload_fragment_window_0_0;
++  wire       [127:0]  window_halfPipe_payload_fragment_window_0_1;
++  wire       [127:0]  window_halfPipe_payload_fragment_window_0_2;
++  wire       [127:0]  window_halfPipe_payload_fragment_window_1_0;
++  wire       [127:0]  window_halfPipe_payload_fragment_window_1_1;
++  wire       [127:0]  window_halfPipe_payload_fragment_window_1_2;
++  wire       [127:0]  window_halfPipe_payload_fragment_window_2_0;
++  wire       [127:0]  window_halfPipe_payload_fragment_window_2_1;
++  wire       [127:0]  window_halfPipe_payload_fragment_window_2_2;
++  wire       [5:0]    window_halfPipe_payload_fragment_group;
++  wire                window_halfPipe_payload_fragment_group_last;
+   reg                 window_rValid;
++  wire                window_halfPipe_fire;
+   reg                 window_rData_last;
+   reg        [127:0]  window_rData_fragment_window_0_0;
+   reg        [127:0]  window_rData_fragment_window_0_1;
+@@ -151,9 +161,8 @@
+   reg        [127:0]  window_rData_fragment_window_2_2;
+   reg        [5:0]    window_rData_fragment_group;
+   reg                 window_rData_fragment_group_last;
+-  wire                when_Stream_l477_1;
+   wire                io_output_o_fire;
+-  wire                when_LineBuffer_l142;
++  wire                when_LineBuffer_l146;
+   wire                io_cfg_i_fire;
+   (* ram_style = "block" *) reg [127:0] lineMem_0 [0:511];
+   (* ram_style = "block" *) reg [127:0] lineMem_1 [0:511];
+@@ -164,8 +173,8 @@
+   assign _zz_groupLast_w_1 = (paddedHeight_w - 10'h001);
+   assign _zz_lastGroup_w = (groups_r - 6'h01);
+   assign _zz_memoryAddress_w = x_r[8:0];
+-  assign _zz_when_LineBuffer_l97 = (paddedWidth_w - 10'h001);
+-  assign _zz_when_LineBuffer_l100 = (paddedHeight_w - 10'h001);
++  assign _zz_when_LineBuffer_l99 = (paddedWidth_w - 10'h001);
++  assign _zz_when_LineBuffer_l102 = (paddedHeight_w - 10'h001);
+   assign _zz__zz_horizontal_r_0_1_1 = (response_payload_bank + 1'b0);
+   assign _zz__zz_horizontal_r_1_1_1 = (response_payload_bank + 1'b1);
+   assign _zz_lineMem_0_port = ((request_fire && realColumn_w) && (bank_r == 1'b0));
+@@ -211,15 +220,22 @@
+   assign io_cfg_i_ready = (((((((! busy_r) && (io_cfg_i_payload_width != 10'h0)) && (io_cfg_i_payload_width <= 10'h200)) && (io_cfg_i_payload_height != 10'h0)) && (io_cfg_i_payload_height <= 10'h200)) && (io_cfg_i_payload_groups != 6'h0)) && (io_cfg_i_payload_groups <= 6'h20));
+   assign io_busy_o = busy_r;
+   assign io_done_o = done_r;
+-  assign request_valid = (active_r && ((! realPixel_w) || io_input_i_valid));
+-  assign request_payload_pixel = (realPixel_w ? io_input_i_payload : 128'h0);
++  assign _zz_io_input_i_ready = (! (! active_r));
++  assign io_input_i_haltWhen_valid = (io_input_i_valid && _zz_io_input_i_ready);
++  assign io_input_i_ready = (io_input_i_haltWhen_ready && _zz_io_input_i_ready);
++  assign io_input_i_haltWhen_payload = io_input_i_payload;
++  assign io_input_i_haltWhen_ready = io_input_i_haltWhen_rValidN;
++  assign input_valid = (io_input_i_haltWhen_valid || (! io_input_i_haltWhen_rValidN));
++  assign input_payload = (io_input_i_haltWhen_rValidN ? io_input_i_haltWhen_payload : io_input_i_haltWhen_rData);
++  assign request_valid = (active_r && ((! realPixel_w) || input_valid));
++  assign request_payload_pixel = (realPixel_w ? input_payload : 128'h0);
+   assign request_payload_bank = bank_r;
+   assign request_payload_emit = ((10'h002 <= x_r) && (10'h002 <= y_r));
+   assign request_payload_real_column = realColumn_w;
+   assign request_payload_group = group_r;
+   assign request_payload_group_last = groupLast_w;
+   assign request_payload_last = (groupLast_w && lastGroup_w);
+-  assign io_input_i_ready = ((active_r && realPixel_w) && request_ready);
++  assign input_ready = ((active_r && realPixel_w) && request_ready);
+   always @(*) begin
+     request_ready = response_ready;
+     if(when_Stream_l477) begin
+@@ -242,8 +258,8 @@
+   assign history_w_0 = lineMem_0_spinal_port1;
+   assign _zz_history_w_1 = (request_fire && realColumn_w);
+   assign history_w_1 = lineMem_1_spinal_port1;
+-  assign when_LineBuffer_l97 = (x_r == _zz_when_LineBuffer_l97);
+-  assign when_LineBuffer_l100 = (y_r == _zz_when_LineBuffer_l100);
++  assign when_LineBuffer_l99 = (x_r == _zz_when_LineBuffer_l99);
++  assign when_LineBuffer_l102 = (y_r == _zz_when_LineBuffer_l102);
+   assign window_valid = (response_valid && response_payload_emit);
+   assign window_payload_fragment_group = response_payload_group;
+   assign window_payload_fragment_group_last = response_payload_group_last;
+@@ -262,43 +278,37 @@
+   assign window_payload_fragment_window_2_0 = horizontal_r_2_0;
+   assign window_payload_fragment_window_2_1 = horizontal_r_2_1;
+   assign window_payload_fragment_window_2_2 = _zz_horizontal_r_2_1;
+-  always @(*) begin
+-    window_ready = window_m2sPipe_ready;
+-    if(when_Stream_l477_1) begin
+-      window_ready = 1'b1;
+-    end
+-  end
+-
+-  assign when_Stream_l477_1 = (! window_m2sPipe_valid);
+-  assign window_m2sPipe_valid = window_rValid;
+-  assign window_m2sPipe_payload_last = window_rData_last;
+-  assign window_m2sPipe_payload_fragment_window_0_0 = window_rData_fragment_window_0_0;
+-  assign window_m2sPipe_payload_fragment_window_0_1 = window_rData_fragment_window_0_1;
+-  assign window_m2sPipe_payload_fragment_window_0_2 = window_rData_fragment_window_0_2;
+-  assign window_m2sPipe_payload_fragment_window_1_0 = window_rData_fragment_window_1_0;
+-  assign window_m2sPipe_payload_fragment_window_1_1 = window_rData_fragment_window_1_1;
+-  assign window_m2sPipe_payload_fragment_window_1_2 = window_rData_fragment_window_1_2;
+-  assign window_m2sPipe_payload_fragment_window_2_0 = window_rData_fragment_window_2_0;
+-  assign window_m2sPipe_payload_fragment_window_2_1 = window_rData_fragment_window_2_1;
+-  assign window_m2sPipe_payload_fragment_window_2_2 = window_rData_fragment_window_2_2;
+-  assign window_m2sPipe_payload_fragment_group = window_rData_fragment_group;
+-  assign window_m2sPipe_payload_fragment_group_last = window_rData_fragment_group_last;
+-  assign io_output_o_valid = window_m2sPipe_valid;
+-  assign window_m2sPipe_ready = io_output_o_ready;
+-  assign io_output_o_payload_last = window_m2sPipe_payload_last;
+-  assign io_output_o_payload_fragment_window_0_0 = window_m2sPipe_payload_fragment_window_0_0;
+-  assign io_output_o_payload_fragment_window_0_1 = window_m2sPipe_payload_fragment_window_0_1;
+-  assign io_output_o_payload_fragment_window_0_2 = window_m2sPipe_payload_fragment_window_0_2;
+-  assign io_output_o_payload_fragment_window_1_0 = window_m2sPipe_payload_fragment_window_1_0;
+-  assign io_output_o_payload_fragment_window_1_1 = window_m2sPipe_payload_fragment_window_1_1;
+-  assign io_output_o_payload_fragment_window_1_2 = window_m2sPipe_payload_fragment_window_1_2;
+-  assign io_output_o_payload_fragment_window_2_0 = window_m2sPipe_payload_fragment_window_2_0;
+-  assign io_output_o_payload_fragment_window_2_1 = window_m2sPipe_payload_fragment_window_2_1;
+-  assign io_output_o_payload_fragment_window_2_2 = window_m2sPipe_payload_fragment_window_2_2;
+-  assign io_output_o_payload_fragment_group = window_m2sPipe_payload_fragment_group;
+-  assign io_output_o_payload_fragment_group_last = window_m2sPipe_payload_fragment_group_last;
++  assign window_halfPipe_fire = (window_halfPipe_valid && window_halfPipe_ready);
++  assign window_ready = (! window_rValid);
++  assign window_halfPipe_valid = window_rValid;
++  assign window_halfPipe_payload_last = window_rData_last;
++  assign window_halfPipe_payload_fragment_window_0_0 = window_rData_fragment_window_0_0;
++  assign window_halfPipe_payload_fragment_window_0_1 = window_rData_fragment_window_0_1;
++  assign window_halfPipe_payload_fragment_window_0_2 = window_rData_fragment_window_0_2;
++  assign window_halfPipe_payload_fragment_window_1_0 = window_rData_fragment_window_1_0;
++  assign window_halfPipe_payload_fragment_window_1_1 = window_rData_fragment_window_1_1;
++  assign window_halfPipe_payload_fragment_window_1_2 = window_rData_fragment_window_1_2;
++  assign window_halfPipe_payload_fragment_window_2_0 = window_rData_fragment_window_2_0;
++  assign window_halfPipe_payload_fragment_window_2_1 = window_rData_fragment_window_2_1;
++  assign window_halfPipe_payload_fragment_window_2_2 = window_rData_fragment_window_2_2;
++  assign window_halfPipe_payload_fragment_group = window_rData_fragment_group;
++  assign window_halfPipe_payload_fragment_group_last = window_rData_fragment_group_last;
++  assign io_output_o_valid = window_halfPipe_valid;
++  assign window_halfPipe_ready = io_output_o_ready;
++  assign io_output_o_payload_last = window_halfPipe_payload_last;
++  assign io_output_o_payload_fragment_window_0_0 = window_halfPipe_payload_fragment_window_0_0;
++  assign io_output_o_payload_fragment_window_0_1 = window_halfPipe_payload_fragment_window_0_1;
++  assign io_output_o_payload_fragment_window_0_2 = window_halfPipe_payload_fragment_window_0_2;
++  assign io_output_o_payload_fragment_window_1_0 = window_halfPipe_payload_fragment_window_1_0;
++  assign io_output_o_payload_fragment_window_1_1 = window_halfPipe_payload_fragment_window_1_1;
++  assign io_output_o_payload_fragment_window_1_2 = window_halfPipe_payload_fragment_window_1_2;
++  assign io_output_o_payload_fragment_window_2_0 = window_halfPipe_payload_fragment_window_2_0;
++  assign io_output_o_payload_fragment_window_2_1 = window_halfPipe_payload_fragment_window_2_1;
++  assign io_output_o_payload_fragment_window_2_2 = window_halfPipe_payload_fragment_window_2_2;
++  assign io_output_o_payload_fragment_group = window_halfPipe_payload_fragment_group;
++  assign io_output_o_payload_fragment_group_last = window_halfPipe_payload_fragment_group_last;
+   assign io_output_o_fire = (io_output_o_valid && io_output_o_ready);
+-  assign when_LineBuffer_l142 = (io_output_o_fire && io_output_o_payload_last);
++  assign when_LineBuffer_l146 = (io_output_o_fire && io_output_o_payload_last);
+   assign io_cfg_i_fire = (io_cfg_i_valid && io_cfg_i_ready);
+   always @(posedge clk or negedge resetn) begin
+     if(!resetn) begin
+@@ -312,18 +322,25 @@
+       y_r <= 10'h0;
+       bank_r <= 1'b0;
+       group_r <= 6'h0;
++      io_input_i_haltWhen_rValidN <= 1'b1;
+       request_rValid <= 1'b0;
+       window_rValid <= 1'b0;
+     end else begin
+       done_r <= 1'b0;
++      if(io_input_i_haltWhen_valid) begin
++        io_input_i_haltWhen_rValidN <= 1'b0;
++      end
++      if(input_ready) begin
++        io_input_i_haltWhen_rValidN <= 1'b1;
++      end
+       if(request_ready) begin
+         request_rValid <= request_valid;
+       end
+       if(request_fire) begin
+-        if(when_LineBuffer_l97) begin
++        if(when_LineBuffer_l99) begin
+           x_r <= 10'h0;
+           bank_r <= (bank_r + 1'b1);
+-          if(when_LineBuffer_l100) begin
++          if(when_LineBuffer_l102) begin
+             y_r <= 10'h0;
+             bank_r <= 1'b0;
+             if(lastGroup_w) begin
+@@ -338,10 +355,13 @@
+           x_r <= (x_r + 10'h001);
+         end
+       end
+-      if(window_ready) begin
+-        window_rValid <= window_valid;
+-      end
+-      if(when_LineBuffer_l142) begin
++      if(window_valid) begin
++        window_rValid <= 1'b1;
++      end
++      if(window_halfPipe_fire) begin
++        window_rValid <= 1'b0;
++      end
++      if(when_LineBuffer_l146) begin
+         busy_r <= 1'b0;
+         done_r <= 1'b1;
+       end
+@@ -360,6 +380,9 @@
+   end
+ 
+   always @(posedge clk) begin
++    if(io_input_i_haltWhen_ready) begin
++      io_input_i_haltWhen_rData <= io_input_i_haltWhen_payload;
++    end
+     if(request_ready) begin
+       request_rData_pixel <= request_payload_pixel;
+       request_rData_bank <= request_payload_bank;

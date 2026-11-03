@@ -1,0 +1,24 @@
+{
+  "deleted_files": [
+    {
+      "path": "prj\\Model_Deployment.sim\\sim_1\\behav\\xsim\\sim_trace.csv",
+      "bytes": 1483712
+    },
+    {
+      "path": "prj\\Model_Deployment.sim\\sim_1\\behav\\xsim\\waveform.vcd",
+      "bytes": 522923
+    },
+    {
+      "path": "prj\\Model_Deployment.sim\\sim_1\\behav\\xsim\\tb_op_rom_behav.wdb",
+      "bytes": 110183541
+    },
+    {
+      "path": "prj\\Model_Deployment.sim\\sim_1\\behav\\xsim\\tb_op_timing_behav.wdb",
+      "bytes": 2622422
+    }
+  ],
+  "total_bytes": 114812598,
+  "pass_csv_read": false,
+  "op_board_temporary_directory": "/tmp/op-board-joint.eQQ9Lk",
+  "op_board_cleanup": "PASS script removed its temporary directory"
+}

@@ -1,0 +1,3961 @@
+
+COMPONENT ELEMENTS
+Vendor:   xilinx.com
+Library:  ip
+Name:     blk_mem_gen
+Version:  8.4
+
+USER PARAMETERS 
+
+PARAM: 1
+Parameter Name:   AXI_ID_Width
+Parameter ID:     PARAM_VALUE.AXI_ID_Width
+Display Name:     AXI ID Width
+Description:      
+Range Minimum:  1 Maximum: 16
+Type:             long
+Default Value:    4
+Current Value:    4
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 2
+Parameter Name:   AXI_Slave_Type
+Parameter ID:     PARAM_VALUE.AXI_Slave_Type
+Display Name:     AXI Slave Type
+Description:      
+Range List:       Memory_Slave Memory Slave
+                  Peripheral_Slave Peripheral Slave
+Type:             string
+Default Value:    Memory_Slave
+Current Value:    Memory_Slave
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 3
+Parameter Name:   AXI_Type
+Parameter ID:     PARAM_VALUE.AXI_Type
+Display Name:     AXI Type
+Description:      
+Range List:       AXI4_Full AXI4
+                  AXI4_Lite AXI4 Lite
+Type:             string
+Default Value:    AXI4_Full
+Current Value:    AXI4_Full
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 4
+Parameter Name:   Additional_Inputs_for_Power_Estimation
+Parameter ID:     PARAM_VALUE.Additional_Inputs_for_Power_Estimation
+Display Name:     Additional Inputs for Power Estimation
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 5
+Parameter Name:   Algorithm
+Parameter ID:     PARAM_VALUE.Algorithm
+Display Name:     Algorithm
+Description:      
+Range List:       Minimum_Area Minimum Area
+                  Low_Power Low Power
+                  Fixed_Primitives Fixed Primitives
+Type:             string
+Default Value:    Minimum_Area
+Current Value:    Minimum_Area
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 6
+Parameter Name:   Assume_Synchronous_Clk
+Parameter ID:     PARAM_VALUE.Assume_Synchronous_Clk
+Display Name:     Assume Synchronous Clk
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 7
+Parameter Name:   BRAM_PORTA.MEM_ADDRESS_MODE
+Parameter ID:     BUSIFPARAM_VALUE.BRAM_PORTA.MEM_ADDRESS_MODE
+Display Name:     Port A Memory addressing mode
+Description:      Port A Memory addressing mode
+No Current Range
+Type:             string
+Default Value:    BYTE_ADDRESS
+Current Value:    BYTE_ADDRESS
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 8
+Parameter Name:   BRAM_PORTB.MEM_ADDRESS_MODE
+Parameter ID:     BUSIFPARAM_VALUE.BRAM_PORTB.MEM_ADDRESS_MODE
+Display Name:     Port B Memory addressing mode
+Description:      Port B Memory addressing mode
+No Current Range
+Type:             string
+Default Value:    BYTE_ADDRESS
+Current Value:    BYTE_ADDRESS
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 9
+Parameter Name:   Byte_Size
+Parameter ID:     PARAM_VALUE.Byte_Size
+Display Name:     Byte Size
+Description:      
+Range List:       8 8
+                  9 9
+Type:             long
+Default Value:    9
+Current Value:    9
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 10
+Parameter Name:   CLK.ACLK.ASSOCIATED_BUSIF
+Parameter ID:     BUSIFPARAM_VALUE.CLK.ACLK.ASSOCIATED_BUSIF
+Display Name:     CLK.ACLK.ASSOCIATED BUSIF
+Description:      
+No Current Range
+Type:             string
+Default Value:    AXI_SLAVE_S_AXI:AXILite_SLAVE_S_AXI
+Current Value:    AXI_SLAVE_S_AXI:AXILite_SLAVE_S_AXI
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 11
+Parameter Name:   CLK.ACLK.ASSOCIATED_RESET
+Parameter ID:     BUSIFPARAM_VALUE.CLK.ACLK.ASSOCIATED_RESET
+Display Name:     CLK.ACLK.ASSOCIATED RESET
+Description:      
+No Current Range
+Type:             string
+Default Value:    s_aresetn
+Current Value:    s_aresetn
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 12
+Parameter Name:   CTRL_ECC_ALGO
+Parameter ID:     PARAM_VALUE.CTRL_ECC_ALGO
+Display Name:     CTRL ECC ALGO
+Description:      
+Range List:       NONE NONE
+                  ECCH32-7 ECCH32-7
+                  ECCH64-8 ECCH64-8
+                  ECCHSIAO32-7 ECCHSIAO32-7
+                  ECCHSIAO64-8 ECCHSIAO64-8
+                  ECCHSIAO128-9 ECCHSIAO128-9
+Type:             string
+Default Value:    NONE
+Current Value:    NONE
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 13
+Parameter Name:   Coe_File
+Parameter ID:     PARAM_VALUE.Coe_File
+Display Name:     Coe File
+Description:      
+No Current Range
+Type:             string
+Default Value:    no_coe_file_loaded
+Current Value:    no_coe_file_loaded
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 14
+Parameter Name:   Collision_Warnings
+Parameter ID:     PARAM_VALUE.Collision_Warnings
+Display Name:     Collision Warnings
+Description:      
+Range List:       ALL All
+                  NONE None
+                  WARNING_ONLY Warning Only
+                  GENERATE_X_ONLY Generate X-Only
+Type:             string
+Default Value:    ALL
+Current Value:    ALL
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 15
+Parameter Name:   Component_Name
+Parameter ID:     PARAM_VALUE.Component_Name
+Display Name:     Component Name
+Description:      
+No Current Range
+Type:             string
+Default Value:    blk_mem_gen_test
+Current Value:    rpc_request_bram
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 16
+Parameter Name:   Disable_Collision_Warnings
+Parameter ID:     PARAM_VALUE.Disable_Collision_Warnings
+Display Name:     Disable Collision Warnings
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 17
+Parameter Name:   Disable_Out_of_Range_Warnings
+Parameter ID:     PARAM_VALUE.Disable_Out_of_Range_Warnings
+Display Name:     Disable Out of Range Warnings
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 18
+Parameter Name:   ECC
+Parameter ID:     PARAM_VALUE.ECC
+Display Name:     ECC
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 19
+Parameter Name:   EN_DEEPSLEEP_PIN
+Parameter ID:     PARAM_VALUE.EN_DEEPSLEEP_PIN
+Display Name:     EN DEEPSLEEP PIN
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 20
+Parameter Name:   EN_ECC_PIPE
+Parameter ID:     PARAM_VALUE.EN_ECC_PIPE
+Display Name:     EN ECC PIPE
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 21
+Parameter Name:   EN_SAFETY_CKT
+Parameter ID:     PARAM_VALUE.EN_SAFETY_CKT
+Display Name:     EN SAFETY CKT
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 22
+Parameter Name:   EN_SHUTDOWN_PIN
+Parameter ID:     PARAM_VALUE.EN_SHUTDOWN_PIN
+Display Name:     EN SHUTDOWN PIN
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 23
+Parameter Name:   EN_SLEEP_PIN
+Parameter ID:     PARAM_VALUE.EN_SLEEP_PIN
+Display Name:     EN SLEEP PIN
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 24
+Parameter Name:   Enable_32bit_Address
+Parameter ID:     PARAM_VALUE.Enable_32bit_Address
+Display Name:     Enable 32bit Address
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 25
+Parameter Name:   Enable_A
+Parameter ID:     PARAM_VALUE.Enable_A
+Display Name:     Enable A
+Description:      
+Range List:       Always_Enabled Always Enabled
+                  Use_ENA_Pin Use ENA Pin
+Type:             string
+Default Value:    Use_ENA_Pin
+Current Value:    Use_ENA_Pin
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 26
+Parameter Name:   Enable_B
+Parameter ID:     PARAM_VALUE.Enable_B
+Display Name:     Enable B
+Description:      
+Range List:       Always_Enabled Always Enabled
+                  Use_ENB_Pin Use ENB Pin
+Type:             string
+Default Value:    Always_Enabled
+Current Value:    Always_Enabled
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 27
+Parameter Name:   Error_Injection_Type
+Parameter ID:     PARAM_VALUE.Error_Injection_Type
+Display Name:     Error Injection Type
+Description:      
+Range List:       Single_Bit_Error_Injection Single Bit Error Injection
+                  Double_Bit_Error_Injection Double Bit Error Injection
+                  Single_and_Double_Bit_Error_Injection Single and Double Bit Error Injection
+Type:             string
+Default Value:    Single_Bit_Error_Injection
+Current Value:    Single_Bit_Error_Injection
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 28
+Parameter Name:   Fill_Remaining_Memory_Locations
+Parameter ID:     PARAM_VALUE.Fill_Remaining_Memory_Locations
+Display Name:     Fill Remaining Memory Locations
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 29
+Parameter Name:   Interface_Type
+Parameter ID:     PARAM_VALUE.Interface_Type
+Display Name:     Interface Type
+Description:      
+Range List:       Native Native
+                  AXI4 AXI4
+Type:             string
+Default Value:    Native
+Current Value:    Native
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 30
+Parameter Name:   Load_Init_File
+Parameter ID:     PARAM_VALUE.Load_Init_File
+Display Name:     Load Init File
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 31
+Parameter Name:   MEMORY_OPTIMIZATION
+Parameter ID:     PARAM_VALUE.MEMORY_OPTIMIZATION
+Display Name:     Optimize Unused Memory
+Description:      
+No Current Range
+Type:             bool
+Default Value:    true
+Current Value:    true
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 32
+Parameter Name:   MEM_FILE
+Parameter ID:     PARAM_VALUE.MEM_FILE
+Display Name:     MEM FILE
+Description:      
+No Current Range
+Type:             string
+Default Value:    no_mem_loaded
+Current Value:    no_mem_loaded
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 33
+Parameter Name:   Memory_Type
+Parameter ID:     PARAM_VALUE.Memory_Type
+Display Name:     Memory Type
+Description:      
+Range List:       Single_Port_RAM Single Port RAM
+                  Simple_Dual_Port_RAM Simple Dual Port RAM
+                  True_Dual_Port_RAM True Dual Port RAM
+                  Single_Port_ROM Single Port ROM
+                  Dual_Port_ROM Dual Port ROM
+Type:             string
+Default Value:    Single_Port_RAM
+Current Value:    Single_Port_RAM
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 34
+Parameter Name:   Operating_Mode_A
+Parameter ID:     PARAM_VALUE.Operating_Mode_A
+Display Name:     Operating Mode A
+Description:      
+Range List:       WRITE_FIRST Write First
+                  READ_FIRST Read First
+                  NO_CHANGE No Change
+Type:             string
+Default Value:    WRITE_FIRST
+Current Value:    WRITE_FIRST
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 35
+Parameter Name:   Operating_Mode_B
+Parameter ID:     PARAM_VALUE.Operating_Mode_B
+Display Name:     Operating Mode B
+Description:      
+Range List:       WRITE_FIRST Write First
+                  READ_FIRST Read First
+                  NO_CHANGE No Change
+Type:             string
+Default Value:    WRITE_FIRST
+Current Value:    WRITE_FIRST
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 36
+Parameter Name:   Output_Reset_Value_A
+Parameter ID:     PARAM_VALUE.Output_Reset_Value_A
+Display Name:     Output Reset Value A
+Description:      
+No Current Range
+Type:             string
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 37
+Parameter Name:   Output_Reset_Value_B
+Parameter ID:     PARAM_VALUE.Output_Reset_Value_B
+Display Name:     Output Reset Value B
+Description:      
+No Current Range
+Type:             string
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 38
+Parameter Name:   PRIM_type_to_Implement
+Parameter ID:     PARAM_VALUE.PRIM_type_to_Implement
+Display Name:     PRIM type to Implement
+Description:      
+Range List:       BRAM BRAM
+                  URAM URAM
+Type:             string
+Default Value:    BRAM
+Current Value:    BRAM
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 39
+Parameter Name:   Pipeline_Stages
+Parameter ID:     PARAM_VALUE.Pipeline_Stages
+Display Name:     Pipeline Stages
+Description:      
+Range List:       0 0
+                  1 1
+                  2 2
+                  3 3
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 40
+Parameter Name:   Port_A_Clock
+Parameter ID:     PARAM_VALUE.Port_A_Clock
+Display Name:     Port A Clock
+Description:      
+Range Minimum:  0 Maximum: 800
+Type:             long
+Default Value:    100
+Current Value:    100
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 41
+Parameter Name:   Port_A_Enable_Rate
+Parameter ID:     PARAM_VALUE.Port_A_Enable_Rate
+Display Name:     Port A Enable Rate
+Description:      
+Range Minimum:  0 Maximum: 100
+Type:             long
+Default Value:    100
+Current Value:    100
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 42
+Parameter Name:   Port_A_Write_Rate
+Parameter ID:     PARAM_VALUE.Port_A_Write_Rate
+Display Name:     Port A Write Rate
+Description:      
+Range Minimum:  0 Maximum: 100
+Type:             long
+Default Value:    50
+Current Value:    50
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 43
+Parameter Name:   Port_B_Clock
+Parameter ID:     PARAM_VALUE.Port_B_Clock
+Display Name:     Port B Clock
+Description:      
+Range Minimum:  0 Maximum: 800
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 44
+Parameter Name:   Port_B_Enable_Rate
+Parameter ID:     PARAM_VALUE.Port_B_Enable_Rate
+Display Name:     Port B Enable Rate
+Description:      
+Range Minimum:  0 Maximum: 100
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 45
+Parameter Name:   Port_B_Write_Rate
+Parameter ID:     PARAM_VALUE.Port_B_Write_Rate
+Display Name:     Port B Write Rate
+Description:      
+Range Minimum:  0 Maximum: 100
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 46
+Parameter Name:   Primitive
+Parameter ID:     PARAM_VALUE.Primitive
+Display Name:     Primitive
+Description:      
+Range List:       16kx1 16kx1
+                  8kx2 8kx2
+                  4kx4 4kx4
+                  2kx9 2kx9
+                  1kx18 1kx18
+                  512x36 512x36
+                  256x72 256x72
+Type:             string
+Default Value:    8kx2
+Current Value:    8kx2
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 47
+Parameter Name:   RD_ADDR_CHNG_A
+Parameter ID:     PARAM_VALUE.RD_ADDR_CHNG_A
+Display Name:     RD ADDR CHNG A
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 48
+Parameter Name:   RD_ADDR_CHNG_B
+Parameter ID:     PARAM_VALUE.RD_ADDR_CHNG_B
+Display Name:     RD ADDR CHNG B
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 49
+Parameter Name:   READ_LATENCY_A
+Parameter ID:     PARAM_VALUE.READ_LATENCY_A
+Display Name:     READ LATENCY A
+Description:      
+Range Minimum:  1 Maximum: 128
+Type:             long
+Default Value:    1
+Current Value:    1
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 50
+Parameter Name:   READ_LATENCY_B
+Parameter ID:     PARAM_VALUE.READ_LATENCY_B
+Display Name:     READ LATENCY B
+Description:      
+Range Minimum:  1 Maximum: 128
+Type:             long
+Default Value:    1
+Current Value:    1
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 51
+Parameter Name:   RST.ARESETN.POLARITY
+Parameter ID:     BUSIFPARAM_VALUE.RST.ARESETN.POLARITY
+Display Name:     RST.ARESETN.POLARITY
+Description:      
+No Current Range
+Type:             string
+Default Value:    ACTIVE_LOW
+Current Value:    ACTIVE_LOW
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 52
+Parameter Name:   Read_Width_A
+Parameter ID:     PARAM_VALUE.Read_Width_A
+Display Name:     Read Width A
+Description:      
+Range List:       1 1
+                  2 2
+                  4 4
+                  8 8
+                  16 16
+                  32 32
+                  64 64
+                  128 128
+Type:             long
+Default Value:    16
+Current Value:    16
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 53
+Parameter Name:   Read_Width_B
+Parameter ID:     PARAM_VALUE.Read_Width_B
+Display Name:     Read Width B
+Description:      
+Range List:       1 1
+                  2 2
+                  4 4
+                  8 8
+                  16 16
+                  32 32
+                  64 64
+                  128 128
+Type:             long
+Default Value:    16
+Current Value:    16
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 54
+Parameter Name:   Register_PortA_Output_of_Memory_Core
+Parameter ID:     PARAM_VALUE.Register_PortA_Output_of_Memory_Core
+Display Name:     Register PortA Output of Memory Core
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 55
+Parameter Name:   Register_PortA_Output_of_Memory_Primitives
+Parameter ID:     PARAM_VALUE.Register_PortA_Output_of_Memory_Primitives
+Display Name:     Register PortA Output of Memory Primitives
+Description:      
+No Current Range
+Type:             bool
+Default Value:    true
+Current Value:    true
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 56
+Parameter Name:   Register_PortB_Output_of_Memory_Core
+Parameter ID:     PARAM_VALUE.Register_PortB_Output_of_Memory_Core
+Display Name:     Register PortB Output of Memory Core
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 57
+Parameter Name:   Register_PortB_Output_of_Memory_Primitives
+Parameter ID:     PARAM_VALUE.Register_PortB_Output_of_Memory_Primitives
+Display Name:     Register PortB Output of Memory Primitives
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 58
+Parameter Name:   Remaining_Memory_Locations
+Parameter ID:     PARAM_VALUE.Remaining_Memory_Locations
+Display Name:     Remaining Memory Locations
+Description:      
+No Current Range
+Type:             string
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 59
+Parameter Name:   Reset_Memory_Latch_A
+Parameter ID:     PARAM_VALUE.Reset_Memory_Latch_A
+Display Name:     Reset Memory Latch A
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 60
+Parameter Name:   Reset_Memory_Latch_B
+Parameter ID:     PARAM_VALUE.Reset_Memory_Latch_B
+Display Name:     Reset Memory Latch B
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 61
+Parameter Name:   Reset_Priority_A
+Parameter ID:     PARAM_VALUE.Reset_Priority_A
+Display Name:     Reset Priority A
+Description:      
+Range List:       CE CE (Latch or Register Enable)
+                  SR SR (Set Reset)
+Type:             string
+Default Value:    CE
+Current Value:    CE
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 62
+Parameter Name:   Reset_Priority_B
+Parameter ID:     PARAM_VALUE.Reset_Priority_B
+Display Name:     Reset Priority B
+Description:      
+Range List:       CE CE (Latch or Register Enable)
+                  SR SR (Set Reset)
+Type:             string
+Default Value:    CE
+Current Value:    CE
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 63
+Parameter Name:   Reset_Type
+Parameter ID:     PARAM_VALUE.Reset_Type
+Display Name:     Reset Type
+Description:      
+Range List:       SYNC Synchronous
+                  ASYNC Asynchronous
+Type:             string
+Default Value:    SYNC
+Current Value:    SYNC
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 64
+Parameter Name:   Use_AXI_ID
+Parameter ID:     PARAM_VALUE.Use_AXI_ID
+Display Name:     Use AXI ID
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 65
+Parameter Name:   Use_Byte_Write_Enable
+Parameter ID:     PARAM_VALUE.Use_Byte_Write_Enable
+Display Name:     Use Byte Write Enable
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 66
+Parameter Name:   Use_Error_Injection_Pins
+Parameter ID:     PARAM_VALUE.Use_Error_Injection_Pins
+Display Name:     Use Error Injection Pins
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 67
+Parameter Name:   Use_REGCEA_Pin
+Parameter ID:     PARAM_VALUE.Use_REGCEA_Pin
+Display Name:     Use REGCEA Pin
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 68
+Parameter Name:   Use_REGCEB_Pin
+Parameter ID:     PARAM_VALUE.Use_REGCEB_Pin
+Display Name:     Use REGCEB Pin
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 69
+Parameter Name:   Use_RSTA_Pin
+Parameter ID:     PARAM_VALUE.Use_RSTA_Pin
+Display Name:     Use RSTA Pin
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 70
+Parameter Name:   Use_RSTB_Pin
+Parameter ID:     PARAM_VALUE.Use_RSTB_Pin
+Display Name:     Use RSTB Pin
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 71
+Parameter Name:   Write_Depth_A
+Parameter ID:     PARAM_VALUE.Write_Depth_A
+Display Name:     Write Depth A
+Description:      
+Range Minimum:  2 Maximum: 1048576
+Type:             long
+Default Value:    16
+Current Value:    16
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 72
+Parameter Name:   Write_Width_A
+Parameter ID:     PARAM_VALUE.Write_Width_A
+Display Name:     Write Width A
+Description:      
+Range Minimum:  1 Maximum: 4608
+Type:             long
+Default Value:    16
+Current Value:    16
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 73
+Parameter Name:   Write_Width_B
+Parameter ID:     PARAM_VALUE.Write_Width_B
+Display Name:     Write Width B
+Description:      
+Range List:       1 1
+                  2 2
+                  4 4
+                  8 8
+                  16 16
+                  32 32
+                  64 64
+                  128 128
+Type:             long
+Default Value:    16
+Current Value:    16
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 74
+Parameter Name:   ecctype
+Parameter ID:     PARAM_VALUE.ecctype
+Display Name:     ecctype
+Description:      
+Range List:       No_ECC No ECC
+                  Soft_ECC Soft ECC
+                  BuiltIn_ECC BuiltIn ECC
+Type:             string
+Default Value:    No_ECC
+Current Value:    No_ECC
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 75
+Parameter Name:   register_porta_input_of_softecc
+Parameter ID:     PARAM_VALUE.register_porta_input_of_softecc
+Display Name:     register porta input of softecc
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 76
+Parameter Name:   register_portb_output_of_softecc
+Parameter ID:     PARAM_VALUE.register_portb_output_of_softecc
+Display Name:     register portb output of softecc
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 77
+Parameter Name:   softecc
+Parameter ID:     PARAM_VALUE.softecc
+Display Name:     softecc
+Description:      
+No Current Range
+Type:             bool
+Default Value:    false
+Current Value:    false
+Presence:         optional
+Disabled:         
+
+**********************************************************
+
+PARAM: 78
+Parameter Name:   use_bram_block
+Parameter ID:     PARAM_VALUE.use_bram_block
+Display Name:     use bram block
+Description:      
+Range List:       Stand_Alone Stand Alone
+                  BRAM_Controller BRAM Controller
+Type:             string
+Default Value:    Stand_Alone
+Current Value:    Stand_Alone
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+MODEL PARAMETERS
+
+PARAM: 79
+Parameter Name:   C_FAMILY
+Parameter ID:     MODELPARAM_VALUE.C_FAMILY
+Display Name:     C FAMILY
+Description:      
+No Current Range
+Type:             string
+Default Value:    virtex7
+Current Value:    kintexuplus
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 80
+Parameter Name:   C_XDEVICEFAMILY
+Parameter ID:     MODELPARAM_VALUE.C_XDEVICEFAMILY
+Display Name:     C XDEVICEFAMILY
+Description:      
+No Current Range
+Type:             string
+Default Value:    virtex7
+Current Value:    kintexuplus
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 81
+Parameter Name:   C_ELABORATION_DIR
+Parameter ID:     MODELPARAM_VALUE.C_ELABORATION_DIR
+Display Name:     C ELABORATION DIR
+Description:      
+No Current Range
+Type:             string
+Default Value:    ./
+Current Value:    ./
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 82
+Parameter Name:   C_INTERFACE_TYPE
+Parameter ID:     MODELPARAM_VALUE.C_INTERFACE_TYPE
+Display Name:     C INTERFACE TYPE
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 83
+Parameter Name:   C_AXI_TYPE
+Parameter ID:     MODELPARAM_VALUE.C_AXI_TYPE
+Display Name:     C AXI TYPE
+Description:      
+No Current Range
+Type:             long
+Default Value:    1
+Current Value:    1
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 84
+Parameter Name:   C_AXI_SLAVE_TYPE
+Parameter ID:     MODELPARAM_VALUE.C_AXI_SLAVE_TYPE
+Display Name:     C AXI SLAVE TYPE
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 85
+Parameter Name:   C_USE_BRAM_BLOCK
+Parameter ID:     MODELPARAM_VALUE.C_USE_BRAM_BLOCK
+Display Name:     C USE BRAM BLOCK
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 86
+Parameter Name:   C_ENABLE_32BIT_ADDRESS
+Parameter ID:     MODELPARAM_VALUE.C_ENABLE_32BIT_ADDRESS
+Display Name:     C ENABLE 32BIT ADDRESS
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 87
+Parameter Name:   C_CTRL_ECC_ALGO
+Parameter ID:     MODELPARAM_VALUE.C_CTRL_ECC_ALGO
+Display Name:     C CTRL ECC ALGO
+Description:      
+No Current Range
+Type:             string
+Default Value:    NONE
+Current Value:    NONE
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 88
+Parameter Name:   C_HAS_AXI_ID
+Parameter ID:     MODELPARAM_VALUE.C_HAS_AXI_ID
+Display Name:     C HAS AXI ID
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 89
+Parameter Name:   C_AXI_ID_WIDTH
+Parameter ID:     MODELPARAM_VALUE.C_AXI_ID_WIDTH
+Display Name:     C AXI ID WIDTH
+Description:      
+No Current Range
+Type:             long
+Default Value:    4
+Current Value:    4
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 90
+Parameter Name:   C_MEM_TYPE
+Parameter ID:     MODELPARAM_VALUE.C_MEM_TYPE
+Display Name:     C MEM TYPE
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 91
+Parameter Name:   C_BYTE_SIZE
+Parameter ID:     MODELPARAM_VALUE.C_BYTE_SIZE
+Display Name:     C BYTE SIZE
+Description:      
+No Current Range
+Type:             long
+Default Value:    9
+Current Value:    9
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 92
+Parameter Name:   C_ALGORITHM
+Parameter ID:     MODELPARAM_VALUE.C_ALGORITHM
+Display Name:     C ALGORITHM
+Description:      
+No Current Range
+Type:             long
+Default Value:    1
+Current Value:    1
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 93
+Parameter Name:   C_PRIM_TYPE
+Parameter ID:     MODELPARAM_VALUE.C_PRIM_TYPE
+Display Name:     C PRIM TYPE
+Description:      
+No Current Range
+Type:             long
+Default Value:    1
+Current Value:    1
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 94
+Parameter Name:   C_LOAD_INIT_FILE
+Parameter ID:     MODELPARAM_VALUE.C_LOAD_INIT_FILE
+Display Name:     C LOAD INIT FILE
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 95
+Parameter Name:   C_INIT_FILE_NAME
+Parameter ID:     MODELPARAM_VALUE.C_INIT_FILE_NAME
+Display Name:     C INIT FILE NAME
+Description:      
+No Current Range
+Type:             string
+Default Value:    no_coe_file_loaded
+Current Value:    no_coe_file_loaded
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 96
+Parameter Name:   C_INIT_FILE
+Parameter ID:     MODELPARAM_VALUE.C_INIT_FILE
+Display Name:     C INIT FILE
+Description:      
+No Current Range
+Type:             string
+Default Value:    blk_mem_gen_test.mem
+Current Value:    rpc_request_bram.mem
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 97
+Parameter Name:   C_USE_DEFAULT_DATA
+Parameter ID:     MODELPARAM_VALUE.C_USE_DEFAULT_DATA
+Display Name:     C USE DEFAULT DATA
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 98
+Parameter Name:   C_DEFAULT_DATA
+Parameter ID:     MODELPARAM_VALUE.C_DEFAULT_DATA
+Display Name:     C DEFAULT DATA
+Description:      
+No Current Range
+Type:             string
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 99
+Parameter Name:   C_HAS_RSTA
+Parameter ID:     MODELPARAM_VALUE.C_HAS_RSTA
+Display Name:     C HAS RSTA
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 100
+Parameter Name:   C_RST_PRIORITY_A
+Parameter ID:     MODELPARAM_VALUE.C_RST_PRIORITY_A
+Display Name:     C RST PRIORITY A
+Description:      
+No Current Range
+Type:             string
+Default Value:    CE
+Current Value:    CE
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 101
+Parameter Name:   C_RSTRAM_A
+Parameter ID:     MODELPARAM_VALUE.C_RSTRAM_A
+Display Name:     C RSTRAM A
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 102
+Parameter Name:   C_INITA_VAL
+Parameter ID:     MODELPARAM_VALUE.C_INITA_VAL
+Display Name:     C INITA VAL
+Description:      
+No Current Range
+Type:             string
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 103
+Parameter Name:   C_HAS_ENA
+Parameter ID:     MODELPARAM_VALUE.C_HAS_ENA
+Display Name:     C HAS ENA
+Description:      
+No Current Range
+Type:             long
+Default Value:    1
+Current Value:    1
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 104
+Parameter Name:   C_HAS_REGCEA
+Parameter ID:     MODELPARAM_VALUE.C_HAS_REGCEA
+Display Name:     C HAS REGCEA
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 105
+Parameter Name:   C_USE_BYTE_WEA
+Parameter ID:     MODELPARAM_VALUE.C_USE_BYTE_WEA
+Display Name:     C USE BYTE WEA
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 106
+Parameter Name:   C_WEA_WIDTH
+Parameter ID:     MODELPARAM_VALUE.C_WEA_WIDTH
+Display Name:     C WEA WIDTH
+Description:      
+No Current Range
+Type:             long
+Default Value:    1
+Current Value:    1
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 107
+Parameter Name:   C_WRITE_MODE_A
+Parameter ID:     MODELPARAM_VALUE.C_WRITE_MODE_A
+Display Name:     C WRITE MODE A
+Description:      
+No Current Range
+Type:             string
+Default Value:    WRITE_FIRST
+Current Value:    WRITE_FIRST
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 108
+Parameter Name:   C_WRITE_WIDTH_A
+Parameter ID:     MODELPARAM_VALUE.C_WRITE_WIDTH_A
+Display Name:     C WRITE WIDTH A
+Description:      
+No Current Range
+Type:             long
+Default Value:    16
+Current Value:    16
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 109
+Parameter Name:   C_READ_WIDTH_A
+Parameter ID:     MODELPARAM_VALUE.C_READ_WIDTH_A
+Display Name:     C READ WIDTH A
+Description:      
+No Current Range
+Type:             long
+Default Value:    16
+Current Value:    16
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 110
+Parameter Name:   C_WRITE_DEPTH_A
+Parameter ID:     MODELPARAM_VALUE.C_WRITE_DEPTH_A
+Display Name:     C WRITE DEPTH A
+Description:      
+No Current Range
+Type:             long
+Default Value:    16
+Current Value:    16
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 111
+Parameter Name:   C_READ_DEPTH_A
+Parameter ID:     MODELPARAM_VALUE.C_READ_DEPTH_A
+Display Name:     C READ DEPTH A
+Description:      
+No Current Range
+Type:             long
+Default Value:    16
+Current Value:    16
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 112
+Parameter Name:   C_ADDRA_WIDTH
+Parameter ID:     MODELPARAM_VALUE.C_ADDRA_WIDTH
+Display Name:     C ADDRA WIDTH
+Description:      
+No Current Range
+Type:             long
+Default Value:    4
+Current Value:    4
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 113
+Parameter Name:   C_HAS_RSTB
+Parameter ID:     MODELPARAM_VALUE.C_HAS_RSTB
+Display Name:     C HAS RSTB
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 114
+Parameter Name:   C_RST_PRIORITY_B
+Parameter ID:     MODELPARAM_VALUE.C_RST_PRIORITY_B
+Display Name:     C RST PRIORITY B
+Description:      
+No Current Range
+Type:             string
+Default Value:    CE
+Current Value:    CE
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 115
+Parameter Name:   C_RSTRAM_B
+Parameter ID:     MODELPARAM_VALUE.C_RSTRAM_B
+Display Name:     C RSTRAM B
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 116
+Parameter Name:   C_INITB_VAL
+Parameter ID:     MODELPARAM_VALUE.C_INITB_VAL
+Display Name:     C INITB VAL
+Description:      
+No Current Range
+Type:             string
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 117
+Parameter Name:   C_HAS_ENB
+Parameter ID:     MODELPARAM_VALUE.C_HAS_ENB
+Display Name:     C HAS ENB
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 118
+Parameter Name:   C_HAS_REGCEB
+Parameter ID:     MODELPARAM_VALUE.C_HAS_REGCEB
+Display Name:     C HAS REGCEB
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 119
+Parameter Name:   C_USE_BYTE_WEB
+Parameter ID:     MODELPARAM_VALUE.C_USE_BYTE_WEB
+Display Name:     C USE BYTE WEB
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 120
+Parameter Name:   C_WEB_WIDTH
+Parameter ID:     MODELPARAM_VALUE.C_WEB_WIDTH
+Display Name:     C WEB WIDTH
+Description:      
+No Current Range
+Type:             long
+Default Value:    1
+Current Value:    1
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 121
+Parameter Name:   C_WRITE_MODE_B
+Parameter ID:     MODELPARAM_VALUE.C_WRITE_MODE_B
+Display Name:     C WRITE MODE B
+Description:      
+No Current Range
+Type:             string
+Default Value:    WRITE_FIRST
+Current Value:    WRITE_FIRST
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 122
+Parameter Name:   C_WRITE_WIDTH_B
+Parameter ID:     MODELPARAM_VALUE.C_WRITE_WIDTH_B
+Display Name:     C WRITE WIDTH B
+Description:      
+No Current Range
+Type:             long
+Default Value:    16
+Current Value:    16
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 123
+Parameter Name:   C_READ_WIDTH_B
+Parameter ID:     MODELPARAM_VALUE.C_READ_WIDTH_B
+Display Name:     C READ WIDTH B
+Description:      
+No Current Range
+Type:             long
+Default Value:    16
+Current Value:    16
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 124
+Parameter Name:   C_WRITE_DEPTH_B
+Parameter ID:     MODELPARAM_VALUE.C_WRITE_DEPTH_B
+Display Name:     C WRITE DEPTH B
+Description:      
+No Current Range
+Type:             long
+Default Value:    16
+Current Value:    16
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 125
+Parameter Name:   C_READ_DEPTH_B
+Parameter ID:     MODELPARAM_VALUE.C_READ_DEPTH_B
+Display Name:     C READ DEPTH B
+Description:      
+No Current Range
+Type:             long
+Default Value:    16
+Current Value:    16
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 126
+Parameter Name:   C_ADDRB_WIDTH
+Parameter ID:     MODELPARAM_VALUE.C_ADDRB_WIDTH
+Display Name:     C ADDRB WIDTH
+Description:      
+No Current Range
+Type:             long
+Default Value:    4
+Current Value:    4
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 127
+Parameter Name:   C_HAS_MEM_OUTPUT_REGS_A
+Parameter ID:     MODELPARAM_VALUE.C_HAS_MEM_OUTPUT_REGS_A
+Display Name:     C HAS MEM OUTPUT REGS A
+Description:      
+No Current Range
+Type:             long
+Default Value:    1
+Current Value:    1
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 128
+Parameter Name:   C_HAS_MEM_OUTPUT_REGS_B
+Parameter ID:     MODELPARAM_VALUE.C_HAS_MEM_OUTPUT_REGS_B
+Display Name:     C HAS MEM OUTPUT REGS B
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 129
+Parameter Name:   C_HAS_MUX_OUTPUT_REGS_A
+Parameter ID:     MODELPARAM_VALUE.C_HAS_MUX_OUTPUT_REGS_A
+Display Name:     C HAS MUX OUTPUT REGS A
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 130
+Parameter Name:   C_HAS_MUX_OUTPUT_REGS_B
+Parameter ID:     MODELPARAM_VALUE.C_HAS_MUX_OUTPUT_REGS_B
+Display Name:     C HAS MUX OUTPUT REGS B
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 131
+Parameter Name:   C_MUX_PIPELINE_STAGES
+Parameter ID:     MODELPARAM_VALUE.C_MUX_PIPELINE_STAGES
+Display Name:     C MUX PIPELINE STAGES
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 132
+Parameter Name:   C_HAS_SOFTECC_INPUT_REGS_A
+Parameter ID:     MODELPARAM_VALUE.C_HAS_SOFTECC_INPUT_REGS_A
+Display Name:     C HAS SOFTECC INPUT REGS A
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 133
+Parameter Name:   C_HAS_SOFTECC_OUTPUT_REGS_B
+Parameter ID:     MODELPARAM_VALUE.C_HAS_SOFTECC_OUTPUT_REGS_B
+Display Name:     C HAS SOFTECC OUTPUT REGS B
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 134
+Parameter Name:   C_USE_SOFTECC
+Parameter ID:     MODELPARAM_VALUE.C_USE_SOFTECC
+Display Name:     C USE SOFTECC
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 135
+Parameter Name:   C_USE_ECC
+Parameter ID:     MODELPARAM_VALUE.C_USE_ECC
+Display Name:     C USE ECC
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 136
+Parameter Name:   C_EN_ECC_PIPE
+Parameter ID:     MODELPARAM_VALUE.C_EN_ECC_PIPE
+Display Name:     C EN ECC PIPE
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 137
+Parameter Name:   C_READ_LATENCY_A
+Parameter ID:     MODELPARAM_VALUE.C_READ_LATENCY_A
+Display Name:     C READ LATENCY A
+Description:      
+No Current Range
+Type:             long
+Default Value:    1
+Current Value:    1
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 138
+Parameter Name:   C_READ_LATENCY_B
+Parameter ID:     MODELPARAM_VALUE.C_READ_LATENCY_B
+Display Name:     C READ LATENCY B
+Description:      
+No Current Range
+Type:             long
+Default Value:    1
+Current Value:    1
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 139
+Parameter Name:   C_HAS_INJECTERR
+Parameter ID:     MODELPARAM_VALUE.C_HAS_INJECTERR
+Display Name:     C HAS INJECTERR
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 140
+Parameter Name:   C_SIM_COLLISION_CHECK
+Parameter ID:     MODELPARAM_VALUE.C_SIM_COLLISION_CHECK
+Display Name:     C SIM COLLISION CHECK
+Description:      
+No Current Range
+Type:             string
+Default Value:    ALL
+Current Value:    ALL
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 141
+Parameter Name:   C_COMMON_CLK
+Parameter ID:     MODELPARAM_VALUE.C_COMMON_CLK
+Display Name:     C COMMON CLK
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 142
+Parameter Name:   C_DISABLE_WARN_BHV_COLL
+Parameter ID:     MODELPARAM_VALUE.C_DISABLE_WARN_BHV_COLL
+Display Name:     C DISABLE WARN BHV COLL
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 143
+Parameter Name:   C_EN_SLEEP_PIN
+Parameter ID:     MODELPARAM_VALUE.C_EN_SLEEP_PIN
+Display Name:     C EN SLEEP PIN
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 144
+Parameter Name:   C_USE_URAM
+Parameter ID:     MODELPARAM_VALUE.C_USE_URAM
+Display Name:     C USE URAM
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 145
+Parameter Name:   C_EN_RDADDRA_CHG
+Parameter ID:     MODELPARAM_VALUE.C_EN_RDADDRA_CHG
+Display Name:     C EN RDADDRA CHG
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 146
+Parameter Name:   C_EN_RDADDRB_CHG
+Parameter ID:     MODELPARAM_VALUE.C_EN_RDADDRB_CHG
+Display Name:     C EN RDADDRB CHG
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 147
+Parameter Name:   C_EN_DEEPSLEEP_PIN
+Parameter ID:     MODELPARAM_VALUE.C_EN_DEEPSLEEP_PIN
+Display Name:     C EN DEEPSLEEP PIN
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 148
+Parameter Name:   C_EN_SHUTDOWN_PIN
+Parameter ID:     MODELPARAM_VALUE.C_EN_SHUTDOWN_PIN
+Display Name:     C EN SHUTDOWN PIN
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 149
+Parameter Name:   C_EN_SAFETY_CKT
+Parameter ID:     MODELPARAM_VALUE.C_EN_SAFETY_CKT
+Display Name:     C EN SAFETY CKT
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 150
+Parameter Name:   C_DISABLE_WARN_BHV_RANGE
+Parameter ID:     MODELPARAM_VALUE.C_DISABLE_WARN_BHV_RANGE
+Display Name:     C DISABLE WARN BHV RANGE
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 151
+Parameter Name:   C_COUNT_36K_BRAM
+Parameter ID:     MODELPARAM_VALUE.C_COUNT_36K_BRAM
+Display Name:     C COUNT 36K BRAM
+Description:      
+No Current Range
+Type:             string
+Default Value:    
+Current Value:    0
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 152
+Parameter Name:   C_COUNT_18K_BRAM
+Parameter ID:     MODELPARAM_VALUE.C_COUNT_18K_BRAM
+Display Name:     C COUNT 18K BRAM
+Description:      
+No Current Range
+Type:             string
+Default Value:    
+Current Value:    1
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 153
+Parameter Name:   C_MEMORY_OPTIMIZATION
+Parameter ID:     MODELPARAM_VALUE.C_MEMORY_OPTIMIZATION
+Display Name:     C MEMORY OPTIMIZATION
+Description:      
+No Current Range
+Type:             long
+Default Value:    0
+Current Value:    1
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PARAM: 154
+Parameter Name:   C_EST_POWER_SUMMARY
+Parameter ID:     MODELPARAM_VALUE.C_EST_POWER_SUMMARY
+Display Name:     C EST POWER SUMMARY
+Description:      
+No Current Range
+Type:             string
+Default Value:    
+Current Value:    Estimated Power for IP     :     2.189618 mW
+Presence:         optional
+Enabled:          
+
+**********************************************************
+
+PORTS
+
+PORT: 1
+Port Name:  addra [3:0]
+Direction:  in
+Presence:   optional
+Enabled:    (C_INTERFACE_TYPE != 1)
+Driver:     0
+
+**********************************************************
+
+PORT: 2
+Port Name:  addrb [3:0]
+Direction:  in
+Presence:   optional
+Disabled:   ((C_MEM_TYPE != 0) && (C_MEM_TYPE != 3) && (C_INTERFACE_TYPE != 1))
+Driver:     0
+
+**********************************************************
+
+PORT: 3
+Port Name:  clka
+Direction:  in
+Presence:   optional
+Enabled:    (C_INTERFACE_TYPE != 1)
+Driver:     0
+
+**********************************************************
+
+PORT: 4
+Port Name:  clkb
+Direction:  in
+Presence:   optional
+Disabled:   ((C_MEM_TYPE != 0) && (C_MEM_TYPE != 3) && (C_INTERFACE_TYPE != 1))
+Driver:     0
+
+**********************************************************
+
+PORT: 5
+Port Name:  dbiterr
+Direction:  out
+Presence:   optional
+Disabled:   ((C_USE_ECC != 0) || (C_USE_SOFTECC != 0) && (C_INTERFACE_TYPE != 1))
+
+**********************************************************
+
+PORT: 6
+Port Name:  deepsleep
+Direction:  in
+Presence:   optional
+Disabled:   ((C_FAMILY == 'virtexum' || C_FAMILY == 'zynque') && C_EN_DEEPSLEEP_PIN == 1)
+Driver:     0
+
+**********************************************************
+
+PORT: 7
+Port Name:  dina [15:0]
+Direction:  in
+Presence:   optional
+Enabled:    ((C_MEM_TYPE != 3) && (C_MEM_TYPE != 4) && (C_INTERFACE_TYPE != 1))
+Driver:     0
+
+**********************************************************
+
+PORT: 8
+Port Name:  dinb [15:0]
+Direction:  in
+Presence:   optional
+Disabled:   ((C_MEM_TYPE != 0) && (C_MEM_TYPE != 3) && (C_MEM_TYPE != 4) && (C_MEM_TYPE != 1) && (C_INTERFACE_TYPE != 1))
+Driver:     0
+
+**********************************************************
+
+PORT: 9
+Port Name:  douta [15:0]
+Direction:  out
+Presence:   optional
+Enabled:    ((C_MEM_TYPE != 1) && (C_INTERFACE_TYPE != 1))
+
+**********************************************************
+
+PORT: 10
+Port Name:  doutb [15:0]
+Direction:  out
+Presence:   optional
+Disabled:   ((C_MEM_TYPE != 0) && (C_MEM_TYPE != 3) && (C_INTERFACE_TYPE != 1))
+
+**********************************************************
+
+PORT: 11
+Port Name:  eccpipece
+Direction:  in
+Presence:   optional
+Disabled:   (C_EN_ECC_PIPE == 1)
+Driver:     0
+
+**********************************************************
+
+PORT: 12
+Port Name:  ena
+Direction:  in
+Presence:   optional
+Enabled:    ((C_HAS_ENA != 0) && (C_INTERFACE_TYPE != 1))
+Driver:     0
+
+**********************************************************
+
+PORT: 13
+Port Name:  enb
+Direction:  in
+Presence:   optional
+Disabled:   ((C_MEM_TYPE != 0) && (C_MEM_TYPE != 3) and(C_HAS_ENB != 0) && (C_INTERFACE_TYPE != 1))
+Driver:     0
+
+**********************************************************
+
+PORT: 14
+Port Name:  injectdbiterr
+Direction:  in
+Presence:   optional
+Disabled:   ((C_HAS_INJECTERR != 0) && (C_HAS_INJECTERR != 1) && (C_INTERFACE_TYPE != 1))
+Driver:     0
+
+**********************************************************
+
+PORT: 15
+Port Name:  injectsbiterr
+Direction:  in
+Presence:   optional
+Disabled:   ((C_HAS_INJECTERR != 0) && (C_HAS_INJECTERR != 2) && (C_INTERFACE_TYPE != 1))
+Driver:     0
+
+**********************************************************
+
+PORT: 16
+Port Name:  rdaddrecc [3:0]
+Direction:  out
+Presence:   optional
+Disabled:   ((((C_USE_ECC != 0) && id('MODELPARAM_VALUE.C_FAMILY') != 'virtex5')) || ((C_USE_SOFTECC != 0) && (C_INTERFACE_TYPE != 1)))
+
+**********************************************************
+
+PORT: 17
+Port Name:  regcea
+Direction:  in
+Presence:   optional
+Disabled:   ((C_HAS_REGCEA != 0) && (C_MEM_TYPE != 1) && (C_INTERFACE_TYPE != 1))
+Driver:     1
+
+**********************************************************
+
+PORT: 18
+Port Name:  regceb
+Direction:  in
+Presence:   optional
+Disabled:   ((C_MEM_TYPE != 0) && (C_MEM_TYPE != 3) && (C_HAS_REGCEB != 0) && (C_INTERFACE_TYPE != 1))
+Driver:     1
+
+**********************************************************
+
+PORT: 19
+Port Name:  rsta
+Direction:  in
+Presence:   optional
+Disabled:   ((C_HAS_RSTA != 0) && (C_MEM_TYPE != 1) && (C_INTERFACE_TYPE != 1))
+Driver:     0
+
+**********************************************************
+
+PORT: 20
+Port Name:  rsta_busy
+Direction:  out
+Presence:   optional
+Disabled:   ((C_EN_SAFETY_CKT == 1))
+
+**********************************************************
+
+PORT: 21
+Port Name:  rstb
+Direction:  in
+Presence:   optional
+Disabled:   ((C_MEM_TYPE != 0) && (C_MEM_TYPE != 3) && (C_HAS_RSTB != 0) && (C_INTERFACE_TYPE != 1))
+Driver:     0
+
+**********************************************************
+
+PORT: 22
+Port Name:  rstb_busy
+Direction:  out
+Presence:   optional
+Disabled:   ((C_MEM_TYPE != 0) && (C_MEM_TYPE != 3) && (C_EN_SAFETY_CKT != 0))
+
+**********************************************************
+
+PORT: 23
+Port Name:  s_aclk
+Direction:  in
+Presence:   optional
+Disabled:   (C_INTERFACE_TYPE == 1)
+Driver:     0x0
+
+**********************************************************
+
+PORT: 24
+Port Name:  s_aresetn
+Direction:  in
+Presence:   optional
+Disabled:   (C_INTERFACE_TYPE == 1)
+Driver:     0
+
+**********************************************************
+
+PORT: 25
+Port Name:  s_axi_araddr [31:0]
+Direction:  in
+Presence:   optional
+Disabled:   (C_INTERFACE_TYPE == 1)
+Driver:     0
+
+**********************************************************
+
+PORT: 26
+Port Name:  s_axi_arburst [1:0]
+Direction:  in
+Presence:   optional
+Disabled:   ((C_INTERFACE_TYPE == 1) && (C_AXI_TYPE =1) && (C_AXI_SLAVE_TYPE == 0))
+Driver:     0
+
+**********************************************************
+
+PORT: 27
+Port Name:  s_axi_arid [3:0]
+Direction:  in
+Presence:   optional
+Disabled:   ((C_INTERFACE_TYPE == 1) && (C_HAS_AXI_ID == 1))
+Driver:     0
+
+**********************************************************
+
+PORT: 28
+Port Name:  s_axi_arlen [7:0]
+Direction:  in
+Presence:   optional
+Disabled:   ((C_INTERFACE_TYPE == 1) && (C_AXI_TYPE =1))
+Driver:     0
+
+**********************************************************
+
+PORT: 29
+Port Name:  s_axi_arready
+Direction:  out
+Presence:   optional
+Disabled:   (C_INTERFACE_TYPE == 1)
+
+**********************************************************
+
+PORT: 30
+Port Name:  s_axi_arsize [2:0]
+Direction:  in
+Presence:   optional
+Disabled:   ((C_INTERFACE_TYPE == 1) && (C_AXI_TYPE =1) && (C_AXI_SLAVE_TYPE == 0))
+Driver:     0
+
+**********************************************************
+
+PORT: 31
+Port Name:  s_axi_arvalid
+Direction:  in
+Presence:   optional
+Disabled:   (C_INTERFACE_TYPE == 1)
+Driver:     0
+
+**********************************************************
+
+PORT: 32
+Port Name:  s_axi_awaddr [31:0]
+Direction:  in
+Presence:   optional
+Disabled:   (C_INTERFACE_TYPE == 1)
+Driver:     0
+
+**********************************************************
+
+PORT: 33
+Port Name:  s_axi_awburst [1:0]
+Direction:  in
+Presence:   optional
+Disabled:   ((C_INTERFACE_TYPE == 1) && (C_AXI_TYPE =1) && (C_AXI_SLAVE_TYPE == 0))
+Driver:     0
+
+**********************************************************
+
+PORT: 34
+Port Name:  s_axi_awid [3:0]
+Direction:  in
+Presence:   optional
+Disabled:   ((C_INTERFACE_TYPE == 1) && (C_HAS_AXI_ID == 1))
+Driver:     0
+
+**********************************************************
+
+PORT: 35
+Port Name:  s_axi_awlen [7:0]
+Direction:  in
+Presence:   optional
+Disabled:   ((C_INTERFACE_TYPE == 1) && (C_AXI_TYPE =1))
+Driver:     0
+
+**********************************************************
+
+PORT: 36
+Port Name:  s_axi_awready
+Direction:  out
+Presence:   optional
+Disabled:   (C_INTERFACE_TYPE == 1)
+
+**********************************************************
+
+PORT: 37
+Port Name:  s_axi_awsize [2:0]
+Direction:  in
+Presence:   optional
+Disabled:   ((C_INTERFACE_TYPE == 1) && (C_AXI_TYPE =1) && (C_AXI_SLAVE_TYPE == 0))
+Driver:     0
+
+**********************************************************
+
+PORT: 38
+Port Name:  s_axi_awvalid
+Direction:  in
+Presence:   optional
+Disabled:   (C_INTERFACE_TYPE == 1)
+Driver:     0
+
+**********************************************************
+
+PORT: 39
+Port Name:  s_axi_bid [3:0]
+Direction:  out
+Presence:   optional
+Disabled:   ((C_INTERFACE_TYPE == 1) && (C_HAS_AXI_ID == 1 ))
+
+**********************************************************
+
+PORT: 40
+Port Name:  s_axi_bready
+Direction:  in
+Presence:   optional
+Disabled:   (C_INTERFACE_TYPE == 1)
+Driver:     0
+
+**********************************************************
+
+PORT: 41
+Port Name:  s_axi_bresp [1:0]
+Direction:  out
+Presence:   optional
+Disabled:   (C_INTERFACE_TYPE == 1)
+
+**********************************************************
+
+PORT: 42
+Port Name:  s_axi_bvalid
+Direction:  out
+Presence:   optional
+Disabled:   (C_INTERFACE_TYPE == 1)
+
+**********************************************************
+
+PORT: 43
+Port Name:  s_axi_dbiterr
+Direction:  out
+Presence:   optional
+Disabled:   ((C_USE_ECC == 1 || C_USE_SOFTECC == 1) && C_INTERFACE_TYPE == 1)
+
+**********************************************************
+
+PORT: 44
+Port Name:  s_axi_injectdbiterr
+Direction:  in
+Presence:   optional
+Disabled:   ((C_HAS_INJECTERR == 2 || C_HAS_INJECTERR == 3) && C_INTERFACE_TYPE == 1)
+Driver:     0
+
+**********************************************************
+
+PORT: 45
+Port Name:  s_axi_injectsbiterr
+Direction:  in
+Presence:   optional
+Disabled:   ((C_HAS_INJECTERR == 1 || C_HAS_INJECTERR == 3) && C_INTERFACE_TYPE == 1)
+Driver:     0
+
+**********************************************************
+
+PORT: 46
+Port Name:  s_axi_rdaddrecc [3:0]
+Direction:  out
+Presence:   optional
+Disabled:   ((C_USE_ECC == 1 || C_USE_SOFTECC == 1) && C_INTERFACE_TYPE == 1)
+
+**********************************************************
+
+PORT: 47
+Port Name:  s_axi_rdata [15:0]
+Direction:  out
+Presence:   optional
+Disabled:   (C_INTERFACE_TYPE == 1)
+
+**********************************************************
+
+PORT: 48
+Port Name:  s_axi_rid [3:0]
+Direction:  out
+Presence:   optional
+Disabled:   ((C_INTERFACE_TYPE == 1) && (C_HAS_AXI_ID == 1))
+
+**********************************************************
+
+PORT: 49
+Port Name:  s_axi_rlast
+Direction:  out
+Presence:   optional
+Disabled:   ((C_INTERFACE_TYPE == 1) && (C_AXI_TYPE == 1))
+
+**********************************************************
+
+PORT: 50
+Port Name:  s_axi_rready
+Direction:  in
+Presence:   optional
+Disabled:   (C_INTERFACE_TYPE == 1)
+Driver:     0
+
+**********************************************************
+
+PORT: 51
+Port Name:  s_axi_rresp [1:0]
+Direction:  out
+Presence:   optional
+Disabled:   (C_INTERFACE_TYPE == 1)
+
+**********************************************************
+
+PORT: 52
+Port Name:  s_axi_rvalid
+Direction:  out
+Presence:   optional
+Disabled:   (C_INTERFACE_TYPE == 1)
+
+**********************************************************
+
+PORT: 53
+Port Name:  s_axi_sbiterr
+Direction:  out
+Presence:   optional
+Disabled:   ((C_USE_ECC == 1 || C_USE_SOFTECC == 1) && C_INTERFACE_TYPE == 1)
+
+**********************************************************
+
+PORT: 54
+Port Name:  s_axi_wdata [15:0]
+Direction:  in
+Presence:   optional
+Disabled:   (C_INTERFACE_TYPE == 1)
+Driver:     0
+
+**********************************************************
+
+PORT: 55
+Port Name:  s_axi_wlast
+Direction:  in
+Presence:   optional
+Disabled:   ((C_INTERFACE_TYPE == 1) && (C_AXI_TYPE=1))
+Driver:     0
+
+**********************************************************
+
+PORT: 56
+Port Name:  s_axi_wready
+Direction:  out
+Presence:   optional
+Disabled:   (C_INTERFACE_TYPE == 1)
+
+**********************************************************
+
+PORT: 57
+Port Name:  s_axi_wstrb [0:0]
+Direction:  in
+Presence:   optional
+Disabled:   (C_INTERFACE_TYPE == 1)
+Driver:     0
+
+**********************************************************
+
+PORT: 58
+Port Name:  s_axi_wvalid
+Direction:  in
+Presence:   optional
+Disabled:   (C_INTERFACE_TYPE == 1)
+Driver:     0
+
+**********************************************************
+
+PORT: 59
+Port Name:  sbiterr
+Direction:  out
+Presence:   optional
+Disabled:   ((C_USE_ECC != 0) || (C_USE_SOFTECC != 0) && (C_INTERFACE_TYPE != 1))
+
+**********************************************************
+
+PORT: 60
+Port Name:  shutdown
+Direction:  in
+Presence:   optional
+Disabled:   ((C_FAMILY == 'virtexum' || C_FAMILY == 'zynque' ) && C_EN_SHUTDOWN_PIN == 1)
+Driver:     0
+
+**********************************************************
+
+PORT: 61
+Port Name:  sleep
+Direction:  in
+Presence:   optional
+Disabled:   (((C_FAMILY == 'virtexu' || C_FAMILY == 'kintexu' || C_FAMILY == 'artixu') || (C_FAMILY == 'virtexuplushbm'  || C_FAMILY == 'virtexuplus58g'or C_FAMILY == 'virtexuplus' || C_FAMILY == 'kintexuplus' || C_FAMILY == 'spartanuplus' || C_FAMILY == 'zynquplus'))and C_EN_SLEEP_PIN == 1)
+Driver:     0
+
+**********************************************************
+
+PORT: 62
+Port Name:  wea [0:0]
+Direction:  in
+Presence:   optional
+Enabled:    ((C_MEM_TYPE != 3) && (C_MEM_TYPE != 4) && (C_INTERFACE_TYPE != 1))
+Driver:     0
+
+**********************************************************
+
+PORT: 63
+Port Name:  web [0:0]
+Direction:  in
+Presence:   optional
+Disabled:   ((C_MEM_TYPE != 0) && (C_MEM_TYPE != 3) && (C_MEM_TYPE != 4) && (C_MEM_TYPE != 1) && (C_INTERFACE_TYPE != 1))
+Driver:     0
+
+**********************************************************
+
+BUS INTERFACES
+
+BUS INTERFACE: 1
+Bus Interface Name: AXILite_SLAVE_S_AXI
+Bus Presence:       optional
+Bus Disabled:       (((C_INTERFACE_TYPE)=1) && ((C_AXI_TYPE)= 0))
+
+**********************************************************
+
+BUS INTERFACE: 2
+Bus Interface Name: AXI_SLAVE_S_AXI
+Bus Presence:       optional
+Bus Disabled:       (((C_INTERFACE_TYPE)=1) && ((C_AXI_TYPE)= 1))
+
+**********************************************************
+
+BUS INTERFACE: 3
+Bus Interface Name: BRAM_PORTA
+Bus Presence:       optional
+Bus Enabled:        C_INTERFACE_TYPE=0
+-----------------------------------------
+Parameter Name: BRAM_PORTA.MEM_ADDRESS_MODE
+Parameter ID:   BUSIFPARAM_VALUE.BRAM_PORTA.MEM_ADDRESS_MODE
+Display Name:   Port A Memory addressing mode
+Description:    
+No Current Range
+Type:           string
+Current Value:  BYTE_ADDRESS
+Presence:       optional
+Enabled:        
+-----------------------------------------
+Parameter Name: BRAM_PORTA.MEM_SIZE
+Parameter ID:   BUSIFPARAM_VALUE.BRAM_PORTA.MEM_SIZE
+Display Name:   BRAM PORTA.MEM SIZE
+Description:    
+No Current Range
+Type:           long
+Current Value:  8192
+Presence:       optional
+Enabled:        
+-----------------------------------------
+Parameter Name: BRAM_PORTA.MEM_WIDTH
+Parameter ID:   BUSIFPARAM_VALUE.BRAM_PORTA.MEM_WIDTH
+Display Name:   BRAM PORTA.MEM WIDTH
+Description:    
+No Current Range
+Type:           long
+Current Value:  32
+Presence:       optional
+Enabled:        
+-----------------------------------------
+Parameter Name: BRAM_PORTA.MEM_ECC
+Parameter ID:   BUSIFPARAM_VALUE.BRAM_PORTA.MEM_ECC
+Display Name:   BRAM PORTA.MEM ECC
+Description:    
+No Current Range
+Type:           string
+Current Value:  NONE
+Presence:       optional
+Enabled:        
+-----------------------------------------
+Parameter Name: BRAM_PORTA.MASTER_TYPE
+Parameter ID:   BUSIFPARAM_VALUE.BRAM_PORTA.MASTER_TYPE
+Display Name:   BRAM PORTA.MASTER TYPE
+Description:    
+No Current Range
+Type:           string
+Current Value:  OTHER
+Presence:       optional
+Enabled:        
+-----------------------------------------
+Parameter Name: BRAM_PORTA.READ_WRITE_MODE
+Parameter ID:   BUSIFPARAM_VALUE.BRAM_PORTA.READ_WRITE_MODE
+Display Name:   BRAM PORTA.READ WRITE MODE
+Description:    
+No Current Range
+Type:           string
+Current Value:  
+Presence:       optional
+Enabled:        
+-----------------------------------------
+Parameter Name: BRAM_PORTA.READ_LATENCY
+Parameter ID:   BUSIFPARAM_VALUE.BRAM_PORTA.READ_LATENCY
+Display Name:   BRAM PORTA.READ LATENCY
+Description:    
+No Current Range
+Type:           long
+Current Value:  1
+Presence:       optional
+Enabled:        
+-----------------------------------------
+- Logical Port:  addra
+- Physical Port: addra
+
+- Logical Port:  clka
+- Physical Port: clka
+
+- Logical Port:  dina
+- Physical Port: dina
+
+- Logical Port:  douta
+- Physical Port: douta
+
+- Logical Port:  ena
+- Physical Port: ena
+
+- Logical Port:  rsta
+- Physical Port: rsta
+
+- Logical Port:  wea
+- Physical Port: wea
+
+
+**********************************************************
+
+BUS INTERFACE: 4
+Bus Interface Name: BRAM_PORTB
+Bus Presence:       optional
+Bus Disabled:       (((C_INTERFACE_TYPE)=0) && ((C_MEM_TYPE)!= 0) && ((C_MEM_TYPE)!= 3))
+
+**********************************************************
+
+BUS INTERFACE: 5
+Bus Interface Name: CLK.ACLK
+Bus Presence:       optional
+Bus Enabled:        
+-----------------------------------------
+Parameter Name: CLK.ACLK.ASSOCIATED_BUSIF
+Parameter ID:   BUSIFPARAM_VALUE.CLK.ACLK.ASSOCIATED_BUSIF
+Display Name:   CLK.ACLK.ASSOCIATED BUSIF
+Description:    
+No Current Range
+Type:           string
+Current Value:  AXI_SLAVE_S_AXI:AXILite_SLAVE_S_AXI
+Presence:       optional
+Enabled:        
+-----------------------------------------
+Parameter Name: CLK.ACLK.ASSOCIATED_RESET
+Parameter ID:   BUSIFPARAM_VALUE.CLK.ACLK.ASSOCIATED_RESET
+Display Name:   CLK.ACLK.ASSOCIATED RESET
+Description:    
+No Current Range
+Type:           string
+Current Value:  s_aresetn
+Presence:       optional
+Enabled:        
+-----------------------------------------
+Parameter Name: CLK.ACLK.FREQ_HZ
+Parameter ID:   BUSIFPARAM_VALUE.CLK.ACLK.FREQ_HZ
+Display Name:   CLK.ACLK.FREQ HZ
+Description:    
+No Current Range
+Type:           long
+Current Value:  100000000
+Presence:       optional
+Enabled:        
+-----------------------------------------
+Parameter Name: CLK.ACLK.FREQ_TOLERANCE_HZ
+Parameter ID:   BUSIFPARAM_VALUE.CLK.ACLK.FREQ_TOLERANCE_HZ
+Display Name:   CLK.ACLK.FREQ TOLERANCE HZ
+Description:    
+No Current Range
+Type:           long
+Current Value:  0
+Presence:       optional
+Enabled:        
+-----------------------------------------
+Parameter Name: CLK.ACLK.PHASE
+Parameter ID:   BUSIFPARAM_VALUE.CLK.ACLK.PHASE
+Display Name:   CLK.ACLK.PHASE
+Description:    
+No Current Range
+Type:           float
+Current Value:  0.0
+Presence:       optional
+Enabled:        
+-----------------------------------------
+Parameter Name: CLK.ACLK.CLK_DOMAIN
+Parameter ID:   BUSIFPARAM_VALUE.CLK.ACLK.CLK_DOMAIN
+Display Name:   CLK.ACLK.CLK DOMAIN
+Description:    
+No Current Range
+Type:           string
+Current Value:  
+Presence:       optional
+Enabled:        
+-----------------------------------------
+Parameter Name: CLK.ACLK.ASSOCIATED_PORT
+Parameter ID:   BUSIFPARAM_VALUE.CLK.ACLK.ASSOCIATED_PORT
+Display Name:   CLK.ACLK.ASSOCIATED PORT
+Description:    
+No Current Range
+Type:           string
+Current Value:  
+Presence:       optional
+Enabled:        
+-----------------------------------------
+Parameter Name: CLK.ACLK.INSERT_VIP
+Parameter ID:   BUSIFPARAM_VALUE.CLK.ACLK.INSERT_VIP
+Display Name:   CLK.ACLK.INSERT VIP
+Description:    
+No Current Range
+Type:           long
+Current Value:  0
+Presence:       optional
+Enabled:        
+-----------------------------------------
+- Logical Port:  s_aclk
+- Physical Port: s_aclk
+
+
+**********************************************************
+
+BUS INTERFACE: 6
+Bus Interface Name: RST.ARESETN
+Bus Presence:       optional
+Bus Enabled:        
+-----------------------------------------
+Parameter Name: RST.ARESETN.POLARITY
+Parameter ID:   BUSIFPARAM_VALUE.RST.ARESETN.POLARITY
+Display Name:   RST.ARESETN.POLARITY
+Description:    
+No Current Range
+Type:           string
+Current Value:  ACTIVE_LOW
+Presence:       optional
+Enabled:        
+-----------------------------------------
+Parameter Name: RST.ARESETN.INSERT_VIP
+Parameter ID:   BUSIFPARAM_VALUE.RST.ARESETN.INSERT_VIP
+Display Name:   RST.ARESETN.INSERT VIP
+Description:    
+No Current Range
+Type:           long
+Current Value:  0
+Presence:       optional
+Enabled:        
+-----------------------------------------
+- Logical Port:  s_aresetn
+- Physical Port: s_aresetn
+
+
+**********************************************************
+
+OTHER CONFIG ELEMENTS
+
+DEPENDENCY GRAPH
+
+digraph G {
+0[label="MODELPARAM_VALUE.C_INTERFACE_TYPE"];
+1[label="BUSIF_ENABLEMENT.AXILITE_SLAVE_S_AXI"];
+2[label="MODELPARAM_VALUE.C_AXI_TYPE"];
+3[label="BUSIF_ENABLEMENT.AXI_SLAVE_S_AXI"];
+4[label="BUSIF_ENABLEMENT.BRAM_PORTA"];
+5[label="BUSIF_ENABLEMENT.BRAM_PORTB"];
+6[label="MODELPARAM_VALUE.C_MEM_TYPE"];
+7[label="PARAM_VALUE.ENABLE_32BIT_ADDRESS"];
+8[label="MODELPARAM_VALUE.C_ADDRA_WIDTH"];
+9[label="PARAM_VALUE.USE_BRAM_BLOCK"];
+10[label="PARAM_VALUE.WRITE_DEPTH_A"];
+11[label="PARAM_VALUE.INTERFACE_TYPE"];
+12[label="PARAM_VALUE.MEMORY_TYPE"];
+13[label="PARAM_VALUE.READ_WIDTH_A"];
+14[label="PARAM_VALUE.WRITE_WIDTH_A"];
+15[label="MODELPARAM_VALUE.C_ADDRB_WIDTH"];
+16[label="PARAM_VALUE.READ_WIDTH_B"];
+17[label="PARAM_VALUE.WRITE_WIDTH_B"];
+18[label="PARAM_VALUE.ALGORITHM"];
+19[label="MODELPARAM_VALUE.C_ALGORITHM"];
+20[label="PARAM_VALUE.AXI_ID_WIDTH"];
+21[label="MODELPARAM_VALUE.C_AXI_ID_WIDTH"];
+22[label="PARAM_VALUE.AXI_SLAVE_TYPE"];
+23[label="MODELPARAM_VALUE.C_AXI_SLAVE_TYPE"];
+24[label="PARAM_VALUE.AXI_TYPE"];
+25[label="PARAM_VALUE.BYTE_SIZE"];
+26[label="MODELPARAM_VALUE.C_BYTE_SIZE"];
+27[label="PARAM_VALUE.ASSUME_SYNCHRONOUS_CLK"];
+28[label="MODELPARAM_VALUE.C_COMMON_CLK"];
+29[label="PROJECT_PARAM.ARCHITECTURE"];
+30[label="MODELPARAM_VALUE.C_COUNT_18K_BRAM"];
+31[label="PARAM_VALUE.ECCTYPE"];
+32[label="PARAM_VALUE.OPERATING_MODE_A"];
+33[label="PARAM_VALUE.OPERATING_MODE_B"];
+34[label="PARAM_VALUE.PRIMITIVE"];
+35[label="PARAM_VALUE.SOFTECC"];
+36[label="PARAM_VALUE.USE_BYTE_WRITE_ENABLE"];
+37[label="PARAM_VALUE.USE_RSTA_PIN"];
+38[label="PARAM_VALUE.RESET_MEMORY_LATCH_A"];
+39[label="PARAM_VALUE.USE_RSTB_PIN"];
+40[label="PARAM_VALUE.RESET_MEMORY_LATCH_B"];
+41[label="MODELPARAM_VALUE.C_COUNT_36K_BRAM"];
+42[label="PARAM_VALUE.CTRL_ECC_ALGO"];
+43[label="MODELPARAM_VALUE.C_CTRL_ECC_ALGO"];
+44[label="PARAM_VALUE.REMAINING_MEMORY_LOCATIONS"];
+45[label="MODELPARAM_VALUE.C_DEFAULT_DATA"];
+46[label="PARAM_VALUE.DISABLE_COLLISION_WARNINGS"];
+47[label="MODELPARAM_VALUE.C_DISABLE_WARN_BHV_COLL"];
+48[label="PARAM_VALUE.DISABLE_OUT_OF_RANGE_WARNINGS"];
+49[label="MODELPARAM_VALUE.C_DISABLE_WARN_BHV_RANGE"];
+50[label="MODELPARAM_VALUE.C_ENABLE_32BIT_ADDRESS"];
+51[label="PARAM_VALUE.EN_DEEPSLEEP_PIN"];
+52[label="MODELPARAM_VALUE.C_EN_DEEPSLEEP_PIN"];
+53[label="PARAM_VALUE.EN_ECC_PIPE"];
+54[label="MODELPARAM_VALUE.C_EN_ECC_PIPE"];
+55[label="PARAM_VALUE.RD_ADDR_CHNG_A"];
+56[label="MODELPARAM_VALUE.C_EN_RDADDRA_CHG"];
+57[label="MODELPARAM_VALUE.C_EN_RDADDRB_CHG"];
+58[label="PARAM_VALUE.RD_ADDR_CHNG_B"];
+59[label="PARAM_VALUE.EN_SAFETY_CKT"];
+60[label="MODELPARAM_VALUE.C_EN_SAFETY_CKT"];
+61[label="PARAM_VALUE.EN_SHUTDOWN_PIN"];
+62[label="MODELPARAM_VALUE.C_EN_SHUTDOWN_PIN"];
+63[label="PARAM_VALUE.EN_SLEEP_PIN"];
+64[label="MODELPARAM_VALUE.C_EN_SLEEP_PIN"];
+65[label="MODELPARAM_VALUE.C_EST_POWER_SUMMARY"];
+66[label="PARAM_VALUE.ECC"];
+67[label="PARAM_VALUE.PORT_A_CLOCK"];
+68[label="PARAM_VALUE.PORT_A_ENABLE_RATE"];
+69[label="PARAM_VALUE.PORT_A_WRITE_RATE"];
+70[label="PARAM_VALUE.PORT_B_CLOCK"];
+71[label="PARAM_VALUE.PORT_B_ENABLE_RATE"];
+72[label="PARAM_VALUE.PORT_B_WRITE_RATE"];
+73[label="PARAM_VALUE.PRIM_TYPE_TO_IMPLEMENT"];
+74[label="MODELPARAM_VALUE.C_FAMILY"];
+75[label="PARAM_VALUE.USE_AXI_ID"];
+76[label="MODELPARAM_VALUE.C_HAS_AXI_ID"];
+77[label="PARAM_VALUE.ENABLE_A"];
+78[label="MODELPARAM_VALUE.C_HAS_ENA"];
+79[label="PARAM_VALUE.ENABLE_B"];
+80[label="MODELPARAM_VALUE.C_HAS_ENB"];
+81[label="PARAM_VALUE.ERROR_INJECTION_TYPE"];
+82[label="MODELPARAM_VALUE.C_HAS_INJECTERR"];
+83[label="PARAM_VALUE.USE_ERROR_INJECTION_PINS"];
+84[label="PARAM_VALUE.REGISTER_PORTA_OUTPUT_OF_MEMORY_PRIMITIVES"];
+85[label="MODELPARAM_VALUE.C_HAS_MEM_OUTPUT_REGS_A"];
+86[label="PARAM_VALUE.REGISTER_PORTB_OUTPUT_OF_MEMORY_PRIMITIVES"];
+87[label="MODELPARAM_VALUE.C_HAS_MEM_OUTPUT_REGS_B"];
+88[label="PARAM_VALUE.REGISTER_PORTA_OUTPUT_OF_MEMORY_CORE"];
+89[label="MODELPARAM_VALUE.C_HAS_MUX_OUTPUT_REGS_A"];
+90[label="PARAM_VALUE.REGISTER_PORTB_OUTPUT_OF_MEMORY_CORE"];
+91[label="MODELPARAM_VALUE.C_HAS_MUX_OUTPUT_REGS_B"];
+92[label="PARAM_VALUE.USE_REGCEA_PIN"];
+93[label="MODELPARAM_VALUE.C_HAS_REGCEA"];
+94[label="PARAM_VALUE.USE_REGCEB_PIN"];
+95[label="MODELPARAM_VALUE.C_HAS_REGCEB"];
+96[label="MODELPARAM_VALUE.C_HAS_RSTA"];
+97[label="MODELPARAM_VALUE.C_HAS_RSTB"];
+98[label="PARAM_VALUE.REGISTER_PORTA_INPUT_OF_SOFTECC"];
+99[label="MODELPARAM_VALUE.C_HAS_SOFTECC_INPUT_REGS_A"];
+100[label="PARAM_VALUE.REGISTER_PORTB_OUTPUT_OF_SOFTECC"];
+101[label="MODELPARAM_VALUE.C_HAS_SOFTECC_OUTPUT_REGS_B"];
+102[label="PARAM_VALUE.OUTPUT_RESET_VALUE_A"];
+103[label="MODELPARAM_VALUE.C_INITA_VAL"];
+104[label="PARAM_VALUE.OUTPUT_RESET_VALUE_B"];
+105[label="MODELPARAM_VALUE.C_INITB_VAL"];
+106[label="PARAM_VALUE.COMPONENT_NAME"];
+107[label="MODELPARAM_VALUE.C_INIT_FILE"];
+108[label="PARAM_VALUE.MEM_FILE"];
+109[label="PARAM_VALUE.COE_FILE"];
+110[label="MODELPARAM_VALUE.C_INIT_FILE_NAME"];
+111[label="PARAM_VALUE.LOAD_INIT_FILE"];
+112[label="MODELPARAM_VALUE.C_LOAD_INIT_FILE"];
+113[label="PARAM_VALUE.MEMORY_OPTIMIZATION"];
+114[label="MODELPARAM_VALUE.C_MEMORY_OPTIMIZATION"];
+115[label="PARAM_VALUE.PIPELINE_STAGES"];
+116[label="MODELPARAM_VALUE.C_MUX_PIPELINE_STAGES"];
+117[label="MODELPARAM_VALUE.C_PRIM_TYPE"];
+118[label="MODELPARAM_VALUE.C_READ_DEPTH_A"];
+119[label="MODELPARAM_VALUE.C_READ_DEPTH_B"];
+120[label="PARAM_VALUE.READ_LATENCY_A"];
+121[label="MODELPARAM_VALUE.C_READ_LATENCY_A"];
+122[label="PARAM_VALUE.READ_LATENCY_B"];
+123[label="MODELPARAM_VALUE.C_READ_LATENCY_B"];
+124[label="MODELPARAM_VALUE.C_READ_WIDTH_A"];
+125[label="MODELPARAM_VALUE.C_READ_WIDTH_B"];
+126[label="MODELPARAM_VALUE.C_RSTRAM_A"];
+127[label="MODELPARAM_VALUE.C_RSTRAM_B"];
+128[label="PARAM_VALUE.RESET_PRIORITY_A"];
+129[label="MODELPARAM_VALUE.C_RST_PRIORITY_A"];
+130[label="PARAM_VALUE.RESET_PRIORITY_B"];
+131[label="MODELPARAM_VALUE.C_RST_PRIORITY_B"];
+132[label="PARAM_VALUE.COLLISION_WARNINGS"];
+133[label="MODELPARAM_VALUE.C_SIM_COLLISION_CHECK"];
+134[label="MODELPARAM_VALUE.C_USE_BRAM_BLOCK"];
+135[label="MODELPARAM_VALUE.C_USE_BYTE_WEA"];
+136[label="MODELPARAM_VALUE.C_USE_BYTE_WEB"];
+137[label="PARAM_VALUE.FILL_REMAINING_MEMORY_LOCATIONS"];
+138[label="MODELPARAM_VALUE.C_USE_DEFAULT_DATA"];
+139[label="MODELPARAM_VALUE.C_USE_ECC"];
+140[label="MODELPARAM_VALUE.C_USE_SOFTECC"];
+141[label="MODELPARAM_VALUE.C_USE_URAM"];
+142[label="MODELPARAM_VALUE.C_WEA_WIDTH"];
+143[label="MODELPARAM_VALUE.C_WEB_WIDTH"];
+144[label="MODELPARAM_VALUE.C_WRITE_DEPTH_A"];
+145[label="MODELPARAM_VALUE.C_WRITE_DEPTH_B"];
+146[label="MODELPARAM_VALUE.C_WRITE_MODE_A"];
+147[label="MODELPARAM_VALUE.C_WRITE_MODE_B"];
+148[label="MODELPARAM_VALUE.C_WRITE_WIDTH_A"];
+149[label="MODELPARAM_VALUE.C_WRITE_WIDTH_B"];
+150[label="PROJECT_PARAM.FAMILY"];
+151[label="MODELPARAM_VALUE.C_XDEVICEFAMILY"];
+152[label="PARAM_VALUE.ADDITIONAL_INPUTS_FOR_POWER_ESTIMATION"];
+153[label="PARAM_VALUE.RESET_TYPE"];
+154[label="PORT_ENABLEMENT.ADDRA"];
+155[label="PORT_ENABLEMENT.ADDRB"];
+156[label="PORT_ENABLEMENT.CLKA"];
+157[label="PORT_ENABLEMENT.CLKB"];
+158[label="PORT_ENABLEMENT.DBITERR"];
+159[label="PORT_ENABLEMENT.DEEPSLEEP"];
+160[label="PORT_ENABLEMENT.DINA"];
+161[label="PORT_ENABLEMENT.DINB"];
+162[label="PORT_ENABLEMENT.DOUTA"];
+163[label="PORT_ENABLEMENT.DOUTB"];
+164[label="PORT_ENABLEMENT.ECCPIPECE"];
+165[label="PORT_ENABLEMENT.ENA"];
+166[label="PORT_ENABLEMENT.ENB"];
+167[label="PORT_ENABLEMENT.INJECTDBITERR"];
+168[label="PORT_ENABLEMENT.INJECTSBITERR"];
+169[label="PORT_ENABLEMENT.RDADDRECC"];
+170[label="PORT_ENABLEMENT.REGCEA"];
+171[label="PORT_ENABLEMENT.REGCEB"];
+172[label="PORT_ENABLEMENT.RSTA"];
+173[label="PORT_ENABLEMENT.RSTA_BUSY"];
+174[label="PORT_ENABLEMENT.RSTB"];
+175[label="PORT_ENABLEMENT.RSTB_BUSY"];
+176[label="PORT_ENABLEMENT.SBITERR"];
+177[label="PORT_ENABLEMENT.SHUTDOWN"];
+178[label="PORT_ENABLEMENT.SLEEP"];
+179[label="PORT_ENABLEMENT.S_ACLK"];
+180[label="PORT_ENABLEMENT.S_ARESETN"];
+181[label="PORT_ENABLEMENT.S_AXI_ARADDR"];
+182[label="PORT_ENABLEMENT.S_AXI_ARBURST"];
+183[label="PORT_ENABLEMENT.S_AXI_ARID"];
+184[label="PORT_ENABLEMENT.S_AXI_ARLEN"];
+185[label="PORT_ENABLEMENT.S_AXI_ARREADY"];
+186[label="PORT_ENABLEMENT.S_AXI_ARSIZE"];
+187[label="PORT_ENABLEMENT.S_AXI_ARVALID"];
+188[label="PORT_ENABLEMENT.S_AXI_AWADDR"];
+189[label="PORT_ENABLEMENT.S_AXI_AWBURST"];
+190[label="PORT_ENABLEMENT.S_AXI_AWID"];
+191[label="PORT_ENABLEMENT.S_AXI_AWLEN"];
+192[label="PORT_ENABLEMENT.S_AXI_AWREADY"];
+193[label="PORT_ENABLEMENT.S_AXI_AWSIZE"];
+194[label="PORT_ENABLEMENT.S_AXI_AWVALID"];
+195[label="PORT_ENABLEMENT.S_AXI_BID"];
+196[label="PORT_ENABLEMENT.S_AXI_BREADY"];
+197[label="PORT_ENABLEMENT.S_AXI_BRESP"];
+198[label="PORT_ENABLEMENT.S_AXI_BVALID"];
+199[label="PORT_ENABLEMENT.S_AXI_DBITERR"];
+200[label="PORT_ENABLEMENT.S_AXI_INJECTDBITERR"];
+201[label="PORT_ENABLEMENT.S_AXI_INJECTSBITERR"];
+202[label="PORT_ENABLEMENT.S_AXI_RDADDRECC"];
+203[label="PORT_ENABLEMENT.S_AXI_RDATA"];
+204[label="PORT_ENABLEMENT.S_AXI_RID"];
+205[label="PORT_ENABLEMENT.S_AXI_RLAST"];
+206[label="PORT_ENABLEMENT.S_AXI_RREADY"];
+207[label="PORT_ENABLEMENT.S_AXI_RRESP"];
+208[label="PORT_ENABLEMENT.S_AXI_RVALID"];
+209[label="PORT_ENABLEMENT.S_AXI_SBITERR"];
+210[label="PORT_ENABLEMENT.S_AXI_WDATA"];
+211[label="PORT_ENABLEMENT.S_AXI_WLAST"];
+212[label="PORT_ENABLEMENT.S_AXI_WREADY"];
+213[label="PORT_ENABLEMENT.S_AXI_WSTRB"];
+214[label="PORT_ENABLEMENT.S_AXI_WVALID"];
+215[label="PORT_ENABLEMENT.WEA"];
+216[label="PORT_ENABLEMENT.WEB"];
+217[label="PORT_VECTOR_LEFT.ADDRA"];
+218[label="PORT_VECTOR_LEFT.ADDRB"];
+219[label="PORT_VECTOR_LEFT.DINA"];
+220[label="PORT_VECTOR_LEFT.DINB"];
+221[label="PORT_VECTOR_LEFT.DOUTA"];
+222[label="PORT_VECTOR_LEFT.DOUTB"];
+223[label="PORT_VECTOR_LEFT.RDADDRECC"];
+224[label="PORT_VECTOR_LEFT.S_AXI_ARID"];
+225[label="PORT_VECTOR_LEFT.S_AXI_AWID"];
+226[label="PORT_VECTOR_LEFT.S_AXI_BID"];
+227[label="PORT_VECTOR_LEFT.S_AXI_RDADDRECC"];
+228[label="PORT_VECTOR_LEFT.S_AXI_RDATA"];
+229[label="PORT_VECTOR_LEFT.S_AXI_RID"];
+230[label="PORT_VECTOR_LEFT.S_AXI_WDATA"];
+231[label="PORT_VECTOR_LEFT.S_AXI_WSTRB"];
+232[label="PORT_VECTOR_LEFT.WEA"];
+233[label="PORT_VECTOR_LEFT.WEB"];
+0->1 [label="xpath"];
+2->1 [label="xpath"];
+0->3 [label="xpath"];
+2->3 [label="xpath"];
+0->4 [label="xpath"];
+0->5 [label="xpath"];
+6->5 [label="xpath"];
+7->8 [label="xgui"];
+9->8 [label="xgui"];
+10->8 [label="xgui"];
+11->8 [label="xgui"];
+12->8 [label="xgui"];
+13->8 [label="xgui"];
+14->8 [label="xgui"];
+7->15 [label="xgui"];
+9->15 [label="xgui"];
+11->15 [label="xgui"];
+16->15 [label="xgui"];
+10->15 [label="xgui"];
+14->15 [label="xgui"];
+17->15 [label="xgui"];
+12->15 [label="xgui"];
+18->19 [label="xgui"];
+20->21 [label="xgui"];
+22->23 [label="xgui"];
+24->2 [label="xgui"];
+25->26 [label="xgui"];
+27->28 [label="xgui"];
+29->30 [label="xgui"];
+18->30 [label="xgui"];
+27->30 [label="xgui"];
+25->30 [label="xgui"];
+31->30 [label="xgui"];
+12->30 [label="xgui"];
+32->30 [label="xgui"];
+33->30 [label="xgui"];
+34->30 [label="xgui"];
+13->30 [label="xgui"];
+16->30 [label="xgui"];
+35->30 [label="xgui"];
+36->30 [label="xgui"];
+10->30 [label="xgui"];
+14->30 [label="xgui"];
+17->30 [label="xgui"];
+11->30 [label="xgui"];
+37->30 [label="xgui"];
+38->30 [label="xgui"];
+39->30 [label="xgui"];
+40->30 [label="xgui"];
+9->30 [label="xgui"];
+29->41 [label="xgui"];
+18->41 [label="xgui"];
+27->41 [label="xgui"];
+25->41 [label="xgui"];
+31->41 [label="xgui"];
+12->41 [label="xgui"];
+32->41 [label="xgui"];
+33->41 [label="xgui"];
+34->41 [label="xgui"];
+13->41 [label="xgui"];
+16->41 [label="xgui"];
+35->41 [label="xgui"];
+36->41 [label="xgui"];
+10->41 [label="xgui"];
+14->41 [label="xgui"];
+17->41 [label="xgui"];
+11->41 [label="xgui"];
+37->41 [label="xgui"];
+38->41 [label="xgui"];
+39->41 [label="xgui"];
+40->41 [label="xgui"];
+9->41 [label="xgui"];
+42->43 [label="xgui"];
+44->45 [label="xgui"];
+46->47 [label="xgui"];
+48->49 [label="xgui"];
+7->50 [label="xgui"];
+51->52 [label="xgui"];
+53->54 [label="xgui"];
+55->56 [label="xgui"];
+12->57 [label="xgui"];
+58->57 [label="xgui"];
+55->57 [label="xgui"];
+59->60 [label="xgui"];
+29->60 [label="xgui"];
+61->62 [label="xgui"];
+63->64 [label="xgui"];
+29->64 [label="xgui"];
+29->65 [label="xgui"];
+18->65 [label="xgui"];
+27->65 [label="xgui"];
+25->65 [label="xgui"];
+66->65 [label="xgui"];
+12->65 [label="xgui"];
+32->65 [label="xgui"];
+33->65 [label="xgui"];
+67->65 [label="xgui"];
+68->65 [label="xgui"];
+69->65 [label="xgui"];
+70->65 [label="xgui"];
+71->65 [label="xgui"];
+72->65 [label="xgui"];
+34->65 [label="xgui"];
+13->65 [label="xgui"];
+16->65 [label="xgui"];
+36->65 [label="xgui"];
+10->65 [label="xgui"];
+14->65 [label="xgui"];
+17->65 [label="xgui"];
+11->65 [label="xgui"];
+37->65 [label="xgui"];
+38->65 [label="xgui"];
+39->65 [label="xgui"];
+40->65 [label="xgui"];
+9->65 [label="xgui"];
+73->65 [label="xgui"];
+29->74 [label="xgui"];
+75->76 [label="xgui"];
+77->78 [label="xgui"];
+79->80 [label="xgui"];
+81->82 [label="xgui"];
+83->82 [label="xgui"];
+84->85 [label="xgui"];
+86->87 [label="xgui"];
+88->89 [label="xgui"];
+90->91 [label="xgui"];
+92->93 [label="xgui"];
+94->95 [label="xgui"];
+37->96 [label="xgui"];
+39->97 [label="xgui"];
+98->99 [label="xgui"];
+100->101 [label="xgui"];
+102->103 [label="xgui"];
+104->105 [label="xgui"];
+106->107 [label="xgui"];
+108->107 [label="xgui"];
+109->110 [label="xgui"];
+106->110 [label="xgui"];
+11->0 [label="xgui"];
+18->0 [label="xgui"];
+27->0 [label="xgui"];
+25->0 [label="xgui"];
+66->0 [label="xgui"];
+12->0 [label="xgui"];
+32->0 [label="xgui"];
+33->0 [label="xgui"];
+67->0 [label="xgui"];
+68->0 [label="xgui"];
+69->0 [label="xgui"];
+70->0 [label="xgui"];
+71->0 [label="xgui"];
+72->0 [label="xgui"];
+34->0 [label="xgui"];
+13->0 [label="xgui"];
+16->0 [label="xgui"];
+36->0 [label="xgui"];
+10->0 [label="xgui"];
+14->0 [label="xgui"];
+17->0 [label="xgui"];
+31->0 [label="xgui"];
+35->0 [label="xgui"];
+111->112 [label="xgui"];
+113->114 [label="xgui"];
+12->6 [label="xgui"];
+115->116 [label="xgui"];
+34->117 [label="xgui"];
+11->118 [label="xgui"];
+12->118 [label="xgui"];
+13->118 [label="xgui"];
+10->118 [label="xgui"];
+14->118 [label="xgui"];
+11->119 [label="xgui"];
+16->119 [label="xgui"];
+10->119 [label="xgui"];
+14->119 [label="xgui"];
+17->119 [label="xgui"];
+120->121 [label="xgui"];
+29->121 [label="xgui"];
+122->123 [label="xgui"];
+29->123 [label="xgui"];
+13->124 [label="xgui"];
+16->125 [label="xgui"];
+38->126 [label="xgui"];
+40->127 [label="xgui"];
+128->129 [label="xgui"];
+130->131 [label="xgui"];
+132->133 [label="xgui"];
+9->134 [label="xgui"];
+36->135 [label="xgui"];
+36->136 [label="xgui"];
+137->138 [label="xgui"];
+66->139 [label="xgui"];
+35->140 [label="xgui"];
+73->141 [label="xgui"];
+25->142 [label="xgui"];
+36->142 [label="xgui"];
+14->142 [label="xgui"];
+25->143 [label="xgui"];
+36->143 [label="xgui"];
+17->143 [label="xgui"];
+10->144 [label="xgui"];
+11->145 [label="xgui"];
+10->145 [label="xgui"];
+14->145 [label="xgui"];
+17->145 [label="xgui"];
+32->146 [label="xgui"];
+33->147 [label="xgui"];
+14->148 [label="xgui"];
+17->149 [label="xgui"];
+150->151 [label="xgui"];
+7->18 [label="xgui"];
+9->18 [label="xgui"];
+14->18 [label="xgui"];
+31->18 [label="xgui"];
+7->27 [label="xgui"];
+11->27 [label="xgui"];
+12->27 [label="xgui"];
+9->27 [label="xgui"];
+73->27 [label="xgui"];
+75->20 [label="xgui"];
+11->20 [label="xgui"];
+24->22 [label="xgui"];
+11->22 [label="xgui"];
+11->24 [label="xgui"];
+66->25 [label="xgui"];
+31->25 [label="xgui"];
+7->25 [label="xgui"];
+11->25 [label="xgui"];
+9->25 [label="xgui"];
+36->25 [label="xgui"];
+12->25 [label="xgui"];
+10->109 [label="xgui"];
+31->109 [label="xgui"];
+111->109 [label="xgui"];
+14->109 [label="xgui"];
+17->109 [label="xgui"];
+13->109 [label="xgui"];
+16->109 [label="xgui"];
+7->132 [label="xgui"];
+12->132 [label="xgui"];
+9->132 [label="xgui"];
+73->132 [label="xgui"];
+7->46 [label="xgui"];
+9->46 [label="xgui"];
+18->46 [label="xgui"];
+27->46 [label="xgui"];
+25->46 [label="xgui"];
+31->46 [label="xgui"];
+12->46 [label="xgui"];
+32->46 [label="xgui"];
+33->46 [label="xgui"];
+34->46 [label="xgui"];
+13->46 [label="xgui"];
+16->46 [label="xgui"];
+35->46 [label="xgui"];
+36->46 [label="xgui"];
+10->46 [label="xgui"];
+14->46 [label="xgui"];
+17->46 [label="xgui"];
+11->46 [label="xgui"];
+73->46 [label="xgui"];
+7->48 [label="xgui"];
+9->48 [label="xgui"];
+73->48 [label="xgui"];
+11->66 [label="xgui"];
+12->66 [label="xgui"];
+31->66 [label="xgui"];
+7->31 [label="xgui"];
+11->31 [label="xgui"];
+12->31 [label="xgui"];
+73->31 [label="xgui"];
+9->7 [label="xgui"];
+11->7 [label="xgui"];
+18->77 [label="xgui"];
+7->77 [label="xgui"];
+11->77 [label="xgui"];
+73->77 [label="xgui"];
+9->77 [label="xgui"];
+18->79 [label="xgui"];
+7->79 [label="xgui"];
+11->79 [label="xgui"];
+73->79 [label="xgui"];
+12->79 [label="xgui"];
+9->79 [label="xgui"];
+73->51 [label="xgui"];
+12->53 [label="xgui"];
+31->53 [label="xgui"];
+29->53 [label="xgui"];
+88->59 [label="xgui"];
+90->59 [label="xgui"];
+29->59 [label="xgui"];
+73->59 [label="xgui"];
+37->59 [label="xgui"];
+39->59 [label="xgui"];
+73->61 [label="xgui"];
+11->63 [label="xgui"];
+77->63 [label="xgui"];
+79->63 [label="xgui"];
+12->63 [label="xgui"];
+29->63 [label="xgui"];
+11->81 [label="xgui"];
+83->81 [label="xgui"];
+9->137 [label="xgui"];
+31->137 [label="xgui"];
+73->137 [label="xgui"];
+66->111 [label="xgui"];
+35->111 [label="xgui"];
+9->111 [label="xgui"];
+10->111 [label="xgui"];
+31->111 [label="xgui"];
+14->111 [label="xgui"];
+17->111 [label="xgui"];
+13->111 [label="xgui"];
+16->111 [label="xgui"];
+73->111 [label="xgui"];
+12->111 [label="xgui"];
+73->113 [label="xgui"];
+11->12 [label="xgui"];
+9->12 [label="xgui"];
+18->32 [label="xgui"];
+27->32 [label="xgui"];
+31->32 [label="xgui"];
+12->32 [label="xgui"];
+66->32 [label="xgui"];
+9->32 [label="xgui"];
+36->32 [label="xgui"];
+11->32 [label="xgui"];
+29->32 [label="xgui"];
+73->32 [label="xgui"];
+18->33 [label="xgui"];
+27->33 [label="xgui"];
+31->33 [label="xgui"];
+12->33 [label="xgui"];
+66->33 [label="xgui"];
+9->33 [label="xgui"];
+73->33 [label="xgui"];
+36->33 [label="xgui"];
+29->33 [label="xgui"];
+31->102 [label="xgui"];
+11->102 [label="xgui"];
+12->102 [label="xgui"];
+37->102 [label="xgui"];
+13->102 [label="xgui"];
+9->102 [label="xgui"];
+31->104 [label="xgui"];
+11->104 [label="xgui"];
+12->104 [label="xgui"];
+39->104 [label="xgui"];
+16->104 [label="xgui"];
+9->104 [label="xgui"];
+66->104 [label="xgui"];
+18->115 [label="xgui"];
+27->115 [label="xgui"];
+25->115 [label="xgui"];
+31->115 [label="xgui"];
+7->115 [label="xgui"];
+12->115 [label="xgui"];
+32->115 [label="xgui"];
+33->115 [label="xgui"];
+34->115 [label="xgui"];
+13->115 [label="xgui"];
+16->115 [label="xgui"];
+88->115 [label="xgui"];
+90->115 [label="xgui"];
+9->115 [label="xgui"];
+36->115 [label="xgui"];
+10->115 [label="xgui"];
+14->115 [label="xgui"];
+17->115 [label="xgui"];
+11->115 [label="xgui"];
+29->115 [label="xgui"];
+37->115 [label="xgui"];
+38->115 [label="xgui"];
+39->115 [label="xgui"];
+40->115 [label="xgui"];
+152->67 [label="xgui"];
+12->67 [label="xgui"];
+152->68 [label="xgui"];
+12->68 [label="xgui"];
+152->69 [label="xgui"];
+12->69 [label="xgui"];
+152->70 [label="xgui"];
+12->70 [label="xgui"];
+152->71 [label="xgui"];
+12->71 [label="xgui"];
+152->72 [label="xgui"];
+12->72 [label="xgui"];
+18->34 [label="xgui"];
+31->34 [label="xgui"];
+7->34 [label="xgui"];
+12->34 [label="xgui"];
+9->34 [label="xgui"];
+36->34 [label="xgui"];
+10->34 [label="xgui"];
+14->34 [label="xgui"];
+73->34 [label="xgui"];
+12->73 [label="xgui"];
+29->73 [label="xgui"];
+73->55 [label="xgui"];
+27->55 [label="xgui"];
+29->55 [label="xgui"];
+73->58 [label="xgui"];
+55->58 [label="xgui"];
+27->58 [label="xgui"];
+12->58 [label="xgui"];
+29->58 [label="xgui"];
+29->120 [label="xgui"];
+9->120 [label="xgui"];
+73->120 [label="xgui"];
+29->122 [label="xgui"];
+9->122 [label="xgui"];
+73->122 [label="xgui"];
+18->13 [label="xgui"];
+22->13 [label="xgui"];
+24->13 [label="xgui"];
+25->13 [label="xgui"];
+66->13 [label="xgui"];
+31->13 [label="xgui"];
+7->13 [label="xgui"];
+81->13 [label="xgui"];
+11->13 [label="xgui"];
+12->13 [label="xgui"];
+34->13 [label="xgui"];
+9->13 [label="xgui"];
+36->13 [label="xgui"];
+73->13 [label="xgui"];
+10->13 [label="xgui"];
+14->13 [label="xgui"];
+18->16 [label="xgui"];
+22->16 [label="xgui"];
+24->16 [label="xgui"];
+25->16 [label="xgui"];
+66->16 [label="xgui"];
+31->16 [label="xgui"];
+7->16 [label="xgui"];
+81->16 [label="xgui"];
+11->16 [label="xgui"];
+12->16 [label="xgui"];
+34->16 [label="xgui"];
+13->16 [label="xgui"];
+9->16 [label="xgui"];
+36->16 [label="xgui"];
+10->16 [label="xgui"];
+73->16 [label="xgui"];
+14->16 [label="xgui"];
+17->16 [label="xgui"];
+31->98 [label="xgui"];
+11->88 [label="xgui"];
+12->88 [label="xgui"];
+9->88 [label="xgui"];
+73->88 [label="xgui"];
+11->84 [label="xgui"];
+12->84 [label="xgui"];
+9->84 [label="xgui"];
+73->84 [label="xgui"];
+11->90 [label="xgui"];
+12->90 [label="xgui"];
+9->90 [label="xgui"];
+73->90 [label="xgui"];
+11->86 [label="xgui"];
+12->86 [label="xgui"];
+9->86 [label="xgui"];
+73->86 [label="xgui"];
+31->100 [label="xgui"];
+137->44 [label="xgui"];
+9->44 [label="xgui"];
+14->44 [label="xgui"];
+88->38 [label="xgui"];
+84->38 [label="xgui"];
+37->38 [label="xgui"];
+90->40 [label="xgui"];
+86->40 [label="xgui"];
+39->40 [label="xgui"];
+11->128 [label="xgui"];
+12->128 [label="xgui"];
+88->128 [label="xgui"];
+84->128 [label="xgui"];
+38->128 [label="xgui"];
+9->128 [label="xgui"];
+37->128 [label="xgui"];
+11->130 [label="xgui"];
+12->130 [label="xgui"];
+40->130 [label="xgui"];
+9->130 [label="xgui"];
+39->130 [label="xgui"];
+11->153 [label="xgui"];
+37->153 [label="xgui"];
+39->153 [label="xgui"];
+11->35 [label="xgui"];
+12->35 [label="xgui"];
+31->35 [label="xgui"];
+22->75 [label="xgui"];
+24->75 [label="xgui"];
+11->75 [label="xgui"];
+66->36 [label="xgui"];
+31->36 [label="xgui"];
+7->36 [label="xgui"];
+11->36 [label="xgui"];
+12->36 [label="xgui"];
+35->36 [label="xgui"];
+9->36 [label="xgui"];
+22->36 [label="xgui"];
+31->83 [label="xgui"];
+11->83 [label="xgui"];
+12->92 [label="xgui"];
+88->92 [label="xgui"];
+73->92 [label="xgui"];
+84->92 [label="xgui"];
+11->94 [label="xgui"];
+12->94 [label="xgui"];
+90->94 [label="xgui"];
+86->94 [label="xgui"];
+73->94 [label="xgui"];
+31->37 [label="xgui"];
+7->37 [label="xgui"];
+11->37 [label="xgui"];
+12->37 [label="xgui"];
+66->37 [label="xgui"];
+9->37 [label="xgui"];
+31->39 [label="xgui"];
+7->39 [label="xgui"];
+11->39 [label="xgui"];
+12->39 [label="xgui"];
+66->39 [label="xgui"];
+9->39 [label="xgui"];
+22->10 [label="xgui"];
+24->10 [label="xgui"];
+12->10 [label="xgui"];
+9->10 [label="xgui"];
+14->10 [label="xgui"];
+11->10 [label="xgui"];
+29->10 [label="xgui"];
+36->10 [label="xgui"];
+25->10 [label="xgui"];
+22->14 [label="xgui"];
+24->14 [label="xgui"];
+25->14 [label="xgui"];
+66->14 [label="xgui"];
+31->14 [label="xgui"];
+7->14 [label="xgui"];
+81->14 [label="xgui"];
+11->14 [label="xgui"];
+12->14 [label="xgui"];
+35->14 [label="xgui"];
+9->14 [label="xgui"];
+36->14 [label="xgui"];
+18->17 [label="xgui"];
+22->17 [label="xgui"];
+24->17 [label="xgui"];
+25->17 [label="xgui"];
+31->17 [label="xgui"];
+7->17 [label="xgui"];
+81->17 [label="xgui"];
+11->17 [label="xgui"];
+12->17 [label="xgui"];
+34->17 [label="xgui"];
+66->17 [label="xgui"];
+13->17 [label="xgui"];
+9->17 [label="xgui"];
+36->17 [label="xgui"];
+10->17 [label="xgui"];
+73->17 [label="xgui"];
+14->17 [label="xgui"];
+0->154 [label="xpath"];
+6->155 [label="xpath"];
+0->155 [label="xpath"];
+0->156 [label="xpath"];
+6->157 [label="xpath"];
+0->157 [label="xpath"];
+139->158 [label="xpath"];
+140->158 [label="xpath"];
+0->158 [label="xpath"];
+74->159 [label="xpath"];
+52->159 [label="xpath"];
+6->160 [label="xpath"];
+0->160 [label="xpath"];
+6->161 [label="xpath"];
+0->161 [label="xpath"];
+6->162 [label="xpath"];
+0->162 [label="xpath"];
+6->163 [label="xpath"];
+0->163 [label="xpath"];
+54->164 [label="xpath"];
+78->165 [label="xpath"];
+0->165 [label="xpath"];
+6->166 [label="xpath"];
+80->166 [label="xpath"];
+0->166 [label="xpath"];
+82->167 [label="xpath"];
+0->167 [label="xpath"];
+82->168 [label="xpath"];
+0->168 [label="xpath"];
+139->169 [label="xpath"];
+74->169 [label="xpath"];
+140->169 [label="xpath"];
+0->169 [label="xpath"];
+93->170 [label="xpath"];
+6->170 [label="xpath"];
+0->170 [label="xpath"];
+6->171 [label="xpath"];
+95->171 [label="xpath"];
+0->171 [label="xpath"];
+96->172 [label="xpath"];
+6->172 [label="xpath"];
+0->172 [label="xpath"];
+60->173 [label="xpath"];
+6->174 [label="xpath"];
+97->174 [label="xpath"];
+0->174 [label="xpath"];
+6->175 [label="xpath"];
+60->175 [label="xpath"];
+139->176 [label="xpath"];
+140->176 [label="xpath"];
+0->176 [label="xpath"];
+74->177 [label="xpath"];
+62->177 [label="xpath"];
+74->178 [label="xpath"];
+64->178 [label="xpath"];
+0->179 [label="xpath"];
+0->180 [label="xpath"];
+0->181 [label="xpath"];
+0->182 [label="xpath"];
+2->182 [label="xpath"];
+23->182 [label="xpath"];
+0->183 [label="xpath"];
+76->183 [label="xpath"];
+0->184 [label="xpath"];
+2->184 [label="xpath"];
+0->185 [label="xpath"];
+0->186 [label="xpath"];
+2->186 [label="xpath"];
+23->186 [label="xpath"];
+0->187 [label="xpath"];
+0->188 [label="xpath"];
+0->189 [label="xpath"];
+2->189 [label="xpath"];
+23->189 [label="xpath"];
+0->190 [label="xpath"];
+76->190 [label="xpath"];
+0->191 [label="xpath"];
+2->191 [label="xpath"];
+0->192 [label="xpath"];
+0->193 [label="xpath"];
+2->193 [label="xpath"];
+23->193 [label="xpath"];
+0->194 [label="xpath"];
+0->195 [label="xpath"];
+76->195 [label="xpath"];
+0->196 [label="xpath"];
+0->197 [label="xpath"];
+0->198 [label="xpath"];
+139->199 [label="xpath"];
+140->199 [label="xpath"];
+0->199 [label="xpath"];
+82->200 [label="xpath"];
+0->200 [label="xpath"];
+82->201 [label="xpath"];
+0->201 [label="xpath"];
+139->202 [label="xpath"];
+140->202 [label="xpath"];
+0->202 [label="xpath"];
+0->203 [label="xpath"];
+0->204 [label="xpath"];
+76->204 [label="xpath"];
+0->205 [label="xpath"];
+2->205 [label="xpath"];
+0->206 [label="xpath"];
+0->207 [label="xpath"];
+0->208 [label="xpath"];
+139->209 [label="xpath"];
+140->209 [label="xpath"];
+0->209 [label="xpath"];
+0->210 [label="xpath"];
+0->211 [label="xpath"];
+2->211 [label="xpath"];
+0->212 [label="xpath"];
+0->213 [label="xpath"];
+0->214 [label="xpath"];
+6->215 [label="xpath"];
+0->215 [label="xpath"];
+6->216 [label="xpath"];
+0->216 [label="xpath"];
+8->217 [label="xpath"];
+15->218 [label="xpath"];
+148->219 [label="xpath"];
+149->220 [label="xpath"];
+124->221 [label="xpath"];
+125->222 [label="xpath"];
+15->223 [label="xpath"];
+21->224 [label="xpath"];
+21->225 [label="xpath"];
+21->226 [label="xpath"];
+15->227 [label="xpath"];
+149->228 [label="xpath"];
+21->229 [label="xpath"];
+148->230 [label="xpath"];
+142->231 [label="xpath"];
+142->232 [label="xpath"];
+143->233 [label="xpath"];
+}

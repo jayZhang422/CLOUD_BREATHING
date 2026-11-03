@@ -1,0 +1,418 @@
+{
+  "board_validated": true,
+  "results": [
+    {
+      "test": "capacity",
+      "triangles": 1,
+      "ok": true,
+      "results": [
+        {
+          "ray_id": 1,
+          "errors": 0,
+          "advisory_flags": 0,
+          "hit_count": 1,
+          "unique_count": 1,
+          "t_near_q16": 1310720,
+          "t_far_q16": 1310720,
+          "entry_q16": 0,
+          "exit_q16": 1310720,
+          "inside": true,
+          "interval_count": 1,
+          "crossings_q16": [
+            1310720
+          ],
+          "intervals_q16": [
+            [
+              0,
+              1310720
+            ]
+          ],
+          "parallel_count": 0,
+          "complete_crossings": true,
+          "raw_hit_count": 1,
+          "event_count": 1,
+          "union_boundary_count": 1,
+          "solid_count": 1
+        },
+        {
+          "ray_id": 2,
+          "errors": 0,
+          "advisory_flags": 0,
+          "hit_count": 0,
+          "unique_count": 0,
+          "t_near_q16": 2147483647,
+          "t_far_q16": 0,
+          "entry_q16": 2147483647,
+          "exit_q16": 0,
+          "inside": false,
+          "interval_count": 0,
+          "crossings_q16": [],
+          "intervals_q16": [],
+          "parallel_count": 0,
+          "complete_crossings": true,
+          "raw_hit_count": 0,
+          "event_count": 0,
+          "union_boundary_count": 0,
+          "solid_count": 1
+        }
+      ],
+      "processed": 2,
+      "hits": 1,
+      "cycles": 12543,
+      "errors": 0,
+      "job_id": 1,
+      "job_ms": 0.7526180015702266,
+      "overlay_load_s": 1.4948800710008072,
+      "timings_ms": {
+        "mesh_validation_key": 3259.986425000534,
+        "bvh_build": 0.0,
+        "prepare": 3260.2671980002924,
+        "mesh_upload": 3.2657219999236986,
+        "dma_wait": 0.3795140000875108,
+        "result_decode": 0.3260829998907866,
+        "pl_compute": 0.12543125431254312
+      },
+      "mesh_reused": false,
+      "dma_buffer_reused": false,
+      "bvh_nodes": 1,
+      "complete_crossings": true,
+      "clock_mhz": 99.999,
+      "abi": "0x00070000",
+      "solid_count": 1,
+      "union_event_count": 1,
+      "union_boundary_count": 1,
+      "operation": "bvh_pl"
+    },
+    {
+      "test": "capacity",
+      "triangles": 8002,
+      "ok": true,
+      "results": [
+        {
+          "ray_id": 1,
+          "errors": 0,
+          "advisory_flags": 0,
+          "hit_count": 1,
+          "unique_count": 1,
+          "t_near_q16": 1310720,
+          "t_far_q16": 1310720,
+          "entry_q16": 0,
+          "exit_q16": 1310720,
+          "inside": true,
+          "interval_count": 1,
+          "crossings_q16": [
+            1310720
+          ],
+          "intervals_q16": [
+            [
+              0,
+              1310720
+            ]
+          ],
+          "parallel_count": 0,
+          "complete_crossings": true,
+          "raw_hit_count": 1,
+          "event_count": 1,
+          "union_boundary_count": 1,
+          "solid_count": 1
+        },
+        {
+          "ray_id": 2,
+          "errors": 0,
+          "advisory_flags": 0,
+          "hit_count": 0,
+          "unique_count": 0,
+          "t_near_q16": 2147483647,
+          "t_far_q16": 0,
+          "entry_q16": 2147483647,
+          "exit_q16": 0,
+          "inside": false,
+          "interval_count": 0,
+          "crossings_q16": [],
+          "intervals_q16": [],
+          "parallel_count": 0,
+          "complete_crossings": true,
+          "raw_hit_count": 0,
+          "event_count": 0,
+          "union_boundary_count": 0,
+          "solid_count": 1
+        }
+      ],
+      "processed": 2,
+      "hits": 1,
+      "cycles": 20074,
+      "errors": 0,
+      "job_id": 2,
+      "job_ms": 1.34960400100681,
+      "overlay_load_s": 1.4948800710008072,
+      "timings_ms": {
+        "mesh_validation_key": 9.256712999558658,
+        "bvh_build": 0.0,
+        "prepare": 9.515875000943197,
+        "mesh_upload": 3.6135160007688683,
+        "dma_wait": 0.9840300008363556,
+        "result_decode": 0.3210729992133565,
+        "pl_compute": 0.2007420074200742
+      },
+      "mesh_reused": false,
+      "dma_buffer_reused": true,
+      "bvh_nodes": 2047,
+      "complete_crossings": true,
+      "clock_mhz": 99.999,
+      "abi": "0x00070000",
+      "solid_count": 1,
+      "union_event_count": 1,
+      "union_boundary_count": 1,
+      "operation": "bvh_pl"
+    },
+    {
+      "test": "repeat",
+      "count": 3,
+      "ok": true,
+      "results": [
+        {
+          "ray_id": 1,
+          "errors": 0,
+          "advisory_flags": 0,
+          "hit_count": 1,
+          "unique_count": 1,
+          "t_near_q16": 1310720,
+          "t_far_q16": 1310720,
+          "entry_q16": 0,
+          "exit_q16": 1310720,
+          "inside": true,
+          "interval_count": 1,
+          "crossings_q16": [
+            1310720
+          ],
+          "intervals_q16": [
+            [
+              0,
+              1310720
+            ]
+          ],
+          "parallel_count": 0,
+          "complete_crossings": true,
+          "raw_hit_count": 1,
+          "event_count": 1,
+          "union_boundary_count": 1,
+          "solid_count": 1
+        },
+        {
+          "ray_id": 2,
+          "errors": 0,
+          "advisory_flags": 0,
+          "hit_count": 0,
+          "unique_count": 0,
+          "t_near_q16": 2147483647,
+          "t_far_q16": 0,
+          "entry_q16": 2147483647,
+          "exit_q16": 0,
+          "inside": false,
+          "interval_count": 0,
+          "crossings_q16": [],
+          "intervals_q16": [],
+          "parallel_count": 0,
+          "complete_crossings": true,
+          "raw_hit_count": 0,
+          "event_count": 0,
+          "union_boundary_count": 0,
+          "solid_count": 1
+        }
+      ],
+      "processed": 2,
+      "hits": 1,
+      "cycles": 12158,
+      "errors": 0,
+      "job_id": 5,
+      "job_ms": 0.6574869985342957,
+      "overlay_load_s": 1.4948800710008072,
+      "timings_ms": {
+        "mesh_validation_key": 0.5567059997702017,
+        "bvh_build": 0.0,
+        "prepare": 0.7086079986038385,
+        "mesh_upload": 0.052200000936863944,
+        "dma_wait": 0.3519339988997672,
+        "result_decode": 0.2659420006239088,
+        "pl_compute": 0.12158121581215812
+      },
+      "mesh_reused": true,
+      "dma_buffer_reused": true,
+      "bvh_nodes": 1,
+      "complete_crossings": true,
+      "clock_mhz": 99.999,
+      "abi": "0x00070000",
+      "solid_count": 1,
+      "union_event_count": 1,
+      "union_boundary_count": 1,
+      "operation": "bvh_pl"
+    },
+    {
+      "test": "forced_timeout",
+      "ok": false,
+      "error": "mesh ray hardware timeout/abort: 0x04"
+    },
+    {
+      "test": "timeout_recovery",
+      "ok": true,
+      "results": [
+        {
+          "ray_id": 1,
+          "errors": 0,
+          "advisory_flags": 0,
+          "hit_count": 1,
+          "unique_count": 1,
+          "t_near_q16": 1310720,
+          "t_far_q16": 1310720,
+          "entry_q16": 0,
+          "exit_q16": 1310720,
+          "inside": true,
+          "interval_count": 1,
+          "crossings_q16": [
+            1310720
+          ],
+          "intervals_q16": [
+            [
+              0,
+              1310720
+            ]
+          ],
+          "parallel_count": 0,
+          "complete_crossings": true,
+          "raw_hit_count": 1,
+          "event_count": 1,
+          "union_boundary_count": 1,
+          "solid_count": 1
+        },
+        {
+          "ray_id": 2,
+          "errors": 0,
+          "advisory_flags": 0,
+          "hit_count": 0,
+          "unique_count": 0,
+          "t_near_q16": 2147483647,
+          "t_far_q16": 0,
+          "entry_q16": 2147483647,
+          "exit_q16": 0,
+          "inside": false,
+          "interval_count": 0,
+          "crossings_q16": [],
+          "intervals_q16": [],
+          "parallel_count": 0,
+          "complete_crossings": true,
+          "raw_hit_count": 0,
+          "event_count": 0,
+          "union_boundary_count": 0,
+          "solid_count": 1
+        }
+      ],
+      "processed": 2,
+      "hits": 1,
+      "cycles": 12437,
+      "errors": 0,
+      "job_id": 7,
+      "job_ms": 0.7281769994733622,
+      "overlay_load_s": 1.4377198990005127,
+      "timings_ms": {
+        "mesh_validation_key": 1441.5701479993004,
+        "bvh_build": 1.4392350003618049,
+        "prepare": 1443.3484459987085,
+        "mesh_upload": 1.9158289996994426,
+        "dma_wait": 0.37321399940992706,
+        "result_decode": 0.3092829992965562,
+        "pl_compute": 0.12437124371243713
+      },
+      "mesh_reused": false,
+      "dma_buffer_reused": false,
+      "bvh_nodes": 1,
+      "complete_crossings": true,
+      "clock_mhz": 99.999,
+      "abi": "0x00070000",
+      "solid_count": 1,
+      "union_event_count": 1,
+      "union_boundary_count": 1,
+      "operation": "bvh_pl"
+    },
+    {
+      "test": "abort_recovery",
+      "ok": true,
+      "results": [
+        {
+          "ray_id": 1,
+          "errors": 0,
+          "advisory_flags": 0,
+          "hit_count": 1,
+          "unique_count": 1,
+          "t_near_q16": 1310720,
+          "t_far_q16": 1310720,
+          "entry_q16": 0,
+          "exit_q16": 1310720,
+          "inside": true,
+          "interval_count": 1,
+          "crossings_q16": [
+            1310720
+          ],
+          "intervals_q16": [
+            [
+              0,
+              1310720
+            ]
+          ],
+          "parallel_count": 0,
+          "complete_crossings": true,
+          "raw_hit_count": 1,
+          "event_count": 1,
+          "union_boundary_count": 1,
+          "solid_count": 1
+        },
+        {
+          "ray_id": 2,
+          "errors": 0,
+          "advisory_flags": 0,
+          "hit_count": 0,
+          "unique_count": 0,
+          "t_near_q16": 2147483647,
+          "t_far_q16": 0,
+          "entry_q16": 2147483647,
+          "exit_q16": 0,
+          "inside": false,
+          "interval_count": 0,
+          "crossings_q16": [],
+          "intervals_q16": [],
+          "parallel_count": 0,
+          "complete_crossings": true,
+          "raw_hit_count": 0,
+          "event_count": 0,
+          "union_boundary_count": 0,
+          "solid_count": 1
+        }
+      ],
+      "processed": 2,
+      "hits": 1,
+      "cycles": 12422,
+      "errors": 0,
+      "job_id": 8,
+      "job_ms": 0.7229870006995043,
+      "overlay_load_s": 1.323685798999577,
+      "timings_ms": {
+        "mesh_validation_key": 1327.2614239995164,
+        "bvh_build": 1.4963550001994008,
+        "prepare": 1329.098582998995,
+        "mesh_upload": 1.8439779996697325,
+        "dma_wait": 0.3707840005517937,
+        "result_decode": 0.3077429992117686,
+        "pl_compute": 0.12422124221242213
+      },
+      "mesh_reused": false,
+      "dma_buffer_reused": false,
+      "bvh_nodes": 1,
+      "complete_crossings": true,
+      "clock_mhz": 99.999,
+      "abi": "0x00070000",
+      "solid_count": 1,
+      "union_event_count": 1,
+      "union_boundary_count": 1,
+      "operation": "bvh_pl"
+    }
+  ]
+}

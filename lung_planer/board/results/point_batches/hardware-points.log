@@ -1,0 +1,18 @@
+PL_ENV: XILINX_XRT=/usr
+POINT_BATCH_PASS 4096 1
+POINT_BATCH_PASS 4097 2
+POINT_BATCH_PASS 4494 2
+POINT_BATCH_PASS 8192 2
+POINT_BATCH_PASS 9672 3
+POINT_BATCH_PASS 16385 5
+DUAL_PLANE_FILTER_FAILED
+Traceback (most recent call last):
+  File "/tmp/lp_deploy/cas_frontend/pl_metrics.py", line 559, in evaluate_dual_plane_filter_batch
+    raise RuntimeError('dual-plane PL job cancelled')
+RuntimeError: dual-plane PL job cancelled
+DUAL_PLANE_FILTER_FAILED
+Traceback (most recent call last):
+  File "/tmp/lp_deploy/cas_frontend/pl_metrics.py", line 562, in evaluate_dual_plane_filter_batch
+    raise TimeoutError('dual-plane PL point batches timeout')
+TimeoutError: dual-plane PL point batches timeout
+POINT_BATCH_HARDWARE_PASS

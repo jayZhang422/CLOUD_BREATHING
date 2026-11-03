@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+DUAL_PLANE_BATCH_RTL_PASS candidates=2 points=2 reuse=1 dma_tlast_inside_batch=ignored
+$finish called at time : 590 ns : File "E:/FPGA/ESDC/lung_planer/sim/tb/tb_dual_plane_batch_filter_core.sv" Line 63

@@ -1,0 +1,200 @@
+[
+  {
+    "case": "fuse_tiny",
+    "mode": 0,
+    "before_cycles": 58,
+    "after_cycles": 41,
+    "reduction_percent": 29.31034482758621,
+    "before_reads": 5,
+    "after_reads": 3,
+    "before_writes": 6,
+    "after_writes": 4
+  },
+  {
+    "case": "fuse_odd",
+    "mode": 0,
+    "before_cycles": 565,
+    "after_cycles": 315,
+    "reduction_percent": 44.24778761061947,
+    "before_reads": 107,
+    "after_reads": 47,
+    "before_writes": 150,
+    "after_writes": 90
+  },
+  {
+    "case": "fuse_rect",
+    "mode": 0,
+    "before_cycles": 815,
+    "after_cycles": 638,
+    "reduction_percent": 21.717791411042942,
+    "before_reads": 179,
+    "after_reads": 137,
+    "before_writes": 210,
+    "after_writes": 168
+  },
+  {
+    "case": "fuse_width256",
+    "mode": 0,
+    "before_cycles": 5413,
+    "after_cycles": 3355,
+    "reduction_percent": 38.01958248660632,
+    "before_reads": 1154,
+    "after_reads": 642,
+    "before_writes": 1536,
+    "after_writes": 1024
+  },
+  {
+    "case": "fuse_height256",
+    "mode": 0,
+    "before_cycles": 5920,
+    "after_cycles": 3862,
+    "reduction_percent": 34.76351351351351,
+    "before_reads": 1152,
+    "after_reads": 640,
+    "before_writes": 1536,
+    "after_writes": 1024
+  },
+  {
+    "case": "fuse_groups32",
+    "mode": 0,
+    "before_cycles": 21667,
+    "after_cycles": 13465,
+    "reduction_percent": 37.85480223381179,
+    "before_reads": 4610,
+    "after_reads": 2562,
+    "before_writes": 6144,
+    "after_writes": 4096
+  },
+  {
+    "case": "fuse_d1_small",
+    "mode": 0,
+    "before_cycles": 8800,
+    "after_cycles": 4695,
+    "reduction_percent": 46.647727272727266,
+    "before_reads": 1792,
+    "after_reads": 768,
+    "before_writes": 2560,
+    "after_writes": 1536
+  },
+  {
+    "case": "fuse_tumor_d1",
+    "mode": 0,
+    "before_cycles": 35104,
+    "after_cycles": 18711,
+    "reduction_percent": 46.69838195077484,
+    "before_reads": 7168,
+    "after_reads": 3072,
+    "before_writes": 10240,
+    "after_writes": 6144
+  },
+  {
+    "case": "fuse_d1_row",
+    "mode": 0,
+    "before_cycles": 34864,
+    "after_cycles": 18471,
+    "reduction_percent": 47.01984855438275,
+    "before_reads": 7168,
+    "after_reads": 3072,
+    "before_writes": 10240,
+    "after_writes": 6144
+  },
+  {
+    "case": "fuse_tiny",
+    "mode": 1,
+    "before_cycles": 178,
+    "after_cycles": 161,
+    "reduction_percent": 9.55056179775281,
+    "before_reads": 5,
+    "after_reads": 3,
+    "before_writes": 6,
+    "after_writes": 4
+  },
+  {
+    "case": "fuse_odd",
+    "mode": 1,
+    "before_cycles": 3189,
+    "after_cycles": 1763,
+    "reduction_percent": 44.716211978676704,
+    "before_reads": 107,
+    "after_reads": 47,
+    "before_writes": 150,
+    "after_writes": 90
+  },
+  {
+    "case": "fuse_rect",
+    "mode": 1,
+    "before_cycles": 4702,
+    "after_cycles": 3790,
+    "reduction_percent": 19.396001701403655,
+    "before_reads": 179,
+    "after_reads": 137,
+    "before_writes": 210,
+    "after_writes": 168
+  },
+  {
+    "case": "fuse_width256",
+    "mode": 1,
+    "before_cycles": 33422,
+    "after_cycles": 20664,
+    "reduction_percent": 38.17246125306685,
+    "before_reads": 1154,
+    "after_reads": 642,
+    "before_writes": 1536,
+    "after_writes": 1024
+  },
+  {
+    "case": "fuse_height256",
+    "mode": 1,
+    "before_cycles": 33129,
+    "after_cycles": 20646,
+    "reduction_percent": 37.679978266775336,
+    "before_reads": 1152,
+    "after_reads": 640,
+    "before_writes": 1536,
+    "after_writes": 1024
+  },
+  {
+    "case": "fuse_groups32",
+    "mode": 1,
+    "before_cycles": 132519,
+    "after_cycles": 82219,
+    "reduction_percent": 37.95682128600427,
+    "before_reads": 4610,
+    "after_reads": 2562,
+    "before_writes": 6144,
+    "after_writes": 4096
+  },
+  {
+    "case": "fuse_d1_small",
+    "mode": 1,
+    "before_cycles": 53789,
+    "after_cycles": 28462,
+    "reduction_percent": 47.085835393853756,
+    "before_reads": 1792,
+    "after_reads": 768,
+    "before_writes": 2560,
+    "after_writes": 1536
+  },
+  {
+    "case": "fuse_tumor_d1",
+    "mode": 1,
+    "before_cycles": 214773,
+    "after_cycles": 113671,
+    "reduction_percent": 47.073887313582254,
+    "before_reads": 7168,
+    "after_reads": 3072,
+    "before_writes": 10240,
+    "after_writes": 6144
+  },
+  {
+    "case": "fuse_d1_row",
+    "mode": 1,
+    "before_cycles": 214760,
+    "after_cycles": 113579,
+    "reduction_percent": 47.11352207114919,
+    "before_reads": 7168,
+    "after_reads": 3072,
+    "before_writes": 10240,
+    "after_writes": 6144
+  }
+]

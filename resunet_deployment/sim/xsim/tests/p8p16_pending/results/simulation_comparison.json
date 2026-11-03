@@ -1,0 +1,482 @@
+[
+  {
+    "case": "p16_low",
+    "mode": 0,
+    "before": {
+      "bytes": 1056,
+      "mac": 0,
+      "tokens": 264,
+      "total": 526,
+      "run": 362
+    },
+    "after": {
+      "bytes": 1056,
+      "mac": 0,
+      "tokens": 66,
+      "total": 362,
+      "run": 198
+    },
+    "total_reduction_pct": 31.1787072243346,
+    "run_reduction_pct": 45.30386740331491
+  },
+  {
+    "case": "p16_tail",
+    "mode": 0,
+    "before": {
+      "bytes": 608,
+      "mac": 0,
+      "tokens": 114,
+      "total": 427,
+      "run": 243
+    },
+    "after": {
+      "bytes": 608,
+      "mac": 0,
+      "tokens": 38,
+      "total": 388,
+      "run": 204
+    },
+    "total_reduction_pct": 9.133489461358312,
+    "run_reduction_pct": 16.049382716049386
+  },
+  {
+    "case": "p8_head1",
+    "mode": 0,
+    "before": {
+      "bytes": 136,
+      "mac": 0,
+      "tokens": 17,
+      "total": 269,
+      "run": 245
+    },
+    "after": {
+      "bytes": 272,
+      "mac": 0,
+      "tokens": 17,
+      "total": 140,
+      "run": 116
+    },
+    "total_reduction_pct": 47.95539033457249,
+    "run_reduction_pct": 52.6530612244898
+  },
+  {
+    "case": "p8_head5",
+    "mode": 0,
+    "before": {
+      "bytes": 528,
+      "mac": 0,
+      "tokens": 66,
+      "total": 779,
+      "run": 735
+    },
+    "after": {
+      "bytes": 528,
+      "mac": 0,
+      "tokens": 33,
+      "total": 190,
+      "run": 146
+    },
+    "total_reduction_pct": 75.60975609756098,
+    "run_reduction_pct": 80.1360544217687
+  },
+  {
+    "case": "p8_tail",
+    "mode": 0,
+    "before": {
+      "bytes": 912,
+      "mac": 0,
+      "tokens": 114,
+      "total": 1438,
+      "run": 1254
+    },
+    "after": {
+      "bytes": 912,
+      "mac": 0,
+      "tokens": 57,
+      "total": 394,
+      "run": 210
+    },
+    "total_reduction_pct": 72.60083449235049,
+    "run_reduction_pct": 83.25358851674642
+  },
+  {
+    "case": "p8_max",
+    "mode": 0,
+    "before": {
+      "bytes": 1024,
+      "mac": 0,
+      "tokens": 128,
+      "total": 64713,
+      "run": 1989
+    },
+    "after": {
+      "bytes": 1024,
+      "mac": 0,
+      "tokens": 64,
+      "total": 64684,
+      "run": 1960
+    },
+    "total_reduction_pct": 0.04481325236042055,
+    "run_reduction_pct": 1.4580191050779234
+  },
+  {
+    "case": "p16_max",
+    "mode": 0,
+    "before": {
+      "bytes": 512,
+      "mac": 0,
+      "tokens": 128,
+      "total": 64683,
+      "run": 1959
+    },
+    "after": {
+      "bytes": 512,
+      "mac": 0,
+      "tokens": 32,
+      "total": 64681,
+      "run": 1957
+    },
+    "total_reduction_pct": 0.0030920025354430614,
+    "run_reduction_pct": 0.10209290454313846
+  },
+  {
+    "case": "raw4_tail",
+    "mode": 0,
+    "before": {
+      "bytes": 1824,
+      "mac": 0,
+      "tokens": 114,
+      "total": 1438,
+      "run": 1254
+    },
+    "after": {
+      "bytes": 1824,
+      "mac": 0,
+      "tokens": 114,
+      "total": 1439,
+      "run": 1255
+    },
+    "total_reduction_pct": -0.06954102920724292,
+    "run_reduction_pct": -0.07974481658692412
+  },
+  {
+    "case": "raw16",
+    "mode": 0,
+    "before": {
+      "bytes": 2176,
+      "mac": 0,
+      "tokens": 136,
+      "total": 1718,
+      "run": 1474
+    },
+    "after": {
+      "bytes": 2176,
+      "mac": 0,
+      "tokens": 136,
+      "total": 1719,
+      "run": 1475
+    },
+    "total_reduction_pct": -0.05820721769498327,
+    "run_reduction_pct": -0.06784260515604323
+  },
+  {
+    "case": "debug8",
+    "mode": 0,
+    "before": {
+      "bytes": 608,
+      "mac": 1824,
+      "tokens": 114,
+      "total": 2236,
+      "run": 1938
+    },
+    "after": {
+      "bytes": 608,
+      "mac": 1824,
+      "tokens": 114,
+      "total": 2237,
+      "run": 1939
+    },
+    "total_reduction_pct": -0.04472271914133241,
+    "run_reduction_pct": -0.05159958720331037
+  },
+  {
+    "case": "debug16",
+    "mode": 0,
+    "before": {
+      "bytes": 912,
+      "mac": 1824,
+      "tokens": 114,
+      "total": 2122,
+      "run": 1938
+    },
+    "after": {
+      "bytes": 912,
+      "mac": 1824,
+      "tokens": 114,
+      "total": 2123,
+      "run": 1939
+    },
+    "total_reduction_pct": -0.047125353440158335,
+    "run_reduction_pct": -0.05159958720331037
+  },
+  {
+    "case": "reload1",
+    "mode": 0,
+    "before": {
+      "bytes": 16,
+      "mac": 0,
+      "tokens": 1,
+      "total": 73,
+      "run": 49
+    },
+    "after": {
+      "bytes": 16,
+      "mac": 0,
+      "tokens": 1,
+      "total": 74,
+      "run": 50
+    },
+    "total_reduction_pct": -1.3698630136986356,
+    "run_reduction_pct": -2.0408163265306145
+  },
+  {
+    "case": "p16_low",
+    "mode": 1,
+    "before": {
+      "bytes": 1056,
+      "mac": 0,
+      "tokens": 264,
+      "total": 794,
+      "run": 491
+    },
+    "after": {
+      "bytes": 1056,
+      "mac": 0,
+      "tokens": 66,
+      "total": 767,
+      "run": 468
+    },
+    "total_reduction_pct": 3.400503778337527,
+    "run_reduction_pct": 4.6843177189409335
+  },
+  {
+    "case": "p16_tail",
+    "mode": 1,
+    "before": {
+      "bytes": 608,
+      "mac": 0,
+      "tokens": 114,
+      "total": 788,
+      "run": 460
+    },
+    "after": {
+      "bytes": 608,
+      "mac": 0,
+      "tokens": 38,
+      "total": 756,
+      "run": 412
+    },
+    "total_reduction_pct": 4.060913705583758,
+    "run_reduction_pct": 10.434782608695647
+  },
+  {
+    "case": "p8_head1",
+    "mode": 1,
+    "before": {
+      "bytes": 136,
+      "mac": 0,
+      "tokens": 17,
+      "total": 356,
+      "run": 300
+    },
+    "after": {
+      "bytes": 272,
+      "mac": 0,
+      "tokens": 17,
+      "total": 270,
+      "run": 225
+    },
+    "total_reduction_pct": 24.157303370786522,
+    "run_reduction_pct": 25.0
+  },
+  {
+    "case": "p8_head5",
+    "mode": 1,
+    "before": {
+      "bytes": 528,
+      "mac": 0,
+      "tokens": 66,
+      "total": 878,
+      "run": 797
+    },
+    "after": {
+      "bytes": 528,
+      "mac": 0,
+      "tokens": 33,
+      "total": 385,
+      "run": 301
+    },
+    "total_reduction_pct": 56.15034168564921,
+    "run_reduction_pct": 62.23337515683814
+  },
+  {
+    "case": "p8_tail",
+    "mode": 1,
+    "before": {
+      "bytes": 912,
+      "mac": 0,
+      "tokens": 114,
+      "total": 1700,
+      "run": 1361
+    },
+    "after": {
+      "bytes": 912,
+      "mac": 0,
+      "tokens": 57,
+      "total": 835,
+      "run": 491
+    },
+    "total_reduction_pct": 50.882352941176464,
+    "run_reduction_pct": 63.923585598824396
+  },
+  {
+    "case": "p8_max",
+    "mode": 1,
+    "before": {
+      "bytes": 1024,
+      "mac": 0,
+      "tokens": 128,
+      "total": 116271,
+      "run": 2125
+    },
+    "after": {
+      "bytes": 1024,
+      "mac": 0,
+      "tokens": 64,
+      "total": 116252,
+      "run": 2098
+    },
+    "total_reduction_pct": 0.01634113407470439,
+    "run_reduction_pct": 1.2705882352941122
+  },
+  {
+    "case": "p16_max",
+    "mode": 1,
+    "before": {
+      "bytes": 512,
+      "mac": 0,
+      "tokens": 128,
+      "total": 116262,
+      "run": 2105
+    },
+    "after": {
+      "bytes": 512,
+      "mac": 0,
+      "tokens": 32,
+      "total": 116271,
+      "run": 2101
+    },
+    "total_reduction_pct": -0.007741136398831117,
+    "run_reduction_pct": 0.19002375296912621
+  },
+  {
+    "case": "raw4_tail",
+    "mode": 1,
+    "before": {
+      "bytes": 1824,
+      "mac": 0,
+      "tokens": 114,
+      "total": 1687,
+      "run": 1349
+    },
+    "after": {
+      "bytes": 1824,
+      "mac": 0,
+      "tokens": 114,
+      "total": 1690,
+      "run": 1357
+    },
+    "total_reduction_pct": -0.1778304682868992,
+    "run_reduction_pct": -0.5930318754633124
+  },
+  {
+    "case": "raw16",
+    "mode": 1,
+    "before": {
+      "bytes": 2176,
+      "mac": 0,
+      "tokens": 136,
+      "total": 2023,
+      "run": 1581
+    },
+    "after": {
+      "bytes": 2176,
+      "mac": 0,
+      "tokens": 136,
+      "total": 2023,
+      "run": 1575
+    },
+    "total_reduction_pct": 0.0,
+    "run_reduction_pct": 0.3795066413662229
+  },
+  {
+    "case": "debug8",
+    "mode": 1,
+    "before": {
+      "bytes": 608,
+      "mac": 1824,
+      "tokens": 114,
+      "total": 2605,
+      "run": 2108
+    },
+    "after": {
+      "bytes": 608,
+      "mac": 1824,
+      "tokens": 114,
+      "total": 2588,
+      "run": 2101
+    },
+    "total_reduction_pct": 0.652591170825334,
+    "run_reduction_pct": 0.33206831119544367
+  },
+  {
+    "case": "debug16",
+    "mode": 1,
+    "before": {
+      "bytes": 912,
+      "mac": 1824,
+      "tokens": 114,
+      "total": 2442,
+      "run": 2108
+    },
+    "after": {
+      "bytes": 912,
+      "mac": 1824,
+      "tokens": 114,
+      "total": 2442,
+      "run": 2108
+    },
+    "total_reduction_pct": 0.0,
+    "run_reduction_pct": 0.0
+  },
+  {
+    "case": "reload1",
+    "mode": 1,
+    "before": {
+      "bytes": 16,
+      "mac": 0,
+      "tokens": 1,
+      "total": 107,
+      "run": 63
+    },
+    "after": {
+      "bytes": 16,
+      "mac": 0,
+      "tokens": 1,
+      "total": 112,
+      "run": 69
+    },
+    "total_reduction_pct": -4.672897196261672,
+    "run_reduction_pct": -9.523809523809534
+  }
+]

@@ -1,0 +1,14 @@
+Vivado MCP/XSim replay (behavioral only)
+
+1. Connect to existing session when available:
+   vivado_connect(webserver_url="http://127.0.0.1:8088")
+2. In the connected session:
+   if {[llength [get_filesets sim_fullnet]] == 0} {create_fileset -simset sim_fullnet}
+   set fs [get_filesets sim_fullnet]
+   add_files -fileset $fs E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/FullNet/tb_fullnet.sv
+   set_property top tb_fullnet $fs
+3. Run:
+   launch_simulation -simset sim_fullnet -mode behavioral
+
+The simulation fileset exports quantized_params_rom.mif into the XSim run directory. Do not use direct xsim for this project-level replay.
+No synth_design, launch_runs, implementation, write_bitstream, or board operation is part of this replay.

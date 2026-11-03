@@ -1,0 +1,37 @@
+[info] welcome to sbt 1.10.2 (Eclipse Adoptium Java 17.0.20.1)
+[info] loading project definition from /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/MaxPool/project
+[info] loading settings for project maxpool from build.sbt ...
+[info] set current project to maxpool (in build file:/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/MaxPool/)
+[info] compiling 3 Scala sources to /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/MaxPool/target/scala-2.13/classes ...
+[info] done compiling
+[info] running (fork) MaxPoolSim /home/jayzhang/.cache/maxpool-sim.LxMSmi/verification
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 2048.0MiB
+[info] [Runtime] Current date : 2026.10.11 18:00:01
+[info] [Progress] at 0.000 : Elaborate components
+[info] [Progress] at 0.881 : Checks and transforms
+[info] [Progress] at 1.103 : Generate Verilog to /home/jayzhang/.cache/maxpool-sim.LxMSmi/verification/compiled/tmp/job_1
+[info] [Done] at 1.350
+[info] [Progress] Simulation workspace in /home/jayzhang/.cache/maxpool-sim.LxMSmi/verification/compiled/MaxPool2d
+[info] [Progress] Verilator compilation started
+[info] [Progress] Verilator compilation done in 4096.320 ms
+[info] [Progress] Start MaxPool2d deployment simulation with seed 20261011
+[info] [TB PASSED] minimum 全部数据验证一致 inputs=12 outputs=3 cycles=90 inputStalls=23 outputStalls=40 firstOutputCycle=64 lastOutputCycle=83
+[info] [TB PASSED] odd 全部数据验证一致 inputs=45 outputs=6 cycles=180 inputStalls=23 outputStalls=35 firstOutputCycle=127 lastOutputCycle=173
+[info] [TB PASSED] odd_width 全部数据验证一致 inputs=208 outputs=48 cycles=522 inputStalls=48 outputStalls=74 firstOutputCycle=217 lastOutputCycle=515
+[info] [TB PASSED] odd_height 全部数据验证一致 inputs=208 outputs=48 cycles=856 inputStalls=56 outputStalls=83 firstOutputCycle=559 lastOutputCycle=849
+[info] [TB PASSED] narrow 全部数据验证一致 inputs=68 outputs=16 cycles=981 inputStalls=24 outputStalls=41 firstOutputCycle=893 lastOutputCycle=974
+[info] [TB PASSED] short 全部数据验证一致 inputs=68 outputs=16 cycles=1102 inputStalls=9 outputStalls=25 firstOutputCycle=1018 lastOutputCycle=1095
+[info] [TB PASSED] full64 全部数据验证一致 inputs=49152 outputs=12288 cycles=50264 inputStalls=0 outputStalls=0 firstOutputCycle=1171 lastOutputCycle=50257
+[info] [TB PASSED] full128 全部数据验证一致 inputs=16384 outputs=4096 cycles=66658 inputStalls=0 outputStalls=0 firstOutputCycle=50397 lastOutputCycle=66651
+[info] [TB PASSED] full256 全部数据验证一致 inputs=65536 outputs=16384 cycles=132204 inputStalls=0 outputStalls=0 firstOutputCycle=66919 lastOutputCycle=132197
+[info] [TB PASSED] full512 全部数据验证一致 inputs=262144 outputs=65536 cycles=394358 inputStalls=0 outputStalls=0 firstOutputCycle=132721 lastOutputCycle=394351
+[info] [TB PASSED] stress512 全部数据验证一致 inputs=524288 outputs=131072 cycles=1157080 inputStalls=64159 outputStalls=97437 firstOutputCycle=395037 lastOutputCycle=1157073
+[info] [TB PASSED] reset_mid 全部数据验证一致 inputs=506 outputs=110 cycles=1157890 inputStalls=48 outputStalls=87 firstOutputCycle=1157201 lastOutputCycle=1157868
+[info] [TB PASSED] reset_stalled 全部数据验证一致 inputs=506 outputs=110 cycles=1158671 inputStalls=72 outputStalls=115 firstOutputCycle=1157971 lastOutputCycle=1158640
+[info] [TB PASSED] max_groups 全部数据验证一致 inputs=3072 outputs=768 cycles=1163427 inputStalls=606 outputStalls=886 firstOutputCycle=1158708 lastOutputCycle=1163420
+[info] [TB PASSED] signed_edges 全部数据验证一致 inputs=48 outputs=12 cycles=1163537 inputStalls=21 outputStalls=37 firstOutputCycle=1163464 lastOutputCycle=1163530
+[info] [TB PASSED] odd_tail 全部数据验证一致 inputs=25 outputs=4 cycles=1163621 inputStalls=24 outputStalls=26 firstOutputCycle=1163574 lastOutputCycle=1163587
+[info] [Done] Simulation done in 31843.795 ms
+[info] [TB PASSED] ALL cases=16 inputs=922270 outputs=230517 int8Values=3688272
+[success] Total time: 49 s, completed Oct 11, 2026, 6:00:39 PM

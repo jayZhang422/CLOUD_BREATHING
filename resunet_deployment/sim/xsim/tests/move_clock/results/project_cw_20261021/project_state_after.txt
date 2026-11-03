@@ -1,0 +1,1 @@
+project Model_Deployment constraints {E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/constraint/ethernet_ddr_constraint.xdc E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/constraint/op_request_cdc_constraint.xdc} cdc_used_in implementation cdc_order LATE impl_status Out-of-date synth_status Out-of-date

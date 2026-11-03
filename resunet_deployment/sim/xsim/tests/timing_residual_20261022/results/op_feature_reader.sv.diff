@@ -1,0 +1,15 @@
+diff --git a/prj/Model_Deployment.srcs/sim_1/new/Timing_Residual_20261022/before/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_feature_reader.sv b/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_feature_reader.sv
+index ab058c1..d0ad159 100644
+--- a/prj/Model_Deployment.srcs/sim_1/new/Timing_Residual_20261022/before/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_feature_reader.sv
++++ b/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_feature_reader.sv
+@@ -109,8 +109,9 @@ module op_feature_reader (
+         end
+         if (state_r == ADDRESS)
+             address_r <= slice_base_r + (mode_r == 2'd2 ? pixel_r[30:0] : 31'd0);
++        // 空闲拍即可清空结果，不让上游请求仲裁驱动512位同步清零端。
++        if (state_r == IDLE) result_r <= 512'd0;
+         if (state_r == IDLE && req_valid_i) begin
+-            result_r <= 512'd0;
+             if (req_mode_i != 2'd2) address_r <= req_addr_i;
+         end
+         if (state_r == LOOKUP && hit_w) begin

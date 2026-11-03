@@ -1,0 +1,59 @@
+[info] welcome to sbt 1.10.2 (Eclipse Adoptium Java 17.0.20.1)
+[info] loading project definition from /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Line_Buffer_sim/project
+[info] loading settings for project line_buffer_sim from build.sbt ...
+[info] set current project to line_buffer_sim (in build file:/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Line_Buffer_sim/)
+[info] compiling 3 Scala sources to /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Line_Buffer_sim/target/scala-2.13/classes ...
+[info] done compiling
+[info] running (fork) LineBufferSim /home/jayzhang/.cache/linebuffer-sim.ZTbuiX/verification
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 2048.0MiB
+[info] [Runtime] Current date : 2026.10.13 16:23:29
+[info] [Progress] at 0.000 : Elaborate components
+[info] [Progress] at 1.037 : Checks and transforms
+[info] [Progress] at 1.493 : Generate Verilog to /home/jayzhang/.cache/linebuffer-sim.ZTbuiX/verification/compiled_k3/tmp/job_1
+[info] [Done] at 1.786
+[info] [Progress] Simulation workspace in /home/jayzhang/.cache/linebuffer-sim.ZTbuiX/verification/compiled_k3/LineBuffer
+[info] [Progress] Verilator compilation started
+[info] [Progress] Verilator compilation done in 4164.684 ms
+[info] [Progress] Start LineBuffer deployment_k3 simulation with seed 20261014
+[info] [TB PASSED] minimum_k3 全部数据验证一致 windows=3 int8Cells=432 cycles=87 inputStalls=38 outputStalls=38
+[info] [TB PASSED] odd_k3 全部数据验证一致 windows=182 int8Cells=26208 cycles=498 inputStalls=132 outputStalls=93
+[info] [TB PASSED] narrow_k3 全部数据验证一致 windows=18 int8Cells=2592 cycles=607 inputStalls=59 outputStalls=40
+[info] [TB PASSED] short_k3 全部数据验证一致 windows=18 int8Cells=2592 cycles=712 inputStalls=36 outputStalls=24
+[info] [TB PASSED] tall_k3 全部数据验证一致 windows=861 int8Cells=123984 cycles=2539 inputStalls=669 outputStalls=487
+[info] [TB PASSED] full64_k3 全部数据验证一致 windows=49152 int8Cells=7077888 cycles=54819 inputStalls=3052 outputStalls=0
+[info] [TB PASSED] full128_k3 全部数据验证一致 windows=16384 int8Cells=2359296 cycles=71727 inputStalls=384 outputStalls=0
+[info] [TB PASSED] full256_k3 全部数据验证一致 windows=65536 int8Cells=9437184 cycles=138299 inputStalls=768 outputStalls=0
+[info] [TB PASSED] full512_k3 全部数据验证一致 windows=262144 int8Cells=37748736 cycles=402503 inputStalls=1536 outputStalls=0
+[info] [TB PASSED] stress64_k3 全部数据验证一致 windows=8192 int8Cells=1179648 cycles=417696 inputStalls=4096 outputStalls=4454
+[info] [TB PASSED] reset_mid_k3 全部数据验证一致 windows=506 int8Cells=72864 cycles=418857 inputStalls=334 outputStalls=277
+[info] [TB PASSED] reset_stalled_k3 全部数据验证一致 windows=506 int8Cells=72864 cycles=420066 inputStalls=316 outputStalls=301
+[info] [TB PASSED] max_groups_k3 全部数据验证一致 windows=8192 int8Cells=1179648 cycles=436945 inputStalls=5904 outputStalls=4687
+[info] [Done] Simulation done in 23342.332 ms
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 2048.0MiB
+[info] [Runtime] Current date : 2026.10.13 16:23:59
+[info] [Progress] at 29.313 : Elaborate components
+[info] [Progress] at 29.326 : Checks and transforms
+[info] [Progress] at 29.353 : Generate Verilog to /home/jayzhang/.cache/linebuffer-sim.ZTbuiX/verification/compiled_k5/tmp/job_2
+[info] [Done] at 29.445
+[info] [Progress] Simulation workspace in /home/jayzhang/.cache/linebuffer-sim.ZTbuiX/verification/compiled_k5/LineBuffer
+[info] [Progress] Verilator compilation started
+[info] [Progress] Verilator compilation done in 3563.251 ms
+[info] [Progress] Start LineBuffer deployment_k5 simulation with seed 20261016
+[info] [TB PASSED] minimum_k5 全部数据验证一致 windows=3 int8Cells=1200 cycles=117 inputStalls=59 outputStalls=21
+[info] [TB PASSED] odd_k5 全部数据验证一致 windows=182 int8Cells=72800 cycles=668 inputStalls=239 outputStalls=120
+[info] [TB PASSED] narrow_k5 全部数据验证一致 windows=18 int8Cells=7200 cycles=823 inputStalls=102 outputStalls=27
+[info] [TB PASSED] short_k5 全部数据验证一致 windows=18 int8Cells=7200 cycles=976 inputStalls=83 outputStalls=11
+[info] [TB PASSED] tall_k5 全部数据验证一致 windows=861 int8Cells=344400 cycles=3202 inputStalls=1012 outputStalls=535
+[info] [TB PASSED] full64_k5 全部数据验证一致 windows=49152 int8Cells=19660800 cycles=58698 inputStalls=6197 outputStalls=0
+[info] [TB PASSED] full128_k5 全部数据验证一致 windows=16384 int8Cells=6553600 cycles=76130 inputStalls=773 outputStalls=0
+[info] [TB PASSED] full256_k5 全部数据验证一致 windows=65536 int8Cells=26214400 cycles=143738 inputStalls=1541 outputStalls=0
+[info] [TB PASSED] full512_k5 全部数据验证一致 windows=262144 int8Cells=104857600 cycles=410002 inputStalls=3077 outputStalls=0
+[info] [TB PASSED] stress64_k5 全部数据验证一致 windows=8192 int8Cells=3276800 cycles=425671 inputStalls=4531 outputStalls=4476
+[info] [TB PASSED] reset_mid_k5 全部数据验证一致 windows=506 int8Cells=202400 cycles=427063 inputStalls=453 outputStalls=259
+[info] [TB PASSED] reset_stalled_k5 全部数据验证一致 windows=506 int8Cells=202400 cycles=428471 inputStalls=444 outputStalls=264
+[info] [TB PASSED] max_groups_k5 全部数据验证一致 windows=8192 int8Cells=3276800 cycles=448012 inputStalls=8545 outputStalls=4890
+[info] [Done] Simulation done in 54071.749 ms
+[info] [TB PASSED] ALL cases=26 windows=823388 int8Cells=223961536
+[success] Total time: 103 s (01:43), completed Oct 13, 2026, 4:24:57 PM

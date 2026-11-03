@@ -1,0 +1,141 @@
+{
+  "scope": "Same 8-case production-chain frozen-Golden fixture before/after this batch, XSim behavioral, not board speedup.",
+  "cases": [
+    {
+      "case": "lobe_mid_expand",
+      "before": {
+        "total": 8916,
+        "load": 7360,
+        "run": 1470,
+        "output_blocked": 0
+      },
+      "after": {
+        "total": 8481,
+        "load": 7360,
+        "run": 1035,
+        "output_blocked": 0
+      },
+      "saved_cycles": 435,
+      "time_change_percent": -4.878869448183043
+    },
+    {
+      "case": "lobe_mid_mix",
+      "before": {
+        "total": 10162,
+        "load": 1472,
+        "run": 8599,
+        "output_blocked": 0
+      },
+      "after": {
+        "total": 10162,
+        "load": 1472,
+        "run": 8591,
+        "output_blocked": 0
+      },
+      "saved_cycles": 0,
+      "time_change_percent": 0.0
+    },
+    {
+      "case": "lobe_mid_project",
+      "before": {
+        "total": 19439,
+        "load": 13248,
+        "run": 6105,
+        "output_blocked": 4536
+      },
+      "after": {
+        "total": 19251,
+        "load": 13248,
+        "run": 5917,
+        "output_blocked": 4599
+      },
+      "saved_cycles": 188,
+      "time_change_percent": -0.967127938679968
+    },
+    {
+      "case": "fused_dw11",
+      "before": {
+        "total": 1891,
+        "load": 808,
+        "run": 951,
+        "output_blocked": 0
+      },
+      "after": {
+        "total": 1891,
+        "load": 808,
+        "run": 950,
+        "output_blocked": 0
+      },
+      "saved_cycles": 0,
+      "time_change_percent": 0.0
+    },
+    {
+      "case": "pw_tail_clear",
+      "before": {
+        "total": 396,
+        "load": 192,
+        "run": 113,
+        "output_blocked": 0
+      },
+      "after": {
+        "total": 398,
+        "load": 192,
+        "run": 114,
+        "output_blocked": 0
+      },
+      "saved_cycles": -2,
+      "time_change_percent": 0.5050505050504972
+    },
+    {
+      "case": "lobe_e1.expand",
+      "before": {
+        "total": 6306,
+        "load": 312,
+        "run": 5908,
+        "output_blocked": 0
+      },
+      "after": {
+        "total": 6302,
+        "load": 312,
+        "run": 5904,
+        "output_blocked": 0
+      },
+      "saved_cycles": 4,
+      "time_change_percent": -0.06343165239454107
+    },
+    {
+      "case": "tumor_d3.expand",
+      "before": {
+        "total": 158843,
+        "load": 101136,
+        "run": 57560,
+        "output_blocked": 0
+      },
+      "after": {
+        "total": 154971,
+        "load": 101136,
+        "run": 53687,
+        "output_blocked": 0
+      },
+      "saved_cycles": 3872,
+      "time_change_percent": -2.4376270909010733
+    },
+    {
+      "case": "tumor_head",
+      "before": {
+        "total": 20518,
+        "load": 222,
+        "run": 20210,
+        "output_blocked": 8640
+      },
+      "after": {
+        "total": 21137,
+        "load": 222,
+        "run": 20829,
+        "output_blocked": 8640
+      },
+      "saved_cycles": -619,
+      "time_change_percent": 3.016863242031387
+    }
+  ]
+}

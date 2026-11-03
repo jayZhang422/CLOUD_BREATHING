@@ -1,0 +1,26 @@
+Time resolution is 1 ps
+Block Memory Generator module tb_run_drain(FULL_FRAME=1'b0).dut.u_bank.u_p12_project_mem.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_run_drain(FULL_FRAME=1'b0).dut.u_bank.u_p12_skip_mem.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_run_drain(FULL_FRAME=1'b0).dut.u_bank.u_pw_shared.project.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_run_drain(FULL_FRAME=1'b0).dut.u_bank.u_pw_shared.project.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_run_drain(FULL_FRAME=1'b0).dut.u_bank.u_pw_shared.project.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_run_drain(FULL_FRAME=1'b0).dut.u_bank.u_pw_shared.project.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_run_drain(FULL_FRAME=1'b0).dut.u_bank.u_pw_shared.project.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_run_drain(FULL_FRAME=1'b0).dut.u_bank.u_pw_shared.project.pwResultRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_run_drain(FULL_FRAME=1'b0).dut.u_bank.u_pw_shared.project.pwParamBram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_run_drain(FULL_FRAME=1'b0).dut.u_bank.u_pw_shared.skip.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_run_drain(FULL_FRAME=1'b0).dut.u_bank.u_pw_shared.skip.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_run_drain(FULL_FRAME=1'b0).dut.u_bank.u_pw_shared.skip.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_run_drain(FULL_FRAME=1'b0).dut.u_bank.u_pw_shared.skip.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_run_drain(FULL_FRAME=1'b0).dut.u_bank.u_pw_shared.skip.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_run_drain(FULL_FRAME=1'b0).dut.u_bank.u_pw_shared.skip.pwResultRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_run_drain(FULL_FRAME=1'b0).dut.u_bank.u_pw_shared.skip.pwParamBram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_run_drain(FULL_FRAME=1'b0).dut.u_op12_add_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_run_drain(FULL_FRAME=1'b0).dut.u_pw_pack.u_tiles.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[CASE PASSED] row512 mode=0 words=2048 cycles=15413
+[CASE PASSED] row512 mode=1 words=2048 cycles=40374
+[CASE PASSED] groups2 mode=1 words=558 cycles=11459
+[CASE PASSED] pressure64 mode=2 words=4096 cycles=216627
+[CASE PASSED] pressure8 mode=2 words=4096 cycles=216734
+[TB PASSED] op11 Golden, independent branch handshakes, full_frame=0
+$finish called at time : 2002820 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Run_Drain_20261024/tb_run_drain.sv" Line 130

@@ -1,0 +1,54 @@
+Time resolution is 1 ps
+Block Memory Generator module tb_p8p16_rpc.dut.u_transport.u_request_ram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_rpc.dut.u_transport.u_reply_ram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_rpc.dut.u_service.u_engine.u_bank.u_p12_project_mem.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_rpc.dut.u_service.u_engine.u_bank.u_p12_skip_mem.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwResultRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwParamBram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwResultRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_rpc.dut.u_service.u_engine.u_op12_add_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_rpc.dut.u_service.u_engine.u_pw_pack.u_tiles.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_rpc.dut.u_service.u_perf_memory.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+Block Memory Generator module tb_p8p16_rpc.dut.u_port.g_memory[0].u_write_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_rpc.dut.u_port.g_memory[0].u_read_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_rpc.dut.u_port.g_memory[1].u_write_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_rpc.dut.u_port.g_memory[1].u_read_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_p8p16_rpc.rom.u_rom.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[REGRESSION] E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Tumor_PE32_20261025/results/rpc_ab_cases.txt
+[CASE PASS] read_only_coefficients
+[CASE PASS] image_metadata_snapshot_and_online_rejection
+[CASE PASS] DW_P16_descriptor_rejection cases=6
+[CASE PASS] RPC_RAM all_32_lengths upload_read_backpressure invalid_lengths control_errors
+[CASE] tumor_mid_expand cycle=239624
+[TIMING] tumor_mid_expand hardware_cycles=80129 read_bursts=185 read_bytes=152576
+[PERF] tumor_mid_expand hardware_cycles=80129 load=70212 run=9831 output_blocked=0
+[CASE PASS] tumor_mid_expand bytes=8192 mac_bytes=0 cycle=421861
+[CASE] lobe_e1.expand cycle=421861
+[TIMING] lobe_e1.expand hardware_cycles=5964 read_bursts=130 read_bytes=34816
+[PERF] lobe_e1.expand hardware_cycles=5964 load=313 run=5565 output_blocked=0
+[CASE PASS] lobe_e1.expand bytes=16384 mac_bytes=0 cycle=577437
+[CASE] tumor_d3.expand cycle=577437
+[TIMING] tumor_d3.expand hardware_cycles=154925 read_bursts=452 read_bytes=266240
+[PERF] tumor_d3.expand hardware_cycles=154925 load=101137 run=53640 output_blocked=0
+[CASE PASS] tumor_d3.expand bytes=16384 mac_bytes=0 cycle=932069
+[CASE] tumor_head cycle=932069
+[TIMING] tumor_head hardware_cycles=21013 read_bursts=322 read_bytes=83968
+[PERF] tumor_head hardware_cycles=21013 load=222 run=20705 output_blocked=0
+[CASE PASS] tumor_head bytes=16384 mac_bytes=0 cycle=1107685
+[TB PASSED] 全部数据验证一致 cases=4 cycles=1107685 rom_reads=0 ddr_reads=1169 ddr_writes=133
+$finish called at time : 3323056 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/P8P16_Pending/tb_p8p16_rpc.sv" Line 465
+INFO: xsimkernel Simulation Memory Usage: 223000 KB (Peak: 223000 KB), Simulation CPU Usage: 6264 ms

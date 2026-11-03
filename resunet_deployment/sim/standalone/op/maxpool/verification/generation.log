@@ -1,0 +1,16 @@
+[info] welcome to sbt 1.10.2 (Eclipse Adoptium Java 17.0.20.1)
+[info] loading project definition from /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/MaxPool/project
+[info] loading settings for project maxpool from build.sbt ...
+[info] set current project to maxpool (in build file:/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/MaxPool/)
+[info] compiling 1 Scala source to /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/MaxPool/target/scala-2.13/classes ...
+[info] done compiling
+[info] running (fork) MaxPoolGen 
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 1986.0MiB
+[info] [Runtime] Current date : 2026.10.10 21:29:23
+[info] [Progress] at 0.000 : Elaborate components
+[info] [Progress] at 0.994 : Checks and transforms
+[info] [Progress] at 1.234 : Generate Verilog to .
+[info] [Warning] toplevel/topPairMem : Mem[256*128 bits].readAsync can only be write first into Verilog
+[info] [Done] at 1.402
+[success] Total time: 9 s, completed Oct 10, 2026, 9:29:25 PM

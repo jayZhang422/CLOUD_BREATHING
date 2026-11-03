@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "checks": [
+    "patient_partition_and_duplicate_groups",
+    "both_datasets_and_all_training_cases",
+    "label_order_and_vein_unknown_mask",
+    "train_eval_and_gradient_modes",
+    "AMP_updates_gradients_LR",
+    "per_case_global_macro_confusion_metrics",
+    "nonempty_predictions",
+    "checkpoint_model_optimizer_scaler_and_SHA256",
+    "immutable_best",
+    "frozen_source_metadata_split",
+    "disk"
+  ],
+  "warnings": [],
+  "epoch": 18,
+  "record_sha256": "c68c7d0a0c6622e1cd0f2badc018880cbfde138534b380b7ce5283e345f7a4dc",
+  "supervisor_pid": 4097,
+  "time": 1791437453.8966033
+}

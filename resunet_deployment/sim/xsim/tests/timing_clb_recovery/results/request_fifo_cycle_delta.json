@@ -1,0 +1,111 @@
+{
+  "clock_mhz": 125,
+  "scope": "same-fixture RTL simulation, engine-only changes vs plus request FIFO; not board speed",
+  "cases": {
+    "lobe_mid_expand": {
+      "engine_only": 8049,
+      "final": 8630,
+      "increase_percent": 7.22
+    },
+    "lobe_mid_mix": {
+      "engine_only": 6167,
+      "final": 7053,
+      "increase_percent": 14.37
+    },
+    "lobe_mid_project": {
+      "engine_only": 18264,
+      "final": 19324,
+      "increase_percent": 5.8
+    },
+    "lobe_mid_out": {
+      "engine_only": 6165,
+      "final": 7055,
+      "increase_percent": 14.44
+    },
+    "legacy_lobe_head": {
+      "engine_only": 451,
+      "final": 475,
+      "increase_percent": 5.32
+    },
+    "legacy_pool_odd_two_groups": {
+      "engine_only": 118,
+      "final": 130,
+      "increase_percent": 10.17
+    },
+    "legacy_pool_groups32": {
+      "engine_only": 721,
+      "final": 811,
+      "increase_percent": 12.48
+    },
+    "tumor_mid_expand": {
+      "engine_only": 52469,
+      "final": 59412,
+      "increase_percent": 13.23
+    },
+    "legacy_tumor_e1_fast": {
+      "engine_only": 4972,
+      "final": 5096,
+      "increase_percent": 2.49
+    },
+    "upsample": {
+      "engine_only": 130,
+      "final": 140,
+      "increase_percent": 7.69
+    },
+    "concat": {
+      "engine_only": 115,
+      "final": 124,
+      "increase_percent": 7.83
+    },
+    "fused_dw11": {
+      "engine_only": 1094,
+      "final": 1242,
+      "increase_percent": 13.53
+    },
+    "pw_tail_clear": {
+      "engine_only": 254,
+      "final": 277,
+      "increase_percent": 9.06
+    },
+    "move_pool_512": {
+      "engine_only": 5878,
+      "final": 6778,
+      "increase_percent": 15.31
+    },
+    "move_pool_odd": {
+      "engine_only": 187,
+      "final": 206,
+      "increase_percent": 10.16
+    },
+    "move_up_256": {
+      "engine_only": 10885,
+      "final": 11321,
+      "increase_percent": 4.01
+    },
+    "move_up_tail": {
+      "engine_only": 150,
+      "final": 159,
+      "increase_percent": 6.0
+    },
+    "move_concat": {
+      "engine_only": 5005,
+      "final": 5899,
+      "increase_percent": 17.86
+    },
+    "move_concat_tail": {
+      "engine_only": 158,
+      "final": 175,
+      "increase_percent": 10.76
+    },
+    "move_concat_odd": {
+      "engine_only": 153,
+      "final": 165,
+      "increase_percent": 7.84
+    },
+    "move_pool_single": {
+      "engine_only": 101,
+      "final": 111,
+      "increase_percent": 9.9
+    }
+  }
+}

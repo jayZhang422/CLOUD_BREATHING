@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "scope": "step1 standalone Upsample + Concat + vessel d3 MKDC",
+  "trials": 3,
+  "seeds": [
+    20261016,
+    20261017,
+    20261018
+  ],
+  "stage_passes": 21,
+  "final_int8_values": 12288,
+  "golden_feedback": false,
+  "source_pair": "frozen vessel mid.out 128x4x4 + e3.out 64x8x8",
+  "output_shape": [
+    64,
+    8,
+    8
+  ],
+  "software_cache_model": true,
+  "trial_stage_cycles": {
+    "0": 36344,
+    "1": 44880,
+    "2": 44707
+  },
+  "all_process_exit_code": 0,
+  "pass_trace_read": false,
+  "synthesis_implementation_bitstream": false,
+  "hardware_test": false
+}

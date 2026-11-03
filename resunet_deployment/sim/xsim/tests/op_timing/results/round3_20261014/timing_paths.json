@@ -1,0 +1,42 @@
+{
+  "routed_add.rpt": {
+    "line": 16,
+    "detail": "Slack (VIOLATED) :        -0.814ns  (required time - arrival time)\n  Source:                 g_ethernet.u_op_board/u_service/u_engine/input_count_r_reg[2]/C\n  Destination:            g_ethernet.u_op_board/u_service/u_engine/u_bank/u_add/input_w_translated_rData_b_2_reg/DSP_A_B_DATA_INST/CEB1\n  Data Path Delay:        3.331ns  (logic 0.533ns (16.003%)  route 2.798ns (83.997%))\n  Logic Levels:           7  (CARRY8=2 LUT2=1 LUT4=2 LUT6=2)"
+  },
+  "routed_add_internal.rpt": {
+    "line": 16,
+    "detail": "Slack (VIOLATED) :        -0.470ns  (required time - arrival time)\n  Source:                 g_ethernet.u_op_board/u_service/u_engine/u_bank/u_add/config_r_clamp_max_reg[7]_rep__2/C\n  Destination:            g_ethernet.u_op_board/u_service/u_engine/u_bank/u_add/rounded_r_translated_rData_fragment_data_reg[125]/D\n  Data Path Delay:        3.372ns  (logic 0.642ns (19.037%)  route 2.730ns (80.963%))\n  Logic Levels:           6  (CARRY8=4 LUT3=1 LUT5=1)"
+  },
+  "routed_concat.rpt": {
+    "line": 16,
+    "detail": "Slack (VIOLATED) :        -0.095ns  (required time - arrival time)\n  Source:                 g_ethernet.u_op_board/u_service/u_engine/d_r_reg[7]/C\n  Destination:            g_ethernet.u_op_board/u_service/u_engine/u_bank/u_concat/addr_r_reg[14]/CE\n  Data Path Delay:        2.749ns  (logic 0.500ns (18.191%)  route 2.249ns (81.809%))\n  Logic Levels:           5  (LUT3=1 LUT4=1 LUT5=1 LUT6=2)"
+  },
+  "routed_ethernet.rpt": {
+    "line": 16,
+    "detail": "Slack (VIOLATED) :        -0.247ns  (required time - arrival time)\n  Source:                 g_ethernet.u_op_board/u_service/u_engine/FSM_onehot_state_r_reg[5]/C\n  Destination:            g_ethernet.u_bridge/read_beat_r_reg[140]/CE\n  Data Path Delay:        2.818ns  (logic 0.380ns (13.484%)  route 2.438ns (86.516%))\n  Logic Levels:           3  (LUT4=1 LUT5=2)"
+  },
+  "routed_ethernet_preserved.rpt": {
+    "line": 16,
+    "detail": "Slack (VIOLATED) :        -0.764ns  (required time - arrival time)\n  Source:                 g_ethernet.u_bridge/packet_mem_r_reg_3/CLKARDCLK\n  Destination:            u_ddr4/inst/u_ddr4_mem_intfc/u_ddr_ui/u_ddr_ui_wr_data/wr_buffer_ram[40].RAM32M0/RAMB_D1/I\n  Data Path Delay:        3.257ns  (logic 1.082ns (33.221%)  route 2.175ns (66.779%))\n  Logic Levels:           3  (LUT3=1 LUT4=1 LUT5=1)"
+  },
+  "routed_k3.rpt": {
+    "line": 16,
+    "detail": "Slack (VIOLATED) :        -0.847ns  (required time - arrival time)\n  Source:                 g_ethernet.u_op_board/u_service/u_engine/u_bank/u_core_3/width_r_reg[5]/C\n  Destination:            g_ethernet.u_op_board/u_service/u_engine/u_bank/u_core_3/lineMem_0_reg_1/ENBWREN\n  Data Path Delay:        3.329ns  (logic 0.662ns (19.885%)  route 2.667ns (80.115%))\n  Logic Levels:           9  (CARRY8=2 LUT2=1 LUT4=1 LUT5=3 LUT6=2)"
+  },
+  "routed_k5.rpt": {
+    "line": 16,
+    "detail": "Slack (VIOLATED) :        -0.678ns  (required time - arrival time)\n  Source:                 g_ethernet.u_op_board/u_service/u_engine/u_bank/u_core_4/width_r_reg[1]/C\n  Destination:            g_ethernet.u_op_board/u_service/u_engine/u_bank/u_core_4/lineMem_0_reg_1/ENARDEN\n  Data Path Delay:        3.207ns  (logic 0.836ns (26.065%)  route 2.371ns (73.935%))\n  Logic Levels:           9  (CARRY8=2 LUT2=1 LUT3=1 LUT4=1 LUT5=2 LUT6=2)"
+  },
+  "routed_pw.rpt": {
+    "line": 16,
+    "detail": "Slack (VIOLATED) :        -1.032ns  (required time - arrival time)\n  Source:                 g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/issueGroup_r_reg[3]_replica/C\n  Destination:            g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/pwWeightUram/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sdp.xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_7/CAS_IN_ADDR_A[12]\n  Data Path Delay:        3.459ns  (logic 1.332ns (38.507%)  route 2.127ns (61.493%))\n  Logic Levels:           10  (CARRY8=4 LUT2=1 LUT4=1 LUT5=2 LUT6=1 URAM288=1)"
+  },
+  "routed_reader.rpt": {
+    "line": 16,
+    "detail": "Slack (VIOLATED) :        -0.720ns  (required time - arrival time)\n  Source:                 g_ethernet.u_op_board/u_service/u_engine/u_reader/part_r_reg[0]/C\n  Destination:            g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[27]/CE\n  Data Path Delay:        3.504ns  (logic 0.739ns (21.088%)  route 2.765ns (78.912%))\n  Logic Levels:           7  (CARRY8=2 LUT2=1 LUT4=2 LUT5=1 RAMS32=1)"
+  },
+  "routed_rom.rpt": {
+    "line": 16,
+    "detail": "Slack (VIOLATED) :        -0.792ns  (required time - arrival time)\n  Source:                 g_ethernet.u_coeff_rom/word_addr_r_reg[0]_replica_9/C\n  Destination:            g_ethernet.u_coeff_rom/u_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[369].ram.r/prim_init.ram/DEVICE_8SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[3]\n  Data Path Delay:        3.499ns  (logic 0.081ns (2.315%)  route 3.418ns (97.685%))\n  Logic Levels:           0  "
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "task": "vessel",
+  "block": "d3",
+  "input_shapes": [
+    [
+      128,
+      4,
+      4
+    ],
+    [
+      64,
+      8,
+      8
+    ]
+  ],
+  "output_shape": [
+    64,
+    8,
+    8
+  ],
+  "scales": {
+    "mid.out": 0.047244094488188976,
+    "e3.out": 0.047244094488188976,
+    "d3.expand": 0.047244094488188976,
+    "d3.mix": 0.047244094488188976,
+    "d3.out": 0.047244094488188976
+  },
+  "concat_identity_verified": true,
+  "shuffle": "removed by permuting common BN and PW input columns together before quantization",
+  "sources_sha256": {
+    "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/contract.json": "6371779fac9ca9d27cf2a931b06c2d28e2ec7214a57df6de81a911dab59d6279",
+    "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/golden_synthetic_32x32/manifest.json": "0ddc473aab2d0722add83c255cf65ac5ff62cb1fdfd83560830a9d6a12bdd303",
+    "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/golden_synthetic_32x32/mid.out.bin": "696c70ad6a8b0b41abf9150aa095d2b498bf6be3948b0198c23d176ac88c9886",
+    "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/golden_synthetic_32x32/e3.out.bin": "1e65279bc73cdf7bfda26d6c137f5d9f29cc5c2dbd8d586b4e072f04b0cb79c9",
+    "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/d3.concat_up.bias_fixed.i64.bin": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+    "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/golden_synthetic_32x32/d3.concat_up.bin": "b7e12e279ffb9c7b654c001f9315f79a0690bd708d27d0b488bd0d5ebc8f9a4c",
+    "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/d3.concat_skip.bias_fixed.i64.bin": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560",
+    "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/golden_synthetic_32x32/d3.concat_skip.bin": "1e65279bc73cdf7bfda26d6c137f5d9f29cc5c2dbd8d586b4e072f04b0cb79c9",
+    "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/d3.expand.weight.i8.bin": "a9af2c049a706898dd72728c67d732e3366b14ccd73f99081465954c9ec6c641",
+    "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/golden_synthetic_32x32/d3.expand.mac.bin": "732e64bf48fab14cafb79609a780398d8f6627962de17e680e058c5aef50deba",
+    "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/d3.expand.bias_fixed.i64.bin": "fedc629c1c050ae71e1203126797615f9974f7017aa3aa1a51abeaec0e1caf31",
+    "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/golden_synthetic_32x32/d3.expand.bin": "5039c54fadc0f56c86b7c695f98e20f38224c19da51fcb831891f03cb842a710",
+    "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/d3.dw3.weight.i8.bin": "64d4849c22d75796ffc20398b4f35c2fa5bf8c4508a16801b61c753eb4488b12",
+    "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/golden_synthetic_32x32/d3.dw3.mac.bin": "33c1767b796693441cc694000765140fae165713cb24a5417350a853a115cab4",
+    "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/d3.dw5.weight.i8.bin": "c46753d1ae7ec903a1ef6d2a32b962a028dd82786a3bdc043c3eae81b6d40743",
+    "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/golden_synthetic_32x32/d3.dw5.mac.bin": "4f9459ae6034091f9c9f76a34cf617c836bcbdb02bd0818064e237ea5c38708f",
+    "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/d3.mix.bias_fixed.i64.bin": "2efcee4781cdad2d9c7c42f2d69b53c137a8a6b565ef2087950ee7d29804dbed",
+    "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/golden_synthetic_32x32/d3.mix.bin": "3ed0b888ed34f5ea840cfb4515fd2c8615f38f78742e5cde4716826bae98bc48",
+    "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/d3.project.weight.i8.bin": "a010689cfc5baa834c4404d7191f99b07e3e379d197ca518806d02cbbe0ecb95",
+    "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/golden_synthetic_32x32/d3.project.mac.bin": "0c396c9608afcb0573972da1dff76deb3d7470639a6fee172e973ae54a6ea69e",
+    "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/d3.skip.weight.i8.bin": "5bf5424e08e63af9688e108ad9c235e06e78ebcbf67e40c1ae62b5e5f7ae431a",
+    "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/golden_synthetic_32x32/d3.skip.mac.bin": "9cfbb0d0d2d7daed70a21ff44d695f70927de245c55d75c3aa96a79c7b142606",
+    "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/d3.out.bias_fixed.i64.bin": "4d7a3d9092d27ba42217d3638a3560c2716f1d4004af864b803876b68d021349",
+    "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/golden_synthetic_32x32/d3.out.bin": "f66c8be1b2752aaee89080eb94d94aa17b50ca1f151d8c6110b56db68942cb39"
+  }
+}

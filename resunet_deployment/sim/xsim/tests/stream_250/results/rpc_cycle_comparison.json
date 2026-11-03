@@ -1,0 +1,32 @@
+[
+  {
+    "case": "lobe_mid_expand",
+    "before": 12350,
+    "after": 8280,
+    "reduction_percent": 32.96
+  },
+  {
+    "case": "lobe_mid_mix",
+    "before": 7938,
+    "after": 7935,
+    "reduction_percent": 0.04
+  },
+  {
+    "case": "lobe_mid_project",
+    "before": 18655,
+    "after": 18663,
+    "reduction_percent": -0.04
+  },
+  {
+    "case": "fused_dw11",
+    "before": 1609,
+    "after": 1458,
+    "reduction_percent": 9.38
+  },
+  {
+    "case": "pw_tail_clear",
+    "before": 437,
+    "after": 379,
+    "reduction_percent": 13.27
+  }
+]

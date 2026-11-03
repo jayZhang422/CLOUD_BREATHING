@@ -1,0 +1,6 @@
+Excluded only two historical missing FullNet vectors tests: ['test_fullnet128_skip_addresses_and_no_intermediate_uploads', 'test_fullnet_size_selector_512']
+...........................
+----------------------------------------------------------------------
+Ran 27 tests in 1.268s
+
+OK

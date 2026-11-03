@@ -1,0 +1,42 @@
+{
+  "items": [
+    {
+      "directory": "prj/Model_Deployment.sim/sim_batch45_pw",
+      "before_bytes": 81785116,
+      "remaining_files": [],
+      "remaining_bytes": 0
+    },
+    {
+      "directory": "prj/Model_Deployment.sim/sim_batch45_quant",
+      "before_bytes": 11690241,
+      "remaining_files": [],
+      "remaining_bytes": 0
+    },
+    {
+      "directory": "prj/Model_Deployment.sim/sim_batch45_rpc",
+      "before_bytes": 151482129,
+      "remaining_files": [],
+      "remaining_bytes": 0
+    },
+    {
+      "directory": "prj/Model_Deployment.sim/sim_batch45_op12",
+      "before_bytes": 79818098,
+      "remaining_files": [],
+      "remaining_bytes": 0
+    },
+    {
+      "directory": "prj/Model_Deployment.sim/sim_batch45_bounds_pw",
+      "before_bytes": 25627443,
+      "remaining_files": [
+        {
+          "path": "prj/Model_Deployment.sim/sim_batch45_bounds_pw/behav/xsim/xelab.pb",
+          "bytes": 3176
+        }
+      ],
+      "remaining_bytes": 3176
+    }
+  ],
+  "removed_bytes": 350399851,
+  "remaining_bytes": 3176,
+  "note": "All large runtime artifacts removed through Vivado MCP; xelab.pb (3176 B) remains locked by the GUI. Source, vectors, small logs retained."
+}

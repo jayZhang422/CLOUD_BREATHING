@@ -1,0 +1,41 @@
+Time resolution is 1 ps
+Block Memory Generator module tb_decoder_d3.u_bounds.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_decoder_d3.dut.u_service.u_engine.u_bank.u_pw.pwWeightUram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_decoder_d3.rom.u_rom.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[SEED] 539365398
+[REGRESSION] cases_all.txt
+[CASE PASS] read_only_coefficients
+[CASE PASS] image_metadata_snapshot_and_online_rejection
+[CASE PASS] DW_P16_descriptor_rejection cases=6
+[CASE PASS] uram_all_6144_addresses latency=1 hold=4095/4096/6143
+[CASE PASS] Upsample descriptor rejection cases=9
+[CASE] vessel_d3_up cycle=17125
+[CASE PASS] Upsample mid-run reset and restart initiated
+[CASE PASS] vessel_d3_up bytes=8192 mac_bytes=0 cycle=130555
+[CASE] vessel_d3_concat cycle=130555
+[CASE PASS] vessel_d3_concat bytes=12288 mac_bytes=0 cycle=312333
+[CASE] vessel_d3_expand cycle=312333
+[CASE PASS] vessel_d3_expand bytes=4096 mac_bytes=0 cycle=481387
+[CASE] vessel_d3_dw3 cycle=481387
+[CASE PASS] vessel_d3_dw3 bytes=16384 mac_bytes=0 cycle=665619
+[CASE] vessel_d3_dw5 cycle=665619
+[CASE PASS] vessel_d3_dw5 bytes=16384 mac_bytes=0 cycle=854608
+[CASE] vessel_d3_mix cycle=854608
+[CASE PASS] vessel_d3_mix bytes=4096 mac_bytes=0 cycle=949197
+[CASE] vessel_d3_project cycle=949197
+[CASE PASS] vessel_d3_project bytes=16384 mac_bytes=0 cycle=1192243
+[CASE] vessel_d3_skip cycle=1192243
+[CASE PASS] vessel_d3_skip bytes=16384 mac_bytes=0 cycle=1477123
+[CASE] vessel_d3_out cycle=1477123
+[CASE PASS] vessel_d3_out bytes=4096 mac_bytes=0 cycle=1572000
+[CASE] up_1x1_g1 cycle=1572000
+[CASE PASS] up_1x1_g1 bytes=64 mac_bytes=0 cycle=1575213
+[CASE] up_5x3_g32 cycle=1575213
+[CASE PASS] up_5x3_g32 bytes=30720 mac_bytes=0 cycle=1992189
+[CASE] up_256x1_g1 cycle=1992189
+[CASE PASS] up_256x1_g1 bytes=16384 mac_bytes=0 cycle=2217464
+[CASE] up_1x256_g1 cycle=2217464
+[CASE PASS] up_1x256_g1 bytes=16384 mac_bytes=0 cycle=2434333
+[CASE] up_256x256_g1 cycle=2434333

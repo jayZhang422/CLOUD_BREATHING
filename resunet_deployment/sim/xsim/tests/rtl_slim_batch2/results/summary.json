@@ -1,0 +1,25 @@
+{
+  "writer": {
+    "passed": true,
+    "terminal_marker": "[TB PASSED] writer requests=1120 narrow=1024 wide=96 transactions=2221 stalls=965 error_cases=102 exact_cycle_equivalence",
+    "cycle_equivalent_to_batch2_baseline": true
+  },
+  "engine": {
+    "passed": true,
+    "terminal_marker": "[TB PASSED] engine debug=0 cases=12 stalls=2990 exact_cycle_equivalence",
+    "cycle_equivalent_to_batch2_baseline": true
+  },
+  "debug": {
+    "passed": true,
+    "terminal_marker": "[TB PASSED] engine debug=1 cases=4 stalls=1570 exact_cycle_equivalence",
+    "cycle_equivalent_to_batch2_baseline": true
+  },
+  "op12": {
+    "passed": true,
+    "terminal_marker": "[TB PASSED] op12 cases=2 mem_stalls=27307 p12_max_addr=2047 add_checks=1790",
+    "cycle_equivalent_to_batch2_baseline": true
+  },
+  "synthesis_implementation_started": false,
+  "python_client_modified": false,
+  "cleanup": "blocked by automatic approval review; see cleanup_pending.json"
+}

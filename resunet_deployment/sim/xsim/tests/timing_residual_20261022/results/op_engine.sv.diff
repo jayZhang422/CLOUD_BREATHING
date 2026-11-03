@@ -1,0 +1,151 @@
+diff --git a/prj/Model_Deployment.srcs/sim_1/new/Timing_Residual_20261022/before/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv b/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv
+index b4499d8..a48f3ff 100644
+--- a/prj/Model_Deployment.srcs/sim_1/new/Timing_Residual_20261022/before/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv
++++ b/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv
+@@ -68,6 +68,8 @@ module op_engine #(
+     logic [31:0] pixels_r, total_inputs_r, weight_words_r, param_words_r, words_b_r;
+     logic [31:0] checked_pixels_w, checked_inputs_w, checked_weights_w, checked_params_w, checked_words_b_w;
+     logic [31:0] group_pixel_base_r, output_addr_r, saved_linear_addr_r;
++    logic [30:0] run_a_base_r, run_b_base_r, add_param_base_r;
++    logic group_last_r;
+     logic [30:0] saved_q_addr_r, saved_mac_addr_r;
+     logic [31:0] q_index_r, mac_index_r, q_pixel_r, mac_pixel_r;
+     logic [31:0] base_a_w, base_b_w, base_b_concat_w, out_base_w, mac_base_w, weight_base_w, param_base_w;
+@@ -107,6 +109,7 @@ module op_engine #(
+     logic [1:0] mem_source_ready_w, mem_response_valid_w;
+     logic load_fire_w, load_last_w, in_fire_w, output_fire_w, drained_w, run_drained_r;
+     logic move_w, stream_writer_w, move_start_w, stream_writer_start_w, stream_writer_started_r;
++    logic move_mode_r, pw_pack_mode_r, stream_writer_mode_r;
+     logic move_valid_w, move_ready_w, move_last_w;
+     logic move_read_idle_w, move_read_error_w, move_read_mem_w, move_read_rsp_ready_w;
+     logic [127:0] move_data_w;
+@@ -126,10 +129,10 @@ module op_engine #(
+     logic [30:0] stream_address_w;
+     logic [18:0] stream_group_pixel_r, stream_group_last_pixel_r;
+ 
+-    assign move_w = op_w == 8'd2 || op_w == 8'd5 || op_w == 8'd10;
++    assign move_w = move_mode_r;
+     assign move_start_w = move_w && state_r == CONFIGURE && cfg_ready_w;
+-    assign pw_pack_w = op_w == 8'd1 && !raw_w && !int16_w && !debug_w;
+-    assign stream_writer_w = move_w || op_w == 8'd11 || op_w == 8'd12 || pw_pack_w;
++    assign pw_pack_w = pw_pack_mode_r;
++    assign stream_writer_w = stream_writer_mode_r;
+     assign stream_writer_start_w = move_w ? move_start_w :
+         ((op_w == 8'd11 || op_w == 8'd12 || pw_pack_w) && state_r == CONFIGURE && cfg_ready_w && !stream_writer_started_r);
+     assign stream_valid_w = pw_pack_w ? pw_pack_valid_w : state_r == RUN && bank_out_valid_w;
+@@ -327,7 +330,7 @@ module op_engine #(
+             end
+             LOAD_ADD: begin
+                 reader_req_w = 1'b1; reader_mode_w = 2'd1;
+-                reader_addr_w = param_base_w[30:0] + ({25'd0,group_r}<<8) + (load_count_r[24:0]<<6);
++                reader_addr_w = add_param_base_r + (load_count_r[24:0]<<6);
+                 reader_rsp_ready_w = 1'b1;
+             end
+             RUN: case (op_w)
+@@ -340,13 +343,12 @@ module op_engine #(
+                     reader_req_w = bank_rd_valid_w; bank_rd_ready_w = reader_ready_w;
+                     reader_rsp_ready_w = bank_rsp_ready_w;
+                     if (op_w == 8'd1 && online_w) reader_mode_w = 2'd2;
+-                    else reader_addr_w = (bank_rd_source_w ? base_b_concat_w[30:0] : base_a_w[30:0]) + (bank_rd_addr_w[26:0]<<4);
++                    else reader_addr_w = (bank_rd_source_w ? base_b_w[30:0] : base_a_w[30:0]) + (bank_rd_addr_w[26:0]<<4);
+                 end
+                 8'd6: begin
+                     reader_mode_w = 2'd1;
+                     reader_req_w = input_count_r < pixels_w;
+-                    reader_addr_w = (add_a_valid_r ? base_b_w[30:0] : base_a_w[30:0]) +
+-                        ((group_pixel_base_r[30:0]+input_count_r[30:0])<<6);
++                    reader_addr_w = (add_a_valid_r ? run_b_base_r : run_a_base_r) + (input_count_r[24:0]<<6);
+                     reader_rsp_ready_w = add_a_valid_r ? bank_b_ready_w : 1'b1;
+                     bank_in_data_w = add_a_r;
+                     bank_in_valid_w = add_a_valid_r;
+@@ -364,8 +366,7 @@ module op_engine #(
+                     // 其它默认算子仍使用连续的全局输入计数。
+                     if (op_w == 8'd11) begin
+                         reader_req_w = input_count_r < pixels_w;
+-                        reader_addr_w = base_a_w[30:0] +
+-                            ((group_pixel_base_r + input_count_r) << 4);
++                        reader_addr_w = run_a_base_r + (input_count_r[26:0] << 4);
+                     end else begin
+                         reader_req_w = input_count_r < total_inputs_w;
+                         reader_addr_w = base_a_w[30:0] + (input_count_r[26:0]<<4);
+@@ -516,7 +517,8 @@ module op_engine #(
+                 if (op_w == 8'd1 && !bank_mask_w[p]) saved_data_r[p*16 +: 16] <= 16'd0;
+             end
+         end
+-        if (state_r == LOAD_ADD && load_fire_w) add_params_r[load_count_r[1:0]*512 +: 512] <= reader_data_w;
++        // Add装载无反压，宽参数寄存器不能复用含PW参数ready的通用装载事件。
++        if (state_r == LOAD_ADD && reader_rsp_w) add_params_r[load_count_r[1:0]*512 +: 512] <= reader_data_w;
+         // Add的A拍无反压，不能让B端ready经通用in_fire回到512位A寄存器的CE。
+         if (state_r == RUN && op_w == 8'd6 && reader_rsp_w && !add_a_valid_r) add_a_r <= reader_data_w;
+         if (run_valid_i && run_ready_o) begin
+@@ -579,10 +581,10 @@ module op_engine #(
+             LOAD_ADD: if (load_fire_w && load_last_w) state_nxt = CONFIGURE;
+             START: if (start_ready_w) state_nxt = RUN;
+             RUN: if (run_drained_r) begin
+-                if ((op_w == 8'd6 || op_w == 8'd11) && group_r < groups_w - 6'd1)
++                if ((op_w == 8'd6 || op_w == 8'd11) && !group_last_r)
+                     state_nxt = LOAD_ADD;
+                 else if (op_w == 8'd12 &&
+-                         (group_r < groups_w - 6'd1 || !tile_last_r))
++                         (!group_last_r || !tile_last_r))
+                     state_nxt = LOAD_ADD;
+                 else state_nxt = FLUSH_REQUEST;
+             end
+@@ -596,6 +598,7 @@ module op_engine #(
+         if (!rst_n_i) begin
+             state_r <= IDLE; input_count_r <= 32'd0; load_count_r <= 32'd0;
+             run_drained_r <= 1'b0;
++            move_mode_r <= 1'b0; pw_pack_mode_r <= 1'b0; stream_writer_mode_r <= 1'b0;
+             group_r <= 6'd0; core_done_r <= 1'b0; add_a_valid_r <= 1'b0; add_loaded_r <= 1'b0;
+             p12_pw_loaded_r <= 1'b0; p12_pw_started_r <= 1'b0; tile_base_r <= 19'd0;
+             tile_remaining_r <= 19'd0; tile_words_r <= 5'd0; tile_last_r <= 1'b0;
+@@ -608,6 +611,14 @@ module op_engine #(
+             // 所有请求、响应和写回均排空后再寄存完成，下一拍才驱动组/tile更新。
+             run_drained_r <= state_r == RUN && core_done_r && drained_w;
+             if (run_valid_i && run_ready_o) begin
++                // 与描述符同拍预解码，避免opcode多级选择贯穿ready及FIFO接口。
++                move_mode_r <= descriptor_i[7:0] == 8'd2 || descriptor_i[7:0] == 8'd5 || descriptor_i[7:0] == 8'd10;
++                pw_pack_mode_r <= descriptor_i[7:0] == 8'd1 && descriptor_i[11:9] == 3'd0;
++                case (descriptor_i[7:0])
++                    8'd2, 8'd5, 8'd10, 8'd11, 8'd12: stream_writer_mode_r <= 1'b1;
++                    8'd1: stream_writer_mode_r <= descriptor_i[11:9] == 3'd0;
++                    default: stream_writer_mode_r <= 1'b0;
++                endcase
+                 result_bytes_o <= candidate_bytes_o; mac_bytes_o <= candidate_mac_bytes_o;
+                 error_r <= 1'b0; aborted_r <= 1'b0;
+             end
+@@ -666,7 +677,7 @@ module op_engine #(
+                 if (state_nxt == LOAD_ADD) begin
+                     core_done_r <= 1'b0;
+                     if (op_w == 8'd12) begin
+-                        if (group_r < groups_w - 6'd1) group_r <= group_r+6'd1;
++                        if (!group_last_r) group_r <= group_r+6'd1;
+                         else begin
+                             group_r <= 6'd0;
+                             tile_base_r <= next_tile_base_r;
+@@ -684,6 +695,16 @@ module op_engine #(
+     end
+     // Add 的组基址以递增代替运行拍 group×pixels 宽乘法。
+     always_ff @(posedge clk_i) begin
++        // 组号在装载/配置期间稳定，提前比较边界，避免groups解码直达tile控制CE。
++        group_last_r <= group_r == groups_w - 6'd1;
++        // 复用CONFIGURE拍预加组偏移，RUN请求只保留一次基址加法。
++        if (state_r == CONFIGURE) begin
++            run_a_base_r <= base_a_w[30:0] + (op_w == 8'd6 ? (group_pixel_base_r[24:0]<<6) : (group_pixel_base_r[26:0]<<4));
++            run_b_base_r <= base_b_w[30:0] + (group_pixel_base_r[24:0]<<6);
++        end
++        if (state_r == RESET_CORE) add_param_base_r <= param_base_w[30:0];
++        else if (state_r == RUN && state_nxt == LOAD_ADD)
++            add_param_base_r <= op_w == 8'd12 && group_last_r ? param_base_w[30:0] : add_param_base_r + 31'd256;
+         // 复用既有RESET_CORE/CONFIGURE两拍预计算project权重边界。
+         // 避免描述符通道选择→取整→乘法→地址/reader握手→load计数同拍贯穿。
+         if (state_r == RESET_CORE) begin
+@@ -695,7 +716,7 @@ module op_engine #(
+         if (state_r == RESET_CORE) group_pixel_base_r <= 32'd0;
+         else if (state_r == RUN && state_nxt == LOAD_ADD &&
+                  (op_w == 8'd6 || op_w == 8'd11 || op_w == 8'd12)) begin
+-            if (op_w == 8'd12 && group_r == groups_w-6'd1) group_pixel_base_r <= 32'd0;
++            if (op_w == 8'd12 && group_last_r) group_pixel_base_r <= 32'd0;
+             else group_pixel_base_r <= group_pixel_base_r + pixels_r;
+         end
+         if (state_r == RESET_CORE) stream_address_r <= out_base_w[30:0];

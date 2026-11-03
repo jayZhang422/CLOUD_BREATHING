@@ -1,0 +1,84 @@
+{
+  "recursive_cleanup_rejected": true,
+  "safe_explicit_file_cleanup_succeeded": true,
+  "prior_removed_files": {
+    "pass_quick": {
+      "sim_trace.csv": 60282771,
+      "waveform.vcd": 6619883,
+      "tb_decoder_d3_behav.wdb": 122777722
+    },
+    "pass_max": {
+      "sim_trace.csv": 458720977,
+      "waveform.vcd": 55900820,
+      "tb_decoder_d3_behav.wdb": 1048725220
+    }
+  },
+  "later_removed_files": [
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_regression\\behav\\xsim\\sim_trace.csv",
+      "bytes": 949837607
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_regression\\behav\\xsim\\tb_mkdc_behav.wdb",
+      "bytes": 609624878
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_regression\\behav\\xsim\\waveform.vcd",
+      "bytes": 13366358
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_regression\\behav\\xsim\\quantized_params_rom.mif",
+      "bytes": 2974400
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_regression\\behav\\xsim\\xsim.dir\\tb_mkdc_behav\\xsim.dbg",
+      "bytes": 3594240
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_regression\\behav\\xsim\\xsim.dir\\tb_mkdc_behav\\xsim.xdbg",
+      "bytes": 15572088
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_regression\\behav\\xsim\\xsim.dir\\tb_mkdc_behav\\xsimk.exe",
+      "bytes": 3726542
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_regression\\behav\\xsim\\xsim.dir\\xil_defaultlib\\@dw5x5.sdb",
+      "bytes": 1432976
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_d3\\behav\\xsim\\quantized_params_rom.mif",
+      "bytes": 2974400
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_d3\\behav\\xsim\\xsim.dir\\tb_decoder_d3_behav\\xsim.dbg",
+      "bytes": 3597656
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_d3\\behav\\xsim\\xsim.dir\\tb_decoder_d3_behav\\xsim.xdbg",
+      "bytes": 15573264
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_d3\\behav\\xsim\\xsim.dir\\tb_decoder_d3_behav\\xsimk.exe",
+      "bytes": 3743901
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_d3\\behav\\xsim\\xsim.dir\\xil_defaultlib\\@dw5x5.sdb",
+      "bytes": 1432976
+    }
+  ],
+  "remaining_small_artifacts": [
+    {
+      "directory": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_d3",
+      "files": 72,
+      "bytes": 9078494
+    },
+    {
+      "directory": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_regression",
+      "files": 72,
+      "bytes": 9073187
+    }
+  ],
+  "deleted_bytes_recorded": 3380478679,
+  "trace_csv_contents_read": false
+}

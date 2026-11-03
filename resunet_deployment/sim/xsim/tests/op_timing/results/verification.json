@@ -1,0 +1,49 @@
+{
+  "timestamp": "2026-10-14T16:47:10.889555+08:00",
+  "vivado_session": "vivado-20261014-123432-c435de55",
+  "xsim_targeted": {
+    "passed": true,
+    "descriptor_cases": 1004,
+    "valid_descriptors": 562,
+    "writer_cases": 608,
+    "write_beats": 2991,
+    "cycles": 24932,
+    "log": "targeted/simulate.log"
+  },
+  "xsim_rom_joint": {
+    "passed": true,
+    "cases": 21,
+    "cycles": 1046461,
+    "rom_reads": 12170,
+    "ddr_reads": 8649,
+    "ddr_writes": 5712,
+    "log": "rom_joint/simulate.log",
+    "ui_period_ns": 3,
+    "rx_period_ns": 8
+  },
+  "verilator_compatibility": {
+    "passed": true,
+    "operator_tasks": 18,
+    "parameter_write_protection": true,
+    "log": "sim/Op_Board/results/run.log",
+    "remaining_diagnostics": [
+      "PW group count width truncation",
+      "UNOPTFLAT ready combinational dependency"
+    ]
+  },
+  "protected_files_unchanged": 29,
+  "sim_1_restored": {
+    "top": "tb_op_rom",
+    "include_dirs": [],
+    "xsim_more_options": "-testplusarg CASE_LIST=cases_fast.txt",
+    "runtime": "0ns"
+  },
+  "new_synthesis_started": false,
+  "new_implementation_started": false,
+  "timing_closed": "Not evaluated on changed RTL",
+  "limitations": [
+    "New XDC register matches and STA not evaluated on changed netlist",
+    "Full online 512x512 BIN inference not rerun",
+    "PW/Add core internal and K3/K5 enable paths remain for later work"
+  ]
+}

@@ -1,0 +1,29 @@
+--- round3-before/Model_Deployment.xpr
++++ round3-after/Model_Deployment.xpr
+@@ -278,6 +278,13 @@
+           <Attr Name="UsedIn" Val="simulation"/>
+         </FileInfo>
+       </File>
++      <File Path="$PSRCDIR/sources_1/new/Op/control/op_mem_cdc.sv">
++        <FileInfo>
++          <Attr Name="UsedIn" Val="synthesis"/>
++          <Attr Name="UsedIn" Val="implementation"/>
++          <Attr Name="UsedIn" Val="simulation"/>
++        </FileInfo>
++      </File>
+       <File Path="$PSRCDIR/sources_1/new/Op/control/op_service.sv">
+         <FileInfo>
+           <Attr Name="UsedIn" Val="synthesis"/>
+@@ -342,6 +349,12 @@
+         <FileInfo>
+           <Attr Name="UsedIn" Val="synthesis"/>
+           <Attr Name="UsedIn" Val="implementation"/>
++          <Attr Name="UsedIn" Val="simulation"/>
++        </FileInfo>
++      </File>
++      <File Path="$PSRCDIR/sim_1/new/Op_Timing/tb_op_mem_cdc.sv">
++        <FileInfo>
++          <Attr Name="AutoDisabled" Val="1"/>
+           <Attr Name="UsedIn" Val="simulation"/>
+         </FileInfo>
+       </File>

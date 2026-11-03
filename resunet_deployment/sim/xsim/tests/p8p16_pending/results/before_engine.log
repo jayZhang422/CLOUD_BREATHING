@@ -1,0 +1,43 @@
+Time resolution is 1 ps
+Block Memory Generator module tb_p8p16_before.dut.u_bank.u_p12_project_mem.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_before.dut.u_bank.u_p12_skip_mem.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_before.dut.u_bank.u_pw_shared.project.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_before.dut.u_bank.u_pw_shared.project.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_before.dut.u_bank.u_pw_shared.project.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_before.dut.u_bank.u_pw_shared.project.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_before.dut.u_bank.u_pw_shared.project.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_before.dut.u_bank.u_pw_shared.project.pwResultRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_before.dut.u_bank.u_pw_shared.skip.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_before.dut.u_bank.u_pw_shared.skip.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_before.dut.u_bank.u_pw_shared.skip.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_before.dut.u_bank.u_pw_shared.skip.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_before.dut.u_bank.u_pw_shared.skip.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_before.dut.u_bank.u_pw_shared.skip.pwResultRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_before.dut.u_op12_add_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_before.dut.u_pw_pack.u_tiles.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[CASE PASSED] p16_low mode=0 bytes=1056 mac=0 tokens=264 total_cycles=526 run_cycles=362
+[CASE PASSED] p16_tail mode=0 bytes=608 mac=0 tokens=114 total_cycles=427 run_cycles=243
+[CASE PASSED] p8_head1 mode=0 bytes=136 mac=0 tokens=17 total_cycles=269 run_cycles=245
+[CASE PASSED] p8_head5 mode=0 bytes=528 mac=0 tokens=66 total_cycles=779 run_cycles=735
+[CASE PASSED] p8_tail mode=0 bytes=912 mac=0 tokens=114 total_cycles=1438 run_cycles=1254
+[CASE PASSED] p8_max mode=0 bytes=1024 mac=0 tokens=128 total_cycles=64713 run_cycles=1989
+[CASE PASSED] p16_max mode=0 bytes=512 mac=0 tokens=128 total_cycles=64683 run_cycles=1959
+[CASE PASSED] raw4_tail mode=0 bytes=1824 mac=0 tokens=114 total_cycles=1438 run_cycles=1254
+[CASE PASSED] raw16 mode=0 bytes=2176 mac=0 tokens=136 total_cycles=1718 run_cycles=1474
+[CASE PASSED] debug8 mode=0 bytes=608 mac=1824 tokens=114 total_cycles=2236 run_cycles=1938
+[CASE PASSED] debug16 mode=0 bytes=912 mac=1824 tokens=114 total_cycles=2122 run_cycles=1938
+[CASE PASSED] reload1 mode=0 bytes=16 mac=0 tokens=1 total_cycles=73 run_cycles=49
+[CASE PASSED] p16_low mode=1 bytes=1056 mac=0 tokens=264 total_cycles=794 run_cycles=491
+[CASE PASSED] p16_tail mode=1 bytes=608 mac=0 tokens=114 total_cycles=788 run_cycles=460
+[CASE PASSED] p8_head1 mode=1 bytes=136 mac=0 tokens=17 total_cycles=356 run_cycles=300
+[CASE PASSED] p8_head5 mode=1 bytes=528 mac=0 tokens=66 total_cycles=878 run_cycles=797
+[CASE PASSED] p8_tail mode=1 bytes=912 mac=0 tokens=114 total_cycles=1700 run_cycles=1361
+[CASE PASSED] p8_max mode=1 bytes=1024 mac=0 tokens=128 total_cycles=116271 run_cycles=2125
+[CASE PASSED] p16_max mode=1 bytes=512 mac=0 tokens=128 total_cycles=116262 run_cycles=2105
+[CASE PASSED] raw4_tail mode=1 bytes=1824 mac=0 tokens=114 total_cycles=1687 run_cycles=1349
+[CASE PASSED] raw16 mode=1 bytes=2176 mac=0 tokens=136 total_cycles=2023 run_cycles=1581
+[CASE PASSED] debug8 mode=1 bytes=608 mac=1824 tokens=114 total_cycles=2605 run_cycles=2108
+[CASE PASSED] debug16 mode=1 bytes=912 mac=1824 tokens=114 total_cycles=2442 run_cycles=2108
+[CASE PASSED] reload1 mode=1 bytes=16 mac=0 tokens=1 total_cycles=107 run_cycles=63
+[TB PASSED] 24 engine Golden cases P8/P16/RAW/debug, parameter reload/tails, backpressure stalls=90467 out_stalls=16478
+$finish called at time : 1546804 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/P8P16_Pending/tb_p8p16_before.sv" Line 113

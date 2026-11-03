@@ -1,0 +1,35 @@
+--- before/script\python\BIN_UDP\src\op_client.py
++++ script\python\BIN_UDP\src\op_client.py
+@@ -14,6 +14,13 @@
+ COEFF_BASE, COEFF_LIMIT = 0x00100000, 0x00159600
+ PARAM_DDR_BASE, PARAM_DDR_LIMIT = 0x08000000, 0x08200000
+ TUMOR_COEFF_BASE, TUMOR_COEFF_LIMIT = 0x00159600, 0x002BD240
++PERF_BASE = 0x1FFF0000
++PERF_CORE_NAMES = (
++    "total", "load", "run", "inputs", "outputs", "reader_request_stall",
++    "reader_memory_stall", "output_stall", "memory_reads", "memory_writes",
++    "memory_stall", "memory_pending", "read_errors", "writer_stall", "flush",
++    "input_wait",
++)
+ 
+ 
+ def descriptor(op, run_id, *, width, height, groups=1, groups_b=1,
+@@ -169,3 +176,18 @@
+                 raise RuntimeError("result packet length mismatch")
+             result.extend(r["data"])
+         return bytes(result[:size])
++
++    def performance(self, run_id):
++        """Read the completed run's hardware snapshot; wait stalls may overlap."""
++        # Diagnostic reads are an idle-service alias and must use transfer ID 0.
++        data = self.read(0, PERF_BASE + (run_id & 63) * 256, 256, diagnostic=True)
++        magic, size, version, identity, op_format, hz, ddr_hz, flags = struct.unpack_from("<8I", data)
++        if (magic, size, version, identity) != (0x4650504F, 256, 1, run_id):
++            raise RuntimeError("missing or stale FPGA performance snapshot")
++        if hz == 0 or flags:
++            raise RuntimeError(f"invalid FPGA performance snapshot: Hz={hz}, flags={flags}")
++        cycles = dict(zip(PERF_CORE_NAMES, struct.unpack_from("<16Q", data, 32)))
++        return {"compute_hz": hz, "ddr_hz": ddr_hz, "op": op_format & 255,
++                "format": (op_format >> 8) & 255, "cycles": cycles,
++                "seconds": cycles["total"] / hz,
++                "ddr_counters": list(struct.unpack_from("<8I", data, 160))}

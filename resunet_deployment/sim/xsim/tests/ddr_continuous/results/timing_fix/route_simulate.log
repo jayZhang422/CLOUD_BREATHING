@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+[TB PASSED] routed_responses=640 ratios=3 independent_resets=both_orders+each_domain engine_depth=8 service_depth=8
+$finish called at time : 35146250 ps : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/DDR_Continuous/tb_continuous_route.sv" Line 180

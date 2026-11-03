@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"exit_code\": 0,\n  \"output\": \"project Model_Deployment top top generic {} simset sim_1 simtop tb_mkdc production {E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/DW/dw3x3.v E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/DW/dw5x5.v E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/ElementAdd/elementadd_p16.v E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/PW/pwmacshared.v E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_move_writer.sv E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_pw_pack.sv} test_leaks {} pack_ip {xilinx.com:ip:blk_mem_gen:8.4 locked 0} synth_status Out-of-date impl_status Out-of-date\",\n  \"task_progress\": \"2/3: 顶层集成检查、清理并交付验收证据 (active, 1m31s)\"\n}"
+    }
+  ]
+}

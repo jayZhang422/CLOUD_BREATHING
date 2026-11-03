@@ -1,0 +1,216 @@
+{
+  "partition": "train only",
+  "selection": [
+    {
+      "dataset": "airway",
+      "case": "ATM_038",
+      "slices": [
+        0,
+        189,
+        594,
+        678
+      ]
+    },
+    {
+      "dataset": "airway",
+      "case": "ATM_683",
+      "slices": [
+        0,
+        171,
+        172,
+        678
+      ]
+    },
+    {
+      "dataset": "airway",
+      "case": "ATM_646",
+      "slices": [
+        0,
+        183,
+        651,
+        678
+      ]
+    },
+    {
+      "dataset": "airway",
+      "case": "ATM_193",
+      "slices": [
+        0,
+        118,
+        119,
+        566
+      ]
+    },
+    {
+      "dataset": "airway",
+      "case": "ATM_361",
+      "slices": [
+        0,
+        113,
+        454,
+        476
+      ]
+    },
+    {
+      "dataset": "airway",
+      "case": "ATM_064",
+      "slices": [
+        0,
+        267,
+        699,
+        767
+      ]
+    },
+    {
+      "dataset": "airway",
+      "case": "ATM_161",
+      "slices": [
+        0,
+        270,
+        723,
+        776
+      ]
+    },
+    {
+      "dataset": "airway",
+      "case": "ATM_652",
+      "slices": [
+        0,
+        110,
+        501,
+        549
+      ]
+    },
+    {
+      "dataset": "airway",
+      "case": "ATM_031",
+      "slices": [
+        0,
+        220,
+        221,
+        798
+      ]
+    },
+    {
+      "dataset": "airway",
+      "case": "ATM_073",
+      "slices": [
+        0,
+        188,
+        706,
+        798
+      ]
+    },
+    {
+      "dataset": "airway",
+      "case": "ATM_604",
+      "slices": [
+        0,
+        196,
+        197,
+        678
+      ]
+    },
+    {
+      "dataset": "airway",
+      "case": "ATM_069",
+      "slices": [
+        0,
+        152,
+        634,
+        668
+      ]
+    },
+    {
+      "dataset": "airway",
+      "case": "ATM_215",
+      "slices": [
+        0,
+        68,
+        69,
+        457
+      ]
+    },
+    {
+      "dataset": "airway",
+      "case": "ATM_202",
+      "slices": [
+        0,
+        117,
+        118,
+        476
+      ]
+    },
+    {
+      "dataset": "airway",
+      "case": "ATM_690",
+      "slices": [
+        0,
+        241,
+        242,
+        678
+      ]
+    },
+    {
+      "dataset": "airway",
+      "case": "ATM_128",
+      "slices": [
+        0,
+        206,
+        635,
+        678
+      ]
+    }
+  ],
+  "activation_max_abs": {
+    "e1.expand": 6.0,
+    "e1.mix": 6.0,
+    "e1.out": 6.0,
+    "e2.expand": 6.0,
+    "e2.mix": 6.0,
+    "e2.out": 6.0,
+    "e3.expand": 6.0,
+    "e3.mix": 6.0,
+    "e3.out": 6.0,
+    "mid.expand": 6.0,
+    "mid.mix": 6.0,
+    "mid.out": 6.0,
+    "d3.expand": 6.0,
+    "d3.mix": 6.0,
+    "d3.out": 6.0,
+    "d2.expand": 6.0,
+    "d2.mix": 6.0,
+    "d2.out": 6.0,
+    "d1.expand": 4.892343521118164,
+    "d1.mix": 5.768982410430908,
+    "d1.out": 6.0,
+    "head": 38.58763885498047
+  },
+  "activation_scales": {
+    "input": 1.0,
+    "e1.expand": 0.047244094488188976,
+    "e1.mix": 0.047244094488188976,
+    "e1.out": 0.047244094488188976,
+    "e2.expand": 0.047244094488188976,
+    "e2.mix": 0.047244094488188976,
+    "e2.out": 0.047244094488188976,
+    "e3.expand": 0.047244094488188976,
+    "e3.mix": 0.047244094488188976,
+    "e3.out": 0.047244094488188976,
+    "mid.expand": 0.047244094488188976,
+    "mid.mix": 0.047244094488188976,
+    "mid.out": 0.047244094488188976,
+    "d3.expand": 0.047244094488188976,
+    "d3.mix": 0.047244094488188976,
+    "d3.out": 0.047244094488188976,
+    "d2.expand": 0.047244094488188976,
+    "d2.mix": 0.047244094488188976,
+    "d2.out": 0.047244094488188976,
+    "d1.expand": 0.03852238993006429,
+    "d1.mix": 0.045425058349849674,
+    "d1.out": 0.047244094488188976,
+    "head": 0.0011776372220520788
+  },
+  "zero_point": 0,
+  "policy": "per-node symmetric activation max calibration; no normalization change"
+}

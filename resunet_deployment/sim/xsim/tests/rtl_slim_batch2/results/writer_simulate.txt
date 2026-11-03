@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+[TB PASSED] writer requests=1120 narrow=1024 wide=96 transactions=2221 stalls=965 error_cases=102 exact_cycle_equivalence
+$finish called at time : 197320 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/RTL_Slim_Batch2/tb_batch2_writer.sv" Line 92

@@ -1,0 +1,43 @@
+Time resolution is 1 ps
+Block Memory Generator module tb_decoder_d3.u_bounds.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_decoder_d3.dut.u_service.u_engine.u_bank.u_pw.pwWeightUram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_decoder_d3.rom.u_rom.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[SEED] 20261016
+[REGRESSION] cases_quick.txt
+[CASE PASS] read_only_coefficients
+[CASE PASS] image_metadata_snapshot_and_online_rejection
+[CASE PASS] DW_P16_descriptor_rejection cases=6
+[CASE PASS] uram_all_6144_addresses latency=1 hold=4095/4096/6143
+[CASE PASS] Upsample descriptor rejection cases=9
+[CASE] vessel_d3_up cycle=17269
+[CASE PASS] Upsample mid-run reset and restart initiated
+[CASE PASS] vessel_d3_up bytes=8192 mac_bytes=0 cycle=130619
+[CASE] vessel_d3_concat cycle=130619
+[CASE PASS] vessel_d3_concat bytes=12288 mac_bytes=0 cycle=312488
+[CASE] vessel_d3_expand cycle=312488
+[CASE PASS] vessel_d3_expand bytes=4096 mac_bytes=0 cycle=482496
+[CASE] vessel_d3_dw3 cycle=482496
+[CASE PASS] vessel_d3_dw3 bytes=16384 mac_bytes=0 cycle=667227
+[CASE] vessel_d3_dw5 cycle=667227
+[CASE PASS] vessel_d3_dw5 bytes=16384 mac_bytes=0 cycle=855944
+[CASE] vessel_d3_mix cycle=855944
+[CASE PASS] vessel_d3_mix bytes=4096 mac_bytes=0 cycle=950533
+[CASE] vessel_d3_project cycle=950533
+[CASE PASS] vessel_d3_project bytes=16384 mac_bytes=0 cycle=1194656
+[CASE] vessel_d3_skip cycle=1194656
+[CASE PASS] vessel_d3_skip bytes=16384 mac_bytes=0 cycle=1479517
+[CASE] vessel_d3_out cycle=1479517
+[CASE PASS] vessel_d3_out bytes=4096 mac_bytes=0 cycle=1573928
+[CASE] up_1x1_g1 cycle=1573928
+[CASE PASS] up_1x1_g1 bytes=64 mac_bytes=0 cycle=1577179
+[CASE] up_5x3_g32 cycle=1577179
+[CASE PASS] up_5x3_g32 bytes=30720 mac_bytes=0 cycle=1995384
+[CASE] up_256x1_g1 cycle=1995384
+[CASE PASS] up_256x1_g1 bytes=16384 mac_bytes=0 cycle=2220307
+[CASE] up_1x256_g1 cycle=2220307
+[CASE PASS] up_1x256_g1 bytes=16384 mac_bytes=0 cycle=2437696
+[COVERAGE] Upsample output_words=4489 stalled_cycles=91737
+[TB PASSED] 全部数据验证一致 cases=13 cycles=2437696 rom_reads=1192 ddr_reads=20144 ddr_writes=9864
+$finish called at time : 7313088 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Decoder_D3/tb_decoder_d3.sv" Line 468

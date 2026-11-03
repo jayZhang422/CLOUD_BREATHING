@@ -1,0 +1,49 @@
+--- before/op_board.sv
+
++++ after/op_board.sv
+
+@@ -68,6 +68,8 @@
+
+     logic req_data_en_w, resp_data_we_w;
+     logic mem_valid_w, mem_ready_w, mem_write_w, mem_rsp_valid_w, mem_rsp_ready_w, mem_error_w, port_active_w;
+     logic [30:0] mem_addr_w; logic [255:0] mem_data_w, mem_rsp_data_w; logic [31:0] mem_mask_w;
++    logic request_full_w, request_empty_w, request_ready_w;
++    logic [319:0] request_data_w;
+     logic claim_w, port_ready_w;
+     logic ddr_req_valid_w, ddr_rsp_valid_w, ddr_rsp_ready_w, ddr_error_w;
+     logic [255:0] ddr_rsp_data_w;
+@@ -148,10 +150,20 @@
+
+         .mem_rsp_valid_i(mem_rsp_valid_w), .mem_rsp_ready_o(mem_rsp_ready_w),
+         .mem_rsp_data_i(mem_rsp_data_w), .mem_rsp_error_i(mem_error_w)
+     );
++    // 复用官方FWFT请求FIFO，切断两级仲裁→地址分类→ready返回的组合长链。
++    // 请求标签仍在service内按入队顺序保存；数据与地址必须作为同一拍缓存。
++    assign mem_ready_w = !request_full_w;
++    op_write_queue_fifo u_request_queue (
++        .clk(compute_clk_i), .rst(!compute_rst_n_o),
++        .din({mem_write_w,mem_addr_w,mem_mask_w,mem_data_w}),
++        .wr_en(mem_valid_w && mem_ready_w),
++        .rd_en(!request_empty_w && request_ready_w),
++        .dout(request_data_w), .full(request_full_w), .empty(request_empty_w)
++    );
+     op_coeff_split u_split (
+         .clk_i(compute_clk_i), .rst_n_i(compute_rst_n_o),
+-        .req_valid_i(mem_valid_w), .req_ready_o(mem_ready_w),
+-        .req_write_i(mem_write_w), .req_addr_i(mem_addr_w),
++        .req_valid_i(!request_empty_w), .req_ready_o(request_ready_w),
++        .req_write_i(request_data_w[319]), .req_addr_i(request_data_w[318:288]),
+         .rsp_valid_o(mem_rsp_valid_w), .rsp_ready_i(mem_rsp_ready_w),
+         .rsp_data_o(mem_rsp_data_w), .rsp_error_o(mem_error_w),
+         .ddr_req_valid_o(ddr_req_valid_w), .ddr_req_ready_i(ui_ready_w),
+@@ -166,7 +178,8 @@
+
+         .compute_clk_i(compute_clk_i), .compute_rst_n_i(compute_rst_n_o),
+         .ui_clk_i(ui_clk_i), .ui_rst_n_i(ui_reset_sync2_r),
+         .req_valid_i(ddr_req_valid_w), .req_ready_o(ui_ready_w),
+-        .req_write_i(mem_write_w), .req_addr_i(mem_addr_w), .req_data_i(mem_data_w), .req_mask_i(mem_mask_w),
++        .req_write_i(request_data_w[319]), .req_addr_i(request_data_w[318:288]),
++        .req_data_i(request_data_w[255:0]), .req_mask_i(request_data_w[287:256]),
+         .rsp_valid_o(ddr_rsp_valid_w), .rsp_ready_i(ddr_rsp_ready_w), .rsp_data_o(ddr_rsp_data_w),
+         .rsp_error_o(ddr_error_w), .active_ui_o(cdc_active_w),
+         .ui_req_valid_o(ui_req_w), .ui_req_ready_i(port_ready_w && storage_idle_ui_i),

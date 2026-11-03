@@ -1,0 +1,47 @@
+name op_mem_req_fifo ipdef xilinx.com:ip:fifo_generator:13.2 locked 0 files {e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_mem_req_fifo/doc/fifo_generator_v13_2_changelog.txt e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_mem_req_fifo/op_mem_req_fifo.vho e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_mem_req_fifo/op_mem_req_fifo.veo e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_mem_req_fifo/op_mem_req_fifo_sv.sveo e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_mem_req_fifo/simulation/fifo_generator_vlog_beh.v e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_mem_req_fifo/sim/op_mem_req_fifo.v e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_mem_req_fifo/op_mem_req_fifo.xdc e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_mem_req_fifo/op_mem_req_fifo_clocks.xdc e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_mem_req_fifo/synth/op_mem_req_fifo.vhd e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_mem_req_fifo/op_mem_req_fifo_ooc.xdc}
+CONFIG.Enable_Reset_Synchronization true
+CONFIG.Fifo_Implementation Independent_Clocks_Block_RAM
+CONFIG.Input_Data_Width 320
+CONFIG.Input_Depth 512
+CONFIG.Input_Depth_axis 1024
+CONFIG.Input_Depth_rach 16
+CONFIG.Input_Depth_rdch 1024
+CONFIG.Input_Depth_wach 16
+CONFIG.Input_Depth_wdch 1024
+CONFIG.Input_Depth_wrch 16
+CONFIG.Performance_Options First_Word_Fall_Through
+CONFIG.Reset_Type Asynchronous_Reset
+name op_mem_rsp_fifo ipdef xilinx.com:ip:fifo_generator:13.2 locked 0 files {e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_mem_rsp_fifo/doc/fifo_generator_v13_2_changelog.txt e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_mem_rsp_fifo/op_mem_rsp_fifo.vho e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_mem_rsp_fifo/op_mem_rsp_fifo.veo e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_mem_rsp_fifo/op_mem_rsp_fifo_sv.sveo e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_mem_rsp_fifo/simulation/fifo_generator_vlog_beh.v e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_mem_rsp_fifo/sim/op_mem_rsp_fifo.v e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_mem_rsp_fifo/op_mem_rsp_fifo.xdc e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_mem_rsp_fifo/op_mem_rsp_fifo_clocks.xdc e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_mem_rsp_fifo/synth/op_mem_rsp_fifo.vhd e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_mem_rsp_fifo/op_mem_rsp_fifo_ooc.xdc}
+CONFIG.Enable_Reset_Synchronization true
+CONFIG.Fifo_Implementation Independent_Clocks_Block_RAM
+CONFIG.Input_Data_Width 257
+CONFIG.Input_Depth 512
+CONFIG.Input_Depth_axis 1024
+CONFIG.Input_Depth_rach 16
+CONFIG.Input_Depth_rdch 1024
+CONFIG.Input_Depth_wach 16
+CONFIG.Input_Depth_wdch 1024
+CONFIG.Input_Depth_wrch 16
+CONFIG.Performance_Options First_Word_Fall_Through
+CONFIG.Reset_Type Asynchronous_Reset
+name op_write_queue_fifo ipdef xilinx.com:ip:fifo_generator:13.2 locked 0 files {e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_write_queue_fifo/doc/fifo_generator_v13_2_changelog.txt e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_write_queue_fifo/op_write_queue_fifo.vho e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_write_queue_fifo/op_write_queue_fifo.veo e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_write_queue_fifo/op_write_queue_fifo_sv.sveo e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_write_queue_fifo/simulation/fifo_generator_vlog_beh.v e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_write_queue_fifo/sim/op_write_queue_fifo.v e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_write_queue_fifo/op_write_queue_fifo.xdc e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_write_queue_fifo/synth/op_write_queue_fifo.vhd e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_write_queue_fifo/op_write_queue_fifo_ooc.xdc}
+CONFIG.Enable_Reset_Synchronization true
+CONFIG.Fifo_Implementation Common_Clock_Distributed_RAM
+CONFIG.Input_Data_Width 320
+CONFIG.Input_Depth 32
+CONFIG.Input_Depth_axis 1024
+CONFIG.Input_Depth_rach 16
+CONFIG.Input_Depth_rdch 1024
+CONFIG.Input_Depth_wach 16
+CONFIG.Input_Depth_wdch 1024
+CONFIG.Input_Depth_wrch 16
+CONFIG.Performance_Options First_Word_Fall_Through
+CONFIG.Reset_Type Asynchronous_Reset
+name op_perf_bram ipdef xilinx.com:ip:blk_mem_gen:8.4 locked 0 files {e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_perf_bram/doc/blk_mem_gen_v8_4_changelog.txt e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_perf_bram/op_perf_bram.vho e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_perf_bram/op_perf_bram.veo e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_perf_bram/op_perf_bram_sv.sveo e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_perf_bram/simulation/blk_mem_gen_v8_4.v e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_perf_bram/sim/op_perf_bram.v e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_perf_bram/op_perf_bram_ooc.xdc e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_perf_bram/synth/op_perf_bram.vhd}
+CONFIG.Memory_Type Simple_Dual_Port_RAM
+CONFIG.Read_Width_B 256
+CONFIG.Register_PortB_Output_of_Memory_Core false
+CONFIG.Register_PortB_Output_of_Memory_Primitives false
+CONFIG.Reset_Type SYNC
+CONFIG.Write_Depth_A 512
+CONFIG.Write_Width_A 256

@@ -1,0 +1,592 @@
+--- before/op_core_bank.sv
++++ prj/Model_Deployment.srcs/sources_1/new/Op/control/op_core_bank.sv
+@@ -1,6 +1,8 @@
+ `timescale 1ns/1ps
+ // 【文件类型：.sv】已验收算子统一接线；生成 RTL 保持原样，配置与握手由调度器管理。
+-module op_core_bank (
++module op_core_bank #(
++    parameter bit ENABLE_WIDE_DEBUG = 1'b0
++) (
+     input logic clk_i, // 时钟域输入
+     input logic rst_n_i, // 异步低有效控制复位
+     input logic cfg_valid_i, // 握手有效，阻塞期间保持载荷
+@@ -49,14 +51,19 @@
+     input logic [511:0] in_b_data_i, // 数据载荷，低位承载首字节或首 lane
+     output logic [31:0] rd_addr_o, // 地址字段，单位按模块接口约定
+     input logic [127:0] rsp_data_i, // 数据载荷，低位承载首字节或首 lane
+-    output logic [3199:0] out_data_o, // 数据载荷，低位承载首字节或首 lane
++    output logic [(ENABLE_WIDE_DEBUG ? 3200 : 128)-1:0] out_data_o, // 数据载荷，低位承载首字节或首 lane
+     output logic [127:0] out_mac_o, // 任务配置或协议控制字段
+     output logic [18:0] out_pixel_o, // 任务配置或协议控制字段
+     output logic [6:0] out_group_o, // PW 的 P4 输出组号，0..127
+     output logic [3:0] out_mask_o // 任务配置或协议控制字段
+ );
+  logic [12:1] cfg_ready_w, in_ready_w, valid_w, last_w, done_w;
+- logic [3199:0] data_w [1:12];
++ localparam int RESULT_BITS = ENABLE_WIDE_DEBUG ? 3200 : 128;
++ logic [127:0] data_w [1:12];
++ // 宽窗口与raw MAC只在DW内部流动，不再进入生产公共结果多路器。
++ logic [1151:0] window3_w;
++ logic [3199:0] window5_w;
++ logic [511:0] dw3_mac_w, dw5_mac_w;
+  logic pw_rd_valid_w, pw_rsp_ready_w, concat_rd_valid_w, concat_rsp_ready_w, concat_source_w;
+  logic [31:0] pw_addr_w, concat_addr_w;
+  logic [18:0] pw_pixel_w; logic [6:0] pw_group_w; logic [3:0] pw_mask_w;
+@@ -101,8 +108,8 @@
+                                (({22'd0,cin_i} + 32'd15) >> 4);
+  assign p12_weight_b_beats_w = (({22'd0,cout_i} + 32'd3) >> 2) *
+                                (({22'd0,cin_b_i} + 32'd15) >> 4);
+- assign weights_ready_o = op_i == 8'd8 ? dw3_weights_ready_w :
+-                          op_i == 8'd9 ? dw5_weights_ready_w :
++ assign weights_ready_o = (ENABLE_WIDE_DEBUG && op_i == 8'd8) ? dw3_weights_ready_w :
++                          (ENABLE_WIDE_DEBUG && op_i == 8'd9) ? dw5_weights_ready_w :
+                           op_i == 8'd11 ? (fused_weight_dw3_w ? dw3_weights_ready_w : dw5_weights_ready_w) :
+                            op_i == 8'd12 ?
+                              (p12_weight_count_r < p12_weight_a_beats_w ? pw_weights_ready_w :
+@@ -125,10 +132,6 @@
+  assign in_ready_w[9] = in_ready_w[4];
+  assign in_ready_w[11] = in_ready_w[4];
+  assign in_ready_w[12] = 1'b0;
+- assign data_w[8][3199:512] = 2688'd0;
+- assign data_w[9][3199:512] = 2688'd0;
+- assign data_w[11][3199:128] = 3072'd0;
+- assign data_w[12][3199:128] = 3072'd0;
+  assign valid_w[11] = valid_w[6];
+  assign last_w[11] = last_w[6];
+  assign done_w[11] = done_w[6];
+@@ -171,7 +174,7 @@
+  assign fused_window_ready_w = lb3_ready_w && lb5_ready_w;
+  for (genvar y=0; y<3; y=y+1) begin : g_fused_row
+    for (genvar x=0; x<3; x=x+1) begin : g_fused_col
+-     assign fused_window3_w[(y*3+x)*128 +: 128] = data_w[4][((y+1)*5+x+1)*128 +: 128];
++     assign fused_window3_w[(y*3+x)*128 +: 128] = window5_w[((y+1)*5+x+1)*128 +: 128];
+    end
+  end
+  // 控制状态异步复位；数据寄存器由有效位保护，不加入复位网络。
+@@ -233,7 +236,7 @@
+   .resetn(rst_n_i)
+  );
+  assign cfg_ready_w[1] = pw_cfg_ready_w;
+- assign data_w[1] = {3136'd0,pw_q_w}; assign in_ready_w[1] = 1'b0;
++ assign data_w[1] = {64'd0,pw_q_w}; assign in_ready_w[1] = 1'b0;
+  PwMac u_pw_skip (
+   .io_cfg_i_valid(cfg_valid_i && op_i == 8'd12 && !p12_pw_configured_r),
+   .io_cfg_i_ready(p12_pw_cfg_ready_w),
+@@ -352,7 +355,7 @@
+     endcase
+    end
+  end
+- assign data_w[2][3199:128] = 3072'd0;
++
+  MaxPool2d_512x512_c16 u_core_2 (
+   .io_cfg_i_valid(cfg_valid_i && op_i == 8'd2),
+   .io_cfg_i_ready(cfg_ready_w[2]),
+@@ -374,7 +377,7 @@
+   .resetn(rst_n_i)
+  );
+  // 已验证的Spinal核心；输出已按[group][row][col]排序，沿用引擎16B递增写址。
+- assign data_w[10][3199:128] = 3072'd0;
++
+  Upsample u_upsample (
+   .clk(clk_i), .resetn(rst_n_i),
+   .io_cfg_i_valid(cfg_valid_i && op_i == 8'd10),
+@@ -391,76 +394,89 @@
+   .io_output_o_payload_fragment_group(), .io_output_o_payload_fragment_row(),
+   .io_output_o_payload_fragment_col(), .io_output_o_payload_fragment_group_last()
+  );
+- assign data_w[3][3199:1152] = 2048'd0;
++
++ generate
++ if (ENABLE_WIDE_DEBUG) begin : g_window3_debug
+  LineBuffer_3x3 u_core_3 (
+-   .io_cfg_i_valid(cfg_valid_i && (op_i == 8'd3 || (op_i == 8'd8 && cfg_ready_w[8]))),
++   .io_cfg_i_valid(cfg_valid_i && ((ENABLE_WIDE_DEBUG && op_i == 8'd3) || ((ENABLE_WIDE_DEBUG && op_i == 8'd8) && cfg_ready_w[8]))),
+   .io_cfg_i_ready(cfg_ready_w[3]),
+   .io_cfg_i_payload_width(width_i),
+   .io_cfg_i_payload_height(height_i),
+   .io_cfg_i_payload_groups(groups_i),
+   .io_busy_o(),
+   .io_done_o(done_w[3]),
+-   .io_input_i_valid(in_valid_i && (op_i == 8'd3 || op_i == 8'd8)),
++   .io_input_i_valid(in_valid_i && ((ENABLE_WIDE_DEBUG && op_i == 8'd3) || (ENABLE_WIDE_DEBUG && op_i == 8'd8))),
+   .io_input_i_ready(in_ready_w[3]),
+   .io_input_i_payload(in_data_i[127:0]),
+   .io_output_o_valid(valid_w[3]),
+-   .io_output_o_ready((out_ready_i && op_i == 8'd3) ||
+-                      (lb3_ready_w && op_i == 8'd8)),
++   .io_output_o_ready((out_ready_i && (ENABLE_WIDE_DEBUG && op_i == 8'd3)) ||
++                      (lb3_ready_w && (ENABLE_WIDE_DEBUG && op_i == 8'd8))),
+   .io_output_o_payload_last(last_w[3]),
+-  .io_output_o_payload_fragment_window_0_0(data_w[3][0 +: 128]),
+-  .io_output_o_payload_fragment_window_0_1(data_w[3][128 +: 128]),
+-  .io_output_o_payload_fragment_window_0_2(data_w[3][256 +: 128]),
+-  .io_output_o_payload_fragment_window_1_0(data_w[3][384 +: 128]),
+-  .io_output_o_payload_fragment_window_1_1(data_w[3][512 +: 128]),
+-  .io_output_o_payload_fragment_window_1_2(data_w[3][640 +: 128]),
+-  .io_output_o_payload_fragment_window_2_0(data_w[3][768 +: 128]),
+-  .io_output_o_payload_fragment_window_2_1(data_w[3][896 +: 128]),
+-  .io_output_o_payload_fragment_window_2_2(data_w[3][1024 +: 128]),
++  .io_output_o_payload_fragment_window_0_0(window3_w[0 +: 128]),
++  .io_output_o_payload_fragment_window_0_1(window3_w[128 +: 128]),
++  .io_output_o_payload_fragment_window_0_2(window3_w[256 +: 128]),
++  .io_output_o_payload_fragment_window_1_0(window3_w[384 +: 128]),
++  .io_output_o_payload_fragment_window_1_1(window3_w[512 +: 128]),
++  .io_output_o_payload_fragment_window_1_2(window3_w[640 +: 128]),
++  .io_output_o_payload_fragment_window_2_0(window3_w[768 +: 128]),
++  .io_output_o_payload_fragment_window_2_1(window3_w[896 +: 128]),
++  .io_output_o_payload_fragment_window_2_2(window3_w[1024 +: 128]),
+   .io_output_o_payload_fragment_group(lb3_group_w),
+   .io_output_o_payload_fragment_group_last(lb3_group_last_w),
+   .clk(clk_i),
+   .resetn(rst_n_i)
+  );
++ end else begin : g_no_window3_export
++   assign cfg_ready_w[3] = 1'b0;
++   assign in_ready_w[3] = 1'b0;
++   assign valid_w[3] = 1'b0;
++   assign last_w[3] = 1'b0;
++   assign done_w[3] = 1'b0;
++   assign window3_w = 1152'd0;
++   assign lb3_group_w = 6'd0;
++   assign lb3_group_last_w = 1'b0;
++ end
++ endgenerate
+  LineBuffer_5x5 u_core_4 (
+-   .io_cfg_i_valid((cfg_valid_i && (op_i == 8'd4 || (op_i == 8'd9 && cfg_ready_w[9]))) || fused_core_cfg_w),
++   .io_cfg_i_valid((cfg_valid_i && ((ENABLE_WIDE_DEBUG && op_i == 8'd4) || ((ENABLE_WIDE_DEBUG && op_i == 8'd9) && cfg_ready_w[9]))) || fused_core_cfg_w),
+   .io_cfg_i_ready(cfg_ready_w[4]),
+   .io_cfg_i_payload_width(width_i),
+   .io_cfg_i_payload_height(height_i),
+   .io_cfg_i_payload_groups(groups_i),
+   .io_busy_o(),
+   .io_done_o(done_w[4]),
+-   .io_input_i_valid(in_valid_i && (op_i == 8'd4 || op_i == 8'd9 || op_i == 8'd11)),
++   .io_input_i_valid(in_valid_i && ((ENABLE_WIDE_DEBUG && op_i == 8'd4) || (ENABLE_WIDE_DEBUG && op_i == 8'd9) || op_i == 8'd11)),
+   .io_input_i_ready(in_ready_w[4]),
+   .io_input_i_payload(in_data_i[127:0]),
+   .io_output_o_valid(valid_w[4]),
+-   .io_output_o_ready((out_ready_i && op_i == 8'd4) ||
+-                      (lb5_ready_w && op_i == 8'd9) || (op_i == 8'd11 && fused_window_ready_w)),
++   .io_output_o_ready((out_ready_i && (ENABLE_WIDE_DEBUG && op_i == 8'd4)) ||
++                      (lb5_ready_w && (ENABLE_WIDE_DEBUG && op_i == 8'd9)) || (op_i == 8'd11 && fused_window_ready_w)),
+   .io_output_o_payload_last(last_w[4]),
+-  .io_output_o_payload_fragment_window_0_0(data_w[4][0 +: 128]),
+-  .io_output_o_payload_fragment_window_0_1(data_w[4][128 +: 128]),
+-  .io_output_o_payload_fragment_window_0_2(data_w[4][256 +: 128]),
+-  .io_output_o_payload_fragment_window_0_3(data_w[4][384 +: 128]),
+-  .io_output_o_payload_fragment_window_0_4(data_w[4][512 +: 128]),
+-  .io_output_o_payload_fragment_window_1_0(data_w[4][640 +: 128]),
+-  .io_output_o_payload_fragment_window_1_1(data_w[4][768 +: 128]),
+-  .io_output_o_payload_fragment_window_1_2(data_w[4][896 +: 128]),
+-  .io_output_o_payload_fragment_window_1_3(data_w[4][1024 +: 128]),
+-  .io_output_o_payload_fragment_window_1_4(data_w[4][1152 +: 128]),
+-  .io_output_o_payload_fragment_window_2_0(data_w[4][1280 +: 128]),
+-  .io_output_o_payload_fragment_window_2_1(data_w[4][1408 +: 128]),
+-  .io_output_o_payload_fragment_window_2_2(data_w[4][1536 +: 128]),
+-  .io_output_o_payload_fragment_window_2_3(data_w[4][1664 +: 128]),
+-  .io_output_o_payload_fragment_window_2_4(data_w[4][1792 +: 128]),
+-  .io_output_o_payload_fragment_window_3_0(data_w[4][1920 +: 128]),
+-  .io_output_o_payload_fragment_window_3_1(data_w[4][2048 +: 128]),
+-  .io_output_o_payload_fragment_window_3_2(data_w[4][2176 +: 128]),
+-  .io_output_o_payload_fragment_window_3_3(data_w[4][2304 +: 128]),
+-  .io_output_o_payload_fragment_window_3_4(data_w[4][2432 +: 128]),
+-  .io_output_o_payload_fragment_window_4_0(data_w[4][2560 +: 128]),
+-  .io_output_o_payload_fragment_window_4_1(data_w[4][2688 +: 128]),
+-  .io_output_o_payload_fragment_window_4_2(data_w[4][2816 +: 128]),
+-  .io_output_o_payload_fragment_window_4_3(data_w[4][2944 +: 128]),
+-  .io_output_o_payload_fragment_window_4_4(data_w[4][3072 +: 128]),
++  .io_output_o_payload_fragment_window_0_0(window5_w[0 +: 128]),
++  .io_output_o_payload_fragment_window_0_1(window5_w[128 +: 128]),
++  .io_output_o_payload_fragment_window_0_2(window5_w[256 +: 128]),
++  .io_output_o_payload_fragment_window_0_3(window5_w[384 +: 128]),
++  .io_output_o_payload_fragment_window_0_4(window5_w[512 +: 128]),
++  .io_output_o_payload_fragment_window_1_0(window5_w[640 +: 128]),
++  .io_output_o_payload_fragment_window_1_1(window5_w[768 +: 128]),
++  .io_output_o_payload_fragment_window_1_2(window5_w[896 +: 128]),
++  .io_output_o_payload_fragment_window_1_3(window5_w[1024 +: 128]),
++  .io_output_o_payload_fragment_window_1_4(window5_w[1152 +: 128]),
++  .io_output_o_payload_fragment_window_2_0(window5_w[1280 +: 128]),
++  .io_output_o_payload_fragment_window_2_1(window5_w[1408 +: 128]),
++  .io_output_o_payload_fragment_window_2_2(window5_w[1536 +: 128]),
++  .io_output_o_payload_fragment_window_2_3(window5_w[1664 +: 128]),
++  .io_output_o_payload_fragment_window_2_4(window5_w[1792 +: 128]),
++  .io_output_o_payload_fragment_window_3_0(window5_w[1920 +: 128]),
++  .io_output_o_payload_fragment_window_3_1(window5_w[2048 +: 128]),
++  .io_output_o_payload_fragment_window_3_2(window5_w[2176 +: 128]),
++  .io_output_o_payload_fragment_window_3_3(window5_w[2304 +: 128]),
++  .io_output_o_payload_fragment_window_3_4(window5_w[2432 +: 128]),
++  .io_output_o_payload_fragment_window_4_0(window5_w[2560 +: 128]),
++  .io_output_o_payload_fragment_window_4_1(window5_w[2688 +: 128]),
++  .io_output_o_payload_fragment_window_4_2(window5_w[2816 +: 128]),
++  .io_output_o_payload_fragment_window_4_3(window5_w[2944 +: 128]),
++  .io_output_o_payload_fragment_window_4_4(window5_w[3072 +: 128]),
+   .io_output_o_payload_fragment_group(lb5_group_w),
+   .io_output_o_payload_fragment_group_last(lb5_group_last_w),
+   .clk(clk_i),
+@@ -469,32 +485,32 @@
+ 
+  op_dw_adapter #(.K(32'd3)) u_dw3 (
+   .clk_i(clk_i), .rst_n_i(rst_n_i),
+-   .cfg_valid_i((cfg_valid_i && op_i == 8'd8) || fused_core_cfg_w),
++   .cfg_valid_i((cfg_valid_i && (ENABLE_WIDE_DEBUG && op_i == 8'd8)) || fused_core_cfg_w),
+   .cfg_ready_o(dw3_cfg_ready_w), .groups_i(groups_i), .width_i(width_i),
+-   .weights_valid_i(weights_valid_i && (op_i == 8'd8 || (op_i == 8'd11 && fused_weight_dw3_w))),
++   .weights_valid_i(weights_valid_i && ((ENABLE_WIDE_DEBUG && op_i == 8'd8) || (op_i == 8'd11 && fused_weight_dw3_w))),
+   .weights_ready_o(dw3_weights_ready_w), .weights_i(load_data_i[127:0]),
+-   .valid_i((valid_w[3] && op_i == 8'd8) || (valid_w[4] && op_i == 8'd11)), .ready_o(lb3_ready_w),
+-  .window_i(op_i == 8'd11 ? fused_window3_w : data_w[3][1151:0]),
++   .valid_i((valid_w[3] && (ENABLE_WIDE_DEBUG && op_i == 8'd8)) || (valid_w[4] && op_i == 8'd11)), .ready_o(lb3_ready_w),
++  .window_i(op_i == 8'd11 ? fused_window3_w : window3_w),
+   .group_i(op_i == 8'd11 ? lb5_group_w : lb3_group_w),
+   .group_last_i(op_i == 8'd11 ? lb5_group_last_w : lb3_group_last_w),
+   .last_i(op_i == 8'd11 ? last_w[4] : last_w[3]),
+-   .valid_o(valid_w[8]), .ready_i((out_ready_i && op_i == 8'd8) ||
++   .valid_o(valid_w[8]), .ready_i((out_ready_i && (ENABLE_WIDE_DEBUG && op_i == 8'd8)) ||
+                                    (fused_dw3_align_ready_w && op_i == 8'd11)),
+-  .mac_o(data_w[8][511:0]), .last_o(last_w[8]), .done_o(done_w[8])
++  .mac_o(dw3_mac_w), .last_o(last_w[8]), .done_o(done_w[8])
+  );
+ 
+  op_dw_adapter #(.K(32'd5)) u_dw5 (
+   .clk_i(clk_i), .rst_n_i(rst_n_i),
+-   .cfg_valid_i((cfg_valid_i && op_i == 8'd9) || fused_core_cfg_w),
++   .cfg_valid_i((cfg_valid_i && (ENABLE_WIDE_DEBUG && op_i == 8'd9)) || fused_core_cfg_w),
+   .cfg_ready_o(dw5_cfg_ready_w), .groups_i(groups_i), .width_i(width_i),
+-   .weights_valid_i(weights_valid_i && (op_i == 8'd9 || (op_i == 8'd11 && !fused_weight_dw3_w))),
++   .weights_valid_i(weights_valid_i && ((ENABLE_WIDE_DEBUG && op_i == 8'd9) || (op_i == 8'd11 && !fused_weight_dw3_w))),
+   .weights_ready_o(dw5_weights_ready_w), .weights_i(load_data_i[127:0]),
+-   .valid_i(valid_w[4] && (op_i == 8'd9 || op_i == 8'd11)), .ready_o(lb5_ready_w),
+-  .window_i(data_w[4][3199:0]), .group_i(lb5_group_w),
++   .valid_i(valid_w[4] && ((ENABLE_WIDE_DEBUG && op_i == 8'd9) || op_i == 8'd11)), .ready_o(lb5_ready_w),
++  .window_i(window5_w), .group_i(lb5_group_w),
+   .group_last_i(lb5_group_last_w), .last_i(last_w[4]),
+-   .valid_o(valid_w[9]), .ready_i((out_ready_i && op_i == 8'd9) ||
++   .valid_o(valid_w[9]), .ready_i((out_ready_i && (ENABLE_WIDE_DEBUG && op_i == 8'd9)) ||
+                                    (fused_add_b_ready_w && op_i == 8'd11)),
+-  .mac_o(data_w[9][511:0]), .last_o(last_w[9]), .done_o(done_w[9])
++  .mac_o(dw5_mac_w), .last_o(last_w[9]), .done_o(done_w[9])
+  );
+  // DW3比DW5少一拍；一深度弹性寄存器只对齐数据，不把组合路径拉回LineBuffer。
+  always_ff @(posedge clk_i or negedge rst_n_i) begin
+@@ -508,7 +524,7 @@
+  end
+  always_ff @(posedge clk_i) begin
+    if (op_i == 8'd11 && fused_dw3_align_ready_w && valid_w[8])
+-     fused_dw3_align_data_r <= data_w[8][511:0];
++     fused_dw3_align_data_r <= dw3_mac_w;
+  end
+  assign fused_add_a_ready_w = in_ready_w[6];
+  assign fused_add_b_ready_w = in_b_ready_o;
+@@ -529,7 +545,7 @@
+  .rsp_data_i(rsp_data_i), .valid_o(valid_w[5]), .ready_i(out_ready_i && op_i == 8'd5),
+  .last_o(last_w[5]), .data_o(data_w[5][127:0])
+  );
+- assign data_w[5][3199:128] = 3072'd0; assign in_ready_w[5] = 1'b0;
++ assign in_ready_w[5] = 1'b0;
+  ElementAdd_p16 u_add (
+   .io_cfg_i_valid((cfg_valid_i && op_i == 8'd6) || fused_add_cfg_w || p12_add_cfg_w),
+   .io_cfg_i_ready(cfg_ready_w[6]),
+@@ -599,7 +615,7 @@
+   .io_b_i_valid((in_b_valid_i && op_i == 8'd6) ||
+                 (valid_w[9] && op_i == 8'd11) || (p12_add_valid_r && op_i == 8'd12)),
+   .io_b_i_ready(in_b_ready_o),
+-  .io_b_i_payload(op_i == 8'd6 ? in_b_data_i : op_i == 8'd11 ? data_w[9][511:0] : p12_add_b_data_w),
++  .io_b_i_payload(op_i == 8'd6 ? in_b_data_i : op_i == 8'd11 ? dw5_mac_w : p12_add_b_data_w),
+   .io_output_o_valid(valid_w[6]),
+   .io_output_o_ready(out_ready_i && (op_i == 8'd6 || op_i == 8'd11 || op_i == 8'd12)),
+   .io_output_o_payload_last(last_w[6]),
+@@ -609,20 +625,34 @@
+   .clk(clk_i),
+   .resetn(rst_n_i)
+  );
+- assign data_w[6][3199:128] = 3072'd0;
++
+  channel_shuffle #(.C(16)) u_shuffle (.data_i(in_data_i[127:0]), .data_o(data_w[7][127:0]));
+- assign data_w[7][3199:128] = 3072'd0;
++
+  assign cfg_ready_w[7] = 1'b1;
+  assign in_ready_w[7] = out_ready_i;
+  assign valid_w[7] = in_valid_i && op_i == 8'd7;
+  assign last_w[7] = 1'b0; assign done_w[7] = 1'b0;
++ assign data_w[3] = window3_w[127:0];
++ assign data_w[4] = window5_w[127:0];
++ assign data_w[8] = dw3_mac_w[127:0];
++ assign data_w[9] = dw5_mac_w[127:0];
+  always_comb begin
+   cfg_ready_o = 1'b0; in_ready_o = 1'b0; out_valid_o = 1'b0;
+-  out_data_o = 3200'd0; out_last_o = 1'b0; done_o = 1'b0;
+-   if (op_i >= 8'd1 && op_i <= 8'd12) begin
++  out_data_o = '0; out_last_o = 1'b0; done_o = 1'b0;
++   if (op_i >= 8'd1 && op_i <= 8'd12 &&
++       (ENABLE_WIDE_DEBUG || (op_i != 8'd3 && op_i != 8'd4 && op_i != 8'd8 && op_i != 8'd9))) begin
+    cfg_ready_o = cfg_ready_w[op_i]; in_ready_o = in_ready_w[op_i];
+-   out_valid_o = valid_w[op_i]; out_data_o = data_w[op_i];
++   out_valid_o = valid_w[op_i]; out_data_o = RESULT_BITS'(data_w[op_i]);
+    out_last_o = last_w[op_i]; done_o = done_w[op_i];
++  end
++  if (ENABLE_WIDE_DEBUG) begin
++   case (op_i)
++    8'd3: out_data_o = RESULT_BITS'(window3_w);
++    8'd4: out_data_o = RESULT_BITS'(window5_w);
++    8'd8: out_data_o = RESULT_BITS'(dw3_mac_w);
++    8'd9: out_data_o = RESULT_BITS'(dw5_mac_w);
++    default: ;
++   endcase
+   end
+   rd_valid_o = 1'b0; rd_addr_o = 32'd0; rd_source_o = 1'b0; rsp_ready_o = 1'b0;
+   case (op_i)
+--- before/op_descriptor_check.sv
++++ prj/Model_Deployment.srcs/sources_1/new/Op/control/op_descriptor_check.sv
+@@ -1,7 +1,9 @@
+ `timescale 1ns/1ps
+ // 【文件类型：.sv】原 op_engine 描述检查的分拍实现，不添加算子或修改协议。
+ // 捕获→字段→面积→面积打拍→字节体积→末地址→范围/重叠→结果；64bit 边界保持。
+-module op_descriptor_check (
++module op_descriptor_check #(
++    parameter bit ENABLE_WIDE_DEBUG = 1'b0
++) (
+     input  logic         clk_i,          // UI 时钟
+     input  logic         rst_n_i,        // 异步低有效控制复位
+     input  logic         req_valid_i,    // 保持到 done_o，撤回后可提交下一描述
+@@ -88,7 +90,8 @@
+                 params_w[5:0] == 6'd0 && descriptor_r[87:80] <= 8'd63 &&
+                 $signed(descriptor_r[95:88]) <= $signed(descriptor_r[103:96]);
+             8'd7: fields_ok_w = fields_ok_w && descriptor_r[79:64] == 16'd1;
+-            8'd8, 8'd9: fields_ok_w = fields_ok_w && weights_w[5:0] == 6'd0;
++            8'd3, 8'd4: fields_ok_w = fields_ok_w && ENABLE_WIDE_DEBUG;
++            8'd8, 8'd9: fields_ok_w = fields_ok_w && ENABLE_WIDE_DEBUG && weights_w[5:0] == 6'd0;
+             // 融合 DW3+DW5+mix：base_a=输入，q=INT8输出，weights=DW3，mac=DW5，params=mix。
+             8'd11: fields_ok_w = fields_ok_w && weights_w[5:0] == 6'd0 &&
+                 m_w[5:0] == 6'd0 && params_w[5:0] == 6'd0 &&
+--- before/op_engine.sv
++++ prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv
+@@ -3,7 +3,14 @@
+ // 权重/参数事务由外部 op_coeff_split 接到只读源；本文件不例化 ROM IP。
+ // 描述符 byte52/54 为可选 LE16 Cin/Cout；为零时兼容 byte2/3。
+ // 原始 BIN 保留 ZYX；PW 的 INT8 输出按 group16/pixel/lane 落址。
+-module op_engine (
++// 默认生产构建关闭op3/4窗口与op8/9独立DW导出；调试构建可显式开启。
++module op_engine #(
++`ifdef OP_ENABLE_WIDE_DEBUG
++    parameter bit ENABLE_WIDE_DEBUG = 1'b1
++`else
++    parameter bit ENABLE_WIDE_DEBUG = 1'b0
++`endif
++) (
+     input logic clk_i, // 时钟域输入
+     input logic rst_n_i, // 异步低有效控制复位
+     input logic run_valid_i, // 握手有效，阻塞期间保持载荷
+@@ -32,6 +39,8 @@
+     output logic [31:0] mem_mask_o, // DDR 事务接口字段
+     input logic [255:0] mem_rsp_data_i // 数据载荷，低位承载首字节或首 lane
+ );
++    localparam int RESULT_BITS = ENABLE_WIDE_DEBUG ? 3200 : 128;
++    localparam int WRITER_BITS = ENABLE_WIDE_DEBUG ? 3200 : 256;
+     typedef enum logic [3:0] {IDLE, RESET_CORE, CLEAR, CONFIGURE,
+         LOAD_WEIGHTS, LOAD_PARAMS, LOAD_ADD, START, RUN, FLUSH_REQUEST, FLUSH_RETURN, FINISH} state_t;
+     state_t state_r, state_nxt;
+@@ -65,7 +74,7 @@
+     logic bank_rd_valid_w, bank_rd_ready_w, bank_rsp_ready_w, bank_rd_source_w;
+     logic [31:0] bank_rd_addr_w;
+     logic bank_out_valid_w, bank_out_ready_w, bank_last_w, bank_done_w;
+-    logic [3199:0] bank_data_w, saved_data_r;
++    logic [RESULT_BITS-1:0] bank_data_w, saved_data_r;
+     logic [127:0] bank_mac_w, saved_mac_r;
+     logic [18:0] bank_pixel_w, saved_pixel_r;
+     logic [6:0] bank_group_w, saved_group_r;
+@@ -79,7 +88,7 @@
+     logic [30:0] reader_mem_addr_w;
+     logic writer_req_w, writer_ready_w, writer_done_w, writer_error_w;
+     logic [30:0] writer_addr_w;
+-    logic [3199:0] writer_data_w;
++    logic [WRITER_BITS-1:0] writer_data_w;
+     logic [8:0] writer_bytes_w;
+     logic writer_mem_w, writer_mem_ready_w, writer_mem_rsp_ready_w;
+     logic [30:0] writer_mem_addr_w;
+@@ -128,7 +137,7 @@
+     assign bank_load_data_w = state_r == LOAD_PARAMS && op_w == 8'd12 ? 512'd0 : reader_data_w;
+ 
+     // 检查流水独立于已运行任务；新请求检查不会覆盖运行参数。
+-    op_descriptor_check u_check (
++    op_descriptor_check #(.ENABLE_WIDE_DEBUG(ENABLE_WIDE_DEBUG)) u_check (
+         .clk_i(clk_i), .rst_n_i(rst_n_i), .req_valid_i(check_valid_i),
+         .descriptor_i(descriptor_i), .done_o(check_done_o), .ok_o(descriptor_ok_o),
+         .result_bytes_o(candidate_bytes_o), .mac_bytes_o(candidate_mac_bytes_o),
+@@ -137,7 +146,7 @@
+         .words_b_o(checked_words_b_w)
+     );
+ 
+-    op_core_bank u_bank (
++    op_core_bank #(.ENABLE_WIDE_DEBUG(ENABLE_WIDE_DEBUG)) u_bank (
+         .clk_i(clk_i), .rst_n_i(rst_n_i && state_r != RESET_CORE),
+         .op_i(op_w), .cfg_valid_i(cfg_valid_w), .cfg_ready_o(cfg_ready_w),
+         .cin_i(cin_w), .cin_b_i(cin_b_w), .cout_i(cout_w), .pixels_i(pixels_w[18:0]),
+@@ -172,7 +181,7 @@
+         .mem_rsp_valid_i(mem_rsp_valid_i && !response_writer_r && state_r != FLUSH_RETURN), .mem_rsp_ready_o(reader_mem_rsp_ready_w),
+         .mem_rsp_data_i(mem_rsp_data_i), .mem_rsp_error_i(mem_rsp_error_i)
+     );
+-    op_feature_writer u_writer (
++    op_feature_writer #(.ENABLE_WIDE_DEBUG(ENABLE_WIDE_DEBUG)) u_writer (
+         .clk_i(clk_i), .rst_n_i(rst_n_i), .req_valid_i(writer_req_w), .req_ready_o(writer_ready_w),
+         .req_addr_i(writer_addr_w), .req_data_i(writer_data_w), .req_bytes_i(writer_bytes_w),
+         .done_o(writer_done_w), .error_o(writer_error_w),
+@@ -289,14 +298,14 @@
+     end
+ 
+     always_comb begin
+-        writer_req_w = 1'b0; writer_addr_w = 31'd0; writer_data_w = saved_data_r; writer_bytes_w = 9'd16;
++        writer_req_w = 1'b0; writer_addr_w = 31'd0; writer_data_w = WRITER_BITS'(saved_data_r); writer_bytes_w = 9'd16;
+         case (output_r)
+             O_Q_REQUEST: begin
+                 writer_req_w = 1'b1;
+                 writer_addr_w = saved_linear_addr_r[30:0];
+                 case (op_w)
+                     8'd1: begin
+-                        writer_data_w = 3200'd0;
++                        writer_data_w = '0;
+                         if (int16_w) begin
+                             writer_bytes_w = 9'd8; writer_data_w[63:0] = saved_data_r[63:0];
+                             writer_addr_w = saved_q_addr_r;
+@@ -306,12 +315,12 @@
+                             writer_addr_w = saved_q_addr_r;
+                         end
+                     end
+-                    8'd3: writer_bytes_w = 9'd144;
+-                    8'd4: writer_bytes_w = 9'd400;
++                    8'd3: if (ENABLE_WIDE_DEBUG) writer_bytes_w = 9'd144;
++                    8'd4: if (ENABLE_WIDE_DEBUG) writer_bytes_w = 9'd400;
+                     8'd8, 8'd9: begin
+                         // DW adapter 不提供可靠的 pixel/group 标签；引擎的
+                         // output_addr_r 已按输出握手维护连续的 [group][pixel] 地址。
+-                        writer_bytes_w = 9'd64;
++                        if (ENABLE_WIDE_DEBUG) writer_bytes_w = 9'd64;
+                         writer_addr_w = saved_linear_addr_r[30:0];
+                     end
+                     8'd11: begin
+@@ -320,7 +329,7 @@
+                         writer_addr_w = saved_linear_addr_r[30:0];
+                     end
+                     8'd12: begin
+-                        writer_data_w = 3200'd0;
++                        writer_data_w = '0;
+                         writer_data_w[127:0] = saved_data_r[127:0];
+                         writer_bytes_w = 9'd16;
+                         writer_addr_w = saved_q_addr_r;
+@@ -329,14 +338,14 @@
+                 endcase
+             end
+             O_MAC_REQUEST: begin
+-                writer_req_w = 1'b1; writer_data_w = {3072'd0,saved_mac_r}; writer_bytes_w = 9'd16;
++                writer_req_w = 1'b1; writer_data_w = WRITER_BITS'(saved_mac_r); writer_bytes_w = 9'd16;
+                 writer_addr_w = saved_mac_addr_r;
+             end
+             default: ;
+         endcase
+         if (state_r == CLEAR) begin
+             writer_req_w = !clear_wait_r; writer_addr_w = clear_addr_r[30:0];
+-            writer_data_w = 3200'd0; writer_bytes_w = 9'd32;
++            writer_data_w = '0; writer_bytes_w = 9'd32;
+             if (out_base_w+result_bytes_o-clear_addr_r < 32'd32)
+                 writer_bytes_w = 9'(out_base_w+result_bytes_o-clear_addr_r);
+         end
+@@ -385,14 +394,8 @@
+         end
+         if (state_r == RESET_CORE) output_addr_r <= out_base_w;
+         if (output_fire_w) begin
+-            // 仅捕获本算子的有效宽度，Concat/Add/PW不再驱动3200位公共使能。
++            // 生产公共结果固定128位；宽导出寄存器仅在调试构建中生成。
+             saved_data_r[127:0] <= bank_data_w[127:0];
+-            case (op_w)
+-                8'd3: saved_data_r[1151:128] <= bank_data_w[1151:128];
+-                8'd4: saved_data_r[3199:128] <= bank_data_w[3199:128];
+-                8'd8, 8'd9: saved_data_r[511:128] <= bank_data_w[511:128];
+-                default: ;
+-            endcase
+             saved_pixel_r <= bank_pixel_w; saved_group_r <= bank_group_w;
+             saved_output_count_r <= output_count_r;
+             saved_linear_addr_r <= output_addr_r;
+@@ -416,6 +419,20 @@
+             words_b_r <= checked_words_b_w;
+         end
+     end
++    generate
++        if (ENABLE_WIDE_DEBUG) begin : g_wide_debug
++            always_ff @(posedge clk_i) begin
++                if (output_fire_w) begin
++                    case (op_w)
++                        8'd3: saved_data_r[1151:128] <= bank_data_w[1151:128];
++                        8'd4: saved_data_r[3199:128] <= bank_data_w[3199:128];
++                        8'd8, 8'd9: saved_data_r[511:128] <= bank_data_w[511:128];
++                        default: ;
++                    endcase
++                end
++            end
++        end
++    endgenerate
+     // 顺序流结果统一采用已保存的输出序号。
+     always_comb begin
+         // reader_ready_w 只表示 reader 当前处于 IDLE；在同一拍发出最后一笔
+--- before/op_feature_writer.sv
++++ prj/Model_Deployment.srcs/sources_1/new/Op/control/op_feature_writer.sv
+@@ -1,6 +1,9 @@
+ `timescale 1ns/1ps
+-// 【文件类型：.sv】最多25×P16结果写回；原始块不移位，局部取数/对齐分拍。
+-module op_feature_writer (
++// 【文件类型：.sv】生产写回最多32B；窗口导出仅在编译期调试构建中保留。
++// 取数、提取、对齐继续分拍，保持原事务节奏与跨32B边界语义。
++module op_feature_writer #(
++    parameter bit ENABLE_WIDE_DEBUG = 1'b0
++) (
+     input logic clk_i, // 时钟域输入
+     input logic rst_n_i, // 异步低有效控制复位
+     input logic req_valid_i, // 握手有效，阻塞期间保持载荷
+@@ -13,7 +16,7 @@
+     output logic mem_rsp_ready_o, // 握手接收许可
+     input logic mem_rsp_error_i, // 本次操作错误状态
+     input logic [30:0] req_addr_i, // 地址字段，单位按模块接口约定
+-    input logic [3199:0] req_data_i, // 数据载荷，低位承载首字节或首 lane
++    input logic [(ENABLE_WIDE_DEBUG ? 3200 : 256)-1:0] req_data_i, // 首字节位于低位
+     input logic [8:0] req_bytes_i, // 有效字节数或接口长度
+     output logic [30:0] mem_addr_o, // 地址字段，单位按模块接口约定
+     output logic [255:0] mem_data_o, // 数据载荷，低位承载首字节或首 lane
+@@ -21,7 +24,6 @@
+ );
+     typedef enum logic [2:0] {IDLE, FETCH, SHIFT, ALIGN, REQUEST, RETURN, FINISH} state_t;
+     state_t state_r, state_nxt;
+-    logic [255:0] chunks_r [0:12];
+     logic [511:0] pair_r;
+     logic [255:0] selected_r, mem_data_r, extract_w;
+     logic [31:0] mem_mask_r;
+@@ -69,13 +71,26 @@
+             end
+         end
+     end
++    generate
++        if (ENABLE_WIDE_DEBUG) begin : g_wide_debug
++            logic [255:0] chunks_r [0:12];
++            always_ff @(posedge clk_i) begin
++                if (state_r == IDLE && req_valid_i) begin
++                    for (int c=0; c<12; c++) chunks_r[c] <= req_data_i[c*256 +: 256];
++                    chunks_r[12] <= {128'd0,req_data_i[3199:3072]};
++                end
++                if (state_r == FETCH)
++                    pair_r <= {(cursor_r[8:5] < 4'd12 ? chunks_r[cursor_r[8:5]+4'd1] : 256'd0),chunks_r[cursor_r[8:5]]};
++            end
++        end else begin : g_production
++            logic [255:0] block_r;
++            always_ff @(posedge clk_i) begin
++                if (state_r == IDLE && req_valid_i) block_r <= req_data_i;
++                if (state_r == FETCH) pair_r <= {256'd0,block_r};
++            end
++        end
++    endgenerate
+     always_ff @(posedge clk_i) begin
+-        if (state_r == IDLE && req_valid_i) begin
+-            for (int c=0; c<12; c++) chunks_r[c] <= req_data_i[c*256 +: 256];
+-            chunks_r[12] <= {128'd0,req_data_i[3199:3072]};
+-        end
+-        if (state_r == FETCH)
+-            pair_r <= {(cursor_r[8:5] < 4'd12 ? chunks_r[cursor_r[8:5]+4'd1] : 256'd0),chunks_r[cursor_r[8:5]]};
+         if (state_r == SHIFT)
+             for (int b=0; b<32; b++) selected_r[b*8 +: 8] <= 6'(b) < count_w ? extract_w[b*8 +: 8] : 8'd0;
+         if (state_r == ALIGN) begin

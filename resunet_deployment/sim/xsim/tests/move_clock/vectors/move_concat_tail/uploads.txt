@@ -1,0 +1,2 @@
+02000010 144 sim/xsim/tests/move_clock/vectors/move_concat_tail/input.hex
+02200010 432 sim/xsim/tests/move_clock/vectors/move_concat_tail/input_b.hex

@@ -1,0 +1,39 @@
+--- before/prj/Model_Deployment.srcs/sim_1/new/Op_ROM/tb_op_rom.sv
++++ after/prj/Model_Deployment.srcs/sim_1/new/Op_ROM/tb_op_rom.sv
+@@ -10,7 +10,8 @@
+     logic [511:0] bounds_wr_data = 512'd0, bounds_rd_data;
+     logic rx_clk = 1'b0, ui_clk = 1'b0, rst_n = 1'b0;
+     always #4 rx_clk = !rx_clk;
+-    always #5 ui_clk = !ui_clk;
++    // 第一轮时序修复回归：实际MIG UI=333.333MHz，RX=125MHz，保持异步相位关系。
++    always #1.5 ui_clk = !ui_clk;
+     // 独立检查同一官方 IP 的全部地址、一拍读及停读保持；不替换 DUT 缓存。
+     pw_weight_uram u_bounds (
+         .clka(ui_clk), .ena(bounds_we), .wea(bounds_we),
+@@ -246,6 +247,26 @@
+         rpc(8'h20,32'd0,40);check_status(8'd3);
+         if(ddr_writes!==0)begin $error("ROM write leaked to DDR");$stop;end
+         $display("[CASE PASS] read_only_coefficients");
++        // 快速覆盖新增图像描述快照：在线RUN因ready/切片数/基址不匹配被拒绝，不能启动DDR。
++        for(int b=0;b<64;b++)request[b]=8'd0;
++        request[0]=8'd1;request[1]=8'd1;request[2]=8'd3;request[3]=8'd16;
++        request[5]=8'd2;request[7]=8'd2;request[8]=8'd1;request[10]=8'd24;
++        put32(16,32'h10000000);put32(24,32'h18000000);
++        put32(32,32'h00100000);put32(36,32'h00200000);put32(40,32'd2);
++        image_ready=1'b0;image_slices=32'd2;put32(48,32'hf0000001);
++        rpc(8'h21,32'hf0000001,64);check_status(8'd5);
++        image_ready=1'b1;image_slices=32'd3;put32(48,32'hf0000002);
++        rpc(8'h21,32'hf0000002,64);check_status(8'd5);
++        if(dut.image_ready_r!==1'b1 || dut.image_slices_r!==32'd3 || dut.image_base_r!==31'h10000000)begin
++            $error("image metadata snapshot mismatch cycle=%0d",cycle);$stop;
++        end
++        image_slices=32'd2;put32(16,32'h10040000);put32(48,32'hf0000003);
++        rpc(8'h21,32'hf0000003,64);check_status(8'd5);
++        if(ddr_reads!==0 || ddr_writes!==0 || rom_reads!==0 || claim!==1'b0)begin
++            $error("rejected online descriptor started an engine transaction");$stop;
++        end
++        image_ready=1'b0;image_slices=32'd0;
++        $display("[CASE PASS] image_metadata_snapshot_and_online_rejection");
+         cases_fd=$fopen({VECTOR_DIR,case_list},"r");
+         if(!cases_fd)$fatal(1,"missing cases.txt");
+         while(!$feof(cases_fd)) begin

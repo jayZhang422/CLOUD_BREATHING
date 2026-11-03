@@ -1,0 +1,149 @@
+[
+  {
+    "case": "lobe_mid_expand",
+    "before": 8857,
+    "after": 8859,
+    "delta": 2,
+    "percent": 0.0226
+  },
+  {
+    "case": "lobe_mid_mix",
+    "before": 8825,
+    "after": 8825,
+    "delta": 0,
+    "percent": 0.0
+  },
+  {
+    "case": "lobe_mid_project",
+    "before": 19722,
+    "after": 19597,
+    "delta": -125,
+    "percent": -0.6338
+  },
+  {
+    "case": "lobe_mid_out",
+    "before": 8822,
+    "after": 8822,
+    "delta": 0,
+    "percent": 0.0
+  },
+  {
+    "case": "legacy_lobe_head",
+    "before": 566,
+    "after": 566,
+    "delta": 0,
+    "percent": 0.0
+  },
+  {
+    "case": "legacy_pool_odd_two_groups",
+    "before": 194,
+    "after": 196,
+    "delta": 2,
+    "percent": 1.0309
+  },
+  {
+    "case": "legacy_pool_groups32",
+    "before": 1133,
+    "after": 1130,
+    "delta": -3,
+    "percent": -0.2648
+  },
+  {
+    "case": "tumor_mid_expand",
+    "before": 74565,
+    "after": 74567,
+    "delta": 2,
+    "percent": 0.0027
+  },
+  {
+    "case": "legacy_tumor_e1_fast",
+    "before": 5451,
+    "after": 5455,
+    "delta": 4,
+    "percent": 0.0734
+  },
+  {
+    "case": "upsample",
+    "before": 208,
+    "after": 209,
+    "delta": 1,
+    "percent": 0.4808
+  },
+  {
+    "case": "concat",
+    "before": 203,
+    "after": 204,
+    "delta": 1,
+    "percent": 0.4926
+  },
+  {
+    "case": "fused_dw11",
+    "before": 1606,
+    "after": 1616,
+    "delta": 10,
+    "percent": 0.6227
+  },
+  {
+    "case": "pw_tail_clear",
+    "before": 404,
+    "after": 405,
+    "delta": 1,
+    "percent": 0.2475
+  },
+  {
+    "case": "move_pool_512",
+    "before": 9528,
+    "after": 9494,
+    "delta": -34,
+    "percent": -0.3568
+  },
+  {
+    "case": "move_pool_odd",
+    "before": 304,
+    "after": 305,
+    "delta": 1,
+    "percent": 0.3289
+  },
+  {
+    "case": "move_up_256",
+    "before": 16449,
+    "after": 16461,
+    "delta": 12,
+    "percent": 0.073
+  },
+  {
+    "case": "move_up_tail",
+    "before": 233,
+    "after": 234,
+    "delta": 1,
+    "percent": 0.4292
+  },
+  {
+    "case": "move_concat",
+    "before": 8432,
+    "after": 8428,
+    "delta": -4,
+    "percent": -0.0474
+  },
+  {
+    "case": "move_concat_tail",
+    "before": 281,
+    "after": 282,
+    "delta": 1,
+    "percent": 0.3559
+  },
+  {
+    "case": "move_concat_odd",
+    "before": 274,
+    "after": 274,
+    "delta": 0,
+    "percent": 0.0
+  },
+  {
+    "case": "move_pool_single",
+    "before": 174,
+    "after": 175,
+    "delta": 1,
+    "percent": 0.5747
+  }
+]

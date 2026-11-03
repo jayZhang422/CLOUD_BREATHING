@@ -1,0 +1,12 @@
+--- before/sim/Op_Board/run_sim.sh
++++ after/sim/Op_Board/run_sim.sh
+@@ -9,7 +9,8 @@
+ python3 "$board_dir/generate_vectors.py" --out "$work_dir/vectors"
+ sources=(
+     "$board_dir/tb_op_candidate.sv" "$board_dir/op_coeff_split.sv"
+-    "$op_dir/control/op_service.sv" "$board_dir/rtl/op_engine.sv"
++    "$op_dir/control/op_service.sv" "$op_dir/control/op_engine.sv"
++    "$op_dir/control/op_descriptor_check.sv"
+     "$board_dir/rtl/op_core_bank.sv" "$op_dir/control/op_feature_reader.sv"
+     "$op_dir/control/op_feature_writer.sv" "$op_dir/control/op_ddr_port.sv"
+     "$repo_dir/sim/Op_Sim/PW/rtl/PwMac.v"

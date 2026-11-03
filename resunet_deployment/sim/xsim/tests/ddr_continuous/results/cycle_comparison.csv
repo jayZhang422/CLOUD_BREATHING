@@ -1,0 +1,15 @@
+case,baseline_cycles,queued_cycles,cycle_reduction_percent
+lobe_mid_expand,16975,12586,25.856
+lobe_mid_mix,8470,6041,28.678
+lobe_mid_project,24225,18684,22.873
+lobe_mid_out,8468,6041,28.661
+legacy_lobe_head,566,447,21.025
+legacy_pool_odd_two_groups,450,333,26.000
+legacy_pool_groups32,6454,4481,30.570
+tumor_mid_expand,99028,69682,29.634
+legacy_tumor_e1_fast,8349,5000,40.113
+upsample,439,297,32.346
+concat,192,175,8.854
+fused_dw11,1592,1255,21.168
+pw_tail_clear,370,309,16.486
+TOTAL,175578,125331,28.618

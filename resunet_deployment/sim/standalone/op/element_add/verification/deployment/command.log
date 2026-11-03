@@ -1,0 +1,152 @@
+Generated 114 cases; 42 frozen nodes verified against exported Golden; Fraction RNE oracle
+[info] welcome to sbt 1.10.2 (Eclipse Adoptium Java 17.0.20.1)
+[info] loading project definition from /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Element_Add/project
+[info] loading settings for project element_add from build.sbt ...
+[info] set current project to element_add (in build file:/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Element_Add/)
+[info] compiling 3 Scala sources to /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Element_Add/target/scala-2.13/classes ...
+[info] done compiling
+[info] running (fork) ElementAddSim /home/jayzhang/.cache/elementadd-sim.hTiqUf/verification
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 2048.0MiB
+[info] [Runtime] Current date : 2026.10.11 18:22:58
+[info] [Progress] at 0.000 : Elaborate components
+[info] [Progress] at 0.767 : Checks and transforms
+[info] [Progress] at 0.994 : Generate Verilog to /home/jayzhang/.cache/elementadd-sim.hTiqUf/verification/compiled/tmp/job_1
+[info] [Done] at 1.242
+[info] [Progress] Simulation workspace in /home/jayzhang/.cache/elementadd-sim.hTiqUf/verification/compiled/ElementAdd
+[info] [Progress] Verilator compilation started
+[info] [Progress] Verilator compilation done in 3878.750 ms
+[info] [Progress] Start ElementAdd deployment simulation with seed 20261011
+[info] [TB PASSED] lobe_e1.mix 全部数据验证一致 groups=1 words=1024
+[info] [TB PASSED] lobe_e1.out 全部数据验证一致 groups=1 words=1024
+[info] [TB PASSED] lobe_e2.mix 全部数据验证一致 groups=2 words=512
+[info] [TB PASSED] lobe_e2.out 全部数据验证一致 groups=2 words=512
+[info] [TB PASSED] lobe_e3.mix 全部数据验证一致 groups=4 words=256
+[info] [TB PASSED] lobe_e3.out 全部数据验证一致 groups=4 words=256
+[info] [TB PASSED] lobe_mid.mix 全部数据验证一致 groups=8 words=128
+[info] [TB PASSED] lobe_mid.out 全部数据验证一致 groups=8 words=128
+[info] [TB PASSED] lobe_d3.mix 全部数据验证一致 groups=4 words=256
+[info] [TB PASSED] lobe_d3.out 全部数据验证一致 groups=4 words=256
+[info] [TB PASSED] lobe_d2.mix 全部数据验证一致 groups=2 words=512
+[info] [TB PASSED] lobe_d2.out 全部数据验证一致 groups=2 words=512
+[info] [TB PASSED] lobe_d1.mix 全部数据验证一致 groups=1 words=1024
+[info] [TB PASSED] lobe_d1.out 全部数据验证一致 groups=1 words=1024
+[info] [TB PASSED] vessel_e1.mix 全部数据验证一致 groups=1 words=1024
+[info] [TB PASSED] vessel_e1.out 全部数据验证一致 groups=1 words=1024
+[info] [TB PASSED] vessel_e2.mix 全部数据验证一致 groups=2 words=512
+[info] [TB PASSED] vessel_e2.out 全部数据验证一致 groups=2 words=512
+[info] [TB PASSED] vessel_e3.mix 全部数据验证一致 groups=4 words=256
+[info] [TB PASSED] vessel_e3.out 全部数据验证一致 groups=4 words=256
+[info] [TB PASSED] vessel_mid.mix 全部数据验证一致 groups=8 words=128
+[info] [TB PASSED] vessel_mid.out 全部数据验证一致 groups=8 words=128
+[info] [TB PASSED] vessel_d3.mix 全部数据验证一致 groups=4 words=256
+[info] [TB PASSED] vessel_d3.out 全部数据验证一致 groups=4 words=256
+[info] [TB PASSED] vessel_d2.mix 全部数据验证一致 groups=2 words=512
+[info] [TB PASSED] vessel_d2.out 全部数据验证一致 groups=2 words=512
+[info] [TB PASSED] vessel_d1.mix 全部数据验证一致 groups=1 words=1024
+[info] [TB PASSED] vessel_d1.out 全部数据验证一致 groups=1 words=1024
+[info] [TB PASSED] airway_e1.mix 全部数据验证一致 groups=1 words=1024
+[info] [TB PASSED] airway_e1.out 全部数据验证一致 groups=1 words=1024
+[info] [TB PASSED] airway_e2.mix 全部数据验证一致 groups=2 words=512
+[info] [TB PASSED] airway_e2.out 全部数据验证一致 groups=2 words=512
+[info] [TB PASSED] airway_e3.mix 全部数据验证一致 groups=4 words=256
+[info] [TB PASSED] airway_e3.out 全部数据验证一致 groups=4 words=256
+[info] [TB PASSED] airway_mid.mix 全部数据验证一致 groups=8 words=128
+[info] [TB PASSED] airway_mid.out 全部数据验证一致 groups=8 words=128
+[info] [TB PASSED] airway_d3.mix 全部数据验证一致 groups=4 words=256
+[info] [TB PASSED] airway_d3.out 全部数据验证一致 groups=4 words=256
+[info] [TB PASSED] airway_d2.mix 全部数据验证一致 groups=2 words=512
+[info] [TB PASSED] airway_d2.out 全部数据验证一致 groups=2 words=512
+[info] [TB PASSED] airway_d1.mix 全部数据验证一致 groups=1 words=1024
+[info] [TB PASSED] airway_d1.out 全部数据验证一致 groups=1 words=1024
+[info] [TB PASSED] rne_shift0 全部数据验证一致 groups=4 words=12
+[info] [TB PASSED] rne_shift1 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift2 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift3 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift4 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift5 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift6 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift7 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift8 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift9 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift10 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift11 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift12 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift13 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift14 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift15 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift16 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift17 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift18 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift19 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift20 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift21 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift22 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift23 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift24 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift25 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift26 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift27 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift28 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift29 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift30 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift31 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift32 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift33 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift34 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift35 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift36 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift37 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift38 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift39 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift40 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift41 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift42 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift43 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift44 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift45 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift46 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift47 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift48 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift49 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift50 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift51 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift52 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift53 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift54 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift55 全部数据验证一致 groups=6 words=18
+[info] [TB PASSED] rne_shift56 全部数据验证一致 groups=4 words=12
+[info] [TB PASSED] rne_shift57 全部数据验证一致 groups=3 words=9
+[info] [TB PASSED] rne_shift58 全部数据验证一致 groups=3 words=9
+[info] [TB PASSED] rne_shift59 全部数据验证一致 groups=3 words=9
+[info] [TB PASSED] rne_shift60 全部数据验证一致 groups=3 words=9
+[info] [TB PASSED] rne_shift61 全部数据验证一致 groups=3 words=9
+[info] [TB PASSED] rne_shift62 全部数据验证一致 groups=2 words=6
+[info] [TB PASSED] rne_shift63 全部数据验证一致 groups=1 words=3
+[info] [TB PASSED] int8_exhaustive 全部数据验证一致 groups=1 words=4096
+[info] [TB PASSED] wide_extremes 全部数据验证一致 groups=1 words=1024
+[info] [TB PASSED] relu6_limit 全部数据验证一致 groups=1 words=128
+[info] [TB PASSED] single_round 全部数据验证一致 groups=1 words=512
+[info] [TB PASSED] reset_mid 全部数据验证一致 groups=1 words=512
+[info] [TB PASSED] reset_stalled 全部数据验证一致 groups=1 words=512
+[info] [TB PASSED] full512 全部数据验证一致 groups=1 words=262144
+[info] [TB PASSED] minimum_after_full 全部数据验证一致 groups=1 words=1
+[info] [Done] Simulation done in 28154.558 ms
+[info] [TB PASSED] ALL cases=114 frozenNodes=42 words=292269 int8Values=4676304
+[success] Total time: 48 s, completed Oct 11, 2026, 6:23:32 PM
+[info] welcome to sbt 1.10.2 (Eclipse Adoptium Java 17.0.20.1)
+[info] loading project definition from /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Element_Add/project
+[info] loading settings for project element_add from build.sbt ...
+[info] set current project to element_add (in build file:/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Element_Add/)
+[info] running (fork) ElementAddGen 
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 2048.0MiB
+[info] [Runtime] Current date : 2026.10.11 18:23:42
+[info] [Progress] at 0.000 : Elaborate components
+[info] [Progress] at 0.820 : Checks and transforms
+[info] [Progress] at 1.033 : Generate Verilog to .
+[info] [Done] at 1.267
+[success] Total time: 5 s, completed Oct 11, 2026, 6:23:43 PM
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.140 MB sources in 2 modules, into 0.168 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.050 s (elab=0.004, cvt=0.010, bld=0.000); cpu 0.025 s on 1 threads; alloced 11.359 MB

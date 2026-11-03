@@ -1,0 +1,10 @@
+Time resolution is 1 ps
+Block Memory Generator module tb_op_ddr_burst.optimized.g_new.port.g_memory[0].u_write_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_op_ddr_burst.optimized.g_new.port.g_memory[0].u_read_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_op_ddr_burst.optimized.g_new.port.g_memory[1].u_write_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_op_ddr_burst.optimized.g_new.port.g_memory[1].u_read_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[PERF] optimized=1 transactions=2724 cycles=74691 AR=100 AW=99 read_bytes=18080 write_bytes=17056 overlap_cycles=221
+[CASE PASS] deferred BRESP/RRESP errors, fence clear, reset cancellation
+[PERF] optimized=0 transactions=2724 cycles=215307 AR=2627 AW=1339 read_bytes=84064 write_bytes=42848 overlap_cycles=0
+[TB PASSED] 全部数据验证一致 transactions=2724 speedup=2.883 old_cycles=215307 new_cycles=74691
+$finish called at time : 646080 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Op_DDR_Burst/tb_op_ddr_burst.sv" Line 295

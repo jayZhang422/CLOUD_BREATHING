@@ -1,0 +1,1 @@
+{"status":"PASS","cascaded_windows":128,"line3_latency":9,"line5_latency":20,"dw3_values":2048,"dw5_values":2048,"merge_values":2048,"input_stalls":809,"linebuffer_stalls":180,"dw_stalls":442,"merge_output_stalls":8}

@@ -1,0 +1,1016 @@
+{
+  "status": "blocked_by_automatic_approval",
+  "reason": "Both scoped PowerShell removal attempts rejected: blocked by policy",
+  "bytes_remaining": 935521359,
+  "MiB_remaining": 892.182692527771,
+  "files": [
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/sim_trace.csv",
+      "bytes": 108579443
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/tb_fuse_up_engine_behav.wdb",
+      "bytes": 125375870
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/waveform.vcd",
+      "bytes": 56899004
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xsim.version",
+      "bytes": 6
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/Compile_Options.txt",
+      "bytes": 300
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/TempBreakPointFile.txt",
+      "bytes": 29
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/xsim.dbg",
+      "bytes": 6359616
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/xsim.mem",
+      "bytes": 917982
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/xsim.reloc",
+      "bytes": 1254078
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/xsim.rlx",
+      "bytes": 1774
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/xsim.rtti",
+      "bytes": 1841
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/xsim.svtype",
+      "bytes": 1091
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/xsim.type",
+      "bytes": 24
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/xsim.version",
+      "bytes": 6
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/xsim.xdbg",
+      "bytes": 26145000
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/xsimcrash.log",
+      "bytes": 0
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/xsimk.exe",
+      "bytes": 6890465
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/xsimkernel.log",
+      "bytes": 347
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/xsimSettings.ini",
+      "bytes": 1431
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/@dw3x3.sdb",
+      "bytes": 843338
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/@dw5x5.sdb",
+      "bytes": 1531883
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/@element@add_p16.sdb",
+      "bytes": 233128
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/@line@buffer_3x3.sdb",
+      "bytes": 37960
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/@line@buffer_5x5.sdb",
+      "bytes": 59344
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/@max@pool2d_512x512_c16.sdb",
+      "bytes": 51210
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/@pw@mac@frontend.sdb",
+      "bytes": 490764
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/@pw@mac@shared.sdb",
+      "bytes": 962233
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/@pw@project@frontend.sdb",
+      "bytes": 490776
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/@pw@shared@requant.sdb",
+      "bytes": 413598
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/@stream@arbiter.sdb",
+      "bytes": 19887
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/@upsample.sdb",
+      "bytes": 25503
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/channel_shuffle.sdb",
+      "bytes": 1911
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/concat.sdb",
+      "bytes": 6885
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/glbl.sdb",
+      "bytes": 4868
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/op12_add_cache_bram.sdb",
+      "bytes": 7400
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/op_core_bank.sdb",
+      "bytes": 75352
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/op_descriptor_check.sdb",
+      "bytes": 30791
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/op_dw_adapter.sdb",
+      "bytes": 17299
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/op_engine.sdb",
+      "bytes": 91276
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/op_feature_reader.sdb",
+      "bytes": 15047
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/op_feature_writer.sdb",
+      "bytes": 12671
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/op_mem_arbiter.sdb",
+      "bytes": 7322
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/op_move_reader.sdb",
+      "bytes": 8675
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/op_move_read_fifo.sdb",
+      "bytes": 18595
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/op_move_writer.sdb",
+      "bytes": 9780
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/op_pw_pack.sdb",
+      "bytes": 8902
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/op_pw_pack_bram.sdb",
+      "bytes": 8188
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/op_pw_reader.sdb",
+      "bytes": 14095
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/op_write_queue_fifo.sdb",
+      "bytes": 18389
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/p12_tile_uram.sdb",
+      "bytes": 8185
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/pw_input_tile_bram.sdb",
+      "bytes": 8226
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/pw_param_bram.sdb",
+      "bytes": 8656
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/pw_project_uram.sdb",
+      "bytes": 8296
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/pw_result_bram.sdb",
+      "bytes": 8251
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/pw_weight_bank.sdb",
+      "bytes": 8295
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/tb_fuse_up_engine.sdb",
+      "bytes": 32162
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/xil_defaultlib/xil_defaultlib.rlx",
+      "bytes": 19195
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/obj/xsim_0.win64.obj",
+      "bytes": 278709
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/obj/xsim_1.win64.obj",
+      "bytes": 348792
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/obj/xsim_10.win64.obj",
+      "bytes": 329630
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/obj/xsim_11.win64.obj",
+      "bytes": 876973
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/obj/xsim_12.win64.obj",
+      "bytes": 308656
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/obj/xsim_13.win64.obj",
+      "bytes": 286739
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/obj/xsim_14.win64.obj",
+      "bytes": 294693
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/obj/xsim_15.win64.obj",
+      "bytes": 252134
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/obj/xsim_16.win64.obj",
+      "bytes": 115436
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/obj/xsim_17.c",
+      "bytes": 782968
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/obj/xsim_17.win64.obj",
+      "bytes": 502568
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/obj/xsim_2.win64.obj",
+      "bytes": 705088
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/obj/xsim_3.win64.obj",
+      "bytes": 717996
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/obj/xsim_4.win64.obj",
+      "bytes": 286826
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/obj/xsim_5.win64.obj",
+      "bytes": 650443
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/obj/xsim_6.win64.obj",
+      "bytes": 680803
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/obj/xsim_7.win64.obj",
+      "bytes": 318045
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/obj/xsim_8.win64.obj",
+      "bytes": 883267
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_engine/behav/xsim/xsim.dir/tb_fuse_up_engine_behav/obj/xsim_9.win64.obj",
+      "bytes": 324875
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/sim_trace.csv",
+      "bytes": 154603395
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/tb_fuse_up_rpc_behav.wdb",
+      "bytes": 259203902
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/waveform.vcd",
+      "bytes": 3303234
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xsim.version",
+      "bytes": 6
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/Compile_Options.txt",
+      "bytes": 294
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/TempBreakPointFile.txt",
+      "bytes": 29
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/xsim.dbg",
+      "bytes": 6992392
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/xsim.mem",
+      "bytes": 1090367
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/xsim.reloc",
+      "bytes": 1487819
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/xsim.rlx",
+      "bytes": 2048
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/xsim.rtti",
+      "bytes": 3786
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/xsim.svtype",
+      "bytes": 2549
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/xsim.type",
+      "bytes": 24
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/xsim.version",
+      "bytes": 6
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/xsim.xdbg",
+      "bytes": 27298000
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/xsimcrash.log",
+      "bytes": 0
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/xsimk.exe",
+      "bytes": 8697801
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/xsimkernel.log",
+      "bytes": 345
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/xsimSettings.ini",
+      "bytes": 1431
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/@dw3x3.sdb",
+      "bytes": 843607
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/@dw5x5.sdb",
+      "bytes": 1532152
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/@element@add_p16.sdb",
+      "bytes": 233397
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/@line@buffer_3x3.sdb",
+      "bytes": 38229
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/@line@buffer_5x5.sdb",
+      "bytes": 59613
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/@max@pool2d_512x512_c16.sdb",
+      "bytes": 51479
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/@pw@mac@frontend.sdb",
+      "bytes": 491033
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/@pw@mac@shared.sdb",
+      "bytes": 962502
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/@pw@project@frontend.sdb",
+      "bytes": 491045
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/@pw@shared@requant.sdb",
+      "bytes": 413867
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/@stream@arbiter.sdb",
+      "bytes": 20156
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/@upsample.sdb",
+      "bytes": 25772
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/channel_shuffle.sdb",
+      "bytes": 1911
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/concat.sdb",
+      "bytes": 6885
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/crc32_iso_hdlc.sdb",
+      "bytes": 2474
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/glbl.sdb",
+      "bytes": 4862
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op12_add_cache_bram.sdb",
+      "bytes": 7400
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_board.sdb",
+      "bytes": 20101
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_coeff_rom.sdb",
+      "bytes": 6654
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_coeff_split.sdb",
+      "bytes": 6739
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_compute_clk_wiz.sdb",
+      "bytes": 1554
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_compute_clk_wiz_clk_wiz.sdb",
+      "bytes": 5036
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_core_bank.sdb",
+      "bytes": 75352
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_ddr_cache_bram.sdb",
+      "bytes": 8243
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_ddr_port.sdb",
+      "bytes": 43567
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_descriptor_check.sdb",
+      "bytes": 30791
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_dw_adapter.sdb",
+      "bytes": 17299
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_engine.sdb",
+      "bytes": 91276
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_feature_reader.sdb",
+      "bytes": 15047
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_feature_writer.sdb",
+      "bytes": 12671
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_mem_arbiter.sdb",
+      "bytes": 7322
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_mem_cdc.sdb",
+      "bytes": 9544
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_mem_req_fifo.sdb",
+      "bytes": 19046
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_mem_rsp_fifo.sdb",
+      "bytes": 19195
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_move_reader.sdb",
+      "bytes": 8675
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_move_read_fifo.sdb",
+      "bytes": 18595
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_move_writer.sdb",
+      "bytes": 9780
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_perf_bram.sdb",
+      "bytes": 8216
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_pw_pack.sdb",
+      "bytes": 8902
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_pw_pack_bram.sdb",
+      "bytes": 8188
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_pw_reader.sdb",
+      "bytes": 14095
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_service.sdb",
+      "bytes": 34608
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_transport.sdb",
+      "bytes": 14739
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/op_write_queue_fifo.sdb",
+      "bytes": 18389
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/p12_tile_uram.sdb",
+      "bytes": 8185
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/protocol_builder.sdb",
+      "bytes": 12825
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/pw_input_tile_bram.sdb",
+      "bytes": 8226
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/pw_param_bram.sdb",
+      "bytes": 8656
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/pw_project_uram.sdb",
+      "bytes": 8296
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/pw_result_bram.sdb",
+      "bytes": 8251
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/pw_weight_bank.sdb",
+      "bytes": 8295
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/quantized_params_rom.sdb",
+      "bytes": 6825
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/rpc_request_bram.sdb",
+      "bytes": 8190
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/rpc_response_bram.sdb",
+      "bytes": 8197
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/tb_fuse_up_rpc.sdb",
+      "bytes": 73904
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/xil_defaultlib/xil_defaultlib.rlx",
+      "bytes": 30094
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_0.win64.obj",
+      "bytes": 255400
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_1.win64.obj",
+      "bytes": 697703
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_10.win64.obj",
+      "bytes": 314404
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_11.win64.obj",
+      "bytes": 684593
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_12.win64.obj",
+      "bytes": 336060
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_13.win64.obj",
+      "bytes": 294423
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_14.win64.obj",
+      "bytes": 796086
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_15.win64.obj",
+      "bytes": 280477
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_16.win64.obj",
+      "bytes": 301259
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_17.win64.obj",
+      "bytes": 290581
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_18.win64.obj",
+      "bytes": 263282
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_19.win64.obj",
+      "bytes": 269404
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_2.win64.obj",
+      "bytes": 267807
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_20.win64.obj",
+      "bytes": 303775
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_21.win64.obj",
+      "bytes": 224231
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_22.win64.obj",
+      "bytes": 444471
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_23.c",
+      "bytes": 911429
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_23.win64.obj",
+      "bytes": 584099
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_3.win64.obj",
+      "bytes": 357542
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_4.win64.obj",
+      "bytes": 734028
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_5.win64.obj",
+      "bytes": 665579
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_6.win64.obj",
+      "bytes": 295252
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_7.win64.obj",
+      "bytes": 664954
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_8.win64.obj",
+      "bytes": 314351
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fuse_up_rpc/behav/xsim/xsim.dir/tb_fuse_up_rpc_behav/obj/xsim_9.win64.obj",
+      "bytes": 684260
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/tb_pwstream_op12_behav.wdb",
+      "bytes": 9292686
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/waveform.vcd",
+      "bytes": 12345521
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xsim.version",
+      "bytes": 6
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/Compile_Options.txt",
+      "bytes": 298
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/TempBreakPointFile.txt",
+      "bytes": 29
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/xsim.dbg",
+      "bytes": 9117768
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/xsim.mem",
+      "bytes": 1724989
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/xsim.reloc",
+      "bytes": 2501226
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/xsim.rlx",
+      "bytes": 1754
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/xsim.rtti",
+      "bytes": 1898
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/xsim.svtype",
+      "bytes": 1118
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/xsim.type",
+      "bytes": 24
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/xsim.version",
+      "bytes": 6
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/xsim.xdbg",
+      "bytes": 52289312
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/xsimcrash.log",
+      "bytes": 0
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/xsimk.exe",
+      "bytes": 6874603
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/xsimkernel.log",
+      "bytes": 346
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/xsimSettings.ini",
+      "bytes": 1429
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/@dw3x3.sdb",
+      "bytes": 843338
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/@dw5x5.sdb",
+      "bytes": 1531883
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/@element@add_p16.sdb",
+      "bytes": 233128
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/@line@buffer_3x3.sdb",
+      "bytes": 37960
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/@line@buffer_5x5.sdb",
+      "bytes": 59344
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/@max@pool2d_512x512_c16.sdb",
+      "bytes": 51210
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/@pw@mac@frontend.sdb",
+      "bytes": 490764
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/@pw@mac@shared.sdb",
+      "bytes": 962233
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/@pw@project@frontend.sdb",
+      "bytes": 490776
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/@pw@shared@requant.sdb",
+      "bytes": 413598
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/@stream@arbiter.sdb",
+      "bytes": 19887
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/@upsample.sdb",
+      "bytes": 25503
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/channel_shuffle.sdb",
+      "bytes": 1911
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/concat.sdb",
+      "bytes": 6885
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/glbl.sdb",
+      "bytes": 4866
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/op12_add_cache_bram.sdb",
+      "bytes": 7400
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/op_core_bank.sdb",
+      "bytes": 75352
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/op_descriptor_check.sdb",
+      "bytes": 30791
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/op_dw_adapter.sdb",
+      "bytes": 17299
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/op_engine.sdb",
+      "bytes": 91276
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/op_feature_reader.sdb",
+      "bytes": 15047
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/op_feature_writer.sdb",
+      "bytes": 12671
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/op_mem_arbiter.sdb",
+      "bytes": 7322
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/op_move_reader.sdb",
+      "bytes": 8675
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/op_move_read_fifo.sdb",
+      "bytes": 18595
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/op_move_writer.sdb",
+      "bytes": 9780
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/op_pw_pack.sdb",
+      "bytes": 8902
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/op_pw_pack_bram.sdb",
+      "bytes": 8188
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/op_pw_reader.sdb",
+      "bytes": 14095
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/op_write_queue_fifo.sdb",
+      "bytes": 18389
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/p12_tile_uram.sdb",
+      "bytes": 8185
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/pwstream_op12_runner.sdb",
+      "bytes": 28852
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/pw_input_tile_bram.sdb",
+      "bytes": 8226
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/pw_param_bram.sdb",
+      "bytes": 8656
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/pw_project_uram.sdb",
+      "bytes": 8296
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/pw_result_bram.sdb",
+      "bytes": 8251
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/pw_weight_bank.sdb",
+      "bytes": 8295
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/tb_pwstream_op12.sdb",
+      "bytes": 1770
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/xil_defaultlib/xil_defaultlib.rlx",
+      "bytes": 19204
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/obj/xsim_0.win64.obj",
+      "bytes": 279499
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/obj/xsim_1.win64.obj",
+      "bytes": 349988
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/obj/xsim_10.win64.obj",
+      "bytes": 329630
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/obj/xsim_11.win64.obj",
+      "bytes": 876973
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/obj/xsim_12.win64.obj",
+      "bytes": 308656
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/obj/xsim_13.win64.obj",
+      "bytes": 286739
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/obj/xsim_14.win64.obj",
+      "bytes": 294694
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/obj/xsim_15.win64.obj",
+      "bytes": 251970
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/obj/xsim_16.win64.obj",
+      "bytes": 99483
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/obj/xsim_17.c",
+      "bytes": 783760
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/obj/xsim_17.win64.obj",
+      "bytes": 503017
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/obj/xsim_2.win64.obj",
+      "bytes": 700622
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/obj/xsim_3.win64.obj",
+      "bytes": 717996
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/obj/xsim_4.win64.obj",
+      "bytes": 286969
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/obj/xsim_5.win64.obj",
+      "bytes": 650443
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/obj/xsim_6.win64.obj",
+      "bytes": 680803
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/obj/xsim_7.win64.obj",
+      "bytes": 318045
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/obj/xsim_8.win64.obj",
+      "bytes": 883267
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav/obj/xsim_9.win64.obj",
+      "bytes": 324875
+    }
+  ]
+}

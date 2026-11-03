@@ -1,0 +1,95 @@
+[info] welcome to sbt 1.10.2 (Eclipse Adoptium Java 17.0.20.1)
+[info] loading project definition from /home/jayzhang/.cache/decoder-d3.P8yiND/project/project
+[info] loading settings for project project from build.sbt ...
+[info] set current project to project (in build file:/home/jayzhang/.cache/decoder-d3.P8yiND/project/)
+[info] compiling 8 Scala sources to /home/jayzhang/.cache/decoder-d3.P8yiND/project/target/scala-2.13/classes ...
+[info] done compiling
+[info] running (fork) DecoderD3Sim /home/jayzhang/.cache/decoder-d3.P8yiND/run /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Concat/concat.sv
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 3072.0MiB
+[info] [Runtime] Current date : 2026.10.16 18:08:39
+[info] [Progress] at 0.000 : Elaborate components
+[info] [Progress] at 0.593 : Checks and transforms
+[info] spinal.core.SpinalExit$.apply(Misc.scala:459)
+[info] spinal.core.SpinalError$.apply(Misc.scala:514)
+[info] spinal.core.internals.PhaseContext.checkPendingErrors(Phase.scala:178)
+[info] spinal.core.internals.PhaseContext.doPhase(Phase.scala:194)
+[info] spinal.core.internals.SpinalVerilogBoot$.$anonfun$singleShot$12(Phase.scala:3528)
+[info] spinal.core.internals.SpinalVerilogBoot$.$anonfun$singleShot$12$adapted(Phase.scala:3526)
+[info] scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+[info] scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+[info] scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+[info] spinal.core.internals.SpinalVerilogBoot$.$anonfun$singleShot$7(Phase.scala:3526)
+[info] spinal.core.ScopeProperty$.sandbox(ScopeProperty.scala:71)
+[info] spinal.core.internals.SpinalVerilogBoot$.singleShot(Phase.scala:3457)
+[info] spinal.core.internals.SpinalVerilogBoot$.apply(Phase.scala:3426)
+[info] spinal.core.Spinal$.apply(Spinal.scala:468)
+[info] spinal.core.SpinalConfig.generateVerilog(Spinal.scala:226)
+[info] spinal.core.sim.SpinalSimConfig.compileCloned(SimBootstraps.scala:990)
+[info] spinal.core.sim.SpinalSimConfig.compile(SimBootstraps.scala:954)
+[info] DecoderD3Sim$.delayedEndpoint$DecoderD3Sim$1(DecoderD3Sim.scala:41)
+[info] DecoderD3Sim$delayedInit$body.apply(DecoderD3Sim.scala:10)
+[info] scala.Function0.apply$mcV$sp(Function0.scala:42)
+[info] scala.Function0.apply$mcV$sp$(Function0.scala:42)
+[info] scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:17)
+[info] scala.App.$anonfun$main$1(App.scala:98)
+[info] scala.App.$anonfun$main$1$adapted(App.scala:98)
+[info] scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+[info] scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+[info] scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+[info] scala.App.main(App.scala:98)
+[info] scala.App.main$(App.scala:96)
+[info] DecoderD3Sim$.main(DecoderD3Sim.scala:10)
+[info] DecoderD3Sim.main(DecoderD3Sim.scala)
+[info] **********************************************************************************************
+[info] [Warning] Elaboration failed (2 errors).
+[info]           Spinal will restart with scala trace to help you to find the problem.
+[info] **********************************************************************************************
+[info] [Progress] at 0.969 : Elaborate components
+[info] [Progress] at 1.076 : Checks and transforms
+[error] Exception in thread "main" spinal.core.SpinalExit: 
+[error]  Error detected in phase PhaseNormalizeNodeInputs
+[error] ********************************************************************************
+[error] ********************************************************************************
+[error] WIDTH MISMATCH (7 bits <- 4 bits) on (toplevel/pw/request_payload_tag_group :  UInt[7 bits]) := (toplevel/pw/issueGroup_r :  UInt[4 bits]) at 
+[error]     at PwMac.<init>(PwMac.scala:269)
+[error]     at DecoderD3Harness.<init>(DecoderD3Harness.scala:112)
+[error]     at DecoderD3Sim$.$anonfun$compiled$1(DecoderD3Sim.scala:42)
+[error] ********************************************************************************
+[error] ********************************************************************************
+[error] Design's errors are listed above.
+[error] SpinalHDL compiler exit stack : 
+[error] 	at spinal.core.SpinalExit$.apply(Misc.scala:459)
+[error] 	at spinal.core.SpinalError$.apply(Misc.scala:514)
+[error] 	at spinal.core.internals.PhaseContext.checkPendingErrors(Phase.scala:178)
+[error] 	at spinal.core.internals.PhaseContext.doPhase(Phase.scala:194)
+[error] 	at spinal.core.internals.SpinalVerilogBoot$.$anonfun$singleShot$12(Phase.scala:3528)
+[error] 	at spinal.core.internals.SpinalVerilogBoot$.$anonfun$singleShot$12$adapted(Phase.scala:3526)
+[error] 	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+[error] 	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+[error] 	at scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+[error] 	at spinal.core.internals.SpinalVerilogBoot$.$anonfun$singleShot$7(Phase.scala:3526)
+[error] 	at spinal.core.ScopeProperty$.sandbox(ScopeProperty.scala:71)
+[error] 	at spinal.core.internals.SpinalVerilogBoot$.singleShot(Phase.scala:3457)
+[error] 	at spinal.core.internals.SpinalVerilogBoot$.apply(Phase.scala:3452)
+[error] 	at spinal.core.Spinal$.apply(Spinal.scala:468)
+[error] 	at spinal.core.SpinalConfig.generateVerilog(Spinal.scala:226)
+[error] 	at spinal.core.sim.SpinalSimConfig.compileCloned(SimBootstraps.scala:990)
+[error] 	at spinal.core.sim.SpinalSimConfig.compile(SimBootstraps.scala:954)
+[error] 	at DecoderD3Sim$.delayedEndpoint$DecoderD3Sim$1(DecoderD3Sim.scala:41)
+[error] 	at DecoderD3Sim$delayedInit$body.apply(DecoderD3Sim.scala:10)
+[error] 	at scala.Function0.apply$mcV$sp(Function0.scala:42)
+[error] 	at scala.Function0.apply$mcV$sp$(Function0.scala:42)
+[error] 	at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:17)
+[error] 	at scala.App.$anonfun$main$1(App.scala:98)
+[error] 	at scala.App.$anonfun$main$1$adapted(App.scala:98)
+[error] 	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+[error] 	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+[error] 	at scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+[error] 	at scala.App.main(App.scala:98)
+[error] 	at scala.App.main$(App.scala:96)
+[error] 	at DecoderD3Sim$.main(DecoderD3Sim.scala:10)
+[error] 	at DecoderD3Sim.main(DecoderD3Sim.scala)
+[error] Nonzero exit code returned from runner: 1
+[error] (Compile / runMain) Nonzero exit code returned from runner: 1
+[error] Total time: 12 s, completed Oct 16, 2026, 6:08:40 PM

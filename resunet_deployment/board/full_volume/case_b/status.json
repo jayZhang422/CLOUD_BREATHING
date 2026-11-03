@@ -1,0 +1,44 @@
+{
+  "CT2BIN": {
+    "status": "Skipped",
+    "start": "--",
+    "elapsed_seconds": 0.0,
+    "detail": ""
+  },
+  "Send": {
+    "status": "Skipped",
+    "start": "--",
+    "elapsed_seconds": 0.0,
+    "detail": ""
+  },
+  "Reasoning": {
+    "status": "Skipped",
+    "start": "--",
+    "elapsed_seconds": 0.0,
+    "detail": ""
+  },
+  "Receive": {
+    "status": "Done",
+    "start": "2026-11-01T21:09:28+08:00",
+    "elapsed_seconds": 9.639999999999418,
+    "detail": "128,450,560/128,450,560 bytes"
+  },
+  "BIN2STL": {
+    "status": "Skipped",
+    "start": "--",
+    "elapsed_seconds": 0.0,
+    "detail": ""
+  },
+  "Smooth": {
+    "status": "Skipped",
+    "start": "--",
+    "elapsed_seconds": 0.0,
+    "detail": ""
+  },
+  "Cut": {
+    "status": "Skipped",
+    "start": "--",
+    "elapsed_seconds": 0.0,
+    "detail": ""
+  }
+}

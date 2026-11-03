@@ -1,0 +1,49 @@
+[
+  {
+    "repository": "Xilinx/finn-hlslib",
+    "path": "mvau.hpp",
+    "revision": "cc8db47b59555df8b3993666cf2cfb6b9e57ff5a",
+    "url": "https://github.com/Xilinx/finn-hlslib/blob/cc8db47b59555df8b3993666cf2cfb6b9e57ff5a/mvau.hpp",
+    "checked_lines": [
+      [
+        211,
+        239
+      ],
+      [
+        253,
+        285
+      ]
+    ],
+    "source_sha256": "f30a78656b4c3013a539920060fb915b85460af8553b71e0654e4bd08360e134"
+  },
+  {
+    "repository": "doonny/PipeCNN",
+    "path": "project_xilinx/device/memRead.cpp",
+    "revision": "392692b86747096e4324098deb38d8e93159809e",
+    "url": "https://github.com/doonny/PipeCNN/blob/392692b86747096e4324098deb38d8e93159809e/project_xilinx/device/memRead.cpp",
+    "checked_lines": [
+      [
+        258,
+        267
+      ],
+      [
+        300,
+        310
+      ]
+    ],
+    "source_sha256": "f9274bdfd62b098ec1908db733cea2130d062fb00219ec979a4bdf5fe345b117"
+  },
+  {
+    "repository": "Xilinx/finn",
+    "path": "src/finn/custom_op/fpgadataflow/matrixvectoractivation.py",
+    "revision": "38c42bf95abbdad493db0b0f5053060074698908",
+    "url": "https://github.com/Xilinx/finn/blob/38c42bf95abbdad493db0b0f5053060074698908/src/finn/custom_op/fpgadataflow/matrixvectoractivation.py",
+    "checked_lines": [
+      [
+        114,
+        126
+      ]
+    ],
+    "source_sha256": "43478156f3bf54c880ff19b737a5a863c480998f746cde27437761e841f8789e"
+  }
+]

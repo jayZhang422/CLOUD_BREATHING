@@ -1,0 +1,20 @@
+PROJECT Model_Deployment
+TOP top
+DEFINES 
+VIO_IP 
+IP pw_project_uram FILE e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/ip/pw_project_uram/pw_project_uram.xci
+IP rpc_request_bram FILE e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/ip/rpc_request_bram/rpc_request_bram.xci
+IP rpc_response_bram FILE e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/ip/rpc_response_bram/rpc_response_bram.xci
+SYNTHESIS_SOURCE E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/PW/pwmacshared.v
+SYNTHESIS_SOURCE E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/op_board.sv
+SYNTHESIS_SOURCE E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_service.sv
+SYNTHESIS_SOURCE E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_transport.sv
+SYNTHESIS_SOURCE E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Ethernet/protocol/protocol_builder.sv
+SYNTHESIS_SOURCE E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/top.sv
+DEFAULT_SIM sim_1 TOP tb_mkdc
+IP_REGISTERED pw_project_uram e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/ip/pw_project_uram/pw_project_uram.xci
+IP_CONFIG pw_project_uram URAM=URAM WRITE_A=512 WRITE_B=512 READ_B=512 DEPTH=1536 OUTPUT_REG=false
+IP_REGISTERED rpc_request_bram e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/ip/rpc_request_bram/rpc_request_bram.xci
+IP_CONFIG rpc_request_bram URAM=BRAM WRITE_A=8 WRITE_B=256 READ_B=256 DEPTH=1024 OUTPUT_REG=false
+IP_REGISTERED rpc_response_bram e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/ip/rpc_response_bram/rpc_response_bram.xci
+IP_CONFIG rpc_response_bram URAM=BRAM WRITE_A=256 WRITE_B=8 READ_B=8 DEPTH=32 OUTPUT_REG=false

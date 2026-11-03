@@ -1,0 +1,17 @@
+[info] welcome to sbt 1.10.2 (Eclipse Adoptium Java 17.0.20.1)
+[info] loading project definition from /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Element_Add/project
+[info] loading settings for project element_add from build.sbt ...
+[info] set current project to element_add (in build file:/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Element_Add/)
+[info] compiling 1 Scala source to /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Element_Add/target/scala-2.13/classes ...
+[info] done compiling
+[info] compiling 1 Scala source to /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Element_Add/target/scala-2.13/classes ...
+[info] done compiling
+[info] running (fork) ElementAddGen 
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 2048.0MiB
+[info] [Runtime] Current date : 2026.10.14 17:53:01
+[info] [Progress] at 0.000 : Elaborate components
+[info] [Progress] at 0.818 : Checks and transforms
+[info] [Progress] at 1.092 : Generate Verilog to .
+[info] [Done] at 1.310
+[success] Total time: 13 s, completed Oct 14, 2026, 5:53:02 PM

@@ -1,0 +1,125 @@
+--- before/op_engine.sv
+
++++ after/op_engine.sv
+
+@@ -105,7 +105,7 @@
+
+     logic [31:0] writer_mem_mask_w;
+     logic pending_r, clear_wait_r, writer_idle_w;
+     logic [1:0] mem_source_ready_w, mem_response_valid_w;
+-    logic load_fire_w, in_fire_w, output_fire_w, drained_w;
++    logic load_fire_w, load_last_w, in_fire_w, output_fire_w, drained_w, run_drained_r;
+     logic move_w, stream_writer_w, move_start_w, stream_writer_start_w, stream_writer_started_r;
+     logic move_valid_w, move_ready_w, move_last_w;
+     logic move_read_idle_w, move_read_error_w, move_read_mem_w, move_read_rsp_ready_w;
+@@ -376,12 +376,29 @@
+
+             endcase
+             default: ;
+         endcase
+-        load_fire_w = (reader_rsp_w && reader_rsp_ready_w &&
+-            (state_r == LOAD_WEIGHTS || state_r == LOAD_ADD ||
+-             (state_r == LOAD_PARAMS && op_w != 8'd12))) ||
+-            (state_r == LOAD_PARAMS && op_w == 8'd12 && bank_params_valid_w && params_ready_w);
+         in_fire_w = state_r == RUN && reader_rsp_w && reader_rsp_ready_w && op_w != 8'd12;
+         if (state_r == RUN && move_w) in_fire_w = move_valid_w && move_ready_w;
++    end
++
++    // 装载只看本阶段的接收端，避免RUN的多级ready选择串入装载计数和参数CE。
++    always_comb begin
++        load_fire_w = 1'b0;
++        load_last_w = 1'b0;
++        case (state_r)
++            LOAD_WEIGHTS: begin
++                load_fire_w = reader_rsp_w && weights_ready_w;
++                load_last_w = load_count_r + 32'd1 == weight_words_w;
++            end
++            LOAD_PARAMS: begin
++                load_fire_w = bank_params_valid_w && params_ready_w;
++                load_last_w = load_count_r + 32'd1 == param_words_w;
++            end
++            LOAD_ADD: begin
++                load_fire_w = reader_rsp_w;
++                load_last_w = load_count_r == 32'd3;
++            end
++            default: ;
++        endcase
+     end
+ 
+     always_comb begin
+@@ -500,7 +517,8 @@
+
+             end
+         end
+         if (state_r == LOAD_ADD && load_fire_w) add_params_r[load_count_r[1:0]*512 +: 512] <= reader_data_w;
+-        if (state_r == RUN && op_w == 8'd6 && in_fire_w && !add_a_valid_r) add_a_r <= reader_data_w;
++        // Add的A拍无反压，不能让B端ready经通用in_fire回到512位A寄存器的CE。
++        if (state_r == RUN && op_w == 8'd6 && reader_rsp_w && !add_a_valid_r) add_a_r <= reader_data_w;
+         if (run_valid_i && run_ready_o) begin
+             d_r <= descriptor_i;
+             pixels_r <= checked_pixels_w; total_inputs_r <= checked_inputs_w;
+@@ -553,14 +571,14 @@
+
+                     state_nxt = LOAD_WEIGHTS;
+                 else state_nxt = RUN;
+             end
+-            LOAD_WEIGHTS: if (load_fire_w && load_count_r+32'd1 == weight_words_w)
++            LOAD_WEIGHTS: if (load_fire_w && load_last_w)
+                 state_nxt = (op_w == 8'd1 || op_w == 8'd12) ? LOAD_PARAMS :
+                             (op_w == 8'd11 ? LOAD_ADD : RUN);
+-            LOAD_PARAMS: if (load_fire_w && load_count_r+32'd1 == param_words_w)
++            LOAD_PARAMS: if (load_fire_w && load_last_w)
+                 state_nxt = op_w == 8'd12 ? LOAD_ADD : START;
+-            LOAD_ADD: if (load_fire_w && load_count_r == 32'd3) state_nxt = CONFIGURE;
++            LOAD_ADD: if (load_fire_w && load_last_w) state_nxt = CONFIGURE;
+             START: if (start_ready_w) state_nxt = RUN;
+-            RUN: if (core_done_r && drained_w) begin
++            RUN: if (run_drained_r) begin
+                 if ((op_w == 8'd6 || op_w == 8'd11) && group_r < groups_w - 6'd1)
+                     state_nxt = LOAD_ADD;
+                 else if (op_w == 8'd12 &&
+@@ -577,6 +595,7 @@
+
+     always_ff @(posedge clk_i or negedge rst_n_i) begin
+         if (!rst_n_i) begin
+             state_r <= IDLE; input_count_r <= 32'd0; load_count_r <= 32'd0;
++            run_drained_r <= 1'b0;
+             group_r <= 6'd0; core_done_r <= 1'b0; add_a_valid_r <= 1'b0; add_loaded_r <= 1'b0;
+             p12_pw_loaded_r <= 1'b0; p12_pw_started_r <= 1'b0; tile_base_r <= 19'd0;
+             tile_remaining_r <= 19'd0; tile_words_r <= 5'd0; tile_last_r <= 1'b0;
+@@ -586,6 +605,8 @@
+
+             clear_addr_r <= 32'd0; result_bytes_o <= 32'd0; mac_bytes_o <= 32'd0;
+         end else begin
+             state_r <= state_nxt;
++            // 所有请求、响应和写回均排空后再寄存完成，下一拍才驱动组/tile更新。
++            run_drained_r <= state_r == RUN && core_done_r && drained_w;
+             if (run_valid_i && run_ready_o) begin
+                 result_bytes_o <= candidate_bytes_o; mac_bytes_o <= candidate_mac_bytes_o;
+                 error_r <= 1'b0; aborted_r <= 1'b0;
+@@ -604,7 +625,7 @@
+
+             if (stream_writer_w && busy_o && (move_write_error_w || (move_w && move_read_error_w))) error_r <= 1'b1;
+             if (state_r == FLUSH_RETURN && mem_rsp_valid_i && mem_rsp_error_i) error_r <= 1'b1;
+             if (state_r == RESET_CORE) begin
+-                group_r <= 6'd0; input_count_r <= 32'd0; load_count_r <= 32'd0;
++                group_r <= 6'd0; input_count_r <= 32'd0;
+                 core_done_r <= 1'b0; add_a_valid_r <= 1'b0; add_loaded_r <= 1'b0; clear_addr_r <= out_base_w;
+                 p12_pw_loaded_r <= 1'b0; p12_pw_started_r <= 1'b0; tile_base_r <= 19'd0;
+                 tile_remaining_r <= pixels_r[18:0];
+@@ -625,8 +646,12 @@
+
+                 if (writer_req_w && writer_ready_w) clear_wait_r <= 1'b1;
+                 if (writer_done_w) begin clear_wait_r <= 1'b0; clear_addr_r <= clear_addr_r+32'd32; end
+             end
+-            if (load_fire_w) load_count_r <= load_count_r+32'd1;
+-            if (state_r != state_nxt) load_count_r <= 32'd0;
++            // 非装载阶段直接清零；不再把所有状态的迁移条件接入32位计数器CE。
++            case (state_r)
++                LOAD_WEIGHTS, LOAD_PARAMS, LOAD_ADD:
++                    if (load_fire_w) load_count_r <= load_last_w ? 32'd0 : load_count_r + 32'd1;
++                default: load_count_r <= 32'd0;
++            endcase
+             if (state_r == LOAD_ADD && load_fire_w && load_count_r == 32'd3)
+                 add_loaded_r <= 1'b1;
+             if (state_r == RUN) begin

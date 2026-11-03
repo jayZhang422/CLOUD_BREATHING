@@ -1,0 +1,3 @@
+02000000 49152 sim/xsim/tests/pw_doublebuffer/vectors/tumor_d3.expand/stimulus.hex
+08000000 196608 sim/xsim/tests/pw_doublebuffer/vectors/tumor_d3.expand/weights.hex
+08180000 4096 sim/xsim/tests/pw_doublebuffer/vectors/tumor_d3.expand/params.hex

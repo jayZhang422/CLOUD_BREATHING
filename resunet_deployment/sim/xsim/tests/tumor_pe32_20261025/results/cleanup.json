@@ -1,0 +1,7 @@
+{
+  "status": "blocked_by_policy",
+  "deletedItems": 0,
+  "reason": "Automatic approval review rejected cleanup command: blocked by policy",
+  "inventory": "cleanup_inventory.json",
+  "note": "No deletion executed. Four current XSim directories retain CSV/WDB and compiled snapshots."
+}

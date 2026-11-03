@@ -1,0 +1,31 @@
+check_syntax -fileset sources_1
+WARNING: [HDL 9-3527] identifier 'core_done_r' is used before its declaration [E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv:56]
+WARNING: [HDL 9-3527] identifier 'pending_r' is used before its declaration [E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv:56]
+WARNING: [HDL 9-3527] identifier 'move_read_idle_w' is used before its declaration [E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv:56]
+WARNING: [HDL 9-3527] identifier 'input_count_r' is used before its declaration [E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv:57]
+WARNING: [HDL 9-3527] identifier 'output_count_r' is used before its declaration [E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv:57]
+INFO: [MCP 00-101] ===MCP_CMD_END:1793007132983472700-43:0===
+INFO: [MCP 00-100] ===MCP_CMD_START:1793007164291863900-44===
+set facts {}; foreach r {synth_1 impl_1 p12_tile_p16_bram_synth_1 pw32_project_uram_synth_1 pw32_weight_bank_synth_1} {lappend facts [list $r [get_property STATUS [get_runs $r]] [get_property NEEDS_REFRESH [get_runs $r]] ]}; set facts
+INFO: [MCP 00-101] ===MCP_CMD_END:1793007164291863900-44:0===
+INFO: [MCP 00-100] ===MCP_CMD_START:1793007440598381000-45===
+reset_runs synth_1
+INFO: [MCP 00-101] ===MCP_CMD_END:1793007440598381000-45:0===
+INFO: [MCP 00-100] ===MCP_CMD_START:1793007446796242900-46===
+reset_runs impl_1
+INFO: [MCP 00-101] ===MCP_CMD_END:1793007446796242900-46:0===
+INFO: [MCP 00-100] ===MCP_CMD_START:1793007455387612200-47===
+launch_runs impl_1 -to_step route_design -jobs 4
+[Mon Oct 26 17:37:35 2026] Launched synth_1...
+Run output will be captured here: E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.runs/synth_1/runme.log
+[Mon Oct 26 17:37:36 2026] Launched impl_1...
+Run output will be captured here: E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.runs/impl_1/runme.log
+INFO: [MCP 00-101] ===MCP_CMD_END:1793007455387612200-47:0===
+INFO: [MCP 00-100] ===MCP_CMD_START:1793007464217826700-48===
+wait_on_run -timeout 0 impl_1
+[Mon Oct 26 17:37:44 2026] Waiting for impl_1 to finish (timeout in < 1 minute)...
+[Mon Oct 26 17:37:44 2026] impl_1 timed out after 0 minutes.
+INFO: [MCP 00-101] ===MCP_CMD_END:1793007464217826700-48:0===
+INFO: [MCP 00-100] ===MCP_CMD_START:1793007476208730400-49===
+set facts {}; foreach r {synth_1 impl_1} {lappend facts [list $r [get_property STATUS [get_runs $r]] [get_property PROGRESS [get_runs $r]] [get_property NEEDS_REFRESH [get_runs $r]]]}; set facts
+INFO: [MCP 00-101] ===MCP_CMD_END:1793007476208730400-49:0===

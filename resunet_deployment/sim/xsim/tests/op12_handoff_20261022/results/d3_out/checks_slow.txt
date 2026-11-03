@@ -1,0 +1,2 @@
+shared op12 d3_out bytes=1048576 writes=1048576 run_cycles=3199779 independent-Golden
+[RUNNER PASSED] op12 cases=1 mem_stalls=380253 p12_max_addr=255 add_checks=65536

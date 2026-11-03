@@ -1,0 +1,18 @@
+--- 
++++ 
+@@ -1,5 +1,5 @@
+ `timescale 1ns/1ps
+-// 【文件类型：.sv】已验收算子统一接线；生成 RTL 保持原样，配置与握手由调度器管理。
++// 【文件类型：.sv】算子统一接线；Scala 生成 RTL 集成弹性流水，配置与握手由调度器管理。
+ module op_core_bank #(
+     parameter bit ENABLE_WIDE_DEBUG = 1'b0
+ ) (
+@@ -551,7 +551,7 @@
+                                    (fused_add_b_ready_w && op_i == 8'd11)),
+   .mac_o(dw5_mac_w), .last_o(last_w[9]), .done_o(done_w[9])
+  );
+- // DW3比DW5少一拍；一深度弹性寄存器只对齐数据，不把组合路径拉回LineBuffer。
++ // DW3支路增加一级弹性缓存；Add按握手顺序汇合，不依赖两条支路固定拍差。
+  always_ff @(posedge clk_i or negedge rst_n_i) begin
+    if (!rst_n_i) begin
+      fused_dw3_align_valid_r <= 1'b0;

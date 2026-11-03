@@ -1,0 +1,1 @@
+Full regression later passed. Preserved causal log and targeted failure excerpt where available; removed only this attempt temporary WSL cache/wave/trace.

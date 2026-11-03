@@ -1,0 +1,28 @@
+--- round3-before/prj/Model_Deployment.srcs/sources_1/constraint/Ethernet_DDR_Constraint.xdc
++++ round3-after/prj/Model_Deployment.srcs/sources_1/constraint/Ethernet_DDR_Constraint.xdc
+@@ -165,14 +165,14 @@
+ set_max_delay -datapath_only 6.000 -from [get_cells -hier -filter {NAME =~ *u_bridge/cmd_*_r_reg*}] -to [get_cells -hier -filter {NAME =~ *u_bridge/operation_*_r_reg* || NAME =~ *u_bridge/bytes_left_r_reg*}]
+ set_max_delay -datapath_only 6.000 -from [get_cells -hier -filter {NAME =~ *u_bridge/result_*_r_reg*}] -to [get_cells -hier -filter {NAME =~ *u_bridge/verify_*_o_reg* || NAME =~ *u_bridge/packet_error_o_reg*}]
+ 
+-# 新增算子mailbox：只豁免单比特同步器首级，第二级仍保留真实setup/hold。
+-set_false_path -to [get_pins -of_objects [get_cells -hier -filter {NAME =~ *u_op_board/u_transport/*sync1_r_reg* || NAME =~ *u_op_board/image_ready_sync1_r_reg*}] -filter {REF_PIN_NAME == D}]
+-# RX请求字段与toggle同拍锁存，UI经过两级同步后在第三个边沿取数。
+-# UI周期3ns，最早捕获间隔>6ns；给稳定总线5ns传播上限，留出至少1ns裕量。
+-# -datapath_only仅覆盖这些RX源到UI的异步路径，不豁免UI同域组合逻辑。
+-set_max_delay -datapath_only 5.000 -from [get_cells -hier -filter {NAME =~ *u_op_board/u_transport/request_body_r_reg* || NAME =~ *u_op_board/u_transport/request_msg_r_reg* || NAME =~ *u_op_board/u_transport/request_id_r_reg* || NAME =~ *u_op_board/u_transport/request_sequence_r_reg* || NAME =~ *u_op_board/u_transport/request_len_r_reg*}] -to [get_clocks mmcm_clkout0]
+-# 图像描述在IMAGE_READY到下一BEGIN保持，mailbox接收拍只锁存到本地UI寄存器。
+-set_max_delay -datapath_only 5.000 -from [get_cells -hier -filter {NAME =~ *u_protocol_core/base_addr_r_reg* || NAME =~ *u_protocol_core/total_slices_r_reg*}] -to [get_cells -hier -filter {NAME =~ *u_op_board/image_base_r_reg* || NAME =~ *u_op_board/image_slices_r_reg*}]
+-# UI回复保持到RX发送完成；两级toggle同步及build_start寄存后才读取回复。
+-# RX周期8ns，保守采用12ns传播上限，不使用全局异步时钟组覆盖旧桥约束。
+-set_max_delay -datapath_only 12.000 -from [get_cells -hier -filter {NAME =~ *u_op_board/u_service/response_r_reg* || NAME =~ *u_op_board/u_service/msg_r_reg* || NAME =~ *u_op_board/u_service/status_r_reg* || NAME =~ *u_op_board/u_service/transfer_len_r_reg*}] -to [get_clocks rgmii_clk_w]
++# Op transport/图像快照/回复均已移入125MHz RX域，按正常8ns同域时序检查。
++# 仅DDR事务桥、状态同步器首级豁免异步采样，第二级仍检查setup/hold。
++set_false_path -to [get_pins -of_objects [get_cells -hier -filter {NAME =~ *u_op_board/u_mem_cdc/*sync1_r_reg* || NAME =~ *u_op_board/claim_sync1_r_reg* || NAME =~ *u_op_board/storage_idle_sync1_r_reg*}] -filter {REF_PIN_NAME == D}]
++set_false_path -to [get_pins -hier -filter {NAME =~ *u_op_board/compute_reset_sync*_r_reg/CLR || NAME =~ *u_op_board/ui_reset_sync*_r_reg/CLR}]
++# 320位请求与toggle同拍锁存，UI两级同步后第三个边沿采样，最早>6ns。
++# 257位响应同理，RX最早>16ns采样；分别限制为一个目的时钟周期并约束总线偏斜。
++# 数据保持到往返响应完成，不设置全局异步时钟组或multicycle。
++set_max_delay -datapath_only 3.000 -from [get_cells -hier -filter {NAME =~ *u_op_board/u_mem_cdc/request_payload_r_reg*}] -to [get_cells -hier -filter {NAME =~ *u_op_board/u_mem_cdc/ui_request_r_reg*}]
++set_bus_skew 3.000 -from [get_cells -hier -filter {NAME =~ *u_op_board/u_mem_cdc/request_payload_r_reg*}] -to [get_cells -hier -filter {NAME =~ *u_op_board/u_mem_cdc/ui_request_r_reg*}]
++set_max_delay -datapath_only 8.000 -from [get_cells -hier -filter {NAME =~ *u_op_board/u_mem_cdc/response_payload_r_reg*}] -to [get_cells -hier -filter {NAME =~ *u_op_board/u_mem_cdc/compute_response_r_reg*}]
++set_bus_skew 8.000 -from [get_cells -hier -filter {NAME =~ *u_op_board/u_mem_cdc/response_payload_r_reg*}] -to [get_cells -hier -filter {NAME =~ *u_op_board/u_mem_cdc/compute_response_r_reg*}]

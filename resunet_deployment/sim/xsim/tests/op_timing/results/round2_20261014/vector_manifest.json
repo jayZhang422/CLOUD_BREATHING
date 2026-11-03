@@ -1,0 +1,10 @@
+{
+  "reader_cases": 95,
+  "reader_memory_beats": 108,
+  "joint_cases": 25,
+  "new_pw_pixels": [
+    100,
+    25
+  ],
+  "golden": "crop existing frozen vectors; original files unchanged"
+}

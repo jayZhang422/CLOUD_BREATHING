@@ -1,0 +1,2140 @@
+{
+  "state": "complete",
+  "task": "Airway",
+  "completed_epochs": 31,
+  "best_epoch": 27,
+  "historical_epochs": 0,
+  "best_checkpoint": "/root/autodl-tmp/lung_training/airway_mkdc_v1/runs/resunet_mkdc_relu6_100e_v2/best.pt",
+  "best_checkpoint_sha256": "f0141e0a3579d33b3d781abe10d3f403a22d8673c263e9aca78ff85854df75ce",
+  "best_immutable": "/root/autodl-tmp/lung_training/airway_mkdc_v1/runs/resunet_mkdc_relu6_100e_v2/best_records/best_epoch_0027.pt",
+  "best_immutable_sha256": "f0141e0a3579d33b3d781abe10d3f403a22d8673c263e9aca78ff85854df75ce",
+  "best_validation": {
+    "loss": 0.15545049374916375,
+    "global": {
+      "tp": 5983223,
+      "fp": 888296,
+      "fn": 422148,
+      "dice": 0.9012988734560579,
+      "recall": 0.9340946839769312,
+      "precision": 0.8707278550783313,
+      "positive_layers": 19280,
+      "hit_positive_layers": 19043,
+      "positive_layer_recall": 0.9877074688796681
+    },
+    "macro": {
+      "dice": 0.9000573486487384,
+      "recall": 0.9340879519046649,
+      "precision": 0.8726465645807325,
+      "positive_layer_recall": 0.9869230787819282
+    },
+    "cases": [
+      {
+        "case": "ATM_002",
+        "slices": 635,
+        "loss": 0.18791034725590014,
+        "metric": {
+          "tp": 109523,
+          "fp": 9761,
+          "fn": 13701,
+          "dice": 0.9032526762003728,
+          "recall": 0.8888122443679802,
+          "precision": 0.918170081486201,
+          "positive_layers": 440,
+          "hit_positive_layers": 436,
+          "positive_layer_recall": 0.990909090909091
+        },
+        "spacing_xyz_mm": [
+          0.744140625,
+          0.744140625,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_007",
+        "slices": 799,
+        "loss": 0.12673295459457123,
+        "metric": {
+          "tp": 226074,
+          "fp": 25184,
+          "fn": 13368,
+          "dice": 0.9214346851436723,
+          "recall": 0.9441701957050141,
+          "precision": 0.8997683655843794,
+          "positive_layers": 566,
+          "hit_positive_layers": 564,
+          "positive_layer_recall": 0.9964664310954063
+        },
+        "spacing_xyz_mm": [
+          0.78125,
+          0.78125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_009",
+        "slices": 799,
+        "loss": 0.2547602153316756,
+        "metric": {
+          "tp": 106153,
+          "fp": 36266,
+          "fn": 9213,
+          "dice": 0.8235777876912931,
+          "recall": 0.9201411161000641,
+          "precision": 0.7453570099495151,
+          "positive_layers": 358,
+          "hit_positive_layers": 358,
+          "positive_layer_recall": 1.0
+        },
+        "spacing_xyz_mm": [
+          0.78125,
+          0.78125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_026",
+        "slices": 679,
+        "loss": 0.18035585025876805,
+        "metric": {
+          "tp": 132454,
+          "fp": 5956,
+          "fn": 9467,
+          "dice": 0.9449828952202931,
+          "recall": 0.9332938747613109,
+          "precision": 0.9569684271367676,
+          "positive_layers": 440,
+          "hit_positive_layers": 431,
+          "positive_layer_recall": 0.9795454545454545
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_036",
+        "slices": 759,
+        "loss": 0.191166324361825,
+        "metric": {
+          "tp": 121922,
+          "fp": 30168,
+          "fn": 10744,
+          "dice": 0.8563261177990982,
+          "recall": 0.9190146684154191,
+          "precision": 0.8016437635610494,
+          "positive_layers": 467,
+          "hit_positive_layers": 467,
+          "positive_layer_recall": 1.0
+        },
+        "spacing_xyz_mm": [
+          0.8359375,
+          0.8359375,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_056",
+        "slices": 679,
+        "loss": 0.12097343148468871,
+        "metric": {
+          "tp": 110511,
+          "fp": 18956,
+          "fn": 6654,
+          "dice": 0.8961610820980246,
+          "recall": 0.9432082959928306,
+          "precision": 0.8535843110599612,
+          "positive_layers": 448,
+          "hit_positive_layers": 439,
+          "positive_layer_recall": 0.9799107142857143
+        },
+        "spacing_xyz_mm": [
+          0.88671875,
+          0.88671875,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_059",
+        "slices": 719,
+        "loss": 0.12561147282954424,
+        "metric": {
+          "tp": 168382,
+          "fp": 16599,
+          "fn": 5089,
+          "dice": 0.9394953857141263,
+          "recall": 0.9706636844198742,
+          "precision": 0.9102664597985739,
+          "positive_layers": 483,
+          "hit_positive_layers": 478,
+          "positive_layer_recall": 0.989648033126294
+        },
+        "spacing_xyz_mm": [
+          0.87109375,
+          0.87109375,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_094",
+        "slices": 683,
+        "loss": 0.1722666657424776,
+        "metric": {
+          "tp": 104696,
+          "fp": 25854,
+          "fn": 4699,
+          "dice": 0.8726666527745942,
+          "recall": 0.9570455688102747,
+          "precision": 0.8019609345078514,
+          "positive_layers": 436,
+          "hit_positive_layers": 416,
+          "positive_layer_recall": 0.9541284403669725
+        },
+        "spacing_xyz_mm": [
+          0.90234375,
+          0.90234375,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_112",
+        "slices": 729,
+        "loss": 0.14332123059876498,
+        "metric": {
+          "tp": 120653,
+          "fp": 30366,
+          "fn": 8112,
+          "dice": 0.8624724787693363,
+          "recall": 0.9370015143866735,
+          "precision": 0.7989259629583033,
+          "positive_layers": 504,
+          "hit_positive_layers": 491,
+          "positive_layer_recall": 0.9742063492063492
+        },
+        "spacing_xyz_mm": [
+          0.919921875,
+          0.919921875,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_120",
+        "slices": 839,
+        "loss": 0.19693598334141368,
+        "metric": {
+          "tp": 143800,
+          "fp": 45108,
+          "fn": 11613,
+          "dice": 0.8352670908832165,
+          "recall": 0.9252765212691345,
+          "precision": 0.7612171003874902,
+          "positive_layers": 492,
+          "hit_positive_layers": 492,
+          "positive_layer_recall": 1.0
+        },
+        "spacing_xyz_mm": [
+          0.818359375,
+          0.818359375,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_121",
+        "slices": 679,
+        "loss": 0.13729268365124012,
+        "metric": {
+          "tp": 146326,
+          "fp": 8950,
+          "fn": 14151,
+          "dice": 0.9268383831665891,
+          "recall": 0.911819139191286,
+          "precision": 0.9423606996573842,
+          "positive_layers": 515,
+          "hit_positive_layers": 501,
+          "positive_layer_recall": 0.9728155339805825
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_122",
+        "slices": 633,
+        "loss": 0.07610344788203778,
+        "metric": {
+          "tp": 147836,
+          "fp": 7748,
+          "fn": 12080,
+          "dice": 0.9371537242472266,
+          "recall": 0.9244603416793816,
+          "precision": 0.9502005347593583,
+          "positive_layers": 520,
+          "hit_positive_layers": 518,
+          "positive_layer_recall": 0.9961538461538462
+        },
+        "spacing_xyz_mm": [
+          0.78125,
+          0.78125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_135",
+        "slices": 679,
+        "loss": 0.16041422539852856,
+        "metric": {
+          "tp": 135852,
+          "fp": 34271,
+          "fn": 13878,
+          "dice": 0.8494652230868556,
+          "recall": 0.9073131636946503,
+          "precision": 0.7985516361691247,
+          "positive_layers": 529,
+          "hit_positive_layers": 512,
+          "positive_layer_recall": 0.9678638941398866
+        },
+        "spacing_xyz_mm": [
+          0.85546875,
+          0.85546875,
+          0.5
+        ],
+        "full_case": true,
+        "anatomy": {
+          "scope": "fixed validation case; diagnostic, not official airway tree-length/branch detection",
+          "gt_centerline_points": 6749,
+          "covered_centerline_points": 5650,
+          "centerline_voxel_recall_zero_tolerance": 0.8371610608979108,
+          "thin_centerline_points": 6173,
+          "covered_thin_centerline_points": 5074,
+          "thin_centerline_voxel_recall_radius_le_2mm": 0.8219666288676495,
+          "pred_components26": 746,
+          "largest_pred_component_fraction": 0.9417186388671726,
+          "centerline_recall_in_largest_pred_component": 0.7589272484812565,
+          "covered_gt_centerline_components26": 173,
+          "tree_length_detection_rate": null,
+          "branch_detection_rate": null
+        }
+      },
+      {
+        "case": "ATM_139",
+        "slices": 722,
+        "loss": 0.16340470985816458,
+        "metric": {
+          "tp": 150864,
+          "fp": 19522,
+          "fn": 12398,
+          "dice": 0.904330312185297,
+          "recall": 0.9240607122294227,
+          "precision": 0.8854248588499055,
+          "positive_layers": 500,
+          "hit_positive_layers": 468,
+          "positive_layer_recall": 0.936
+        },
+        "spacing_xyz_mm": [
+          0.873046875,
+          0.873046875,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_146",
+        "slices": 798,
+        "loss": 0.15702823055604645,
+        "metric": {
+          "tp": 218924,
+          "fp": 34363,
+          "fn": 16309,
+          "dice": 0.8962744616392369,
+          "recall": 0.9306687412055281,
+          "precision": 0.8643317659414025,
+          "positive_layers": 525,
+          "hit_positive_layers": 519,
+          "positive_layer_recall": 0.9885714285714285
+        },
+        "spacing_xyz_mm": [
+          0.78125,
+          0.78125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_149",
+        "slices": 798,
+        "loss": 0.16481093771027444,
+        "metric": {
+          "tp": 171773,
+          "fp": 28565,
+          "fn": 15685,
+          "dice": 0.8858936141682741,
+          "recall": 0.91632792412167,
+          "precision": 0.8574159670157434,
+          "positive_layers": 451,
+          "hit_positive_layers": 447,
+          "positive_layer_recall": 0.991130820399113
+        },
+        "spacing_xyz_mm": [
+          0.78125,
+          0.78125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_152",
+        "slices": 628,
+        "loss": 0.11030696946415741,
+        "metric": {
+          "tp": 125483,
+          "fp": 7425,
+          "fn": 10571,
+          "dice": 0.9330909199069013,
+          "recall": 0.9223029091390184,
+          "precision": 0.944134288379932,
+          "positive_layers": 500,
+          "hit_positive_layers": 488,
+          "positive_layer_recall": 0.976
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_155",
+        "slices": 679,
+        "loss": 0.13501673138018735,
+        "metric": {
+          "tp": 185625,
+          "fp": 24624,
+          "fn": 10611,
+          "dice": 0.913317834606443,
+          "recall": 0.9459273527793065,
+          "precision": 0.8828817259535122,
+          "positive_layers": 505,
+          "hit_positive_layers": 505,
+          "positive_layer_recall": 1.0
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_156",
+        "slices": 768,
+        "loss": 0.14807269383648722,
+        "metric": {
+          "tp": 153884,
+          "fp": 34421,
+          "fn": 10078,
+          "dice": 0.8736782043166121,
+          "recall": 0.9385345384906258,
+          "precision": 0.8172061283555934,
+          "positive_layers": 472,
+          "hit_positive_layers": 470,
+          "positive_layer_recall": 0.9957627118644068
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_170",
+        "slices": 807,
+        "loss": 0.2355805789449401,
+        "metric": {
+          "tp": 165615,
+          "fp": 78884,
+          "fn": 7991,
+          "dice": 0.7922172659977756,
+          "recall": 0.9539704848910752,
+          "precision": 0.6773647335980925,
+          "positive_layers": 459,
+          "hit_positive_layers": 456,
+          "positive_layer_recall": 0.9934640522875817
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true,
+        "anatomy": {
+          "scope": "fixed validation case; diagnostic, not official airway tree-length/branch detection",
+          "gt_centerline_points": 6089,
+          "covered_centerline_points": 5378,
+          "centerline_voxel_recall_zero_tolerance": 0.883232057809164,
+          "thin_centerline_points": 5506,
+          "covered_thin_centerline_points": 4795,
+          "thin_centerline_voxel_recall_radius_le_2mm": 0.8708681438430803,
+          "pred_components26": 718,
+          "largest_pred_component_fraction": 0.7569928711364873,
+          "centerline_recall_in_largest_pred_component": 0.8331417309903104,
+          "covered_gt_centerline_components26": 132,
+          "tree_length_detection_rate": null,
+          "branch_detection_rate": null
+        }
+      },
+      {
+        "case": "ATM_174",
+        "slices": 157,
+        "loss": 0.15579195999225992,
+        "metric": {
+          "tp": 69558,
+          "fp": 8773,
+          "fn": 8848,
+          "dice": 0.8875760031134958,
+          "recall": 0.8871514935081499,
+          "precision": 0.8880009191763159,
+          "positive_layers": 129,
+          "hit_positive_layers": 122,
+          "positive_layer_recall": 0.9457364341085271
+        },
+        "spacing_xyz_mm": [
+          0.625,
+          0.625,
+          1.7999999523162842
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_176",
+        "slices": 633,
+        "loss": 0.16087646146803672,
+        "metric": {
+          "tp": 213819,
+          "fp": 17099,
+          "fn": 15363,
+          "dice": 0.9294457726581178,
+          "recall": 0.932965939733487,
+          "precision": 0.9259520695658199,
+          "positive_layers": 468,
+          "hit_positive_layers": 468,
+          "positive_layer_recall": 1.0
+        },
+        "spacing_xyz_mm": [
+          0.541015625,
+          0.541015625,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_179",
+        "slices": 509,
+        "loss": 0.13284360772558654,
+        "metric": {
+          "tp": 138195,
+          "fp": 24391,
+          "fn": 8324,
+          "dice": 0.8941621779007134,
+          "recall": 0.9431882554480989,
+          "precision": 0.8499809331676774,
+          "positive_layers": 396,
+          "hit_positive_layers": 394,
+          "positive_layer_recall": 0.9949494949494949
+        },
+        "spacing_xyz_mm": [
+          0.703125,
+          0.703125,
+          0.625
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_191",
+        "slices": 529,
+        "loss": 0.13249341774879758,
+        "metric": {
+          "tp": 134666,
+          "fp": 9806,
+          "fn": 9212,
+          "dice": 0.934045430899948,
+          "recall": 0.9359735331322371,
+          "precision": 0.9321252561049892,
+          "positive_layers": 305,
+          "hit_positive_layers": 302,
+          "positive_layer_recall": 0.9901639344262295
+        },
+        "spacing_xyz_mm": [
+          0.6054689884185791,
+          0.6054689884185791,
+          0.625
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_194",
+        "slices": 730,
+        "loss": 0.21595010934525158,
+        "metric": {
+          "tp": 199618,
+          "fp": 11881,
+          "fn": 26999,
+          "dice": 0.9112563795889673,
+          "recall": 0.8808606591738484,
+          "precision": 0.9438247934978417,
+          "positive_layers": 504,
+          "hit_positive_layers": 498,
+          "positive_layer_recall": 0.9880952380952381
+        },
+        "spacing_xyz_mm": [
+          0.73046875,
+          0.73046875,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_197",
+        "slices": 375,
+        "loss": 0.18479966739813486,
+        "metric": {
+          "tp": 127828,
+          "fp": 7579,
+          "fn": 37056,
+          "dice": 0.8513608466454206,
+          "recall": 0.7752601829164746,
+          "precision": 0.9440280044606261,
+          "positive_layers": 285,
+          "hit_positive_layers": 285,
+          "positive_layer_recall": 1.0
+        },
+        "spacing_xyz_mm": [
+          0.625,
+          0.625,
+          0.625
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_211",
+        "slices": 442,
+        "loss": 0.15940557466609176,
+        "metric": {
+          "tp": 125709,
+          "fp": 5687,
+          "fn": 24806,
+          "dice": 0.89183465703715,
+          "recall": 0.8351925057303259,
+          "precision": 0.956718621571433,
+          "positive_layers": 332,
+          "hit_positive_layers": 332,
+          "positive_layer_recall": 1.0
+        },
+        "spacing_xyz_mm": [
+          0.625,
+          0.625,
+          0.6249999403953552
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_253",
+        "slices": 799,
+        "loss": 0.15685491971624957,
+        "metric": {
+          "tp": 113061,
+          "fp": 32954,
+          "fn": 3654,
+          "dice": 0.8606630380999505,
+          "recall": 0.9686929700552628,
+          "precision": 0.7743108584734445,
+          "positive_layers": 425,
+          "hit_positive_layers": 422,
+          "positive_layer_recall": 0.9929411764705882
+        },
+        "spacing_xyz_mm": [
+          0.78125,
+          0.78125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_259",
+        "slices": 852,
+        "loss": 0.12139204949437872,
+        "metric": {
+          "tp": 143972,
+          "fp": 7172,
+          "fn": 5739,
+          "dice": 0.9570856392614382,
+          "recall": 0.961666143436354,
+          "precision": 0.9525485629598264,
+          "positive_layers": 546,
+          "hit_positive_layers": 537,
+          "positive_layer_recall": 0.9835164835164835
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_261",
+        "slices": 879,
+        "loss": 0.12330131912105997,
+        "metric": {
+          "tp": 184691,
+          "fp": 9890,
+          "fn": 6944,
+          "dice": 0.9564129916937673,
+          "recall": 0.9637644480392412,
+          "precision": 0.9491728380468802,
+          "positive_layers": 577,
+          "hit_positive_layers": 570,
+          "positive_layer_recall": 0.9878682842287695
+        },
+        "spacing_xyz_mm": [
+          0.78125,
+          0.78125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_265",
+        "slices": 757,
+        "loss": 0.1303330563559951,
+        "metric": {
+          "tp": 125010,
+          "fp": 19649,
+          "fn": 5295,
+          "dice": 0.9092826697313103,
+          "recall": 0.9593645677449062,
+          "precision": 0.8641702210024955,
+          "positive_layers": 482,
+          "hit_positive_layers": 482,
+          "positive_layer_recall": 1.0
+        },
+        "spacing_xyz_mm": [
+          0.78125,
+          0.78125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_268",
+        "slices": 697,
+        "loss": 0.14364643743959185,
+        "metric": {
+          "tp": 104589,
+          "fp": 16186,
+          "fn": 3274,
+          "dice": 0.9148872890770563,
+          "recall": 0.9696466814384914,
+          "precision": 0.8659821983026289,
+          "positive_layers": 448,
+          "hit_positive_layers": 448,
+          "positive_layer_recall": 1.0
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_276",
+        "slices": 628,
+        "loss": 0.10409006614024473,
+        "metric": {
+          "tp": 116252,
+          "fp": 7937,
+          "fn": 5597,
+          "dice": 0.9449922369715247,
+          "recall": 0.9540660982035142,
+          "precision": 0.9360893476877984,
+          "positive_layers": 478,
+          "hit_positive_layers": 471,
+          "positive_layer_recall": 0.9853556485355649
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_606",
+        "slices": 811,
+        "loss": 0.15007301666067613,
+        "metric": {
+          "tp": 177827,
+          "fp": 12336,
+          "fn": 5549,
+          "dice": 0.9521201266802127,
+          "recall": 0.9697397696536079,
+          "precision": 0.9351293364113944,
+          "positive_layers": 577,
+          "hit_positive_layers": 577,
+          "positive_layer_recall": 1.0
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_607",
+        "slices": 719,
+        "loss": 0.1432564950940589,
+        "metric": {
+          "tp": 174826,
+          "fp": 28781,
+          "fn": 3141,
+          "dice": 0.9163412601487523,
+          "recall": 0.9823506605157136,
+          "precision": 0.858644349162848,
+          "positive_layers": 447,
+          "hit_positive_layers": 447,
+          "positive_layer_recall": 1.0
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_614",
+        "slices": 735,
+        "loss": 0.1632739821841725,
+        "metric": {
+          "tp": 119023,
+          "fp": 13605,
+          "fn": 4280,
+          "dice": 0.9301178833357429,
+          "recall": 0.9652887602085919,
+          "precision": 0.8974198510118527,
+          "positive_layers": 484,
+          "hit_positive_layers": 484,
+          "positive_layer_recall": 1.0
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true,
+        "anatomy": {
+          "scope": "fixed validation case; diagnostic, not official airway tree-length/branch detection",
+          "gt_centerline_points": 3498,
+          "covered_centerline_points": 3283,
+          "centerline_voxel_recall_zero_tolerance": 0.9385363064608347,
+          "thin_centerline_points": 2852,
+          "covered_thin_centerline_points": 2638,
+          "thin_centerline_voxel_recall_radius_le_2mm": 0.9249649368863955,
+          "pred_components26": 577,
+          "largest_pred_component_fraction": 0.9230705431733872,
+          "centerline_recall_in_largest_pred_component": 0.8870783304745569,
+          "covered_gt_centerline_components26": 53,
+          "tree_length_detection_rate": null,
+          "branch_detection_rate": null
+        }
+      },
+      {
+        "case": "ATM_651",
+        "slices": 679,
+        "loss": 0.23931935370319546,
+        "metric": {
+          "tp": 61363,
+          "fp": 23967,
+          "fn": 4906,
+          "dice": 0.80954359857255,
+          "recall": 0.9259684015150372,
+          "precision": 0.7191257470994961,
+          "positive_layers": 297,
+          "hit_positive_layers": 281,
+          "positive_layer_recall": 0.9461279461279462
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_687",
+        "slices": 746,
+        "loss": 0.11566526089712538,
+        "metric": {
+          "tp": 133139,
+          "fp": 10683,
+          "fn": 4558,
+          "dice": 0.9458615581896781,
+          "recall": 0.9668983347494862,
+          "precision": 0.9257206825103252,
+          "positive_layers": 522,
+          "hit_positive_layers": 518,
+          "positive_layer_recall": 0.9923371647509579
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_692",
+        "slices": 739,
+        "loss": 0.1562535221838419,
+        "metric": {
+          "tp": 154832,
+          "fp": 14937,
+          "fn": 4257,
+          "dice": 0.9416343832292358,
+          "recall": 0.9732413931824325,
+          "precision": 0.9120157390336281,
+          "positive_layers": 453,
+          "hit_positive_layers": 453,
+          "positive_layer_recall": 1.0
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_698",
+        "slices": 679,
+        "loss": 0.10234504498113413,
+        "metric": {
+          "tp": 106350,
+          "fp": 8645,
+          "fn": 7340,
+          "dice": 0.930100356385421,
+          "recall": 0.9354384730407248,
+          "precision": 0.924822818383408,
+          "positive_layers": 501,
+          "hit_positive_layers": 497,
+          "positive_layer_recall": 0.9920159680638723
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_699",
+        "slices": 758,
+        "loss": 0.1638852873114294,
+        "metric": {
+          "tp": 182373,
+          "fp": 47468,
+          "fn": 4367,
+          "dice": 0.8755704172777923,
+          "recall": 0.9766145442861733,
+          "precision": 0.7934746194108101,
+          "positive_layers": 541,
+          "hit_positive_layers": 538,
+          "positive_layer_recall": 0.9944547134935305
+        },
+        "spacing_xyz_mm": [
+          0.876953125,
+          0.876953125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_703",
+        "slices": 679,
+        "loss": 0.15898139331495287,
+        "metric": {
+          "tp": 130172,
+          "fp": 25879,
+          "fn": 6227,
+          "dice": 0.8902171311335271,
+          "recall": 0.9543471726332304,
+          "precision": 0.8341631902390885,
+          "positive_layers": 473,
+          "hit_positive_layers": 461,
+          "positive_layer_recall": 0.9746300211416491
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      }
+    ],
+    "case_count": 42,
+    "slices": 29043,
+    "eval_mode": true,
+    "grad_enabled": false,
+    "full_cases": true,
+    "threshold_logit": 0.0
+  },
+  "test": {
+    "loss": 0.15253317255750742,
+    "global": {
+      "tp": 6274136,
+      "fp": 910352,
+      "fn": 475791,
+      "dice": 0.9005237751279835,
+      "recall": 0.92951168212634,
+      "precision": 0.8732892309097043,
+      "positive_layers": 18971,
+      "hit_positive_layers": 18755,
+      "positive_layer_recall": 0.988614200622002
+    },
+    "macro": {
+      "dice": 0.8993106857144807,
+      "recall": 0.9306131221563667,
+      "precision": 0.8724394475385482,
+      "positive_layer_recall": 0.9881744656053318
+    },
+    "cases": [
+      {
+        "case": "ATM_004",
+        "slices": 679,
+        "loss": 0.10903468592001869,
+        "metric": {
+          "tp": 205898,
+          "fp": 22426,
+          "fn": 18545,
+          "dice": 0.9095097478393964,
+          "recall": 0.917373230619801,
+          "precision": 0.9017799267707293,
+          "positive_layers": 521,
+          "hit_positive_layers": 521,
+          "positive_layer_recall": 1.0
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_005",
+        "slices": 741,
+        "loss": 0.12938751875801205,
+        "metric": {
+          "tp": 134531,
+          "fp": 8418,
+          "fn": 11495,
+          "dice": 0.9310909248204862,
+          "recall": 0.9212811417144892,
+          "precision": 0.9411118650707595,
+          "positive_layers": 509,
+          "hit_positive_layers": 504,
+          "positive_layer_recall": 0.9901768172888016
+        },
+        "spacing_xyz_mm": [
+          0.904296875,
+          0.904296875,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_006",
+        "slices": 679,
+        "loss": 0.1717171281115296,
+        "metric": {
+          "tp": 108393,
+          "fp": 13970,
+          "fn": 10524,
+          "dice": 0.8984830901856764,
+          "recall": 0.9115012992255103,
+          "precision": 0.8858315013525331,
+          "positive_layers": 414,
+          "hit_positive_layers": 414,
+          "positive_layer_recall": 1.0
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_011",
+        "slices": 799,
+        "loss": 0.16582651667585957,
+        "metric": {
+          "tp": 225065,
+          "fp": 38479,
+          "fn": 20637,
+          "dice": 0.8839146502868948,
+          "recall": 0.9160080097028107,
+          "precision": 0.8539940199738943,
+          "positive_layers": 508,
+          "hit_positive_layers": 497,
+          "positive_layer_recall": 0.9783464566929134
+        },
+        "spacing_xyz_mm": [
+          0.78125,
+          0.78125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_013",
+        "slices": 755,
+        "loss": 0.1400323723621716,
+        "metric": {
+          "tp": 189506,
+          "fp": 22705,
+          "fn": 15576,
+          "dice": 0.9082634983093414,
+          "recall": 0.9240498922382266,
+          "precision": 0.8930074312830155,
+          "positive_layers": 488,
+          "hit_positive_layers": 487,
+          "positive_layer_recall": 0.9979508196721312
+        },
+        "spacing_xyz_mm": [
+          0.841796875,
+          0.841796875,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_017",
+        "slices": 719,
+        "loss": 0.17559825948158458,
+        "metric": {
+          "tp": 113364,
+          "fp": 17115,
+          "fn": 13225,
+          "dice": 0.8819767532326077,
+          "recall": 0.8955280474606798,
+          "precision": 0.8688294668107511,
+          "positive_layers": 475,
+          "hit_positive_layers": 473,
+          "positive_layer_recall": 0.9957894736842106
+        },
+        "spacing_xyz_mm": [
+          0.78125,
+          0.78125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_019",
+        "slices": 799,
+        "loss": 0.13653101940850293,
+        "metric": {
+          "tp": 206126,
+          "fp": 41986,
+          "fn": 18445,
+          "dice": 0.87215321896493,
+          "recall": 0.9178656193364236,
+          "precision": 0.8307780357258012,
+          "positive_layers": 556,
+          "hit_positive_layers": 547,
+          "positive_layer_recall": 0.9838129496402878
+        },
+        "spacing_xyz_mm": [
+          0.83203125,
+          0.83203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_030",
+        "slices": 765,
+        "loss": 0.15815359057943806,
+        "metric": {
+          "tp": 169762,
+          "fp": 39981,
+          "fn": 13063,
+          "dice": 0.8648794603737442,
+          "recall": 0.9285491590318611,
+          "precision": 0.8093810043720172,
+          "positive_layers": 466,
+          "hit_positive_layers": 466,
+          "positive_layer_recall": 1.0
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_034",
+        "slices": 769,
+        "loss": 0.18699019359635438,
+        "metric": {
+          "tp": 259179,
+          "fp": 34918,
+          "fn": 23822,
+          "dice": 0.8982148612540678,
+          "recall": 0.9158236189978127,
+          "precision": 0.8812704651866561,
+          "positive_layers": 546,
+          "hit_positive_layers": 532,
+          "positive_layer_recall": 0.9743589743589743
+        },
+        "spacing_xyz_mm": [
+          0.78125,
+          0.78125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_046",
+        "slices": 679,
+        "loss": 0.19499218853434688,
+        "metric": {
+          "tp": 82118,
+          "fp": 16408,
+          "fn": 17613,
+          "dice": 0.8283995016569402,
+          "recall": 0.8233949323680702,
+          "precision": 0.833465278200678,
+          "positive_layers": 343,
+          "hit_positive_layers": 325,
+          "positive_layer_recall": 0.9475218658892128
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_051",
+        "slices": 713,
+        "loss": 0.1649850042429746,
+        "metric": {
+          "tp": 102689,
+          "fp": 26438,
+          "fn": 8634,
+          "dice": 0.8541401538781451,
+          "recall": 0.9224419032904252,
+          "precision": 0.7952558334043228,
+          "positive_layers": 420,
+          "hit_positive_layers": 417,
+          "positive_layer_recall": 0.9928571428571429
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_052",
+        "slices": 695,
+        "loss": 0.1376510325738852,
+        "metric": {
+          "tp": 124428,
+          "fp": 22629,
+          "fn": 9371,
+          "dice": 0.8860626085965762,
+          "recall": 0.9299621073401146,
+          "precision": 0.8461208918990596,
+          "positive_layers": 494,
+          "hit_positive_layers": 492,
+          "positive_layer_recall": 0.9959514170040485
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_054",
+        "slices": 699,
+        "loss": 0.12988163183345985,
+        "metric": {
+          "tp": 193524,
+          "fp": 17310,
+          "fn": 10567,
+          "dice": 0.9328143640416943,
+          "recall": 0.9482240765148879,
+          "precision": 0.9178974928142519,
+          "positive_layers": 460,
+          "hit_positive_layers": 449,
+          "positive_layer_recall": 0.9760869565217392
+        },
+        "spacing_xyz_mm": [
+          0.830078125,
+          0.830078125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_065",
+        "slices": 749,
+        "loss": 0.20009892659687073,
+        "metric": {
+          "tp": 111195,
+          "fp": 38654,
+          "fn": 6773,
+          "dice": 0.8303804463495595,
+          "recall": 0.9425861250508613,
+          "precision": 0.7420469939739338,
+          "positive_layers": 474,
+          "hit_positive_layers": 465,
+          "positive_layer_recall": 0.9810126582278481
+        },
+        "spacing_xyz_mm": [
+          0.845703125,
+          0.845703125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_071",
+        "slices": 551,
+        "loss": 0.11907329362987823,
+        "metric": {
+          "tp": 169579,
+          "fp": 25729,
+          "fn": 16863,
+          "dice": 0.8884296005239031,
+          "recall": 0.9095536413469069,
+          "precision": 0.8682644848137301,
+          "positive_layers": 447,
+          "hit_positive_layers": 440,
+          "positive_layer_recall": 0.9843400447427293
+        },
+        "spacing_xyz_mm": [
+          0.6328125,
+          0.6328125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_081",
+        "slices": 783,
+        "loss": 0.16760245707756716,
+        "metric": {
+          "tp": 194545,
+          "fp": 36934,
+          "fn": 8130,
+          "dice": 0.8962027299068994,
+          "recall": 0.9598865178241026,
+          "precision": 0.8404434095533504,
+          "positive_layers": 453,
+          "hit_positive_layers": 449,
+          "positive_layer_recall": 0.9911699779249448
+        },
+        "spacing_xyz_mm": [
+          0.78125,
+          0.78125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_083",
+        "slices": 679,
+        "loss": 0.16965241352746344,
+        "metric": {
+          "tp": 108527,
+          "fp": 26212,
+          "fn": 6503,
+          "dice": 0.8690189735315431,
+          "recall": 0.9434669216726072,
+          "precision": 0.8054609281648224,
+          "positive_layers": 417,
+          "hit_positive_layers": 413,
+          "positive_layer_recall": 0.9904076738609112
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_099",
+        "slices": 679,
+        "loss": 0.10844907983149976,
+        "metric": {
+          "tp": 172278,
+          "fp": 14788,
+          "fn": 9104,
+          "dice": 0.9351550286607608,
+          "recall": 0.9498075884045826,
+          "precision": 0.9209476869126405,
+          "positive_layers": 525,
+          "hit_positive_layers": 509,
+          "positive_layer_recall": 0.9695238095238096
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_108",
+        "slices": 796,
+        "loss": 0.18173182427171786,
+        "metric": {
+          "tp": 158375,
+          "fp": 55913,
+          "fn": 9031,
+          "dice": 0.8298532332182325,
+          "recall": 0.9460533075278067,
+          "precision": 0.7390754498618681,
+          "positive_layers": 486,
+          "hit_positive_layers": 475,
+          "positive_layer_recall": 0.977366255144033
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_125",
+        "slices": 679,
+        "loss": 0.17445891162871613,
+        "metric": {
+          "tp": 119919,
+          "fp": 21846,
+          "fn": 10166,
+          "dice": 0.882243884495126,
+          "recall": 0.9218510973594188,
+          "precision": 0.8458999047719818,
+          "positive_layers": 416,
+          "hit_positive_layers": 414,
+          "positive_layer_recall": 0.9951923076923077
+        },
+        "spacing_xyz_mm": [
+          0.78125,
+          0.78125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_129",
+        "slices": 643,
+        "loss": 0.17240638953299026,
+        "metric": {
+          "tp": 122585,
+          "fp": 17290,
+          "fn": 12247,
+          "dice": 0.8924781676477119,
+          "recall": 0.9091684466595467,
+          "precision": 0.8763896336014299,
+          "positive_layers": 425,
+          "hit_positive_layers": 415,
+          "positive_layer_recall": 0.9764705882352941
+        },
+        "spacing_xyz_mm": [
+          0.78125,
+          0.78125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_145",
+        "slices": 726,
+        "loss": 0.14150597376764312,
+        "metric": {
+          "tp": 93781,
+          "fp": 16975,
+          "fn": 7245,
+          "dice": 0.8856371174131891,
+          "recall": 0.9282857878169976,
+          "precision": 0.8467351655892231,
+          "positive_layers": 445,
+          "hit_positive_layers": 443,
+          "positive_layer_recall": 0.9955056179775281
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_154",
+        "slices": 636,
+        "loss": 0.15384136596050277,
+        "metric": {
+          "tp": 96656,
+          "fp": 15059,
+          "fn": 7835,
+          "dice": 0.894110246709157,
+          "recall": 0.9250174656190485,
+          "precision": 0.8652016291455937,
+          "positive_layers": 412,
+          "hit_positive_layers": 401,
+          "positive_layer_recall": 0.9733009708737864
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_160",
+        "slices": 736,
+        "loss": 0.16406158928799888,
+        "metric": {
+          "tp": 217090,
+          "fp": 11975,
+          "fn": 12130,
+          "dice": 0.9474017260001963,
+          "recall": 0.9470814065090306,
+          "precision": 0.9477222622399756,
+          "positive_layers": 524,
+          "hit_positive_layers": 516,
+          "positive_layer_recall": 0.9847328244274809
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_177",
+        "slices": 538,
+        "loss": 0.2029339430029729,
+        "metric": {
+          "tp": 100266,
+          "fp": 8197,
+          "fn": 20474,
+          "dice": 0.874910014266829,
+          "recall": 0.8304290210369388,
+          "precision": 0.9244258410702267,
+          "positive_layers": 355,
+          "hit_positive_layers": 328,
+          "positive_layer_recall": 0.923943661971831
+        },
+        "spacing_xyz_mm": [
+          0.7421879768371582,
+          0.7421879768371582,
+          0.625
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_182",
+        "slices": 458,
+        "loss": 0.1381462392067805,
+        "metric": {
+          "tp": 134425,
+          "fp": 14283,
+          "fn": 9670,
+          "dice": 0.9181941441856811,
+          "recall": 0.9328914951941427,
+          "precision": 0.9039527126987116,
+          "positive_layers": 337,
+          "hit_positive_layers": 334,
+          "positive_layer_recall": 0.9910979228486647
+        },
+        "spacing_xyz_mm": [
+          0.703125,
+          0.703125,
+          0.625
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_183",
+        "slices": 506,
+        "loss": 0.13581714573732243,
+        "metric": {
+          "tp": 209485,
+          "fp": 14040,
+          "fn": 16273,
+          "dice": 0.9325302760175658,
+          "recall": 0.9279183904889307,
+          "precision": 0.9371882339783022,
+          "positive_layers": 379,
+          "hit_positive_layers": 379,
+          "positive_layer_recall": 1.0
+        },
+        "spacing_xyz_mm": [
+          0.6640620231628418,
+          0.6640620231628418,
+          0.625
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_185",
+        "slices": 561,
+        "loss": 0.1474495700455923,
+        "metric": {
+          "tp": 216201,
+          "fp": 16819,
+          "fn": 26188,
+          "dice": 0.9095368409096167,
+          "recall": 0.8919587935096065,
+          "precision": 0.9278216462106257,
+          "positive_layers": 372,
+          "hit_positive_layers": 363,
+          "positive_layer_recall": 0.9758064516129032
+        },
+        "spacing_xyz_mm": [
+          0.703125,
+          0.703125,
+          0.625
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_186",
+        "slices": 672,
+        "loss": 0.18570951640694625,
+        "metric": {
+          "tp": 265298,
+          "fp": 28029,
+          "fn": 34278,
+          "dice": 0.8949119839164248,
+          "recall": 0.8855782839746842,
+          "precision": 0.9044445277795771,
+          "positive_layers": 504,
+          "hit_positive_layers": 503,
+          "positive_layer_recall": 0.998015873015873
+        },
+        "spacing_xyz_mm": [
+          0.607421875,
+          0.607421875,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_199",
+        "slices": 449,
+        "loss": 0.13091960187611443,
+        "metric": {
+          "tp": 140789,
+          "fp": 14698,
+          "fn": 11530,
+          "dice": 0.9147904849158236,
+          "recall": 0.9243035996822458,
+          "precision": 0.9054711969489411,
+          "positive_layers": 345,
+          "hit_positive_layers": 340,
+          "positive_layer_recall": 0.9855072463768116
+        },
+        "spacing_xyz_mm": [
+          0.625,
+          0.625,
+          0.625
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_208",
+        "slices": 481,
+        "loss": 0.10405690919243868,
+        "metric": {
+          "tp": 166238,
+          "fp": 8573,
+          "fn": 15155,
+          "dice": 0.9333864863954363,
+          "recall": 0.9164521232903144,
+          "precision": 0.9509584637122378,
+          "positive_layers": 396,
+          "hit_positive_layers": 396,
+          "positive_layer_recall": 1.0
+        },
+        "spacing_xyz_mm": [
+          0.6054689884185791,
+          0.6054689884185791,
+          0.625
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_257",
+        "slices": 679,
+        "loss": 0.1593109236999973,
+        "metric": {
+          "tp": 66580,
+          "fp": 15242,
+          "fn": 3030,
+          "dice": 0.8793385810132601,
+          "recall": 0.9564717712972274,
+          "precision": 0.8137175820683924,
+          "positive_layers": 381,
+          "hit_positive_layers": 381,
+          "positive_layer_recall": 1.0
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_262",
+        "slices": 799,
+        "loss": 0.14497636862854485,
+        "metric": {
+          "tp": 117593,
+          "fp": 23086,
+          "fn": 3918,
+          "dice": 0.8970059880239521,
+          "recall": 0.96775600562912,
+          "precision": 0.8358959048614221,
+          "positive_layers": 454,
+          "hit_positive_layers": 454,
+          "positive_layer_recall": 1.0
+        },
+        "spacing_xyz_mm": [
+          0.78125,
+          0.78125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_263",
+        "slices": 679,
+        "loss": 0.12502525244264787,
+        "metric": {
+          "tp": 181928,
+          "fp": 29066,
+          "fn": 2174,
+          "dice": 0.9209306092696459,
+          "recall": 0.9881913287199487,
+          "precision": 0.8622425282235514,
+          "positive_layers": 458,
+          "hit_positive_layers": 458,
+          "positive_layer_recall": 1.0
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_273",
+        "slices": 797,
+        "loss": 0.20038422209256268,
+        "metric": {
+          "tp": 129122,
+          "fp": 14258,
+          "fn": 6476,
+          "dice": 0.9256787273548451,
+          "recall": 0.9522411834982817,
+          "precision": 0.9005579578741805,
+          "positive_layers": 525,
+          "hit_positive_layers": 519,
+          "positive_layer_recall": 0.9885714285714285
+        },
+        "spacing_xyz_mm": [
+          0.78125,
+          0.78125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_362",
+        "slices": 481,
+        "loss": 0.08914684062037548,
+        "metric": {
+          "tp": 108275,
+          "fp": 10204,
+          "fn": 5541,
+          "dice": 0.9322198067112938,
+          "recall": 0.9513161594151964,
+          "precision": 0.913875032706218,
+          "positive_layers": 371,
+          "hit_positive_layers": 370,
+          "positive_layer_recall": 0.9973045822102425
+        },
+        "spacing_xyz_mm": [
+          0.7421879768371582,
+          0.7421879768371582,
+          0.625
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_626",
+        "slices": 781,
+        "loss": 0.18753351934645301,
+        "metric": {
+          "tp": 178729,
+          "fp": 39644,
+          "fn": 3740,
+          "dice": 0.8917678287205433,
+          "recall": 0.9795033676953345,
+          "precision": 0.8184574100277965,
+          "positive_layers": 441,
+          "hit_positive_layers": 440,
+          "positive_layer_recall": 0.9977324263038548
+        },
+        "spacing_xyz_mm": [
+          0.78125,
+          0.78125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_629",
+        "slices": 671,
+        "loss": 0.10344346235998964,
+        "metric": {
+          "tp": 117175,
+          "fp": 10957,
+          "fn": 3907,
+          "dice": 0.9403564807755583,
+          "recall": 0.9677326109578632,
+          "precision": 0.9144866231698561,
+          "positive_layers": 508,
+          "hit_positive_layers": 508,
+          "positive_layer_recall": 1.0
+        },
+        "spacing_xyz_mm": [
+          0.78125,
+          0.78125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_633",
+        "slices": 753,
+        "loss": 0.16078743182251337,
+        "metric": {
+          "tp": 126533,
+          "fp": 33271,
+          "fn": 3201,
+          "dice": 0.8740338055799238,
+          "recall": 0.9753264371714431,
+          "precision": 0.7918012064779355,
+          "positive_layers": 486,
+          "hit_positive_layers": 486,
+          "positive_layer_recall": 1.0
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_644",
+        "slices": 679,
+        "loss": 0.15290141921347783,
+        "metric": {
+          "tp": 87765,
+          "fp": 8401,
+          "fn": 5450,
+          "dice": 0.9268617231929286,
+          "recall": 0.9415330150726814,
+          "precision": 0.912640642222823,
+          "positive_layers": 451,
+          "hit_positive_layers": 450,
+          "positive_layer_recall": 0.9977827050997783
+        },
+        "spacing_xyz_mm": [
+          0.8203125,
+          0.8203125,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_689",
+        "slices": 679,
+        "loss": 0.11055331599085272,
+        "metric": {
+          "tp": 104616,
+          "fp": 7962,
+          "fn": 3897,
+          "dice": 0.9463614529763762,
+          "recall": 0.9640872522186282,
+          "precision": 0.929275702179822,
+          "positive_layers": 464,
+          "hit_positive_layers": 462,
+          "positive_layer_recall": 0.9956896551724138
+        },
+        "spacing_xyz_mm": [
+          0.90234375,
+          0.90234375,
+          0.5
+        ],
+        "full_case": true
+      },
+      {
+        "case": "ATM_702",
+        "slices": 799,
+        "loss": 0.10881573878501417,
+        "metric": {
+          "tp": 144005,
+          "fp": 9464,
+          "fn": 3345,
+          "dice": 0.9574195778857053,
+          "recall": 0.977298948082796,
+          "precision": 0.938332822915377,
+          "positive_layers": 520,
+          "hit_positive_layers": 520,
+          "positive_layer_recall": 1.0
+        },
+        "spacing_xyz_mm": [
+          0.845703125,
+          0.845703125,
+          0.5
+        ],
+        "full_case": true
+      }
+    ],
+    "case_count": 42,
+    "slices": 28610,
+    "eval_mode": true,
+    "grad_enabled": false,
+    "full_cases": true,
+    "threshold_logit": 0.0
+  },
+  "test_used_for_selection": false,
+  "threshold_logit": 0.0,
+  "tree_metrics": {
+    "global": "sum TP/FP/FN across all valid voxels",
+    "macro": "unweighted case means, undefined Recall/Precision excluded",
+    "empty_label": "Dice=1 only if prediction also empty; recall undefined; precision undefined if no predictions",
+    "positive_layer_recall": "fraction of labelled positive centre slices with at least one true-positive voxel",
+    "tree_length_detection_rate": null,
+    "branch_detection_rate": null,
+    "tree_metric_limit": "No verified official airway tree/branch evaluator available.",
+    "anatomy": "fixed validation cases; skimage Lee 3D GT skeleton; exact coverage, tolerance=0 mm, thin EDT radius<=2 mm; not physical tree length or branch detection",
+    "connectivity": "26-neighbour voxel connectivity in preserved anisotropic native grid; component counts are diagnostic"
+  },
+  "supervision": {
+    "epoch_checks_passed": 31,
+    "adjustments": [],
+    "repairs": [
+      {
+        "phase": "pretraining smoke",
+        "failed_run": "/root/autodl-tmp/lung_training/airway_mkdc_v1/runs/resunet_mkdc_relu6_100e_v1",
+        "evidence": "smoke.log:35-38, airway_run.py:532; optimizer step tensor CPU/CUDA comparison",
+        "change": "Compare restored optimizer state values on CPU; no loss, metric, architecture or input change.",
+        "supervisor_check": "Verify frozen best ranking and every historical immutable best hash.",
+        "new_run": "/root/autodl-tmp/lung_training/airway_mkdc_v1/runs/resunet_mkdc_relu6_100e_v2",
+        "patient_split_reused_byte_for_byte": true,
+        "prepared_anatomy_reused": true,
+        "formal_epochs_in_failed_run": 0
+      }
+    ]
+  },
+  "abnormal_cases": [
+    {
+      "case": "ATM_242",
+      "batch": "TrainBatch2",
+      "reason": "label exists but CT is missing",
+      "label": "/root/autodl-tmp/datasets/ATM22/TrainBatch2/labelsTr/ATM_242_0000.nii.gz"
+    },
+    {
+      "case": "ATM_243",
+      "batch": "TrainBatch2",
+      "reason": "label exists but CT is missing",
+      "label": "/root/autodl-tmp/datasets/ATM22/TrainBatch2/labelsTr/ATM_243_0000.nii.gz"
+    },
+    {
+      "case": "ATM_244",
+      "batch": "TrainBatch2",
+      "reason": "label exists but CT is missing",
+      "label": "/root/autodl-tmp/datasets/ATM22/TrainBatch2/labelsTr/ATM_244_0000.nii.gz"
+    },
+    {
+      "case": "ATM_245",
+      "batch": "TrainBatch2",
+      "reason": "label exists but CT is missing",
+      "label": "/root/autodl-tmp/datasets/ATM22/TrainBatch2/labelsTr/ATM_245_0000.nii.gz"
+    },
+    {
+      "case": "ATM_246",
+      "batch": "TrainBatch2",
+      "reason": "label exists but CT is missing",
+      "label": "/root/autodl-tmp/datasets/ATM22/TrainBatch2/labelsTr/ATM_246_0000.nii.gz"
+    },
+    {
+      "case": "ATM_247",
+      "batch": "TrainBatch2",
+      "reason": "label exists but CT is missing",
+      "label": "/root/autodl-tmp/datasets/ATM22/TrainBatch2/labelsTr/ATM_247_0000.nii.gz"
+    },
+    {
+      "case": "ATM_248",
+      "batch": "TrainBatch2",
+      "reason": "label exists but CT is missing",
+      "label": "/root/autodl-tmp/datasets/ATM22/TrainBatch2/labelsTr/ATM_248_0000.nii.gz"
+    },
+    {
+      "case": "ATM_249",
+      "batch": "TrainBatch2",
+      "reason": "label exists but CT is missing",
+      "label": "/root/autodl-tmp/datasets/ATM22/TrainBatch2/labelsTr/ATM_249_0000.nii.gz"
+    },
+    {
+      "case": "ATM_250",
+      "batch": "TrainBatch2",
+      "reason": "label exists but CT is missing",
+      "label": "/root/autodl-tmp/datasets/ATM22/TrainBatch2/labelsTr/ATM_250_0000.nii.gz"
+    },
+    {
+      "case": "ATM_501",
+      "batch": "TrainBatch2",
+      "reason": "label exists but CT is missing",
+      "label": "/root/autodl-tmp/datasets/ATM22/TrainBatch2/labelsTr/ATM_501_0000.nii.gz"
+    },
+    {
+      "case": "ATM_502",
+      "batch": "TrainBatch2",
+      "reason": "label exists but CT is missing",
+      "label": "/root/autodl-tmp/datasets/ATM22/TrainBatch2/labelsTr/ATM_502_0000.nii.gz"
+    },
+    {
+      "case": "ATM_503",
+      "batch": "TrainBatch2",
+      "reason": "label exists but CT is missing",
+      "label": "/root/autodl-tmp/datasets/ATM22/TrainBatch2/labelsTr/ATM_503_0000.nii.gz"
+    },
+    {
+      "case": "ATM_504",
+      "batch": "TrainBatch2",
+      "reason": "label exists but CT is missing",
+      "label": "/root/autodl-tmp/datasets/ATM22/TrainBatch2/labelsTr/ATM_504_0000.nii.gz"
+    },
+    {
+      "case": "ATM_505",
+      "batch": "TrainBatch2",
+      "reason": "label exists but CT is missing",
+      "label": "/root/autodl-tmp/datasets/ATM22/TrainBatch2/labelsTr/ATM_505_0000.nii.gz"
+    },
+    {
+      "case": "ATM_506",
+      "batch": "TrainBatch2",
+      "reason": "label exists but CT is missing",
+      "label": "/root/autodl-tmp/datasets/ATM22/TrainBatch2/labelsTr/ATM_506_0000.nii.gz"
+    },
+    {
+      "case": "ATM_507",
+      "batch": "TrainBatch2",
+      "reason": "label exists but CT is missing",
+      "label": "/root/autodl-tmp/datasets/ATM22/TrainBatch2/labelsTr/ATM_507_0000.nii.gz"
+    },
+    {
+      "case": "ATM_508",
+      "batch": "TrainBatch2",
+      "reason": "label exists but CT is missing",
+      "label": "/root/autodl-tmp/datasets/ATM22/TrainBatch2/labelsTr/ATM_508_0000.nii.gz"
+    },
+    {
+      "case": "ATM_509",
+      "batch": "TrainBatch2",
+      "reason": "label exists but CT is missing",
+      "label": "/root/autodl-tmp/datasets/ATM22/TrainBatch2/labelsTr/ATM_509_0000.nii.gz"
+    },
+    {
+      "case": "ATM_510",
+      "batch": "TrainBatch2",
+      "reason": "label exists but CT is missing",
+      "label": "/root/autodl-tmp/datasets/ATM22/TrainBatch2/labelsTr/ATM_510_0000.nii.gz"
+    },
+    {
+      "case": "ATM_511",
+      "batch": "TrainBatch2",
+      "reason": "label exists but CT is missing",
+      "label": "/root/autodl-tmp/datasets/ATM22/TrainBatch2/labelsTr/ATM_511_0000.nii.gz"
+    }
+  ],
+  "deployment": "Requires independent INT8/deployment and anatomy validation; voxel Dice alone is insufficient.",
+  "recommendation_3d": "If persistent thin-centerline misses/fragmentation are evidenced, suggest a separate lightweight 3D experiment; do not launch it here.",
+  "resources": {
+    "disk_free_bytes": 29474357248,
+    "gpu_used_mib": 2083,
+    "gpu_total_mib": 24564,
+    "gpu_util_percent": 19,
+    "gpu_compute_pids": [
+      34386
+    ]
+  },
+  "time": 1791452052.1992424,
+  "audit_correction": {
+    "kind": "post_run_metadata_repair",
+    "reason": "The user requested stopping after epoch 30, but epoch 31 had already completed before the finalizer handoff finished.",
+    "requested_stop_after_epoch": 30,
+    "actual_completed_epochs": 31,
+    "epoch31_record": "epoch_records/epoch_0031.json",
+    "epoch31_record_sha256": "6516f5833e42e58db624f4348273c05ba8710184e2e8f5ebd103cf1c77c88903",
+    "epoch31_supervisor_check": "reports/check_0031.json",
+    "epoch31_decision": "decisions/decision_0031.json",
+    "original_final_results": "final_results_epoch30_original.json",
+    "original_final_check": "final_check_failed_original.json",
+    "original_status": "status_paused_original.json",
+    "original_final_check_status": "FAIL",
+    "original_final_check_error": "AssertionError()",
+    "repaired_at": "2026-10-08T09:50:49.673425+00:00"
+  }
+}

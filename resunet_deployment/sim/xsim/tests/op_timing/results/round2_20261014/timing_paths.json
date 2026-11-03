@@ -1,0 +1,506 @@
+[
+  {
+    "report": "routed_add.rpt",
+    "line": 16,
+    "slack_ns": -0.82,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_core_4/width_r_reg[6]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_add/input_w_translated_rData_a_15_reg/DSP_A_B_DATA_INST/CEA1",
+    "delay": "3.500ns  (logic 0.894ns (25.546%)  route 2.606ns (74.454%))",
+    "levels": "12  (CARRY8=2 LUT2=1 LUT3=1 LUT4=1 LUT5=1 LUT6=6)"
+  },
+  {
+    "report": "routed_add.rpt",
+    "line": 154,
+    "slack_ns": -0.803,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_core_4/width_r_reg[6]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_add/productsPayload_w_a_14/DSP_A_B_DATA_INST/CEA1",
+    "delay": "3.483ns  (logic 0.894ns (25.671%)  route 2.589ns (74.329%))",
+    "levels": "12  (CARRY8=2 LUT2=1 LUT3=1 LUT4=1 LUT5=1 LUT6=6)"
+  },
+  {
+    "report": "routed_add_internal.rpt",
+    "line": 16,
+    "slack_ns": -0.731,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_add/config_r_shift_reg[3]_rep__14/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_add/divide_r_translated_rData_value_9_reg[65]/D",
+    "delay": "3.607ns  (logic 1.068ns (29.611%)  route 2.539ns (70.389%))",
+    "levels": "14  (CARRY8=11 LUT4=2 LUT6=1)"
+  },
+  {
+    "report": "routed_add_internal.rpt",
+    "line": 162,
+    "slack_ns": -0.729,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_add/config_r_shift_reg[3]_rep__14/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_add/divide_r_translated_rData_value_9_reg[63]/D",
+    "delay": "3.607ns  (logic 1.093ns (30.304%)  route 2.514ns (69.696%))",
+    "levels": "13  (CARRY8=10 LUT4=2 LUT6=1)"
+  },
+  {
+    "report": "routed_concat.rpt",
+    "line": 16,
+    "slack_ns": -0.037,
+    "source": "g_ethernet.bridge_reset_sync2_r_reg/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_concat/remaining_r_reg[30]/CE",
+    "delay": "2.817ns  (logic 0.408ns (14.481%)  route 2.409ns (85.519%))",
+    "levels": "4  (LUT2=2 LUT5=1 LUT6=1)"
+  },
+  {
+    "report": "routed_concat.rpt",
+    "line": 122,
+    "slack_ns": -0.035,
+    "source": "g_ethernet.bridge_reset_sync2_r_reg/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_concat/addr_r_reg[26]/CE",
+    "delay": "2.815ns  (logic 0.408ns (14.492%)  route 2.407ns (85.508%))",
+    "levels": "4  (LUT2=2 LUT5=1 LUT6=1)"
+  },
+  {
+    "report": "routed_concat_out.rpt",
+    "line": 16,
+    "slack_ns": -0.446,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_concat/state_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/saved_data_r_reg[2453]/CE",
+    "delay": "3.296ns  (logic 0.462ns (14.016%)  route 2.834ns (85.984%))",
+    "levels": "5  (LUT2=1 LUT4=1 LUT6=3)"
+  },
+  {
+    "report": "routed_engine.rpt",
+    "line": 16,
+    "slack_ns": -1.177,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/tileBase_r_reg[1]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/requant/product_w_value_3__0/DSP_A_B_DATA_INST/A[15]",
+    "delay": "3.879ns  (logic 0.775ns (19.979%)  route 3.104ns (80.021%))",
+    "levels": "6  (CARRY8=2 LUT4=1 LUT5=1 LUT6=2)"
+  },
+  {
+    "report": "routed_engine.rpt",
+    "line": 130,
+    "slack_ns": -1.176,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/tileBase_r_reg[1]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/fillGroup_r_reg[0]/CE",
+    "delay": "3.930ns  (logic 1.287ns (32.749%)  route 2.643ns (67.251%))",
+    "levels": "15  (CARRY8=4 LUT1=1 LUT2=2 LUT3=1 LUT5=2 LUT6=5)"
+  },
+  {
+    "report": "routed_ethernet_preserved.rpt",
+    "line": 16,
+    "slack_ns": -1.049,
+    "source": "g_ethernet.u_bridge/packet_mem_r_reg_3/CLKARDCLK",
+    "destination": "u_ddr4/inst/u_ddr4_mem_intfc/u_ddr_ui/u_ddr_ui_wr_data/wr_buffer_ram[42].RAM32M0/RAMB/I",
+    "delay": "3.471ns  (logic 1.016ns (29.273%)  route 2.455ns (70.727%))",
+    "levels": "3  (LUT3=1 LUT4=1 LUT5=1)"
+  },
+  {
+    "report": "routed_k3.rpt",
+    "line": 16,
+    "slack_ns": -0.571,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_writer/FSM_sequential_state_r_reg[1]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_core_3/window_rData_fragment_window_2_1_reg[9]/CE",
+    "delay": "3.427ns  (logic 0.424ns (12.371%)  route 3.003ns (87.629%))",
+    "levels": "4  (LUT2=1 LUT3=2 LUT4=1)"
+  },
+  {
+    "report": "routed_k3.rpt",
+    "line": 122,
+    "slack_ns": -0.571,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_writer/FSM_sequential_state_r_reg[1]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_core_3/window_rData_fragment_window_2_2_reg[5]/CE",
+    "delay": "3.427ns  (logic 0.424ns (12.371%)  route 3.003ns (87.629%))",
+    "levels": "4  (LUT2=1 LUT3=2 LUT4=1)"
+  },
+  {
+    "report": "routed_k3_out.rpt",
+    "line": 16,
+    "slack_ns": -1.096,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_core_3/height_r_reg[5]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/input_count_r_reg[7]/D",
+    "delay": "3.867ns  (logic 1.280ns (33.100%)  route 2.587ns (66.900%))",
+    "levels": "16  (CARRY8=2 LUT2=2 LUT4=1 LUT5=2 LUT6=9)"
+  },
+  {
+    "report": "routed_k5.rpt",
+    "line": 16,
+    "slack_ns": -0.776,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_writer/FSM_sequential_state_r_reg[1]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_core_4/horizontal_r_4_0_reg[21]/CE",
+    "delay": "3.609ns  (logic 0.464ns (12.856%)  route 3.145ns (87.144%))",
+    "levels": "4  (LUT3=2 LUT4=2)"
+  },
+  {
+    "report": "routed_k5.rpt",
+    "line": 122,
+    "slack_ns": -0.776,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_writer/FSM_sequential_state_r_reg[1]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_core_4/horizontal_r_4_1_reg[21]/CE",
+    "delay": "3.609ns  (logic 0.464ns (12.856%)  route 3.145ns (87.144%))",
+    "levels": "4  (LUT3=2 LUT4=2)"
+  },
+  {
+    "report": "routed_k5_out.rpt",
+    "line": 16,
+    "slack_ns": -1.122,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_core_4/width_r_reg[6]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/input_count_r_reg[7]/D",
+    "delay": "3.979ns  (logic 1.156ns (29.052%)  route 2.823ns (70.948%))",
+    "levels": "16  (CARRY8=2 LUT2=1 LUT3=1 LUT4=2 LUT5=2 LUT6=8)"
+  },
+  {
+    "report": "routed_pw.rpt",
+    "line": 16,
+    "slack_ns": -1.177,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/tileBase_r_reg[1]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/requant/product_w_value_3__0/DSP_A_B_DATA_INST/A[15]",
+    "delay": "3.879ns  (logic 0.775ns (19.979%)  route 3.104ns (80.021%))",
+    "levels": "6  (CARRY8=2 LUT4=1 LUT5=1 LUT6=2)"
+  },
+  {
+    "report": "routed_pw.rpt",
+    "line": 130,
+    "slack_ns": -1.176,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/tileBase_r_reg[1]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/fillGroup_r_reg[0]/CE",
+    "delay": "3.930ns  (logic 1.287ns (32.749%)  route 2.643ns (67.251%))",
+    "levels": "15  (CARRY8=4 LUT1=1 LUT2=2 LUT3=1 LUT5=2 LUT6=5)"
+  },
+  {
+    "report": "routed_pw_requant.rpt",
+    "line": 16,
+    "slack_ns": -0.84,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/requant/product_translated_rData_info_shift_reg[3]_rep__3/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/requant/sum_translated_rData_value_2_reg[63]/D",
+    "delay": "3.690ns  (logic 1.254ns (33.987%)  route 2.436ns (66.013%))",
+    "levels": "19  (CARRY8=16 LUT4=1 LUT6=2)"
+  },
+  {
+    "report": "routed_pw_requant.rpt",
+    "line": 182,
+    "slack_ns": -0.839,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/requant/product_translated_rData_info_shift_reg[3]_rep__3/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/requant/sum_translated_rData_value_2_reg[61]/D",
+    "delay": "3.689ns  (logic 1.254ns (33.996%)  route 2.435ns (66.004%))",
+    "levels": "19  (CARRY8=16 LUT4=1 LUT6=2)"
+  },
+  {
+    "report": "routed_reader.rpt",
+    "line": 16,
+    "slack_ns": -1.164,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/fillGroup_r_reg[1]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/base_r_reg[25]/D",
+    "delay": "4.037ns  (logic 2.961ns (73.347%)  route 1.076ns (26.653%))",
+    "levels": "15  (CARRY8=2 DSP_A_B_DATA=1 DSP_ALU=2 DSP_M_DATA=1 DSP_MULTIPLIER=1 DSP_OUTPUT=2 DSP_PREADD_DATA=1 LUT4=2 LUT6=3)"
+  },
+  {
+    "report": "routed_reader.rpt",
+    "line": 166,
+    "slack_ns": -1.144,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/FSM_onehot_state_r_reg[3]/CE",
+    "delay": "4.044ns  (logic 1.470ns (36.346%)  route 2.574ns (63.654%))",
+    "levels": "19  (CARRY8=5 LUT3=2 LUT4=3 LUT5=3 LUT6=6)"
+  },
+  {
+    "report": "routed_rom.rpt",
+    "line": 16,
+    "slack_ns": -1.185,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[145]/CE",
+    "delay": "4.021ns  (logic 1.359ns (33.801%)  route 2.662ns (66.199%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_rom.rpt",
+    "line": 174,
+    "slack_ns": -1.185,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[170]/CE",
+    "delay": "4.021ns  (logic 1.359ns (33.801%)  route 2.662ns (66.199%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_rom_data.rpt",
+    "line": 16,
+    "slack_ns": -1.101,
+    "source": "g_ethernet.u_coeff_rom/u_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[172].ram.r/prim_init.ram/DEVICE_8SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[98]/D",
+    "delay": "3.618ns  (logic 0.453ns (12.519%)  route 3.165ns (87.481%))",
+    "levels": "4  (LUT6=2 MUXF7=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 16,
+    "slack_ns": -1.185,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[145]/CE",
+    "delay": "4.021ns  (logic 1.359ns (33.801%)  route 2.662ns (66.199%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 174,
+    "slack_ns": -1.185,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[170]/CE",
+    "delay": "4.021ns  (logic 1.359ns (33.801%)  route 2.662ns (66.199%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 332,
+    "slack_ns": -1.185,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[190]/CE",
+    "delay": "4.021ns  (logic 1.359ns (33.801%)  route 2.662ns (66.199%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 490,
+    "slack_ns": -1.185,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[228]/R",
+    "delay": "4.005ns  (logic 1.359ns (33.934%)  route 2.646ns (66.066%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 648,
+    "slack_ns": -1.185,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[254]/R",
+    "delay": "4.005ns  (logic 1.359ns (33.934%)  route 2.646ns (66.066%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 806,
+    "slack_ns": -1.184,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[158]/CE",
+    "delay": "4.021ns  (logic 1.359ns (33.801%)  route 2.662ns (66.199%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 964,
+    "slack_ns": -1.184,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[175]/CE",
+    "delay": "4.021ns  (logic 1.359ns (33.801%)  route 2.662ns (66.199%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 1122,
+    "slack_ns": -1.184,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[185]/CE",
+    "delay": "4.021ns  (logic 1.359ns (33.801%)  route 2.662ns (66.199%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 1280,
+    "slack_ns": -1.184,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[191]/CE",
+    "delay": "4.021ns  (logic 1.359ns (33.801%)  route 2.662ns (66.199%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 1438,
+    "slack_ns": -1.184,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[195]/R",
+    "delay": "3.947ns  (logic 1.359ns (34.434%)  route 2.588ns (65.566%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 1596,
+    "slack_ns": -1.184,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[196]/R",
+    "delay": "3.947ns  (logic 1.359ns (34.434%)  route 2.588ns (65.566%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 1754,
+    "slack_ns": -1.184,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[197]/R",
+    "delay": "3.947ns  (logic 1.359ns (34.434%)  route 2.588ns (65.566%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 1912,
+    "slack_ns": -1.184,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[201]/R",
+    "delay": "3.947ns  (logic 1.359ns (34.434%)  route 2.588ns (65.566%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 2070,
+    "slack_ns": -1.184,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[203]/R",
+    "delay": "3.947ns  (logic 1.359ns (34.434%)  route 2.588ns (65.566%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 2228,
+    "slack_ns": -1.184,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[204]/R",
+    "delay": "3.947ns  (logic 1.359ns (34.434%)  route 2.588ns (65.566%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 2386,
+    "slack_ns": -1.183,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[129]/CE",
+    "delay": "4.016ns  (logic 1.359ns (33.843%)  route 2.657ns (66.157%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 2544,
+    "slack_ns": -1.183,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[137]/CE",
+    "delay": "4.017ns  (logic 1.359ns (33.835%)  route 2.658ns (66.165%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 2702,
+    "slack_ns": -1.183,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[139]/CE",
+    "delay": "4.016ns  (logic 1.359ns (33.843%)  route 2.657ns (66.157%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 2860,
+    "slack_ns": -1.183,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[140]/CE",
+    "delay": "4.017ns  (logic 1.359ns (33.835%)  route 2.658ns (66.165%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 3018,
+    "slack_ns": -1.183,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[153]/CE",
+    "delay": "4.016ns  (logic 1.359ns (33.843%)  route 2.657ns (66.157%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 3176,
+    "slack_ns": -1.183,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[157]/CE",
+    "delay": "4.017ns  (logic 1.359ns (33.835%)  route 2.658ns (66.165%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 3334,
+    "slack_ns": -1.183,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[179]/CE",
+    "delay": "4.016ns  (logic 1.359ns (33.843%)  route 2.657ns (66.157%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 3492,
+    "slack_ns": -1.183,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[181]/CE",
+    "delay": "4.017ns  (logic 1.359ns (33.835%)  route 2.658ns (66.165%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 3650,
+    "slack_ns": -1.182,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[254]/CE",
+    "delay": "4.016ns  (logic 1.358ns (33.815%)  route 2.658ns (66.185%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 3808,
+    "slack_ns": -1.18,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[228]/CE",
+    "delay": "4.014ns  (logic 1.358ns (33.832%)  route 2.656ns (66.168%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 3966,
+    "slack_ns": -1.177,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/tileBase_r_reg[1]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/requant/product_w_value_3__0/DSP_A_B_DATA_INST/A[15]",
+    "delay": "3.879ns  (logic 0.775ns (19.979%)  route 3.104ns (80.021%))",
+    "levels": "6  (CARRY8=2 LUT4=1 LUT5=1 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 4080,
+    "slack_ns": -1.177,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[365]/C",
+    "destination": "g_ethernet.u_coeff_rom/data_r_reg[162]/R",
+    "delay": "3.989ns  (logic 1.358ns (34.040%)  route 2.631ns (65.960%))",
+    "levels": "17  (CARRY8=5 LUT3=2 LUT4=4 LUT5=4 LUT6=2)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 4238,
+    "slack_ns": -1.176,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/tileBase_r_reg[1]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/fillGroup_r_reg[0]/CE",
+    "delay": "3.930ns  (logic 1.287ns (32.749%)  route 2.643ns (67.251%))",
+    "levels": "15  (CARRY8=4 LUT1=1 LUT2=2 LUT3=1 LUT5=2 LUT6=5)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 4388,
+    "slack_ns": -1.176,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/tileBase_r_reg[1]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/fillGroup_r_reg[2]/CE",
+    "delay": "3.930ns  (logic 1.287ns (32.749%)  route 2.643ns (67.251%))",
+    "levels": "15  (CARRY8=4 LUT1=1 LUT2=2 LUT3=1 LUT5=2 LUT6=5)"
+  },
+  {
+    "report": "routed_setup.rpt",
+    "line": 4538,
+    "slack_ns": -1.176,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/tileBase_r_reg[1]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/fillGroup_r_reg[4]/CE",
+    "delay": "3.930ns  (logic 1.287ns (32.749%)  route 2.643ns (67.251%))",
+    "levels": "15  (CARRY8=4 LUT1=1 LUT2=2 LUT3=1 LUT5=2 LUT6=5)"
+  },
+  {
+    "report": "routed_uram_product.rpt",
+    "line": 16,
+    "slack_ns": -1.118,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/u_weight_uram/U0/inst_blk_mem_gen/gnuram_without_32bit_addr.uram_sdp.xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_uram_12/CLK",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/response_translated_rData_values_3_9_reg[15]/D",
+    "delay": "3.831ns  (logic 2.386ns (62.278%)  route 1.445ns (37.722%))",
+    "levels": "9  (CARRY8=4 LUT2=1 LUT3=1 LUT4=1 LUT6=1 URAM288=1)"
+  }
+]

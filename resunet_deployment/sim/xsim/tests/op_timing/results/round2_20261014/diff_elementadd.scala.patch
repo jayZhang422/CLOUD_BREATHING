@@ -1,0 +1,36 @@
+--- round2-before/script/scala/Element_Add/ElementAdd.scala
++++ script/scala/Element_Add/ElementAdd.scala
+@@ -124,17 +124,28 @@
+     dividePayload_w.remainder(lane) := numerator_r.value(lane).asUInt & mask_w
+   }
+   val divide_r = numerator_r.translateWith(dividePayload_w).m2sPipe()
++  // 比较余数与半值单独一拍，不与66位加一串接。
++  val decisionPayload_w = new Bundle {
++    val whole = Vec(SInt(c.SUM_BITS bits), c.P)
++    val increment = Bits(c.P bits)
++    val group_last = Bool()
++  }
++  decisionPayload_w.whole := divide_r.whole
++  decisionPayload_w.group_last := divide_r.group_last
++  for (lane <- 0 until c.P) {
++    decisionPayload_w.increment(lane) := config_r.shift =/= 0 && (divide_r.remainder(lane) > half_w ||
++      (divide_r.remainder(lane) === half_w && divide_r.whole(lane)(0)))
++  }
++  val decision_r = divide_r.translateWith(decisionPayload_w).m2sPipe()
+   val roundedPayload_w = new Bundle {
+     val value = Vec(SInt(c.SUM_BITS bits), c.P)
+     val group_last = Bool()
+   }
+-  roundedPayload_w.group_last := divide_r.group_last
++  roundedPayload_w.group_last := decision_r.group_last
+   for (lane <- 0 until c.P) {
+-    val increment_w = config_r.shift =/= 0 && (divide_r.remainder(lane) > half_w ||
+-      (divide_r.remainder(lane) === half_w && divide_r.whole(lane)(0)))
+-    roundedPayload_w.value(lane) := divide_r.whole(lane) + increment_w.asUInt.resize(c.SUM_BITS).asSInt
++    roundedPayload_w.value(lane) := decision_r.whole(lane) + decision_r.increment(lane).asUInt.resize(c.SUM_BITS).asSInt
+   }
+-  val rounded_r = divide_r.translateWith(roundedPayload_w).m2sPipe()
++  val rounded_r = decision_r.translateWith(roundedPayload_w).m2sPipe()
+   val outputPayload_w = Fragment(ElementAddWord(c))
+   outputPayload_w.fragment.group := config_r.group
+   outputPayload_w.fragment.group_last := rounded_r.group_last

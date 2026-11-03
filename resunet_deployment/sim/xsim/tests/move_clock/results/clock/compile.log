@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_compute_clk_wiz/op_compute_clk_wiz_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_compute_clk_wiz_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_compute_clk_wiz/op_compute_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_compute_clk_wiz
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Move_Clock/tb_compute_clock.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_compute_clock
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_compute_clock/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

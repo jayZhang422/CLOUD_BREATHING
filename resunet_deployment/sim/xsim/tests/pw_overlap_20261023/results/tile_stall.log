@@ -1,0 +1,43 @@
+Time resolution is 1 ps
+Block Memory Generator module tb_tile_pw(LONG_STALL=1'b1).g_shared.dut.project.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_tile_pw(LONG_STALL=1'b1).g_shared.dut.project.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_tile_pw(LONG_STALL=1'b1).g_shared.dut.project.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_tile_pw(LONG_STALL=1'b1).g_shared.dut.project.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_tile_pw(LONG_STALL=1'b1).g_shared.dut.project.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_tile_pw(LONG_STALL=1'b1).g_shared.dut.project.pwResultRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_tile_pw(LONG_STALL=1'b1).g_shared.dut.skip.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_tile_pw(LONG_STALL=1'b1).g_shared.dut.skip.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_tile_pw(LONG_STALL=1'b1).g_shared.dut.skip.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_tile_pw(LONG_STALL=1'b1).g_shared.dut.skip.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_tile_pw(LONG_STALL=1'b1).g_shared.dut.skip.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_tile_pw(LONG_STALL=1'b1).g_shared.dut.skip.pwResultRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[CASE PASSED] PW directed_17_5_19 outputs=38 run_cycles=309 side=1
+[CASE PASSED] PW directed_191_127_17 outputs=544 run_cycles=3100 side=1
+[CASE PASSED] PW lobe_e1.expand outputs=4096 run_cycles=6610 side=0
+[CASE PASSED] PW lobe_mid.project outputs=512 run_cycles=2832 side=0
+[CASE PASSED] PW directed_192_128_33 outputs=1056 run_cycles=5609 side=1
+[CASE PASSED] PW directed_768_512_1 outputs=128 run_cycles=3573 side=1
+[CASE PASSED] PW directed_767_511_3 outputs=384 run_cycles=10165 side=1
+[CASE PASSED] PW shift0_signed_saturation outputs=14 run_cycles=79 side=1
+[CASE PASSED] PW tumor_mid.project outputs=2048 run_cycles=25331 side=0
+[CASE PASSED] PW lobe_e1.expand outputs=4096 run_cycles=6540 side=1
+[CASE PASSED] PW lobe_mid.project outputs=512 run_cycles=1942 side=1
+[CASE PASSED] PW tumor_mid.project outputs=2048 run_cycles=35384 side=1
+[CASE PASSED] PW tumor_d3.expand outputs=4096 run_cycles=87076 side=0
+[CASE PASSED] PW tumor_head outputs=1024 run_cycles=19424 side=0
+[CASE PASSED] PW directed_17_5_19 outputs=38 run_cycles=343 side=0
+[CASE PASSED] PW directed_191_127_17 outputs=544 run_cycles=4404 side=0
+[CASE PASSED] PW directed_192_128_33 outputs=1056 run_cycles=7539 side=0
+[CASE PASSED] PW tumor_d3.expand outputs=4096 run_cycles=79708 side=1
+[CASE PASSED] PW directed_768_512_1 outputs=128 run_cycles=2585 side=0
+[CASE PASSED] PW directed_767_511_3 outputs=384 run_cycles=6879 side=0
+[CASE PASSED] PW shift0_signed_saturation outputs=14 run_cycles=72 side=0
+[COVERAGE] side=0 completed_runs=11 reset_during_prefetch=0
+[DRIVER PASSED] PW cases=11 read_stalls=35071 output_stalls=9129 shared-dot-Golden
+[CASE PASSED] PW tumor_head outputs=1024 run_cycles=19362 side=1
+[COVERAGE] side=1 completed_runs=11 reset_during_prefetch=0
+[DRIVER PASSED] PW cases=11 read_stalls=35111 output_stalls=8750 shared-dot-Golden
+[OVERLAP] input project=5358 skip=4850 output project=3521 skip=3377
+[SERIAL OVERLAP] project=9622 skip=9741
+[TB PASSED] PW tile Golden runs=22 restart=0 contention=103172
+$finish called at time : 1531856 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/PW_DoubleBuffer/tb_tile_pw.sv" Line 392

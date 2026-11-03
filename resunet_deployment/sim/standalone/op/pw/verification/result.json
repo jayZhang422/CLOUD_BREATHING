@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "mac_cases": 79,
+  "mac_output_beats": 405778,
+  "mac_cycles": 2150456,
+  "frozen_pw_layers": 66,
+  "reset_phases": 4,
+  "requant_cases": 503,
+  "requant_numeric_boundaries": 471,
+  "source_sha256": {
+    "src/main/scala/pwmac.scala": "5a6d702ab2cbcdd0bc90d562df7b80fb04b305ffe14e0b69adcb534adf3a3985",
+    "sim/pwmacsim.scala": "d0160e5185585c67184434e2e7fc75ef50b8a9e9aa19a843c00d522202dce6d7",
+    "sim/pwrequantsim.scala": "fa2d2e050d2d4163f9d0f82efb946ae1cf8650c699601926ecec5091de15a720",
+    "tools/check_results.py": "8b5de3865ab673087b13c5679e79e9143cb10973920427e1f7c3d02b892b6f10",
+    "tools/generate_vectors.py": "eb29e1f164200f2c518af1620fc5d586da81571276c33c7327a0256efd01bc4b",
+    "rtl/pwmac.v": "e8668c76f2a11e4227e1891b028e4a741e82b7687b52a6516cf7531c4a5d7055"
+  }
+}

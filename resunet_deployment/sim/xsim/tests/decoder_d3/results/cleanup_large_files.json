@@ -1,0 +1,54 @@
+[
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_regression\\behav\\xsim\\sim_trace.csv",
+    "bytes": 949837607
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_regression\\behav\\xsim\\tb_mkdc_behav.wdb",
+    "bytes": 609624878
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_regression\\behav\\xsim\\waveform.vcd",
+    "bytes": 13366358
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_regression\\behav\\xsim\\quantized_params_rom.mif",
+    "bytes": 2974400
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_regression\\behav\\xsim\\xsim.dir\\tb_mkdc_behav\\xsim.dbg",
+    "bytes": 3594240
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_regression\\behav\\xsim\\xsim.dir\\tb_mkdc_behav\\xsim.xdbg",
+    "bytes": 15572088
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_regression\\behav\\xsim\\xsim.dir\\tb_mkdc_behav\\xsimk.exe",
+    "bytes": 3726542
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_regression\\behav\\xsim\\xsim.dir\\xil_defaultlib\\@dw5x5.sdb",
+    "bytes": 1432976
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_d3\\behav\\xsim\\quantized_params_rom.mif",
+    "bytes": 2974400
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_d3\\behav\\xsim\\xsim.dir\\tb_decoder_d3_behav\\xsim.dbg",
+    "bytes": 3597656
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_d3\\behav\\xsim\\xsim.dir\\tb_decoder_d3_behav\\xsim.xdbg",
+    "bytes": 15573264
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_d3\\behav\\xsim\\xsim.dir\\tb_decoder_d3_behav\\xsimk.exe",
+    "bytes": 3743901
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_decoder_d3\\behav\\xsim\\xsim.dir\\xil_defaultlib\\@dw5x5.sdb",
+    "bytes": 1432976
+  }
+]

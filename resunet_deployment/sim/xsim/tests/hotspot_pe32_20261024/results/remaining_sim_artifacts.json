@@ -1,0 +1,118 @@
+[
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_hotspot_dw\\behav\\xsim\\sim_trace.csv",
+    "bytes": 16911623
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_hotspot_dw\\behav\\xsim\\tb_hotspot_dw_behav.wdb",
+    "bytes": 28088562
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_hotspot_dw\\behav\\xsim\\waveform.vcd",
+    "bytes": 9926051
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_hotspot_pw\\behav\\xsim\\sim_trace.csv",
+    "bytes": 45595212
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_hotspot_pw\\behav\\xsim\\tb_hotspot_pw_behav.wdb",
+    "bytes": 58562553
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_hotspot_pw\\behav\\xsim\\waveform.vcd",
+    "bytes": 26580874
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_hotspot_pw_stress\\behav\\xsim\\sim_trace.csv",
+    "bytes": 49880617
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_hotspot_pw_stress\\behav\\xsim\\tb_hotspot_pw_behav.wdb",
+    "bytes": 51825836
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_hotspot_pw_stress\\behav\\xsim\\waveform.vcd",
+    "bytes": 25917028
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_hotspot_op12\\behav\\xsim\\sim_trace_fast.csv",
+    "bytes": 8618073
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_hotspot_op12\\behav\\xsim\\sim_trace_slow.csv",
+    "bytes": 13199549
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_hotspot_op12\\behav\\xsim\\tb_hotspot_op12_behav.wdb",
+    "bytes": 11460811
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_hotspot_op12\\behav\\xsim\\waveform.vcd",
+    "bytes": 11261659
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_op12\\behav\\xsim\\sim_trace_fast.csv",
+    "bytes": 10442792
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_op12\\behav\\xsim\\sim_trace_slow.csv",
+    "bytes": 15091274
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_op12\\behav\\xsim\\tb_pwstream_op12_behav.wdb",
+    "bytes": 9298424
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_op12\\behav\\xsim\\waveform.vcd",
+    "bytes": 12345521
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_move_units\\behav\\xsim\\sim_trace.csv",
+    "bytes": 954630
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_move_units\\behav\\xsim\\tb_move_units_behav.wdb",
+    "bytes": 974474
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_move_units\\behav\\xsim\\waveform.vcd",
+    "bytes": 982501
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_move\\behav\\xsim\\sim_trace.csv",
+    "bytes": 40907800
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_move\\behav\\xsim\\tb_pwstream_move_behav.wdb",
+    "bytes": 73893270
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_move\\behav\\xsim\\waveform.vcd",
+    "bytes": 608152
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_rpc\\behav\\xsim\\sim_trace.csv",
+    "bytes": 132005394
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_rpc\\behav\\xsim\\tb_p8p16_rpc_behav.wdb",
+    "bytes": 218009770
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_rpc\\behav\\xsim\\waveform.vcd",
+    "bytes": 1948968
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_fuse_up_rpc\\behav\\xsim\\sim_trace.csv",
+    "bytes": 38163945
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_fuse_up_rpc\\behav\\xsim\\tb_fuse_up_rpc_behav.wdb",
+    "bytes": 76008288
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_fuse_up_rpc\\behav\\xsim\\waveform.vcd",
+    "bytes": 1415354
+  }
+]

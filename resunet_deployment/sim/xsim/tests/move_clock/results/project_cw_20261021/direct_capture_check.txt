@@ -1,0 +1,1 @@
+requirement 6.000 slack 0.900 startpoint {g_ethernet.u_op_board/u_transport/request_body_r_reg[74]/C} endpoint {g_ethernet.u_op_board/u_service/body_r_reg[74]/D}

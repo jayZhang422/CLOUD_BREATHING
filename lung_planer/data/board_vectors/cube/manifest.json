@@ -1,0 +1,52 @@
+{
+  "label": "cube",
+  "mesh_sha256": "c773fee032737a0dee877e77eb2dfd58957d2912dd403e6b85c8d8be66d8f83d",
+  "triangles": 12,
+  "nodes": 7,
+  "candidate_count": 4,
+  "center": [
+    0.5,
+    0.5,
+    0.5
+  ],
+  "expected": [
+    [
+      0.24999999999999997,
+      1.5,
+      1.0,
+      0.0
+    ],
+    [
+      1.0,
+      6.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.1875,
+      1.375,
+      1.0,
+      0.0
+    ]
+  ],
+  "reference": "Manifold float64",
+  "board_validated": false,
+  "abi": "0x00050000",
+  "provenance": {
+    "population": "analytic_cube"
+  },
+  "sha256": {
+    "board_vectors.npz": "0ab024078717bc046edc79053d6981fdbb095eac26ce35733a522e71a62119c2",
+    "mesh.hex": "60e5c2b55b281aa57fb54624d023af4a025026afd040fce9dc42c7522a335389",
+    "bvh.hex": "cd539f0e2ce311f59f0ed04a29fbc19d0cf5c0d4d1410a1e14115b820aac22d6",
+    "candidates.hex": "5034a09dbfbf54bdf0d3f5787330ffc496a227dcac5863fa838c9a08ec97d9d5",
+    "expected.hex": "1a746599bbc030bbe5cddb14a26a3987456ff00c0a53878b4df1a8627d57f68a",
+    "vectors.vh": "b49bdc376b74616d54665cdc0de4413446435741351118c2be318a7d884584ce"
+  }
+}

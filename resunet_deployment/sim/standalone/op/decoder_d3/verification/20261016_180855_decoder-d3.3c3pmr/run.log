@@ -1,0 +1,67 @@
+[info] welcome to sbt 1.10.2 (Eclipse Adoptium Java 17.0.20.1)
+[info] loading project definition from /home/jayzhang/.cache/decoder-d3.3C3pmR/project/project
+[info] loading settings for project project from build.sbt ...
+[info] set current project to project (in build file:/home/jayzhang/.cache/decoder-d3.3C3pmR/project/)
+[info] compiling 8 Scala sources to /home/jayzhang/.cache/decoder-d3.3C3pmR/project/target/scala-2.13/classes ...
+[info] done compiling
+[info] running (fork) DecoderD3Sim /home/jayzhang/.cache/decoder-d3.3C3pmR/run /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Concat/concat.sv
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 3072.0MiB
+[info] [Runtime] Current date : 2026.10.16 18:09:12
+[info] [Progress] at 0.000 : Elaborate components
+[info] [Progress] at 0.585 : Checks and transforms
+[info] [Progress] at 1.334 : Generate Verilog to /home/jayzhang/.cache/decoder-d3.3C3pmR/run/compiled/tmp/job_1
+[info] [Warning] 1912 signals were pruned. You can call printPruned on the backend report to get more informations.
+[info] [Done] at 1.715
+[info] [Progress] Simulation workspace in /home/jayzhang/.cache/decoder-d3.3C3pmR/run/compiled/DecoderD3Harness
+[info] [Progress] Verilator compilation started
+[info] [Progress] Verilator compilation done in 7511.611 ms
+[info] [Progress] Start DecoderD3Harness vessel_d3 simulation with seed 20261016
+[info] [STAGE PASSED] trial=0 phase=up cycles=708 outputs=512 stalls=0
+[info] [Error] Simulation failed at time=5896
+[error] READ ERROR : io_cat_rd_o_payload_address : UInt[32 bits] is too big to be read with an Int
+[error] Exception in thread "main" java.lang.Exception
+[error] 	at spinal.sim.SimError$.apply(Misc.scala:12)
+[error] 	at spinal.sim.DataType.readIntError(Signal.scala:15)
+[error] 	at spinal.sim.UIntDataType.raw64ToInt(Signal.scala:99)
+[error] 	at spinal.sim.SimVerilator.getIntMem(SimVerilator.scala:15)
+[error] 	at spinal.sim.SimVerilator.getInt(SimVerilator.scala:98)
+[error] 	at spinal.sim.SimManager.getInt(SimManager.scala:143)
+[error] 	at spinal.core.sim.package$.spinal$core$sim$package$$getInt(package.scala:134)
+[error] 	at spinal.core.sim.package$SimBitVectorPimper.toInt(package.scala:552)
+[error] 	at DecoderD3Sim$.$anonfun$new$14(DecoderD3Sim.scala:110)
+[error] 	at DecoderD3Sim$Watch$1.sample(DecoderD3Sim.scala:82)
+[error] 	at DecoderD3Sim$.$anonfun$new$64(DecoderD3Sim.scala:223)
+[error] 	at DecoderD3Sim$.$anonfun$new$64$adapted(DecoderD3Sim.scala:223)
+[error] 	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+[error] 	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+[error] 	at scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+[error] 	at DecoderD3Sim$.$anonfun$new$59(DecoderD3Sim.scala:223)
+[error] 	at spinal.core.sim.package$SimClockDomainPimper.$anonfun$onSamplings$2(package.scala:1205)
+[error] 	at spinal.core.sim.package$SimClockDomainPimper.$anonfun$onSamplings$2$adapted(package.scala:1205)
+[error] 	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+[error] 	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+[error] 	at scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+[error] 	at spinal.core.sim.package$SimClockDomainPimper.$anonfun$onSamplings$1(package.scala:1205)
+[error] 	at spinal.core.sim.package$$anon$1.update(package.scala:248)
+[error] 	at spinal.sim.SimManager.runWhile(SimManager.scala:340)
+[error] 	at spinal.sim.SimManager.run(SimManager.scala:251)
+[error] 	at spinal.core.sim.SimCompiled.doSimApi(SimBootstraps.scala:626)
+[error] 	at spinal.core.sim.SimCompiled.doSim(SimBootstraps.scala:590)
+[error] 	at DecoderD3Sim$.delayedEndpoint$DecoderD3Sim$1(DecoderD3Sim.scala:46)
+[error] 	at DecoderD3Sim$delayedInit$body.apply(DecoderD3Sim.scala:10)
+[error] 	at scala.Function0.apply$mcV$sp(Function0.scala:42)
+[error] 	at scala.Function0.apply$mcV$sp$(Function0.scala:42)
+[error] 	at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:17)
+[error] 	at scala.App.$anonfun$main$1(App.scala:98)
+[error] 	at scala.App.$anonfun$main$1$adapted(App.scala:98)
+[error] 	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+[error] 	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+[error] 	at scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+[error] 	at scala.App.main(App.scala:98)
+[error] 	at scala.App.main$(App.scala:96)
+[error] 	at DecoderD3Sim$.main(DecoderD3Sim.scala:10)
+[error] 	at DecoderD3Sim.main(DecoderD3Sim.scala)
+[error] Nonzero exit code returned from runner: 1
+[error] (Compile / runMain) Nonzero exit code returned from runner: 1
+[error] Total time: 22 s, completed Oct 16, 2026, 6:09:23 PM

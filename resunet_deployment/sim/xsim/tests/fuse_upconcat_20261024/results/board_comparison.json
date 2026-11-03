@@ -1,0 +1,286 @@
+[
+  {
+    "task": "vessel",
+    "inputs_equal": true,
+    "output_sha_equal": true,
+    "golden_verified": [
+      false,
+      false,
+      false
+    ],
+    "timings": {
+      "hardware_seconds": {
+        "before": 0.24897102133333335,
+        "after": 0.247016564,
+        "reduction_percent": 0.7850139839032266
+      },
+      "fpga_run_seconds": {
+        "before": 0.6952527333329878,
+        "after": 0.6921753999999964,
+        "reduction_percent": 0.4426208176469659
+      },
+      "upload_seconds": {
+        "before": 0.9026514000009532,
+        "after": 0.8486857666666575,
+        "reduction_percent": 5.9785686184321785
+      },
+      "download_seconds": {
+        "before": 0.4001000333337288,
+        "after": 0.8078317000000084,
+        "reduction_percent": -101.90743131635412
+      },
+      "wall_seconds": {
+        "before": 2.007752299999993,
+        "after": 2.3578186666666645,
+        "reduction_percent": -17.435734809850434
+      }
+    },
+    "ops": {
+      "1": {
+        "before_cycles": 14873790,
+        "after_cycles": 14397700,
+        "after_share_percent": 23.31454986961927
+      },
+      "2": {
+        "before_cycles": 1272571.3333333333,
+        "after_cycles": 1270909.6666666667,
+        "after_share_percent": 2.0580152943373737
+      },
+      "5": {
+        "before_cycles": 5410800.333333333,
+        "after_cycles": 5410821.666666667,
+        "after_share_percent": 8.7618766596829
+      },
+      "10": {
+        "before_cycles": 1962409,
+        "after_cycles": 1962301.3333333333,
+        "after_share_percent": 3.17760283206487
+      },
+      "11": {
+        "before_cycles": 16116951.333333334,
+        "after_cycles": 16116717,
+        "after_share_percent": 26.098196394635302
+      },
+      "12": {
+        "before_cycles": 22606233.333333332,
+        "after_cycles": 22595691.333333332,
+        "after_share_percent": 36.589758949660286
+      }
+    },
+    "d1.up": 1123188.6666666667,
+    "d1.concat": 3091876
+  },
+  {
+    "task": "tumor",
+    "inputs_equal": true,
+    "output_sha_equal": true,
+    "golden_verified": [
+      false,
+      false,
+      false
+    ],
+    "timings": {
+      "hardware_seconds": {
+        "before": 1.2168752066666666,
+        "after": 1.2160380893333333,
+        "reduction_percent": 0.06879237318231368
+      },
+      "fpga_run_seconds": {
+        "before": 1.55879386666129,
+        "after": 1.5528587999999768,
+        "reduction_percent": 0.38074737065941777
+      },
+      "upload_seconds": {
+        "before": 0.8132638000000346,
+        "after": 0.8256897666666703,
+        "reduction_percent": -1.5279134109541292
+      },
+      "download_seconds": {
+        "before": 0.4186219333338765,
+        "after": 0.8989717666666763,
+        "reduction_percent": -114.74550067344218
+      },
+      "wall_seconds": {
+        "before": 2.8019552000005206,
+        "after": 3.2877757333333286,
+        "reduction_percent": -17.338626018457326
+      }
+    },
+    "ops": {
+      "1": {
+        "before_cycles": 66134716,
+        "after_cycles": 65960141.333333336,
+        "after_share_percent": 21.69673529535397
+      },
+      "2": {
+        "before_cycles": 5090507.666666667,
+        "after_cycles": 5082932,
+        "after_share_percent": 1.6719647335344925
+      },
+      "5": {
+        "before_cycles": 21642871.333333332,
+        "after_cycles": 21642877.333333332,
+        "after_share_percent": 7.119144547585207
+      },
+      "10": {
+        "before_cycles": 7848805.333333333,
+        "after_cycles": 7848793,
+        "after_share_percent": 2.5817589329962294
+      },
+      "11": {
+        "before_cycles": 64476277,
+        "after_cycles": 64476099.666666664,
+        "after_share_percent": 21.208578985223824
+      },
+      "12": {
+        "before_cycles": 139025624.33333334,
+        "after_cycles": 138998679,
+        "after_share_percent": 45.721817505306284
+      }
+    },
+    "d1.up": 4492776.666666667,
+    "d1.concat": 12367315
+  },
+  {
+    "task": "lobe",
+    "inputs_equal": true,
+    "output_sha_equal": true,
+    "golden_verified": [
+      true,
+      true,
+      true
+    ],
+    "timings": {
+      "hardware_seconds": {
+        "before": 0.259458536,
+        "after": 0.24701714266666666,
+        "reduction_percent": 4.795137413915473
+      },
+      "fpga_run_seconds": {
+        "before": 0.7050853666611753,
+        "after": 0.69557420000001,
+        "reduction_percent": 1.3489383145481981
+      },
+      "upload_seconds": {
+        "before": 0.7931724000009126,
+        "after": 0.7909335333333255,
+        "reduction_percent": 0.2822673440962542
+      },
+      "download_seconds": {
+        "before": 0.8338848666668733,
+        "after": 0.872986966666673,
+        "reduction_percent": -4.6891485339091155
+      },
+      "wall_seconds": {
+        "before": 2.3426581999992777,
+        "after": 2.3673451666666665,
+        "reduction_percent": -1.0538014750677949
+      }
+    },
+    "ops": {
+      "1": {
+        "before_cycles": 17495287.333333332,
+        "after_cycles": 14397752.666666666,
+        "after_share_percent": 23.314580536777534
+      },
+      "2": {
+        "before_cycles": 1272912,
+        "after_cycles": 1270932.3333333333,
+        "after_share_percent": 2.058047177799919
+      },
+      "5": {
+        "before_cycles": 5410725.666666667,
+        "after_cycles": 5410849.333333333,
+        "after_share_percent": 8.761900935166944
+      },
+      "10": {
+        "before_cycles": 1962446.6666666667,
+        "after_cycles": 1962303.6666666667,
+        "after_share_percent": 3.1775991665722834
+      },
+      "11": {
+        "before_cycles": 16116808.333333334,
+        "after_cycles": 16116937.666666666,
+        "after_share_percent": 26.098492586671053
+      },
+      "12": {
+        "before_cycles": 22606454,
+        "after_cycles": 22595510,
+        "after_share_percent": 36.58937959701226
+      }
+    },
+    "d1.up": 1123190.3333333333,
+    "d1.concat": 3091906
+  },
+  {
+    "task": "airway",
+    "inputs_equal": true,
+    "output_sha_equal": true,
+    "golden_verified": [
+      false,
+      false,
+      false
+    ],
+    "timings": {
+      "hardware_seconds": {
+        "before": 0.24897401733333333,
+        "after": 0.24701412533333333,
+        "reduction_percent": 0.7871873623567893
+      },
+      "fpga_run_seconds": {
+        "before": 0.6883605666638081,
+        "after": 0.6804535999999738,
+        "reduction_percent": 1.1486664179727768
+      },
+      "upload_seconds": {
+        "before": 0.7713845666658017,
+        "after": 0.8864244666666726,
+        "reduction_percent": -14.913430339696099
+      },
+      "download_seconds": {
+        "before": 0.4006160666661647,
+        "after": 0.9867264333333404,
+        "reduction_percent": -146.30226180009504
+      },
+      "wall_seconds": {
+        "before": 1.8679916333348956,
+        "after": 2.5663484999999944,
+        "reduction_percent": -37.38543868198882
+      }
+    },
+    "ops": {
+      "1": {
+        "before_cycles": 14873733,
+        "after_cycles": 14397834,
+        "after_share_percent": 23.314997036012958
+      },
+      "2": {
+        "before_cycles": 1272821.3333333333,
+        "after_cycles": 1270985.6666666667,
+        "after_share_percent": 2.0581586821426257
+      },
+      "5": {
+        "before_cycles": 5410801,
+        "after_cycles": 5410745.333333333,
+        "after_share_percent": 8.761839552344304
+      },
+      "10": {
+        "before_cycles": 1962218,
+        "after_cycles": 1962227.3333333333,
+        "after_share_percent": 3.1775143719986123
+      },
+      "11": {
+        "before_cycles": 16116980,
+        "after_cycles": 16116930,
+        "after_share_percent": 26.098798970708255
+      },
+      "12": {
+        "before_cycles": 22606951,
+        "after_cycles": 22594809,
+        "after_share_percent": 36.58869138679324
+      }
+    },
+    "d1.up": 1123144.6666666667,
+    "d1.concat": 3091833.3333333335
+  }
+]

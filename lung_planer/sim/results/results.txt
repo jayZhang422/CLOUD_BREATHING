@@ -1,0 +1,5 @@
+sim_ray_mesh PASS seconds=84 marker=RAY_MESH_RTL_PASS
+sim_1 PASS seconds=130 marker=DUAL_PLANE_MESH_RTL_GEOMETRY_PASS
+sim_centerline_distance PASS seconds=30 marker=CENTERLINE_DISTANCE_CORE_TEST_PASS
+sim_branch_batch PASS seconds=11 marker=DUAL_PLANE_BATCH_RTL_PASS
+TOTAL_SECONDS 343

@@ -1,0 +1,504 @@
+{
+  "title": "BIN_UDP 实验迭代与中间证据摘要",
+  "generated_at": "2026-10-30",
+  "purpose": "保留实验迭代过程中的失败、修复、性能变化和数据一致性证据，供后续整理时判断哪些原始记录值得继续保留。",
+  "preservation": {
+    "raw_files_modified": false,
+    "raw_files_moved": false,
+    "renamed_from": "BIN_UDP_experiment_archive_index.json",
+    "raw_files_deleted": false,
+    "name": "output_summary.json"
+  },
+  "scope": {
+    "binary_data": "BIN 等大文件不逐个罗列；保留关键实验指标和原始证据路径。",
+    "output_file_count": 1583,
+    "output_total_bytes": 1736780063
+  },
+  "board_iteration": {
+    "early_failures": [
+      {
+        "time": "20261016 125243",
+        "run": "board_20261016_125243_327657",
+        "selected": 7,
+        "passed_before_abort": 1,
+        "case": "vessel_mid_dw3",
+        "error": "RPC 0x21: INVALID, state=0, run_id=0x0ac067bb",
+        "report": "output/board_20261016_125243_327657/report.json"
+      },
+      {
+        "time": "20261016 125249",
+        "run": "board_20261016_125249_245611",
+        "selected": 28,
+        "passed_before_abort": 1,
+        "case": "vessel_mid_dw3",
+        "error": "RPC 0x21: INVALID, state=0, run_id=0x3ec14faa",
+        "report": "output/board_20261016_125249_245611/report.json"
+      },
+      {
+        "time": "20261016 125257",
+        "run": "board_20261016_125257_637435",
+        "selected": 52,
+        "passed_before_abort": 1,
+        "case": "vessel_mid_dw3",
+        "error": "RPC 0x21: INVALID, state=0, run_id=0xb255b24b",
+        "report": "output/board_20261016_125257_637435/report.json"
+      }
+    ],
+    "decoder_passes": [
+      {
+        "time": "20261016 203544",
+        "suite": "decoder",
+        "passed": 1,
+        "selected": 1,
+        "report": "output/board_20261016_203544_352367/report.json"
+      },
+      {
+        "time": "20261016 203548",
+        "suite": "decoder",
+        "passed": 9,
+        "selected": 9,
+        "report": "output/board_20261016_203548_893543/report.json"
+      },
+      {
+        "time": "20261016 203554",
+        "suite": "mkdc",
+        "passed": 52,
+        "selected": 52,
+        "report": "output/board_20261016_203554_631537/report.json"
+      }
+    ],
+    "interpretation": "10 月 16 日 12:52 的 7/28/52 项 mkdc 批次均卡在 vessel_mid_dw3，错误为 RPC 0x21 INVALID；17:27 的 7/28/52 项随后全部通过。当晚 Decoder 的 1/1、9/9 与 MKDC 52/52 通过。10 月 17 日 fullnet 59/59 有 4 次通过记录。",
+    "recovery_passes": [
+      {
+        "time": "20261016 172713",
+        "run": "board_20261016_172713_423257",
+        "passed": 7,
+        "selected": 7,
+        "report": "output/board_20261016_172713_423257/report.json"
+      },
+      {
+        "time": "20261016 172718",
+        "run": "board_20261016_172718_655266",
+        "passed": 28,
+        "selected": 28,
+        "report": "output/board_20261016_172718_655266/report.json"
+      },
+      {
+        "time": "20261016 172723",
+        "run": "board_20261016_172723_660380",
+        "passed": 52,
+        "selected": 52,
+        "report": "output/board_20261016_172723_660380/report.json"
+      }
+    ],
+    "fullnet_passes": [
+      {
+        "time": "20261017 095910",
+        "passed": 59,
+        "selected": 59,
+        "report": "output/board_20261017_095910_120896/report.json"
+      },
+      {
+        "time": "20261017 130413",
+        "passed": 59,
+        "selected": 59,
+        "report": "output/board_20261017_130413_742560/report.json"
+      },
+      {
+        "time": "20261017 130419",
+        "passed": 59,
+        "selected": 59,
+        "report": "output/board_20261017_130419_569201/report.json"
+      },
+      {
+        "time": "20261017 155729",
+        "passed": 1,
+        "selected": 1,
+        "report": "output/board_20261017_155729_192885/report.json"
+      },
+      {
+        "time": "20261017 155738",
+        "passed": 59,
+        "selected": 59,
+        "report": "output/board_20261017_155738_809659/report.json"
+      }
+    ]
+  },
+  "ct_slice_benchmarks": {
+    "failed_attempts": [
+      {
+        "run_id": "20261017_165448_890843",
+        "elapsed_seconds": 2.1026168999997026,
+        "error": "operator RPC 0x22 timed out",
+        "source": "ct_01/benchmarks/20261017_165448_890843/performance.json"
+      },
+      {
+        "run_id": "20261017_170142_021314",
+        "elapsed_seconds": 2.0993228999977873,
+        "error": "operator RPC 0x22 timed out",
+        "source": "ct_01/benchmarks/20261017_170142_021314/performance.json"
+      },
+      {
+        "run_id": "20261018_120917_171362",
+        "elapsed_seconds": 8.05803399999968,
+        "error": "operator RPC 0x22 timed out",
+        "source": "ct_01/benchmarks/20261018_120917_171362/performance.json"
+      },
+      {
+        "run_id": "20261018_121635_638836",
+        "elapsed_seconds": 603.504842100001,
+        "error": "operator run did not drain before deadline",
+        "source": "ct_01/benchmarks/20261018_121635_638836/performance.json"
+      },
+      {
+        "run_id": "20261018_144104_790639",
+        "elapsed_seconds": 63.48472849999962,
+        "error": "operator run did not drain before deadline",
+        "source": "ct_01/benchmarks/20261018_144104_790639/performance.json"
+      }
+    ],
+    "completed_attempts": [
+      {
+        "run_id": "20261018_094036_233174",
+        "elapsed_seconds": 21.982,
+        "measurements": [
+          {
+            "model": "lobe",
+            "slice": 136,
+            "repeat": 0,
+            "fpga_wait_seconds": 4.455,
+            "wall_seconds": 6.661,
+            "slices_per_second": 0.15,
+            "output_sha256": "334cdb189f9d8592c357ba94d826d06697d99101e7ac07bb348f599a796dbd36"
+          },
+          {
+            "model": "lobe",
+            "slice": 136,
+            "repeat": 1,
+            "fpga_wait_seconds": 4.478,
+            "wall_seconds": 6.322,
+            "slices_per_second": 0.158,
+            "output_sha256": "334cdb189f9d8592c357ba94d826d06697d99101e7ac07bb348f599a796dbd36"
+          },
+          {
+            "model": "lobe",
+            "slice": 136,
+            "repeat": 2,
+            "fpga_wait_seconds": 4.365,
+            "wall_seconds": 6.462,
+            "slices_per_second": 0.155,
+            "output_sha256": "334cdb189f9d8592c357ba94d826d06697d99101e7ac07bb348f599a796dbd36"
+          }
+        ],
+        "source": "ct_01/benchmarks/20261018_094036_233174/performance.json"
+      },
+      {
+        "run_id": "20261018_115257_940115",
+        "elapsed_seconds": 20.968,
+        "measurements": [
+          {
+            "model": "lobe",
+            "slice": 136,
+            "repeat": 0,
+            "fpga_wait_seconds": 4.376,
+            "wall_seconds": 6.348,
+            "slices_per_second": 0.158,
+            "output_sha256": "334cdb189f9d8592c357ba94d826d06697d99101e7ac07bb348f599a796dbd36"
+          },
+          {
+            "model": "lobe",
+            "slice": 136,
+            "repeat": 1,
+            "fpga_wait_seconds": 4.407,
+            "wall_seconds": 6.005,
+            "slices_per_second": 0.167,
+            "output_sha256": "334cdb189f9d8592c357ba94d826d06697d99101e7ac07bb348f599a796dbd36"
+          },
+          {
+            "model": "lobe",
+            "slice": 136,
+            "repeat": 2,
+            "fpga_wait_seconds": 4.378,
+            "wall_seconds": 6.059,
+            "slices_per_second": 0.165,
+            "output_sha256": "334cdb189f9d8592c357ba94d826d06697d99101e7ac07bb348f599a796dbd36"
+          }
+        ],
+        "source": "ct_01/benchmarks/20261018_115257_940115/performance.json"
+      }
+    ],
+    "interpretation": "早期有 RPC 0x22 timeout 和 run 未 drain 记录；完成的 slice 136 重复实验保存了上传、FPGA等待、下载、总耗时和输出哈希，重复输出哈希一致。"
+  },
+  "fixed_suite_progress": {
+    "per_model": [
+      {
+        "task": "vessel",
+        "slice": 163,
+        "repeats": 3,
+        "golden_verified": false,
+        "baseline_fpga_run_seconds": 2.235,
+        "latest_fpga_run_seconds": 0.677,
+        "fpga_run_reduction_percent": 69.7,
+        "baseline_wall_seconds": 3.421,
+        "latest_wall_seconds": 2.479,
+        "input_sha256": "331641e11b7af18bce8d147d1f02643bc8ee137777f7c205bdf78987f8e45b87",
+        "baseline_output_sha256": "20f68b5e84572ddd88a12c865ba8bebeb8d52ee248b03bfa9eecebb4c4557265",
+        "latest_output_sha256": "20f68b5e84572ddd88a12c865ba8bebeb8d52ee248b03bfa9eecebb4c4557265",
+        "input_hash_same_between_suites": true,
+        "output_hash_same_between_suites": true,
+        "output_repeats_match_in_each_suite": true
+      },
+      {
+        "task": "tumor",
+        "slice": 163,
+        "repeats": 3,
+        "golden_verified": false,
+        "baseline_fpga_run_seconds": 8.52,
+        "latest_fpga_run_seconds": 1.185,
+        "fpga_run_reduction_percent": 86.1,
+        "baseline_wall_seconds": 9.651,
+        "latest_wall_seconds": 2.879,
+        "input_sha256": "61c837a20472c837b047d8800db20f3d2bd996888ff4b0f89c37a31b773d6585",
+        "baseline_output_sha256": "5f7c45c140fa9db9d46e1132ae8368e6b0d934cc2a5e101a0ae2fe9f6f27c3d4",
+        "latest_output_sha256": "5f7c45c140fa9db9d46e1132ae8368e6b0d934cc2a5e101a0ae2fe9f6f27c3d4",
+        "input_hash_same_between_suites": true,
+        "output_hash_same_between_suites": true,
+        "output_repeats_match_in_each_suite": true
+      },
+      {
+        "task": "lobe",
+        "slice": 136,
+        "repeats": 3,
+        "golden_verified": true,
+        "baseline_fpga_run_seconds": 2.254,
+        "latest_fpga_run_seconds": 0.679,
+        "fpga_run_reduction_percent": 69.9,
+        "baseline_wall_seconds": 3.804,
+        "latest_wall_seconds": 2.454,
+        "input_sha256": "00b940d8d4a57feb8a5fe83dc451426bac8035e19cc9b5e94b74e2174f2765de",
+        "baseline_output_sha256": "334cdb189f9d8592c357ba94d826d06697d99101e7ac07bb348f599a796dbd36",
+        "latest_output_sha256": "334cdb189f9d8592c357ba94d826d06697d99101e7ac07bb348f599a796dbd36",
+        "input_hash_same_between_suites": true,
+        "output_hash_same_between_suites": true,
+        "output_repeats_match_in_each_suite": true
+      },
+      {
+        "task": "airway",
+        "slice": 163,
+        "repeats": 3,
+        "golden_verified": false,
+        "baseline_fpga_run_seconds": 2.234,
+        "latest_fpga_run_seconds": 0.677,
+        "fpga_run_reduction_percent": 69.7,
+        "baseline_wall_seconds": 3.333,
+        "latest_wall_seconds": 2.482,
+        "input_sha256": "61c837a20472c837b047d8800db20f3d2bd996888ff4b0f89c37a31b773d6585",
+        "baseline_output_sha256": "a3d2106ce35812549b80197a27453e7aee3d6fb1dcd54366d8da815e1db73de1",
+        "latest_output_sha256": "a3d2106ce35812549b80197a27453e7aee3d6fb1dcd54366d8da815e1db73de1",
+        "input_hash_same_between_suites": true,
+        "output_hash_same_between_suites": true,
+        "output_repeats_match_in_each_suite": true
+      }
+    ],
+    "baseline_run": "output/ct_01/fixed_benchmark/all_models_fused_residual/runs/suite_20261020_202451_934087.json",
+    "latest_run": "output/ct_01/fixed_benchmark/all_models_fused_residual/runs/suite_20261027_170937_998675.json",
+    "comparison_scope": "同一 all_models_fused_residual 固定基准目录；比较最早完整与最近完整 suite。模型、切片和重复次数相同。",
+    "last_three_slice_run": {
+      "source": "output/ct_01/fixed_benchmark/lobe_slices_68_136_204/runs/fused_residual_20261020_200705_281880.json",
+      "profile": "fused_residual",
+      "slices": [
+        {
+          "slice": 68,
+          "repeats": 3,
+          "input_sha256": "9ccba026fee851c6d48a244c66a1d86a8c8a35f44faabca7b0fc838df7cc6376",
+          "output_sha256": "60670c5fd91294907c5d769b0982095bbe1645c05b60b4b4546c779b3bf26e72",
+          "repeat_output_hashes_match": true,
+          "mean_upload_seconds": 0.818,
+          "mean_fpga_run_seconds": 2.246,
+          "mean_download_seconds": 0.789,
+          "mean_wall_seconds": 3.861
+        },
+        {
+          "slice": 136,
+          "repeats": 3,
+          "input_sha256": "00b940d8d4a57feb8a5fe83dc451426bac8035e19cc9b5e94b74e2174f2765de",
+          "output_sha256": "334cdb189f9d8592c357ba94d826d06697d99101e7ac07bb348f599a796dbd36",
+          "repeat_output_hashes_match": true,
+          "mean_upload_seconds": 0.757,
+          "mean_fpga_run_seconds": 2.263,
+          "mean_download_seconds": 0.794,
+          "mean_wall_seconds": 3.823
+        },
+        {
+          "slice": 204,
+          "repeats": 3,
+          "input_sha256": "facd7ff3288ece16f439a32ea2b7d115a10e1488797136dad37f59eab3ff880f",
+          "output_sha256": "179c97e2696bba07dce9e94bc470f1eaf00739d6ec0c3fd139ec78e902043468",
+          "repeat_output_hashes_match": true,
+          "mean_upload_seconds": 0.746,
+          "mean_fpga_run_seconds": 2.259,
+          "mean_download_seconds": 0.787,
+          "mean_wall_seconds": 3.8
+        }
+      ]
+    },
+    "history": {
+      "slice_runs_failed": 4,
+      "suite_runs": 22,
+      "suite_complete": 18,
+      "slice_runs_complete": 8,
+      "failed_runs_retained": true,
+      "suite_failed": 4,
+      "fused_and_fused_residual_slice_runs": 12
+    },
+    "data_equivalence": "四个模型的输入 SHA256 在首尾 suite 间一致；每个 suite 内 3 次重复输出哈希一致；四个模型首尾输出 SHA256 也一致。只有 lobe 的记录标记 independent Golden verified。",
+    "evidence_scope": "同一固定输入与切片、每模型 3 次重复；记录的 FPGA 时间是 RUN/STATUS 等待时间，不是单独的硬件周期时间。"
+  },
+  "data_match_evidence": {
+    "repeated_run_count": 12,
+    "repeated_log_source": "output/ct_01/output/10_23_18_21.txt",
+    "ct_case_comparison": {
+      "source": "results/ct_pipeline_20261017/五肺叶对比.md",
+      "boundary": "仅说明此病例与所述参考结果一致，不代表医学准确性。",
+      "voxel_differences": 0,
+      "voxel_count": 85458944,
+      "label_bit_comparison": "bit0..4"
+    },
+    "model_slice_groups": [
+      {
+        "model": "airway",
+        "slice": 163,
+        "repeats": 3,
+        "mean_fpga_run_seconds": 0.702,
+        "mean_wall_seconds": 2.043,
+        "same_output_sha256_across_repeats": true,
+        "top_hardware_stages": [
+          {
+            "stage": "d1.out",
+            "mean_hardware_seconds": 0.025565
+          },
+          {
+            "stage": "d1.expand",
+            "mean_hardware_seconds": 0.021303
+          }
+        ]
+      },
+      {
+        "model": "lobe",
+        "slice": 136,
+        "repeats": 3,
+        "mean_fpga_run_seconds": 0.707,
+        "mean_wall_seconds": 2.51,
+        "same_output_sha256_across_repeats": true,
+        "top_hardware_stages": [
+          {
+            "stage": "d1.out",
+            "mean_hardware_seconds": 0.025565
+          },
+          {
+            "stage": "d1.expand",
+            "mean_hardware_seconds": 0.021303
+          }
+        ]
+      },
+      {
+        "model": "tumor",
+        "slice": 163,
+        "repeats": 3,
+        "mean_fpga_run_seconds": 1.705,
+        "mean_wall_seconds": 2.951,
+        "same_output_sha256_across_repeats": true,
+        "top_hardware_stages": [
+          {
+            "stage": "d1.out",
+            "mean_hardware_seconds": 0.191729
+          },
+          {
+            "stage": "d2.out",
+            "mean_hardware_seconds": 0.133253
+          }
+        ]
+      },
+      {
+        "model": "vessel",
+        "slice": 163,
+        "repeats": 3,
+        "mean_fpga_run_seconds": 0.699,
+        "mean_wall_seconds": 2.045,
+        "same_output_sha256_across_repeats": true,
+        "top_hardware_stages": [
+          {
+            "stage": "d1.out",
+            "mean_hardware_seconds": 0.025564
+          },
+          {
+            "stage": "d1.expand",
+            "mean_hardware_seconds": 0.021303
+          }
+        ]
+      }
+    ],
+    "cycle_records": 372
+  },
+  "end_to_end": {
+    "full_volume": {
+      "source": "output/ct_01/prediction/performance.json",
+      "saved_status": "running",
+      "session_elapsed_seconds": 2641.6834041,
+      "timed_slices": 272,
+      "mean_upload_seconds": 0.83,
+      "mean_fpga_run_seconds": 7.935,
+      "mean_download_seconds": 0.888,
+      "mean_wall_seconds": 9.675,
+      "unique_slice_output_hashes": 208,
+      "status_boundary": "保存快照为 running；有逐切片计时不代表整次报告完成。"
+    },
+    "postprocess": {
+      "source": "output/ct_01/work_lobe/run_metadata.json",
+      "status": "complete",
+      "elapsed_seconds": 90.73922630000015,
+      "input_sha256": "97bec9066135a8db4d08c60ee222c2b4396843cd3ed37289d22b1f19e1e48918",
+      "prediction_sha256": "18c4d03ce3d50822924f10e0e2547f9d13a7a9dd181705a362cc3c7641d06990"
+    }
+  },
+  "resources": {
+    "not_recorded": [
+      "LUT/FF/DSP/BRAM/URAM 利用率",
+      "WNS/TNS/关键路径 slack"
+    ],
+    "timing_note": "PC/RPC 时间与硬件计算时间分开记录。",
+    "recorded": [
+      "上传/下载/wall 时间",
+      "FPGA RUN/STATUS 等待时间",
+      "硬件秒与逐阶段周期",
+      "output_stall 与 DDR_wait",
+      "arena_bytes 与 peak_live_bytes"
+    ]
+  },
+  "evidence_files_to_keep": [
+    "output/board_20261016_125243_327657/report.json",
+    "output/board_20261016_125249_245611/report.json",
+    "output/board_20261016_125257_637435/report.json",
+    "output/board_20261016_172713_423257/report.json",
+    "output/board_20261016_172718_655266/report.json",
+    "output/board_20261016_172723_660380/report.json",
+    "output/board_20261016_203548_893543/report.json",
+    "output/board_20261017_095910_120896/report.json",
+    "output/board_20261017_130413_742560/report.json",
+    "output/board_20261017_130419_569201/report.json",
+    "output/board_20261017_155738_809659/report.json",
+    "output/ct_01/fixed_benchmark/all_models_fused_residual/runs/*.json",
+    "output/ct_01/fixed_benchmark/lobe_slices_68_136_204/runs/*.json",
+    "output/ct_01/output/10_23_18_21.txt",
+    "output/ct_01/prediction/performance.json",
+    "output/ct_01/work_lobe/run_metadata.json",
+    "results/ct_pipeline_20261017/五肺叶对比.md",
+    "results/ct_pipeline_20261017/lobe_comparison.json",
+    "results/decoder_adapter_20261016_191439_378812/VERIFICATION.md"
+  ],
+  "limitations": [
+    "同一 suite 首尾时间可作固定输入/重复次数下的性能趋势，不可推及不同 profile 或其他硬件环境。",
+    "固定 suite 中只有 lobe 的 independent_golden_available 为 true；重复 SHA256 一致仅证明重复结果稳定。",
+    "原始二进制未嵌入摘要，原始文件仍在原处。"
+  ]
+}

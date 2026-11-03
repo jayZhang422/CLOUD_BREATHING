@@ -1,0 +1,12 @@
+{
+  "whs_ns": 0.01,
+  "clock_mhz": 100,
+  "release": "lung_planner",
+  "build": "Vivado 2026.1",
+  "wns_ns": 0.416,
+  "firmware": {
+    "lung_planner.hwh": "fa41e0126bf86d36a7182321ba3d08090d7e8eb3d531642ddc4b775f95ffbf05",
+    "lung_planner.bit": "b425c6512e5562a7d529363ebbf148a5a3e1e05a0076e269fda013693b3b55dd",
+    "lung_planner.bit.bin": "ce5fe3299d7a15ceba05fd6247e405caaa9956944e78f678ebd90d3a9a241dbb"
+  }
+}

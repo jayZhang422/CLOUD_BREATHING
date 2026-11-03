@@ -1,0 +1,41 @@
+--- round2-before/script/scala/LineBUffer/LineBuffer.scala
++++ script/scala/LineBUffer/LineBuffer.scala
+@@ -62,6 +62,8 @@
+   io.done_o := done_r
+   done_r := False
+ 
++  // 原生反压缓冲切断尺寸比较到调度器及其他算子CE的组合ready链。
++  val input = io.input_i.haltWhen(!active_r).s2mPipe()
+   val request = Stream(new Bundle {
+     val pixel = Bits(config.WORD_BITS bits)
+     val bank = UInt(log2Up(config.LINES) bits)
+@@ -71,15 +73,15 @@
+     val group_last = Bool()
+     val last = Bool()
+   })
+-  request.valid := active_r && (!realPixel_w || io.input_i.valid)
+-  request.pixel := Mux(realPixel_w, io.input_i.payload, B(0, config.WORD_BITS bits))
++  request.valid := active_r && (!realPixel_w || input.valid)
++  request.pixel := Mux(realPixel_w, input.payload, B(0, config.WORD_BITS bits))
+   request.bank := bank_r
+   request.emit := x_r >= U(config.k - 1, config.X_BITS bits) && y_r >= U(config.k - 1, config.Y_BITS bits)
+   request.real_column := realColumn_w
+   request.group := group_r
+   request.group_last := groupLast_w
+   request.last := groupLast_w && lastGroup_w
+-  io.input_i.ready := active_r && realPixel_w && request.ready
++  input.ready := active_r && realPixel_w && request.ready
+ 
+   // RAM 数据与元数据同拍推进/保持。RAM 只保存真实列，不为左右补边扩容。
+   val response = request.m2sPipe()
+@@ -138,7 +140,9 @@
+     window.fragment.window(row)(config.k - 1) := pixel_w
+   }
+ 
+-  io.output_o << window.m2sPipe()
++  // 一项半速缓冲：局部空闲位控制宽窗口寄存器，切断writer.ready到数千个CE。
++  // 最大窗口接收率为每两拍一个；DDR串行读取的现有调度不依赖逐拍窗口吞吐。
++  io.output_o << window.halfPipe()
+   when(io.output_o.fire && io.output_o.last) {
+     busy_r := False
+     done_r := True

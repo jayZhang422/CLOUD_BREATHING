@@ -1,0 +1,3 @@
+02000000 48 sim/xsim/tests/rtl_slim_batch2/vectors/pw_tail_clear/input.hex
+08000000 128 sim/xsim/tests/rtl_slim_batch2/vectors/pw_tail_clear/weights_a.hex
+08002000 128 sim/xsim/tests/rtl_slim_batch2/vectors/pw_tail_clear/params_data.hex

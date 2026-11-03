@@ -1,0 +1,396 @@
+--- batch2/PwMac.scala
++++ batch3/PwMac.scala
+@@ -165,8 +165,68 @@
+   mapClockDomain(clockDomain = ClockDomain.current, clock = io.clka)
+   mapClockDomain(clockDomain = ClockDomain.current, clock = io.clkb)
+ }
+-class PwMac(config: PwConfig = PwConfig(), useUramWeights: Boolean = false) extends Component {
+-  val io = new Bundle {
++// 点积入口/出口携带分支标签；标签与数据经过同一条反压流水。
++case class PwOperands() extends Bundle {
++  val tag = PwTag()
++  val source = Bool()
++  val input = Bits(128 bits)
++  val weights = Vec(Bits(128 bits), 16)
++  val mask = Bits(16 bits)
++}
++case class PwDotResult() extends Bundle {
++  val tag = PwTag()
++  val source = Bool()
++  val values = Vec(Vec(SInt(20 bits), 1), 16)
++}
++object PwDotPipeline {
++  def apply(operands: Stream[PwOperands]): Stream[PwDotResult] = {
++    case class Products() extends Bundle {
++      val tag = PwTag()
++      val source = Bool()
++      val values = Vec(Vec(SInt(16 bits), 16), 16)
++    }
++    val products_w = Products()
++    products_w.tag := operands.tag
++    products_w.source := operands.source
++    for (p <- 0 until 16; lane <- 0 until 16) {
++      val input_w = operands.input(lane * 8, 8 bits).asSInt
++      val weight_w = operands.weights(p)(lane * 8, 8 bits).asSInt
++      products_w.values(p)(lane).addAttribute("use_dsp", "yes")
++      products_w.values(p)(lane) := Mux(operands.mask(lane), input_w, S(0, 8 bits)) * weight_w
++    }
++    val products = operands.translateWith(products_w).m2sPipe()
++    case class Reduce(count: Int, width: Int) extends Bundle {
++      val tag = PwTag()
++      val source = Bool()
++      val values = Vec(Vec(SInt(width bits), count), 16)
++    }
++    val reduce8_w = Reduce(8, 17)
++    reduce8_w.tag := products.tag
++    reduce8_w.source := products.source
++    for (p <- 0 until 16; j <- 0 until 8)
++      reduce8_w.values(p)(j) := products.values(p)(j * 2).resize(17) + products.values(p)(j * 2 + 1).resize(17)
++    val reduce8 = products.translateWith(reduce8_w).m2sPipe()
++    val reduce4_w = Reduce(4, 18)
++    reduce4_w.tag := reduce8.tag
++    reduce4_w.source := reduce8.source
++    for (p <- 0 until 16; j <- 0 until 4)
++      reduce4_w.values(p)(j) := reduce8.values(p)(j * 2).resize(18) + reduce8.values(p)(j * 2 + 1).resize(18)
++    val reduce4 = reduce8.translateWith(reduce4_w).m2sPipe()
++    val reduce2_w = Reduce(2, 19)
++    reduce2_w.tag := reduce4.tag
++    reduce2_w.source := reduce4.source
++    for (p <- 0 until 16; j <- 0 until 2)
++      reduce2_w.values(p)(j) := reduce4.values(p)(j * 2).resize(19) + reduce4.values(p)(j * 2 + 1).resize(19)
++    val reduce2 = reduce4.translateWith(reduce2_w).m2sPipe()
++    val dot_w = PwDotResult()
++    dot_w.tag := reduce2.tag
++    dot_w.source := reduce2.source
++    for (p <- 0 until 16)
++      dot_w.values(p)(0) := reduce2.values(p)(0).resize(20) + reduce2.values(p)(1).resize(20)
++    reduce2.translateWith(dot_w).m2sPipe()
++  }
++}
++case class PwHostIo(sharedDot: Boolean = false) extends Bundle {
+     val cfg_i = slave Stream(PwRun())                   // 空闲时锁存新的层配置
+     val weights_i = slave Stream(Bits(512 bits))        // [输出组][输入组]，PE 优先、lane0 低字节
+     val params_i = slave Stream(Bits(512 bits))         // 每输出组4路：mult32,bias64,lower16,upper16
+@@ -176,7 +236,13 @@
+     val rd_o = master Stream(UInt(32 bits))             // 128-bit 字偏移：[输入组][像素]
+     val rsp_i = slave Stream(Bits(128 bits))            // 一次只允许一个在途读，返回须支持反压
+     val output_o = master Stream(PwResult())            // 地址标签使块顺序输出可写回分组缓存
+-  }
++    val dotRequest_o = if (sharedDot) master Stream(PwOperands()) else null
++    val dotResponse_i = if (sharedDot) slave Stream(PwDotResult()) else null
++}
++class PwMac(config: PwConfig = PwConfig(), useUramWeights: Boolean = false,
++            sharedDot: Boolean = false) extends Component {
++  val io = PwHostIo(sharedDot)
++  if (sharedDot) setDefinitionName("PwMacFrontend")
+   val IDLE = U(0, 4 bits)
+   val LOAD = U(1, 4 bits)
+   val READY = U(2, 4 bits)
+@@ -350,56 +416,19 @@
+       } otherwise { issueInput_r := issueInput_r + 1 }
+     } otherwise { issuePixel_r := issuePixel_r + 1 }
+   }
+-  case class Products() extends Bundle {
+-    val tag = PwTag()
+-    val values = Vec(Vec(SInt(16 bits), 16), 16)
+-  }
+-  // 官方URAM保持一拍读配置；在IP外捕获操作数和标签后再乘法。
+-  val operands_w = new Bundle {
+-    val tag = PwTag()
+-    val input = Bits(128 bits)
+-    val weights = Vec(Bits(128 bits), 16)
+-    val mask = Bits(16 bits)
+-  }
++  // 官方权重 IP 保持一拍读配置；在 IP 外捕获操作数和标签后再仲裁/乘法。
++  val operands_w = PwOperands()
+   operands_w.tag := response.tag
++  operands_w.source := False
+   operands_w.input := inputData_w
+   operands_w.weights := weightsByPe_w
+   for (lane <- 0 until 16)
+     operands_w.mask(lane) := (response.inputGroup.resize(10) * 16 + lane) < run_r.cin.resize(10)
+   val operands = response.translateWith(operands_w).m2sPipe()
+-  val products_w = Products()
+-  products_w.tag := operands.tag
+-  for (p <- 0 until 16; lane <- 0 until 16) {
+-    val input_w = operands.input(lane * 8, 8 bits).asSInt
+-    val weight_w = operands.weights(p)(lane * 8, 8 bits).asSInt
+-    // 首层3通道及非整组输入：掩码在乘法入口应用，填充值不会参与累加。
+-    products_w.values(p)(lane).addAttribute("use_dsp", "yes")
+-    products_w.values(p)(lane) := Mux(operands.mask(lane), input_w, S(0, 8 bits)) * weight_w
+-  }
+-  val products = operands.translateWith(products_w).m2sPipe()
+-  case class Reduce(count: Int, width: Int) extends Bundle {
+-    val tag = PwTag()
+-    val values = Vec(Vec(SInt(width bits), count), 16)
+-  }
+-  val reduce8_w = Reduce(8, 17)
+-  reduce8_w.tag := products.tag
+-  for (p <- 0 until 16; j <- 0 until 8)
+-    reduce8_w.values(p)(j) := products.values(p)(j * 2).resize(17) + products.values(p)(j * 2 + 1).resize(17)
+-  val reduce8 = products.translateWith(reduce8_w).m2sPipe()
+-  val reduce4_w = Reduce(4, 18)
+-  reduce4_w.tag := reduce8.tag
+-  for (p <- 0 until 16; j <- 0 until 4)
+-    reduce4_w.values(p)(j) := reduce8.values(p)(j * 2).resize(18) + reduce8.values(p)(j * 2 + 1).resize(18)
+-  val reduce4 = reduce8.translateWith(reduce4_w).m2sPipe()
+-  val reduce2_w = Reduce(2, 19)
+-  reduce2_w.tag := reduce4.tag
+-  for (p <- 0 until 16; j <- 0 until 2)
+-    reduce2_w.values(p)(j) := reduce4.values(p)(j * 2).resize(19) + reduce4.values(p)(j * 2 + 1).resize(19)
+-  val reduce2 = reduce4.translateWith(reduce2_w).m2sPipe()
+-  val dot_w = Reduce(1, 20)
+-  dot_w.tag := reduce2.tag
+-  for (p <- 0 until 16) dot_w.values(p)(0) := reduce2.values(p)(0).resize(20) + reduce2.values(p)(1).resize(20)
+-  val dot = reduce2.translateWith(dot_w).m2sPipe()
++  val dot = if (sharedDot) {
++    io.dotRequest_o << operands
++    io.dotResponse_i
++  } else PwDotPipeline(operands)
+ 
+   // 每个 16 通道组在片上完成累加，再按原 PE4 顺序送入再量化器。
+   val acc_r = Vec((0 until 16).map(_ => Vec.fill(config.tilePixels)(Reg(SInt(32 bits)))))
+@@ -472,6 +501,7 @@
+     quantInput_w.upper(p) := paramsSelected_w(p * 128 + 112, 16 bits).asSInt
+   }
+   val requant = new PwRequant
++  if (sharedDot) requant.setDefinitionName("PwSharedRequant")
+   requant.io.input_i << quantResponse.translateWith(quantInput_w)
+   io.output_o << requant.io.output_o
+   // 整个 16 通道组的四个 PE4 结果全部排空后才开始下一组或下一块。
+@@ -495,8 +525,51 @@
+     }
+   }
+ }
++// 两套已验证前端保留各自的权重/输入/累加状态；只有点积流水共享一份。
++// 生产调度按 project/skip 阶段供数，仲裁仍正确处理流水尾部的并发请求。
++class PwMacShared extends Component {
++  val io = new Bundle {
++    val project = PwHostIo()
++    val skip = PwHostIo()
++  }
++  val project = new PwMac(useUramWeights = true, sharedDot = true)
++  val skip = new PwMac(useUramWeights = true, sharedDot = true)
++  for ((core, port) <- Seq((project, io.project), (skip, io.skip))) {
++    core.io.cfg_i << port.cfg_i
++    core.io.weights_i << port.weights_i
++    core.io.params_i << port.params_i
++    core.io.start_i << port.start_i
++    port.busy_o := core.io.busy_o
++    port.done_o := core.io.done_o
++    port.rd_o << core.io.rd_o
++    core.io.rsp_i << port.rsp_i
++    port.output_o << core.io.output_o
++  }
++  val projectRequest_w = PwOperands()
++  projectRequest_w := project.io.dotRequest_o.payload
++  projectRequest_w.source.allowOverride := False
++  val skipRequest_w = PwOperands()
++  skipRequest_w := skip.io.dotRequest_o.payload
++  skipRequest_w.source.allowOverride := True
++  val selected = StreamArbiterFactory.roundRobin.transactionLock.onArgs(
++    project.io.dotRequest_o.translateWith(projectRequest_w),
++    skip.io.dotRequest_o.translateWith(skipRequest_w))
++  // 仲裁后的操作数单独打拍，避免 2048 位权重选择器直接串到 DSP 乘法入口。
++  val operands = selected.m2sPipe()
++  val dot = PwDotPipeline(operands)
++  project.io.dotResponse_i.valid := dot.valid && !dot.source
++  skip.io.dotResponse_i.valid := dot.valid && dot.source
++  project.io.dotResponse_i.payload := dot.payload
++  skip.io.dotResponse_i.payload := dot.payload
++  dot.ready := Mux(dot.source, skip.io.dotResponse_i.ready, project.io.dotResponse_i.ready)
++}
+ object PwGen extends App {
+   SpinalConfig(targetDirectory = "rtl",
+     defaultConfigForClockDomains = ClockDomainConfig(resetKind = ASYNC, resetActiveLevel = LOW))
+     .generateVerilog(new PwMac(useUramWeights = true))
+ }
++object PwSharedGen extends App {
++  SpinalConfig(targetDirectory = "rtl",
++    defaultConfigForClockDomains = ClockDomainConfig(resetKind = ASYNC, resetActiveLevel = LOW))
++    .generateVerilog(new PwMacShared)
++}
+--- batch2/op_core_bank.sv
++++ batch3/op_core_bank.sv
+@@ -188,97 +188,95 @@
+    end
+  end
+  assign fused_dw3_align_ready_w = !fused_dw3_align_valid_r || fused_add_a_ready_w;
+- PwMac u_pw (
+-  .io_cfg_i_valid(cfg_valid_i && (op_i == 8'd1 || (op_i == 8'd12 && !p12_pw_configured_r))),
+-  .io_cfg_i_ready(pw_cfg_ready_w),
+-  .io_cfg_i_payload_cin(cin_i),
+-  .io_cfg_i_payload_cout(cout_i),
+-  .io_cfg_i_payload_pixels(pixels_i),
+-  .io_cfg_i_payload_shift(shift_i),
+-  .io_cfg_i_payload_raw(op_i == 8'd12 ? 1'b1 : raw_i),
+-  .io_cfg_i_payload_int16(op_i == 8'd12 ? 1'b0 : int16_i),
+-  .io_weights_i_valid(weights_valid_i && (op_i == 8'd1 ||
++ // 双权重与分支状态独立保留，内部只实例化一套 PE16 点积流水。
++ PwMacShared u_pw_shared (
++  .io_project_cfg_i_valid(cfg_valid_i && (op_i == 8'd1 || (op_i == 8'd12 && !p12_pw_configured_r))),
++  .io_project_cfg_i_ready(pw_cfg_ready_w),
++  .io_project_cfg_i_payload_cin(cin_i),
++  .io_project_cfg_i_payload_cout(cout_i),
++  .io_project_cfg_i_payload_pixels(pixels_i),
++  .io_project_cfg_i_payload_shift(shift_i),
++  .io_project_cfg_i_payload_raw(op_i == 8'd12 ? 1'b1 : raw_i),
++  .io_project_cfg_i_payload_int16(op_i == 8'd12 ? 1'b0 : int16_i),
++  .io_project_weights_i_valid(weights_valid_i && (op_i == 8'd1 ||
+                          (op_i == 8'd12 && p12_weight_count_r < p12_weight_a_beats_w))),
+-  .io_weights_i_ready(pw_weights_ready_w),
+-  .io_weights_i_payload(load_data_i),
+-  .io_params_i_valid(params_valid_i && (op_i == 8'd1 || op_i == 8'd12)),
+-  .io_params_i_ready(pw_params_ready_w),
+-  .io_params_i_payload(op_i == 8'd12 ? 512'd0 : load_data_i),
+-  .io_start_i_valid(start_valid_i && (op_i == 8'd1 || op_i == 8'd12)),
+-  .io_start_i_ready(pw_start_ready_w),
+-  .io_start_i_payload(1'b1),
+-  .io_busy_o(),
+-  .io_done_o(done_w[1]),
+-  .io_rd_o_valid(pw_rd_valid_w),
+-  .io_rd_o_ready((rd_ready_i && op_i == 8'd1) ||
++  .io_project_weights_i_ready(pw_weights_ready_w),
++  .io_project_weights_i_payload(load_data_i),
++  .io_project_params_i_valid(params_valid_i && (op_i == 8'd1 || op_i == 8'd12)),
++  .io_project_params_i_ready(pw_params_ready_w),
++  .io_project_params_i_payload(op_i == 8'd12 ? 512'd0 : load_data_i),
++  .io_project_start_i_valid(start_valid_i && (op_i == 8'd1 || op_i == 8'd12)),
++  .io_project_start_i_ready(pw_start_ready_w),
++  .io_project_start_i_payload(1'b1),
++  .io_project_busy_o(),
++  .io_project_done_o(done_w[1]),
++  .io_project_rd_o_valid(pw_rd_valid_w),
++  .io_project_rd_o_ready((rd_ready_i && op_i == 8'd1) ||
+                  (rd_ready_i && op_i == 8'd12 && p12_phase_r == 2'd0)),
+-  .io_rd_o_payload(pw_addr_w),
+-  .io_rsp_i_valid(rsp_valid_i && (op_i == 8'd1 || (op_i == 8'd12 && !rsp_source_i))),
+-  .io_rsp_i_ready(pw_rsp_ready_w),
+-  .io_rsp_i_payload(rsp_data_i),
+-  .io_output_o_valid(valid_w[1]),
+-  .io_output_o_ready((out_ready_i && op_i == 8'd1) || (op_i == 8'd12 && p12_phase_r == 2'd0)),
+-  .io_output_o_payload_pixel(pw_pixel_w),
+-  .io_output_o_payload_group(pw_group_w),
+-  .io_output_o_payload_mask(pw_mask_w),
+-  .io_output_o_payload_last(last_w[1]),
+-  .io_output_o_payload_raw(),
+-  .io_output_o_payload_int16(),
+-  .io_output_o_payload_mac_0(pw_mac_w[0 +: 32]),
+-  .io_output_o_payload_mac_1(pw_mac_w[32 +: 32]),
+-  .io_output_o_payload_mac_2(pw_mac_w[64 +: 32]),
+-  .io_output_o_payload_mac_3(pw_mac_w[96 +: 32]),
+-  .io_output_o_payload_q_0(pw_q_w[0 +: 16]),
+-  .io_output_o_payload_q_1(pw_q_w[16 +: 16]),
+-  .io_output_o_payload_q_2(pw_q_w[32 +: 16]),
+-  .io_output_o_payload_q_3(pw_q_w[48 +: 16]),
+-  .clk(clk_i),
+-  .resetn(rst_n_i)
++  .io_project_rd_o_payload(pw_addr_w),
++  .io_project_rsp_i_valid(rsp_valid_i && (op_i == 8'd1 || (op_i == 8'd12 && !rsp_source_i))),
++  .io_project_rsp_i_ready(pw_rsp_ready_w),
++  .io_project_rsp_i_payload(rsp_data_i),
++  .io_project_output_o_valid(valid_w[1]),
++  .io_project_output_o_ready((out_ready_i && op_i == 8'd1) || (op_i == 8'd12 && p12_phase_r == 2'd0)),
++  .io_project_output_o_payload_pixel(pw_pixel_w),
++  .io_project_output_o_payload_group(pw_group_w),
++  .io_project_output_o_payload_mask(pw_mask_w),
++  .io_project_output_o_payload_last(last_w[1]),
++  .io_project_output_o_payload_raw(),
++  .io_project_output_o_payload_int16(),
++  .io_project_output_o_payload_mac_0(pw_mac_w[0 +: 32]),
++  .io_project_output_o_payload_mac_1(pw_mac_w[32 +: 32]),
++  .io_project_output_o_payload_mac_2(pw_mac_w[64 +: 32]),
++  .io_project_output_o_payload_mac_3(pw_mac_w[96 +: 32]),
++  .io_project_output_o_payload_q_0(pw_q_w[0 +: 16]),
++  .io_project_output_o_payload_q_1(pw_q_w[16 +: 16]),
++  .io_project_output_o_payload_q_2(pw_q_w[32 +: 16]),
++  .io_project_output_o_payload_q_3(pw_q_w[48 +: 16]),
++  .io_skip_cfg_i_valid(cfg_valid_i && op_i == 8'd12 && !p12_pw_configured_r),
++  .io_skip_cfg_i_ready(p12_pw_cfg_ready_w),
++  .io_skip_cfg_i_payload_cin(cin_b_i),
++  .io_skip_cfg_i_payload_cout(cout_i),
++  .io_skip_cfg_i_payload_pixels(pixels_i),
++  .io_skip_cfg_i_payload_shift(shift_i),
++  .io_skip_cfg_i_payload_raw(1'b1),
++  .io_skip_cfg_i_payload_int16(1'b0),
++   .io_skip_weights_i_valid(weights_valid_i && op_i == 8'd12 &&
++                       p12_weight_count_r >= p12_weight_a_beats_w &&
++                       p12_weight_count_r < p12_weight_a_beats_w + p12_weight_b_beats_w),
++  .io_skip_weights_i_ready(p12_pw_weights_ready_w),
++  .io_skip_weights_i_payload(load_data_i),
++  .io_skip_params_i_valid(params_valid_i && op_i == 8'd12),
++  .io_skip_params_i_ready(p12_pw_params_ready_w),
++  .io_skip_params_i_payload(512'd0),
++  .io_skip_start_i_valid(start_valid_i && op_i == 8'd12),
++  .io_skip_start_i_ready(p12_pw_start_ready_w),
++  .io_skip_start_i_payload(1'b1),
++  .io_skip_busy_o(), .io_skip_done_o(),
++  .io_skip_rd_o_valid(p12_pw_rd_valid_w),
++  .io_skip_rd_o_ready(rd_ready_i && op_i == 8'd12 && p12_phase_r == 2'd1),
++  .io_skip_rd_o_payload(p12_pw_addr_w),
++  .io_skip_rsp_i_valid(rsp_valid_i && op_i == 8'd12 && rsp_source_i),
++  .io_skip_rsp_i_ready(p12_pw_rsp_ready_w),
++  .io_skip_rsp_i_payload(rsp_data_i),
++  .io_skip_output_o_valid(p12_pw_skip_valid_w),
++  .io_skip_output_o_ready(op_i == 8'd12 && p12_phase_r == 2'd1),
++  .io_skip_output_o_payload_pixel(p12_pw_skip_pixel_w),
++  .io_skip_output_o_payload_group(p12_pw_skip_group_w),
++  .io_skip_output_o_payload_mask(p12_pw_skip_mask_w),
++  .io_skip_output_o_payload_last(p12_pw_skip_last_w),
++  .io_skip_output_o_payload_raw(), .io_skip_output_o_payload_int16(),
++  .io_skip_output_o_payload_mac_0(p12_pw_skip_mac_w[0 +: 32]),
++  .io_skip_output_o_payload_mac_1(p12_pw_skip_mac_w[32 +: 32]),
++  .io_skip_output_o_payload_mac_2(p12_pw_skip_mac_w[64 +: 32]),
++  .io_skip_output_o_payload_mac_3(p12_pw_skip_mac_w[96 +: 32]),
++  .io_skip_output_o_payload_q_0(), .io_skip_output_o_payload_q_1(),
++  .io_skip_output_o_payload_q_2(), .io_skip_output_o_payload_q_3(),
++  .clk(clk_i), .resetn(rst_n_i)
+  );
+  assign cfg_ready_w[1] = pw_cfg_ready_w;
+  assign data_w[1] = {64'd0,pw_q_w}; assign in_ready_w[1] = 1'b0;
+- PwMac u_pw_skip (
+-  .io_cfg_i_valid(cfg_valid_i && op_i == 8'd12 && !p12_pw_configured_r),
+-  .io_cfg_i_ready(p12_pw_cfg_ready_w),
+-  .io_cfg_i_payload_cin(cin_b_i),
+-  .io_cfg_i_payload_cout(cout_i),
+-  .io_cfg_i_payload_pixels(pixels_i),
+-  .io_cfg_i_payload_shift(shift_i),
+-  .io_cfg_i_payload_raw(1'b1),
+-  .io_cfg_i_payload_int16(1'b0),
+-   .io_weights_i_valid(weights_valid_i && op_i == 8'd12 &&
+-                       p12_weight_count_r >= p12_weight_a_beats_w &&
+-                       p12_weight_count_r < p12_weight_a_beats_w + p12_weight_b_beats_w),
+-  .io_weights_i_ready(p12_pw_weights_ready_w),
+-  .io_weights_i_payload(load_data_i),
+-  .io_params_i_valid(params_valid_i && op_i == 8'd12),
+-  .io_params_i_ready(p12_pw_params_ready_w),
+-  .io_params_i_payload(512'd0),
+-  .io_start_i_valid(start_valid_i && op_i == 8'd12),
+-  .io_start_i_ready(p12_pw_start_ready_w),
+-  .io_start_i_payload(1'b1),
+-  .io_busy_o(), .io_done_o(),
+-  .io_rd_o_valid(p12_pw_rd_valid_w),
+-  .io_rd_o_ready(rd_ready_i && op_i == 8'd12 && p12_phase_r == 2'd1),
+-  .io_rd_o_payload(p12_pw_addr_w),
+-  .io_rsp_i_valid(rsp_valid_i && op_i == 8'd12 && rsp_source_i),
+-  .io_rsp_i_ready(p12_pw_rsp_ready_w),
+-  .io_rsp_i_payload(rsp_data_i),
+-  .io_output_o_valid(p12_pw_skip_valid_w),
+-  .io_output_o_ready(op_i == 8'd12 && p12_phase_r == 2'd1),
+-  .io_output_o_payload_pixel(p12_pw_skip_pixel_w),
+-  .io_output_o_payload_group(p12_pw_skip_group_w),
+-  .io_output_o_payload_mask(p12_pw_skip_mask_w),
+-  .io_output_o_payload_last(p12_pw_skip_last_w),
+-  .io_output_o_payload_raw(), .io_output_o_payload_int16(),
+-  .io_output_o_payload_mac_0(p12_pw_skip_mac_w[0 +: 32]),
+-  .io_output_o_payload_mac_1(p12_pw_skip_mac_w[32 +: 32]),
+-  .io_output_o_payload_mac_2(p12_pw_skip_mac_w[64 +: 32]),
+-  .io_output_o_payload_mac_3(p12_pw_skip_mac_w[96 +: 32]),
+-  .io_output_o_payload_q_0(), .io_output_o_payload_q_1(),
+-  .io_output_o_payload_q_2(), .io_output_o_payload_q_3(),
+-  .clk(clk_i), .resetn(rst_n_i)
+- );
++
+  assign p12_pw_mac_w = pw_mac_w;
+  assign p12_pw_pixel_w = pw_pixel_w;
+  assign p12_pw_group_w = pw_group_w;

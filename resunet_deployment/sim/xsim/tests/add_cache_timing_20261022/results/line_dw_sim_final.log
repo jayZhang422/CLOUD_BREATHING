@@ -1,0 +1,48 @@
+[info] entering thin client - BEEP WHIRR
+[info] starting sbt server in the background
+[info] use 'sbt shutdown' to shutdown the server
+[info]  
+[info] welcome to sbt 2.0.10 (Eclipse Adoptium Java 17.0.20.1)
+[info] loading project definition from /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Line_DW_Cascade/project
+[info] set current project to line_dw_cascade (in build file:/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Line_DW_Cascade/)
+[info] compiling 1 Scala source to /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Line_DW_Cascade/target/out/jvm/scala-2.13.14/line_dw_cascade/classes ...
+[info] done compiling
+[info] running (fork) LineDwCascadeSim 
+[Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[Runtime] JVM max memory : 2048.0MiB
+[Runtime] Current date : 2026.10.22 16:55:42
+[Progress] at 0.000 : Elaborate components
+[Progress] at 0.986 : Checks and transforms
+[Progress] at 1.644 : Generate Verilog to ./simWorkspace/tmp/job_1
+[Warning] 9612 signals were pruned. You can call printPruned on the backend report to get more informations.
+[Done] at 2.119
+[Progress] Simulation workspace in /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Line_DW_Cascade/./simWorkspace/LineDwCascadeTop
+[Progress] Verilator compilation started
+[info] Found cached verilator binaries
+[Progress] Verilator compilation done in 1144.063 ms
+[Progress] Start LineDwCascadeTop test simulation with seed 1849578778
+[Done] Simulation done in 1248.719 ms
+[TB PASSED] cascaded_windows=128 line3_latency=10 line5_latency=21 dw3_values=2048 dw5_values=2048 merge_values=2048 input_stalls=822 linebuffer_stalls=155 dw_stalls=457 merge_output_stalls=13
+[success] elapsed time: 24 s
+Exception in thread "sbt-serverconnection-0" java.lang.InterruptedException
+	at org.graalvm.nativeimage.builder/com.oracle.svm.core.thread.PlatformThreads.sleep(PlatformThreads.java:993)
+	at java.base@23.0.2/java.lang.Thread.sleepNanos0(Thread.java:387)
+	at java.base@23.0.2/java.lang.Thread.sleepNanos(Thread.java:496)
+	at java.base@23.0.2/java.lang.Thread.sleep(Thread.java:527)
+	at sbt.internal.client.NetworkClient.connect$1(NetworkClient.scala:452)
+	at sbt.internal.client.NetworkClient.connectOrStartServerAndConnect(NetworkClient.scala:455)
+	at sbt.internal.client.NetworkClient.initImpl(NetworkClient.scala:467)
+	at sbt.internal.client.NetworkClient.connection$$anonfun$1(NetworkClient.scala:192)
+	at sbt.internal.AtomicCloseable$.setIfEmpty$extension(AtomicCloseable.scala:27)
+	at sbt.internal.client.NetworkClient.connection(NetworkClient.scala:192)
+	at sbt.internal.client.NetworkClient.sendCommandResponse(NetworkClient.scala:1290)
+	at sbt.internal.client.NetworkClient.onRequest(NetworkClient.scala:1083)
+	at sbt.internal.client.NetworkClient$$anon$8.onRequest(NetworkClient.scala:517)
+	at sbt.protocol.ServerSessionImpl$$anon$1.run$$anonfun$2(ServerSessionImpl.scala:108)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.util.Either.fold(Either.scala:231)
+	at sbt.protocol.ServerSessionImpl$$anon$1.run(ServerSessionImpl.scala:107)
+	at org.graalvm.nativeimage.builder/com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:832)
+	at org.graalvm.nativeimage.builder/com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:808)
+[0J

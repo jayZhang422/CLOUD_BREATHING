@@ -1,0 +1,10 @@
+PL_ENV: XILINX_XRT=/usr
+RAY_UNION_READY {"clock_mhz": 99.999, "capabilities": "0x7f", "max_hits": 128, "max_solids": 32, "image_hashes": {"lung_planner.bit": "b425c6512e5562a7d529363ebbf148a5a3e1e05a0076e269fda013693b3b55dd", "lung_planner.bit.bin": "ce5fe3299d7a15ceba05fd6247e405caaa9956944e78f678ebd90d3a9a241dbb", "lung_planner.hwh": "fa41e0126bf86d36a7182321ba3d08090d7e8eb3d531642ddc4b775f95ffbf05"}}
+RAY_UNION_PASS single raw 4 events 2 boundaries 2
+RAY_UNION_PASS separated raw 8 events 4 boundaries 4
+RAY_UNION_PASS overlap raw 8 events 4 boundaries 2
+RAY_UNION_PASS nested raw 8 events 4 boundaries 2
+RAY_UNION_PASS duplicate raw 8 events 4 boundaries 2
+RAY_UNION_VOLUME_PASS 0.4479166651144624
+RAY_UNION_ORIGIN_INSIDE_PASS
+RAY_UNION_BOARD_PASS

@@ -1,0 +1,14 @@
+[
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_hotspot_pw\\behav\\xsim\\sim_trace.csv",
+    "Length": 45588020
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_hotspot_pw\\behav\\xsim\\tb_hotspot_pw_behav.wdb",
+    "Length": 59825273
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_hotspot_pw\\behav\\xsim\\waveform.vcd",
+    "Length": 26577649
+  }
+]

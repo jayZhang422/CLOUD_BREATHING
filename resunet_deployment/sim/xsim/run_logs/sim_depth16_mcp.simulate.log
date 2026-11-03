@@ -1,0 +1,7 @@
+Time resolution is 1 ps
+[CASE PASSED] 8/16 档数据、顺序、在途上限与排空（含随机抖动/反压压力）全部一致
+[DEPTH PERF] arbiter  TAGS 8:19507 cycles(max out 8)  16:9783 cycles(max out 16)  speedup 1.99x
+[DEPTH PERF] move     CREDITS 8:11056 cycles(max out 8)  16:5556 cycles(max out 16)  speedup 1.99x
+[DEPTH PERF] pw       CREDITS 8:25908 cycles(max out 6)  16:13178 cycles(max out 11)  speedup 1.97x
+[TB PASSED] 全部数据验证一致 depth 8/16
+$finish called at time : 103704 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Depth16_20261101/tb_mem_depth16.sv" Line 307

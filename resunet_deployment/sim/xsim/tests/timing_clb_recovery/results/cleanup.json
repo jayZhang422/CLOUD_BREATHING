@@ -1,0 +1,9 @@
+{
+  "status": "blocked_by_automatic_approval_review",
+  "reason": "blocked by policy",
+  "target": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_timing_clb_recovery",
+  "remaining_files": 1,
+  "remaining_bytes": 13654,
+  "simulation_closed": true,
+  "temporary_fileset_removed": true
+}

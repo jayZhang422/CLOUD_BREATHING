@@ -1,0 +1,12 @@
+{
+  "state": "paused",
+  "epoch": 22,
+  "completed_epochs": 22,
+  "best_epoch": 18,
+  "error": "KeyboardInterrupt()",
+  "traceback": "Traceback (most recent call last):\n  File \"/root/autodl-tmp/lung_training/vessel_mkdc_joint_v1/runs/resunet_mkdc_relu6_e94_joint_100e_v1/source/vessel_joint_20261008.py\", line 890, in train\n    previous_decision = wait_decision(run, cfg, epoch, record_hash)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/lung_training/vessel_mkdc_joint_v1/runs/resunet_mkdc_relu6_e94_joint_100e_v1/source/vessel_joint_20261008.py\", line 664, in wait_decision\n    time.sleep(1)\nKeyboardInterrupt\n",
+  "time": 1791438016.822803,
+  "paused_state_sha256": "43c9f104bcfa8762ebf65512c29711c08992c1fbd91ed5ae0a93a2e8542203a3",
+  "reason": "explicit user request: retain weights, stop training and pause goal",
+  "user_pause_result": "user_pause_result.json"
+}

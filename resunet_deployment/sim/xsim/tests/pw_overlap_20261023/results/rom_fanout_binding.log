@@ -1,0 +1,16 @@
+g_ethernet.u_coeff_rom/word_addr_r[0] MODE= FANOUT=
+g_ethernet.u_coeff_rom/word_addr_r[10] MODE= FANOUT=
+g_ethernet.u_coeff_rom/word_addr_r[11] MODE= FANOUT=
+g_ethernet.u_coeff_rom/word_addr_r[12] MODE= FANOUT=
+g_ethernet.u_coeff_rom/word_addr_r[13] MODE= FANOUT=
+g_ethernet.u_coeff_rom/word_addr_r[14] MODE= FANOUT=
+g_ethernet.u_coeff_rom/word_addr_r[15] MODE= FANOUT=
+g_ethernet.u_coeff_rom/word_addr_r[1] MODE= FANOUT=
+g_ethernet.u_coeff_rom/word_addr_r[2] MODE= FANOUT=
+g_ethernet.u_coeff_rom/word_addr_r[3] MODE= FANOUT=
+g_ethernet.u_coeff_rom/word_addr_r[4] MODE= FANOUT=
+g_ethernet.u_coeff_rom/word_addr_r[5] MODE= FANOUT=
+g_ethernet.u_coeff_rom/word_addr_r[6] MODE= FANOUT=
+g_ethernet.u_coeff_rom/word_addr_r[7] MODE= FANOUT=
+g_ethernet.u_coeff_rom/word_addr_r[8] MODE= FANOUT=
+g_ethernet.u_coeff_rom/word_addr_r[9] MODE= FANOUT=

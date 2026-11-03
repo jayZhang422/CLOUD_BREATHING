@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Cloud Breathing KV260
+Comment=Start Cloud Breathing (EGLFS, single dual-plane mesh core)
+Terminal=true
+StartupNotify=true
+Exec=/bin/bash /home/ubuntu/memgmo/final/cloud-breathing-kv260/tools/start_desktop.sh
+Icon=applications-science
+Categories=Science;MedicalSoftware;

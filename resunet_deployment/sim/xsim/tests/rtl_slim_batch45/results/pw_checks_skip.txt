@@ -1,0 +1,12 @@
+PW directed_17_5_19 outputs=38 run_cycles=313 side=1
+PW directed_191_127_17 outputs=544 run_cycles=3748 side=1
+PW directed_192_128_33 outputs=1056 run_cycles=7163 side=1
+PW directed_768_512_1 outputs=128 run_cycles=2394 side=1
+PW directed_767_511_3 outputs=384 run_cycles=10115 side=1
+PW shift0_signed_saturation outputs=14 run_cycles=85 side=1
+PW lobe_e1.expand outputs=4096 run_cycles=13181 side=1
+PW lobe_mid.project outputs=512 run_cycles=2995 side=1
+PW tumor_mid.project outputs=2048 run_cycles=33945 side=1
+PW tumor_d3.expand outputs=4096 run_cycles=96234 side=1
+PW tumor_head outputs=1024 run_cycles=26932 side=1
+[DRIVER PASSED] PW cases=11 read_stalls=1618 output_stalls=5877

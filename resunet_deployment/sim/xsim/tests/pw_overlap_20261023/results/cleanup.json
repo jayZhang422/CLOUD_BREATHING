@@ -1,0 +1,102 @@
+{
+  "scope": "Only this batch's regenerated trace, waveform, WDB and compiled snapshot outputs; PASS CSV content was not read.",
+  "initial_exact_file_cleanup": {
+    "count": 14,
+    "bytes": 318988335
+  },
+  "later_exact_file_cleanup": [
+    {
+      "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_reader\\behav\\xsim\\sim_trace.csv",
+      "Length": 28303
+    },
+    {
+      "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_reader\\behav\\xsim\\tb_pwstream_reader_behav.wdb",
+      "Length": 81194
+    },
+    {
+      "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_reader\\behav\\xsim\\waveform.vcd",
+      "Length": 208517
+    },
+    {
+      "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_stall\\behav\\xsim\\sim_trace_project.csv",
+      "Length": 21160841
+    },
+    {
+      "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_stall\\behav\\xsim\\sim_trace_skip.csv",
+      "Length": 21456033
+    },
+    {
+      "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_stall\\behav\\xsim\\tb_tile_pw_behav.wdb",
+      "Length": 3537373
+    },
+    {
+      "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_stall\\behav\\xsim\\waveform.vcd",
+      "Length": 7006859
+    },
+    {
+      "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_restart\\behav\\xsim\\sim_trace_project.csv",
+      "Length": 16487221
+    },
+    {
+      "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_restart\\behav\\xsim\\sim_trace_skip.csv",
+      "Length": 21368527
+    },
+    {
+      "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_restart\\behav\\xsim\\tb_tile_pw_behav.wdb",
+      "Length": 2451767
+    },
+    {
+      "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_restart\\behav\\xsim\\waveform.vcd",
+      "Length": 5351806
+    },
+    {
+      "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_after\\behav\\xsim\\sim_trace.csv",
+      "Length": 82166699
+    },
+    {
+      "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_after\\behav\\xsim\\tb_pwstream_after_behav.wdb",
+      "Length": 135217529
+    },
+    {
+      "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_after\\behav\\xsim\\waveform.vcd",
+      "Length": 1021676
+    },
+    {
+      "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_move\\behav\\xsim\\sim_trace.csv",
+      "Length": 80637646
+    },
+    {
+      "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_move\\behav\\xsim\\tb_pwstream_move_behav.wdb",
+      "Length": 136599622
+    },
+    {
+      "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_move\\behav\\xsim\\waveform.vcd",
+      "Length": 1247272
+    },
+    {
+      "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_op12\\behav\\xsim\\sim_trace_fast.csv",
+      "Length": 10442679
+    },
+    {
+      "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_op12\\behav\\xsim\\sim_trace_slow.csv",
+      "Length": 15091279
+    },
+    {
+      "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_op12\\behav\\xsim\\tb_pwstream_op12_behav.wdb",
+      "Length": 7938552
+    },
+    {
+      "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_op12\\behav\\xsim\\waveform.vcd",
+      "Length": 12345521
+    }
+  ],
+  "snapshots_removed": [
+    "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_reader/behav/xsim/xsim.dir/tb_pwstream_reader_behav",
+    "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_after/behav/xsim/xsim.dir/tb_pwstream_after_behav",
+    "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_op12/behav/xsim/xsim.dir/tb_pwstream_op12_behav",
+    "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_pwstream_move/behav/xsim/xsim.dir/tb_pwstream_move_behav",
+    "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_pw_stall/behav/xsim/xsim.dir/tb_tile_pw_behav",
+    "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_pw_restart/behav/xsim/xsim.dir/tb_tile_pw_behav"
+  ],
+  "known_removed_bytes_excluding_snapshots": 900835251
+}

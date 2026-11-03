@@ -1,0 +1,38 @@
+--- before/prj\Model_Deployment.srcs\sources_1\new\Op\control\op_descriptor_check.sv
++++ prj\Model_Deployment.srcs\sources_1\new\Op\control\op_descriptor_check.sv
+@@ -25,7 +25,7 @@
+     logic [15:0] cin_w, cout_w, cin_b_w, ig_r, ibg_r, og4_r, og16_r;
+     logic [31:0] area_r, pool_area_r, area_r2;
+     logic [31:0] inputs_r, words_b_r;
+-    logic [63:0] plain_words_r, pool_words_r, b_words_r, pw_a_words_r, pw_q4_words_r, pw_q16_words_r, weights_words_r;
++    logic [63:0] plain_words_r, pool_words_r, b_words_r, pw_a_words_r, pw_b_words_r, pw_q4_words_r, pw_q16_words_r, weights_words_r, weight_b_words_r;
+     logic [63:0] a_bytes_r, b_bytes_r, q_bytes_r, m_bytes_r, weights_bytes_r, weight2_bytes_r, params_bytes_r;
+     logic [63:0] a_w, b_w, q_w, m_w, weights_w, params_w;
+     logic [63:0] a_end_r, b_end_r, q_end_r, m_end_r, weights_end_r, weight2_end_r, params_end_r;
+@@ -150,9 +150,11 @@
+             pool_words_r <= {32'd0,pool_area_r} * {48'd0,descriptor_r[79:64]};
+             b_words_r <= {32'd0,area_r} * {48'd0,descriptor_r[127:112]};
+             pw_a_words_r <= {32'd0,area_r} * {48'd0,ig_r};
++            pw_b_words_r <= {32'd0,area_r} * {48'd0,ibg_r};
+             pw_q4_words_r <= {32'd0,area_r} * {48'd0,og4_r};
+             pw_q16_words_r <= {32'd0,area_r} * {48'd0,og16_r};
+             weights_words_r <= {48'd0,og4_r} * {48'd0,ig_r};
++            weight_b_words_r <= {48'd0,og4_r} * {48'd0,ibg_r};
+         end
+         if (state_r == BYTES) begin
+             inputs_r <= plain_words_r[31:0];
+@@ -200,11 +202,11 @@
+                 end
+                 8'd12: begin
+                     // 两支P16输入各读一次；双PW权重均按64B PE4/SIMD16字装载。
+-                    a_bytes_r <= ({32'd0,area_r} * {48'd0,ig_r}) << 4;
+-                    b_bytes_r <= ({32'd0,area_r} * {48'd0,ibg_r}) << 4;
++                    a_bytes_r <= pw_a_words_r << 4;
++                    b_bytes_r <= pw_b_words_r << 4;
+                     q_bytes_r <= plain_words_r << 4;
+                     weights_bytes_r <= weights_words_r << 6;
+-                    weight2_bytes_r <= ({48'd0,og4_r} * {48'd0,ibg_r}) << 6;
++                    weight2_bytes_r <= weight_b_words_r << 6;
+                     params_bytes_r <= {48'd0,descriptor_r[79:64]} << 8;
+                 end
+                 default: ;

@@ -1,0 +1,117 @@
+--- before/script/scala/PW/PwMac.scala
++++ after/script/scala/PW/PwMac.scala
+@@ -373,6 +373,7 @@
+     val input_w = operands.input(lane * 8, 8 bits).asSInt
+     val weight_w = operands.weights(p)(lane * 8, 8 bits).asSInt
+     // 首层3通道及非整组输入：掩码在乘法入口应用，填充值不会参与累加。
++    products_w.values(p)(lane).addAttribute("use_dsp", "yes")
+     products_w.values(p)(lane) := Mux(operands.mask(lane), input_w, S(0, 8 bits)) * weight_w
+   }
+   val products = operands.translateWith(products_w).m2sPipe()
+@@ -402,7 +403,6 @@
+ 
+   // 每个 16 通道组在片上完成累加，再按原 PE4 顺序送入再量化器。
+   val acc_r = Vec((0 until 16).map(_ => Vec.fill(config.tilePixels)(Reg(SInt(32 bits)))))
+-  val tileMac_r = Vec((0 until 16).map(_ => Vec.fill(config.tilePixels)(Reg(SInt(32 bits)))))
+   val localPixel_w = dot.tag.localPixel.resize(log2Up(config.tilePixels max 2))
+   val quantRequest = Stream(new Bundle {
+     val tag = PwTag()
+@@ -413,7 +413,6 @@
+     val sum_w = Mux(dot.tag.first, S(0, 32 bits), acc_r(p)(localPixel_w)) + dot.values(p)(0).resize(32)
+     when(dot.fire) {
+       acc_r(p)(localPixel_w) := sum_w.resize(32)
+-      when(dot.tag.finalInput) { tileMac_r(p)(localPixel_w) := sum_w.resize(32) }
+     }
+   }
+   when(dot.fire && dot.tag.tileLast) {
+@@ -431,7 +430,8 @@
+   quantRequest.tag.group := (issueGroup_r.resize(10) * 4 + serialGroup_r).resize(7)
+   for (p <- 0 until 4) {
+     quantRequest.tag.mask(p) := (quantRequest.tag.group.resize(10) * 4 + p) < run_r.cout.resize(10)
+-    quantRequest.mac(p) := tileMac_r((serialGroup_r.resize(2) @@ U(p, 2 bits)))(serialPixel_r.resize(log2Up(config.tilePixels max 2)))
++    // SERIALIZE 排空后才恢复 ISSUE，直接读取最终累加值，无需重复快照。
++    quantRequest.mac(p) := acc_r((serialGroup_r.resize(2) @@ U(p, 2 bits)))(serialPixel_r.resize(log2Up(config.tilePixels max 2)))
+   }
+   quantRequest.tag.first := False
+   quantRequest.tag.finalInput := True
+--- before/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_core_bank.sv
++++ after/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_core_bank.sv
+@@ -79,9 +79,10 @@
+  logic [1:0] p12_phase_r, p12_add_part_r;
+  logic [4:0] p12_add_pixel_r, p12_add_output_pixel_idx_r;
+  logic [10:0] p12_project_addr_w, p12_skip_addr_w, p12_read_addr_w;
+- (* ram_style = "block" *) logic [127:0] p12_project_mem [0:2047];
+- (* ram_style = "block" *) logic [127:0] p12_skip_mem [0:2047];
+- logic [511:0] p12_add_a_data_r, p12_add_b_data_r;
++ logic p12_read_en_w;
++ logic [127:0] p12_project_data_w, p12_skip_data_w;
++ logic [383:0] p12_add_a_low_r, p12_add_b_low_r;
++ logic [511:0] p12_add_a_data_w, p12_add_b_data_w;
+  logic [18:0] p12_add_output_pixel_w;
+  logic [6:0] p12_add_output_group_w;
+  logic dw3_weights_ready_w, dw5_weights_ready_w;
+@@ -139,6 +140,20 @@
+  assign p12_project_addr_w = {p12_pw_group_w,4'd0} + {7'd0,p12_pw_pixel_w[3:0]};
+  assign p12_skip_addr_w = {p12_pw_skip_group_w,4'd0} + {7'd0,p12_pw_skip_pixel_w[3:0]};
+  assign p12_read_addr_w = {add_group_i[4:0],p12_add_part_r,4'd0} + {7'd0,p12_add_pixel_r[3:0]};
++ // 官方 URAM 一拍读；最后一段由停读后的 doutb 保持，沿用四拍拼接节奏。
++ assign p12_read_en_w = p12_phase_r == 2'd2 && !p12_add_valid_r && !p12_add_inputs_done_r;
++ assign p12_add_a_data_w = {p12_project_data_w,p12_add_a_low_r};
++ assign p12_add_b_data_w = {p12_skip_data_w,p12_add_b_low_r};
++ p12_tile_uram u_p12_project_mem (
++  .clka(clk_i), .ena(p12_project_fire_w), .wea(p12_project_fire_w),
++  .addra(p12_project_addr_w), .dina(p12_pw_mac_w),
++  .clkb(clk_i), .enb(p12_read_en_w), .addrb(p12_read_addr_w), .doutb(p12_project_data_w)
++ );
++ p12_tile_uram u_p12_skip_mem (
++  .clka(clk_i), .ena(p12_skip_fire_w), .wea(p12_skip_fire_w),
++  .addra(p12_skip_addr_w), .dina(p12_pw_skip_mac_w),
++  .clkb(clk_i), .enb(p12_read_en_w), .addrb(p12_read_addr_w), .doutb(p12_skip_data_w)
++ );
+  assign p12_add_input_fire_w = p12_add_valid_r && in_ready_w[6] && in_b_ready_o;
+  assign p12_add_output_pixel_w = tile_base_i + {14'd0,p12_add_output_pixel_idx_r};
+  assign p12_add_output_group_w = {1'b0,add_group_i};
+@@ -308,8 +323,6 @@
+        p12_add_inputs_done_r <= 1'b0;
+      end
+      if (p12_phase_r == 2'd2 && !p12_add_valid_r && !p12_add_inputs_done_r) begin
+-       p12_add_a_data_r[p12_add_part_r*128 +: 128] <= p12_project_mem[p12_read_addr_w];
+-       p12_add_b_data_r[p12_add_part_r*128 +: 128] <= p12_skip_mem[p12_read_addr_w];
+        if (p12_add_part_r == 2'd3) begin
+          p12_add_part_r <= 2'd0;
+          p12_add_valid_r <= 1'b1;
+@@ -328,8 +341,16 @@
+    end
+  end
+  always_ff @(posedge clk_i) begin
+-   if (p12_project_fire_w) p12_project_mem[p12_project_addr_w] <= p12_pw_mac_w;
+-   if (p12_skip_fire_w) p12_skip_mem[p12_skip_addr_w] <= p12_pw_skip_mac_w;
++   // 当前发出第 1/2/3 段读请求时，锁存上一拍返回的第 0/1/2 段。
++   // 第 3 段在 valid 拉高后保持在 URAM 输出，反压期间读口关闭。
++   if (p12_read_en_w) begin
++    case (p12_add_part_r)
++     2'd1: begin p12_add_a_low_r[127:0] <= p12_project_data_w; p12_add_b_low_r[127:0] <= p12_skip_data_w; end
++     2'd2: begin p12_add_a_low_r[255:128] <= p12_project_data_w; p12_add_b_low_r[255:128] <= p12_skip_data_w; end
++     2'd3: begin p12_add_a_low_r[383:256] <= p12_project_data_w; p12_add_b_low_r[383:256] <= p12_skip_data_w; end
++     default: ;
++    endcase
++   end
+  end
+  assign data_w[2][3199:128] = 3072'd0;
+  MaxPool2d_512x512_c16 u_core_2 (
+@@ -572,13 +593,13 @@
+   .io_a_i_valid((in_valid_i && op_i == 8'd6) ||
+                 (fused_dw3_align_valid_r && op_i == 8'd11) || (p12_add_valid_r && op_i == 8'd12)),
+   .io_a_i_ready(in_ready_w[6]),
+-  .io_a_i_payload(op_i == 8'd6 ? in_data_i : op_i == 8'd11 ? fused_dw3_align_data_r : p12_add_a_data_r),
++  .io_a_i_payload(op_i == 8'd6 ? in_data_i : op_i == 8'd11 ? fused_dw3_align_data_r : p12_add_a_data_w),
+   // ElementAdd 自己根据 A/B 同时有效产生 ready；B valid 不能再反过来依赖 ready。
+   // 原来的 valid_w[9] && in_b_ready_o 形成组合自锁，融合任务会永远等不到输出。
+   .io_b_i_valid((in_b_valid_i && op_i == 8'd6) ||
+                 (valid_w[9] && op_i == 8'd11) || (p12_add_valid_r && op_i == 8'd12)),
+   .io_b_i_ready(in_b_ready_o),
+-  .io_b_i_payload(op_i == 8'd6 ? in_b_data_i : op_i == 8'd11 ? data_w[9][511:0] : p12_add_b_data_r),
++  .io_b_i_payload(op_i == 8'd6 ? in_b_data_i : op_i == 8'd11 ? data_w[9][511:0] : p12_add_b_data_w),
+   .io_output_o_valid(valid_w[6]),
+   .io_output_o_ready(out_ready_i && (op_i == 8'd6 || op_i == 8'd11 || op_i == 8'd12)),
+   .io_output_o_payload_last(last_w[6]),

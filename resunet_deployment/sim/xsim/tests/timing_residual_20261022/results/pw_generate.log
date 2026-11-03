@@ -1,0 +1,18 @@
+[info] welcome to sbt 1.10.2 (Eclipse Adoptium Java 17.0.20.1)
+[info] loading project definition from /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/PW/project
+[info] loading settings for project pw from build.sbt ...
+[info] set current project to pw (in build file:/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/PW/)
+[info] compiling 1 Scala source to /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/PW/target/scala-2.13/classes ...
+[warn] 4 deprecations (since 2.13.3); re-run with -deprecation for details
+[warn] one warning found
+[info] done compiling
+[info] running (fork) PwSharedGen 
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 3072.0MiB
+[info] [Runtime] Current date : 2026.10.22 07:45:46
+[info] [Progress] at 0.000 : Elaborate components
+[info] [Progress] at 1.196 : Checks and transforms
+[info] [Progress] at 1.777 : Generate Verilog to rtl
+[info] [Warning] 463 signals were pruned. You can call printPruned on the backend report to get more informations.
+[info] [Done] at 2.397
+[success] Total time: 17 s, completed Oct 22, 2026, 7:45:48 AM

@@ -1,0 +1,1 @@
+call D:\Xilinx\2026.1\Vitis\bin\program_flash -f top.bit -offset 0 -flash_type mx25u51245gxxj-spi-x1_x2_x4

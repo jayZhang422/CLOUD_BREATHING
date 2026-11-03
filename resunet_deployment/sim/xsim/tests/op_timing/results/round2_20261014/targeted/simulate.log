@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+[CASE PASS] descriptor_cases=1004 hold_and_reset=PASS
+[CASE PASS] writer_cases=608 beats=2991 offsets=32 error_and_reset=PASS
+[TB PASSED] 全部数据验证一致 descriptor_cases=1004 writer_cases=608 beats=2991 cycles=24932
+$finish called at time : 74794600 ps : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Op_Timing/tb_op_timing.sv" Line 143

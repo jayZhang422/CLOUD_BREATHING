@@ -1,0 +1,66 @@
+{
+  "source_sha256": "95fe9273ccb85e62bb0bcab2ac1407fc9dfb25826f9bc5794289469fab40a716",
+  "compact_bin": {
+    "file": "input/ct_volume_vol2.bin",
+    "bytes": 210307136,
+    "sha256": "188e85deee415dbfa83c50539873514a6ec98f3112e220415683b7dd942efdd0",
+    "header_bytes": 176,
+    "views": [
+      {
+        "name": "native",
+        "direction": 0,
+        "base": 4194304,
+        "planes": 334,
+        "width": 512,
+        "height": 512,
+        "row_stride": 512,
+        "plane_stride": 262144,
+        "bytes": 87556096,
+        "file_offset": 192
+      },
+      {
+        "name": "lobe",
+        "direction": 0,
+        "base": 91750400,
+        "planes": 223,
+        "width": 274,
+        "height": 274,
+        "row_stride": 288,
+        "plane_stride": 78912,
+        "bytes": 17597376,
+        "file_offset": 87556288
+      },
+      {
+        "name": "lobe_t",
+        "direction": 0,
+        "base": 109347776,
+        "planes": 223,
+        "width": 274,
+        "height": 274,
+        "row_stride": 288,
+        "plane_stride": 78912,
+        "bytes": 17597376,
+        "source": "lobe",
+        "orientation": 2,
+        "file_offset": 105153664
+      },
+      {
+        "name": "native_t",
+        "direction": 0,
+        "base": 536870912,
+        "planes": 334,
+        "width": 512,
+        "height": 512,
+        "row_stride": 512,
+        "plane_stride": 262144,
+        "bytes": 87556096,
+        "source": "native",
+        "orientation": 1,
+        "file_offset": 122751040
+      }
+    ],
+    "layout_version": 4,
+    "transposed": true,
+    "lobe_resampling": "align-corners Q16/RNE, one final signed RNE, INT8 saturation"
+  }
+}

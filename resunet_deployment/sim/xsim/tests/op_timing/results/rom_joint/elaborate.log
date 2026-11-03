@@ -1,0 +1,46 @@
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_13 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_op_rom_behav xil_defaultlib.tb_op_rom xil_defaultlib.glbl -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_13.BLK_MEM_GEN_v8_4_output_stage(C_...
+Compiling module blk_mem_gen_v8_4_13.BLK_MEM_GEN_v8_4_softecc_output_...
+Compiling module blk_mem_gen_v8_4_13.BLK_MEM_GEN_v8_4_mem_module(C_FA...
+Compiling module blk_mem_gen_v8_4_13.blk_mem_gen_v8_4_13(C_FAMILY="ki...
+Compiling module xil_defaultlib.pw_weight_uram
+Compiling module xil_defaultlib.crc32_iso_hdlc
+Compiling module xil_defaultlib.protocol_builder(BODY_MAX=1040)
+Compiling module xil_defaultlib.op_transport
+Compiling module xil_defaultlib.op_descriptor_check
+Compiling module xil_defaultlib.PwRequant
+Compiling module xil_defaultlib.PwMac
+Compiling module xil_defaultlib.MaxPool2d_512x512_c16
+Compiling module xil_defaultlib.LineBuffer_3x3
+Compiling module xil_defaultlib.LineBuffer_5x5
+Compiling module xil_defaultlib.concat
+Compiling module xil_defaultlib.ElementAdd_p16
+Compiling module xil_defaultlib.channel_shuffle
+Compiling module xil_defaultlib.op_core_bank
+Compiling module xil_defaultlib.op_feature_reader
+Compiling module xil_defaultlib.op_feature_writer
+Compiling module xil_defaultlib.op_engine
+Compiling module xil_defaultlib.op_service
+Compiling module xil_defaultlib.op_coeff_split
+Compiling module xil_defaultlib.op_ddr_port
+Compiling module xil_defaultlib.op_board
+Compiling module blk_mem_gen_v8_4_13.BLK_MEM_GEN_v8_4_output_stage(C_...
+Compiling module blk_mem_gen_v8_4_13.BLK_MEM_GEN_v8_4_output_stage(C_...
+Compiling module blk_mem_gen_v8_4_13.BLK_MEM_GEN_v8_4_softecc_output_...
+Compiling module blk_mem_gen_v8_4_13.BLK_MEM_GEN_v8_4_mem_module(C_FA...
+Compiling module blk_mem_gen_v8_4_13.blk_mem_gen_v8_4_13(C_FAMILY="ki...
+Compiling module xil_defaultlib.quantized_params_rom
+Compiling module xil_defaultlib.op_coeff_rom
+Compiling module xil_defaultlib.tb_op_rom
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_op_rom_behav

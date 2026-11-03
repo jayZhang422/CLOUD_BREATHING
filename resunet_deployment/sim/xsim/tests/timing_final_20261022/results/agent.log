@@ -1,0 +1,39 @@
+2026-10-22，Vivado MCP挂载已有GUI http://127.0.0.1:8088。
+
+[x] 问题定位（high）
+最新实现完成于09:20，报告生成于09:19。before/top_timing_summary_routed.rpt:153：
+WNS=-0.112ns、TNS=-1.019ns、setup失败20端点、WHS=+0.010ns、hold失败0。
+不是单条路径差1ns。MCP get_timing_paths逐端点导出至failing_endpoints.tsv。
+18端点：load_count_r[4]/C -> input_count_r[*]/CE；2端点：d_r[7]/C -> u_reader/address_r[29:30]/D。
+
+[x] 根因理解（high）
+path_counter.rpt:16：-0.112ns，12级，逻辑1.267ns、布线2.541ns。
+旧RTL在RUN块内用state_nxt==LOAD_ADD作为组切换判断；完整次态包含装载末拍加法/比较，进入运行计数器CE。
+path_address.rpt:16：-0.019ns，15级，逻辑1.498ns、布线2.331ns。
+第二段权重地址原为mac_base + ((load_count - first_segment_words) << shift)，存在串联减法和加法。
+
+[x] 设计意图与修复（high）
+advance_group_w仅依赖RUN、run_drained_r、opcode、group_last_r、tile_last_r。
+FSM与组切换副作用共同使用该事件；不再从完整state_nxt反推数据寄存器使能。
+dw3_weight_words_r在RESET_CORE预存groups*9；weight_b_base_r在LOAD_WEIGHTS预存mac_base-(first_segment_words<<shift)。
+请求拍改为weight_b_base_r+(load_count<<shift)，31位模运算与原低31位地址一致。
+
+[x] 初始化与边界（high）
+op_descriptor_check.sv:72要求groups>=1；:100要求op12 cin>=1、cout>=16。
+op11第一段>=9笔，op12第一段>=4笔；CONFIGURE已计算p12_weight_a_words_r。
+进入LOAD_WEIGHTS时load_count_r=0；至少第一笔A段响应前weight_b_base_r即已锁存。
+因此B段首次使用前偏置有效，无需额外状态、握手或等待拍。
+op12每tile/组继续复用相同权重偏置，不改RUN排空和末tile/末组边界。
+
+[x] 方案选择（high）
+只改现有engine；预计算避免给每次reader请求增加流水等待拍。
+预计新增10+31=41bit无复位数据寄存器；不新增MAC、FIFO或RAM。
+没有改XDC、频率、时序豁免、算法、Golden或测试台。
+
+[x] 分类和授权
+AUTO，用户明确授权需要修复直接修复；最新指令仅修复和仿真，禁止本次启动综合/实现。
+既有续跑回调检查为空。后续静态时序仅在用户自行新综合/实现后才能确认。
+
+[x] 方法学范围
+新生成methodology.json共113项：CLKC-56=1，LUTAR-1=16，SYNTH-10=16，SYNTH-6=71，SYNTH-9=6，TIMING-18=1，TIMING-9=1，XDCB-5=1。
+未修改约束或创建waiver；缺板级I/O要求与CDC分类沿用待审查边界，未声称本批清零。

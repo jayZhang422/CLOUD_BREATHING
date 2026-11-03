@@ -1,0 +1,26 @@
+test_all_empty_prediction_publishes_no_stl (test_mesh_model.ModelMeshChecks.test_all_empty_prediction_publishes_no_stl) ... ok
+test_bridging_requires_ct_supported_path (test_mesh_model.ModelMeshChecks.test_bridging_requires_ct_supported_path) ... ok
+test_ct_repair_structure_smoothing_and_input_immutable (test_mesh_model.ModelMeshChecks.test_ct_repair_structure_smoothing_and_input_immutable) ... script\python\PC_FPGA\.venv\Lib\site-packages\skimage\measure\_marching_cubes_lewiner.py:237: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  ar.shape = shape
+script\python\PC_FPGA\.venv\Lib\site-packages\skimage\measure\_marching_cubes_lewiner.py:213: DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.
+As an alternative, you can create a new view using np.reshape (with copy=False if needed).
+  faces.shape = -1, 3
+ok
+test_explicit_reference_selects_prediction_without_copying_reference_voxels (test_mesh_model.ModelMeshChecks.test_explicit_reference_selects_prediction_without_copying_reference_voxels) ... ok
+test_wrong_ct_identity_grid_and_mask_tampering_rejected (test_mesh_model.ModelMeshChecks.test_wrong_ct_identity_grid_and_mask_tampering_rejected) ... ok
+test_bin_stl_smooth_cut_geometry_topology_and_original_immutable (test_pipeline.PipelineChecks.test_bin_stl_smooth_cut_geometry_topology_and_original_immutable) ... ok
+test_corrupt_result_and_busy_board_never_publish_prediction (test_pipeline.PipelineChecks.test_corrupt_result_and_busy_board_never_publish_prediction) ... ok
+test_ct_zip_geometry_quantization_and_job (test_pipeline.PipelineChecks.test_ct_zip_geometry_quantization_and_job) ... ok
+test_existing_rpc_framing_and_little_endian_read_write (test_pipeline.PipelineChecks.test_existing_rpc_framing_and_little_endian_read_write) ... ok
+test_main_all_runs_upload_start_receive_and_mesh_in_order (test_pipeline.PipelineChecks.test_main_all_runs_upload_start_receive_and_mesh_in_order) ... ok
+test_receive_exact_result_identity_and_hash (test_pipeline.PipelineChecks.test_receive_exact_result_identity_and_hash) ... ok
+test_v1_upload_loss_retransmit_ready_crc_and_peer_filter (test_pipeline.PipelineChecks.test_v1_upload_loss_retransmit_ready_crc_and_peer_filter) ... ok
+test_failed_busy_identity_and_invalid_labels_never_publish (test_volume.VolumeChecks.test_failed_busy_identity_and_invalid_labels_never_publish) ... ok
+test_integer_maps_and_full_program_layout (test_volume.VolumeChecks.test_integer_maps_and_full_program_layout) ... ok
+test_start_wait_read_release_and_release_ack_recovery (test_volume.VolumeChecks.test_start_wait_read_release_and_release_ack_recovery) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 2.508s
+
+OK

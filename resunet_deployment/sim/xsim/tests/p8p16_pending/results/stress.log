@@ -1,0 +1,35 @@
+Time resolution is 1 ps
+Block Memory Generator module tb_p8p16_engine(STRESS=1'b1).dut.u_bank.u_p12_project_mem.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_engine(STRESS=1'b1).dut.u_bank.u_p12_skip_mem.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_engine(STRESS=1'b1).dut.u_bank.u_pw_shared.project.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_engine(STRESS=1'b1).dut.u_bank.u_pw_shared.project.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_engine(STRESS=1'b1).dut.u_bank.u_pw_shared.project.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_engine(STRESS=1'b1).dut.u_bank.u_pw_shared.project.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_engine(STRESS=1'b1).dut.u_bank.u_pw_shared.project.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_engine(STRESS=1'b1).dut.u_bank.u_pw_shared.project.pwResultRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_engine(STRESS=1'b1).dut.u_bank.u_pw_shared.project.pwParamBram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_engine(STRESS=1'b1).dut.u_bank.u_pw_shared.skip.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_engine(STRESS=1'b1).dut.u_bank.u_pw_shared.skip.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_engine(STRESS=1'b1).dut.u_bank.u_pw_shared.skip.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_engine(STRESS=1'b1).dut.u_bank.u_pw_shared.skip.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_engine(STRESS=1'b1).dut.u_bank.u_pw_shared.skip.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_engine(STRESS=1'b1).dut.u_bank.u_pw_shared.skip.pwResultRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_engine(STRESS=1'b1).dut.u_bank.u_pw_shared.skip.pwParamBram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_engine(STRESS=1'b1).dut.u_op12_add_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_p8p16_engine(STRESS=1'b1).dut.u_pw_pack.u_tiles.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[RESET PASSED] cancelled p16_low and reconfigured
+[CASE PASSED] p16_low mode=1 bytes=1056 mac=0 tokens=66 total_cycles=1046 run_cycles=484
+[CASE PASSED] p16_tail mode=1 bytes=608 mac=0 tokens=38 total_cycles=1189 run_cycles=551
+[CASE PASSED] p8_head1 mode=1 bytes=272 mac=0 tokens=17 total_cycles=420 run_cycles=388
+[CASE PASSED] p8_head5 mode=1 bytes=528 mac=0 tokens=33 total_cycles=628 run_cycles=452
+[RESET PASSED] cancelled p8_tail and reconfigured
+[CASE PASSED] p8_tail mode=1 bytes=912 mac=0 tokens=57 total_cycles=1160 run_cycles=599
+[CASE PASSED] p8_max mode=1 bytes=1024 mac=0 tokens=64 total_cycles=212704 run_cycles=2124
+[CASE PASSED] p16_max mode=1 bytes=512 mac=0 tokens=32 total_cycles=212676 run_cycles=2110
+[CASE PASSED] raw4_tail mode=1 bytes=1824 mac=0 tokens=114 total_cycles=2300 run_cycles=1682
+[CASE PASSED] raw16 mode=1 bytes=2176 mac=0 tokens=136 total_cycles=2524 run_cycles=1728
+[CASE PASSED] debug8 mode=1 bytes=608 mac=1824 tokens=114 total_cycles=3568 run_cycles=2740
+[CASE PASSED] debug16 mode=1 bytes=912 mac=1824 tokens=114 total_cycles=3349 run_cycles=2767
+[CASE PASSED] reload1 mode=1 bytes=16 mac=0 tokens=1 total_cycles=196 run_cycles=61
+[TB PASSED] 12 engine Golden cases P8/P16/RAW/debug stress=1 resets=2 stalls=275180 out_stalls=6268
+$finish called at time : 1773196 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/P8P16_Pending/tb_p8p16_engine.sv" Line 131

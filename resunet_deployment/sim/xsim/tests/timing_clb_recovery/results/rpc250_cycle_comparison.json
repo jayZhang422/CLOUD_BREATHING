@@ -1,0 +1,112 @@
+{
+  "clock_mhz": 250,
+  "baseline": "Stream_250/results/sim_stream250_rpc_simulate.log",
+  "note": "archived same testbench results, not a fresh A/B rerun or board measurement",
+  "cases": {
+    "lobe_mid_expand": {
+      "saved_prior_candidate": 8280,
+      "current": 8857,
+      "increase_percent": 6.97
+    },
+    "lobe_mid_mix": {
+      "saved_prior_candidate": 7935,
+      "current": 8825,
+      "increase_percent": 11.22
+    },
+    "lobe_mid_project": {
+      "saved_prior_candidate": 18663,
+      "current": 19722,
+      "increase_percent": 5.67
+    },
+    "lobe_mid_out": {
+      "saved_prior_candidate": 7938,
+      "current": 8822,
+      "increase_percent": 11.14
+    },
+    "legacy_lobe_head": {
+      "saved_prior_candidate": 541,
+      "current": 566,
+      "increase_percent": 4.62
+    },
+    "legacy_pool_odd_two_groups": {
+      "saved_prior_candidate": 182,
+      "current": 194,
+      "increase_percent": 6.59
+    },
+    "legacy_pool_groups32": {
+      "saved_prior_candidate": 1051,
+      "current": 1133,
+      "increase_percent": 7.8
+    },
+    "tumor_mid_expand": {
+      "saved_prior_candidate": 67764,
+      "current": 74565,
+      "increase_percent": 10.04
+    },
+    "legacy_tumor_e1_fast": {
+      "saved_prior_candidate": 5331,
+      "current": 5451,
+      "increase_percent": 2.25
+    },
+    "upsample": {
+      "saved_prior_candidate": 197,
+      "current": 208,
+      "increase_percent": 5.58
+    },
+    "concat": {
+      "saved_prior_candidate": 193,
+      "current": 203,
+      "increase_percent": 5.18
+    },
+    "fused_dw11": {
+      "saved_prior_candidate": 1455,
+      "current": 1606,
+      "increase_percent": 10.38
+    },
+    "pw_tail_clear": {
+      "saved_prior_candidate": 377,
+      "current": 404,
+      "increase_percent": 7.16
+    },
+    "move_pool_512": {
+      "saved_prior_candidate": 8913,
+      "current": 9528,
+      "increase_percent": 6.9
+    },
+    "move_pool_odd": {
+      "saved_prior_candidate": 285,
+      "current": 304,
+      "increase_percent": 6.67
+    },
+    "move_up_256": {
+      "saved_prior_candidate": 16104,
+      "current": 16449,
+      "increase_percent": 2.14
+    },
+    "move_up_tail": {
+      "saved_prior_candidate": 225,
+      "current": 233,
+      "increase_percent": 3.56
+    },
+    "move_concat": {
+      "saved_prior_candidate": 8250,
+      "current": 8432,
+      "increase_percent": 2.21
+    },
+    "move_concat_tail": {
+      "saved_prior_candidate": 272,
+      "current": 281,
+      "increase_percent": 3.31
+    },
+    "move_concat_odd": {
+      "saved_prior_candidate": 266,
+      "current": 274,
+      "increase_percent": 3.01
+    },
+    "move_pool_single": {
+      "saved_prior_candidate": 164,
+      "current": 174,
+      "increase_percent": 6.1
+    }
+  }
+}

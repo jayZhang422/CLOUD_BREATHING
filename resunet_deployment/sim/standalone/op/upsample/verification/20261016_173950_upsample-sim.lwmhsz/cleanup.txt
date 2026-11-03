@@ -1,0 +1,2 @@
+PASS: archived all necessary vectors, provenance, source hashes, results and logs. Removed only this run FST, cycle CSV and temporary compilation cache; no PASS trace CSV opened.
+LIMITATION: local Upsample/target and Upsample/project/target remain. Automatic approval rejected their verified-path PowerShell removal with blocked by policy.

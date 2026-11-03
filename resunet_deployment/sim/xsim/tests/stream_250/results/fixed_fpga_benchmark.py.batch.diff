@@ -1,0 +1,60 @@
+--- before/script\python\BIN_UDP\fixed_fpga_benchmark.py
++++ script\python\BIN_UDP\fixed_fpga_benchmark.py
+@@ -324,11 +324,16 @@
+                 client.upload(input_item["address"], input_item["payload"])
+                 upload_seconds = perf_counter() - t
+                 stage_rows = []
++                completed_ids = []
++                used_perf_slots = set()
+                 head_data = None
+                 for index, stage in enumerate(manifest["stages"], 1):
+                     active["stage"] = stage["name"]
+                     descriptor = bytearray.fromhex(stage["descriptor_hex"])
+                     run_id = secrets.randbits(32) or 1
++                    while run_id & 63 in used_perf_slots:
++                        run_id = secrets.randbits(32) or 1
++                    used_perf_slots.add(run_id & 63)
+                     struct.pack_into("<I", descriptor, 48, run_id)
+                     t = perf_counter()
+                     client.run(descriptor)
+@@ -344,10 +349,30 @@
+                         head_data = client.read(run_id, output_spec["address"], output_spec["bytes"])
+                         read_seconds = perf_counter() - t
+                     client.rpc(RELEASE, run_id)
++                    completed_ids.append(run_id)
+                     stage_rows.append({"name": stage["name"], "op": stage["op"],
+                                        "run_wait_seconds": run_seconds, "read_seconds": read_seconds})
+                     active["completed_stages"] = stage_rows
+                 wall_seconds = perf_counter() - wall_started
++                # 64 snapshot slots: unique low bits preserve all 31 layers until
++                # the timed run ends. Diagnostic reads do not enter wall timing.
++                performance_error = None
++                for stage_row, completed_id in zip(stage_rows, completed_ids):
++                    stage_row["hardware"] = None
++                    if performance_error is not None:
++                        continue
++                    try:
++                        stage_row["hardware"] = client.performance(completed_id)
++                    except (RuntimeError, OSError) as error:
++                        performance_error = str(error)
++                        print(f"[CYCLES UNAVAILABLE] {performance_error}", flush=True)
++                        continue
++                    counters = stage_row["hardware"]["cycles"]
++                    print(f"[CYCLES {stage_row['name']}] total={counters['total']}, "
++                          f"load={counters['load']}, run={counters['run']}, "
++                          f"output_stall={counters['output_stall']}, "
++                          f"DDR_wait={counters['memory_stall']}, "
++                          f"hardware={stage_row['hardware']['seconds']:.6f}s", flush=True)
+                 total_run = sum(row["run_wait_seconds"] for row in stage_rows)
+                 decoded_head = decode_head(head_data or b"", output_spec["channels"], output_spec["side"])
+                 output_sha256 = sha256_bytes(decoded_head)
+@@ -365,6 +390,9 @@
+                     "repeat": repeat,
+                     "upload_seconds": upload_seconds,
+                     "fpga_run_seconds": total_run,
++                    "hardware_seconds": (sum(stage["hardware"]["seconds"] for stage in stage_rows)
++                                         if performance_error is None else None),
++                    "hardware_unavailable": performance_error,
+                     "download_seconds": stage_rows[-1]["read_seconds"],
+                     "wall_seconds": wall_seconds,
+                     "output_sha256": output_sha256,

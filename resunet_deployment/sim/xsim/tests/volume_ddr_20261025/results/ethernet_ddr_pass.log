@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+[TB PASSED] ETHERNET_DDR: storage, reorder, retry, duplicate, CRC and BRESP checks
+$finish called at time : 6183760 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Ethernet_DDR/tb_ethernet_ddr.sv" Line 327

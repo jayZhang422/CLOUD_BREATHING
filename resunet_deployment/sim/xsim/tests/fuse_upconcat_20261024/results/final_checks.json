@@ -1,0 +1,32 @@
+{
+  "baseline_commit": "55524ff 优化三",
+  "fusion_committed": false,
+  "simulation_closed": true,
+  "default_simset": "sim_1",
+  "default_top": "tb_mkdc",
+  "host_tests": {
+    "total": 39,
+    "passed": 36,
+    "failed_missing_historical_vectors": 3
+  },
+  "hdl_verification": {
+    "engine_pairs": 18,
+    "rpc_cases": 30,
+    "op12_cases": 4,
+    "invalid_descriptors": 7,
+    "restarts": 2,
+    "resets": 2
+  },
+  "cleanup_status": "blocked_by_automatic_approval",
+  "synthesis_launched": false,
+  "implementation_launched": false,
+  "bitstream_launched": false,
+  "sha256": {
+    "prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv": "14ae48bfd49f1154d5e7b7bf33e74e235c5d618d3dd01a7611ca1bcc1cb854d0",
+    "prj/Model_Deployment.srcs/sources_1/new/Op/control/op_descriptor_check.sv": "99523862e6b6d32b13c4d80e5eecd2e78f7289022cdd166de26fd79bceafd48b",
+    "script/python/BIN_UDP/src/fullnet.py": "6ac9eb1eeb7df28a4c4020185f88ecd3fd31e37da201dc3f7e918cd7fc008d7f",
+    "script/python/BIN_UDP/src/op_client.py": "1eae4a1c51ba6ec7bb6efac2201995ba7c17258255c4e67d7971223ea94ca674",
+    "script/python/BIN_UDP/fixed_fpga_benchmark.py": "a0be757ad1110a197fac5f9aee9804d216a57f3869398cb96674178b6a841620"
+  },
+  "existing_pw_generated_copies_equal": true
+}

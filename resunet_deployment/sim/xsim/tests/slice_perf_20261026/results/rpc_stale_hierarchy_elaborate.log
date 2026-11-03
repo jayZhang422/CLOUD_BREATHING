@@ -1,0 +1,21 @@
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_13 -L fifo_generator_v13_2_15 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_p8p16_rpc_behav xil_defaultlib.tb_p8p16_rpc xil_defaultlib.glbl -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2991] 'u_engine' is not declared under prefix 'u_service' [E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/P8P16_Pending/tb_p8p16_rpc.sv:131]
+ERROR: [VRFC 10-2991] 'u_engine' is not declared under prefix 'u_service' [E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/P8P16_Pending/tb_p8p16_rpc.sv:133]
+ERROR: [VRFC 10-2991] 'u_engine' is not declared under prefix 'u_service' [E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/P8P16_Pending/tb_p8p16_rpc.sv:135]
+ERROR: [VRFC 10-2991] 'u_engine' is not declared under prefix 'u_service' [E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/P8P16_Pending/tb_p8p16_rpc.sv:139]
+ERROR: [VRFC 10-2991] 'u_engine' is not declared under prefix 'u_service' [E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/P8P16_Pending/tb_p8p16_rpc.sv:141]
+ERROR: [VRFC 10-2991] 'u_engine' is not declared under prefix 'u_service' [E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/P8P16_Pending/tb_p8p16_rpc.sv:151]
+ERROR: [VRFC 10-2991] 'u_engine' is not declared under prefix 'u_service' [E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/P8P16_Pending/tb_p8p16_rpc.sv:152]
+ERROR: [VRFC 10-2991] 'u_engine' is not declared under prefix 'u_service' [E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/P8P16_Pending/tb_p8p16_rpc.sv:155]
+ERROR: [VRFC 10-2991] 'u_engine' is not declared under prefix 'u_service' [E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/P8P16_Pending/tb_p8p16_rpc.sv:156]
+ERROR: [VRFC 10-2991] 'state_r' is not declared under prefix 'u_service' [E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/P8P16_Pending/tb_p8p16_rpc.sv:159]
+ERROR: [VRFC 10-2991] 'u_engine' is not declared under prefix 'u_service' [E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/P8P16_Pending/tb_p8p16_rpc.sv:388]
+ERROR: [VRFC 10-2991] 'u_engine' is not declared under prefix 'u_service' [E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/P8P16_Pending/tb_p8p16_rpc.sv:454]
+ERROR: [VRFC 10-2991] 'u_engine' is not declared under prefix 'u_service' [E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/P8P16_Pending/tb_p8p16_rpc.sv:455]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

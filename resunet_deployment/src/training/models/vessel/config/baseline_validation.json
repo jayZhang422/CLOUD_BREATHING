@@ -1,0 +1,2423 @@
+{
+  "hipas": {
+    "dataset": "hipas",
+    "primary_name": "vessel_union",
+    "primary": {
+      "dice": 0.8038600933458081,
+      "precision": 0.8752997801567781,
+      "recall": 0.7432018918953156,
+      "tp": 13142045,
+      "fp": 1872291,
+      "fn": 4540963,
+      "positive_layers": 4819,
+      "hit_positive_layers": 4727,
+      "positive_layer_recall": 0.9809089022618801
+    },
+    "classes": [
+      {
+        "name": "artery",
+        "dice": 0.7306684974146005,
+        "precision": 0.7144239595712495,
+        "recall": 0.7476689584534274,
+        "tp": 6044111,
+        "fp": 2416007,
+        "fn": 2039829,
+        "positive_layers": 4740,
+        "hit_positive_layers": 4586,
+        "positive_layer_recall": 0.9675105485232067
+      },
+      {
+        "name": "vein",
+        "dice": 0.6888449623222409,
+        "precision": 0.7389032854914512,
+        "recall": 0.6451388765521786,
+        "tp": 6137310,
+        "fp": 2168662,
+        "fn": 3375851,
+        "positive_layers": 4778,
+        "hit_positive_layers": 4690,
+        "positive_layer_recall": 0.9815822519882796
+      }
+    ],
+    "macro": {
+      "primary": {
+        "dice": 0.7961371522504399,
+        "recall": 0.7412295337004735,
+        "precision": 0.865841795119135,
+        "positive_layer_recall": 0.9809395797543494
+      },
+      "classes": [
+        {
+          "name": "artery",
+          "dice": 0.7261572785440802,
+          "recall": 0.7499997177606763,
+          "precision": 0.7072241622344257,
+          "positive_layer_recall": 0.9680484677227688
+        },
+        {
+          "name": "vein",
+          "dice": 0.6780257052872773,
+          "recall": 0.6404404732667699,
+          "precision": 0.7264588604722884,
+          "positive_layer_recall": 0.9812020476435089
+        }
+      ]
+    },
+    "case_count": 20,
+    "slices": 6340,
+    "loss": 0.2994883898553829,
+    "eval_mode": true,
+    "grad_enabled": false,
+    "cases": [
+      {
+        "case": "004",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 97717,
+        "shape_h_w_z": [
+          512,
+          512,
+          314
+        ],
+        "spacing_xyz_mm": null,
+        "affine": null,
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.7753521769077625,
+            "precision": 0.7554731999117423,
+            "recall": 0.7963055879167142,
+            "tp": 369786,
+            "fp": 119690,
+            "fn": 94591,
+            "positive_layers": 224,
+            "hit_positive_layers": 219,
+            "positive_layer_recall": 0.9776785714285714
+          },
+          {
+            "name": "vein",
+            "dice": 0.6455640606185805,
+            "precision": 0.7758646527409654,
+            "recall": 0.5527362018716727,
+            "tp": 346879,
+            "fp": 100208,
+            "fn": 280688,
+            "positive_layers": 226,
+            "hit_positive_layers": 223,
+            "positive_layer_recall": 0.9867256637168141
+          }
+        ],
+        "union": {
+          "dice": 0.8012955867979231,
+          "precision": 0.9211658241426107,
+          "recall": 0.7090302986622827,
+          "tp": 777183,
+          "fp": 66512,
+          "fn": 318938,
+          "positive_layers": 226,
+          "hit_positive_layers": 224,
+          "positive_layer_recall": 0.9911504424778761
+        },
+        "loss": 0.34174760018184686,
+        "spacing_z_y_x_mm": [
+          1.0,
+          0.5527344,
+          0.5527344
+        ],
+        "primary": {
+          "dice": 0.8012955867979231,
+          "precision": 0.9211658241426107,
+          "recall": 0.7090302986622827,
+          "tp": 777183,
+          "fp": 66512,
+          "fn": 318938,
+          "positive_layers": 226,
+          "hit_positive_layers": 224,
+          "positive_layer_recall": 0.9911504424778761
+        }
+      },
+      {
+        "case": "027",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 84166,
+        "shape_h_w_z": [
+          512,
+          512,
+          300
+        ],
+        "spacing_xyz_mm": null,
+        "affine": null,
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.7436860528489316,
+            "precision": 0.6978499385772056,
+            "recall": 0.7959666604525856,
+            "tp": 264721,
+            "fp": 114617,
+            "fn": 67857,
+            "positive_layers": 212,
+            "hit_positive_layers": 209,
+            "positive_layer_recall": 0.9858490566037735
+          },
+          {
+            "name": "vein",
+            "dice": 0.7781800395862188,
+            "precision": 0.8307262883340532,
+            "recall": 0.7318857870038973,
+            "tp": 340474,
+            "fp": 69377,
+            "fn": 124727,
+            "positive_layers": 226,
+            "hit_positive_layers": 224,
+            "positive_layer_recall": 0.9911504424778761
+          }
+        ],
+        "union": {
+          "dice": 0.8592405106835642,
+          "precision": 0.9146197364399822,
+          "recall": 0.8101847115799664,
+          "tp": 649423,
+          "fp": 60624,
+          "fn": 152151,
+          "positive_layers": 226,
+          "hit_positive_layers": 224,
+          "positive_layer_recall": 0.9911504424778761
+        },
+        "loss": 0.21411883508786558,
+        "spacing_z_y_x_mm": [
+          1.0,
+          0.64453125,
+          0.64453125
+        ],
+        "primary": {
+          "dice": 0.8592405106835642,
+          "precision": 0.9146197364399822,
+          "recall": 0.8101847115799664,
+          "tp": 649423,
+          "fp": 60624,
+          "fn": 152151,
+          "positive_layers": 226,
+          "hit_positive_layers": 224,
+          "positive_layer_recall": 0.9911504424778761
+        }
+      },
+      {
+        "case": "030",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 83551,
+        "shape_h_w_z": [
+          512,
+          512,
+          324
+        ],
+        "spacing_xyz_mm": null,
+        "affine": null,
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.7715071567533284,
+            "precision": 0.7384243963828501,
+            "recall": 0.8076932899515274,
+            "tp": 316262,
+            "fp": 112031,
+            "fn": 75300,
+            "positive_layers": 225,
+            "hit_positive_layers": 217,
+            "positive_layer_recall": 0.9644444444444444
+          },
+          {
+            "name": "vein",
+            "dice": 0.7802387625129944,
+            "precision": 0.8036450845926507,
+            "recall": 0.7581572816919993,
+            "tp": 350509,
+            "fp": 85640,
+            "fn": 111808,
+            "positive_layers": 222,
+            "hit_positive_layers": 221,
+            "positive_layer_recall": 0.9954954954954955
+          }
+        ],
+        "union": {
+          "dice": 0.8635855861995113,
+          "precision": 0.9031450558876418,
+          "recall": 0.8273462483226719,
+          "tp": 709667,
+          "fp": 76106,
+          "fn": 148096,
+          "positive_layers": 225,
+          "hit_positive_layers": 221,
+          "positive_layer_recall": 0.9822222222222222
+        },
+        "loss": 0.20021630788112726,
+        "spacing_z_y_x_mm": [
+          1.0,
+          0.7402344,
+          0.7402344
+        ],
+        "primary": {
+          "dice": 0.8635855861995113,
+          "precision": 0.9031450558876418,
+          "recall": 0.8273462483226719,
+          "tp": 709667,
+          "fp": 76106,
+          "fn": 148096,
+          "positive_layers": 225,
+          "hit_positive_layers": 221,
+          "positive_layer_recall": 0.9822222222222222
+        }
+      },
+      {
+        "case": "034",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 88523,
+        "shape_h_w_z": [
+          512,
+          512,
+          270
+        ],
+        "spacing_xyz_mm": null,
+        "affine": null,
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.7597954174841841,
+            "precision": 0.7592527334262016,
+            "recall": 0.7603388778755947,
+            "tp": 321028,
+            "fp": 101793,
+            "fn": 101189,
+            "positive_layers": 228,
+            "hit_positive_layers": 221,
+            "positive_layer_recall": 0.9692982456140351
+          },
+          {
+            "name": "vein",
+            "dice": 0.7345141301356106,
+            "precision": 0.8277064550876619,
+            "recall": 0.6601833991354901,
+            "tp": 394960,
+            "fp": 82214,
+            "fn": 203298,
+            "positive_layers": 226,
+            "hit_positive_layers": 221,
+            "positive_layer_recall": 0.9778761061946902
+          }
+        ],
+        "union": {
+          "dice": 0.830843228880138,
+          "precision": 0.9371698791176583,
+          "recall": 0.7461847993461749,
+          "tp": 764188,
+          "fp": 51233,
+          "fn": 259939,
+          "positive_layers": 228,
+          "hit_positive_layers": 222,
+          "positive_layer_recall": 0.9736842105263158
+        },
+        "loss": 0.2965864455603339,
+        "spacing_z_y_x_mm": [
+          1.0,
+          0.58203125,
+          0.58203125
+        ],
+        "primary": {
+          "dice": 0.830843228880138,
+          "precision": 0.9371698791176583,
+          "recall": 0.7461847993461749,
+          "tp": 764188,
+          "fp": 51233,
+          "fn": 259939,
+          "positive_layers": 228,
+          "hit_positive_layers": 222,
+          "positive_layer_recall": 0.9736842105263158
+        }
+      },
+      {
+        "case": "041",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 59394,
+        "shape_h_w_z": [
+          512,
+          512,
+          250
+        ],
+        "spacing_xyz_mm": null,
+        "affine": null,
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.8045432149988331,
+            "precision": 0.7425755844752647,
+            "recall": 0.8777948371666661,
+            "tp": 232692,
+            "fp": 80666,
+            "fn": 32395,
+            "positive_layers": 190,
+            "hit_positive_layers": 186,
+            "positive_layer_recall": 0.9789473684210527
+          },
+          {
+            "name": "vein",
+            "dice": 0.772732009587405,
+            "precision": 0.7997464598965265,
+            "recall": 0.7474829560610666,
+            "tp": 240990,
+            "fp": 60343,
+            "fn": 81412,
+            "positive_layers": 194,
+            "hit_positive_layers": 188,
+            "positive_layer_recall": 0.9690721649484536
+          }
+        ],
+        "union": {
+          "dice": 0.8779247069294231,
+          "precision": 0.9030132452114226,
+          "recall": 0.8541925602939479,
+          "tp": 503075,
+          "fp": 54032,
+          "fn": 85873,
+          "positive_layers": 194,
+          "hit_positive_layers": 189,
+          "positive_layer_recall": 0.9742268041237113
+        },
+        "loss": 0.20009279236197472,
+        "spacing_z_y_x_mm": [
+          1.0,
+          0.734375,
+          0.734375
+        ],
+        "primary": {
+          "dice": 0.8779247069294231,
+          "precision": 0.9030132452114226,
+          "recall": 0.8541925602939479,
+          "tp": 503075,
+          "fp": 54032,
+          "fn": 85873,
+          "positive_layers": 194,
+          "hit_positive_layers": 189,
+          "positive_layer_recall": 0.9742268041237113
+        }
+      },
+      {
+        "case": "047",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 82081,
+        "shape_h_w_z": [
+          512,
+          512,
+          324
+        ],
+        "spacing_xyz_mm": null,
+        "affine": null,
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.8043687862936592,
+            "precision": 0.7675410401177633,
+            "recall": 0.8449087487372507,
+            "tp": 329533,
+            "fp": 99803,
+            "fn": 60489,
+            "positive_layers": 278,
+            "hit_positive_layers": 272,
+            "positive_layer_recall": 0.9784172661870504
+          },
+          {
+            "name": "vein",
+            "dice": 0.7553694162952334,
+            "precision": 0.8202886900945862,
+            "recall": 0.6999722260797111,
+            "tp": 332673,
+            "fp": 72883,
+            "fn": 142593,
+            "positive_layers": 281,
+            "hit_positive_layers": 274,
+            "positive_layer_recall": 0.9750889679715302
+          }
+        ],
+        "union": {
+          "dice": 0.8649441362269875,
+          "precision": 0.9289750907838676,
+          "recall": 0.8091708617934109,
+          "tp": 702739,
+          "fp": 53728,
+          "fn": 165729,
+          "positive_layers": 283,
+          "hit_positive_layers": 277,
+          "positive_layer_recall": 0.9787985865724381
+        },
+        "loss": 0.23384565381724157,
+        "spacing_z_y_x_mm": [
+          1.0,
+          0.7597656,
+          0.7597656
+        ],
+        "primary": {
+          "dice": 0.8649441362269875,
+          "precision": 0.9289750907838676,
+          "recall": 0.8091708617934109,
+          "tp": 702739,
+          "fp": 53728,
+          "fn": 165729,
+          "positive_layers": 283,
+          "hit_positive_layers": 277,
+          "positive_layer_recall": 0.9787985865724381
+        }
+      },
+      {
+        "case": "050",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 83858,
+        "shape_h_w_z": [
+          512,
+          512,
+          302
+        ],
+        "spacing_xyz_mm": null,
+        "affine": null,
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.7983546587442732,
+            "precision": 0.7243440446912817,
+            "recall": 0.8892106961891542,
+            "tp": 311318,
+            "fp": 118475,
+            "fn": 38788,
+            "positive_layers": 225,
+            "hit_positive_layers": 221,
+            "positive_layer_recall": 0.9822222222222222
+          },
+          {
+            "name": "vein",
+            "dice": 0.7706103177094539,
+            "precision": 0.7727662865604633,
+            "recall": 0.768466345421078,
+            "tp": 327724,
+            "fp": 96368,
+            "fn": 98741,
+            "positive_layers": 230,
+            "hit_positive_layers": 229,
+            "positive_layer_recall": 0.9956521739130435
+          }
+        ],
+        "union": {
+          "dice": 0.8721181176289018,
+          "precision": 0.87530511850409,
+          "recall": 0.8689542404092465,
+          "tp": 678098,
+          "fp": 96601,
+          "fn": 102263,
+          "positive_layers": 230,
+          "hit_positive_layers": 229,
+          "positive_layer_recall": 0.9956521739130435
+        },
+        "loss": 0.19009720410732245,
+        "spacing_z_y_x_mm": [
+          1.0,
+          0.65234375,
+          0.65234375
+        ],
+        "primary": {
+          "dice": 0.8721181176289018,
+          "precision": 0.87530511850409,
+          "recall": 0.8689542404092465,
+          "tp": 678098,
+          "fp": 96601,
+          "fn": 102263,
+          "positive_layers": 230,
+          "hit_positive_layers": 229,
+          "positive_layer_recall": 0.9956521739130435
+        }
+      },
+      {
+        "case": "051",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 105584,
+        "shape_h_w_z": [
+          512,
+          512,
+          290
+        ],
+        "spacing_xyz_mm": null,
+        "affine": null,
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.7980027311470922,
+            "precision": 0.7491491110540037,
+            "recall": 0.8536725487653852,
+            "tp": 381887,
+            "fp": 127874,
+            "fn": 65459,
+            "positive_layers": 226,
+            "hit_positive_layers": 225,
+            "positive_layer_recall": 0.995575221238938
+          },
+          {
+            "name": "vein",
+            "dice": 0.6425651863275305,
+            "precision": 0.7069546024823219,
+            "recall": 0.5889258293229492,
+            "tp": 320623,
+            "fp": 132904,
+            "fn": 223797,
+            "positive_layers": 232,
+            "hit_positive_layers": 232,
+            "positive_layer_recall": 1.0
+          }
+        ],
+        "union": {
+          "dice": 0.8025603727301518,
+          "precision": 0.8641089005913385,
+          "recall": 0.749196776281901,
+          "tp": 747589,
+          "fp": 117567,
+          "fn": 250265,
+          "positive_layers": 233,
+          "hit_positive_layers": 233,
+          "positive_layer_recall": 1.0
+        },
+        "loss": 0.3085742907020552,
+        "spacing_z_y_x_mm": [
+          1.0,
+          0.6484375,
+          0.6484375
+        ],
+        "primary": {
+          "dice": 0.8025603727301518,
+          "precision": 0.8641089005913385,
+          "recall": 0.749196776281901,
+          "tp": 747589,
+          "fp": 117567,
+          "fn": 250265,
+          "positive_layers": 233,
+          "hit_positive_layers": 233,
+          "positive_layer_recall": 1.0
+        }
+      },
+      {
+        "case": "058",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 101100,
+        "shape_h_w_z": [
+          512,
+          512,
+          312
+        ],
+        "spacing_xyz_mm": null,
+        "affine": null,
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.7688803960086105,
+            "precision": 0.769568795423223,
+            "recall": 0.7681932270758609,
+            "tp": 388082,
+            "fp": 116203,
+            "fn": 117106,
+            "positive_layers": 246,
+            "hit_positive_layers": 241,
+            "positive_layer_recall": 0.9796747967479674
+          },
+          {
+            "name": "vein",
+            "dice": 0.7638944114463063,
+            "precision": 0.7822048757460296,
+            "recall": 0.7464215903149258,
+            "tp": 463957,
+            "fp": 129183,
+            "fn": 157618,
+            "positive_layers": 249,
+            "hit_positive_layers": 244,
+            "positive_layer_recall": 0.9799196787148594
+          }
+        ],
+        "union": {
+          "dice": 0.851314466851382,
+          "precision": 0.9063045859978208,
+          "recall": 0.8026156820638186,
+          "tp": 907471,
+          "fp": 93816,
+          "fn": 223171,
+          "positive_layers": 252,
+          "hit_positive_layers": 247,
+          "positive_layer_recall": 0.9801587301587301
+        },
+        "loss": 0.2546463606950755,
+        "spacing_z_y_x_mm": [
+          1.0,
+          0.609375,
+          0.609375
+        ],
+        "primary": {
+          "dice": 0.851314466851382,
+          "precision": 0.9063045859978208,
+          "recall": 0.8026156820638186,
+          "tp": 907471,
+          "fp": 93816,
+          "fn": 223171,
+          "positive_layers": 252,
+          "hit_positive_layers": 247,
+          "positive_layer_recall": 0.9801587301587301
+        }
+      },
+      {
+        "case": "062",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 98802,
+        "shape_h_w_z": [
+          512,
+          512,
+          268
+        ],
+        "spacing_xyz_mm": null,
+        "affine": null,
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.7862652322426799,
+            "precision": 0.7198173365513925,
+            "recall": 0.8662286753889807,
+            "tp": 323293,
+            "fp": 125839,
+            "fn": 49926,
+            "positive_layers": 198,
+            "hit_positive_layers": 193,
+            "positive_layer_recall": 0.9747474747474747
+          },
+          {
+            "name": "vein",
+            "dice": 0.7510423167108611,
+            "precision": 0.7595537328016035,
+            "recall": 0.7427195413987666,
+            "tp": 362257,
+            "fp": 114677,
+            "fn": 125487,
+            "positive_layers": 206,
+            "hit_positive_layers": 201,
+            "positive_layer_recall": 0.9757281553398058
+          }
+        ],
+        "union": {
+          "dice": 0.8744095311906032,
+          "precision": 0.8916573112714282,
+          "recall": 0.8578163539292516,
+          "tp": 741825,
+          "fp": 90137,
+          "fn": 122958,
+          "positive_layers": 206,
+          "hit_positive_layers": 201,
+          "positive_layer_recall": 0.9757281553398058
+        },
+        "loss": 0.2511519091342812,
+        "spacing_z_y_x_mm": [
+          0.99999976,
+          0.6640625,
+          0.6640625
+        ],
+        "primary": {
+          "dice": 0.8744095311906032,
+          "precision": 0.8916573112714282,
+          "recall": 0.8578163539292516,
+          "tp": 741825,
+          "fp": 90137,
+          "fn": 122958,
+          "positive_layers": 206,
+          "hit_positive_layers": 201,
+          "positive_layer_recall": 0.9757281553398058
+        }
+      },
+      {
+        "case": "065",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 102279,
+        "shape_h_w_z": [
+          512,
+          512,
+          288
+        ],
+        "spacing_xyz_mm": null,
+        "affine": null,
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.7856704147389022,
+            "precision": 0.7854844655598529,
+            "recall": 0.7858564519789794,
+            "tp": 360092,
+            "fp": 98341,
+            "fn": 98124,
+            "positive_layers": 245,
+            "hit_positive_layers": 233,
+            "positive_layer_recall": 0.9510204081632653
+          },
+          {
+            "name": "vein",
+            "dice": 0.732508233412858,
+            "precision": 0.7110186625453407,
+            "recall": 0.7553372739608969,
+            "tp": 426934,
+            "fp": 173520,
+            "fn": 138289,
+            "positive_layers": 240,
+            "hit_positive_layers": 238,
+            "positive_layer_recall": 0.9916666666666667
+          }
+        ],
+        "union": {
+          "dice": 0.8678734429862858,
+          "precision": 0.8979898105410494,
+          "recall": 0.83971158368952,
+          "tp": 862257,
+          "fp": 97951,
+          "fn": 164592,
+          "positive_layers": 245,
+          "hit_positive_layers": 240,
+          "positive_layer_recall": 0.9795918367346939
+        },
+        "loss": 0.23584362217742535,
+        "spacing_z_y_x_mm": [
+          1.0,
+          0.6328125,
+          0.6328125
+        ],
+        "primary": {
+          "dice": 0.8678734429862858,
+          "precision": 0.8979898105410494,
+          "recall": 0.83971158368952,
+          "tp": 862257,
+          "fp": 97951,
+          "fn": 164592,
+          "positive_layers": 245,
+          "hit_positive_layers": 240,
+          "positive_layer_recall": 0.9795918367346939
+        }
+      },
+      {
+        "case": "071",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 74881,
+        "shape_h_w_z": [
+          512,
+          512,
+          324
+        ],
+        "spacing_xyz_mm": null,
+        "affine": null,
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.7681681804070017,
+            "precision": 0.7760989776220084,
+            "recall": 0.7603978300180831,
+            "tp": 320421,
+            "fp": 92440,
+            "fn": 100965,
+            "positive_layers": 223,
+            "hit_positive_layers": 220,
+            "positive_layer_recall": 0.9865470852017937
+          },
+          {
+            "name": "vein",
+            "dice": 0.7232488325167737,
+            "precision": 0.7344601835888356,
+            "recall": 0.7123746121705569,
+            "tp": 315245,
+            "fp": 113975,
+            "fn": 127282,
+            "positive_layers": 223,
+            "hit_positive_layers": 220,
+            "positive_layer_recall": 0.9865470852017937
+          }
+        ],
+        "union": {
+          "dice": 0.8336976848476344,
+          "precision": 0.8856419523273721,
+          "recall": 0.7875090628050953,
+          "tp": 683209,
+          "fp": 88219,
+          "fn": 184348,
+          "positive_layers": 230,
+          "hit_positive_layers": 229,
+          "positive_layer_recall": 0.9956521739130435
+        },
+        "loss": 0.22002250794033854,
+        "spacing_z_y_x_mm": [
+          1.0,
+          0.64453125,
+          0.64453125
+        ],
+        "primary": {
+          "dice": 0.8336976848476344,
+          "precision": 0.8856419523273721,
+          "recall": 0.7875090628050953,
+          "tp": 683209,
+          "fp": 88219,
+          "fn": 184348,
+          "positive_layers": 230,
+          "hit_positive_layers": 229,
+          "positive_layer_recall": 0.9956521739130435
+        }
+      },
+      {
+        "case": "090",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 79548,
+        "shape_h_w_z": [
+          512,
+          512,
+          346
+        ],
+        "spacing_xyz_mm": null,
+        "affine": null,
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.7930874239011773,
+            "precision": 0.7819666805659261,
+            "recall": 0.8045290379223993,
+            "tp": 322555,
+            "fp": 89937,
+            "fn": 78369,
+            "positive_layers": 220,
+            "hit_positive_layers": 216,
+            "positive_layer_recall": 0.9818181818181818
+          },
+          {
+            "name": "vein",
+            "dice": 0.7902854574754569,
+            "precision": 0.8104488211573914,
+            "recall": 0.7711010373784847,
+            "tp": 333229,
+            "fp": 77937,
+            "fn": 98918,
+            "positive_layers": 217,
+            "hit_positive_layers": 213,
+            "positive_layer_recall": 0.9815668202764977
+          }
+        ],
+        "union": {
+          "dice": 0.8845806098358251,
+          "precision": 0.937078365706631,
+          "recall": 0.8376529446561275,
+          "tp": 699529,
+          "fp": 46971,
+          "fn": 135577,
+          "positive_layers": 221,
+          "hit_positive_layers": 217,
+          "positive_layer_recall": 0.9819004524886877
+        },
+        "loss": 0.18014438490173376,
+        "spacing_z_y_x_mm": [
+          1.0,
+          0.7109375,
+          0.7109375
+        ],
+        "primary": {
+          "dice": 0.8845806098358251,
+          "precision": 0.937078365706631,
+          "recall": 0.8376529446561275,
+          "tp": 699529,
+          "fp": 46971,
+          "fn": 135577,
+          "positive_layers": 221,
+          "hit_positive_layers": 217,
+          "positive_layer_recall": 0.9819004524886877
+        }
+      },
+      {
+        "case": "094",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 96878,
+        "shape_h_w_z": [
+          512,
+          512,
+          354
+        ],
+        "spacing_xyz_mm": null,
+        "affine": null,
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.8036622484405361,
+            "precision": 0.7334083264701221,
+            "recall": 0.8888014324818505,
+            "tp": 328597,
+            "fp": 119444,
+            "fn": 41111,
+            "positive_layers": 233,
+            "hit_positive_layers": 228,
+            "positive_layer_recall": 0.9785407725321889
+          },
+          {
+            "name": "vein",
+            "dice": 0.7559556111058595,
+            "precision": 0.7773049849642285,
+            "recall": 0.7357476465670774,
+            "tp": 323882,
+            "fp": 92791,
+            "fn": 116326,
+            "positive_layers": 237,
+            "hit_positive_layers": 235,
+            "positive_layer_recall": 0.9915611814345991
+          }
+        ],
+        "union": {
+          "dice": 0.8815186320289048,
+          "precision": 0.9045836301504218,
+          "recall": 0.859600607280995,
+          "tp": 700951,
+          "fp": 73937,
+          "fn": 114487,
+          "positive_layers": 238,
+          "hit_positive_layers": 237,
+          "positive_layer_recall": 0.9957983193277311
+        },
+        "loss": 0.16320599433518734,
+        "spacing_z_y_x_mm": [
+          1.0,
+          0.7753906,
+          0.7753906
+        ],
+        "primary": {
+          "dice": 0.8815186320289048,
+          "precision": 0.9045836301504218,
+          "recall": 0.859600607280995,
+          "tp": 700951,
+          "fp": 73937,
+          "fn": 114487,
+          "positive_layers": 238,
+          "hit_positive_layers": 237,
+          "positive_layer_recall": 0.9957983193277311
+        }
+      },
+      {
+        "case": "096",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 108250,
+        "shape_h_w_z": [
+          512,
+          512,
+          340
+        ],
+        "spacing_xyz_mm": null,
+        "affine": null,
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.7649425058571885,
+            "precision": 0.7392583751362936,
+            "recall": 0.7924755670181904,
+            "tp": 393919,
+            "fp": 138938,
+            "fn": 103155,
+            "positive_layers": 256,
+            "hit_positive_layers": 251,
+            "positive_layer_recall": 0.98046875
+          },
+          {
+            "name": "vein",
+            "dice": 0.6872119696625266,
+            "precision": 0.771887676050208,
+            "recall": 0.6192775235230854,
+            "tp": 399042,
+            "fp": 117927,
+            "fn": 245325,
+            "positive_layers": 259,
+            "hit_positive_layers": 256,
+            "positive_layer_recall": 0.9884169884169884
+          }
+        ],
+        "union": {
+          "dice": 0.81839141395842,
+          "precision": 0.9040671678342671,
+          "recall": 0.7475484709896957,
+          "tp": 858306,
+          "fp": 91077,
+          "fn": 289855,
+          "positive_layers": 259,
+          "hit_positive_layers": 256,
+          "positive_layer_recall": 0.9884169884169884
+        },
+        "loss": 0.2624449980280855,
+        "spacing_z_y_x_mm": [
+          1.0,
+          0.6796875,
+          0.6796875
+        ],
+        "primary": {
+          "dice": 0.81839141395842,
+          "precision": 0.9040671678342671,
+          "recall": 0.7475484709896957,
+          "tp": 858306,
+          "fp": 91077,
+          "fn": 289855,
+          "positive_layers": 259,
+          "hit_positive_layers": 256,
+          "positive_layer_recall": 0.9884169884169884
+        }
+      },
+      {
+        "case": "100",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 131831,
+        "shape_h_w_z": [
+          512,
+          512,
+          330
+        ],
+        "spacing_xyz_mm": null,
+        "affine": null,
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.5258602984112921,
+            "precision": 0.5706949525145647,
+            "recall": 0.4875570806092083,
+            "tp": 261158,
+            "fp": 196456,
+            "fn": 274488,
+            "positive_layers": 268,
+            "hit_positive_layers": 253,
+            "positive_layer_recall": 0.9440298507462687
+          },
+          {
+            "name": "vein",
+            "dice": 0.45631927270819267,
+            "precision": 0.48436721365296564,
+            "recall": 0.43134183810650023,
+            "tp": 165238,
+            "fp": 175904,
+            "fn": 217841,
+            "positive_layers": 267,
+            "hit_positive_layers": 253,
+            "positive_layer_recall": 0.947565543071161
+          }
+        ],
+        "union": {
+          "dice": 0.6033701339347876,
+          "precision": 0.7165784961198504,
+          "recall": 0.5210519531025727,
+          "tp": 480994,
+          "fp": 190243,
+          "fn": 442127,
+          "positive_layers": 271,
+          "hit_positive_layers": 255,
+          "positive_layer_recall": 0.940959409594096
+        },
+        "loss": 0.5489387222311713,
+        "spacing_z_y_x_mm": [
+          1.0,
+          0.68359375,
+          0.68359375
+        ],
+        "primary": {
+          "dice": 0.6033701339347876,
+          "precision": 0.7165784961198504,
+          "recall": 0.5210519531025727,
+          "tp": 480994,
+          "fp": 190243,
+          "fn": 442127,
+          "positive_layers": 271,
+          "hit_positive_layers": 255,
+          "positive_layer_recall": 0.940959409594096
+        }
+      },
+      {
+        "case": "122",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 85194,
+        "shape_h_w_z": [
+          512,
+          512,
+          306
+        ],
+        "spacing_xyz_mm": null,
+        "affine": null,
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.5296344340761389,
+            "precision": 0.5793901193704004,
+            "recall": 0.4877485563868765,
+            "tp": 164541,
+            "fp": 119449,
+            "fn": 172807,
+            "positive_layers": 235,
+            "hit_positive_layers": 206,
+            "positive_layer_recall": 0.8765957446808511
+          },
+          {
+            "name": "vein",
+            "dice": 0.4520055507143686,
+            "precision": 0.5848460259036927,
+            "recall": 0.3683413992308691,
+            "tp": 130454,
+            "fp": 92603,
+            "fn": 223712,
+            "positive_layers": 234,
+            "hit_positive_layers": 217,
+            "positive_layer_recall": 0.9273504273504274
+          }
+        ],
+        "union": {
+          "dice": 0.5840834250029767,
+          "precision": 0.7677693344514965,
+          "recall": 0.4713215312582905,
+          "tp": 328669,
+          "fp": 99414,
+          "fn": 368666,
+          "positive_layers": 237,
+          "hit_positive_layers": 221,
+          "positive_layer_recall": 0.9324894514767933
+        },
+        "loss": 0.5532888351617004,
+        "spacing_z_y_x_mm": [
+          1.0,
+          0.68359375,
+          0.68359375
+        ],
+        "primary": {
+          "dice": 0.5840834250029767,
+          "precision": 0.7677693344514965,
+          "recall": 0.4713215312582905,
+          "tp": 328669,
+          "fp": 99414,
+          "fn": 368666,
+          "positive_layers": 237,
+          "hit_positive_layers": 221,
+          "positive_layer_recall": 0.9324894514767933
+        }
+      },
+      {
+        "case": "159",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 98527,
+        "shape_h_w_z": [
+          512,
+          512,
+          426
+        ],
+        "spacing_xyz_mm": null,
+        "affine": null,
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.6227492888444683,
+            "precision": 0.6057568626668927,
+            "recall": 0.6407225573742829,
+            "tp": 243003,
+            "fp": 158153,
+            "fn": 136261,
+            "positive_layers": 313,
+            "hit_positive_layers": 295,
+            "positive_layer_recall": 0.9424920127795527
+          },
+          {
+            "name": "vein",
+            "dice": 0.532235807496433,
+            "precision": 0.5800519274151213,
+            "recall": 0.49170268703531317,
+            "tp": 204419,
+            "fp": 147996,
+            "fn": 211318,
+            "positive_layers": 312,
+            "hit_positive_layers": 310,
+            "positive_layer_recall": 0.9935897435897436
+          }
+        ],
+        "union": {
+          "dice": 0.6643997616328832,
+          "precision": 0.7343521009814108,
+          "recall": 0.6066152769795857,
+          "tp": 485547,
+          "fp": 175644,
+          "fn": 314873,
+          "positive_layers": 316,
+          "hit_positive_layers": 310,
+          "positive_layer_recall": 0.9810126582278481
+        },
+        "loss": 0.3653802299443545,
+        "spacing_z_y_x_mm": [
+          1.0,
+          0.708984375,
+          0.708984375
+        ],
+        "primary": {
+          "dice": 0.6643997616328832,
+          "precision": 0.7343521009814108,
+          "recall": 0.6066152769795857,
+          "tp": 485547,
+          "fp": 175644,
+          "fn": 314873,
+          "positive_layers": 316,
+          "hit_positive_layers": 310,
+          "positive_layer_recall": 0.9810126582278481
+        }
+      },
+      {
+        "case": "178",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 116582,
+        "shape_h_w_z": [
+          512,
+          512,
+          426
+        ],
+        "spacing_xyz_mm": null,
+        "affine": null,
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.5962462806134127,
+            "precision": 0.6265169501248864,
+            "recall": 0.5687658994852072,
+            "tp": 283945,
+            "fp": 169267,
+            "fn": 215285,
+            "positive_layers": 319,
+            "hit_positive_layers": 312,
+            "positive_layer_recall": 0.9780564263322884
+          },
+          {
+            "name": "vein",
+            "dice": 0.5022100351519132,
+            "precision": 0.6387999575364433,
+            "recall": 0.4137425022391503,
+            "tp": 228661,
+            "fp": 129293,
+            "fn": 324004,
+            "positive_layers": 317,
+            "hit_positive_layers": 316,
+            "positive_layer_recall": 0.9968454258675079
+          }
+        ],
+        "union": {
+          "dice": 0.6506320314602114,
+          "precision": 0.8168963384410126,
+          "recall": 0.5406023182958578,
+          "tp": 571874,
+          "fp": 128183,
+          "fn": 485972,
+          "positive_layers": 319,
+          "hit_positive_layers": 318,
+          "positive_layer_recall": 0.9968652037617555
+        },
+        "loss": 0.497506005864398,
+        "spacing_z_y_x_mm": [
+          1.0,
+          0.6171875,
+          0.6171875
+        ],
+        "primary": {
+          "dice": 0.6506320314602114,
+          "precision": 0.8168963384410126,
+          "recall": 0.5406023182958578,
+          "tp": 571874,
+          "fp": 128183,
+          "fn": 485972,
+          "positive_layers": 319,
+          "hit_positive_layers": 318,
+          "positive_layer_recall": 0.9968652037617555
+        }
+      },
+      {
+        "case": "191",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 70708,
+        "shape_h_w_z": [
+          512,
+          512,
+          246
+        ],
+        "spacing_xyz_mm": null,
+        "affine": null,
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.5223686721621306,
+            "precision": 0.5219113540466398,
+            "recall": 0.5228267924187281,
+            "tp": 127278,
+            "fp": 116591,
+            "fn": 116164,
+            "positive_layers": 176,
+            "hit_positive_layers": 168,
+            "positive_layer_recall": 0.9545454545454546
+          },
+          {
+            "name": "vein",
+            "dice": 0.5338226845709704,
+            "precision": 0.5565346282946755,
+            "recall": 0.5128917868219055,
+            "tp": 129160,
+            "fp": 102919,
+            "fn": 122667,
+            "positive_layers": 180,
+            "hit_positive_layers": 175,
+            "positive_layer_recall": 0.9722222222222222
+          }
+        ],
+        "union": {
+          "dice": 0.6359596652022836,
+          "precision": 0.7064139578813268,
+          "recall": 0.5782843922690567,
+          "tp": 289451,
+          "fp": 120296,
+          "fn": 211083,
+          "positive_layers": 180,
+          "hit_positive_layers": 177,
+          "positive_layer_recall": 0.9833333333333333
+        },
+        "loss": 0.39117061779872186,
+        "spacing_z_y_x_mm": [
+          1.0,
+          0.68359375,
+          0.68359375
+        ],
+        "primary": {
+          "dice": 0.6359596652022836,
+          "precision": 0.7064139578813268,
+          "recall": 0.5782843922690567,
+          "tp": 289451,
+          "fp": 120296,
+          "fn": 211083,
+          "positive_layers": 180,
+          "hit_positive_layers": 177,
+          "positive_layer_recall": 0.9833333333333333
+        }
+      }
+    ]
+  },
+  "parse": {
+    "dataset": "parse",
+    "primary_name": "artery",
+    "primary": {
+      "dice": 0.4749306298441272,
+      "precision": 0.4028365838065145,
+      "recall": 0.578454267667149,
+      "tp": 2317481,
+      "fp": 3435425,
+      "fn": 1688853,
+      "positive_layers": 2990,
+      "hit_positive_layers": 2844,
+      "positive_layer_recall": 0.9511705685618729
+    },
+    "classes": [
+      {
+        "name": "artery",
+        "dice": 0.4749306298441272,
+        "precision": 0.4028365838065145,
+        "recall": 0.578454267667149,
+        "tp": 2317481,
+        "fp": 3435425,
+        "fn": 1688853,
+        "positive_layers": 2990,
+        "hit_positive_layers": 2844,
+        "positive_layer_recall": 0.9511705685618729
+      }
+    ],
+    "macro": {
+      "primary": {
+        "dice": 0.4665402139329214,
+        "recall": 0.5813611938202891,
+        "precision": 0.3964877712636786,
+        "positive_layer_recall": 0.9499177258593565
+      },
+      "classes": [
+        {
+          "name": "artery",
+          "dice": 0.4665402139329214,
+          "recall": 0.5813611938202891,
+          "precision": 0.3964877712636786,
+          "positive_layer_recall": 0.9499177258593565
+        }
+      ]
+    },
+    "case_count": 13,
+    "slices": 3934,
+    "loss": 0.45729031995976704,
+    "eval_mode": true,
+    "grad_enabled": false,
+    "cases": [
+      {
+        "case": "PA000026",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 0,
+        "shape_h_w_z": [
+          512,
+          512,
+          314
+        ],
+        "spacing_xyz_mm": [
+          0.552734375,
+          0.552734375,
+          1.0
+        ],
+        "affine": [
+          [
+            -0.552734375,
+            0.0,
+            0.0,
+            160.2236328125
+          ],
+          [
+            0.0,
+            -0.552734375,
+            0.0,
+            279.2236328125
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -778.4000244140625
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.5009002338510141,
+            "precision": 0.4545008689109053,
+            "recall": 0.5578504105176068,
+            "tp": 202951,
+            "fp": 243585,
+            "fn": 160858,
+            "positive_layers": 227,
+            "hit_positive_layers": 217,
+            "positive_layer_recall": 0.9559471365638766
+          }
+        ],
+        "loss": 0.4948776455441858,
+        "spacing_z_y_x_mm": null,
+        "primary": {
+          "name": "artery",
+          "dice": 0.5009002338510141,
+          "precision": 0.4545008689109053,
+          "recall": 0.5578504105176068,
+          "tp": 202951,
+          "fp": 243585,
+          "fn": 160858,
+          "positive_layers": 227,
+          "hit_positive_layers": 217,
+          "positive_layer_recall": 0.9559471365638766
+        },
+        "vein_metric": null
+      },
+      {
+        "case": "PA000107",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 0,
+        "shape_h_w_z": [
+          512,
+          512,
+          281
+        ],
+        "spacing_xyz_mm": [
+          0.65234375,
+          0.65234375,
+          1.0
+        ],
+        "affine": [
+          [
+            -0.65234375,
+            0.0,
+            0.0,
+            166.673828125
+          ],
+          [
+            0.0,
+            -0.65234375,
+            0.0,
+            309.673828125
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -717.7000122070312
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.4620076018897175,
+            "precision": 0.44329087353423086,
+            "recall": 0.48237452927079766,
+            "tp": 176127,
+            "fp": 221190,
+            "fn": 188998,
+            "positive_layers": 217,
+            "hit_positive_layers": 207,
+            "positive_layer_recall": 0.9539170506912442
+          }
+        ],
+        "loss": 0.5285651909711098,
+        "spacing_z_y_x_mm": null,
+        "primary": {
+          "name": "artery",
+          "dice": 0.4620076018897175,
+          "precision": 0.44329087353423086,
+          "recall": 0.48237452927079766,
+          "tp": 176127,
+          "fp": 221190,
+          "fn": 188998,
+          "positive_layers": 217,
+          "hit_positive_layers": 207,
+          "positive_layer_recall": 0.9539170506912442
+        },
+        "vein_metric": null
+      },
+      {
+        "case": "PA000109",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 0,
+        "shape_h_w_z": [
+          512,
+          512,
+          301
+        ],
+        "spacing_xyz_mm": [
+          0.64453125,
+          0.64453125,
+          1.0
+        ],
+        "affine": [
+          [
+            -0.64453125,
+            0.0,
+            0.0,
+            174.677734375
+          ],
+          [
+            0.0,
+            -0.64453125,
+            0.0,
+            302.677734375
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -702.0999755859375
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.4263731064021316,
+            "precision": 0.3656049915389259,
+            "recall": 0.5113690235200892,
+            "tp": 147779,
+            "fp": 256425,
+            "fn": 141208,
+            "positive_layers": 222,
+            "hit_positive_layers": 209,
+            "positive_layer_recall": 0.9414414414414415
+          }
+        ],
+        "loss": 0.5100898554554809,
+        "spacing_z_y_x_mm": null,
+        "primary": {
+          "name": "artery",
+          "dice": 0.4263731064021316,
+          "precision": 0.3656049915389259,
+          "recall": 0.5113690235200892,
+          "tp": 147779,
+          "fp": 256425,
+          "fn": 141208,
+          "positive_layers": 222,
+          "hit_positive_layers": 209,
+          "positive_layer_recall": 0.9414414414414415
+        },
+        "vein_metric": null
+      },
+      {
+        "case": "PA000118",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 0,
+        "shape_h_w_z": [
+          512,
+          512,
+          325
+        ],
+        "spacing_xyz_mm": [
+          0.740234375,
+          0.740234375,
+          1.0
+        ],
+        "affine": [
+          [
+            -0.740234375,
+            0.0,
+            0.0,
+            190.1298828125
+          ],
+          [
+            0.0,
+            -0.740234375,
+            0.0,
+            329.6298828125
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -728.9000244140625
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.42616017995636035,
+            "precision": 0.33305586838368506,
+            "recall": 0.5915158488332034,
+            "tp": 176852,
+            "fp": 354146,
+            "fn": 122129,
+            "positive_layers": 228,
+            "hit_positive_layers": 221,
+            "positive_layer_recall": 0.9692982456140351
+          }
+        ],
+        "loss": 0.4743687803011674,
+        "spacing_z_y_x_mm": null,
+        "primary": {
+          "name": "artery",
+          "dice": 0.42616017995636035,
+          "precision": 0.33305586838368506,
+          "recall": 0.5915158488332034,
+          "tp": 176852,
+          "fp": 354146,
+          "fn": 122129,
+          "positive_layers": 228,
+          "hit_positive_layers": 221,
+          "positive_layer_recall": 0.9692982456140351
+        },
+        "vein_metric": null
+      },
+      {
+        "case": "PA000147",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 0,
+        "shape_h_w_z": [
+          512,
+          512,
+          251
+        ],
+        "spacing_xyz_mm": [
+          0.734375,
+          0.734375,
+          1.0
+        ],
+        "affine": [
+          [
+            -0.734375,
+            0.0,
+            0.0,
+            200.6328125
+          ],
+          [
+            0.0,
+            -0.734375,
+            0.0,
+            348.6328125
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -636.5
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.535423272216117,
+            "precision": 0.454326694269941,
+            "recall": 0.6517616737287232,
+            "tp": 152741,
+            "fp": 183451,
+            "fn": 81610,
+            "positive_layers": 188,
+            "hit_positive_layers": 184,
+            "positive_layer_recall": 0.9787234042553191
+          }
+        ],
+        "loss": 0.3542652218880881,
+        "spacing_z_y_x_mm": null,
+        "primary": {
+          "name": "artery",
+          "dice": 0.535423272216117,
+          "precision": 0.454326694269941,
+          "recall": 0.6517616737287232,
+          "tp": 152741,
+          "fp": 183451,
+          "fn": 81610,
+          "positive_layers": 188,
+          "hit_positive_layers": 184,
+          "positive_layer_recall": 0.9787234042553191
+        },
+        "vein_metric": null
+      },
+      {
+        "case": "PA000169",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 0,
+        "shape_h_w_z": [
+          512,
+          512,
+          324
+        ],
+        "spacing_xyz_mm": [
+          0.759765625,
+          0.759765625,
+          1.0
+        ],
+        "affine": [
+          [
+            -0.759765625,
+            0.0,
+            0.0,
+            202.1201171875
+          ],
+          [
+            0.0,
+            -0.759765625,
+            0.0,
+            323.6201171875
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -766.5
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.38755171219670465,
+            "precision": 0.32021886728417903,
+            "recall": 0.4907403308803187,
+            "tp": 177383,
+            "fp": 376560,
+            "fn": 184077,
+            "positive_layers": 284,
+            "hit_positive_layers": 273,
+            "positive_layer_recall": 0.9612676056338029
+          }
+        ],
+        "loss": 0.5980244021356842,
+        "spacing_z_y_x_mm": null,
+        "primary": {
+          "name": "artery",
+          "dice": 0.38755171219670465,
+          "precision": 0.32021886728417903,
+          "recall": 0.4907403308803187,
+          "tp": 177383,
+          "fp": 376560,
+          "fn": 184077,
+          "positive_layers": 284,
+          "hit_positive_layers": 273,
+          "positive_layer_recall": 0.9612676056338029
+        },
+        "vein_metric": null
+      },
+      {
+        "case": "PA000190",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 0,
+        "shape_h_w_z": [
+          512,
+          512,
+          302
+        ],
+        "spacing_xyz_mm": [
+          0.65234375,
+          0.65234375,
+          1.0
+        ],
+        "affine": [
+          [
+            -0.65234375,
+            0.0,
+            0.0,
+            163.673828125
+          ],
+          [
+            0.0,
+            -0.65234375,
+            0.0,
+            319.673828125
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -955.2000122070312
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.49464127185627715,
+            "precision": 0.3854812834224599,
+            "recall": 0.6900479831520504,
+            "tp": 173004,
+            "fp": 275796,
+            "fn": 77709,
+            "positive_layers": 234,
+            "hit_positive_layers": 224,
+            "positive_layer_recall": 0.9572649572649573
+          }
+        ],
+        "loss": 0.38858860454811955,
+        "spacing_z_y_x_mm": null,
+        "primary": {
+          "name": "artery",
+          "dice": 0.49464127185627715,
+          "precision": 0.3854812834224599,
+          "recall": 0.6900479831520504,
+          "tp": 173004,
+          "fp": 275796,
+          "fn": 77709,
+          "positive_layers": 234,
+          "hit_positive_layers": 224,
+          "positive_layer_recall": 0.9572649572649573
+        },
+        "vein_metric": null
+      },
+      {
+        "case": "PA000194",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 0,
+        "shape_h_w_z": [
+          512,
+          512,
+          290
+        ],
+        "spacing_xyz_mm": [
+          0.6484375,
+          0.6484375,
+          1.0
+        ],
+        "affine": [
+          [
+            -0.6484375,
+            0.0,
+            0.0,
+            170.67578125
+          ],
+          [
+            0.0,
+            -0.6484375,
+            0.0,
+            303.67578125
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -980.7999877929688
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.5322415629310194,
+            "precision": 0.46465769348797603,
+            "recall": 0.6228316298733846,
+            "tp": 228639,
+            "fp": 263420,
+            "fn": 138457,
+            "positive_layers": 239,
+            "hit_positive_layers": 233,
+            "positive_layer_recall": 0.9748953974895398
+          }
+        ],
+        "loss": 0.42951213162520835,
+        "spacing_z_y_x_mm": null,
+        "primary": {
+          "name": "artery",
+          "dice": 0.5322415629310194,
+          "precision": 0.46465769348797603,
+          "recall": 0.6228316298733846,
+          "tp": 228639,
+          "fp": 263420,
+          "fn": 138457,
+          "positive_layers": 239,
+          "hit_positive_layers": 233,
+          "positive_layer_recall": 0.9748953974895398
+        },
+        "vein_metric": null
+      },
+      {
+        "case": "PA000212",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 0,
+        "shape_h_w_z": [
+          512,
+          512,
+          297
+        ],
+        "spacing_xyz_mm": [
+          0.923828125,
+          0.923828125,
+          1.0
+        ],
+        "affine": [
+          [
+            -0.923828125,
+            0.0,
+            0.0,
+            223.0380859375
+          ],
+          [
+            0.0,
+            -0.923828125,
+            0.0,
+            381.0380859375
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -970.5999755859375
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.4190155950494583,
+            "precision": 0.32100425913472314,
+            "recall": 0.6031841222246019,
+            "tp": 84488,
+            "fp": 178711,
+            "fn": 55582,
+            "positive_layers": 207,
+            "hit_positive_layers": 189,
+            "positive_layer_recall": 0.9130434782608695
+          }
+        ],
+        "loss": 0.36130980432334575,
+        "spacing_z_y_x_mm": null,
+        "primary": {
+          "name": "artery",
+          "dice": 0.4190155950494583,
+          "precision": 0.32100425913472314,
+          "recall": 0.6031841222246019,
+          "tp": 84488,
+          "fp": 178711,
+          "fn": 55582,
+          "positive_layers": 207,
+          "hit_positive_layers": 189,
+          "positive_layer_recall": 0.9130434782608695
+        },
+        "vein_metric": null
+      },
+      {
+        "case": "PA000217",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 0,
+        "shape_h_w_z": [
+          512,
+          512,
+          285
+        ],
+        "spacing_xyz_mm": [
+          0.556640625,
+          0.556640625,
+          1.0
+        ],
+        "affine": [
+          [
+            -0.556640625,
+            0.0,
+            0.0,
+            150.2216796875
+          ],
+          [
+            0.0,
+            -0.556640625,
+            0.0,
+            276.2216796875
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -957.7999877929688
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.4855068549135297,
+            "precision": 0.43387984794705436,
+            "recall": 0.5510793323255833,
+            "tp": 206706,
+            "fp": 269707,
+            "fn": 168387,
+            "positive_layers": 229,
+            "hit_positive_layers": 223,
+            "positive_layer_recall": 0.9737991266375546
+          }
+        ],
+        "loss": 0.4856833077313607,
+        "spacing_z_y_x_mm": null,
+        "primary": {
+          "name": "artery",
+          "dice": 0.4855068549135297,
+          "precision": 0.43387984794705436,
+          "recall": 0.5510793323255833,
+          "tp": 206706,
+          "fp": 269707,
+          "fn": 168387,
+          "positive_layers": 229,
+          "hit_positive_layers": 223,
+          "positive_layer_recall": 0.9737991266375546
+        },
+        "vein_metric": null
+      },
+      {
+        "case": "PA000245",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 0,
+        "shape_h_w_z": [
+          512,
+          512,
+          323
+        ],
+        "spacing_xyz_mm": [
+          0.60546875,
+          0.60546875,
+          1.0
+        ],
+        "affine": [
+          [
+            -0.60546875,
+            0.0,
+            0.0,
+            160.697265625
+          ],
+          [
+            0.0,
+            -0.60546875,
+            0.0,
+            287.697265625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -1019.0999755859375
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.5974314074579908,
+            "precision": 0.5278276233570351,
+            "recall": 0.6881806944600517,
+            "tp": 306206,
+            "fp": 273919,
+            "fn": 138744,
+            "positive_layers": 285,
+            "hit_positive_layers": 277,
+            "positive_layer_recall": 0.9719298245614035
+          }
+        ],
+        "loss": 0.34911197525428916,
+        "spacing_z_y_x_mm": null,
+        "primary": {
+          "name": "artery",
+          "dice": 0.5974314074579908,
+          "precision": 0.5278276233570351,
+          "recall": 0.6881806944600517,
+          "tp": 306206,
+          "fp": 273919,
+          "fn": 138744,
+          "positive_layers": 285,
+          "hit_positive_layers": 277,
+          "positive_layer_recall": 0.9719298245614035
+        },
+        "vein_metric": null
+      },
+      {
+        "case": "PA000286",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 0,
+        "shape_h_w_z": [
+          512,
+          512,
+          295
+        ],
+        "spacing_xyz_mm": [
+          0.921875,
+          0.921875,
+          1.0
+        ],
+        "affine": [
+          [
+            -0.921875,
+            0.0,
+            0.0,
+            222.5390625
+          ],
+          [
+            0.0,
+            -0.921875,
+            0.0,
+            370.5390625
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -688.7999877929688
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.3148405716471365,
+            "precision": 0.21731473675683946,
+            "recall": 0.5711672357101741,
+            "tp": 72436,
+            "fp": 260887,
+            "fn": 54385,
+            "positive_layers": 193,
+            "hit_positive_layers": 171,
+            "positive_layer_recall": 0.8860103626943006
+          }
+        ],
+        "loss": 0.45595473566297756,
+        "spacing_z_y_x_mm": null,
+        "primary": {
+          "name": "artery",
+          "dice": 0.3148405716471365,
+          "precision": 0.21731473675683946,
+          "recall": 0.5711672357101741,
+          "tp": 72436,
+          "fp": 260887,
+          "fn": 54385,
+          "positive_layers": 193,
+          "hit_positive_layers": 171,
+          "positive_layer_recall": 0.8860103626943006
+        },
+        "vein_metric": null
+      },
+      {
+        "case": "PA000307",
+        "complete_lung_candidate": false,
+        "empty_label": false,
+        "predicted_overlap_voxels": 0,
+        "shape_h_w_z": [
+          512,
+          512,
+          346
+        ],
+        "spacing_xyz_mm": [
+          0.7109375,
+          0.7109375,
+          1.0
+        ],
+        "affine": [
+          [
+            -0.7109375,
+            0.0,
+            0.0,
+            188.64453125
+          ],
+          [
+            0.0,
+            -0.7109375,
+            0.0,
+            341.64453125
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -494.29998779296875
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lung_coverage": {},
+        "classes": [
+          {
+            "name": "artery",
+            "dice": 0.4829294107605201,
+            "precision": 0.4331774183998677,
+            "recall": 0.5455927051671733,
+            "tp": 212169,
+            "fp": 277628,
+            "fn": 176709,
+            "positive_layers": 237,
+            "hit_positive_layers": 216,
+            "positive_layer_recall": 0.9113924050632911
+          }
+        ],
+        "loss": 0.4906459419713544,
+        "spacing_z_y_x_mm": null,
+        "primary": {
+          "name": "artery",
+          "dice": 0.4829294107605201,
+          "precision": 0.4331774183998677,
+          "recall": 0.5455927051671733,
+          "tp": 212169,
+          "fp": 277628,
+          "fn": 176709,
+          "positive_layers": 237,
+          "hit_positive_layers": 216,
+          "positive_layer_recall": 0.9113924050632911
+        },
+        "vein_metric": null
+      }
+    ]
+  }
+}

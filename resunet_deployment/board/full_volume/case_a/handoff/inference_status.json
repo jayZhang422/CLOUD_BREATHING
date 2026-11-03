@@ -1,0 +1,195 @@
+{
+  "transfer_id": 1958361580,
+  "total_commands": 39312,
+  "status": "complete",
+  "state": 2,
+  "completed_commands": 39312,
+  "elapsed_seconds": 487.069,
+  "no_progress_seconds": 0.0,
+  "current_command": "finished",
+  "samples": [
+    {
+      "elapsed_seconds": 479.366,
+      "completed_commands": 39043,
+      "hardware": {
+        "engine_state": 8,
+        "scheduler_state": 7,
+        "input_words": 205480982,
+        "output_words": 181256192,
+        "read_idle": true,
+        "memory_pending": false,
+        "core_done": false,
+        "core_reset_n": true,
+        "diagnostic_version": 4,
+        "gather_request_stall_cycles": 0,
+        "gather_response_wait_cycles": 10625339375,
+        "compact_cache_hits": 805906846,
+        "compact_cache_misses": 26032406,
+        "kind4_cycles": 7501602830
+      }
+    },
+    {
+      "elapsed_seconds": 480.525,
+      "completed_commands": 39082,
+      "hardware": {
+        "engine_state": 8,
+        "scheduler_state": 7,
+        "input_words": 205653142,
+        "output_words": 181403648,
+        "read_idle": true,
+        "memory_pending": true,
+        "core_done": false,
+        "core_reset_n": true,
+        "diagnostic_version": 4,
+        "gather_request_stall_cycles": 0,
+        "gather_response_wait_cycles": 10632786527,
+        "compact_cache_hits": 806668702,
+        "compact_cache_misses": 26056982,
+        "kind4_cycles": 7508591760
+      }
+    },
+    {
+      "elapsed_seconds": 481.66,
+      "completed_commands": 39122,
+      "hardware": {
+        "engine_state": 8,
+        "scheduler_state": 7,
+        "input_words": 205997462,
+        "output_words": 181698560,
+        "read_idle": true,
+        "memory_pending": true,
+        "core_done": true,
+        "core_reset_n": true,
+        "diagnostic_version": 4,
+        "gather_request_stall_cycles": 0,
+        "gather_response_wait_cycles": 10647682140,
+        "compact_cache_hits": 808192414,
+        "compact_cache_misses": 26106134,
+        "kind4_cycles": 7522569864
+      }
+    },
+    {
+      "elapsed_seconds": 482.893,
+      "completed_commands": 39177,
+      "hardware": {
+        "engine_state": 8,
+        "scheduler_state": 6,
+        "input_words": 206169622,
+        "output_words": 181846016,
+        "read_idle": false,
+        "memory_pending": true,
+        "core_done": false,
+        "core_reset_n": true,
+        "diagnostic_version": 4,
+        "gather_request_stall_cycles": 0,
+        "gather_response_wait_cycles": 10655128753,
+        "compact_cache_hits": 808954270,
+        "compact_cache_misses": 26130710,
+        "kind4_cycles": 7529558919
+      }
+    },
+    {
+      "elapsed_seconds": 484.093,
+      "completed_commands": 39217,
+      "hardware": {
+        "engine_state": 8,
+        "scheduler_state": 10,
+        "input_words": 206513942,
+        "output_words": 182140928,
+        "read_idle": false,
+        "memory_pending": true,
+        "core_done": false,
+        "core_reset_n": true,
+        "diagnostic_version": 4,
+        "gather_request_stall_cycles": 0,
+        "gather_response_wait_cycles": 10670024193,
+        "compact_cache_hits": 810477982,
+        "compact_cache_misses": 26179862,
+        "kind4_cycles": 7543537029
+      }
+    },
+    {
+      "elapsed_seconds": 485.339,
+      "completed_commands": 39272,
+      "hardware": {
+        "engine_state": 8,
+        "scheduler_state": 7,
+        "input_words": 206686102,
+        "output_words": 182288384,
+        "read_idle": true,
+        "memory_pending": true,
+        "core_done": true,
+        "core_reset_n": true,
+        "diagnostic_version": 4,
+        "gather_request_stall_cycles": 0,
+        "gather_response_wait_cycles": 10677471743,
+        "compact_cache_hits": 811239838,
+        "compact_cache_misses": 26204438,
+        "kind4_cycles": 7550526084
+      }
+    },
+    {
+      "elapsed_seconds": 486.501,
+      "completed_commands": 39309,
+      "hardware": {
+        "engine_state": 8,
+        "scheduler_state": 6,
+        "input_words": 206850070,
+        "output_words": 182435840,
+        "read_idle": true,
+        "memory_pending": true,
+        "core_done": false,
+        "core_reset_n": true,
+        "diagnostic_version": 4,
+        "gather_request_stall_cycles": 0,
+        "gather_response_wait_cycles": 10683936299,
+        "compact_cache_hits": 812009886,
+        "compact_cache_misses": 26220822,
+        "kind4_cycles": 7556516540
+      }
+    },
+    {
+      "elapsed_seconds": 487.069,
+      "completed_commands": 39312,
+      "hardware": {
+        "engine_state": 0,
+        "scheduler_state": 0,
+        "input_words": 206997654,
+        "output_words": 182452224,
+        "read_idle": true,
+        "memory_pending": false,
+        "core_done": true,
+        "core_reset_n": true,
+        "diagnostic_version": 4,
+        "gather_request_stall_cycles": 0,
+        "gather_response_wait_cycles": 10686527190,
+        "compact_cache_hits": 812009886,
+        "compact_cache_misses": 26220822,
+        "kind4_cycles": 7556516540
+      }
+    }
+  ],
+  "hardware": {
+    "engine_state": 0,
+    "scheduler_state": 0,
+    "input_words": 206997654,
+    "output_words": 182452224,
+    "read_idle": true,
+    "memory_pending": false,
+    "core_done": true,
+    "core_reset_n": true,
+    "diagnostic_version": 4,
+    "gather_request_stall_cycles": 0,
+    "gather_response_wait_cycles": 10686527190,
+    "compact_cache_hits": 812009886,
+    "compact_cache_misses": 26220822,
+    "kind4_cycles": 7556516540
+  },
+  "volume_cycles": {
+    "fetch": 5070244,
+    "operator": 103817302265,
+    "gather": 7556516540,
+    "classify": 10252230628,
+    "kind4": 7556516540
+  }
+}

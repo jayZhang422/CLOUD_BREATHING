@@ -1,0 +1,180 @@
+{
+  "scope": "RTL slim batch 4+5 plus project PW weights to URAM",
+  "session_id": "vivado-20261020-182238-999c9bc7",
+  "webserver_url": "http://127.0.0.1:8088",
+  "tests": {
+    "pw": {
+      "status": "PASS",
+      "log": "pw_simulate.log",
+      "summary": [
+        "[CASE PASSED] PW directed_17_5_19 outputs=38 run_cycles=313 side=1",
+        "[CASE PASSED] PW directed_191_127_17 outputs=544 run_cycles=3748 side=1",
+        "[CASE PASSED] PW directed_192_128_33 outputs=1056 run_cycles=7163 side=1",
+        "[CASE PASSED] PW lobe_e1.expand outputs=4096 run_cycles=13132 side=0",
+        "[CASE PASSED] PW lobe_mid.project outputs=512 run_cycles=2477 side=0",
+        "[CASE PASSED] PW directed_768_512_1 outputs=128 run_cycles=2394 side=1",
+        "[CASE PASSED] PW directed_767_511_3 outputs=384 run_cycles=10115 side=1",
+        "[CASE PASSED] PW shift0_signed_saturation outputs=14 run_cycles=85 side=1",
+        "[CASE PASSED] PW tumor_mid.project outputs=2048 run_cycles=26450 side=0",
+        "[CASE PASSED] PW lobe_e1.expand outputs=4096 run_cycles=13181 side=1",
+        "[CASE PASSED] PW lobe_mid.project outputs=512 run_cycles=2995 side=1",
+        "[CASE PASSED] PW tumor_mid.project outputs=2048 run_cycles=33945 side=1",
+        "[CASE PASSED] PW tumor_d3.expand outputs=4096 run_cycles=102632 side=0",
+        "[CASE PASSED] PW tumor_head outputs=1024 run_cycles=28343 side=0",
+        "[CASE PASSED] PW directed_17_5_19 outputs=38 run_cycles=335 side=0",
+        "[CASE PASSED] PW directed_191_127_17 outputs=544 run_cycles=5003 side=0",
+        "[CASE PASSED] PW tumor_d3.expand outputs=4096 run_cycles=96234 side=1",
+        "[CASE PASSED] PW directed_192_128_33 outputs=1056 run_cycles=8973 side=0",
+        "[CASE PASSED] PW directed_768_512_1 outputs=128 run_cycles=2699 side=0",
+        "[CASE PASSED] PW directed_767_511_3 outputs=384 run_cycles=6981 side=0",
+        "[CASE PASSED] PW shift0_signed_saturation outputs=14 run_cycles=77 side=0",
+        "[CASE PASSED] PW tumor_head outputs=1024 run_cycles=26932 side=1",
+        "[TB PASSED] PW two independent branches, SHARED=1, 22 Golden cases, contention=88085"
+      ]
+    },
+    "quant": {
+      "status": "PASS",
+      "log": "quant_simulate.log",
+      "summary": [
+        "[CASE PASS] Add quant 192 configs 3264 outputs shift0..63 ties signed extremes join backpressure",
+        "[CASE PASS] PW quant 8192 vectors shift0..63 negative ties INT64 wrap saturation mask raw",
+        "[TB PASSED] quantization all offline Golden vectors matched"
+      ]
+    },
+    "rpc": {
+      "status": "PASS",
+      "log": "rpc_simulate.log",
+      "summary": [
+        "[CASE PASS] read_only_coefficients",
+        "[CASE PASS] image_metadata_snapshot_and_online_rejection",
+        "[CASE PASS] DW_P16_descriptor_rejection cases=6",
+        "[CASE PASS] RPC_RAM all_32_lengths upload_read_backpressure invalid_lengths control_errors",
+        "[CASE PASS] lobe_mid_expand bytes=2048 mac_bytes=0 cycle=292267",
+        "[CASE PASS] lobe_mid_mix bytes=2048 mac_bytes=0 cycle=333291",
+        "[CASE PASS] lobe_mid_project bytes=8192 mac_bytes=0 cycle=469200",
+        "[CASE PASS] lobe_mid_out bytes=2048 mac_bytes=0 cycle=510229",
+        "[CASE PASS] legacy_lobe_head bytes=64 mac_bytes=128 cycle=516163",
+        "[TB PASSED] 全部数据验证一致 cases=5 cycles=516163 rom_reads=1032 ddr_reads=84 ddr_writes=48"
+      ]
+    },
+    "op12": {
+      "status": "PASS",
+      "log": "op12_simulate.log",
+      "summary": [
+        "[CASE PASSED] shared op12 small_tail bytes=1056 writes=1056 run_cycles=3077 independent-Golden",
+        "[CASE PASSED] shared op12 max_banks bytes=8704 writes=8704 run_cycles=254116 independent-Golden",
+        "[TB PASSED] batch45 fused op12 two frozen Golden boundary cases"
+      ]
+    },
+    "bounds": {
+      "status": "PASS",
+      "log": "bounds_simulate.log",
+      "summary": [
+        "[CASE PASSED] PW bound_positive outputs=68 run_cycles=5575 side=0",
+        "[CASE PASSED] PW bound_negative outputs=68 run_cycles=5576 side=1",
+        "[CASE PASSED] PW bound_negative outputs=68 run_cycles=5562 side=0",
+        "[CASE PASSED] PW bound_positive outputs=68 run_cycles=5562 side=1",
+        "[TB PASSED] PW two independent branches, SHARED=1, 4 full signed INT8 bound cases, contention=3246"
+      ]
+    }
+  },
+  "production_files_changed_against_batch3_snapshot": [
+    "prj/Model_Deployment.srcs/sources_1/new/Ethernet/protocol/eth_protocol_core.sv",
+    "prj/Model_Deployment.srcs/sources_1/new/Ethernet/protocol/protocol_builder.sv",
+    "prj/Model_Deployment.srcs/sources_1/new/Op/control/op_service.sv",
+    "prj/Model_Deployment.srcs/sources_1/new/Op/control/op_transport.sv",
+    "prj/Model_Deployment.srcs/sources_1/new/Op/ElementAdd/elementadd_p16.v",
+    "prj/Model_Deployment.srcs/sources_1/new/Op/op_board.sv",
+    "prj/Model_Deployment.srcs/sources_1/new/Op/PW/pwmacshared.v",
+    "prj/Model_Deployment.srcs/sources_1/new/top.sv",
+    "prj/Model_Deployment.xpr",
+    "script/scala/Element_Add/elementadd.scala",
+    "script/scala/PW/pwmac.scala"
+  ],
+  "generated_rtl_copies_identical": true,
+  "synthesis_run": false,
+  "implementation_run": false,
+  "bitstream_generated": false,
+  "python_product_files_changed": false,
+  "baseline_resources": {
+    "CLB": {
+      "used": 18801,
+      "total": 27120,
+      "percent": 69.33,
+      "remaining": 8319
+    },
+    "LUT": 89617,
+    "FF": 108869,
+    "BRAM_tiles": 376.5,
+    "URAM": 4,
+    "DSP": 1232
+  },
+  "estimated_after_resources": {
+    "BRAM_tiles_range": [
+      296.5,
+      298.5
+    ],
+    "URAM": 36,
+    "DSP": 1232,
+    "CLB": "requires new implementation; not measured"
+  },
+  "op12_cycles": {
+    "small_tail": 3077,
+    "max_banks": 254116,
+    "same_as_batch3": true
+  },
+  "numeric_bounds": {
+    "max_cin": 768,
+    "acc_bits": 25,
+    "positive_max": 12582912,
+    "negative_min": -12484608
+  },
+  "cleanup": {
+    "items": [
+      {
+        "directory": "prj/Model_Deployment.sim/sim_batch45_pw",
+        "before_bytes": 81785116,
+        "remaining_files": [],
+        "remaining_bytes": 0
+      },
+      {
+        "directory": "prj/Model_Deployment.sim/sim_batch45_quant",
+        "before_bytes": 11690241,
+        "remaining_files": [],
+        "remaining_bytes": 0
+      },
+      {
+        "directory": "prj/Model_Deployment.sim/sim_batch45_rpc",
+        "before_bytes": 151482129,
+        "remaining_files": [],
+        "remaining_bytes": 0
+      },
+      {
+        "directory": "prj/Model_Deployment.sim/sim_batch45_op12",
+        "before_bytes": 79818098,
+        "remaining_files": [],
+        "remaining_bytes": 0
+      },
+      {
+        "directory": "prj/Model_Deployment.sim/sim_batch45_bounds_pw",
+        "before_bytes": 25627443,
+        "remaining_files": [
+          {
+            "path": "prj/Model_Deployment.sim/sim_batch45_bounds_pw/behav/xsim/xelab.pb",
+            "bytes": 3176
+          }
+        ],
+        "remaining_bytes": 3176
+      }
+    ],
+    "removed_bytes": 350399851,
+    "remaining_bytes": 3176,
+    "note": "All large runtime artifacts removed through Vivado MCP; xelab.pb (3176 B) remains locked by the GUI. Source, vectors, small logs retained."
+  },
+  "excluded_or_deferred": [
+    "DW internal arithmetic width",
+    "parameter RAM layout",
+    "standalone frozen pwmac.v regeneration",
+    "other old HDL/IP still used by production or retained tests"
+  ]
+}

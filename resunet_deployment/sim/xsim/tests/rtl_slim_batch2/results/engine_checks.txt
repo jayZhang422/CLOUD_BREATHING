@@ -1,0 +1,13 @@
+[CASE PASSED] engine debug=0 case=E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/MKDC/vectors/lobe_mid_expand bytes=2048 mac=0 cycles=12248 exact_cycle_equivalence
+[CASE PASSED] engine debug=0 case=E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/MKDC/vectors/edge_pw_raw_p16_multitile bytes=4224 mac=0 cycles=4694 exact_cycle_equivalence
+[CASE PASSED] engine debug=0 case=E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/RTL_Slim_Batch2/vectors/lobe_mid_mix bytes=2048 mac=0 cycles=6413 exact_cycle_equivalence
+[CASE PASSED] engine debug=0 case=E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/RTL_Slim_Batch2/vectors/lobe_mid_out bytes=2048 mac=0 cycles=6422 exact_cycle_equivalence
+[CASE PASSED] engine debug=0 case=E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/MKDC/vectors/legacy_lobe_head bytes=64 mac=128 cycles=377 exact_cycle_equivalence
+[CASE PASSED] engine debug=0 case=E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/MKDC/vectors/legacy_pool_odd_two_groups bytes=64 mac=0 cycles=397 exact_cycle_equivalence
+[CASE PASSED] engine debug=0 case=E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/MKDC/vectors/legacy_shuffle16 bytes=64 mac=0 cycles=79 exact_cycle_equivalence
+[CASE PASSED] engine debug=0 case=E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/MKDC/vectors/legacy_pool_groups32 bytes=1024 mac=0 cycles=6249 exact_cycle_equivalence
+[CASE PASSED] engine debug=0 case=E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/RTL_Slim_Batch2/vectors/upsample bytes=384 mac=0 cycles=373 exact_cycle_equivalence
+[CASE PASSED] engine debug=0 case=E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/RTL_Slim_Batch2/vectors/concat bytes=96 mac=0 cycles=117 exact_cycle_equivalence
+[CASE PASSED] engine debug=0 case=E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/RTL_Slim_Batch2/vectors/fused_dw11 bytes=784 mac=0 cycles=1437 exact_cycle_equivalence
+[CASE PASSED] engine debug=0 case=E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/RTL_Slim_Batch2/vectors/pw_tail_clear bytes=48 mac=0 cycles=264 exact_cycle_equivalence
+[TB PASSED] engine debug=0 cases=12 stalls=2990 exact_cycle_equivalence

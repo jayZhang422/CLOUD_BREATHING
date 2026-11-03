@@ -1,0 +1,697 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Sun Nov  1 20:36:30 2026
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+| Design       : top
+| Device       : xcku5p-ffvb676-2-i
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 113
++-----------+----------+---------------------------------------------+--------+
+| Rule      | Severity | Description                                 | Checks |
++-----------+----------+---------------------------------------------+--------+
+| DPIR-2    | Warning  | Asynchronous driver check                   | 6      |
+| LUTAR-1   | Warning  | LUT drives async reset alert                | 16     |
+| SYNTH-6   | Warning  | Timing of a RAM block might be sub-optimal  | 18     |
+| SYNTH-9   | Warning  | Small multiplier                            | 6      |
+| SYNTH-10  | Warning  | Wide multiplier                             | 64     |
+| TIMING-18 | Warning  | Missing input or output delay               | 1      |
+| XDCB-5    | Warning  | Runtime inefficient way to find pin objects | 1      |
+| CLKC-56   | Advisory | MMCME4 with global clock driver has no LOC  | 1      |
++-----------+----------+---------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+DPIR-2#1 Warning
+Asynchronous driver check  
+DSP g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/cfg_words1_i0 input pin g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/cfg_words1_i0/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#2 Warning
+Asynchronous driver check  
+DSP g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/cfg_words1_i0 input pin g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/cfg_words1_i0/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#3 Warning
+Asynchronous driver check  
+DSP g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/cfg_words1_i0 input pin g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/cfg_words1_i0/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#4 Warning
+Asynchronous driver check  
+DSP g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/cfg_words1_i0 input pin g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/cfg_words1_i0/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#5 Warning
+Asynchronous driver check  
+DSP g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/cfg_words1_i0 input pin g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/cfg_words1_i0/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-2#6 Warning
+Asynchronous driver check  
+DSP g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/cfg_words1_i0 input pin g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/cfg_words1_i0/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_6_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_6_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_6_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_6_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_6_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_6_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_6_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_6_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_6_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_6_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_6_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_6_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_6_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_6_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_6_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_6_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_sel[0]_INST_0, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[10]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[11]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[12]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[13]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[14]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[15]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[6]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[7]/CLR,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[8]/CLR
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[9]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell g_ethernet.u_ethernet/compute_reset_sync1_r_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) g_ethernet.u_op_board/compute_reset_sync1_r_reg/CLR,
+g_ethernet.u_op_board/compute_reset_sync2_r_reg/CLR,
+g_ethernet.u_op_board/rx_reset_sync1_r_reg/CLR,
+g_ethernet.u_op_board/rx_reset_sync2_r_reg/CLR,
+g_ethernet.u_op_board/ui_reset_sync1_r_reg/CLR
+g_ethernet.u_op_board/ui_reset_sync2_r_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell g_ethernet.u_ethernet/g_ethernet.bridge_reset_sync1_r_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) g_ethernet.bridge_reset_sync1_r_reg/CLR
+g_ethernet.bridge_reset_sync2_r_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell g_ethernet.u_ethernet/rst_n_sync1_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) g_ethernet.u_ethernet/rst_n_sync1_reg/CLR
+g_ethernet.u_ethernet/rst_n_sync2_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#9 Warning
+LUT drives async reset alert  
+LUT cell g_ethernet.u_ethernet/u_rx_mmcm_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) g_ethernet.u_ethernet/u_rx_mmcm/RST. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#10 Warning
+LUT drives async reset alert  
+LUT cell g_ethernet.u_op_board/u_mem_cdc/u_requests_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) g_ethernet.u_op_board/u_mem_cdc/compute_reset_sync1_r_reg/CLR,
+g_ethernet.u_op_board/u_mem_cdc/compute_reset_sync2_r_reg/CLR,
+g_ethernet.u_op_board/u_mem_cdc/ui_reset_sync1_r_reg/CLR
+g_ethernet.u_op_board/u_mem_cdc/ui_reset_sync2_r_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#11 Warning
+LUT drives async reset alert  
+LUT cell g_ethernet.u_op_board/u_request_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/goreg_dm.dout_i[319]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) g_ethernet.u_op_board/u_request_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_fb_i_reg/PRE,
+g_ethernet.u_op_board/u_request_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i_reg/PRE,
+g_ethernet.u_op_board/u_request_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_fb_i_reg/PRE,
+g_ethernet.u_op_board/u_request_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_fb_o_i_reg/PRE,
+g_ethernet.u_op_board/u_request_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg/PRE,
+g_ethernet.u_op_board/u_request_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[0]/CLR,
+g_ethernet.u_op_board/u_request_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[1]/CLR,
+g_ethernet.u_op_board/u_request_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_reg/CLR,
+g_ethernet.u_op_board/u_request_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_reg/PRE,
+g_ethernet.u_op_board/u_request_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg/PRE,
+g_ethernet.u_op_board/u_request_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]/CLR,
+g_ethernet.u_op_board/u_request_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]/CLR,
+g_ethernet.u_op_board/u_request_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[2]/CLR,
+g_ethernet.u_op_board/u_request_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[3]/CLR,
+g_ethernet.u_op_board/u_request_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[4]/CLR
+ (the first 15 of 670 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#12 Warning
+LUT drives async reset alert  
+LUT cell g_ethernet.u_op_board/u_service/u_operator/u_engine/u_move_writer/u_results/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/goreg_dm.dout_i[319]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) g_ethernet.u_op_board/u_service/u_operator/u_engine/u_move_writer/u_results/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_fb_i_reg/PRE,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_move_writer/u_results/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i_reg/PRE,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_move_writer/u_results/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_fb_i_reg/PRE,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_move_writer/u_results/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_fb_o_i_reg/PRE,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_move_writer/u_results/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg/PRE,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_move_writer/u_results/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[0]/CLR,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_move_writer/u_results/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[1]/CLR,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_move_writer/u_results/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_reg/CLR,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_move_writer/u_results/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_reg/PRE,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_move_writer/u_results/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg/PRE,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_move_writer/u_results/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]/CLR,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_move_writer/u_results/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]/CLR,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_move_writer/u_results/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[2]/CLR,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_move_writer/u_results/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[3]/CLR,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_move_writer/u_results/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[4]/CLR
+ (the first 15 of 668 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#13 Warning
+LUT drives async reset alert  
+LUT cell g_ethernet.u_op_board/u_service/u_operator/u_engine/u_pw_reader/u_requests/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/goreg_dm.dout_i[319]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) g_ethernet.u_op_board/u_service/u_operator/u_engine/u_pw_reader/u_requests/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_fb_i_reg/PRE,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_pw_reader/u_requests/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i_reg/PRE,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_pw_reader/u_requests/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_fb_i_reg/PRE,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_pw_reader/u_requests/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_fb_o_i_reg/PRE,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_pw_reader/u_requests/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg/PRE,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_pw_reader/u_requests/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[0]/CLR,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_pw_reader/u_requests/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[1]/CLR,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_pw_reader/u_requests/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_reg/CLR,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_pw_reader/u_requests/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_reg/PRE,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_pw_reader/u_requests/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg/PRE,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_pw_reader/u_requests/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]/CLR,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_pw_reader/u_requests/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]/CLR,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_pw_reader/u_requests/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[2]/CLR,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_pw_reader/u_requests/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[3]/CLR,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_pw_reader/u_requests/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[4]/CLR
+ (the first 15 of 86 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#14 Warning
+LUT drives async reset alert  
+LUT cell g_ethernet.u_op_board/u_service/u_operator/u_engine/u_pw_reader/u_requests_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) g_ethernet.u_op_board/u_service/u_operator/u_engine/u_pw_reader/u_requests/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[0]/PRE
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_pw_reader/u_requests/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#15 Warning
+LUT drives async reset alert  
+LUT cell g_ethernet.u_op_board/u_service/u_operator/u_engine/u_writer/u_write_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/goreg_dm.dout_i[319]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) g_ethernet.u_op_board/u_service/u_operator/u_engine/u_writer/u_write_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_fb_i_reg/PRE,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_writer/u_write_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i_reg/PRE,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_writer/u_write_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_fb_i_reg/PRE,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_writer/u_write_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_fb_o_i_reg/PRE,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_writer/u_write_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg/PRE,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_writer/u_write_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[0]/CLR,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_writer/u_write_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.curr_fwft_state_reg[1]/CLR,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_writer/u_write_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_reg/CLR,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_writer/u_write_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i_reg/PRE,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_writer/u_write_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i_reg/PRE,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_writer/u_write_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]/CLR,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_writer/u_write_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]/CLR,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_writer/u_write_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[2]/CLR,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_writer/u_write_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[3]/CLR,
+g_ethernet.u_op_board/u_service/u_operator/u_engine/u_writer/u_write_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[4]/CLR
+ (the first 15 of 668 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#16 Warning
+LUT drives async reset alert  
+LUT cell u_ddr4/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/u_ddr4_phy_pll/plle_loop[0].gen_plle4.PLLE4_BASE_INST_OTHER_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) u_ddr4/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/u_ddr4_phy_pll/plle_loop[0].gen_plle4.PLLE4_BASE_INST_OTHER/RST
+u_ddr4/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/u_ddr4_phy_pll/plle_loop[1].gen_plle4.PLLE4_BASE_INST_OTHER/RST. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+SYNTH-6#1 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance g_ethernet.u_bridge/packet_mem_r_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#2 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance g_ethernet.u_bridge/packet_mem_r_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#3 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance g_ethernet.u_bridge/packet_mem_r_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#4 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance g_ethernet.u_bridge/packet_mem_r_reg_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#5 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance g_ethernet.u_ethernet/u_protocol_core/tx_buf_reg_bram_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#6 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_core_2/topPairMem_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#7 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_core_2/topPairMem_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#8 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_core_4/lineMem_0_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#9 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_core_4/lineMem_0_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#10 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_core_4/lineMem_1_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#11 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_core_4/lineMem_1_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#12 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_core_4/lineMem_2_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#13 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_core_4/lineMem_2_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#14 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_core_4/lineMem_3_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#15 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_core_4/lineMem_3_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#16 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_upsample/lineMem_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#17 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_upsample/lineMem_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#18 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance g_ethernet.u_op_board/u_transport/tx_mem_r_reg_bram_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-9#1 Warning
+Small multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/p12_weight_a_words_r_reg[10]_i_1 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#2 Warning
+Small multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/p12_weight_a_words_r_reg[15]_i_12 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#3 Warning
+Small multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/p12_weight_a_words_r_reg[15]_i_13 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#4 Warning
+Small multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/p12_weight_a_words_r_reg[15]_i_14 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#5 Warning
+Small multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/p12_weight_a_words_r_reg[15]_i_2 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-9#6 Warning
+Small multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/p12_weight_a_words_r_reg[2]_i_1 of size 9x7, it is implemented as LUTs due to its small size. To force the multiplier onto a DSP block, use the USE_DSP48 attribute.
+Related violations: <none>
+
+SYNTH-10#1 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_0_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#2 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_0_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#3 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_10_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#4 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_10_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#5 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_11_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#6 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_11_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#7 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_12_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#8 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_12_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#9 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_13_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#10 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_13_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#11 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_14_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#12 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_14_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#13 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_1_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#14 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_1_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#15 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_2_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#16 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_2_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#17 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_3_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#18 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_3_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#19 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_4_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#20 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_4_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#21 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_5_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#22 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_5_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#23 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_6_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#24 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_6_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#25 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_7_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#26 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_7_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#27 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_8_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#28 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_8_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#29 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_9_reg of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#30 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/io_input_i_translated_rData_value_9_reg__0 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#31 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_0 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#32 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_0__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#33 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_1 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#34 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_10 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#35 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_10__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#36 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_11 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#37 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_11__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#38 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_12 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#39 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_12__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#40 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_13 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#41 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_13__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#42 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_14 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#43 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_14__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#44 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_15 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#45 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_15__0 of size 15x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#46 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_15__1 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#47 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_15__2 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#48 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_1__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#49 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_2 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#50 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_2__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#51 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_3 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#52 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_3__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#53 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_4 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#54 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_4__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#55 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_5 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#56 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_5__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#57 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_6 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#58 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_6__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#59 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_7 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#60 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_7__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#61 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_8 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#62 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_8__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#63 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_9 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#64 Warning
+Wide multiplier  
+Detected multiplier at g_ethernet.u_op_board/u_service/u_operator/u_engine/u_bank/u_pw_shared/project/requant/product_w_value_9__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An output delay is missing on error relative to the rising and/or falling clock edge(s) of phy_tx_sample.
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {NAME =~ *u_bridge/*sync1_r_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '50' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/constraint/Ethernet_DDR_Constraint.xdc (Line: 160)
+Related violations: <none>
+
+CLKC-56#1 Advisory
+MMCME4 with global clock driver has no LOC  
+The MMCME4_ADV cell g_ethernet.u_compute_clock/inst/mmcme4_adv_inst CLKIN1 or CLKIN2 pin is driven by global Clock buffer(s) u_ddr4/inst/u_ddr4_infrastructure/u_bufg_divClk and does not have a LOC constraint. It is recommended to LOC the MMCM and use the CLOCK_DEDICATED_ROUTE constraint on the net(s) driven by the global Clock buffer(s).
+Related violations: <none>
+
+

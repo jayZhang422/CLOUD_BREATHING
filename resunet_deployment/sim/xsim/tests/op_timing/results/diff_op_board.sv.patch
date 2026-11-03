@@ -1,0 +1,40 @@
+--- before/prj/Model_Deployment.srcs/sources_1/new/Op/op_board.sv
++++ after/prj/Model_Deployment.srcs/sources_1/new/Op/op_board.sv
+@@ -63,11 +63,26 @@
+     logic ddr_req_valid_w, ddr_rsp_valid_w, ddr_rsp_ready_w, ddr_error_w;
+     logic [255:0] ddr_rsp_data_w;
+     (* ASYNC_REG="TRUE" *) logic image_ready_sync1_r, image_ready_sync2_r;
++    logic image_ready_rx_r, image_ready_r;
++    logic [30:0] image_base_r;
++    logic [31:0] image_slices_r;
+     // 输入描述在 IMAGE_READY 到下一次 BEGIN 期间保持；请求握手期间 block_rx 禁止新 BEGIN。
+-    // 只同步 ready 单比特，稳定描述随 mailbox 完成握手后由 UI 域读取。
++    // RX先锁存组合CRC判定；稳定描述仅在mailbox接收拍锁存，不直接驱动UI状态判断。
++    always_ff @(posedge rx_clk_i or negedge rx_rst_n_i)
++        if (!rx_rst_n_i) image_ready_rx_r <= 1'b0;
++        else image_ready_rx_r <= image_ready_rx_i;
+     always_ff @(posedge ui_clk_i or negedge ui_rst_n_i)
+         if (!ui_rst_n_i) begin image_ready_sync1_r <= 1'b0; image_ready_sync2_r <= 1'b0; end
+-        else begin image_ready_sync1_r <= image_ready_rx_i; image_ready_sync2_r <= image_ready_sync1_r; end
++        else begin image_ready_sync1_r <= image_ready_rx_r; image_ready_sync2_r <= image_ready_sync1_r; end
++    always_ff @(posedge ui_clk_i or negedge ui_rst_n_i)
++        if (!ui_rst_n_i) image_ready_r <= 1'b0;
++        else if (req_valid_w && req_ready_w) image_ready_r <= image_ready_sync2_r;
++    always_ff @(posedge ui_clk_i) begin
++        if (req_valid_w && req_ready_w) begin
++            image_base_r <= image_base_rx_i;
++            image_slices_r <= image_slices_rx_i;
++        end
++    end
+     assign claim_ui_o = claim_w || port_active_w;
+     op_transport u_transport (
+         .rx_clk_i(rx_clk_i), .rx_rst_n_i(rx_rst_n_i), .ui_clk_i(ui_clk_i), .ui_rst_n_i(ui_rst_n_i),
+@@ -82,7 +97,7 @@
+     );
+     op_service u_service (
+         .clk_i(ui_clk_i), .rst_n_i(ui_rst_n_i), .storage_idle_i(storage_idle_ui_i),
+-        .image_ready_i(image_ready_sync2_r), .image_base_i(image_base_rx_i), .image_slices_i(image_slices_rx_i),
++        .image_ready_i(image_ready_r), .image_base_i(image_base_r), .image_slices_i(image_slices_r),
+         .req_valid_i(req_valid_w), .req_ready_o(req_ready_w), .req_msg_i(req_msg_w), .req_id_i(req_id_w),
+         .req_len_i(req_len_w), .req_body_i(req_body_w), .resp_valid_o(resp_valid_w),
+         .resp_len_o(resp_len_w), .resp_body_o(resp_body_w), .claim_o(claim_w),

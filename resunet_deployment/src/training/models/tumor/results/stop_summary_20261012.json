@@ -1,0 +1,81 @@
+{
+  "state": "stopped_by_user",
+  "stopped_at": "2026-10-12T16:33:24.201727+08:00",
+  "completed_epochs": 90,
+  "original_total_epochs": 100,
+  "best_epoch": 70,
+  "best_score": 0.6786127983193264,
+  "last_epoch": 90,
+  "checkpoint_checks": {
+    "last": {
+      "epoch": 90,
+      "best_epoch": 70,
+      "best_score": 0.6786127983193264,
+      "finite_tensors": true,
+      "full_training_state_present": true,
+      "bytes": 16444894,
+      "sha256": "187b131693acf31b910883e373791fa4add9753df4300cccf93fa25d855261b5"
+    },
+    "best": {
+      "epoch": 70,
+      "best_epoch": 70,
+      "best_score": 0.6786127983193264,
+      "finite_tensors": true,
+      "full_training_state_present": true,
+      "bytes": 16444894,
+      "sha256": "556d048f668560c66789369bcc491351a76249de820353c6b52d1ce645849f45"
+    }
+  },
+  "source_matches": {
+    "train_base64.py": true,
+    "tumor_model.py": true,
+    "train_task06_mkdc_finetune_100.py": true,
+    "task06_cache_reader_v2.py": true,
+    "task06_tumor_loss_v3.py": true
+  },
+  "reason": "user requested stopping after validation plateau",
+  "previous_pid": 1497,
+  "termination": "SIGTERM after current complete epoch and checkpoint verification",
+  "best_row": {
+    "epoch": 70,
+    "train_loss": 0.11772405826321641,
+    "task06_dice": 0.6909536988470554,
+    "task06_macro": 0.650512590514657,
+    "task06_precision": 0.6044321977204845,
+    "task06_recall": 0.8063835434638355,
+    "nsclc_dice": 0.6662718977915976,
+    "nsclc_macro": 0.5894064692545149,
+    "nsclc_precision": 0.5963000016178165,
+    "nsclc_recall": 0.7548484103767477,
+    "global_dice": 0.6704727729850645,
+    "macro_dice": 0.5977771707970001,
+    "selection_score": 0.6786127983193264,
+    "best_score": 0.6786127983193264,
+    "lr": 6.536154892867709e-05,
+    "samples": 9408,
+    "amp_skipped_steps": 1,
+    "seconds": 325.909143127501
+  },
+  "last_row": {
+    "epoch": 90,
+    "train_loss": 0.09358584471317252,
+    "task06_dice": 0.6723334341671959,
+    "task06_macro": 0.6399018615068263,
+    "task06_precision": 0.5919513679039273,
+    "task06_recall": 0.7779761114797611,
+    "nsclc_dice": 0.6645531668236597,
+    "nsclc_macro": 0.5811924778049417,
+    "nsclc_precision": 0.5988648789322568,
+    "nsclc_recall": 0.7464272784688034,
+    "global_dice": 0.6658774781106328,
+    "macro_dice": 0.5892348591339668,
+    "selection_score": 0.6684433004954278,
+    "best_score": 0.6786127983193264,
+    "lr": 1.0414439015469618e-05,
+    "samples": 9408,
+    "amp_skipped_steps": 0,
+    "seconds": 334.00323504954576
+  },
+  "test_evaluated": false,
+  "training_process_exited": true
+}

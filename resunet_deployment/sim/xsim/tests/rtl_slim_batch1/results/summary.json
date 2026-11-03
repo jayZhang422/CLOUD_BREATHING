@@ -1,0 +1,14 @@
+{
+  "verdict": "PASS",
+  "pw_cases": 11,
+  "op12_cases": 2,
+  "cycle_equivalent": true,
+  "pw_read_stalls": 1602,
+  "pw_output_stalls": 5725,
+  "op12_mem_stalls": 27307,
+  "p12_max_read_address": 2047,
+  "p12_valid_assembly_checks": 1790,
+  "simulation": "Vivado 2026.1 XSim behavioral with real IP",
+  "synthesis_or_implementation_launched": false,
+  "cleanup": "blocked by automatic approval review"
+}

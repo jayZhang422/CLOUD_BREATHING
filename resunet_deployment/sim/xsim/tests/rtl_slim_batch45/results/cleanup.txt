@@ -1,0 +1,10 @@
+E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_batch45_pw remaining=0
+E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_batch45_quant remaining=0
+E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_batch45_rpc remaining=0
+E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_batch45_op12 remaining=0
+LOCKED E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_batch45_bounds_pw/behav/xsim/xelab.pb error deleting "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_batch45_bounds_pw/behav/xsim/xelab.pb": permission denied
+REMOVED E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_batch45_bounds_pw/behav/xsim/xsim.dir
+REMOVED E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_batch45_bounds_pw/behav/xsim/xsim.ini
+REMOVED E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_batch45_bounds_pw/behav/xsim/xsim.ini.bak
+REMOVED E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_batch45_bounds_pw/behav/xsim/xvlog.log
+REMOVED E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_batch45_bounds_pw/behav/xsim/xvlog.pb

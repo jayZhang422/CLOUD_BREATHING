@@ -1,0 +1,12 @@
+{
+  "verdict": "PASS",
+  "exit_code": 0,
+  "cases": 52,
+  "ui_cycles": 5870053,
+  "result_bytes": 371744,
+  "mac_bytes": 19776,
+  "simulation_ns": 17610160,
+  "rom_reads": 4912,
+  "ddr_reads": 71998,
+  "ddr_writes": 22196
+}

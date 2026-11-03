@@ -1,0 +1,55 @@
+[info] welcome to sbt 1.10.2 (Eclipse Adoptium Java 17.0.20.1)
+[info] loading project definition from /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Upsample/project
+[info] loading settings for project upsample from build.sbt ...
+[info] set current project to upsample (in build file:/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Upsample/)
+[info] compiling 2 Scala sources to /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Upsample/target/scala-2.13/classes ...
+[info] done compiling
+[info] running (fork) UpsampleSim /home/jayzhang/.cache/upsample-sim.lwMhsZ/vectors
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 2048.0MiB
+[info] [Runtime] Current date : 2026.10.16 17:40:20
+[info] [Progress] at 0.000 : Elaborate components
+[info] [Progress] at 1.780 : Checks and transforms
+[info] [Progress] at 2.138 : Generate Verilog to /home/jayzhang/.cache/upsample-sim.lwMhsZ/vectors/compiled/tmp/job_1
+[info] [Done] at 3.517
+[info] [Progress] Simulation workspace in /home/jayzhang/.cache/upsample-sim.lwMhsZ/vectors/compiled/Upsample
+[info] [Progress] Verilator compilation started
+[info] [Progress] Verilator compilation done in 5499.669 ms
+[info] [Progress] Start Upsample regression simulation with seed 20261016
+[info] [TB PASSED] invalid_config cases=6
+[info] [TB PASSED] minimum inputs=1 outputs=4 cycles=61 stalls=45 firstLatency=31
+[info] [TB PASSED] one_pixel_32 inputs=32 outputs=128 cycles=343 stalls=110 firstLatency=31
+[info] [TB PASSED] narrow inputs=51 outputs=204 cycles=539 stalls=173 firstLatency=32
+[info] [TB PASSED] short inputs=38 outputs=152 cycles=306 stalls=91 firstLatency=9
+[info] [TB PASSED] odd inputs=455 outputs=1820 cycles=3378 stalls=879 firstLatency=11
+[info] [TB PASSED] all_int8 inputs=64 outputs=256 cycles=337 stalls=0 firstLatency=3
+[info] [TB PASSED] base16_mid inputs=32768 outputs=131072 cycles=164873 stalls=0 firstLatency=3
+[info] [TB PASSED] base16_d3 inputs=65536 outputs=262144 cycles=328713 stalls=0 firstLatency=3
+[info] [TB PASSED] base16_d2 inputs=131072 outputs=524288 cycles=656393 stalls=0 firstLatency=3
+[info] [TB PASSED] base64_mid inputs=131072 outputs=524288 cycles=931987 stalls=229452 firstLatency=3
+[info] [TB PASSED] base64_d3 inputs=262144 outputs=1048576 cycles=1884656 stalls=483479 firstLatency=3
+[info] [TB PASSED] base64_d2 inputs=524288 outputs=2097152 cycles=3781834 stalls=982240 firstLatency=3
+[info] [TB PASSED] maximum_32 inputs=2097152 outputs=8388608 cycles=15121745 stalls=3923405 firstLatency=4
+[info] [RESET CHECK] reset_fill aborted inputs=3 outputs=0
+[info] [TB PASSED] reset_fill inputs=70 outputs=280 cycles=575 stalls=168 firstLatency=22
+[info] [RESET CHECK] reset_emit aborted inputs=8 outputs=5
+[info] [TB PASSED] reset_emit inputs=27 outputs=108 cycles=212 stalls=54 firstLatency=21
+[info] [RESET CHECK] reset_stalled aborted inputs=8 outputs=0
+[info] [TB PASSED] reset_stalled inputs=1120 outputs=4480 cycles=8753 stalls=2411 firstLatency=26
+[info] [RESET CHECK] reset_last aborted inputs=48 outputs=191
+[info] [TB PASSED] reset_last inputs=30 outputs=120 cycles=302 stalls=112 firstLatency=27
+[info] [TB PASSED] lobe_mid.out inputs=128 outputs=512 cycles=1032 stalls=283 firstLatency=26
+[info] [TB PASSED] lobe_d3.out inputs=256 outputs=1024 cycles=1986 stalls=560 firstLatency=22
+[info] [TB PASSED] lobe_d2.out inputs=512 outputs=2048 cycles=3926 stalls=1114 firstLatency=13
+[info] [TB PASSED] airway_mid.out inputs=128 outputs=512 cycles=1032 stalls=283 firstLatency=26
+[info] [TB PASSED] airway_d3.out inputs=256 outputs=1024 cycles=1986 stalls=560 firstLatency=22
+[info] [TB PASSED] airway_d2.out inputs=512 outputs=2048 cycles=3926 stalls=1114 firstLatency=13
+[info] [TB PASSED] vessel_mid.out inputs=128 outputs=512 cycles=1032 stalls=283 firstLatency=26
+[info] [TB PASSED] vessel_d3.out inputs=256 outputs=1024 cycles=1986 stalls=560 firstLatency=22
+[info] [TB PASSED] vessel_d2.out inputs=512 outputs=2048 cycles=3926 stalls=1114 firstLatency=13
+[info] [TB PASSED] tumor_mid.out inputs=512 outputs=2048 cycles=4085 stalls=1141 firstLatency=26
+[info] [TB PASSED] tumor_d3.out inputs=1024 outputs=4096 cycles=7848 stalls=2181 firstLatency=22
+[info] [TB PASSED] tumor_d2.out inputs=2048 outputs=8192 cycles=15257 stalls=4085 firstLatency=13
+[info] [Done] Simulation done in 481170.328 ms
+[info] [TB PASSED] ALL cases=29 inputs=3252192 outputs=13008768 int8Values=208140288
+[success] Total time: 507 s (08:27), completed Oct 16, 2026, 5:48:30 PM

@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Fri Oct 16 21:09:42 2026
+# Process ID         : 30816
+# Current directory  : E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/FullNet/results/run_20261016_
+# Command line       : xsim.exe -log simulate.log -mode tcl -source {xsim.dir/tb_fullnet_behav/xsim_script.tcl}
+# Log file           : E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/FullNet/results/run_20261016_/simulate.log
+# Journal file       : E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/FullNet/results/run_20261016_\xsim.jou
+# Running On         : MSI
+# Platform           : Windows 11
+# Operating System   : 22631
+# Processor Detail   : Intel(R) Core(TM) i7-14700HX
+# CPU Frequency      : 2304 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 16940 MB
+# Swap memory        : 14789 MB
+# Total Virtual      : 31730 MB
+# Available Virtual  : 5241 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_fullnet_behav/xsim_script.tcl
+# xsim {tb_fullnet_behav} -autoloadwcfg -tclbatch {run_fullnet.tcl}
+Time resolution is 1 ps
+source run_fullnet.tcl
+## run all
+Block Memory Generator module tb_fullnet.u_bounds.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fullnet.dut.u_service.u_engine.u_bank.u_pw.pwWeightUram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+WARNING: file quantized_params_rom.mif could not be opened
+ 14653313501539822241474839194716318950988803184875639087364464858121921104907498241962219141406894413004952179279429452194917693394568860836987651329373087956152627                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      2781994764966542345431454855167133730154892273914884221286
+$finish called at time : 0 fs : File "D:\Xilinx\2026.1\Vivado\data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v" Line 2854
+xsim% INFO: [Common 17-206] Exiting xsim at Fri Oct 16 21:09:44 2026...

@@ -1,0 +1,51 @@
+{
+  "d3_out": {
+    "pass": true,
+    "exit_code": 0,
+    "markers": [
+      "[CASE PASSED] shared op12 d3_out bytes=1048576 writes=1048576 run_cycles=3199779 independent-Golden",
+      "[RUNNER PASSED] op12 cases=1 mem_stalls=380253 p12_max_addr=255 add_checks=65536 independent-Golden",
+      "[TB PASSED] d3.out 64/192/64 128x128 full Golden"
+    ],
+    "functional_cases": 1
+  },
+  "original_op12": {
+    "pass": true,
+    "exit_code": 0,
+    "markers": [
+      "[CASE PASSED] shared op12 small_tail bytes=1056 writes=1056 run_cycles=1801 independent-Golden",
+      "[CASE PASSED] shared op12 small_tail bytes=1056 writes=1056 run_cycles=2433 independent-Golden",
+      "[CASE PASSED] shared op12 max_banks bytes=8704 writes=8704 run_cycles=156838 independent-Golden",
+      "[RUNNER PASSED] op12 cases=2 mem_stalls=12592 p12_max_addr=2047 add_checks=610 independent-Golden",
+      "[CASE PASSED] shared op12 max_banks bytes=8704 writes=8704 run_cycles=277736 independent-Golden",
+      "[RUNNER PASSED] op12 cases=2 mem_stalls=91853 p12_max_addr=2047 add_checks=610 independent-Golden",
+      "[TB PASSED] 全部数据验证一致 op12 two frozen Golden cases fast+slow DDR 250MHz"
+    ],
+    "functional_cases": 4
+  },
+  "rpc250": {
+    "pass": true,
+    "exit_code": 0,
+    "markers": [
+      "[TB PASSED] 全部数据验证一致 cases=21 cycles=1003280 rom_reads=1032 ddr_reads=440 ddr_writes=256"
+    ],
+    "functional_cases": 21
+  },
+  "source_sha256": {
+    "prj\\Model_Deployment.srcs\\sources_1\\new\\Op\\control\\op_engine.sv": "a11b086e2670ff9d76cbf46f059cb85a6dc3ee4b6219ac782be783065a2dc89f",
+    "prj\\Model_Deployment.srcs\\sources_1\\new\\Op\\control\\op_service.sv": "4d781b5cb68644c829e694c6309c55a3eab134260956d49d1d4256de2d168cc6",
+    "script\\python\\BIN_UDP\\fixed_fpga_benchmark.py": "6c0f5fd03e178c0d8fe90aceef9526242137e79a3be54347d50f1f6816397dcb"
+  },
+  "unmodified_this_task": {
+    "op_service.sv": true,
+    "fixed_fpga_benchmark.py": true
+  },
+  "vectors_sha256": {
+    "golden.hex": "664357d153d935c296877597ce9e5b9ae9cbfc5a17742e6c93303c18755dc865",
+    "input_a.hex": "e94c0eaa34094de6d483251d3ac866fd2fabf37e48f269e92ca7aa4b4e59414d",
+    "input_b.hex": "e31dc8e6917ab87186fca0afc364cade423c0f10248161e844049ab22ccaa7f4",
+    "params.hex": "613726b4b33665c4ec4425af1e3e3ecc5a9c9ebb4f7728fd4c4f347e25696bd0",
+    "weights_a.hex": "1b7def2f4594addfdadc6075c4e5b62ff81045f2dfbbca15e83bd77ecbbd2f80",
+    "weights_b.hex": "94c87abab3dadf28d2f4f2e8c66154a2d680fb17da6719d524550cd4d981a89a"
+  }
+}

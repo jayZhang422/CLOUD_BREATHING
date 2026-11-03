@@ -1,0 +1,32 @@
+{
+  "recorded_at": "2026-10-25 17:06:33 Asia/Shanghai",
+  "session_id": "vivado-20261025-164510-097e74bf",
+  "connection": "http://127.0.0.1:8088",
+  "synthesis_command": "launch_runs synth_1 -jobs 4",
+  "synthesis_launch_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"exit_code\": 0,\n  \"output\": \"launch_runs synth_1 -jobs 4\\n[Sun Oct 25 17:06:05 2026] Launched synth_1...\\nRun output will be captured here: E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.runs/synth_1/runme.log\\nINFO: [MCP 00-101]\",\n  \"task_progress\": \"1/2: 启动一次综合及实现并交付命令 (active, 3m10s)\"\n}"
+      }
+    ]
+  },
+  "confirmation": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"exit_code\": 0,\n  \"output\": \"synth_status {Running synth_design...} synth_progress 0% impl_status {Not started} callback_state armed callback_timer {volume_launch_impl_once timer} project Model_Deployment\",\n  \"task_progress\": \"1/2: 启动一次综合及实现并交付命令 (active, 3m38s)\"\n}"
+      }
+    ]
+  },
+  "implementation": {
+    "status_at_handoff": "Not started; in-memory once-only callback armed and timer confirmed",
+    "command": "launch_runs impl_1 -to_step route_design -jobs 4",
+    "condition": "synth_1 status Complete and progress 100%",
+    "failure_behavior": "Log failure; no retry or relaunch",
+    "requires": "Keep the existing Vivado GUI session open",
+    "callback": "set ::volume_impl_once_state armed; set ::volume_build_log {E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Volume_DDR_20261025/results/build_progress.log}; proc volume_build_note {message} {set f [open $::volume_build_log a]; puts $f \"[clock format [clock seconds] -format {%Y-%m-%d %H:%M:%S}] $message\"; close $f}; proc volume_launch_impl_once {} {if {$::volume_impl_once_state ne \"armed\"} {return}; set s [get_property STATUS [get_runs synth_1]]; if {[string match {*Complete*} $s] && [get_property PROGRESS [get_runs synth_1]] eq \"100%\"} {set ::volume_impl_once_state launching; volume_build_note \"SYNTHESIS_COMPLETE: $s; starting impl_1 once through route_design\"; if {[catch {launch_runs impl_1 -to_step route_design -jobs 4} reason]} {set ::volume_impl_once_state launch_failed; volume_build_note \"IMPLEMENTATION_LAUNCH_FAILED: $reason\"} else {set ::volume_impl_once_state launched; volume_build_note \"IMPLEMENTATION_LAUNCHED: [get_property STATUS [get_runs impl_1]]\"}; return}; if {[string match -nocase {*error*} $s] || [string match -nocase {*fail*} $s] || [string match -nocase {*cancel*} $s]} {set ::volume_impl_once_state synth_failed; volume_build_note \"SYNTHESIS_STOPPED_NO_RETRY: $s\"; return}; set ::volume_impl_once_timer [after 30000 volume_launch_impl_once]}; volume_build_note {ARMED: one synthesis run; launch implementation once only after successful synthesis; no bitstream and no retry}; list callback_state $::volume_impl_once_state procedure [info procs volume_launch_impl_once] synthesis [get_property STATUS [get_runs synth_1]] implementation [get_property STATUS [get_runs impl_1]]"
+  },
+  "bitstream_generated": false,
+  "new_routed_results_available": false
+}

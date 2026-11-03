@@ -1,0 +1,241 @@
+%Warning-PINCONNECTEMPTY: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/rtl/op_core_bank.sv:79:4: Cell pin connected by name with empty reference: 'io_busy_o'
+   79 |   .io_busy_o(),
+      |    ^~~~~~~~~
+                          ... For warning description see https://verilator.org/warn/PINCONNECTEMPTY?v=5.032
+                          ... Use "/* verilator lint_off PINCONNECTEMPTY */" and lint_on around source to disable this message.
+%Warning-PINCONNECTEMPTY: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/rtl/op_core_bank.sv:93:4: Cell pin connected by name with empty reference: 'io_output_o_payload_raw'
+   93 |   .io_output_o_payload_raw(),
+      |    ^~~~~~~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/rtl/op_core_bank.sv:94:4: Cell pin connected by name with empty reference: 'io_output_o_payload_int16'
+   94 |   .io_output_o_payload_int16(),
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/rtl/op_core_bank.sv:114:4: Cell pin connected by name with empty reference: 'io_busy_o'
+  114 |   .io_busy_o(),
+      |    ^~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/rtl/op_core_bank.sv:123:4: Cell pin connected by name with empty reference: 'io_output_o_payload_fragment_group'
+  123 |   .io_output_o_payload_fragment_group(),
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/rtl/op_core_bank.sv:124:4: Cell pin connected by name with empty reference: 'io_output_o_payload_fragment_group_last'
+  124 |   .io_output_o_payload_fragment_group_last(),
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/rtl/op_core_bank.sv:135:4: Cell pin connected by name with empty reference: 'io_busy_o'
+  135 |   .io_busy_o(),
+      |    ^~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/rtl/op_core_bank.sv:152:4: Cell pin connected by name with empty reference: 'io_output_o_payload_fragment_group'
+  152 |   .io_output_o_payload_fragment_group(),
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/rtl/op_core_bank.sv:153:4: Cell pin connected by name with empty reference: 'io_output_o_payload_fragment_group_last'
+  153 |   .io_output_o_payload_fragment_group_last(),
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/rtl/op_core_bank.sv:163:4: Cell pin connected by name with empty reference: 'io_busy_o'
+  163 |   .io_busy_o(),
+      |    ^~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/rtl/op_core_bank.sv:196:4: Cell pin connected by name with empty reference: 'io_output_o_payload_fragment_group'
+  196 |   .io_output_o_payload_fragment_group(),
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/rtl/op_core_bank.sv:197:4: Cell pin connected by name with empty reference: 'io_output_o_payload_fragment_group_last'
+  197 |   .io_output_o_payload_fragment_group_last(),
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/rtl/op_core_bank.sv:203:33: Cell pin connected by name with empty reference: 'busy_o'
+  203 |  .cfg_ready_o(cfg_ready_w[5]), .busy_o(), .done_o(done_w[5]),
+      |                                 ^~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/rtl/op_core_bank.sv:270:4: Cell pin connected by name with empty reference: 'io_busy_o'
+  270 |   .io_busy_o(),
+      |    ^~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/rtl/op_core_bank.sv:282:4: Cell pin connected by name with empty reference: 'io_output_o_payload_fragment_group'
+  282 |   .io_output_o_payload_fragment_group(),
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-PINCONNECTEMPTY: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/rtl/op_core_bank.sv:283:4: Cell pin connected by name with empty reference: 'io_output_o_payload_fragment_group_last'
+  283 |   .io_output_o_payload_fragment_group_last(),
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-DECLFILENAME: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/PW/rtl/PwMac.v:3848:8: Filename 'PwMac' does not match MODULE name: 'PwRequant'
+ 3848 | module PwRequant (
+      |        ^~~~~~~~~
+%Warning-WIDTHTRUNC: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/PW/rtl/PwMac.v:2590:18: Operator ASSIGNW expects 6 bits on the Assign RHS, but Assign RHS's SHIFTR generates 10 bits.
+                                                                                              : ... note: In instance 'tb_op_candidate.u_service.u_engine.u_bank.u_pw'
+ 2590 |   assign cfgIg_w = (_zz_cfgIg_w >>> 3'd4);
+      |                  ^
+%Warning-WIDTHTRUNC: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/PW/rtl/PwMac.v:2591:18: Operator ASSIGNW expects 8 bits on the Assign RHS, but Assign RHS's SHIFTR generates 10 bits.
+                                                                                              : ... note: In instance 'tb_op_candidate.u_service.u_engine.u_bank.u_pw'
+ 2591 |   assign cfgOg_w = (_zz_cfgOg_w >>> 2'd2);
+      |                  ^
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/tb_op_candidate.sv:51:11: Signal is not used: 'service_claim_w'
+                                                                                                    : ... note: In instance 'tb_op_candidate'
+   51 |     logic service_claim_w;
+      |           ^~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/tb_op_candidate.sv:52:65: Signal is not used: 'port_active_w'
+                                                                                                    : ... note: In instance 'tb_op_candidate'
+   52 |     logic port_rsp_valid_w, port_rsp_ready_w, port_rsp_error_w, port_active_w;
+      |                                                                 ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_ddr_port.sv:26:24: Bits of signal are not used: 'req_addr_i'[4:0]
+                                                                                                                                      : ... note: In instance 'tb_op_candidate.u_port'
+   26 |     input logic [30:0] req_addr_i,  
+      |                        ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv:41:19: Bits of signal are not used: 'd_r'[511:448,415:384,127:104,87:86,79:70,63:58,47:42,15:12]
+                                                                                                                                    : ... note: In instance 'tb_op_candidate.u_service.u_engine'
+   41 |     logic [511:0] d_r;
+      |                   ^~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv:47:18: Signal is not used: 'saved_output_count_r'
+                                                                                                                                    : ... note: In instance 'tb_op_candidate.u_service.u_engine'
+   47 |     logic [31:0] saved_output_count_r;
+      |                  ^~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv:51:53: Bits of signal are not used: 'saved_linear_addr_r'[31]
+                                                                                                                                    : ... note: In instance 'tb_op_candidate.u_service.u_engine'
+   51 |     logic [31:0] group_pixel_base_r, output_addr_r, saved_linear_addr_r;
+      |                                                     ^~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv:53:42: Bits of signal are not used: 'q_pixel_r'[31]
+                                                                                                                                    : ... note: In instance 'tb_op_candidate.u_service.u_engine'
+   53 |     logic [31:0] q_index_r, mac_index_r, q_pixel_r, mac_pixel_r;
+      |                                          ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv:53:53: Bits of signal are not used: 'mac_pixel_r'[31]
+                                                                                                                                    : ... note: In instance 'tb_op_candidate.u_service.u_engine'
+   53 |     logic [31:0] q_index_r, mac_index_r, q_pixel_r, mac_pixel_r;
+      |                                                     ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv:54:18: Bits of signal are not used: 'base_a_w'[31]
+                                                                                                                                    : ... note: In instance 'tb_op_candidate.u_service.u_engine'
+   54 |     logic [31:0] base_a_w, base_b_w, out_base_w, mac_base_w, weight_base_w, param_base_w;
+      |                  ^~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv:54:28: Bits of signal are not used: 'base_b_w'[31]
+                                                                                                                                    : ... note: In instance 'tb_op_candidate.u_service.u_engine'
+   54 |     logic [31:0] base_a_w, base_b_w, out_base_w, mac_base_w, weight_base_w, param_base_w;
+      |                            ^~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv:54:50: Bits of signal are not used: 'mac_base_w'[31]
+                                                                                                                                    : ... note: In instance 'tb_op_candidate.u_service.u_engine'
+   54 |     logic [31:0] base_a_w, base_b_w, out_base_w, mac_base_w, weight_base_w, param_base_w;
+      |                                                  ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv:54:62: Bits of signal are not used: 'weight_base_w'[31]
+                                                                                                                                    : ... note: In instance 'tb_op_candidate.u_service.u_engine'
+   54 |     logic [31:0] base_a_w, base_b_w, out_base_w, mac_base_w, weight_base_w, param_base_w;
+      |                                                              ^~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv:54:77: Bits of signal are not used: 'param_base_w'[31]
+                                                                                                                                    : ... note: In instance 'tb_op_candidate.u_service.u_engine'
+   54 |     logic [31:0] base_a_w, base_b_w, out_base_w, mac_base_w, weight_base_w, param_base_w;
+      |                                                                             ^~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv:64:47: Signal is not used: 'bank_last_w'
+                                                                                                                                    : ... note: In instance 'tb_op_candidate.u_service.u_engine'
+   64 |     logic bank_out_valid_w, bank_out_ready_w, bank_last_w, bank_done_w;
+      |                                               ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_descriptor_check.sv:22:19: Bits of signal are not used: 'descriptor_r'[511:448,415:384,111:104]
+                                                                                                                                              : ... note: In instance 'tb_op_candidate.u_service.u_engine.u_check'
+   22 |     logic [511:0] descriptor_r;
+      |                   ^~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/rtl/op_core_bank.sv:42:26: Bits of signal are not used: 'add_params_i'[1983:1974,1951:1942,1855:1846,1823:1814,1727:1718,1695:1686,1599:1590,1567:1558,1471:1462,1439:1430,1343:1334,1311:1302,1215:1206,1183:1174,1087:1078,1055:1046,959:950,927:918,831:822,799:790,703:694,671:662,575:566,543:534,447:438,415:406,319:310,287:278,191:182,159:150,63:54,31:22]
+                                                                                                     : ... note: In instance 'tb_op_candidate.u_service.u_engine.u_bank'
+   42 |     input logic [2047:0] add_params_i,  
+      |                          ^~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_feature_reader.sv:30:18: Bits of signal are not used: 'pixel_r'[31]
+                                                                                                                                            : ... note: In instance 'tb_op_candidate.u_service.u_engine.u_reader'
+   30 |     logic [31:0] pixel_r, z_w;
+      |                  ^~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_feature_reader.sv:30:27: Bits of signal are not used: 'z_w'[31:13]
+                                                                                                                                            : ... note: In instance 'tb_op_candidate.u_service.u_engine.u_reader'
+   30 |     logic [31:0] pixel_r, z_w;
+      |                           ^~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/PW/rtl/PwMac.v:24:24: Signal is not used: 'io_start_i_payload'
+                                                                                              : ... note: In instance 'tb_op_candidate.u_service.u_engine.u_bank.u_pw'
+   24 |   input  wire          io_start_i_payload,
+      |                        ^~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/PW/rtl/PwMac.v:80:23: Bits of signal are not used: '_zz_weightTotal_r'[13]
+                                                                                              : ... note: In instance 'tb_op_candidate.u_service.u_engine.u_bank.u_pw'
+   80 |   wire       [13:0]   _zz_weightTotal_r;
+      |                       ^~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/PW/rtl/PwMac.v:87:23: Bits of signal are not used: '_zz_fillAddress_w'[10]
+                                                                                              : ... note: In instance 'tb_op_candidate.u_service.u_engine.u_bank.u_pw'
+   87 |   wire       [10:0]   _zz_fillAddress_w;
+      |                       ^~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/PW/rtl/PwMac.v:115:23: Bits of signal are not used: '_zz_inputAddress_w'[10]
+                                                                                               : ... note: In instance 'tb_op_candidate.u_service.u_engine.u_bank.u_pw'
+  115 |   wire       [10:0]   _zz_inputAddress_w;
+      |                       ^~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/PW/rtl/PwMac.v:696:23: Bits of signal are not used: '_zz_localPixel_w'[18:4]
+                                                                                               : ... note: In instance 'tb_op_candidate.u_service.u_engine.u_bank.u_pw'
+  696 |   wire       [18:0]   _zz_localPixel_w;
+      |                       ^~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/PW/rtl/PwMac.v:4292:23: Signal is not used: 'rounded_payload_info_tag_first'
+                                                                                                : ... note: In instance 'tb_op_candidate.u_service.u_engine.u_bank.u_pw.requant'
+ 4292 |   wire                rounded_payload_info_tag_first;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/PW/rtl/PwMac.v:4293:23: Signal is not used: 'rounded_payload_info_tag_finalInput'
+                                                                                                : ... note: In instance 'tb_op_candidate.u_service.u_engine.u_bank.u_pw.requant'
+ 4293 |   wire                rounded_payload_info_tag_finalInput;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/PW/rtl/PwMac.v:4294:23: Signal is not used: 'rounded_payload_info_tag_tileLast'
+                                                                                                : ... note: In instance 'tb_op_candidate.u_service.u_engine.u_bank.u_pw.requant'
+ 4294 |   wire                rounded_payload_info_tag_tileLast;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/PW/rtl/PwMac.v:4298:23: Signal is not used: 'rounded_payload_info_shift'
+                                                                                                : ... note: In instance 'tb_op_candidate.u_service.u_engine.u_bank.u_pw.requant'
+ 4298 |   wire       [5:0]    rounded_payload_info_shift;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/PW/rtl/PwMac.v:4303:23: Signal is not used: 'rounded_payload_info_multiplier_0'
+                                                                                                : ... note: In instance 'tb_op_candidate.u_service.u_engine.u_bank.u_pw.requant'
+ 4303 |   wire       [31:0]   rounded_payload_info_multiplier_0;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/PW/rtl/PwMac.v:4304:23: Signal is not used: 'rounded_payload_info_multiplier_1'
+                                                                                                : ... note: In instance 'tb_op_candidate.u_service.u_engine.u_bank.u_pw.requant'
+ 4304 |   wire       [31:0]   rounded_payload_info_multiplier_1;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/PW/rtl/PwMac.v:4305:23: Signal is not used: 'rounded_payload_info_multiplier_2'
+                                                                                                : ... note: In instance 'tb_op_candidate.u_service.u_engine.u_bank.u_pw.requant'
+ 4305 |   wire       [31:0]   rounded_payload_info_multiplier_2;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/PW/rtl/PwMac.v:4306:23: Signal is not used: 'rounded_payload_info_multiplier_3'
+                                                                                                : ... note: In instance 'tb_op_candidate.u_service.u_engine.u_bank.u_pw.requant'
+ 4306 |   wire       [31:0]   rounded_payload_info_multiplier_3;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/PW/rtl/PwMac.v:4307:23: Signal is not used: 'rounded_payload_info_bias_0'
+                                                                                                : ... note: In instance 'tb_op_candidate.u_service.u_engine.u_bank.u_pw.requant'
+ 4307 |   wire       [63:0]   rounded_payload_info_bias_0;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/PW/rtl/PwMac.v:4308:23: Signal is not used: 'rounded_payload_info_bias_1'
+                                                                                                : ... note: In instance 'tb_op_candidate.u_service.u_engine.u_bank.u_pw.requant'
+ 4308 |   wire       [63:0]   rounded_payload_info_bias_1;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/PW/rtl/PwMac.v:4309:23: Signal is not used: 'rounded_payload_info_bias_2'
+                                                                                                : ... note: In instance 'tb_op_candidate.u_service.u_engine.u_bank.u_pw.requant'
+ 4309 |   wire       [63:0]   rounded_payload_info_bias_2;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/PW/rtl/PwMac.v:4310:23: Signal is not used: 'rounded_payload_info_bias_3'
+                                                                                                : ... note: In instance 'tb_op_candidate.u_service.u_engine.u_bank.u_pw.requant'
+ 4310 |   wire       [63:0]   rounded_payload_info_bias_3;
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNOPTFLAT: /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv:20:17: Signal unoptimizable: Circular combinational logic: 'tb_op_candidate.u_service.__Vcellinp__u_engine__mem_ready_i'
+   20 |     input logic mem_ready_i,  
+      |                 ^~~~~~~~~~~
+                    /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv:20:17:      Example path: tb_op_candidate.u_service.__Vcellinp__u_engine__mem_ready_i
+                    /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_feature_reader.sv:36:5:      Example path: ALWAYS
+                    /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv:76:18:      Example path: tb_op_candidate.u_service.u_engine.reader_mem_addr_w
+                    /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_service.sv:73:5:      Example path: ALWAYS
+                    /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/tb_op_candidate.sv:48:18:      Example path: tb_op_candidate.service_mem_addr_w
+                    /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/op_coeff_split.sv:35:27:      Example path: ASSIGNW
+                    /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/op_coeff_split.sv:33:11:      Example path: tb_op_candidate.u_split.select_coeff_w
+                    /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/op_coeff_split.sv:57:5:      Example path: ALWAYS
+                    /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/tb_op_candidate.sv:46:32:      Example path: tb_op_candidate.service_mem_ready_w
+                    /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_service.sv:66:38:      Example path: ASSIGNW
+                    /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv:20:17:      Example path: tb_op_candidate.u_service.__Vcellinp__u_engine__mem_ready_i
+make: Entering directory '/tmp/op-board-joint.eQQ9Lk/build'
+g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=1 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -std=c++17   -Os  -c -o joint_driver.o /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Board/joint_driver.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=1 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -std=c++17   -c -o verilated.o /usr/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=1 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -std=c++17   -c -o verilated_fst_c.o /usr/share/verilator/include/verilated_fst_c.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=1 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -std=c++17   -c -o verilated_threads.o /usr/share/verilator/include/verilated_threads.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=1 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -std=c++17   -x c++-header Vtb_op_candidate__pch.h -o Vtb_op_candidate__pch.h.fast.gch
+g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=1 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -std=c++17   -x c++-header Vtb_op_candidate__pch.h -o Vtb_op_candidate__pch.h.slow.gch
+echo "" > Vtb_op_candidate__ALL.verilator_deplist.tmp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=1 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -std=c++17   -include Vtb_op_candidate__pch.h.fast -c -o Vtb_op_candidate.o Vtb_op_candidate.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=1 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -std=c++17   -include Vtb_op_candidate__pch.h.fast -c -o Vtb_op_candidate___024root__DepSet_ha4b20968__0.o Vtb_op_candidate___024root__DepSet_ha4b20968__0.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=1 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -std=c++17   -include Vtb_op_candidate__pch.h.fast -c -o Vtb_op_candidate___024root__DepSet_h4c02dc9a__0.o Vtb_op_candidate___024root__DepSet_h4c02dc9a__0.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=1 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -std=c++17   -include Vtb_op_candidate__pch.h.fast -c -o Vtb_op_candidate___024root__DepSet_h4c02dc9a__1.o Vtb_op_candidate___024root__DepSet_h4c02dc9a__1.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=1 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -std=c++17   -include Vtb_op_candidate__pch.h.fast -c -o Vtb_op_candidate__Trace__0.o Vtb_op_candidate__Trace__0.cpp
+g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=1 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -std=c++17   -include Vtb_op_candidate__pch.h.slow -c -o Vtb_op_candidate__ConstPool_0.o Vtb_op_candidate__ConstPool_0.cpp
+g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=1 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -std=c++17   -include Vtb_op_candidate__pch.h.slow -c -o Vtb_op_candidate___024root__Slow.o Vtb_op_candidate___024root__Slow.cpp
+g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=1 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -std=c++17   -include Vtb_op_candidate__pch.h.slow -c -o Vtb_op_candidate___024root__DepSet_ha4b20968__0__Slow.o Vtb_op_candidate___024root__DepSet_ha4b20968__0__Slow.cpp
+g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=1 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -std=c++17   -include Vtb_op_candidate__pch.h.slow -c -o Vtb_op_candidate___024root__DepSet_h4c02dc9a__0__Slow.o Vtb_op_candidate___024root__DepSet_h4c02dc9a__0__Slow.cpp
+g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=1 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -std=c++17   -include Vtb_op_candidate__pch.h.slow -c -o Vtb_op_candidate__Syms.o Vtb_op_candidate__Syms.cpp
+g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=1 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -std=c++17   -include Vtb_op_candidate__pch.h.slow -c -o Vtb_op_candidate__Trace__0__Slow.o Vtb_op_candidate__Trace__0__Slow.cpp
+g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=1 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -std=c++17   -include Vtb_op_candidate__pch.h.slow -c -o Vtb_op_candidate__TraceDecls__0__Slow.o Vtb_op_candidate__TraceDecls__0__Slow.cpp
+g++    joint_driver.o verilated.o verilated_fst_c.o verilated_threads.o Vtb_op_candidate__ALL.a   -lz  -pthread -lpthread -latomic   -o joint_sim
+rm Vtb_op_candidate__ALL.verilator_deplist.tmp
+make: Leaving directory '/tmp/op-board-joint.eQQ9Lk/build'
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 3.780 MB sources in 18 modules, into 3.518 MB in 12 C++ files needing 0.007 MB
+- Verilator: Walltime 7.664 s (elab=0.040, cvt=0.255, bld=6.656); cpu 0.419 s on 4 threads; alloced 50.617 MB

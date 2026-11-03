@@ -1,0 +1,8 @@
+# Optional worker dependencies; ordinary UI startup does not import these.
+# Install into the Qt venv, or point CLOUD_BREATHING_DECIMATION_PYTHON to a separate venv.
+numpy==1.26.4
+scipy==1.15.3
+trimesh==4.12.2
+rtree==1.4.1
+pymeshlab==2025.7.post1; platform_machine == 'aarch64'
+pymeshlab==2025.7; platform_machine != 'aarch64'

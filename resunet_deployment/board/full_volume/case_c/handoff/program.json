@@ -1,0 +1,55 @@
+{
+  "format": "pc-fpga-volume-program-v2",
+  "header_hex": "564f4c3202000000000020088a75000000004000f5000000000000100000a8070000000000000000000000000000000000000000000000000000000000000000",
+  "commands": 30090,
+  "schedule_sha256": "15c2578cd8efc87bba28ff68b9db5eee076ac84a388c930e2b27e9393ef298ce",
+  "maps_sha256": "3722b443552527a83f8a967dfea65ddcab8a16b69205ea35f7a829261c7674f0",
+  "input_sha256": "77264e9adc501ad28052575ab5d743b727d36a6f502828cb95aec26811fa7324",
+  "compact_sha256": "ea070bc34e90ddcc357ddb193db9ec0a6672ce47b58f24fcf4c1d109b257c3e0",
+  "models": [
+    {
+      "model": "lobe",
+      "grid": [
+        204,
+        231,
+        231
+      ],
+      "commands": 6569,
+      "stages_per_slice": 30,
+      "contract_sha256": "fe1820a2dd947855ba2403cd527118f8a59cffc47b331574e3f693d5c711f2d0"
+    },
+    {
+      "model": "airway",
+      "grid": [
+        245,
+        512,
+        512
+      ],
+      "commands": 7840,
+      "stages_per_slice": 30,
+      "contract_sha256": "6148b67f9b76589fc9941dfdb829ac4d2b8bb335646be2f12f2b0bfc53ca7dc0"
+    },
+    {
+      "model": "vessel",
+      "grid": [
+        245,
+        512,
+        512
+      ],
+      "commands": 7840,
+      "stages_per_slice": 30,
+      "contract_sha256": "6371779fac9ca9d27cf2a931b06c2d28e2ec7214a57df6de81a911dab59d6279"
+    },
+    {
+      "model": "tumor",
+      "grid": [
+        245,
+        512,
+        512
+      ],
+      "commands": 7840,
+      "stages_per_slice": 30,
+      "contract_sha256": "42a25fd503eae8692ddd0171d9274cd43d47c0aa400e257a6dfb14060058b5e5"
+    }
+  ]
+}

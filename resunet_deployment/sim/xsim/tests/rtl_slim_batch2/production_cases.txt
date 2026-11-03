@@ -1,0 +1,12 @@
+sim/xsim/tests/mkdc/vectors/lobe_mid_expand 2048 0
+sim/xsim/tests/mkdc/vectors/edge_pw_raw_p16_multitile 4224 0
+sim/xsim/tests/rtl_slim_batch2/vectors/lobe_mid_mix 2048 0
+sim/xsim/tests/rtl_slim_batch2/vectors/lobe_mid_out 2048 0
+sim/xsim/tests/mkdc/vectors/legacy_lobe_head 64 128
+sim/xsim/tests/mkdc/vectors/legacy_pool_odd_two_groups 64 0
+sim/xsim/tests/mkdc/vectors/legacy_shuffle16 64 0
+sim/xsim/tests/mkdc/vectors/legacy_pool_groups32 1024 0
+sim/xsim/tests/rtl_slim_batch2/vectors/upsample 384 0
+sim/xsim/tests/rtl_slim_batch2/vectors/concat 96 0
+sim/xsim/tests/rtl_slim_batch2/vectors/fused_dw11 784 0
+sim/xsim/tests/rtl_slim_batch2/vectors/pw_tail_clear 48 0

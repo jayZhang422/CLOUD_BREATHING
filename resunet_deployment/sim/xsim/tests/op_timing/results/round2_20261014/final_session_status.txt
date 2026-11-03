@@ -1,0 +1,1 @@
+project Model_Deployment top top sim_top tb_op_rom sim_args {-testplusarg CASE_LIST=cases_fast.txt} synth_status Out-of-date synth_refresh 1 impl_status Out-of-date impl_refresh 1 time {2026-10-14 18:08:27 +0800}

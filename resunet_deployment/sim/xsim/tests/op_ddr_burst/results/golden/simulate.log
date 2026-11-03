@@ -1,0 +1,69 @@
+Time resolution is 1 ps
+Block Memory Generator module tb_op_ddr_golden.u_bounds.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_op_ddr_golden.dut.u_service.u_engine.u_bank.u_pw.pwWeightUram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_op_ddr_golden.rom.u_rom.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[CASE PASS] read_only_coefficients
+[CASE PASS] image_metadata_snapshot_and_online_rejection
+[CASE PASS] DW_P16_descriptor_rejection cases=6
+[CASE PASS] rpc_write_ack_drained bytes=32 cycle=4917
+[CASE PASS] rpc_write_ack_drained bytes=1024 cycle=8549
+[CASE] lobe_mid_expand cycle=8549
+[CASE PASS] uram_all_6144_addresses latency=1 hold=4095/4096/6143
+[CASE PASS] lobe_mid_expand bytes=2048 mac_bytes=0 cycle=64424
+[CASE] lobe_mid_dw3 cycle=64424
+[CASE PASS] lobe_mid_dw3 bytes=8192 mac_bytes=0 cycle=129280
+[CASE] lobe_mid_dw5 cycle=129280
+[CASE PASS] lobe_mid_dw5 bytes=8192 mac_bytes=0 cycle=201648
+[CASE] lobe_mid_mix cycle=201648
+[CASE PASS] lobe_mid_mix bytes=2048 mac_bytes=0 cycle=237488
+[CASE] lobe_mid_project cycle=237488
+[CASE PASS] lobe_mid_project bytes=8192 mac_bytes=0 cycle=349920
+[CASE] lobe_mid_skip cycle=349920
+[CASE PASS] lobe_mid_skip bytes=8192 mac_bytes=0 cycle=443568
+[CASE] lobe_mid_out cycle=443568
+[CASE PASS] lobe_mid_out bytes=2048 mac_bytes=0 cycle=479408
+[CASE] tumor_mid_expand cycle=479408
+[CASE PASS] tumor_mid_expand bytes=8192 mac_bytes=0 cycle=810936
+[CASE] tumor_mid_dw3 cycle=810936
+[CASE PASS] tumor_mid_dw3 bytes=32768 mac_bytes=0 cycle=1054440
+[CASE] tumor_mid_dw5 cycle=1054440
+[CASE PASS] tumor_mid_dw5 bytes=32768 mac_bytes=0 cycle=1315472
+[CASE] tumor_mid_mix cycle=1315472
+[CASE PASS] tumor_mid_mix bytes=8192 mac_bytes=0 cycle=1447936
+[CASE] tumor_mid_project cycle=1447936
+[CASE PASS] tumor_mid_project bytes=32768 mac_bytes=0 cycle=2162192
+[CASE] tumor_mid_skip cycle=2162192
+[CASE PASS] tumor_mid_skip bytes=32768 mac_bytes=0 cycle=2644824
+[CASE] tumor_mid_out cycle=2644824
+[CASE PASS] tumor_mid_out bytes=8192 mac_bytes=0 cycle=2777288
+[CASE] legacy_lobe_e1_fast cycle=2777288
+[CASE PASS] legacy_lobe_e1_fast bytes=256 mac_bytes=1024 cycle=2793624
+[CASE] legacy_tumor_e1_fast cycle=2793624
+[CASE PASS] legacy_tumor_e1_fast bytes=1024 mac_bytes=4096 cycle=2848352
+[CASE] legacy_pool_from_tumor_pw_fast cycle=2848352
+[CASE PASS] legacy_pool_from_tumor_pw_fast bytes=256 mac_bytes=0 cycle=2853384
+[CASE] legacy_concat_pool_fast cycle=2853384
+[CASE PASS] legacy_concat_pool_fast bytes=512 mac_bytes=0 cycle=2859909
+[CASE] legacy_pw_from_concat_rom_fast cycle=2859909
+[CASE PASS] legacy_pw_from_concat_rom_fast bytes=1024 mac_bytes=0 cycle=2917000
+[CASE] legacy_tumor_d3_expand cycle=2917000
+[CASE PASS] legacy_tumor_d3_expand bytes=1024 mac_bytes=4096 cycle=3198344
+[CASE] legacy_lobe_head cycle=3198344
+[CASE PASS] legacy_lobe_head bytes=64 mac_bytes=128 cycle=3203325
+[CASE] legacy_tumor_head cycle=3203325
+[CASE PASS] legacy_tumor_head bytes=32 mac_bytes=64 cycle=3207744
+[CASE] legacy_pool_odd_two_groups cycle=3207744
+[CASE PASS] legacy_pool_odd_two_groups bytes=64 mac_bytes=0 cycle=3210405
+[CASE] legacy_shuffle16 cycle=3210405
+[CASE PASS] legacy_shuffle16 bytes=64 mac_bytes=0 cycle=3213064
+[CASE] edge_dw3_1x1_g1 cycle=3213064
+[CASE PASS] edge_dw3_1x1_g1 bytes=64 mac_bytes=0 cycle=3215725
+[CASE] edge_dw5_5x3_g3 cycle=3215725
+[CASE PASS] edge_dw5_5x3_g3 bytes=2880 mac_bytes=0 cycle=3240464
+[CASE] edge_pw_raw_p16_multitile cycle=3240464
+[CASE PASS] edge_pw_raw_p16_multitile bytes=4224 mac_bytes=0 cycle=3282453
+[TB PASSED] 全部数据验证一致 cases=27 cycles=3282453 rom_reads=1640 ddr_reads=1324 ddr_writes=229
+$finish called at time : 9847360 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Op_DDR_Burst/tb_op_ddr_golden.sv" Line 391
+INFO: xsimkernel Simulation Memory Usage: 195772 KB (Peak: 195772 KB), Simulation CPU Usage: 10874 ms

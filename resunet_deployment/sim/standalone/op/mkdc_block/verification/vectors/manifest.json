@@ -1,0 +1,17 @@
+{
+  "source": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/PW/data/frozen/vessel/contract.json",
+  "shape": [
+    1,
+    128,
+    4,
+    4
+  ],
+  "groups": 8,
+  "shift": 24,
+  "clamp": [
+    0,
+    127
+  ],
+  "final_golden_sha256": "ba257c14a9fced882bd94180583dc0d509dd44a8c731dfec6a8ebf8a89392dc9",
+  "bias_sha256": "fbc9d2fcb16ecb8625a20c552af042f7615e57b93b871ee2b8446cf796d18572"
+}

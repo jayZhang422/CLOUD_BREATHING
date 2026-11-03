@@ -1,0 +1,129 @@
+[info] welcome to sbt 1.10.2 (Eclipse Adoptium Java 17.0.20.1)
+[info] loading project definition from /home/jayzhang/Op_Compile/PW/project
+[info] loading settings for project pw from build.sbt ...
+[info] set current project to pw (in build file:/home/jayzhang/Op_Compile/PW/)
+[info] compiling 1 Scala source to /home/jayzhang/Op_Compile/PW/target/scala-2.13/classes ...
+[info] done compiling
+[info] running (fork) PwGen 
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 3072.0MiB
+[info] [Runtime] Current date : 2026.10.11 19:39:31
+[info] [Progress] at 0.000 : Elaborate components
+[info] [Progress] at 0.469 : Checks and transforms
+[info] [Progress] at 0.756 : Generate Verilog to rtl
+[info] [Warning] 160 signals were pruned. You can call printPruned on the backend report to get more informations.
+[info] [Done] at 0.960
+[success] Total time: 6 s, completed Oct 11, 2026, 7:39:32 PM
+[info] running (fork) PwRequantSim 
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 3072.0MiB
+[info] [Runtime] Current date : 2026.10.11 19:39:33
+[info] [Progress] at 0.000 : Elaborate components
+[info] [Progress] at 0.282 : Checks and transforms
+[info] [Progress] at 0.442 : Generate Verilog to verification/quant_workspace/tmp/job_1
+[info] [Warning] 120 signals were pruned. You can call printPruned on the backend report to get more informations.
+[info] [Done] at 0.520
+[info] [Progress] Simulation workspace in /home/jayzhang/Op_Compile/PW/verification/quant_workspace/PwRequant
+[info] [Progress] Verilator compilation started
+[info] [info] Found cached verilator binaries
+[info] [Progress] Verilator compilation done in 517.794 ms
+[info] [Progress] Start PwRequant requant_boundaries simulation with seed 20261011
+[info] [TB PASSED] REQUANT cases=503 numeric_boundaries=471 raw_cases=32 cycles=2250 outputStalls=1713 reset=1 signed_RNE=PASS
+[info] [Done] Simulation done in 318.069 ms
+[success] Total time: 2 s, completed Oct 11, 2026, 7:39:34 PM
+[info] running (fork) PwMacSim 
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 3072.0MiB
+[info] [Runtime] Current date : 2026.10.11 19:39:34
+[info] [Progress] at 0.000 : Elaborate components
+[info] [Progress] at 0.328 : Checks and transforms
+[info] [Progress] at 0.575 : Generate Verilog to verification/mac_workspace/tmp/job_1
+[info] [Warning] 160 signals were pruned. You can call printPruned on the backend report to get more informations.
+[info] [Done] at 0.747
+[info] [Progress] Simulation workspace in /home/jayzhang/Op_Compile/PW/verification/mac_workspace/PwMac
+[info] [Progress] Verilator compilation started
+[info] [info] Found cached verilator binaries
+[info] [Progress] Verilator compilation done in 446.242 ms
+[info] [Progress] Start PwMac pw_all_cases simulation with seed 20261011
+[info] [TB PASSED] lobe_e1.expand outputs=4096 cycles=14641 requestStalls=331 outputStalls=4436
+[info] [TB PASSED] lobe_e1.project outputs=4096 cycles=14395 requestStalls=356 outputStalls=4106
+[info] [TB PASSED] lobe_e1.skip outputs=4096 cycles=14373 requestStalls=325 outputStalls=4152
+[info] [TB PASSED] lobe_e2.expand outputs=2048 cycles=5457 requestStalls=85 outputStalls=1874
+[info] [TB PASSED] lobe_e2.project outputs=2048 cycles=8528 requestStalls=153 outputStalls=1876
+[info] [TB PASSED] lobe_e2.skip outputs=2048 cycles=5533 requestStalls=86 outputStalls=1918
+[info] [TB PASSED] lobe_e3.expand outputs=1024 cycles=3533 requestStalls=59 outputStalls=848
+[info] [TB PASSED] lobe_e3.project outputs=1024 cycles=6769 requestStalls=80 outputStalls=1383
+[info] [TB PASSED] lobe_e3.skip outputs=1024 cycles=3573 requestStalls=40 outputStalls=896
+[info] [TB PASSED] lobe_mid.expand outputs=512 cycles=3133 requestStalls=17 outputStalls=649
+[info] [TB PASSED] lobe_mid.project outputs=512 cycles=5842 requestStalls=43 outputStalls=820
+[info] [TB PASSED] lobe_mid.skip outputs=512 cycles=3211 requestStalls=30 outputStalls=749
+[info] [TB PASSED] lobe_d3.expand outputs=1024 cycles=17443 requestStalls=250 outputStalls=1070
+[info] [TB PASSED] lobe_d3.project outputs=1024 cycles=6696 requestStalls=74 outputStalls=1339
+[info] [TB PASSED] lobe_d3.skip outputs=1024 cycles=17819 requestStalls=260 outputStalls=1497
+[info] [TB PASSED] lobe_d2.expand outputs=2048 cycles=22902 requestStalls=523 outputStalls=2502
+[info] [TB PASSED] lobe_d2.project outputs=2048 cycles=9077 requestStalls=164 outputStalls=2422
+[info] [TB PASSED] lobe_d2.skip outputs=2048 cycles=22935 requestStalls=514 outputStalls=2505
+[info] [TB PASSED] lobe_d1.expand outputs=4096 cycles=33741 requestStalls=1065 outputStalls=4773
+[info] [TB PASSED] lobe_d1.project outputs=4096 cycles=14942 requestStalls=318 outputStalls=4696
+[info] [TB PASSED] lobe_d1.skip outputs=4096 cycles=33522 requestStalls=1021 outputStalls=4671
+[info] [TB PASSED] lobe_head outputs=2048 cycles=10703 requestStalls=314 outputStalls=2515
+[info] [TB PASSED] airway_e1.expand outputs=4096 cycles=13817 requestStalls=347 outputStalls=3523
+[info] [TB PASSED] airway_e1.project outputs=4096 cycles=14249 requestStalls=344 outputStalls=3977
+[info] [TB PASSED] airway_e1.skip outputs=4096 cycles=14195 requestStalls=354 outputStalls=3909
+[info] [TB PASSED] airway_e2.expand outputs=2048 cycles=5403 requestStalls=70 outputStalls=1836
+[info] [TB PASSED] airway_e2.project outputs=2048 cycles=9420 requestStalls=185 outputStalls=2733
+[info] [TB PASSED] airway_e2.skip outputs=2048 cycles=5747 requestStalls=91 outputStalls=2089
+[info] [TB PASSED] airway_e3.expand outputs=1024 cycles=3749 requestStalls=32 outputStalls=1071
+[info] [TB PASSED] airway_e3.project outputs=1024 cycles=6591 requestStalls=89 outputStalls=1255
+[info] [TB PASSED] airway_e3.skip outputs=1024 cycles=4033 requestStalls=55 outputStalls=1344
+[info] [TB PASSED] airway_mid.expand outputs=512 cycles=3131 requestStalls=24 outputStalls=611
+[info] [TB PASSED] airway_mid.project outputs=512 cycles=5739 requestStalls=43 outputStalls=825
+[info] [TB PASSED] airway_mid.skip outputs=512 cycles=3088 requestStalls=24 outputStalls=745
+[info] [TB PASSED] airway_d3.expand outputs=1024 cycles=17520 requestStalls=259 outputStalls=1174
+[info] [TB PASSED] airway_d3.project outputs=1024 cycles=6357 requestStalls=73 outputStalls=983
+[info] [TB PASSED] airway_d3.skip outputs=1024 cycles=17766 requestStalls=273 outputStalls=1557
+[info] [TB PASSED] airway_d2.expand outputs=2048 cycles=22643 requestStalls=483 outputStalls=2576
+[info] [TB PASSED] airway_d2.project outputs=2048 cycles=8970 requestStalls=151 outputStalls=2250
+[info] [TB PASSED] airway_d2.skip outputs=2048 cycles=22851 requestStalls=554 outputStalls=2703
+[info] [TB PASSED] airway_d1.expand outputs=4096 cycles=33594 requestStalls=1012 outputStalls=4981
+[info] [TB PASSED] airway_d1.project outputs=4096 cycles=14205 requestStalls=335 outputStalls=3911
+[info] [TB PASSED] airway_d1.skip outputs=4096 cycles=33735 requestStalls=1033 outputStalls=5072
+[info] [TB PASSED] airway_head outputs=1024 cycles=8582 requestStalls=395 outputStalls=1286
+[info] [TB PASSED] vessel_e1.expand outputs=4096 cycles=13784 requestStalls=350 outputStalls=3460
+[info] [TB PASSED] vessel_e1.project outputs=4096 cycles=14429 requestStalls=341 outputStalls=4185
+[info] [TB PASSED] vessel_e1.skip outputs=4096 cycles=14322 requestStalls=364 outputStalls=3954
+[info] [TB PASSED] vessel_e2.expand outputs=2048 cycles=5569 requestStalls=91 outputStalls=1942
+[info] [TB PASSED] vessel_e2.project outputs=2048 cycles=9447 requestStalls=160 outputStalls=2664
+[info] [TB PASSED] vessel_e2.skip outputs=2048 cycles=5968 requestStalls=78 outputStalls=2331
+[info] [TB PASSED] vessel_e3.expand outputs=1024 cycles=3689 requestStalls=39 outputStalls=975
+[info] [TB PASSED] vessel_e3.project outputs=1024 cycles=6882 requestStalls=97 outputStalls=1674
+[info] [TB PASSED] vessel_e3.skip outputs=1024 cycles=3584 requestStalls=55 outputStalls=910
+[info] [TB PASSED] vessel_mid.expand outputs=512 cycles=3030 requestStalls=16 outputStalls=513
+[info] [TB PASSED] vessel_mid.project outputs=512 cycles=5468 requestStalls=55 outputStalls=525
+[info] [TB PASSED] vessel_mid.skip outputs=512 cycles=2973 requestStalls=27 outputStalls=567
+[info] [TB PASSED] vessel_d3.expand outputs=1024 cycles=17831 requestStalls=265 outputStalls=1538
+[info] [TB PASSED] vessel_d3.project outputs=1024 cycles=6676 requestStalls=75 outputStalls=1205
+[info] [TB PASSED] vessel_d3.skip outputs=1024 cycles=17493 requestStalls=243 outputStalls=949
+[info] [TB PASSED] vessel_d2.expand outputs=2048 cycles=22833 requestStalls=494 outputStalls=2519
+[info] [TB PASSED] vessel_d2.project outputs=2048 cycles=8927 requestStalls=163 outputStalls=2228
+[info] [TB PASSED] vessel_d2.skip outputs=2048 cycles=22857 requestStalls=520 outputStalls=2448
+[info] [TB PASSED] vessel_d1.expand outputs=4096 cycles=34532 requestStalls=1006 outputStalls=5786
+[info] [TB PASSED] vessel_d1.project outputs=4096 cycles=13937 requestStalls=343 outputStalls=3689
+[info] [TB PASSED] vessel_d1.skip outputs=4096 cycles=33570 requestStalls=1027 outputStalls=4921
+[info] [TB PASSED] vessel_head outputs=1024 cycles=8358 requestStalls=327 outputStalls=1143
+[info] [TB PASSED] directed_1_1_1 outputs=1 cycles=24 requestStalls=1 outputStalls=0
+[info] [TB PASSED] directed_17_5_19 outputs=38 cycles=332 requestStalls=13 outputStalls=12
+[info] [TB PASSED] directed_191_127_17 outputs=544 cycles=8766 requestStalls=59 outputStalls=800
+[info] [TB PASSED] directed_192_128_33 outputs=1056 cycles=16390 requestStalls=121 outputStalls=1541
+[info] [TB PASSED] directed_3_2_1 outputs=1 cycles=29 requestStalls=1 outputStalls=0
+[info] [TB PASSED] shift0_signed_saturation outputs=14 cycles=141 requestStalls=6 outputStalls=60
+[info] [TB PASSED] full_frame_512 outputs=262144 cycles=1228809 requestStalls=1 outputStalls=0
+[info] [TB PASSED] reload_before_reuse outputs=14 cycles=99 requestStalls=4 outputStalls=32
+[info] [TB PASSED] reuse_without_reload outputs=14 cycles=67 requestStalls=1 outputStalls=6
+[info] [TB PASSED] recovery_loading outputs=1056 cycles=16169 requestStalls=140 outputStalls=1293
+[info] [TB PASSED] recovery_request outputs=1056 cycles=16444 requestStalls=131 outputStalls=1371
+[info] [TB PASSED] recovery_compute outputs=1056 cycles=16226 requestStalls=132 outputStalls=1450
+[info] [TB PASSED] recovery_output outputs=1056 cycles=16648 requestStalls=152 outputStalls=1817
+[info] [TB PASSED] ALL MAC cases=79 outputs=405778 cycles=2150456 reset_phases=4 frozen_layers=66
+[info] [Done] Simulation done in 85471.634 ms
+[success] Total time: 87 s (01:27), completed Oct 11, 2026, 7:41:01 PM

@@ -1,0 +1,53 @@
+Time resolution is 1 ps
+Block Memory Generator module tb_op_rom.u_bounds.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_op_rom.dut.u_service.u_engine.u_bank.u_pw.u_weight_uram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_op_rom.rom.u_rom.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[REGRESSION] cases_fast.txt
+[CASE PASS] read_only_coefficients
+[CASE] airway_e1_fast cycle=128
+[CASE PASS] airway_e1_fast bytes=256 mac_bytes=1024 cycle=7326
+[CASE] lobe_e1_fast cycle=7326
+[CASE PASS] uram_all_6144_addresses latency=1 hold=4095/4096/6143
+[CASE PASS] lobe_e1_fast bytes=256 mac_bytes=1024 cycle=14522
+[CASE] vessel_e1_fast cycle=14522
+[CASE PASS] vessel_e1_fast bytes=256 mac_bytes=1024 cycle=21718
+[CASE] tumor_e1_fast cycle=21718
+[CASE PASS] tumor_e1_fast bytes=1024 mac_bytes=4096 cycle=46414
+[CASE] pool_from_tumor_pw_fast cycle=46414
+[CASE PASS] pool_from_tumor_pw_fast bytes=256 mac_bytes=0 cycle=49362
+[CASE] concat_pool_fast cycle=49362
+[CASE PASS] concat_pool_fast bytes=512 mac_bytes=0 cycle=52815
+[CASE] pw_from_concat_rom_fast cycle=52815
+[CASE PASS] pw_from_concat_rom_fast bytes=1024 mac_bytes=0 cycle=80950
+[CASE] tumor_mid_expand_frozen cycle=80950
+[CASE PASS] tumor_mid_expand_frozen bytes=2048 mac_bytes=8192 cycle=196842
+[CASE] tumor_d3_expand cycle=196842
+[CASE PASS] tumor_d3_expand bytes=1024 mac_bytes=4096 cycle=323756
+[CASE] airway_head cycle=323756
+[CASE PASS] airway_head bytes=32 mac_bytes=64 cycle=325395
+[CASE] lobe_head cycle=325395
+[CASE PASS] lobe_head bytes=64 mac_bytes=128 cycle=327225
+[CASE] vessel_head cycle=327225
+[CASE PASS] vessel_head bytes=32 mac_bytes=64 cycle=328867
+[CASE] tumor_head cycle=328867
+[CASE PASS] tumor_head bytes=32 mac_bytes=64 cycle=330508
+[CASE] tumor_mid_mix cycle=330508
+[CASE PASS] tumor_mid_mix bytes=2048 mac_bytes=0 cycle=348907
+[CASE] pool_odd_two_groups cycle=348907
+[CASE PASS] pool_odd_two_groups bytes=64 mac_bytes=0 cycle=350403
+[CASE] linebuffer3 cycle=350403
+[CASE PASS] linebuffer3 bytes=1728 mac_bytes=0 cycle=355263
+[CASE] linebuffer5 cycle=355263
+[CASE PASS] linebuffer5 bytes=1600 mac_bytes=0 cycle=359863
+[CASE] shuffle16 cycle=359863
+[CASE PASS] shuffle16 bytes=64 mac_bytes=0 cycle=361359
+[CASE] pool_groups32 cycle=361359
+[CASE PASS] pool_groups32 bytes=1024 mac_bytes=0 cycle=372278
+[CASE] linebuffer3_groups32 cycle=372278
+[CASE PASS] linebuffer3_groups32 bytes=27648 mac_bytes=0 cycle=445286
+[CASE] linebuffer5_groups32 cycle=445286
+[CASE PASS] linebuffer5_groups32 bytes=51200 mac_bytes=0 cycle=573010
+[TB PASSED] 全部数据验证一致 cases=21 cycles=573010 rom_reads=12170 ddr_reads=8649 ddr_writes=5712
+$finish called at time : 5730096 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Op_ROM/tb_op_rom.sv" Line 291

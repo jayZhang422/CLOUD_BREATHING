@@ -1,0 +1,11 @@
+%Warning-UNUSEDSIGNAL: rtl/Upsample.v:122:14: Signal is not used: 'state_r_string'
+                                            : ... note: In instance 'Upsample'
+  122 |   reg [39:0] state_r_string;
+      |              ^~~~~~~~~~~~~~
+                       ... For warning description see https://verilator.org/warn/UNUSEDSIGNAL?v=5.032
+                       ... Use "/* verilator lint_off UNUSEDSIGNAL */" and lint_on around source to disable this message.
+%Warning-UNUSEDSIGNAL: rtl/Upsample.v:123:14: Signal is not used: 'state_nxt_string'
+                                            : ... note: In instance 'Upsample'
+  123 |   reg [39:0] state_nxt_string;
+      |              ^~~~~~~~~~~~~~~~
+%Error: Exiting due to 2 warning(s)

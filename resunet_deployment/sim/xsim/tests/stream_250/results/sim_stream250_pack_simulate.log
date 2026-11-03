@@ -1,0 +1,10 @@
+Time resolution is 1 ps
+Block Memory Generator module tb_stream_pack.packer.u_tiles.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[CASE PASSED] pack pixels=16 cout=128 outputs=128 writes=64
+[CASE PASSED] pack pixels=19 cout=21 outputs=38 writes=21
+[CASE PASSED] pack pixels=1 cout=1 outputs=1 writes=1
+[CASE PASSED] pack pixels=17 cout=512 outputs=544 writes=304
+[CASE PASSED] pack pixels=3 cout=5 outputs=3 writes=2
+[CASE PASSED] pack pixels=32 cout=17 outputs=64 writes=32
+[TB PASSED] P4/P16 pack and segmented writeback
+$finish called at time : 25392 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Stream_250/tb_stream_pack.sv" Line 106

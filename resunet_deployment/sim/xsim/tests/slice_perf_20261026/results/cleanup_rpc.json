@@ -1,0 +1,14 @@
+[
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_rpc\\behav\\xsim\\sim_trace.csv",
+    "Length": 134016236
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_rpc\\behav\\xsim\\tb_p8p16_rpc_behav.wdb",
+    "Length": 231417056
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_rpc\\behav\\xsim\\waveform.vcd",
+    "Length": 1951315
+  }
+]

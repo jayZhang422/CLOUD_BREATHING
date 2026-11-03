@@ -1,0 +1,137 @@
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Fri Oct 16 21:18:44 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_fullnet'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fullnet/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_fullnet'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/2026.1/Vivado/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/2026.1/Vivado/data/xsim/xsim.ini' copied to run dir:'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fullnet/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'ddr4_0'...
+Generating merged BMM file for the design top 'ddr4_0'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_fullnet' in fileset 'sim_fullnet'...
+INFO: [SIM-utils-43] Exported 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fullnet/behav/xsim/quantized_params_rom.mif'
+INFO: [SIM-utils-43] Exported 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fullnet/behav/xsim/quantized_params_rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_fullnet'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fullnet/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_fullnet_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fullnet/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_13 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fullnet_behav xil_defaultlib.tb_fullnet xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_13 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fullnet_behav xil_defaultlib.tb_fullnet xil_defaultlib.glbl -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 7873.672 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_fullnet/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_fullnet_behav -key {Behavioral:sim_1:Functional:tb_fullnet} -tclbatch {tb_fullnet.tcl} -protoinst "protoinst_files/bd_9054.protoinst" -log {simulate.log} -testplusarg CASE_LIST=cases_all.txt"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_9054.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_9054.protoinst for the following reason(s):
+There are no instances of module "bd_9054" in the design.
+
+Time resolution is 1 ps
+source tb_fullnet.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 70ms
+Block Memory Generator module tb_fullnet.u_bounds.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fullnet.dut.u_service.u_engine.u_bank.u_pw.pwWeightUram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_fullnet.rom.u_rom.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[SEED] 539365398
+[FULLNET INPUT] uploaded P16 bytes=16384 at 0x01000000
+[FULLNET TASK 0] 000_e1.expand
+[CASE PASS] uram_all_6144_addresses latency=1 hold=4095/4096/6143
+[FULLNET TASK 1] 001_e1.dw3
+[FULLNET TASK 2] 002_e1.dw5
+[FULLNET TASK 3] 003_e1.mix
+[FULLNET TASK 4] 004_e1.project
+[FULLNET TASK 5] 005_e1.skip
+[FULLNET TASK 6] 006_e1.out
+[FULLNET TASK 7] 007_pool1
+[FULLNET TASK 8] 008_e2.expand
+[RESET PASS] between e1/pool and e2
+[FULLNET TASK 9] 009_e2.dw3
+[FULLNET TASK 10] 010_e2.dw5
+[FULLNET TASK 11] 011_e2.mix
+[FULLNET TASK 12] 012_e2.project
+[FULLNET TASK 13] 013_e2.skip
+[FULLNET TASK 14] 014_e2.out
+[FULLNET TASK 15] 015_pool2
+[FULLNET TASK 16] 016_e3.expand
+[FULLNET TASK 17] 017_e3.dw3
+[FULLNET TASK 18] 018_e3.dw5
+[FULLNET TASK 19] 019_e3.mix
+[FULLNET TASK 20] 020_e3.project
+[FULLNET TASK 21] 021_e3.skip
+[FULLNET TASK 22] 022_e3.out
+[FULLNET TASK 23] 023_pool3
+[FULLNET TASK 24] 024_mid.expand
+[FULLNET TASK 25] 025_mid.dw3
+[FULLNET TASK 26] 026_mid.dw5
+[FULLNET TASK 27] 027_mid.mix
+[FULLNET TASK 28] 028_mid.project
+[FULLNET TASK 29] 029_mid.skip
+[FULLNET TASK 30] 030_mid.out
+[FULLNET TASK 31] 031_d3.up
+[FULLNET TASK 32] 032_d3.concat
+[SKIP PRESERVED] e3 encoder skip base=02200000 bytes=4096
+[FULLNET TASK 33] 033_d3.expand
+[FULLNET TASK 34] 034_d3.dw3
+[FULLNET TASK 35] 035_d3.dw5
+[FULLNET TASK 36] 036_d3.mix
+[FULLNET TASK 37] 037_d3.project
+[FULLNET TASK 38] 038_d3.skip
+[FULLNET TASK 39] 039_d3.out
+[FULLNET TASK 40] 040_d2.up
+[FULLNET TASK 41] 041_d2.concat
+[SKIP PRESERVED] e2 encoder skip base=02100000 bytes=8192
+[FULLNET TASK 42] 042_d2.expand
+[FULLNET TASK 43] 043_d2.dw3
+[FULLNET TASK 44] 044_d2.dw5
+[FULLNET TASK 45] 045_d2.mix
+[FULLNET TASK 46] 046_d2.project
+[FULLNET TASK 47] 047_d2.skip
+[FULLNET TASK 48] 048_d2.out
+[FULLNET TASK 49] 049_d1.up
+[FULLNET TASK 50] 050_d1.concat
+[SKIP PRESERVED] e1 encoder skip base=02000000 bytes=16384
+[FULLNET TASK 51] 051_d1.expand
+[FULLNET TASK 52] 052_d1.dw3
+[FULLNET TASK 53] 053_d1.dw5
+[FULLNET TASK 54] 054_d1.mix
+[FULLNET TASK 55] 055_d1.project
+[FULLNET TASK 56] 056_d1.skip
+[FULLNET TASK 57] 057_d1.out
+[FULLNET TASK 58] 058_head
+[FULLNET COVERAGE] tasks=59 up_words=3584 up_stall_cycles=72500
+[TB PASSED] FullNet vessel base16 32x32 Golden exact tasks=59 cycles=7356256 rom_reads=4176 ddr_reads=126016 ddr_writes=77248
+$finish called at time : 22068768 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/FullNet/tb_fullnet.sv" Line 449
+run: Time (s): cpu = 00:00:08 ; elapsed = 00:01:28 . Memory (MB): peak = 7946.441 ; gain = 72.770
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:01:30 . Memory (MB): peak = 7946.441 ; gain = 72.770
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_fullnet_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 70ms
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:01:42 . Memory (MB): peak = 7946.441 ; gain = 72.770

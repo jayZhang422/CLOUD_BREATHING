@@ -1,0 +1,38 @@
+--- before/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_service.sv
++++ after/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_service.sv
+@@ -29,7 +29,7 @@
+     output logic [31:0] mem_mask_o, // DDR 事务接口字段
+     input logic [255:0] mem_rsp_data_i // 数据载荷，低位承载首字节或首 lane
+ );
+-    typedef enum logic [3:0] {IDLE, DECODE, START_RUN, WRITE_REQUEST, READ_REQUEST,
++    typedef enum logic [3:0] {IDLE, CHECK_DESCRIPTOR, DECODE, START_RUN, WRITE_REQUEST, READ_REQUEST,
+         WRITE_RETURN, READ_RETURN, REPLY, WAIT_SEND} state_t;
+     state_t state_r, state_nxt;
+     logic [7:0] msg_r, status_r, op_r, format_r;
+@@ -39,6 +39,7 @@
+     logic [511:0] last_descriptor_r;
+     logic held_r, seen_r, finished_r, final_error_r, final_abort_r, abort_pending_r;
+     logic engine_busy_w, engine_done_w, engine_error_w, engine_abort_w, engine_ready_w, descriptor_ok_w;
++    logic check_done_w;
+     logic abort_w;
+     logic [31:0] result_bytes_w, mac_bytes_w;
+     logic [31:0] candidate_bytes_w, candidate_mac_bytes_w;
+@@ -56,6 +57,7 @@
+     assign abort_w = state_r == DECODE && msg_r == 8'h25 && len_r == 16'd0 && held_r && id_r == run_id_r && engine_busy_w;
+     op_engine u_engine (
+         .clk_i(clk_i), .rst_n_i(rst_n_i), .run_valid_i(state_r == START_RUN),
++        .check_valid_i(state_r == CHECK_DESCRIPTOR), .check_done_o(check_done_w),
+         .run_ready_o(engine_ready_w), .descriptor_i(body_r[511:0]), .descriptor_ok_o(descriptor_ok_w),
+         .abort_i(abort_w), .busy_o(engine_busy_w), .done_o(engine_done_w),
+         .error_o(engine_error_w), .aborted_o(engine_abort_w),
+@@ -103,7 +105,9 @@
+         resp_body_o = response_r;
+         state_nxt = state_r;
+         case (state_r)
+-            IDLE: if (req_valid_i) state_nxt = DECODE;
++            IDLE: if (req_valid_i)
++                state_nxt = req_msg_i == 8'h21 && req_len_i == 16'd64 ? CHECK_DESCRIPTOR : DECODE;
++            CHECK_DESCRIPTOR: if (check_done_w) state_nxt = DECODE;
+             DECODE: begin
+                 state_nxt = REPLY;
+                 case (msg_r)

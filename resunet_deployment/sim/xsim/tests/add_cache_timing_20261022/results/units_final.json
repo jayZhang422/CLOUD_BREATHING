@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"exit_code\": 0,\n  \"output\": \"run 400 us\\n[TB PASSED] 全部数据验证一致 runs=2 max_credit=8 blocked=7791 reset_inflight=1 errors_drained=1\\n$finish called at time : 52092 ns : File \\\"E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Move_Clock/tb_move_units.sv\\\" Line 117\\nINFO: [MCP 00-101]\",\n  \"task_progress\": \"2/5: MCP 自校验回归、周期对照和生产接入检查 (active, 8m49s) | Next: 清理产物、恢复仿真配置并形成交付记录\"\n}"
+    }
+  ]
+}

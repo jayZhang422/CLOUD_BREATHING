@@ -1,0 +1,53 @@
+{
+  "long_rpc": [
+    {
+      "case": "lobe_e1.expand",
+      "before": 52739,
+      "after": 41392,
+      "reduction_percent": 21.515
+    },
+    {
+      "case": "tumor_d3.expand",
+      "before": 179764,
+      "after": 151002,
+      "reduction_percent": 16.0
+    },
+    {
+      "case": "tumor_head",
+      "before": 58339,
+      "after": 46936,
+      "reduction_percent": 19.546
+    }
+  ],
+  "short_rpc": {
+    "before_cycles": 127072,
+    "after_cycles": 123880,
+    "cases": {
+      "lobe_mid_expand": 12127,
+      "lobe_mid_mix": 6155,
+      "lobe_mid_project": 18256,
+      "lobe_mid_out": 6157,
+      "legacy_lobe_head": 448,
+      "legacy_pool_odd_two_groups": 347,
+      "legacy_pool_groups32": 4713,
+      "tumor_mid_expand": 68615,
+      "legacy_tumor_e1_fast": 4972,
+      "upsample": 300,
+      "concat": 177,
+      "fused_dw11": 1301,
+      "pw_tail_clear": 312
+    }
+  },
+  "op12_slow_max": {
+    "before_cycles": 279284,
+    "after_cycles": 280615,
+    "change_percent": 0.477
+  },
+  "source_sha256": {
+    "script/scala/PW/pwmac.scala": "94189b2dec7c4791f71506e4dea2adf93fc707aa8982d56023b420163bf9e03f",
+    "prj/Model_Deployment.srcs/sources_1/new/Op/PW/pwmacshared.v": "7d5394cd340032405bd71835efee74ee63b4c1f5b6155f3617f6be4e84e7fd29",
+    "sim/Op_Sim/PW/rtl/pwmacshared.v": "7d5394cd340032405bd71835efee74ee63b4c1f5b6155f3617f6be4e84e7fd29",
+    "prj/Model_Deployment.srcs/sources_1/new/Op/control/op_core_bank.sv": "1dbcac0baadf9ede030a644eefc44d2083f6217d82f33907a3a5211c74fb84cc",
+    "prj/Model_Deployment.srcs/sources_1/ip/pw_input_tile_bram/pw_input_tile_bram.xci": "11069271169323579a59adc405868937600f9d867aedcc9a259df5945a970ca4"
+  }
+}

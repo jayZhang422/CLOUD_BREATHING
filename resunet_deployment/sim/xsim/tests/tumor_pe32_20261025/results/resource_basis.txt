@@ -1,0 +1,10 @@
+257:INFO: [Synth 8-6157] synthesizing module 'pw_project_uram' [E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.runs/synth_1/.Xil/Vivado-35684-MSI/realtime/pw_project_uram_stub.v:6]
+258:INFO: [Synth 8-6155] done synthesizing module 'pw_project_uram' (0#1) [E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.runs/synth_1/.Xil/Vivado-35684-MSI/realtime/pw_project_uram_stub.v:6]
+267:INFO: [Synth 8-6157] synthesizing module 'pw_weight_bank' [E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.runs/synth_1/.Xil/Vivado-35684-MSI/realtime/pw_weight_bank_stub.v:6]
+268:INFO: [Synth 8-6155] done synthesizing module 'pw_weight_bank' (0#1) [E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.runs/synth_1/.Xil/Vivado-35684-MSI/realtime/pw_weight_bank_stub.v:6]
+2499:Parsing XDC File [e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/pw_param_bram/pw_param_bram/pw_param_bram_in_context.xdc] for cell 'g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw_shared/project/pwParamBram'
+2500:Finished Parsing XDC File [e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/pw_param_bram/pw_param_bram/pw_param_bram_in_context.xdc] for cell 'g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw_shared/project/pwParamBram'
+11529:|12    |pw_project_uram      |         4|
+11531:|14    |pw_weight_bank       |         4|
+11554:|21    |pw_project_uram      |      4|
+11556:|27    |pw_weight_bank       |      4|

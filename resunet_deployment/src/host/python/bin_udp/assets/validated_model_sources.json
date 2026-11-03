@@ -1,0 +1,88 @@
+[
+  {
+    "file": "src/io/__init__.py",
+    "source": "E:\\Pycharm_Prj\\Model\\prj\\src\\io\\__init__.py",
+    "sha256": "dba9fcaad7912f8a71275d6613f23c83dbfaeb4ac89e552733144022cb759657"
+  },
+  {
+    "file": "src/io/dicom_ct.py",
+    "source": "E:\\Pycharm_Prj\\Model\\prj\\src\\io\\dicom_ct.py",
+    "sha256": "8a0f373937d5373006f312738074e53b2d6b237f90f8aadcdf48c62e9338f89f"
+  },
+  {
+    "file": "src/io/fpga_volume_io.py",
+    "source": "E:\\Pycharm_Prj\\Model\\prj\\src\\io\\fpga_volume_io.py",
+    "sha256": "c2efdd01c9e6769d57e51f069a1db6b6ab974993720751e9023c810632f213d2"
+  },
+  {
+    "file": "src/io/prediction_io.py",
+    "source": "E:\\Pycharm_Prj\\Model\\prj\\src\\io\\prediction_io.py",
+    "sha256": "30bf9e501bb082e1f572d3242bf6e1dfd5331645f66934ec089e81d16eea55ef"
+  },
+  {
+    "file": "src/io/prepare_input.py",
+    "source": "E:\\Pycharm_Prj\\Model\\prj\\src\\io\\prepare_input.py",
+    "sha256": "d51f7977cf142b41bd4685a34f3f08204a45ad02cc694920fc6207916846b262"
+  },
+  {
+    "file": "src/io/preprocess.py",
+    "source": "E:\\Pycharm_Prj\\Model\\prj\\src\\io\\preprocess.py",
+    "sha256": "6c601d176d051eab8d58b55d56df4cb2673f80d35f4237747318c96cc98444ef"
+  },
+  {
+    "file": "src/stl/__init__.py",
+    "source": "E:\\Pycharm_Prj\\Model\\prj\\src\\stl\\__init__.py",
+    "sha256": "4028a4caf81b787332ba5d06dc40c87a10707cd04dc16a32f15a3f031eef6d4e"
+  },
+  {
+    "file": "src/stl/branch_repair.py",
+    "source": "E:\\Pycharm_Prj\\Model\\prj\\src\\stl\\branch_repair.py",
+    "sha256": "a689238c45462ed56a51b550aaf1b28a7b41e34d66001464499b62b8512ad1da"
+  },
+  {
+    "file": "src/stl/chest_ct_to_stl.py",
+    "source": "E:\\Pycharm_Prj\\Model\\prj\\src\\stl\\chest_ct_to_stl.py",
+    "sha256": "62ac9e8bfdf8e90b86e7585e6bac1984f944835de3a1450ef56afb2549e7aa2d",
+    "baseline_sha256": "899d2dd170339fe64a9b9d5c7da6440339145db60fb6bc25d3c165a7f9564dd5",
+    "note": "合并仓库时仅把默认病例路径 D:/Data/CT_STL_Work/01 改为 data/ct_stl_work/01，算法未改。"
+  },
+  {
+    "file": "src/stl/export_results.py",
+    "source": "E:\\Pycharm_Prj\\Model\\prj\\src\\stl\\export_results.py",
+    "sha256": "3a46883b949e8dbf2f44cee24d7f78e66020bb37eeeac4136a385685635db770"
+  },
+  {
+    "file": "src/stl/lobe_surface.py",
+    "source": "E:\\Pycharm_Prj\\Model\\prj\\src\\stl\\lobe_surface.py",
+    "sha256": "77cf3fac5ba08f0b2f353d2258e6b40c9f95bf3290af84960b531b2bbe89101f"
+  },
+  {
+    "file": "src/stl/lung_ct_to_stl.py",
+    "source": "E:\\Pycharm_Prj\\Model\\prj\\src\\stl\\lung_ct_to_stl.py",
+    "sha256": "fcd14f10c423f946d3c3236399de80b57ae2d5dd4146cf9a94b5244e0d6ffc9a",
+    "baseline_sha256": "ad2fd6d019d3ce364dceb08d5dee8759fb19e8aac8d435d0ee0d7755be814590",
+    "note": "合并仓库时仅把两个默认输入路径改为 data/ct_stl_work/01/...，并把文案 MKDC 统一为 mkdc，算法未改。"
+  },
+  {
+    "file": "src/stl/reference_review.py",
+    "source": "E:\\Pycharm_Prj\\Model\\prj\\src\\stl\\reference_review.py",
+    "sha256": "3cd6f6a4a82498100e3faa9ec05b44c951969b0b984cc26f1d9cbeb5bcfdb87c"
+  },
+  {
+    "file": "src/stl/refine_lobes.py",
+    "source": "E:\\Pycharm_Prj\\Model\\prj\\src\\stl\\refine_lobes.py",
+    "sha256": "c6a0b2d34ebdbda31e4ae393b7e90d08138924a9fb8d6f9bc02c4fc1fe28b6f3"
+  },
+  {
+    "file": "src/stl/vessel_surface.py",
+    "source": "E:\\Pycharm_Prj\\Model\\prj\\src\\stl\\vessel_surface.py",
+    "sha256": "1f79d4e2296572b1d8ff34f4c6a85c9ff525b4121a348ba791585faab1fd9504"
+  },
+  {
+    "file": "src/stl/view_chest.py",
+    "source": "E:\\Pycharm_Prj\\Model\\prj\\src\\stl\\view_chest.py",
+    "sha256": "1fcc8484dd3e05c2b81fa5ef0d488a2c17bddabb36a2831528d032ea5ff0db32",
+    "baseline_sha256": "3b3b50d2419e14843c84d37dc0bf2cfbef320efc86290a0d2d90be907bfbf770",
+    "note": "合并仓库时仅把窗口标题文案 MKDC 统一为 mkdc，算法未改。"
+  }
+]

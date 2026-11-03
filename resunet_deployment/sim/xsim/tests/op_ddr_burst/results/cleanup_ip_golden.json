@@ -1,0 +1,18 @@
+[
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_ddr_golden\\behav\\xsim\\quantized_params_rom.mif",
+    "Length": 2974400
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_ddr_golden\\behav\\xsim\\sim_trace.csv",
+    "Length": 530649591
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_ddr_golden\\behav\\xsim\\tb_op_ddr_golden_behav.wdb",
+    "Length": 358072925
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_ddr_golden\\behav\\xsim\\waveform.vcd",
+    "Length": 7365788
+  }
+]

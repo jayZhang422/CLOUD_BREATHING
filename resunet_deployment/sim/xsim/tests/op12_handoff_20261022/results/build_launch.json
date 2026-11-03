@@ -1,0 +1,13 @@
+{
+  "command": "launch_runs synth_1 impl_1 -jobs 4",
+  "requested_stop": "route_design (confirmed in generated impl_1/top.tcl; no write_bitstream command)",
+  "status_check": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"exit_code\": 0,\n  \"output\": \"launch_time {2026-10-22 13:17:14 +0800} synth_status {Running synth_design...} impl_status Queued... impl_parent synth_1 active_simset sim_1 sim_top tb_mkdc source_top top temporary_sets {}\",\n  \"task_progress\": \"3/4: 清理临时仿真文件并启动综合、实现 (active, 8m4s)\"\n}"
+      }
+    ]
+  },
+  "notes": "Synthesis is running; implementation is queued behind synth_1. No wait_on_run, bitstream generation, or board programming requested/performed. Initial combined launch with -to_step route_design was rejected because that step is invalid for synthesis; default combined launch succeeded."
+}

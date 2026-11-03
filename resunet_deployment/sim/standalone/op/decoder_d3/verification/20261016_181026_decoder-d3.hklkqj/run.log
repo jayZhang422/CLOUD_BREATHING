@@ -1,0 +1,53 @@
+[info] welcome to sbt 1.10.2 (Eclipse Adoptium Java 17.0.20.1)
+[info] loading project definition from /home/jayzhang/.cache/decoder-d3.hKLkQJ/project/project
+[info] loading settings for project project from build.sbt ...
+[info] set current project to project (in build file:/home/jayzhang/.cache/decoder-d3.hKLkQJ/project/)
+[info] compiling 8 Scala sources to /home/jayzhang/.cache/decoder-d3.hKLkQJ/project/target/scala-2.13/classes ...
+[info] done compiling
+[info] running (fork) DecoderD3Sim /home/jayzhang/.cache/decoder-d3.hKLkQJ/run /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Concat/concat.sv
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 3072.0MiB
+[info] [Runtime] Current date : 2026.10.16 18:10:44
+[info] [Progress] at 0.000 : Elaborate components
+[info] [Progress] at 0.603 : Checks and transforms
+[info] [Progress] at 1.402 : Generate Verilog to /home/jayzhang/.cache/decoder-d3.hKLkQJ/run/compiled/tmp/job_1
+[info] [Warning] 1912 signals were pruned. You can call printPruned on the backend report to get more informations.
+[info] [Done] at 1.739
+[info] [Progress] Simulation workspace in /home/jayzhang/.cache/decoder-d3.hKLkQJ/run/compiled/DecoderD3Harness
+[info] [Progress] Verilator compilation started
+[info] [Progress] Verilator compilation done in 7694.292 ms
+[info] [Progress] Start DecoderD3Harness vessel_d3 simulation with seed 20261016
+[info] [STAGE PASSED] trial=0 phase=up cycles=708 outputs=512 stalls=0
+[info] [STAGE PASSED] trial=0 phase=concat cycles=1540 outputs=768 stalls=0
+[info] [STAGE PASSED] trial=0 phase=expand cycles=14104 outputs=1024 stalls=0
+[info] [STAGE PASSED] trial=0 phase=cascade cycles=829 outputs=256 stalls=0
+[info] [STAGE PASSED] trial=0 phase=project cycles=4760 outputs=1024 stalls=0
+[info] [STAGE PASSED] trial=0 phase=skip cycles=14104 outputs=1024 stalls=0
+[info] [STAGE PASSED] trial=0 phase=final cycles=299 outputs=256 stalls=0
+[info] [TB PASSED] trial=0 seed=20261016 d3_values=4096 skip_words_intact=256 actual_chain=true
+[info] [STAGE PASSED] trial=1 phase=up cycles=1058 outputs=512 stalls=317
+[info] [STAGE PASSED] trial=1 phase=concat cycles=4187 outputs=768 stalls=892
+[info] [STAGE PASSED] trial=1 phase=expand cycles=16340 outputs=1024 stalls=586
+[info] [STAGE PASSED] trial=1 phase=cascade cycles=853 outputs=256 stalls=182
+[info] [STAGE PASSED] trial=1 phase=project cycles=5645 outputs=1024 stalls=630
+[info] [STAGE PASSED] trial=1 phase=skip cycles=16263 outputs=1024 stalls=567
+[info] [STAGE PASSED] trial=1 phase=final cycles=534 outputs=256 stalls=151
+[info] [TB PASSED] trial=1 seed=20261017 d3_values=4096 skip_words_intact=256 actual_chain=true
+[info] [STAGE PASSED] trial=2 phase=up cycles=1060 outputs=512 stalls=310
+[info] [Error] Simulation failed at time=691889
+[error] Exception in thread "main" spinal.sim.SimFailure: trial=2 phase=concat cycle=86470 time=691889 last-beat stall missing
+[error] 	at spinal.core.sim.package$.simFailure(package.scala:214)
+[error] 	at DecoderD3Sim$.fail$1(DecoderD3Sim.scala:64)
+[error] 	at DecoderD3Sim$.DecoderD3Sim$$check$1(DecoderD3Sim.scala:66)
+[error] 	at DecoderD3Sim$.runMemory$1(DecoderD3Sim.scala:309)
+[error] 	at DecoderD3Sim$.$anonfun$new$97(DecoderD3Sim.scala:364)
+[error] 	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:190)
+[error] 	at DecoderD3Sim$.$anonfun$new$1(DecoderD3Sim.scala:331)
+[error] 	at spinal.core.sim.SimCompiled.$anonfun$doSimApi$2(SimBootstraps.scala:626)
+[error] 	at spinal.sim.SimManager.threadBody$1(SimManager.scala:246)
+[error] 	at spinal.sim.SimManager.$anonfun$run$1(SimManager.scala:249)
+[error] 	at spinal.sim.SimThread.$anonfun$jvmThread$1(SimThread.scala:90)
+[error] 	at spinal.sim.JvmThread.run(SimManager.scala:51)
+[error] Nonzero exit code returned from runner: 1
+[error] (Compile / runMain) Nonzero exit code returned from runner: 1
+[error] Total time: 49 s, completed Oct 16, 2026, 6:11:22 PM

@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-17",
+  "simulator": "Vivado XSim 2026.1",
+  "transport": "PASS",
+  "golden": "PASS",
+  "transport_metrics": {
+    "transactions": 2724,
+    "old_ui_cycles": 215307,
+    "new_ui_cycles": 74691,
+    "speedup": 2.8826364622243643,
+    "old_axi_bursts": 3966,
+    "new_axi_bursts": 199,
+    "old_ddr_bytes": 126912,
+    "new_ddr_bytes": 35136,
+    "read_write_overlap_cycles": 221
+  },
+  "golden_metrics": {
+    "cases": 27,
+    "ui_cycles": 3282453,
+    "rom_reads": 1640,
+    "ddr_reads": 1324,
+    "ddr_writes": 229
+  },
+  "limits": [
+    "Memory replay speedup is not full-network or board speedup",
+    "Upstream 32B CDC remains single outstanding",
+    "No synthesis, implementation, bitstream generation or board test"
+  ],
+  "generated_files_over_1MiB_remaining": 0,
+  "source_sha256": {
+    "prj\\Model_Deployment.srcs\\sources_1\\new\\Op\\control\\op_ddr_port.sv": "e2f82dbc1aa8a5e71e7807d3a7a5896aee40626046b92d787ac9639159960e50",
+    "prj\\Model_Deployment.srcs\\sources_1\\new\\Op\\control\\op_engine.sv": "e8a566edf3162cd971d28dd19e3661aa5734674b86998ac2079dfd7dbd7a3645",
+    "prj\\Model_Deployment.srcs\\sources_1\\new\\Op\\control\\op_service.sv": "766025d60dd5f18c176e52c431f78ff027d18d10fd1919551a1eac16ad0b49cc",
+    "prj\\Model_Deployment.srcs\\sources_1\\new\\Op\\op_board.sv": "6c9f6e6f49475c6231db99c6cc7424d41dc648993efd91aea4b1a448daf16bb0",
+    "prj/Model_Deployment.srcs/sources_1/ip/op_ddr_cache_bram/op_ddr_cache_bram.xci": "645897f98c910c5e7ae2c75ddd397965b28cc17a6076d7d6c73cb307a176e081",
+    "prj/Model_Deployment.srcs/sim_1/new/Op_DDR_Burst/tb_op_ddr_burst.sv": "55ce38afa63a3e4d81b1eec1c787516cda1d2bda8e3f253a47fb0d7a9f625d2c",
+    "prj/Model_Deployment.srcs/sim_1/new/Op_DDR_Burst/tb_op_ddr_golden.sv": "953a6f70d5325e5e7298076af0818663bb6be6ae946cb47a7a1f883202d23c47"
+  },
+  "revision": "Official Block Memory Generator cache banks",
+  "log_paths": {
+    "transport": "results/ip_transport",
+    "golden": "results/ip_golden"
+  },
+  "cache_ip": {
+    "module": "op_ddr_cache_bram",
+    "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+    "instances": 4,
+    "memory_type": "Simple_Dual_Port_RAM",
+    "write_width_bits": 256,
+    "depth_words": 32,
+    "byte_write_enable_bits": 32,
+    "byte_size_bits": 8,
+    "common_clock": true,
+    "read_latency_cycles": 1,
+    "extra_output_registers": false,
+    "ram_reset": false,
+    "generated_with": "Vivado MCP create_ip/set_property/generate_target all",
+    "estimated_ramb36": 16,
+    "estimated_ramb18": 0,
+    "synthesized_this_revision": false
+  },
+  "cleaned_large_generated_bytes": 952965274
+}

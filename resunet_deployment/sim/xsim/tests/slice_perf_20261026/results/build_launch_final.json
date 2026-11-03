@@ -1,0 +1,43 @@
+{
+  "verified_at_local": "2026-10-26T17:37:56+08:00",
+  "session_id": "vivado-20261026-144546-70e86541",
+  "endpoint": "http://127.0.0.1:8088",
+  "command": "launch_runs impl_1 -to_step route_design -jobs 4",
+  "launch_local": "2026-10-26T17:37:35+08:00",
+  "launch_response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"exit_code\": 0,\n  \"output\": \"launch_runs impl_1 -to_step route_design -jobs 4\\n[Mon Oct 26 17:37:35 2026] Launched synth_1...\\nRun output will be captured here: E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.runs/synth_1/runme.log\\n[Mon Oct 26 17:37:36 2026] Launched impl_1...\\nRun output will be captured here: E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.runs/impl_1/runme.log\\nINFO: [MCP 00-101]\",\n  \"task_progress\": \"2/3: 启动一次综合与实现并记录启动凭据 (active, 15s)\"\n}"
+      }
+    ]
+  },
+  "run_query": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"exit_code\": 0,\n  \"output\": \"{synth_1 {Running synth_design...} 0% 0} {impl_1 Queued... 0% 0}\",\n  \"task_progress\": \"2/3: 启动一次综合与实现并记录启动凭据 (active, 36s)\"\n}"
+        }
+      ]
+    }
+  },
+  "os_and_log_evidence": {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "31f4fd",
+      "wall_time_seconds": 2.9633954,
+      "exit_code": 0,
+      "original_token_count": 961,
+      "output": "[\r\n  {\r\n    \"ProcessId\": 18512,\r\n    \"ParentProcessId\": 17692,\r\n    \"Name\": \"cmd.exe\",\r\n    \"CreationDate\": \"2026-10-26T12:24:47.452533+08:00\",\r\n    \"CommandLine\": \"C:\\\\Windows\\\\system32\\\\cmd.exe /c \\\"\\\"D:\\\\Xilinx\\\\2026.1\\\\Vivado\\\\bin\\\\vivado.bat\\\" -m64 -gui_launcher_event rodinguilauncherevent17692 \\\"\"\r\n  },\r\n  {\r\n    \"ProcessId\": 19184,\r\n    \"ParentProcessId\": 18512,\r\n    \"Name\": \"vivado.exe\",\r\n    \"CreationDate\": \"2026-10-26T12:24:47.962399+08:00\",\r\n    \"CommandLine\": \"\\\"D:/Xilinx/2026.1/Vivado/bin/unwrapped/win64.o/vivado.exe\\\"   -gui_launcher_event rodinguilauncherevent17692\"\r\n  },\r\n  {\r\n    \"ProcessId\": 23536,\r\n    \"ParentProcessId\": 18928,\r\n    \"Name\": \"vivado-mcp-server-windows-amd64-2026.9.1.exe\",\r\n    \"CreationDate\": \"2026-10-26T14:06:23.156216+08:00\",\r\n    \"CommandLine\": \"\\\"C:\\\\Users\\\\32001\\\\.codex\\\\mcp\\\\vivado\\\\vivado-mcp-server-windows-amd64-2026.9.1.exe\\\" --stdio-bridge\"\r\n  },\r\n  {\r\n    \"ProcessId\": 13456,\r\n    \"ParentProcessId\": 18928,\r\n    \"Name\": \"vivado-mcp-server-windows-amd64-2026.9.1.exe\",\r\n    \"CreationDate\": \"2026-10-26T14:25:59.887612+08:00\",\r\n    \"CommandLine\": \"\\\"C:\\\\Users\\\\32001\\\\.codex\\\\mcp\\\\vivado\\\\vivado-mcp-server-windows-amd64-2026.9.1.exe\\\" --stdio-bridge\"\r\n  },\r\n  {\r\n    \"ProcessId\": 23728,\r\n    \"ParentProcessId\": 5920,\r\n    \"Name\": \"vivado-mcp-server-windows-amd64-2026.9.1.exe\",\r\n    \"CreationDate\": \"2026-10-26T14:42:36.223117+08:00\",\r\n    \"CommandLine\": \"C:\\\\Users\\\\32001\\\\.codex\\\\mcp\\\\vivado\\\\vivado-mcp-server-windows-amd64-2026.9.1.exe\"\r\n  },\r\n  {\r\n    \"ProcessId\": 21652,\r\n    \"ParentProcessId\": 18928,\r\n    \"Name\": \"vivado-mcp-server-windows-amd64-2026.9.1.exe\",\r\n    \"CreationDate\": \"2026-10-26T16:29:13.320283+08:00\",\r\n    \"CommandLine\": \"\\\"C:\\\\Users\\\\32001\\\\.codex\\\\mcp\\\\vivado\\\\vivado-mcp-server-windows-amd64-2026.9.1.exe\\\" --stdio-bridge\"\r\n  },\r\n  {\r\n    \"ProcessId\": 24516,\r\n    \"ParentProcessId\": 19184,\r\n    \"Name\": \"cmd.exe\",\r\n    \"CreationDate\": \"2026-10-26T17:37:35.932429+08:00\",\r\n    \"CommandLine\": \"C:\\\\Windows\\\\system32\\\\cmd.exe /c D:/Xilinx/2026.1/Vivado/bin/loader.bat -m64 -exec vrs E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.runs/.jobs/vrs_config_142.xml -j 4\"\r\n  },\r\n  {\r\n    \"ProcessId\": 25212,\r\n    \"ParentProcessId\": 22864,\r\n    \"Name\": \"cmd.exe\",\r\n    \"CreationDate\": \"2026-10-26T17:37:37.316038+08:00\",\r\n    \"CommandLine\": \"C:\\\\Windows\\\\system32\\\\cmd.exe /c E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.runs/synth_1/runme.bat -quiet\"\r\n  },\r\n  {\r\n    \"ProcessId\": 23780,\r\n    \"ParentProcessId\": 25532,\r\n    \"Name\": \"cmd.exe\",\r\n    \"CreationDate\": \"2026-10-26T17:37:42.400355+08:00\",\r\n    \"CommandLine\": \"C:\\\\Windows\\\\system32\\\\cmd.exe /c vivado.bat -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl 2>&1\"\r\n  },\r\n  {\r\n    \"ProcessId\": 22288,\r\n    \"ParentProcessId\": 23780,\r\n    \"Name\": \"vivado.exe\",\r\n    \"CreationDate\": \"2026-10-26T17:37:43.413+08:00\",\r\n    \"CommandLine\": \"\\\"D:/Xilinx/2026.1/Vivado/bin/unwrapped/win64.o/vivado.exe\\\"   -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl\"\r\n  }\r\n]\r\n# Host memory        : 16940 MB\r\n# Swap memory        : 21474 MB\r\n# Total Virtual      : 38415 MB\r\n# Available Virtual  : 18675 MB\r\n#-----------------------------------------------------------\r\n\r\n****** Vivado v2026.1 (64-bit)\r\n  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026\r\n  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026\r\n  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026\r\n  **** Start of session at: Mon Oct 26 17:37:43 2026\r\n    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.\r\n    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.\r\n\r\nsource top.tcl -notrace\r\n{\r\n  \"Name\": \".Vivado_Implementation.queue.rst\",\r\n  \"LastWriteTime\": \"2026-10-26T17:37:35.9233218+08:00\",\r\n  \"Length\": 0\r\n}\r\n"
+    }
+  },
+  "verified_status": {
+    "synth_1": "Running synth_design...",
+    "impl_1": "Queued..."
+  },
+  "synthesis_pid": 22288,
+  "implementation_queue_marker": "prj/Model_Deployment.runs/impl_1/.Vivado_Implementation.queue.rst",
+  "scope": "Launch verified; completion, utilization and timing not evaluated. No bitstream requested."
+}

@@ -1,0 +1,108 @@
+--- before/script\scala\PW\PwMac.scala
++++ script\scala\PW\PwMac.scala
+@@ -222,21 +222,29 @@
+ }
+ object PwDotPipeline {
+   def apply(operands: Stream[PwOperands]): Stream[PwDotResult] = {
++    // 每个输入lane只做一次掩码，再寄存后扇出到16个PE，避免MUX直接接DSP。
++    val masked_w = PwOperands()
++    masked_w := operands.payload
++    masked_w.input.allowOverride
++    for (lane <- 0 until 16) {
++      masked_w.input(lane * 8, 8 bits) := Mux(operands.mask(lane), operands.input(lane * 8, 8 bits), B(0, 8 bits))
++    }
++    val masked = operands.translateWith(masked_w).m2sPipe()
+     case class Products() extends Bundle {
+       val tag = PwTag()
+       val source = Bool()
+       val values = Vec(Vec(SInt(16 bits), 16), 16)
+     }
+     val products_w = Products()
+-    products_w.tag := operands.tag
+-    products_w.source := operands.source
++    products_w.tag := masked.tag
++    products_w.source := masked.source
+     for (p <- 0 until 16; lane <- 0 until 16) {
+-      val input_w = operands.input(lane * 8, 8 bits).asSInt
+-      val weight_w = operands.weights(p)(lane * 8, 8 bits).asSInt
++      val input_w = masked.input(lane * 8, 8 bits).asSInt
++      val weight_w = masked.weights(p)(lane * 8, 8 bits).asSInt
+       products_w.values(p)(lane).addAttribute("use_dsp", "yes")
+-      products_w.values(p)(lane) := Mux(operands.mask(lane), input_w, S(0, 8 bits)) * weight_w
+-    }
+-    val products = operands.translateWith(products_w).m2sPipe()
++      products_w.values(p)(lane) := input_w * weight_w
++    }
++    val products = masked.translateWith(products_w).m2sPipe()
+     case class Reduce(count: Int, width: Int) extends Bundle {
+       val tag = PwTag()
+       val source = Bool()
+@@ -306,6 +314,8 @@
+   val weightTotal_r = Reg(UInt(log2Up(config.WEIGHT_DEPTH + 1) bits))
+   val weightGroup_r = Reg(UInt(log2Up(config.PARAM_GROUPS + 1) bits)) init(0)
+   val weightInput_r = Reg(UInt(log2Up(config.IG + 1) bits)) init(0)
++  val weightWriteBase_r = Reg(UInt(log2Up(config.WEIGHT_BANK_DEPTH) bits)) init(0)
++  val weightReadBase_r = Reg(UInt(log2Up(config.WEIGHT_BANK_DEPTH) bits)) init(0)
+   val paramGroup_r = Reg(UInt(log2Up(config.PARAM_GROUPS + 1) bits)) init(0)
+   val tileBase_r = Reg(UInt(19 bits)) init(0)
+   val tileCount_r = Reg(UInt(5 bits)) init(0)
+@@ -351,6 +361,7 @@
+     weightCount_r := 0
+     weightGroup_r := 0
+     weightInput_r := 0
++    weightWriteBase_r := 0
+     paramCount_r := 0
+     paramGroup_r := 0
+     state_r := LOAD
+@@ -362,6 +373,9 @@
+     when(weightInput_r === igCount_r - 1) {
+       weightInput_r := 0
+       weightGroup_r := weightGroup_r + 1
++      when(weightGroup_r(1 downto 0) === 3) {
++        weightWriteBase_r := weightWriteBase_r + igCount_r.resized
++      }
+     } otherwise { weightInput_r := weightInput_r + 1 }
+   }
+   when(io.params_i.fire) { paramCount_r := paramCount_r + 1; paramGroup_r := paramGroup_r + 1 }
+@@ -430,6 +444,7 @@
+   }
+   when(state_r === FILL && bankFull_r(inputBank_r.asUInt)) {
+     issueGroup_r := 0
++    weightReadBase_r := 0
+     issueInput_r := 0
+     issuePixel_r := 0
+     state_r := ISSUE
+@@ -468,14 +483,14 @@
+     memory.write(fillAddress_w, io.rsp_i.payload, io.rsp_i.fire)
+     memory.readSync(inputAddress_w, request.fire)
+   }
+-  val weightAddress_w = (issueGroup_r * igCount_r + issueInput_r).resize(log2Up(config.WEIGHT_BANK_DEPTH))
++  val weightAddress_w = weightReadBase_r + issueInput_r.resized
+   val weights_w = Vec((0 until 4).map { bank =>
+     if (useUramWeights) {
+       val memory = new PwWeightBank(projectUram)
+       val selected = weightGroup_r(1 downto 0) === bank
+       memory.io.ena := io.weights_i.fire && selected
+       memory.io.wea := (io.weights_i.fire && selected).asBits
+-      memory.io.addra := (weightGroup_r(2 until weightGroup_r.getWidth) * igCount_r + weightInput_r).resize(11)
++      memory.io.addra := (weightWriteBase_r + weightInput_r.resized).resize(11)
+       memory.io.dina := io.weights_i.payload
+       memory.io.enb := request.fire
+       memory.io.addrb := weightAddress_w.resize(11)
+@@ -485,7 +500,7 @@
+       memory.setName(s"weightBank_$bank")
+       memory.addAttribute("ram_style", "block")
+       val selected = weightGroup_r(1 downto 0) === bank
+-      val writeAddress = (weightGroup_r(2 until weightGroup_r.getWidth) * igCount_r + weightInput_r).resize(log2Up(config.WEIGHT_BANK_DEPTH))
++      val writeAddress = weightWriteBase_r + weightInput_r.resized
+       memory.write(writeAddress, io.weights_i.payload, io.weights_i.fire && selected)
+       memory.readSync(weightAddress_w, request.fire)
+     }
+@@ -610,6 +625,7 @@
+       }
+     } otherwise {
+       issueGroup_r := issueGroup_r + 1
++      weightReadBase_r := weightReadBase_r + igCount_r.resized
+       issueInput_r := 0
+       issuePixel_r := 0
+       serializeIssued_r := False

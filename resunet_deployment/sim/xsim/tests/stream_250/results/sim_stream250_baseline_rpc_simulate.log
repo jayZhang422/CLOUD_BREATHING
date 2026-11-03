@@ -1,0 +1,51 @@
+Time resolution is 1 ps
+Block Memory Generator module tb_stream250_baseline_rpc(FAST=1'b1).dut.u_transport.u_request_ram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_stream250_baseline_rpc(FAST=1'b1).dut.u_transport.u_reply_ram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_stream250_baseline_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_p12_project_mem.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_stream250_baseline_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_p12_skip_mem.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_stream250_baseline_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_pw_shared.project.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_stream250_baseline_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_stream250_baseline_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_stream250_baseline_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_stream250_baseline_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_stream250_baseline_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_stream250_baseline_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_stream250_baseline_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_stream250_baseline_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_stream250_baseline_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_stream250_baseline_rpc(FAST=1'b1).dut.u_service.u_perf_memory.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+Block Memory Generator module tb_stream250_baseline_rpc(FAST=1'b1).dut.u_port.g_memory[0].u_write_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_stream250_baseline_rpc(FAST=1'b1).dut.u_port.g_memory[0].u_read_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_stream250_baseline_rpc(FAST=1'b1).dut.u_port.g_memory[1].u_write_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_stream250_baseline_rpc(FAST=1'b1).dut.u_port.g_memory[1].u_read_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_stream250_baseline_rpc(FAST=1'b1).rom.u_rom.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[CASE PASS] read_only_coefficients
+[CASE PASS] image_metadata_snapshot_and_online_rejection
+[CASE PASS] DW_P16_descriptor_rejection cases=6
+[CASE PASS] RPC_RAM all_32_lengths upload_read_backpressure invalid_lengths control_errors
+[CASE] lobe_mid_expand cycle=232696
+[TIMING] lobe_mid_expand hardware_cycles=12350
+[PERF] lobe_mid_expand hardware_cycles=12350 load=6240 run=6023 output_blocked=4536
+[CASE PASS] lobe_mid_expand bytes=2048 mac_bytes=0 cycle=270832
+[CASE] lobe_mid_mix cycle=270832
+[TIMING] lobe_mid_mix hardware_cycles=7938
+[PERF] lobe_mid_mix hardware_cycles=7938 load=1248 run=6598 output_blocked=0
+[CASE PASS] lobe_mid_mix bytes=2048 mac_bytes=0 cycle=302288
+[CASE] lobe_mid_project cycle=302288
+[TIMING] lobe_mid_project hardware_cycles=18655
+[PERF] lobe_mid_project hardware_cycles=18655 load=11232 run=7336 output_blocked=4536
+[CASE PASS] lobe_mid_project bytes=8192 mac_bytes=0 cycle=401288
+[CASE] fused_dw11 cycle=401288
+[TIMING] fused_dw11 hardware_cycles=1609
+[PERF] fused_dw11 hardware_cycles=1609 load=618 run=865 output_blocked=165
+[CASE PASS] fused_dw11 bytes=784 mac_bytes=0 cycle=414088
+[CASE] pw_tail_clear cycle=414088
+[TIMING] pw_tail_clear hardware_cycles=437
+[PERF] pw_tail_clear hardware_cycles=437 load=162 run=179 output_blocked=45
+[CASE PASS] pw_tail_clear bytes=48 mac_bytes=0 cycle=419496
+[TB PASSED] 全部数据验证一致 cases=5 cycles=419496 rom_reads=960 ddr_reads=74 ddr_writes=46
+$finish called at time : 1258488 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Stream_250/baseline_fixture/tb_stream250_baseline_rpc.sv" Line 459

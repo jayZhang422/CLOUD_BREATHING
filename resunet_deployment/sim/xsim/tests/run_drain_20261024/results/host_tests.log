@@ -1,0 +1,62 @@
+[STAGE lobe 1/1 1/1] head op=2 run_id=0xdf0d73d6
+[CYCLES head] total=100, load=20, run=70, output_stall=3, DDR_wait=5, hardware=0.000001s
+[RUN 1/1 SLICE 0] upload=0.000s, FPGA=0.000s, read=0.000s, wall=0.000s, sha256=cbe2268747c9c8072c7f9926f2288f270637dc55bb9d14d3368361d5e47d25be
+[AVERAGE SLICE 0] FPGA=0.000s, wall=0.000s (1 runs)
+[STAGE lobe 1/3 1/1] head op=2 run_id=0x79e913c3
+[CYCLES head] total=100, load=20, run=70, output_stall=3, DDR_wait=5, hardware=0.000001s
+[RUN 1/3 SLICE 68] upload=0.000s, FPGA=0.000s, read=0.000s, wall=0.000s, sha256=cbe2268747c9c8072c7f9926f2288f270637dc55bb9d14d3368361d5e47d25be
+[STAGE lobe 1/3 1/1] head op=2 run_id=0x57b63dbd
+[CYCLES head] total=100, load=20, run=70, output_stall=3, DDR_wait=5, hardware=0.000001s
+[RUN 1/3 SLICE 136] upload=0.000s, FPGA=0.000s, read=0.000s, wall=0.000s, sha256=cbe2268747c9c8072c7f9926f2288f270637dc55bb9d14d3368361d5e47d25be
+[STAGE lobe 1/3 1/1] head op=2 run_id=0xed54a8ee
+[CYCLES head] total=100, load=20, run=70, output_stall=3, DDR_wait=5, hardware=0.000001s
+[RUN 1/3 SLICE 204] upload=0.000s, FPGA=0.000s, read=0.000s, wall=0.000s, sha256=cbe2268747c9c8072c7f9926f2288f270637dc55bb9d14d3368361d5e47d25be
+[STAGE lobe 2/3 1/1] head op=2 run_id=0xb7ec576c
+[CYCLES head] total=100, load=20, run=70, output_stall=3, DDR_wait=5, hardware=0.000001s
+[RUN 2/3 SLICE 68] upload=0.000s, FPGA=0.000s, read=0.000s, wall=0.000s, sha256=cbe2268747c9c8072c7f9926f2288f270637dc55bb9d14d3368361d5e47d25be
+[STAGE lobe 2/3 1/1] head op=2 run_id=0xdb6a75e4
+[CYCLES head] total=100, load=20, run=70, output_stall=3, DDR_wait=5, hardware=0.000001s
+[RUN 2/3 SLICE 136] upload=0.000s, FPGA=0.000s, read=0.000s, wall=0.000s, sha256=cbe2268747c9c8072c7f9926f2288f270637dc55bb9d14d3368361d5e47d25be
+[STAGE lobe 2/3 1/1] head op=2 run_id=0x75e6531a
+[CYCLES head] total=100, load=20, run=70, output_stall=3, DDR_wait=5, hardware=0.000001s
+[RUN 2/3 SLICE 204] upload=0.000s, FPGA=0.000s, read=0.000s, wall=0.000s, sha256=cbe2268747c9c8072c7f9926f2288f270637dc55bb9d14d3368361d5e47d25be
+[STAGE lobe 3/3 1/1] head op=2 run_id=0xde47b0c6
+[CYCLES head] total=100, load=20, run=70, output_stall=3, DDR_wait=5, hardware=0.000001s
+[RUN 3/3 SLICE 68] upload=0.000s, FPGA=0.000s, read=0.000s, wall=0.000s, sha256=cbe2268747c9c8072c7f9926f2288f270637dc55bb9d14d3368361d5e47d25be
+[STAGE lobe 3/3 1/1] head op=2 run_id=0xb32f93ff
+[CYCLES head] total=100, load=20, run=70, output_stall=3, DDR_wait=5, hardware=0.000001s
+[RUN 3/3 SLICE 136] upload=0.000s, FPGA=0.000s, read=0.000s, wall=0.000s, sha256=cbe2268747c9c8072c7f9926f2288f270637dc55bb9d14d3368361d5e47d25be
+[STAGE lobe 3/3 1/1] head op=2 run_id=0x9cbcb1a4
+[CYCLES head] total=100, load=20, run=70, output_stall=3, DDR_wait=5, hardware=0.000001s
+[RUN 3/3 SLICE 204] upload=0.000s, FPGA=0.000s, read=0.000s, wall=0.000s, sha256=cbe2268747c9c8072c7f9926f2288f270637dc55bb9d14d3368361d5e47d25be
+[AVERAGE SLICE 68] FPGA=0.000s, wall=0.000s (3 runs)
+[AVERAGE SLICE 136] FPGA=0.000s, wall=0.000s (3 runs)
+[AVERAGE SLICE 204] FPGA=0.000s, wall=0.000s (3 runs)
+......E.F....................
+======================================================================
+ERROR: test_fullnet128_skip_addresses_and_no_intermediate_uploads (test_op_client.HostAdapterTest.test_fullnet128_skip_addresses_and_no_intermediate_uploads)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\FPGA_Prj\Xilinx\Model_Deployment\script\python\BIN_UDP\test_op_client.py", line 207, in test_fullnet128_skip_addresses_and_no_intermediate_uploads
+    rows = [line.split() for line in (root / "tasks.txt").read_text().splitlines()]
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.srcs\\sim_1\\new\\FullNet\\vessel\\128x128\\vectors\\tasks.txt'
+
+======================================================================
+FAIL: test_fullnet_size_selector_512 (test_op_client.HostAdapterTest.test_fullnet_size_selector_512)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\FPGA_Prj\Xilinx\Model_Deployment\script\python\BIN_UDP\test_op_client.py", line 195, in test_fullnet_size_selector_512
+    self.assertEqual(op_verify.main([
+AssertionError: 1 != 0
+
+----------------------------------------------------------------------
+Ran 29 tests in 1.352s
+
+FAILED (failures=1, errors=1)

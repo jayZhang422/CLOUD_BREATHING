@@ -1,0 +1,329 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_ddr_cache_bram/sim/op_ddr_cache_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_ddr_cache_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_mem_rsp_fifo/sim/op_mem_rsp_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_mem_rsp_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_mem_req_fifo/sim/op_mem_req_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_mem_req_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_perf_bram/sim/op_perf_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_perf_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_write_queue_fifo/sim/op_write_queue_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_write_queue_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_pw_pack_bram/sim/op_pw_pack_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_pw_pack_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_move_read_fifo/sim/op_move_read_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_move_read_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/pw_weight_bank/sim/pw_weight_bank.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pw_weight_bank
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/pw_input_tile_bram/sim/pw_input_tile_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pw_input_tile_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/pw_project_uram/sim/pw_project_uram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pw_project_uram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/p12_tile_uram/sim/p12_tile_uram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module p12_tile_uram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/rpc_response_bram/sim/rpc_response_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rpc_response_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/rpc_request_bram_1/sim/rpc_request_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rpc_request_bram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/quantized_params_rom/sim/quantized_params_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module quantized_params_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_compute_clk_wiz/op_compute_clk_wiz_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_compute_clk_wiz_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_compute_clk_wiz/op_compute_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_compute_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/bd_0/ip/ip_6/sim/bd_9054_lmb_bram_I_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9054_lmb_bram_I_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/bd_0/ip/ip_9/sim/bd_9054_second_lmb_bram_I_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9054_second_lmb_bram_I_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/bd_0/sim/bd_9054.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_9054
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/ip_0/sim/ddr4_0_microblaze_mcs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_microblaze_mcs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/phy/ddr4_0_phy_ddr4.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_phy_ddr4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_10_xiphy_behav
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_10_bitslice_behav
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_10_fifo_sv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_10_xiphy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/iob/ddr4_phy_v2_2_iob_byte.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_10_iob_byte
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/iob/ddr4_phy_v2_2_iob.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_10_iob
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/clocking/ddr4_phy_v2_2_pll.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_10_pll
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_tristate_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_10_xiphy_tristate_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_riuor_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_10_xiphy_riuor_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_control_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_10_xiphy_control_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_byte_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_10_xiphy_byte_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_bitslice_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_10_xiphy_bitslice_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/ip_top/ddr4_0_phy.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_phy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_wtr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_mc_wtr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_ref.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_mc_ref
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_rd_wr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_mc_rd_wr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_periodic.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_mc_periodic
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_group.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_mc_group
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_ecc_merge_enc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_mc_ecc_merge_enc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_ecc_gen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_mc_ecc_gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_ecc_fi_xor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_mc_ecc_fi_xor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_ecc_dec_fix.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_mc_ecc_dec_fix
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_ecc_buf.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_mc_ecc_buf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_ecc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_mc_ecc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_ctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_mc_ctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_cmd_mux_c.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_mc_cmd_mux_c
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_cmd_mux_ap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_mc_cmd_mux_ap
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_arb_p.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_mc_arb_p
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_arb_mux_p.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_mc_arb_mux_p
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_arb_c.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_mc_arb_c
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_arb_a.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_mc_arb_a
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_act_timer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_mc_act_timer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_act_rank.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_mc_act_rank
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_mc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/ui/ddr4_v2_2_ui_wr_data.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_ui_wr_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/ui/ddr4_v2_2_ui_rd_data.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_ui_rd_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/ui/ddr4_v2_2_ui_cmd.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_ui_cmd
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/ui/ddr4_v2_2_ui.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_ui
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_ar_channel.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_axi_ar_channel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_aw_channel.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_axi_aw_channel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_b_channel.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_axi_b_channel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_cmd_arbiter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_axi_cmd_arbiter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_cmd_fsm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_axi_cmd_fsm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_cmd_translator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_axi_cmd_translator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_fifo.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_axi_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_incr_cmd.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_axi_incr_cmd
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_r_channel.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_axi_r_channel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_w_channel.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_axi_w_channel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_wr_cmd_fsm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_axi_wr_cmd_fsm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_wrap_cmd.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_axi_wrap_cmd
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_a_upsizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_a_upsizer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_register_slice.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_axi_register_slice
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_upsizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_axi_upsizer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axic_register_slice.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_axic_register_slice
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_carry_and.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_carry_and
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_carry_latch_and.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_carry_latch_and
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_carry_latch_or.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_carry_latch_or
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_carry_or.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_carry_or
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_command_fifo.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_command_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_comparator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_comparator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_comparator_sel.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_comparator_sel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_comparator_sel_static.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_comparator_sel_static
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_r_upsizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_r_upsizer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_w_upsizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_w_upsizer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi_ctrl/ddr4_v2_2_axi_ctrl_addr_decode.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_axi_ctrl_addr_decode
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi_ctrl/ddr4_v2_2_axi_ctrl_read.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_axi_ctrl_read
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi_ctrl/ddr4_v2_2_axi_ctrl_reg_bank.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_axi_ctrl_reg_bank
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi_ctrl/ddr4_v2_2_axi_ctrl_reg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_axi_ctrl_reg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi_ctrl/ddr4_v2_2_axi_ctrl_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_axi_ctrl_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi_ctrl/ddr4_v2_2_axi_ctrl_write.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_axi_ctrl_write
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/clocking/ddr4_v2_2_infrastructure.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_infrastructure
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_xsdb_bram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_cal_xsdb_bram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_write.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_cal_write
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_wr_byte.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_cal_wr_byte
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_wr_bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_cal_wr_bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_sync.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_cal_sync
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_read.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_cal_read
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_rd_en.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_cal_rd_en
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_pi.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_cal_pi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_mc_odt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_cal_mc_odt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_debug_microblaze.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_cal_debug_microblaze
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_cplx_data.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_cal_cplx_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_cplx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_cal_cplx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_config_rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_cal_config_rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_addr_decode.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_cal_addr_decode
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_cal_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_xsdb_arbiter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_cal_xsdb_arbiter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_cal
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_chipscope_xsdb_slave.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_chipscope_xsdb_slave
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_dp_AB9.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_cfg_mem_mod
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_30_bram_tdp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/ip_top/ddr4_0_ddr4.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_ddr4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/ip_top/ddr4_0_ddr4_mem_intfc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_ddr4_mem_intfc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_0_ddr4_cal_riu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_ddr4_cal_riu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_30_cs_ver_inc.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/ip_top/ddr4_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/tb/ddr4_0_microblaze_mcs_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_0_microblaze_mcs
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'ddr4_0_microblaze_mcs' [E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/ddr4_0/tb/ddr4_0_microblaze_mcs_0.sv:79]
+INFO: [VRFC 10-311] analyzing module microblaze_mcs
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/DW/Dw3x3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Dw3x3
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/DW/Dw5x5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Dw5x5
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/ElementAdd/ElementAdd_p16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ElementAdd_p16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/LineBuffer/LineBuffer_3x3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LineBuffer_3x3
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/LineBuffer/LineBuffer_5x5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LineBuffer_5x5
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/MaxPool/MaxPool2d_512x512_c16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MaxPool2d_512x512_c16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/PW/PwMacShared.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PwMacShared
+INFO: [VRFC 10-311] analyzing module StreamArbiter
+INFO: [VRFC 10-311] analyzing module PwMacFrontend
+INFO: [VRFC 10-311] analyzing module PwProjectFrontend
+INFO: [VRFC 10-311] analyzing module PwSharedRequant
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/Upsample/Upsample.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Upsample
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/DDR/aq_axi_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aq_axi_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Ethernet/arp/arp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arp
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Ethernet/arp/arp_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arp_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Ethernet/arp/arp_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arp_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Ethernet/arp/crc32_d8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crc32_d8
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Ethernet/gmii_to_rgmii/rgmii_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rgmii_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Ethernet/gmii_to_rgmii/rgmii_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rgmii_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Ethernet/udp/udp_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udp_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Ethernet/udp/udp_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udp_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/Shuffle/channel_shuffle.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module channel_shuffle
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/Concat/concat.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module concat
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Ethernet/protocol/crc32_iso_hdlc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crc32_iso_hdlc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Ethernet/protocol/eth_protocol_core.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_protocol_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Ethernet/eth_rgmii_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module eth_rgmii_endpoint
+INFO: [VRFC 10-311] analyzing module eth_rgmii_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Ethernet/ethernet_ddr_bridge.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ethernet_ddr_bridge
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/op_board.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_board
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_coeff_rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_coeff_rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_coeff_split.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_coeff_split
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_core_bank.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_core_bank
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_ddr_port.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_ddr_port
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_descriptor_check.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_descriptor_check
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_dw_adapter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_dw_adapter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_engine
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_feature_reader.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_feature_reader
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_feature_writer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_feature_writer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_mem_arbiter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_mem_arbiter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_mem_cdc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_mem_cdc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_move_reader.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_move_reader
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_move_writer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_move_writer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_pw_pack.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_pw_pack
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_service.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_service
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_transport.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_transport
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Ethernet/protocol/protocol_builder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module protocol_builder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Ethernet/protocol/protocol_parser.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module protocol_parser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_stream250_top/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,37 @@
+{
+  "source_workspace": "/home/jayzhang/Op_Compile/PW",
+  "validation": "original WSL PASS; core/TBs/generated RTL SHA256 match; build/checker paths adapted",
+  "files": {
+    "src/main/scala/pwmac.scala": {
+      "project_path": "script/scala/PW/pwmac.scala",
+      "sha256": "5a6d702ab2cbcdd0bc90d562df7b80fb04b305ffe14e0b69adcb534adf3a3985"
+    },
+    "sim/pwmacsim.scala": {
+      "project_path": "sim/Op_Sim/PW/sim/pwmacsim.scala",
+      "sha256": "d0160e5185585c67184434e2e7fc75ef50b8a9e9aa19a843c00d522202dce6d7"
+    },
+    "sim/pwrequantsim.scala": {
+      "project_path": "sim/Op_Sim/PW/sim/pwrequantsim.scala",
+      "sha256": "fa2d2e050d2d4163f9d0f82efb946ae1cf8650c699601926ecec5091de15a720"
+    },
+    "tools/check_results.py": {
+      "project_path": "sim/Op_Sim/PW/tools/check_results.py",
+      "original_wsl_sha256": "8b5de3865ab673087b13c5679e79e9143cb10973920427e1f7c3d02b892b6f10",
+      "delivered_sha256": "bbfa3a953862d21fc6c1ec51aab6755c6e6555ff501637f0b67c0d1cee09b416",
+      "note": "only source hash collection path changed"
+    },
+    "tools/generate_vectors.py": {
+      "project_path": "sim/Op_Sim/PW/tools/generate_vectors.py",
+      "sha256": "eb29e1f164200f2c518af1620fc5d586da81571276c33c7327a0256efd01bc4b"
+    },
+    "rtl/pwmac.v": {
+      "project_path": "sim/Op_Sim/PW/rtl/pwmac.v",
+      "sha256": "e8668c76f2a11e4227e1891b028e4a741e82b7687b52a6516cf7531c4a5d7055"
+    }
+  },
+  "adapted_files": [
+    "sim/Op_Sim/PW/build.sbt",
+    "sim/Op_Sim/PW/tools/check_results.py",
+    "sim/Op_Sim/PW/README.md"
+  ]
+}

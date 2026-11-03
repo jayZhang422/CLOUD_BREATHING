@@ -1,0 +1,42 @@
+Time resolution is 1 ps
+Block Memory Generator module tb_fuse_up_engine.dut.u_bank.u_p12_project_mem.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_engine.dut.u_bank.u_p12_skip_mem.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_engine.dut.u_bank.u_pw_shared.project.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_engine.dut.u_bank.u_pw_shared.project.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_engine.dut.u_bank.u_pw_shared.project.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_engine.dut.u_bank.u_pw_shared.project.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_engine.dut.u_bank.u_pw_shared.project.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_engine.dut.u_bank.u_pw_shared.project.pwResultRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_engine.dut.u_bank.u_pw_shared.project.pwParamBram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_engine.dut.u_bank.u_pw_shared.skip.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_engine.dut.u_bank.u_pw_shared.skip.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_engine.dut.u_bank.u_pw_shared.skip.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_engine.dut.u_bank.u_pw_shared.skip.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_engine.dut.u_bank.u_pw_shared.skip.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_engine.dut.u_bank.u_pw_shared.skip.pwResultRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_engine.dut.u_bank.u_pw_shared.skip.pwParamBram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_engine.dut.u_op12_add_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_engine.dut.u_pw_pack.u_tiles.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[BOUNDS PASSED] 7 invalid op13 descriptors rejected
+[CASE PASSED] fuse_tiny mode=0 cycles=58->41 reads=5->3 writes=6->4 bytes=128
+[CASE PASSED] fuse_odd mode=0 cycles=565->315 reads=107->47 writes=150->90 bytes=2880
+[RESTART PASSED] mode=0
+[CASE PASSED] fuse_rect mode=0 cycles=815->638 reads=179->137 writes=210->168 bytes=5376
+[CASE PASSED] fuse_width256 mode=0 cycles=5413->3355 reads=1154->642 writes=1536->1024 bytes=32768
+[CASE PASSED] fuse_height256 mode=0 cycles=5920->3862 reads=1152->640 writes=1536->1024 bytes=32768
+[CASE PASSED] fuse_groups32 mode=0 cycles=21667->13465 reads=4610->2562 writes=6144->4096 bytes=131072
+[CASE PASSED] fuse_d1_small mode=0 cycles=8800->4695 reads=1792->768 writes=2560->1536 bytes=49152
+[CASE PASSED] fuse_tumor_d1 mode=0 cycles=35104->18711 reads=7168->3072 writes=10240->6144 bytes=196608
+[CASE PASSED] fuse_d1_row mode=0 cycles=34864->18471 reads=7168->3072 writes=10240->6144 bytes=196608
+[CASE PASSED] fuse_tiny mode=1 cycles=178->161 reads=5->3 writes=6->4 bytes=128
+[CASE PASSED] fuse_odd mode=1 cycles=3189->1763 reads=107->47 writes=150->90 bytes=2880
+[RESTART PASSED] mode=1
+[CASE PASSED] fuse_rect mode=1 cycles=4702->3790 reads=179->137 writes=210->168 bytes=5376
+[CASE PASSED] fuse_width256 mode=1 cycles=33422->20664 reads=1154->642 writes=1536->1024 bytes=32768
+[CASE PASSED] fuse_height256 mode=1 cycles=33129->20646 reads=1152->640 writes=1536->1024 bytes=32768
+[CASE PASSED] fuse_groups32 mode=1 cycles=132519->82219 reads=4610->2562 writes=6144->4096 bytes=131072
+[CASE PASSED] fuse_d1_small mode=1 cycles=53789->28462 reads=1792->768 writes=2560->1536 bytes=49152
+[CASE PASSED] fuse_tumor_d1 mode=1 cycles=214773->113671 reads=7168->3072 writes=10240->6144 bytes=196608
+[CASE PASSED] fuse_d1_row mode=1 cycles=214760->113579 reads=7168->3072 writes=10240->6144 bytes=196608
+[TB PASSED] 18 fused/baseline Golden pairs, 7 invalid descriptors, 2 restarts, 2 resets
+$finish called at time : 5083404 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Fuse_UpConcat_20261024/tb_fuse_up_engine.sv" Line 178

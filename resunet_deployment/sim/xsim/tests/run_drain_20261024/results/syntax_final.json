@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"elapsed_seconds\": 2.852,\n  \"exit_code\": 0,\n  \"output\": \"close_sim -force; current_fileset -simset [get_filesets sim_1]; set_property TOP tb_mkdc [get_filesets sim_1]; update_compile_order -fileset sources_1; check_syntax -fileset sources_1; foreach p [get_ips {op_move_read_fifo op_write_queue_fifo}] {puts \\\"$p [get_property IPDEF $p]\\\"}; puts \\\"synth=[get_property STATUS [get_runs synth_1]] impl=[get_property STATUS [get_runs impl_1]]\\\"; puts \\\"parent=[get_property PARENT [get_runs impl_1]]\\\"; puts \\\"project=[current_project] top=[get_property TOP [get_filesets sources_1]] sim=[current_fileset -simset]\\\"\\nINFO: [Simtcl 6-16] Simulation closed\\nINFO: [Vivado 12-3458] The update_compile_order command is not intended for use in the GUI, where compile order updates occur based on project changes and the hierarchy update settings. No update performed.\\nINFO: [Vivado 12-4796] No errors or warning reported.\\nop_move_read_fifo xilinx.com:ip:fifo_generator:13.2\\nop_write_queue_fifo xilinx.com:ip:fifo_generator:13.2\\nsynth=Out-of-date impl=Out-of-date\\nparent=synth_1\\nproject=Model_Deployment top=top sim=sim_1\\nINFO: [MCP 00-101]\",\n  \"task_progress\": \"2/4: MCP 仿真回归与清理大文件 (active, 3m42s) | Next: 启动综合和实现后交付\"\n}"
+    }
+  ]
+}

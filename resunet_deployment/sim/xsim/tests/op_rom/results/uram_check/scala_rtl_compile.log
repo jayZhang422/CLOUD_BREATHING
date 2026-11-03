@@ -1,0 +1,3 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Op_ROM/results/uram_check/rtl/PwMac.v" into library scala_check
+INFO: [VRFC 10-311] analyzing module PwMac
+INFO: [VRFC 10-311] analyzing module PwRequant

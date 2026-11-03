@@ -1,0 +1,43 @@
+diff --git a/prj/Model_Deployment.srcs/sim_1/new/Timing_Residual_20261022/before/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_service.sv b/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_service.sv
+index a4a8270..fd85601 100644
+--- a/prj/Model_Deployment.srcs/sim_1/new/Timing_Residual_20261022/before/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_service.sv
++++ b/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_service.sv
+@@ -62,6 +62,7 @@ module op_service #(
+     logic [30:0] rpc_addr_w; logic [255:0] rpc_data_w;
+     logic request_ok_w, result_range_w;
+     logic [63:0] request_end_w;
++    logic [63:0] result_end_r, mac_end_r;
+     logic [7:0] report_state_w;
+     localparam logic [30:0] PERF_BASE = 31'h1fff0000;
+     localparam logic [30:0] PERF_LIMIT = 31'h1fff4000;
+@@ -122,13 +123,10 @@ module op_service #(
+         request_ok_w = len_r >= 16'd8 && body_r[47:32] >= 16'd32 &&
+             body_r[47:32] <= 16'd1024 && body_r[36:32] == 5'd0 && body_r[4:0] == 5'd0 &&
+             request_end_w <= 64'h20000000;
++        // 尾包允许读到最后一个32B拍；结束地址已在任务完成时锁存。
+         result_range_w = held_r && finished_r && !final_error_r && !final_abort_r && id_r == run_id_r &&
+-            ((body_r[31:0] >= out_base_r && request_end_w <= {32'd0,out_base_r}+{32'd0,result_bytes_w}) ||
+-             (mac_bytes_w != 32'd0 && body_r[31:0] >= mac_base_r && request_end_w <= {32'd0,mac_base_r}+{32'd0,mac_bytes_w}));
+-        // 尾包允许读到最后一个 32B 拍，但不会把填充字节计入结果描述。
+-        if (held_r && finished_r && !final_error_r && !final_abort_r && id_r == run_id_r)
+-            result_range_w = (body_r[31:0] >= out_base_r && request_end_w <= {32'd0,out_base_r}+(({32'd0,result_bytes_w}+64'd31)&64'hffffffffffffffe0)) ||
+-                (mac_bytes_w != 32'd0 && body_r[31:0] >= mac_base_r && request_end_w <= {32'd0,mac_base_r}+(({32'd0,mac_bytes_w}+64'd31)&64'hffffffffffffffe0));
++            ((body_r[31:0] >= out_base_r && request_end_w <= result_end_r) ||
++             (mac_bytes_w != 32'd0 && body_r[31:0] >= mac_base_r && request_end_w <= mac_end_r));
+         report_state_w = 8'd0;
+         if (held_r) begin
+             if (engine_busy_w) report_state_w = abort_pending_r ? 8'd4 : 8'd1;
+@@ -173,6 +171,13 @@ module op_service #(
+             default: state_nxt = IDLE;
+         endcase
+     end
++    // finished_r同拍置位，后续结果查询只做比较，不串联取整、基址加法和比较。
++    always_ff @(posedge clk_i) begin
++        if (engine_done_w) begin
++            result_end_r <= {32'd0,out_base_r} + (({32'd0,result_bytes_w}+64'd31)&64'hffffffffffffffe0);
++            mac_end_r <= {32'd0,mac_base_r} + (({32'd0,mac_bytes_w}+64'd31)&64'hffffffffffffffe0);
++        end
++    end
+     always_ff @(posedge clk_i or negedge rst_n_i) begin
+         if (!rst_n_i) begin
+             state_r <= IDLE; msg_r <= 8'd0; status_r <= 8'd0; op_r <= 8'd0; format_r <= 8'd0;

@@ -1,0 +1,1 @@
+TOP tb_op_rom INCLUDE_DIRS {} xsim.simulate.xsim.more_options {-testplusarg CASE_LIST=cases_fast.txt} xsim.simulate.runtime 0ns xsim.simulate.log_all_signals 0 xsim.simulate.wdb {}

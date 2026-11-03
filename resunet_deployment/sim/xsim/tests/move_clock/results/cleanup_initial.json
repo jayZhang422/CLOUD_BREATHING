@@ -1,0 +1,82 @@
+[
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_move125\\behav\\xsim\\quantized_params_rom.coe",
+    "bytes": 869504
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_move125\\behav\\xsim\\quantized_params_rom.mif",
+    "bytes": 2974400
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_move125\\behav\\xsim\\sim_trace.csv",
+    "bytes": 211783823
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_move125\\behav\\xsim\\tb_move_rpc_behav.wdb",
+    "bytes": 332052306
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_move125\\behav\\xsim\\waveform.vcd",
+    "bytes": 2356602
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_move_units\\behav\\xsim\\quantized_params_rom.coe",
+    "bytes": 869504
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_move_units\\behav\\xsim\\quantized_params_rom.mif",
+    "bytes": 2974400
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_move_units\\behav\\xsim\\sim_trace.csv",
+    "bytes": 880630
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_move_units\\behav\\xsim\\tb_move_units_behav.wdb",
+    "bytes": 953821
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_move_units\\behav\\xsim\\waveform.vcd",
+    "bytes": 1164246
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_compute_clock\\behav\\xsim\\quantized_params_rom.coe",
+    "bytes": 869504
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_compute_clock\\behav\\xsim\\quantized_params_rom.mif",
+    "bytes": 2974400
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_compute_clock\\behav\\xsim\\sim_trace.csv",
+    "bytes": 11324
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_compute_clock\\behav\\xsim\\tb_compute_clock_behav.wdb",
+    "bytes": 37543
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_compute_clock\\behav\\xsim\\waveform.vcd",
+    "bytes": 35826
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_move250\\behav\\xsim\\quantized_params_rom.coe",
+    "bytes": 869504
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_move250\\behav\\xsim\\quantized_params_rom.mif",
+    "bytes": 2974400
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_move250\\behav\\xsim\\sim_trace.csv",
+    "bytes": 77705072
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_move250\\behav\\xsim\\tb_move_rpc_behav.wdb",
+    "bytes": 130412816
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_move250\\behav\\xsim\\waveform.vcd",
+    "bytes": 1901582
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "file": "prj/Model_Deployment.sim/sim_1/behav/xsim/tb_op_rom_behav.wdb",
+    "bytes": 3774134588
+  },
+  {
+    "file": "prj/Model_Deployment.sim/sim_1/behav/xsim/sim_trace.csv",
+    "bytes": 776984318
+  },
+  {
+    "file": "prj/Model_Deployment.sim/sim_1/behav/xsim/waveform.vcd",
+    "bytes": 223067150
+  },
+  {
+    "file": "prj/Model_Deployment.srcs/sim_1/new/Op_ROM/vectors/bin512_online_first/input0.hex",
+    "bytes": 3145728
+  },
+  {
+    "file": "prj/Model_Deployment.srcs/sim_1/new/Op_ROM/vectors/bin512_online_first/golden.hex",
+    "bytes": 16777216
+  }
+]

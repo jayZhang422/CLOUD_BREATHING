@@ -1,0 +1,669 @@
+{
+  "scope": "Existing board results only; these predate this batch. Hardware seconds from FPGA counters; RPC seconds include polling.",
+  "suites": {
+    "suite_20261022_204735_640798.json": {
+      "vessel": {
+        "hardware_seconds": 0.4988091826666667,
+        "rpc_run_status_seconds": 0.9248633333215063,
+        "golden_verified": false,
+        "input_sha256": [
+          "331641e11b7af18bce8d147d1f02643bc8ee137777f7c205bdf78987f8e45b87"
+        ],
+        "output_sha256": [
+          "20f68b5e84572ddd88a12c865ba8bebeb8d52ee248b03bfa9eecebb4c4557265"
+        ],
+        "seconds_by_opcode": {
+          "1": 0.14260696133333334,
+          "11": 0.05798705333333334,
+          "12": 0.26621731333333337,
+          "2": 0.004661404,
+          "10": 0.0076024533333333335,
+          "5": 0.019733997333333336
+        },
+        "largest_stages": [
+          {
+            "name": "d1.out",
+            "op": 12,
+            "hardware_seconds": 0.095850908,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d1.expand",
+            "op": 1,
+            "hardware_seconds": 0.05658202666666667,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "e1.out",
+            "op": 12,
+            "hardware_seconds": 0.052985250666666664,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d2.out",
+            "op": 12,
+            "hardware_seconds": 0.04935025466666667,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d2.expand",
+            "op": 1,
+            "hardware_seconds": 0.028156737333333334,
+            "output_stall_fraction": 0.0
+          }
+        ]
+      },
+      "tumor": {
+        "hardware_seconds": 2.0174219866666667,
+        "rpc_run_status_seconds": 2.38028786668292,
+        "golden_verified": false,
+        "input_sha256": [
+          "61c837a20472c837b047d8800db20f3d2bd996888ff4b0f89c37a31b773d6585"
+        ],
+        "output_sha256": [
+          "5f7c45c140fa9db9d46e1132ae8368e6b0d934cc2a5e101a0ae2fe9f6f27c3d4"
+        ],
+        "seconds_by_opcode": {
+          "1": 0.5529720853333333,
+          "11": 0.23196226666666664,
+          "12": 1.1045080773333333,
+          "2": 0.01863924,
+          "10": 0.030406930666666665,
+          "5": 0.07893338666666667
+        },
+        "largest_stages": [
+          {
+            "name": "d1.out",
+            "op": 12,
+            "hardware_seconds": 0.3745429693333333,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d1.expand",
+            "op": 1,
+            "hardware_seconds": 0.23006018666666667,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d2.out",
+            "op": 12,
+            "hardware_seconds": 0.20555248133333334,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "e1.out",
+            "op": 12,
+            "hardware_seconds": 0.17040818533333332,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d3.out",
+            "op": 12,
+            "hardware_seconds": 0.13710677733333335,
+            "output_stall_fraction": 0.0
+          }
+        ]
+      },
+      "lobe": {
+        "hardware_seconds": 0.503009368,
+        "rpc_run_status_seconds": 0.9480078666698925,
+        "golden_verified": true,
+        "input_sha256": [
+          "00b940d8d4a57feb8a5fe83dc451426bac8035e19cc9b5e94b74e2174f2765de"
+        ],
+        "output_sha256": [
+          "334cdb189f9d8592c357ba94d826d06697d99101e7ac07bb348f599a796dbd36"
+        ],
+        "seconds_by_opcode": {
+          "1": 0.14681248533333333,
+          "11": 0.057985485333333336,
+          "12": 0.2662141573333333,
+          "2": 0.004661418666666667,
+          "10": 0.0076016546666666665,
+          "5": 0.019734166666666664
+        },
+        "largest_stages": [
+          {
+            "name": "d1.out",
+            "op": 12,
+            "hardware_seconds": 0.095851244,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d1.expand",
+            "op": 1,
+            "hardware_seconds": 0.05658157866666667,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "e1.out",
+            "op": 12,
+            "hardware_seconds": 0.052984437333333335,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d2.out",
+            "op": 12,
+            "hardware_seconds": 0.049347770666666665,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d2.expand",
+            "op": 1,
+            "hardware_seconds": 0.028156588,
+            "output_stall_fraction": 0.0
+          }
+        ]
+      },
+      "airway": {
+        "hardware_seconds": 0.49880863866666664,
+        "rpc_run_status_seconds": 0.9341179666759368,
+        "golden_verified": false,
+        "input_sha256": [
+          "61c837a20472c837b047d8800db20f3d2bd996888ff4b0f89c37a31b773d6585"
+        ],
+        "output_sha256": [
+          "a3d2106ce35812549b80197a27453e7aee3d6fb1dcd54366d8da815e1db73de1"
+        ],
+        "seconds_by_opcode": {
+          "1": 0.14260701066666667,
+          "11": 0.05798964933333333,
+          "12": 0.26621294666666667,
+          "2": 0.0046623413333333336,
+          "10": 0.0076026186666666665,
+          "5": 0.019734072
+        },
+        "largest_stages": [
+          {
+            "name": "d1.out",
+            "op": 12,
+            "hardware_seconds": 0.09585164933333333,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d1.expand",
+            "op": 1,
+            "hardware_seconds": 0.05658183333333333,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "e1.out",
+            "op": 12,
+            "hardware_seconds": 0.05298472666666667,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d2.out",
+            "op": 12,
+            "hardware_seconds": 0.049348689333333334,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d2.expand",
+            "op": 1,
+            "hardware_seconds": 0.028157001333333334,
+            "output_stall_fraction": 0.0
+          }
+        ]
+      }
+    },
+    "suite_20261023_121743_496695.json": {
+      "vessel": {
+        "hardware_seconds": 0.2533340493333333,
+        "rpc_run_status_seconds": 0.7030519000000481,
+        "golden_verified": false,
+        "input_sha256": [
+          "331641e11b7af18bce8d147d1f02643bc8ee137777f7c205bdf78987f8e45b87"
+        ],
+        "output_sha256": [
+          "20f68b5e84572ddd88a12c865ba8bebeb8d52ee248b03bfa9eecebb4c4557265"
+        ],
+        "seconds_by_opcode": {
+          "1": 0.06052469866666667,
+          "11": 0.06446793866666667,
+          "12": 0.09376611866666668,
+          "2": 0.0050908666666666675,
+          "10": 0.007841650666666668,
+          "5": 0.021642776000000002
+        },
+        "largest_stages": [
+          {
+            "name": "d1.out",
+            "op": 12,
+            "hardware_seconds": 0.025563805333333335,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d1.expand",
+            "op": 1,
+            "hardware_seconds": 0.021303046666666665,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "e1.out",
+            "op": 12,
+            "hardware_seconds": 0.019306722666666668,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d1.mix",
+            "op": 11,
+            "hardware_seconds": 0.017761634666666665,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "e1.mix",
+            "op": 11,
+            "hardware_seconds": 0.017761498666666667,
+            "output_stall_fraction": 0.0
+          }
+        ]
+      },
+      "tumor": {
+        "hardware_seconds": 1.3468697933333333,
+        "rpc_run_status_seconds": 1.689533066666608,
+        "golden_verified": false,
+        "input_sha256": [
+          "61c837a20472c837b047d8800db20f3d2bd996888ff4b0f89c37a31b773d6585"
+        ],
+        "output_sha256": [
+          "5f7c45c140fa9db9d46e1132ae8368e6b0d934cc2a5e101a0ae2fe9f6f27c3d4"
+        ],
+        "seconds_by_opcode": {
+          "1": 0.294459464,
+          "11": 0.25790556666666664,
+          "12": 0.6562101346666667,
+          "2": 0.020361657333333335,
+          "10": 0.03136164,
+          "5": 0.08657133066666667
+        },
+        "largest_stages": [
+          {
+            "name": "d1.out",
+            "op": 12,
+            "hardware_seconds": 0.19172877066666666,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d2.out",
+            "op": 12,
+            "hardware_seconds": 0.13297325333333335,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d3.out",
+            "op": 12,
+            "hardware_seconds": 0.10137311466666667,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "e1.out",
+            "op": 12,
+            "hardware_seconds": 0.08693220266666667,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d1.expand",
+            "op": 1,
+            "hardware_seconds": 0.08522906266666666,
+            "output_stall_fraction": 0.0
+          }
+        ]
+      },
+      "lobe": {
+        "hardware_seconds": 0.2638188906666667,
+        "rpc_run_status_seconds": 0.7093471333333525,
+        "golden_verified": true,
+        "input_sha256": [
+          "00b940d8d4a57feb8a5fe83dc451426bac8035e19cc9b5e94b74e2174f2765de"
+        ],
+        "output_sha256": [
+          "334cdb189f9d8592c357ba94d826d06697d99101e7ac07bb348f599a796dbd36"
+        ],
+        "seconds_by_opcode": {
+          "1": 0.07101080266666666,
+          "11": 0.06446749199999999,
+          "12": 0.09376502933333333,
+          "2": 0.005091117333333333,
+          "10": 0.007841338666666666,
+          "5": 0.021643110666666666
+        },
+        "largest_stages": [
+          {
+            "name": "d1.out",
+            "op": 12,
+            "hardware_seconds": 0.025563970666666665,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d1.expand",
+            "op": 1,
+            "hardware_seconds": 0.021302958666666667,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "head",
+            "op": 1,
+            "hardware_seconds": 0.020973221333333333,
+            "output_stall_fraction": 0.8999252762153475
+          },
+          {
+            "name": "e1.out",
+            "op": 12,
+            "hardware_seconds": 0.019306320000000002,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d1.mix",
+            "op": 11,
+            "hardware_seconds": 0.017761634666666665,
+            "output_stall_fraction": 0.0
+          }
+        ]
+      },
+      "airway": {
+        "hardware_seconds": 0.25333438933333335,
+        "rpc_run_status_seconds": 0.7074704000000148,
+        "golden_verified": false,
+        "input_sha256": [
+          "61c837a20472c837b047d8800db20f3d2bd996888ff4b0f89c37a31b773d6585"
+        ],
+        "output_sha256": [
+          "a3d2106ce35812549b80197a27453e7aee3d6fb1dcd54366d8da815e1db73de1"
+        ],
+        "seconds_by_opcode": {
+          "1": 0.06052442933333333,
+          "11": 0.06446793066666667,
+          "12": 0.093766444,
+          "2": 0.005091034666666667,
+          "10": 0.007841094666666666,
+          "5": 0.021643456
+        },
+        "largest_stages": [
+          {
+            "name": "d1.out",
+            "op": 12,
+            "hardware_seconds": 0.02556432,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d1.expand",
+            "op": 1,
+            "hardware_seconds": 0.021303050666666667,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "e1.out",
+            "op": 12,
+            "hardware_seconds": 0.019306524,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "e1.mix",
+            "op": 11,
+            "hardware_seconds": 0.017761830666666666,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d1.mix",
+            "op": 11,
+            "hardware_seconds": 0.017761672,
+            "output_stall_fraction": 0.0
+          }
+        ]
+      }
+    },
+    "suite_20261023_181848_256514.json": {
+      "vessel": {
+        "hardware_seconds": 0.2540683026666667,
+        "rpc_run_status_seconds": 0.6994117333379108,
+        "golden_verified": false,
+        "input_sha256": [
+          "331641e11b7af18bce8d147d1f02643bc8ee137777f7c205bdf78987f8e45b87"
+        ],
+        "output_sha256": [
+          "20f68b5e84572ddd88a12c865ba8bebeb8d52ee248b03bfa9eecebb4c4557265"
+        ],
+        "seconds_by_opcode": {
+          "1": 0.06088499333333333,
+          "11": 0.06446833733333335,
+          "12": 0.09413105333333333,
+          "2": 0.005091642666666666,
+          "10": 0.007849096,
+          "5": 0.02164318
+        },
+        "largest_stages": [
+          {
+            "name": "d1.out",
+            "op": 12,
+            "hardware_seconds": 0.025564125333333333,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d1.expand",
+            "op": 1,
+            "hardware_seconds": 0.02130308,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "e1.out",
+            "op": 12,
+            "hardware_seconds": 0.019173454666666666,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d2.out",
+            "op": 12,
+            "hardware_seconds": 0.017986106666666668,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "e1.mix",
+            "op": 11,
+            "hardware_seconds": 0.017761578666666666,
+            "output_stall_fraction": 0.0
+          }
+        ]
+      },
+      "tumor": {
+        "hardware_seconds": 1.3499214653333333,
+        "rpc_run_status_seconds": 1.7046727333351253,
+        "golden_verified": false,
+        "input_sha256": [
+          "61c837a20472c837b047d8800db20f3d2bd996888ff4b0f89c37a31b773d6585"
+        ],
+        "output_sha256": [
+          "5f7c45c140fa9db9d46e1132ae8368e6b0d934cc2a5e101a0ae2fe9f6f27c3d4"
+        ],
+        "seconds_by_opcode": {
+          "1": 0.2949555853333334,
+          "11": 0.2579061026666667,
+          "12": 0.658730856,
+          "2": 0.020362801333333333,
+          "10": 0.03139488533333333,
+          "5": 0.08657123466666666
+        },
+        "largest_stages": [
+          {
+            "name": "d1.out",
+            "op": 12,
+            "hardware_seconds": 0.19172923866666666,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d2.out",
+            "op": 12,
+            "hardware_seconds": 0.133253508,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d3.out",
+            "op": 12,
+            "hardware_seconds": 0.10170038533333334,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "e1.out",
+            "op": 12,
+            "hardware_seconds": 0.08715195733333334,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d1.expand",
+            "op": 1,
+            "hardware_seconds": 0.085229464,
+            "output_stall_fraction": 0.0
+          }
+        ]
+      },
+      "lobe": {
+        "hardware_seconds": 0.26455284,
+        "rpc_run_status_seconds": 0.7073576333374755,
+        "golden_verified": true,
+        "input_sha256": [
+          "00b940d8d4a57feb8a5fe83dc451426bac8035e19cc9b5e94b74e2174f2765de"
+        ],
+        "output_sha256": [
+          "334cdb189f9d8592c357ba94d826d06697d99101e7ac07bb348f599a796dbd36"
+        ],
+        "seconds_by_opcode": {
+          "1": 0.07137195733333333,
+          "11": 0.06446758533333333,
+          "12": 0.094129764,
+          "2": 0.005090892,
+          "10": 0.007849381333333334,
+          "5": 0.021643259999999998
+        },
+        "largest_stages": [
+          {
+            "name": "d1.out",
+            "op": 12,
+            "hardware_seconds": 0.025564606666666666,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d1.expand",
+            "op": 1,
+            "hardware_seconds": 0.021303030666666667,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "head",
+            "op": 1,
+            "hardware_seconds": 0.0209731,
+            "output_stall_fraction": 0.8999304823798103
+          },
+          {
+            "name": "e1.out",
+            "op": 12,
+            "hardware_seconds": 0.019173154666666668,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d2.out",
+            "op": 12,
+            "hardware_seconds": 0.017985773333333333,
+            "output_stall_fraction": 0.0
+          }
+        ]
+      },
+      "airway": {
+        "hardware_seconds": 0.25406425866666665,
+        "rpc_run_status_seconds": 0.7014426999970359,
+        "golden_verified": false,
+        "input_sha256": [
+          "61c837a20472c837b047d8800db20f3d2bd996888ff4b0f89c37a31b773d6585"
+        ],
+        "output_sha256": [
+          "a3d2106ce35812549b80197a27453e7aee3d6fb1dcd54366d8da815e1db73de1"
+        ],
+        "seconds_by_opcode": {
+          "1": 0.06088486933333334,
+          "11": 0.06446683733333333,
+          "12": 0.09412955866666668,
+          "2": 0.005090676,
+          "10": 0.007849301333333333,
+          "5": 0.021643016
+        },
+        "largest_stages": [
+          {
+            "name": "d1.out",
+            "op": 12,
+            "hardware_seconds": 0.025564744,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d1.expand",
+            "op": 1,
+            "hardware_seconds": 0.021303058666666666,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "e1.out",
+            "op": 12,
+            "hardware_seconds": 0.01917326,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d2.out",
+            "op": 12,
+            "hardware_seconds": 0.017985706666666667,
+            "output_stall_fraction": 0.0
+          },
+          {
+            "name": "d1.mix",
+            "op": 11,
+            "hardware_seconds": 0.017761609333333334,
+            "output_stall_fraction": 0.0
+          }
+        ]
+      }
+    }
+  },
+  "latest_vs_noon": [
+    {
+      "task": "vessel",
+      "before_hardware_seconds": 0.2533340493333333,
+      "latest_hardware_seconds": 0.2540683026666667,
+      "hardware_change_percent": 0.28983602293715105,
+      "before_rpc_seconds": 0.7030519000000481,
+      "latest_rpc_seconds": 0.6994117333379108,
+      "same_input": true,
+      "same_output": true,
+      "golden_verified": false
+    },
+    {
+      "task": "tumor",
+      "before_hardware_seconds": 1.3468697933333333,
+      "latest_hardware_seconds": 1.3499214653333333,
+      "hardware_change_percent": 0.2265751311006481,
+      "before_rpc_seconds": 1.689533066666608,
+      "latest_rpc_seconds": 1.7046727333351253,
+      "same_input": true,
+      "same_output": true,
+      "golden_verified": false
+    },
+    {
+      "task": "lobe",
+      "before_hardware_seconds": 0.2638188906666667,
+      "latest_hardware_seconds": 0.26455284,
+      "hardware_change_percent": 0.2782019632781463,
+      "before_rpc_seconds": 0.7093471333333525,
+      "latest_rpc_seconds": 0.7073576333374755,
+      "same_input": true,
+      "same_output": true,
+      "golden_verified": true
+    },
+    {
+      "task": "airway",
+      "before_hardware_seconds": 0.25333438933333335,
+      "latest_hardware_seconds": 0.25406425866666665,
+      "hardware_change_percent": 0.28810511484602674,
+      "before_rpc_seconds": 0.7074704000000148,
+      "latest_rpc_seconds": 0.7014426999970359,
+      "same_input": true,
+      "same_output": true,
+      "golden_verified": false
+    }
+  ]
+}

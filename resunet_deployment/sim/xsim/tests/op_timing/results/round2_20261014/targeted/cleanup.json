@@ -1,0 +1,17 @@
+[
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_1\\behav\\xsim\\sim_trace.csv",
+    "Length": 1483712,
+    "LastWriteTime": "2026-10-14T18:00:18.4980388+08:00"
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_1\\behav\\xsim\\tb_op_timing_behav.wdb",
+    "Length": 2622422,
+    "LastWriteTime": "2026-10-14T18:00:36.901383+08:00"
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_1\\behav\\xsim\\waveform.vcd",
+    "Length": 522923,
+    "LastWriteTime": "2026-10-14T18:00:36.3605+08:00"
+  }
+]

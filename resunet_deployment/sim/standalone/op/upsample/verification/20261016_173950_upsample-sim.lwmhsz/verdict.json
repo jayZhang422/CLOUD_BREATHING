@@ -1,0 +1,16 @@
+{
+  "functional": "PASS",
+  "simulation_exit_code": 0,
+  "generation_exit_code": 0,
+  "lint_exit_code": 0,
+  "cases": 29,
+  "invalid_config_cases": 6,
+  "inputs": 3252192,
+  "outputs": 13008768,
+  "int8_values": 208140288,
+  "simulated_module_equals_delivered": true,
+  "initial_script_exit_code": 1,
+  "initial_lint_cause": "Spinal debug enum strings under ifndef SYNTHESIS unused; retested synthesizable branch with -DSYNTHESIS and no warning suppression",
+  "trace_csv_read": false,
+  "sta_performed": false
+}

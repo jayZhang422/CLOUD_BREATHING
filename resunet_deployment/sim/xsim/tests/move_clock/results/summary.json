@@ -1,0 +1,216 @@
+{
+  "date": "2026-10-21",
+  "project": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.xpr",
+  "default_compute_hz": 125000000,
+  "optional_functionally_verified_compute_hz": 250000000,
+  "physical_timing_for_new_design": "not run; 250MHz not closed or certified",
+  "synthesis_implementation_bitstream_started": false,
+  "product_python_changed": false,
+  "records": {
+    "125": {
+      "status": "PASS",
+      "mcp_exit_code": 0,
+      "pass_marker": "[TB PASSED] 全部数据验证一致 cases=21 cycles=1180413 rom_reads=1032 ddr_reads=440 ddr_writes=256",
+      "cases": 21,
+      "hardware_cycles": {
+        "lobe_mid_expand": 12126,
+        "lobe_mid_mix": 6156,
+        "lobe_mid_project": 18256,
+        "lobe_mid_out": 6154,
+        "legacy_lobe_head": 448,
+        "legacy_pool_odd_two_groups": 118,
+        "legacy_pool_groups32": 721,
+        "tumor_mid_expand": 68620,
+        "legacy_tumor_e1_fast": 4974,
+        "upsample": 129,
+        "concat": 114,
+        "fused_dw11": 1301,
+        "pw_tail_clear": 310,
+        "move_pool_512": 5879,
+        "move_pool_odd": 187,
+        "move_up_256": 10880,
+        "move_up_tail": 148,
+        "move_concat": 5005,
+        "move_concat_tail": 158,
+        "move_concat_odd": 152,
+        "move_pool_single": 102
+      },
+      "log_sha256": {
+        "compile.log": "3dd34fd3f1d6f91cd25232bf52dfdf210720797e01ee7d65305a6ffada8b88d4",
+        "elaborate.log": "cd8b4eaa819b2c9621031a2ddd96b2104b293e32c64d2c10f94c0460e5fd986b",
+        "simulate.log": "f59ba33d23aa42199565c2d5e702225ce189e14b65d15e8ed7356852c1907adb"
+      }
+    },
+    "250": {
+      "status": "PASS",
+      "mcp_exit_code": 0,
+      "pass_marker": "[TB PASSED] 全部数据验证一致 cases=21 cycles=1004381 rom_reads=1032 ddr_reads=440 ddr_writes=256",
+      "cases": 21,
+      "hardware_cycles": {
+        "lobe_mid_expand": 12350,
+        "lobe_mid_mix": 7938,
+        "lobe_mid_project": 18655,
+        "lobe_mid_out": 7935,
+        "legacy_lobe_head": 540,
+        "legacy_pool_odd_two_groups": 182,
+        "legacy_pool_groups32": 1051,
+        "tumor_mid_expand": 83894,
+        "legacy_tumor_e1_fast": 5328,
+        "upsample": 199,
+        "concat": 193,
+        "fused_dw11": 1536,
+        "pw_tail_clear": 437,
+        "move_pool_512": 8911,
+        "move_pool_odd": 285,
+        "move_up_256": 16112,
+        "move_up_tail": 222,
+        "move_concat": 8252,
+        "move_concat_tail": 272,
+        "move_concat_odd": 266,
+        "move_pool_single": 165
+      },
+      "log_sha256": {
+        "compile.log": "3dd34fd3f1d6f91cd25232bf52dfdf210720797e01ee7d65305a6ffada8b88d4",
+        "elaborate.log": "9676a8e935a9cc4effac8818a167920503d9e8fca52781fad926cdd84b49fed4",
+        "simulate.log": "bb7874c8fe8368628672ef96f62d368d6a7a861f79e0fb294c13635dce02692b"
+      }
+    },
+    "before125": {
+      "status": "PASS",
+      "mcp_exit_code": 0,
+      "pass_marker": "[TB PASSED] 全部数据验证一致 cases=6 cycles=862763 rom_reads=0 ddr_reads=197 ddr_writes=219",
+      "cases": 6,
+      "hardware_cycles": {
+        "move_pool_512": 40075,
+        "move_pool_odd": 800,
+        "move_up_256": 77247,
+        "move_up_tail": 415,
+        "move_concat": 30215,
+        "move_concat_tail": 528
+      },
+      "log_sha256": {
+        "compile.log": "e15fd6a366f9aac5ddf0773d2d929e70d6196a17214ce70f32d40df2fa307223",
+        "elaborate.log": "5bc1da26dbb2c641fcccc12c2635a1c93894eb342514475c1a08adfb52cae60b",
+        "simulate.log": "380b6b66ce05dadfb04420a0776238210d3a36a84abd4d2d3495680a524df5cd"
+      }
+    },
+    "units": {
+      "status": "PASS",
+      "mcp_exit_code": 0,
+      "pass_marker": "[TB PASSED] 全部数据验证一致 runs=2 max_credit=8 blocked=7601 reset_inflight=1 errors_drained=1",
+      "cases": null,
+      "hardware_cycles": {},
+      "log_sha256": {
+        "compile.log": "1c46e8d4fd9ea1fcc4e58a2fa01767a454622d3bd36f7cab6fecf9a2ad5d0596",
+        "elaborate.log": "2c5877a19de7fe89f80b9a030e33007bcaa5363bc44f1ed1169605f8d1fabd65",
+        "simulate.log": "19c808534c833c30bfb03d304066ea355c3141ccc42655a19499b941e19cf730"
+      }
+    },
+    "clock": {
+      "status": "PASS",
+      "mcp_exit_code": 0,
+      "pass_marker": "[TB PASSED] 全部数据验证一致 fast_edges=398 safe_edges=198 relock=1",
+      "cases": null,
+      "hardware_cycles": {},
+      "log_sha256": {
+        "compile.log": "dab7bb80833efbb15053b7d893accb3a9f11eaaf92a643c72a040928be260464",
+        "elaborate.log": "4f532343d41630b26dd3c3de2ed5b079a2d3c1f60c80589b0ba51ac8f798c172",
+        "simulate.log": "3a34890b39c5b8cdd2a75e2b15af9bc34764d4f6ea74bf8310fe11ae1df472cf"
+      }
+    },
+    "op12": {
+      "status": "PASS",
+      "mcp_exit_code": 0,
+      "pass_marker": "[TB PASSED] 全部数据验证一致 op12 two frozen Golden cases fast+slow DDR 250MHz",
+      "cases": null,
+      "hardware_cycles": {},
+      "log_sha256": {
+        "compile.log": "e6c372851a7b290c6da813b22662fc39cdf24d15144457e3f0f203042d6ad237",
+        "elaborate.log": "6fb49661d92c326b869fa94b1d9fbf5e8bbe89dd2c437b3d32e36ffd36b701df",
+        "simulate.log": "ea8549a406e7139726476948f2d60a5a2885f76e77afb66c88f379380ac41aab"
+      }
+    },
+    "top": {
+      "status": "COMPILE_AND_ELABORATION_PASS",
+      "mcp_exit_code": 0,
+      "simulation_run": false,
+      "resolved_history": "elaborate_before_compile.log: first elaborate requested before compiling independent simulation library; corrected with compile then elaborate"
+    }
+  },
+  "move_comparison": {
+    "move_pool_512": {
+      "before_125_cycles": 40075,
+      "after_125_cycles": 5879,
+      "reduction_percent": 85.33000623830318,
+      "after_250_cycles": 8911,
+      "after_250_us": 35.644
+    },
+    "move_pool_odd": {
+      "before_125_cycles": 800,
+      "after_125_cycles": 187,
+      "reduction_percent": 76.625,
+      "after_250_cycles": 285,
+      "after_250_us": 1.14
+    },
+    "move_up_256": {
+      "before_125_cycles": 77247,
+      "after_125_cycles": 10880,
+      "reduction_percent": 85.91531062694992,
+      "after_250_cycles": 16112,
+      "after_250_us": 64.448
+    },
+    "move_up_tail": {
+      "before_125_cycles": 415,
+      "after_125_cycles": 148,
+      "reduction_percent": 64.33734939759036,
+      "after_250_cycles": 222,
+      "after_250_us": 0.888
+    },
+    "move_concat": {
+      "before_125_cycles": 30215,
+      "after_125_cycles": 5005,
+      "reduction_percent": 83.43537977825584,
+      "after_250_cycles": 8252,
+      "after_250_us": 33.008
+    },
+    "move_concat_tail": {
+      "before_125_cycles": 528,
+      "after_125_cycles": 158,
+      "reduction_percent": 70.07575757575756,
+      "after_250_cycles": 272,
+      "after_250_us": 1.088
+    }
+  },
+  "baseline_resources": {
+    "CLB": 14630,
+    "CLB_total": 27120,
+    "CLB_percent": 53.95,
+    "BRAM_tile": 318,
+    "BRAM_total": 480,
+    "URAM": 36,
+    "DSP": 1232
+  },
+  "new_resource_estimate": {
+    "additional_BRAM36_equivalent": 4,
+    "additional_MAC_DSP": 0,
+    "additional_URAM": 0,
+    "physical_resource_report_for_new_design": null
+  },
+  "production_sha256": {
+    "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.srcs\\sources_1\\new\\Op\\control\\op_move_reader.sv": "67f3c1a6e5b6a422c65863c727723d43795360f22dc0af9469926a38f0e5fb39",
+    "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.srcs\\sources_1\\new\\Op\\control\\op_move_writer.sv": "1c58881081cf5518a05602a8342aef0682eaddb67f29315385f421d1fec235c2",
+    "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.srcs\\sources_1\\new\\Op\\control\\op_engine.sv": "65348faa67bbeff09295bff03810832ce7760b2881053d913d0410d541d6db01",
+    "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.srcs\\sources_1\\new\\Op\\control\\op_transport.sv": "b10cb5b7639e94de5bac5f40b5a31a32611d387773203e6622a2c7898c0ed054",
+    "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.srcs\\sources_1\\new\\Op\\control\\op_service.sv": "f47570937e5b61d376745d7cdd41068846d126049c1c73d24f537a08d986e318",
+    "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.srcs\\sources_1\\new\\Op\\op_board.sv": "5cb09b1353bfa49b6db404fb1a1d22b0d90a915cfb0fd87c1cffc6d9d6140c55",
+    "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.srcs\\sources_1\\new\\top.sv": "b507efbbcf3375e59fb5897cdc7724ac0a9495b8d0429d7cd48fba4f6164c34e",
+    "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.srcs\\sources_1\\constraint\\ethernet_ddr_constraint.xdc": "be6a43dda0521529d199775722b27dc8fdd98077669b876adead6fcf43a26e2c",
+    "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.srcs\\sources_1\\ip\\op_move_read_fifo\\op_move_read_fifo.xci": "bdc2421b3f2f5af251a7c04a423720ca0fbd245356848d48b0d4a767972a1642",
+    "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.srcs\\sources_1\\ip\\op_compute_clk_wiz\\op_compute_clk_wiz.xci": "2581f5995a91d37e0babf28138a83c7c93b569304fb22f19f7cb000d387099f2"
+  },
+  "restored_simset": "sim_1",
+  "restored_sim_top": "tb_mkdc",
+  "temporary_test_leaks_into_synthesis": false,
+  "new_ips_locked": false,
+  "cleanup_measured_bytes": 1659331882
+}

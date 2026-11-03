@@ -1,0 +1,18 @@
+[
+  {
+    "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_op12_handoff",
+    "exists_after": false
+  },
+  {
+    "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_op12_regression",
+    "exists_after": false
+  },
+  {
+    "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_op12_rpc",
+    "exists_after": false
+  },
+  {
+    "path": "C:/Users/32001/AppData/Local/Temp/codex_op12_handoff_20261022",
+    "exists_after": false
+  }
+]

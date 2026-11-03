@@ -1,0 +1,116 @@
+Time resolution is 1 ps
+Block Memory Generator module tb_move_rpc.dut.u_transport.u_request_ram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc.dut.u_transport.u_reply_ram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc.dut.u_service.u_engine.u_bank.u_p12_project_mem.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc.dut.u_service.u_engine.u_bank.u_p12_skip_mem.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc.dut.u_service.u_engine.u_pw_pack.u_tiles.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc.dut.u_service.u_perf_memory.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+Block Memory Generator module tb_move_rpc.dut.u_port.g_memory[0].u_write_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc.dut.u_port.g_memory[0].u_read_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc.dut.u_port.g_memory[1].u_write_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc.dut.u_port.g_memory[1].u_read_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_move_rpc.rom.u_rom.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[CASE PASS] read_only_coefficients
+[CASE PASS] image_metadata_snapshot_and_online_rejection
+[CASE PASS] DW_P16_descriptor_rejection cases=6
+[CASE PASS] RPC_RAM all_32_lengths upload_read_backpressure invalid_lengths control_errors
+[CASE] lobe_mid_expand cycle=254381
+[TIMING] lobe_mid_expand hardware_cycles=8631
+[PERF] lobe_mid_expand hardware_cycles=8631 load=6720 run=1867 output_blocked=0
+[CASE PASS] lobe_mid_expand bytes=2048 mac_bytes=0 cycle=300525
+[CASE] lobe_mid_mix cycle=300525
+[TIMING] lobe_mid_mix hardware_cycles=7053
+[PERF] lobe_mid_mix hardware_cycles=7053 load=1344 run=5660 output_blocked=0
+[CASE PASS] lobe_mid_mix bytes=2048 mac_bytes=0 cycle=342645
+[CASE] lobe_mid_project cycle=342645
+[TIMING] lobe_mid_project hardware_cycles=19199
+[PERF] lobe_mid_project hardware_cycles=19199 load=12096 run=7059 output_blocked=4536
+[CASE PASS] lobe_mid_project bytes=8192 mac_bytes=0 cycle=473392
+[CASE] lobe_mid_out cycle=473392
+[TIMING] lobe_mid_out hardware_cycles=7055
+[PERF] lobe_mid_out hardware_cycles=7055 load=1344 run=5662 output_blocked=0
+[CASE PASS] lobe_mid_out bytes=2048 mac_bytes=0 cycle=515517
+[CASE] legacy_lobe_head cycle=515517
+[TIMING] legacy_lobe_head hardware_cycles=475
+[PERF] legacy_lobe_head hardware_cycles=475 load=168 run=232 output_blocked=105
+[CASE PASS] legacy_lobe_head bytes=64 mac_bytes=128 cycle=522549
+[CASE] legacy_pool_odd_two_groups cycle=522549
+[TIMING] legacy_pool_odd_two_groups hardware_cycles=131
+[PERF] legacy_pool_odd_two_groups hardware_cycles=131 load=0 run=86 output_blocked=0
+[CASE PASS] legacy_pool_odd_two_groups bytes=64 mac_bytes=0 cycle=528051
+[CASE] legacy_pool_groups32 cycle=528051
+[TIMING] legacy_pool_groups32 hardware_cycles=812
+[PERF] legacy_pool_groups32 hardware_cycles=812 load=0 run=770 output_blocked=0
+[CASE PASS] legacy_pool_groups32 bytes=1024 mac_bytes=0 cycle=543339
+[CASE] tumor_mid_expand cycle=543339
+[TIMING] tumor_mid_expand hardware_cycles=59414
+[PERF] tumor_mid_expand hardware_cycles=59414 load=45909 run=13461 output_blocked=0
+[CASE PASS] tumor_mid_expand bytes=8192 mac_bytes=0 cycle=781283
+[CASE] legacy_tumor_e1_fast cycle=781283
+[TIMING] legacy_tumor_e1_fast hardware_cycles=5097
+[PERF] legacy_tumor_e1_fast hardware_cycles=5097 load=674 run=4343 output_blocked=3825
+[CASE PASS] legacy_tumor_e1_fast bytes=1024 mac_bytes=4096 cycle=846280
+[CASE] upsample cycle=846280
+[TIMING] upsample hardware_cycles=141
+[PERF] upsample hardware_cycles=141 load=0 run=91 output_blocked=0
+[CASE PASS] upsample bytes=384 mac_bytes=0 cycle=854600
+[CASE] concat cycle=854600
+[TIMING] concat hardware_cycles=124
+[PERF] concat hardware_cycles=124 load=0 run=79 output_blocked=0
+[CASE PASS] concat bytes=96 mac_bytes=0 cycle=860392
+[CASE] fused_dw11 cycle=860392
+[TIMING] fused_dw11 hardware_cycles=1242
+[PERF] fused_dw11 hardware_cycles=1242 load=523 run=648 output_blocked=0
+[CASE PASS] fused_dw11 bytes=784 mac_bytes=0 cycle=875061
+[CASE] pw_tail_clear cycle=875061
+[TIMING] pw_tail_clear hardware_cycles=280
+[PERF] pw_tail_clear hardware_cycles=280 load=115 run=113 output_blocked=0
+[CASE PASS] pw_tail_clear bytes=48 mac_bytes=0 cycle=880563
+[CASE] move_pool_512 cycle=880563
+[TIMING] move_pool_512 hardware_cycles=6781
+[PERF] move_pool_512 hardware_cycles=6781 load=0 run=6739 output_blocked=0
+[CASE PASS] move_pool_512 bytes=16384 mac_bytes=0 cycle=1053101
+[CASE] move_pool_odd cycle=1053101
+[TIMING] move_pool_odd hardware_cycles=207
+[PERF] move_pool_odd hardware_cycles=207 load=0 run=160 output_blocked=0
+[CASE PASS] move_pool_odd bytes=192 mac_bytes=0 cycle=1059733
+[CASE] move_up_256 cycle=1059733
+[TIMING] move_up_256 hardware_cycles=11322
+[PERF] move_up_256 hardware_cycles=11322 load=0 run=11280 output_blocked=0
+[CASE PASS] move_up_256 bytes=131072 mac_bytes=0 cycle=1112573
+[CASE] move_up_tail cycle=1112573
+[TIMING] move_up_tail hardware_cycles=160
+[PERF] move_up_tail hardware_cycles=160 load=0 run=107 output_blocked=0
+[CASE PASS] move_up_tail bytes=576 mac_bytes=0 cycle=1122587
+[CASE] move_concat cycle=1122587
+[TIMING] move_concat hardware_cycles=5899
+[PERF] move_concat hardware_cycles=5899 load=0 run=5857 output_blocked=0
+[CASE PASS] move_concat bytes=40960 mac_bytes=0 cycle=1160685
+[CASE] move_concat_tail cycle=1160685
+[TIMING] move_concat_tail hardware_cycles=176
+[PERF] move_concat_tail hardware_cycles=176 load=0 run=123 output_blocked=0
+[CASE PASS] move_concat_tail bytes=576 mac_bytes=0 cycle=1170699
+[CASE] move_concat_odd cycle=1170699
+[TIMING] move_concat_odd hardware_cycles=165
+[PERF] move_concat_odd hardware_cycles=165 load=0 run=105 output_blocked=0
+[CASE PASS] move_concat_odd bytes=432 mac_bytes=0 cycle=1179581
+[CASE] move_pool_single cycle=1179581
+[TIMING] move_pool_single hardware_cycles=112
+[PERF] move_pool_single hardware_cycles=112 load=0 run=63 output_blocked=0
+[CASE PASS] move_pool_single bytes=16 mac_bytes=0 cycle=1184805
+[TB PASSED] 全部数据验证一致 cases=21 cycles=1184805 rom_reads=1032 ddr_reads=440 ddr_writes=256
+$finish called at time : 3554416 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Move_Clock/tb_move_rpc.sv" Line 462

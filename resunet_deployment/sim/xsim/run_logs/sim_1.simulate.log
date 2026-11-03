@@ -1,0 +1,21 @@
+Time resolution is 1 ps
+[CASE PASSED] transform orientation=0 packing=0
+[TRANSFORM PERF] orientation=0 packing=0 cycles=6336 gather_writes=16 result_reads=0
+[CASE PASSED] transform orientation=1 packing=0
+[TRANSFORM PERF] orientation=1 packing=0 cycles=6297 gather_writes=16 result_reads=0
+[CASE PASSED] transform orientation=2 packing=0
+[TRANSFORM PERF] orientation=2 packing=0 cycles=6300 gather_writes=16 result_reads=0
+[CASE PASSED] transform orientation=0 packing=1
+[TRANSFORM PERF] orientation=0 packing=1 cycles=708 gather_writes=0 result_reads=0
+[CASE PASSED] transform orientation=1 packing=1
+[TRANSFORM PERF] orientation=1 packing=1 cycles=814 gather_writes=0 result_reads=0
+[CASE PASSED] transform orientation=2 packing=1
+[TRANSFORM PERF] orientation=2 packing=1 cycles=810 gather_writes=0 result_reads=0
+[CASE PASSED] VOL2 direction=0 lobe_q16_rne=1 boundary_neighbors=000000010000000000000000
+[VOL2 PERF] direction=0 cycles=381 compact_line_reads=2 cache_hits=46 cache_misses=2
+[CASE PASSED] VOL2 direction=4 lobe_q16_rne=1 boundary_neighbors=000000010000000100000000
+[VOL2 PERF] direction=4 cycles=384 compact_line_reads=2 cache_hits=46 cache_misses=2
+[CASE PASSED] VOL2 direction=0 lobe_q16_rne=1 boundary_neighbors=000000000000000000000001
+[VOL2 PERF] direction=0 cycles=385 compact_line_reads=2 cache_hits=46 cache_misses=2
+[TB PASSED] VOL1 gather/classify and VOL2 compact continuous-read Golden
+$finish called at time : 89872 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Volume_DDR_20261025/tb_volume_transform.sv" Line 119

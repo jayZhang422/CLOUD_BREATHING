@@ -1,0 +1,21 @@
+{
+  "seed": 20261016,
+  "cases": 14,
+  "golden_sha256": {
+    "vessel_d3_up": "247172702b82e6d8c94313ff7228b68b9a7e5e82b1bf56164db236fe2bfbcf73",
+    "vessel_d3_concat": "0e997aefa85daa175c55cae752f83f5e7a0c6977ad425889f0852e20577ec692",
+    "vessel_d3_expand": "e37e626b6f2fe82ed35ef9fa04860da5dfeb4f0a85894ac5d51c93863a2cf93b",
+    "vessel_d3_dw3": "3c18a6d2b8c46d7a379a874b2dcd0de6f7e6abe358b4becb3f3273a67e5dc2b1",
+    "vessel_d3_dw5": "eac5f3bca288baa79c77952bec12391b90d9c10619217761c8ec4125af397bda",
+    "vessel_d3_mix": "59c2d3aa6c232741076305823f5d284cc45893560fc9accb9e10b4a5adbda3de",
+    "vessel_d3_project": "06ebf26efe51ee4206e63dfd0b27bf7052d68d7e66c63fd46c863b6a1a385253",
+    "vessel_d3_skip": "2a48b369f5f12163a16d3f0d53130254aa51fe6fefa55c4d9439d5e76dbcb31c",
+    "vessel_d3_out": "62d53bec5064c311819e2a7f69ce8d72008935f66faa814133572c43e4532e76",
+    "up_1x1_g1": "316b242d876cda591c173f68b9e1f92f3e6c63c7cb84c118640d054edaaab6bb",
+    "up_5x3_g32": "2ace8aecd3fc834da3481860df4c7630cef0e3239c7eaf560ff1dd850947e9a5",
+    "up_256x1_g1": "3c39e613c7b5225c71561ee77ed1fd78aef8678b690510033c49684da2da53fe",
+    "up_1x256_g1": "eb2fbbd1bd3a16e4efaf15fde4ad84ea94a3361cad0edfa577e198d2a77dd299",
+    "up_256x256_g1": "96295bf8cf4a1bc25c7e66dc7173475b93b65ff8f0db12f8c664e7dd5fcc657e"
+  },
+  "rom_sha256": "2964a8f374400a9ef8c042979fa02e3344b8e0615c225980a39bd962ecc5f523"
+}

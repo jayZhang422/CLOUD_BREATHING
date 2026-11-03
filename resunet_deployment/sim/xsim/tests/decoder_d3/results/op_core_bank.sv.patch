@@ -1,0 +1,47 @@
+--- before/op_core_bank.sv
++++ after/op_core_bank.sv
+@@ -51,8 +51,8 @@
+     output logic [6:0] out_group_o, // PW 的 P4 输出组号，0..127
+     output logic [3:0] out_mask_o // 任务配置或协议控制字段
+ );
+- logic [9:1] cfg_ready_w, in_ready_w, valid_w, last_w, done_w;
+- logic [3199:0] data_w [1:9];
++ logic [10:1] cfg_ready_w, in_ready_w, valid_w, last_w, done_w;
++ logic [3199:0] data_w [1:10];
+  logic pw_rd_valid_w, pw_rsp_ready_w, concat_rd_valid_w, concat_rsp_ready_w, concat_source_w;
+  logic [31:0] pw_addr_w, concat_addr_w;
+  logic [18:0] pw_pixel_w; logic [6:0] pw_group_w; logic [3:0] pw_mask_w;
+@@ -136,6 +136,24 @@
+   .io_output_o_payload_fragment_group_last(),
+   .clk(clk_i),
+   .resetn(rst_n_i)
++ );
++ // 已验证的Spinal核心；输出已按[group][row][col]排序，沿用引擎16B递增写址。
++ assign data_w[10][3199:128] = 3072'd0;
++ Upsample u_upsample (
++  .clk(clk_i), .resetn(rst_n_i),
++  .io_cfg_i_valid(cfg_valid_i && op_i == 8'd10),
++  .io_cfg_i_ready(cfg_ready_w[10]),
++  .io_cfg_i_payload_width(width_i[8:0]),
++  .io_cfg_i_payload_height(height_i[8:0]),
++  .io_cfg_i_payload_groups(groups_i),
++  .io_busy_o(), .io_done_o(done_w[10]),
++  .io_input_i_valid(in_valid_i && op_i == 8'd10),
++  .io_input_i_ready(in_ready_w[10]), .io_input_i_payload(in_data_i[127:0]),
++  .io_output_o_valid(valid_w[10]), .io_output_o_ready(out_ready_i && op_i == 8'd10),
++  .io_output_o_payload_last(last_w[10]),
++  .io_output_o_payload_fragment_data(data_w[10][127:0]),
++  .io_output_o_payload_fragment_group(), .io_output_o_payload_fragment_row(),
++  .io_output_o_payload_fragment_col(), .io_output_o_payload_fragment_group_last()
+  );
+  assign data_w[3][3199:1152] = 2048'd0;
+  LineBuffer_3x3 u_core_3 (
+@@ -332,7 +350,7 @@
+  always_comb begin
+   cfg_ready_o = 1'b0; in_ready_o = 1'b0; out_valid_o = 1'b0;
+   out_data_o = 3200'd0; out_last_o = 1'b0; done_o = 1'b0;
+-  if (op_i >= 8'd1 && op_i <= 8'd9) begin
++  if (op_i >= 8'd1 && op_i <= 8'd10) begin
+    cfg_ready_o = cfg_ready_w[op_i]; in_ready_o = in_ready_w[op_i];
+    out_valid_o = valid_w[op_i]; out_data_o = data_w[op_i];
+    out_last_o = last_w[op_i]; done_o = done_w[op_i];

@@ -1,0 +1,1 @@
+02000000 96 sim/xsim/tests/rtl_slim_batch2/vectors/upsample/input.hex

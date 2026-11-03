@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"exit_code\": 0,\n  \"output\": \"launch_runs impl_1 -to_step route_design -jobs 8\\n[Sat Oct 24 13:20:51 2026] Launched synth_1...\\nRun output will be captured here: E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.runs/synth_1/runme.log\\n[Sat Oct 24 13:20:51 2026] Launched impl_1...\\nRun output will be captured here: E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.runs/impl_1/runme.log\\nINFO: [MCP 00-101]\",\n  \"task_progress\": \"2/4: 启动综合和实现后交付 (active, 22s)\"\n}"
+    }
+  ]
+}

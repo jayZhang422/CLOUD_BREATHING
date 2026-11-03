@@ -1,0 +1,57 @@
+{
+  "format": "pc-fpga-volume-assets-v1",
+  "assets": {
+    "volume_plans.json": {
+      "bytes": 25442,
+      "sha256": "2b170f5c8cc4443368cd37f724d3b4cd1c6c875b816fb2d5cde6b273d5e379f9"
+    },
+    "tumor.params.bin": {
+      "bytes": 1457216,
+      "sha256": "78ca909d271248b6672c23a027ff2104f798cebdc80d25d38b23eda281b0a860"
+    }
+  },
+  "models": {
+    "lobe": {
+      "stages": 30,
+      "input": 167772160,
+      "head": 171966464,
+      "arena_end": 188743680,
+      "scratch_bytes": 20971520,
+      "contract_sha256": "fe1820a2dd947855ba2403cd527118f8a59cffc47b331574e3f693d5c711f2d0",
+      "export_sha256": "e6bbeb71b5d84715606b762703e386b3cc1294e933a8364b9eaca9d5b3007a0b",
+      "descriptors_sha256": "b19981f4a23b34ca404adbd25b5969d7f86f311a558d748ae2b72c5679515bcd"
+    },
+    "airway": {
+      "stages": 30,
+      "input": 167772160,
+      "head": 171966464,
+      "arena_end": 188743680,
+      "scratch_bytes": 20971520,
+      "contract_sha256": "6148b67f9b76589fc9941dfdb829ac4d2b8bb335646be2f12f2b0bfc53ca7dc0",
+      "export_sha256": "9aa90155aae503580dcf348dea0e07417f39d63757f87a0c310778826434fb41",
+      "descriptors_sha256": "c8070913afaeb21154bd61dfd107ae14f4de2ffdadef8a438291226f71a24fc5"
+    },
+    "vessel": {
+      "stages": 30,
+      "input": 167772160,
+      "head": 171966464,
+      "arena_end": 188743680,
+      "scratch_bytes": 20971520,
+      "contract_sha256": "6371779fac9ca9d27cf2a931b06c2d28e2ec7214a57df6de81a911dab59d6279",
+      "export_sha256": "e8407ff4ba56d4b08bcb5ca0bc4bfa90fa664265b46e96b941f684ebf47bf5c0",
+      "descriptors_sha256": "d1ce3e426b1997f3ce4c55125eab47805217993544e6143a70eda358228d0ad9"
+    },
+    "tumor": {
+      "stages": 30,
+      "input": 167772160,
+      "head": 184549376,
+      "arena_end": 264241152,
+      "scratch_bytes": 96468992,
+      "contract_sha256": "42a25fd503eae8692ddd0171d9274cd43d47c0aa400e257a6dfb14060058b5e5",
+      "export_sha256": "df7e432458f136e7ec59caa33868bf5a097290ad8cfbcd2edc42717b376f5ba8",
+      "descriptors_sha256": "1b1f37d8b47405df827493b2a3c9a6465de8d752c714d5189e4029211c9bd0e2"
+    }
+  },
+  "provenance": "Frozen BIN_UDP NetworkPlan + fuse_residual_plan; live tensor allocation, feature addresses relocated +16MiB; original op12 skipCin restored; tumor parameters exact byte equality checked",
+  "verification": "prj/Model_Deployment.srcs/sim_1/new/Volume_DDR_20261025/verify_package.py; offline audit only, runtime has no BIN_UDP imports"
+}

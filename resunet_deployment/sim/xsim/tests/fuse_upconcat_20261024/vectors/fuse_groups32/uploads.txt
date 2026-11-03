@@ -1,0 +1,2 @@
+02000010 16384 sim/xsim/tests/fuse_upconcat_20261024/vectors/fuse_groups32/input.hex
+02800010 65536 sim/xsim/tests/fuse_upconcat_20261024/vectors/fuse_groups32/skip.hex

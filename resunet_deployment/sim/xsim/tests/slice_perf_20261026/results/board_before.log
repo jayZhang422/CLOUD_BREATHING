@@ -1,0 +1,7 @@
+[VALID MODEL vessel] slice=163, stages=30, parameters=0 bytes, Golden=none (repeat consistency only)
+[VALID MODEL tumor] slice=163, stages=30, parameters=1,457,216 bytes, Golden=none (repeat consistency only)
+[VALID MODEL lobe] slice=136, stages=30, parameters=0 bytes, Golden=provided
+[VALID MODEL airway] slice=163, stages=30, parameters=0 bytes, Golden=none (repeat consistency only)
+[MODEL vessel] 3 repeats
+[FAILED] vessel: operator RPC 0x22 timed out
+[REPORT] E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Slice_Perf_20261026\results\board_before.json

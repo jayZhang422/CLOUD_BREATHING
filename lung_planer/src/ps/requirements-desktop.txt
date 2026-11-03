@@ -1,0 +1,5 @@
+# CPU quantitative geometry; install with the interpreter used by main.py.
+numpy>=1.26
+scipy>=1.15,<2
+manifold3d==3.5.4
+PySide6>=6.7

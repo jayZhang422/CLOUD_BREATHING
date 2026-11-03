@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "cpu_cuda_integer_equal": true,
+  "export_reload_integer_equal": true,
+  "golden_scope": "synthetic 32x32 full network and intermediate nodes"
+}

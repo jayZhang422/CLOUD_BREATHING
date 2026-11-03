@@ -1,0 +1,356 @@
+[
+  {
+    "path": "script/scala/PW/pwmac.scala",
+    "sha256": "E4CB90E37F0B662C71189A6B387746CBC47629EF9144612669F0BBA504DF4E65",
+    "modified": "2026-10-14T08:31:21.9177090+08:00",
+    "length": 16143
+  },
+  {
+    "path": "script/scala/MaxPool/maxpoolgen.scala",
+    "sha256": "07DAE05CCA84AC4CA657B7BF121FF974EAF339EA178C750D61119A7156F9E57C",
+    "modified": "2026-10-11T17:57:32.9956651+08:00",
+    "length": 413
+  },
+  {
+    "path": "script/scala/MaxPool/maxpool2d.scala",
+    "sha256": "ACAB8A6F3605090816D499BA9148E1CE72EA6DED829A25737B689682AE16A70D",
+    "modified": "2026-10-13T15:37:17.9612322+08:00",
+    "length": 5637
+  },
+  {
+    "path": "script/python/BIN_UDP/main.py",
+    "sha256": "43D517B06A0F47AABFDAD54725FE15E75B11006FF3400380E309FCBBAAFCF820",
+    "modified": "2026-10-12T16:54:48.9159085+08:00",
+    "length": 16049
+  },
+  {
+    "path": "script/python/BIN_UDP/op_verify.py",
+    "sha256": "8D27C00F7271A0C0CECFF61725245B2C3CF9B4F40CB4D7633F528B2D39F7EA39",
+    "modified": "2026-10-12T20:37:55.2644487+08:00",
+    "length": 1970
+  },
+  {
+    "path": "script/scala/LineBUffer/linebuffergen.scala",
+    "sha256": "F67551E257A12E4671A13C0C9C0B5D3437E9A15F468989DBA37BCB53F52AA96D",
+    "modified": "2026-10-11T16:38:18.8113332+08:00",
+    "length": 488
+  },
+  {
+    "path": "script/scala/LineBUffer/linebuffer.scala",
+    "sha256": "668528F07A673F5C8ED26CF41814942472B8EC3E1CBC6D414E2424AABBD506BB",
+    "modified": "2026-10-13T16:13:51.0285922+08:00",
+    "length": 6728
+  },
+  {
+    "path": "script/python/BIN_UDP/src/protocol.py",
+    "sha256": "E9DB10D0A63195B50B0FFF2B571B6905FB31C46110BDBF920A01AED51BC53528",
+    "modified": "2026-10-05T21:10:37.4796679+08:00",
+    "length": 17046
+  },
+  {
+    "path": "script/python/BIN_UDP/src/op_client.py",
+    "sha256": "2DBFD1BF9997B741CE9D46A444C8AFB59EAC160D388FF596927B56641BB7A640",
+    "modified": "2026-10-12T20:04:30.8987688+08:00",
+    "length": 4705
+  },
+  {
+    "path": "script/python/BIN_UDP/src/receiver.py",
+    "sha256": "0537CCD4B599FF6879AB5FBC1742CB7DE1F8DA2B56A9FD44F7C71B76BB4AC2C4",
+    "modified": "2026-10-05T22:43:37.5615816+08:00",
+    "length": 19344
+  },
+  {
+    "path": "script/python/BIN_UDP/src/sender.py",
+    "sha256": "31597FC7579AC6E12705BD3F4662180CB31D3762B752E2EB4206DFDD7BA301A2",
+    "modified": "2026-10-07T11:58:37.4227324+08:00",
+    "length": 16269
+  },
+  {
+    "path": "script/scala/Element_Add/elementaddgen.scala",
+    "sha256": "5FEB429A40800A94BC77259E96846B0D855DE26F06DF06E57D108AA99BADBCBD",
+    "modified": "2026-10-11T18:10:46.9687553+08:00",
+    "length": 394
+  },
+  {
+    "path": "script/python/BIN_UDP/src/volume_bin.py",
+    "sha256": "9FB105025A1D4569C1B4C84CD77042AE16F08C8A03C90F9D1E7801C975EA10BC",
+    "modified": "2026-10-12T16:48:27.0974401+08:00",
+    "length": 6749
+  },
+  {
+    "path": "script/scala/Element_Add/elementadd.scala",
+    "sha256": "95B1A4AF0D38030181643CE88F7EF7A4BBE82CE517ABD564711B7E931D2B5552",
+    "modified": "2026-10-13T15:48:39.6215266+08:00",
+    "length": 6925
+  },
+  {
+    "path": "script/python/BIN_UDP/src/udp_link.py",
+    "sha256": "DCBDABA3DCE0A1743FD1694DB5188816D0E8000CC9F8D324D7BDA4475E3E14AF",
+    "modified": "2026-10-05T21:10:55.9862084+08:00",
+    "length": 2040
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/top.sv",
+    "sha256": "FCB1C5ECF64C280826DBAD261F02D13A96AFFF63930292F9A25CB144EB6C3EBD",
+    "modified": "2026-10-13T21:09:01.7538899+08:00",
+    "length": 33272
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/quantized_params_rom_address_map.tsv",
+    "sha256": "623778E8CD9C30B08CB8BA06BF9353ED398BCB72EA034625606BAD194AAC7BED",
+    "modified": "2026-10-13T21:12:43.5930747+08:00",
+    "length": 19401
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/quantized_params_rom.coe",
+    "sha256": "3DB0C1A287C234B8FC0AE5EDA8DC500C4D5D99903EB7FEBFDAF6A73B147E6DAE",
+    "modified": "2026-10-14T08:29:43.1368825+08:00",
+    "length": 4128830
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Op/Shuffle/channel_shuffle.sv",
+    "sha256": "77A61A4952FE99F41B4A37682783D97C5B4AB1D325492204729C895F8E0A45D0",
+    "modified": "2026-10-08T20:15:46.5665890+08:00",
+    "length": 1409
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Op/README.md",
+    "sha256": "E1F6C64A5611D19BCBE3EEA3624F8A0A0567219B8C2274EE02F167FD34E72095",
+    "modified": "2026-10-14T08:49:29.4555833+08:00",
+    "length": 12905
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Op/PW/pwmac.v",
+    "sha256": "D44932EDDDA504A26B4A2CA8B541B8556913099B4185ED90940F163833680E5B",
+    "modified": "2026-10-14T08:31:21.9142827+08:00",
+    "length": 301080
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Op/op_board.sv",
+    "sha256": "D43A5CA301257CC0CC18A69B6A5F30F867A9D46687A167FF2D338F0DEDCC8394",
+    "modified": "2026-10-14T16:01:59.3066107+08:00",
+    "length": 9016
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Op/MaxPool/maxpool2d_512x512_c16.v",
+    "sha256": "F2884ABA27A061F137E29067EF9276F75968B6438AE9BBB904ACD83BF7A49ED0",
+    "modified": "2026-10-13T21:07:43.3695692+08:00",
+    "length": 27223
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/DDR/aq_axi_master.v",
+    "sha256": "A5838D1C0587D0D405A6E85B0544DA36D32FA50FE983B8701AC29038C336F0D6",
+    "modified": "2026-10-03T20:42:41.9806833+08:00",
+    "length": 15831
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Op/LineBuffer/linebuffer_5x5.v",
+    "sha256": "1B8F7DE2462FDB6D252C4EAB23EE4DC62F6177D3C958193F0349D7F7FF66CB48",
+    "modified": "2026-10-13T21:07:43.3715690+08:00",
+    "length": 32006
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Op/LineBuffer/linebuffer_3x3.v",
+    "sha256": "13604907D370AF572CF72F0B4B0B1B61CF93B81CCF259297996C07CBDCB3965C",
+    "modified": "2026-10-13T21:07:43.3705691+08:00",
+    "length": 18472
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Op/control/op_transport.sv",
+    "sha256": "20FCE40FF705E563197CDAC240EEDDD08B8C32582FAC19E8D0A18C6CB764C537",
+    "modified": "2026-10-12T20:33:59.2298266+08:00",
+    "length": 6527
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Op/control/op_service.sv",
+    "sha256": "883FCB7D26FD6ED5E50803A721C6A4E3DC6CCBBB41403D1E38A80BC8166BC166",
+    "modified": "2026-10-14T16:01:59.2993924+08:00",
+    "length": 13705
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Op/control/op_feature_writer.sv",
+    "sha256": "B356EF0ED6384C9A72617C0554788E23A010A5AC50201F16BBED5A5766EA82CE",
+    "modified": "2026-10-14T16:04:42.1122317+08:00",
+    "length": 4147
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Op/control/op_feature_reader.sv",
+    "sha256": "22365BF3AF91F9B2987D108642A5EA4EE484D6EF266DC3223857B225217D9D5F",
+    "modified": "2026-10-12T20:33:59.2284267+08:00",
+    "length": 5267
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv",
+    "sha256": "FA2994BE6BB7B7F241CC7F03482C606468B34C5CD78F126CFCF9B62DC8912ED2",
+    "modified": "2026-10-14T16:00:56.2965334+08:00",
+    "length": 22407
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Op/control/op_descriptor_check.sv",
+    "sha256": "A405ECF560AC611F04B6BD01149C6641C94B5F829954168960D241B345972539",
+    "modified": "2026-10-14T16:36:00.4796451+08:00",
+    "length": 9846
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Op/control/op_ddr_port.sv",
+    "sha256": "6E4EF1CAAF20150E34046A2AA7F13AE6CA76327021EC7F95B2B83BE99E9C5CF4",
+    "modified": "2026-10-12T20:33:59.2258701+08:00",
+    "length": 5444
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Op/control/op_core_bank.sv",
+    "sha256": "5601B7A63C8F5CDE563444EC800E52755D56D6FD4DC1816BD39D6A069EBB30B2",
+    "modified": "2026-10-13T21:07:43.3670588+08:00",
+    "length": 15908
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Op/control/op_coeff_split.sv",
+    "sha256": "F3C5DFB5A1E7ABF4F4BC9B2D9A47390496C37960C917F6877770E4BA8F0C556F",
+    "modified": "2026-10-13T21:07:43.3735711+08:00",
+    "length": 4350
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Op/control/op_coeff_rom.sv",
+    "sha256": "4D91E495945C84EA2F967A90AC1BBA046A97F92C4D48E359CC97AF48515710A1",
+    "modified": "2026-10-14T08:31:21.9162930+08:00",
+    "length": 3313
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/ip/ddr4_0/ddr4_0.xci",
+    "sha256": "5157D92E73A5E988E00EE2A7806DBF5C46B8E34B4E60561308C00FDF45C96883",
+    "modified": "2026-10-03T16:14:48.5137070+08:00",
+    "length": 54520
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/ip/vio_0/vio_0.xci",
+    "sha256": "DB2F5A816B7352AF998CFEAE1E4F1859B21C1E255DE949E9E3DD281E3EEFE44C",
+    "modified": "2026-10-03T21:54:30.0702404+08:00",
+    "length": 186892
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Ethernet/udp/udp_tx.v",
+    "sha256": "DAB172A0A48B32B7047EC896BAF4F0E4B20D88E2D17F5820948D1B15EF859BBC",
+    "modified": "2026-10-09T19:44:44.9118825+08:00",
+    "length": 15987
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Ethernet/udp/udp_rx.v",
+    "sha256": "F6FD643486928F46FBBEEFCD3B3F6CA8B519FC15389DF8243FECE0638F3ECD25",
+    "modified": "2026-10-07T12:21:05.2059826+08:00",
+    "length": 11180
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Op/ElementAdd/elementadd_p16.v",
+    "sha256": "D0483CF2523E0D5DABC9D4BAF30918C59C1E714DBAA8FEB39A0E86E20AD63009",
+    "modified": "2026-10-13T21:07:43.3715690+08:00",
+    "length": 125054
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Ethernet/arp/crc32_d8.v",
+    "sha256": "346F7E1C2CE0FACE342DA440C09CB421E0882DD6AB19D39B0DA73352C88B4658",
+    "modified": "2026-10-04T20:57:37.5745316+08:00",
+    "length": 6670
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Ethernet/arp/arp_tx.v",
+    "sha256": "E500CDD193C4173557757CC3DDB8FDE49662282AA755B68FB3939480EA2ABB40",
+    "modified": "2026-10-04T20:57:37.5693878+08:00",
+    "length": 12882
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Ethernet/arp/arp_rx.v",
+    "sha256": "5BF00C539E5948FAAFCC3E3E0A7470D43913900781E6AD8543094D876CB6692D",
+    "modified": "2026-10-04T20:57:37.5765212+08:00",
+    "length": 9128
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Ethernet/arp/arp.v",
+    "sha256": "4AAEFC389C176081C04F8A2CC8C1A059CE8011911FF2250BF48A0A7095D23D83",
+    "modified": "2026-10-04T20:57:36.5315399+08:00",
+    "length": 4204
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Ethernet/eth_rgmii_top.sv",
+    "sha256": "FD7EF16CDA24E22A554D73E78C456AF180EE5C116E8D4C904FCEAB687A36592A",
+    "modified": "2026-10-12T20:20:37.2623659+08:00",
+    "length": 20929
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Ethernet/ethernet_ddr_bridge.sv",
+    "sha256": "A69CB9E701A05A8F1B9B0A649CFA02430C49B6935C419D4D3AD458FC5C056DCF",
+    "modified": "2026-10-12T20:21:40.0248964+08:00",
+    "length": 11212
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/constraint/top_constraint.xdc",
+    "sha256": "6D60662E060D05C053F87D12656BC126C38A0C45C940E06BFC78E6CA69343D94",
+    "modified": "2026-10-09T19:45:54.4997419+08:00",
+    "length": 3771
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/constraint/ethernet_ddr_constraint.xdc",
+    "sha256": "030A9709C2724B96C223C14B5C8CDD23CBCAC27EF7A606CD04E9ABC3964CB1B8",
+    "modified": "2026-10-14T16:04:42.1192352+08:00",
+    "length": 11038
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Op/Concat/concat.sv",
+    "sha256": "2FBDFC979161DD913CFCF4C8C0BAF6664876FFBD2C0AC7495BF58AB8D07BF92A",
+    "modified": "2026-10-11T16:24:18.4109636+08:00",
+    "length": 4957
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/ip/quantized_params_rom/quantized_params_rom.xci",
+    "sha256": "4E4815E7EB7BE3BB8C2D45BD22F35419C41A7F2AFED3DD370F3B721A2B2DAA39",
+    "modified": "2026-10-14T08:29:52.7749638+08:00",
+    "length": 23160
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/ip/pw_weight_uram/pw_weight_uram.xci",
+    "sha256": "0F1BBB096600092AAC75D983A510F4E675605FA25563260074A643795A5B53B4",
+    "modified": "2026-10-14T08:29:40.4188790+08:00",
+    "length": 25027
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Ethernet/gmii_to_rgmii/rgmii_tx.v",
+    "sha256": "64F0FEC83D3B85D89F6922BC9DBA91E0684096D27B5BD6AE0E8032C41F64D380",
+    "modified": "2026-10-04T20:57:38.6923189+08:00",
+    "length": 3039
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Ethernet/gmii_to_rgmii/rgmii_rx.v",
+    "sha256": "5395C2709AF2B9CA4A56E4854E5CA1D07A54786660AB15FAE71002AB544D435C",
+    "modified": "2026-10-04T20:57:38.6906304+08:00",
+    "length": 3873
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Ethernet/protocol/README.md",
+    "sha256": "D2300CAC167AEDB9EC5E82A8AD451F771B7BFE3A4166E855F3080D19C002184A",
+    "modified": "2026-10-07T12:28:14.0333459+08:00",
+    "length": 9382
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Ethernet/protocol/protocol_parser.sv",
+    "sha256": "F1426B640184EEF53323C556AFD6984214E847A0706454093A76C7B66825D677",
+    "modified": "2026-10-07T12:04:40.7943888+08:00",
+    "length": 15304
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Ethernet/protocol/protocol_builder.sv",
+    "sha256": "36277E8684E45DE2FA279FAD8FE86C5EDF9486D8045F0315862751A4D0056F9B",
+    "modified": "2026-10-12T20:04:30.8915382+08:00",
+    "length": 9708
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Ethernet/protocol/eth_protocol_core.sv",
+    "sha256": "3DC606B67822BF2D757BC673863B769782109F4B936678203E9A819C3B58725A",
+    "modified": "2026-10-12T20:20:56.3845433+08:00",
+    "length": 38001
+  },
+  {
+    "path": "prj/Model_Deployment.srcs/sources_1/new/Ethernet/protocol/crc32_iso_hdlc.sv",
+    "sha256": "19A99D1C3B4D63AD970A24ED0103AEBE53211DB7626B5B2392AAD24C0DF14D4A",
+    "modified": "2026-10-07T10:01:50.2659670+08:00",
+    "length": 2849
+  }
+]

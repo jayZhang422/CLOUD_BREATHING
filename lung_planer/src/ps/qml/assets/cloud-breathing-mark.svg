@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
+  <defs>
+    <linearGradient id="cb-bg" x1="48" y1="4" x2="48" y2="92" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#17211E"/>
+      <stop offset="1" stop-color="#0A0F0E"/>
+    </linearGradient>
+    <linearGradient id="cb-cloud" x1="28" y1="24" x2="66" y2="84" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A8F9E8"/>
+      <stop offset="0.55" stop-color="#46D9BC"/>
+      <stop offset="1" stop-color="#17917D"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="88" height="88" rx="22" fill="url(#cb-bg)"/>
+  <rect x="4.6" y="4.6" width="86.8" height="86.8" rx="21.4" stroke="#24332F" stroke-width="1.2"/>
+  <!-- cloud: one continuous silhouette -->
+  <path d="M31 68.5H66A13 13 0 0 0 79 55.5A13 13 0 0 0 66.9 42.6A19 19 0 1 0 29.4 40.6A14 14 0 0 0 31 68.5Z" fill="url(#cb-cloud)"/>
+  <!-- breathing waveform cut, ends flush with the cloud edge -->
+  <path d="M17 54C26 54 29 46 38 46S52 61 62 61S70 54 79 54" stroke="#111916" stroke-width="3.8" stroke-linecap="butt"/>
+  <circle cx="38" cy="46" r="3.4" fill="#FFFFFF"/>
+</svg>

@@ -1,0 +1,57 @@
+{
+  "status": "compact_uploaded",
+  "transfer_id": 436070316,
+  "input_sha256": "84eb6b5922f1b97fd8a51ac03a26429ba6d263d915db87d22590e7d210b93f3c",
+  "compact_sha256": "c3384fec029f5afe30b4b49eee0442bcc6d990aaf192026ef496d4bd7bb12608",
+  "sections": [
+    {
+      "name": "native",
+      "direction": 0,
+      "base": 4194304,
+      "planes": 245,
+      "width": 512,
+      "height": 512,
+      "row_stride": 512,
+      "plane_stride": 262144,
+      "bytes": 64225280
+    },
+    {
+      "name": "lobe",
+      "direction": 0,
+      "base": 68419584,
+      "planes": 204,
+      "width": 278,
+      "height": 278,
+      "row_stride": 288,
+      "plane_stride": 80064,
+      "bytes": 16333056
+    },
+    {
+      "name": "lobe_t",
+      "direction": 0,
+      "base": 84752640,
+      "planes": 204,
+      "width": 278,
+      "height": 278,
+      "row_stride": 288,
+      "plane_stride": 80064,
+      "bytes": 16333056,
+      "source": "lobe",
+      "orientation": 2
+    },
+    {
+      "name": "native_t",
+      "direction": 0,
+      "base": 396886016,
+      "planes": 245,
+      "width": 512,
+      "height": 512,
+      "row_stride": 512,
+      "plane_stride": 262144,
+      "bytes": 64225280,
+      "source": "native",
+      "orientation": 1
+    }
+  ],
+  "note": "VOL2 sections uploaded; native INT8 source remains in the case as compatibility baseline."
+}

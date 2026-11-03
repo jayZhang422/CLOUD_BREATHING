@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"elapsed_seconds\": 30,\n  \"exit_code\": 0,\n  \"memory_mb\": 12971.297,\n  \"output\": \"run 8 ms\\n[CACHE PASSED] small_tail enabled=0 fast=1 Add_reads_32B=48 bytes=1536\\n[CASE PASSED] shared op12 small_tail bytes=1056 writes=1056 run_cycles=1912 independent-Golden\\n[CACHE PASSED] small_tail enabled=0 fast=0 Add_reads_32B=48 bytes=1536\\n[CASE PASSED] shared op12 small_tail bytes=1056 writes=1056 run_cycles=2525 independent-Golden\\n[CACHE PASSED] max_banks enabled=0 fast=1 Add_reads_32B=512 bytes=16384\\n[CASE PASSED] shared op12 max_banks bytes=8704 writes=8704 run_cycles=170916 independent-Golden\\n[RUNNER PASSED] op12 cases=2 mem_stalls=12592 p12_max_addr=2047 add_checks=610 independent-Golden\\n[CACHE PASSED] max_banks enabled=0 fast=0 Add_reads_32B=512 bytes=16384\\n[CASE PASSED] shared op12 max_banks bytes=8704 writes=8704 run_cycles=279508 independent-Golden\\n[RUNNER PASSED] op12 cases=2 mem_stalls=92659 p12_max_addr=2047 add_checks=610 independent-Golden\\n[TB PASSED] 全部数据验证一致 op12 two frozen Golden cases fast+slow DDR 250MHz\\n$finish called at time : 1128268 ns : File \\\"E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Move_Clock/tb_move_op12.sv\\\" Line 227\\nrun: Time (s): cpu = 00:00:01 ; elapsed = 00:00:30 . Memory (MB): peak = 12971.297 ; gain = 0.000\\nINFO: [MCP 00-101]\",\n  \"task_progress\": \"2/5: MCP 自校验回归、周期对照和生产接入检查 (active, 5m48s) | Next: 清理产物、恢复仿真配置并形成交付记录\"\n}"
+    }
+  ]
+}

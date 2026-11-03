@@ -1,0 +1,42 @@
+--- before/sim/Op_Board/generate_vectors.py
++++ after/sim/Op_Board/generate_vectors.py
+@@ -235,10 +235,10 @@
+     in64, w64, p64, pw64 = make_pw(64, 64, pw64_features, 2)
+     write_case(root, "pw_base64", 1, 4, 4, 1, pw64, 0x0c000000,
+                out_base=0x0c100000, cin=64, cout=64,
+-               weight_base=0x00380000, param_base=0x00390000, run_id=0x100a,
++               weight_base=0x002c0000, param_base=0x002d0000, run_id=0x100a,
+                uploads=((0x0c000000, "input.bin", in64),),
+-               coefficients=((0x00380000, "weights.bin", w64),
+-                             (0x00390000, "params.bin", p64)))
++               coefficients=((0x002c0000, "weights.bin", w64),
++                             (0x002d0000, "params.bin", p64)))
+     names.append("pw_base64")
+ 
+     for name, cin, cout, pixels, in_base, out_base, weight_base, param_base, run_id in (
+@@ -310,10 +310,10 @@
+             add_params.extend(struct.pack("<iiq", ma, mb, bias))
+     write_case(root, "element_add_two_groups", 6, w, h, groups, bytes(add_golden),
+                0x0a000000, base_b=0x0a100000, out_base=0x0a200000, run_id=0x1008,
+-               shift=1, param_base=0x00300000,
++               shift=1, param_base=0x002e0000,
+                uploads=((0x0a000000, "a.bin", bytes(add_a)),
+                         (0x0a100000, "b.bin", bytes(add_b)),),
+-               coefficients=((0x00300000, "params.bin", bytes(add_params)),))
++               coefficients=((0x002e0000, "params.bin", bytes(add_params)),))
+     names.append("element_add_two_groups")
+ 
+     # One configured P16 group, several pixels, lane-distinct shuffle pattern.
+@@ -365,10 +365,10 @@
+             add_golden.append(rne(av[lane] * ma + bv[lane] * mb + bias, 1) & 0xff)
+     write_case(root, "element_add_groups32", 6, 1, 1, 32, bytes(add_golden),
+                0x10600000, base_b=0x10700000, out_base=0x10800000,
+-               shift=1, param_base=0x00310000, run_id=0x1013,
++               shift=1, param_base=0x002e8000, run_id=0x1013,
+                uploads=((0x10600000, "a.bin", bytes(add_a)),
+                         (0x10700000, "b.bin", bytes(add_b))),
+-               coefficients=((0x00310000, "params.bin", bytes(add_params)),))
++               coefficients=((0x002e8000, "params.bin", bytes(add_params)),))
+     names.append("element_add_groups32")
+ 
+     # Switch back to the already stored coefficient bank after wider layers.

@@ -1,0 +1,23 @@
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_13 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_rtl_slim_pw_behav xil_defaultlib.tb_rtl_slim_pw xil_defaultlib.glbl -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_13.BLK_MEM_GEN_v8_4_output_stage(C_...
+Compiling module blk_mem_gen_v8_4_13.BLK_MEM_GEN_v8_4_softecc_output_...
+Compiling module blk_mem_gen_v8_4_13.BLK_MEM_GEN_v8_4_mem_module(C_FA...
+Compiling module blk_mem_gen_v8_4_13.blk_mem_gen_v8_4_13(C_FAMILY="ki...
+Compiling module xil_defaultlib.pw_weight_bank
+Compiling module xil_defaultlib.PwRequant
+Compiling module xil_defaultlib.PwMac
+Compiling module xil_defaultlib.PwRequant_before
+Compiling module xil_defaultlib.PwMac_before
+Compiling module xil_defaultlib.tb_rtl_slim_pw
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_rtl_slim_pw_behav

@@ -1,0 +1,216 @@
+{
+  "partition": "train only",
+  "selection": [
+    {
+      "dataset": "lobe",
+      "case": "s0364",
+      "slices": [
+        0,
+        7,
+        162,
+        166
+      ]
+    },
+    {
+      "dataset": "lobe",
+      "case": "s0132",
+      "slices": [
+        0,
+        1,
+        17,
+        51
+      ]
+    },
+    {
+      "dataset": "lobe",
+      "case": "s0992",
+      "slices": [
+        0,
+        232,
+        402,
+        412
+      ]
+    },
+    {
+      "dataset": "lobe",
+      "case": "s0232",
+      "slices": [
+        0,
+        216,
+        217,
+        278
+      ]
+    },
+    {
+      "dataset": "lobe",
+      "case": "s0476",
+      "slices": [
+        0,
+        238,
+        447,
+        462
+      ]
+    },
+    {
+      "dataset": "lobe",
+      "case": "s0773",
+      "slices": [
+        0,
+        174,
+        175,
+        189
+      ]
+    },
+    {
+      "dataset": "lobe",
+      "case": "s0575",
+      "slices": [
+        0,
+        34,
+        68,
+        102
+      ]
+    },
+    {
+      "dataset": "lobe",
+      "case": "s1067",
+      "slices": [
+        0,
+        30,
+        195,
+        210
+      ]
+    },
+    {
+      "dataset": "lobe",
+      "case": "s1342",
+      "slices": [
+        0,
+        27,
+        54,
+        81
+      ]
+    },
+    {
+      "dataset": "lobe",
+      "case": "s0393",
+      "slices": [
+        0,
+        1,
+        191,
+        205
+      ]
+    },
+    {
+      "dataset": "lobe",
+      "case": "s0114",
+      "slices": [
+        0,
+        49,
+        209,
+        226
+      ]
+    },
+    {
+      "dataset": "lobe",
+      "case": "s0160",
+      "slices": [
+        0,
+        16,
+        17,
+        94
+      ]
+    },
+    {
+      "dataset": "lobe",
+      "case": "s0196",
+      "slices": [
+        0,
+        198,
+        331,
+        366
+      ]
+    },
+    {
+      "dataset": "lobe",
+      "case": "s0582",
+      "slices": [
+        0,
+        20,
+        198,
+        208
+      ]
+    },
+    {
+      "dataset": "lobe",
+      "case": "s1235",
+      "slices": [
+        0,
+        96,
+        277,
+        292
+      ]
+    },
+    {
+      "dataset": "lobe",
+      "case": "s0656",
+      "slices": [
+        0,
+        235,
+        401,
+        415
+      ]
+    }
+  ],
+  "activation_max_abs": {
+    "e1.expand": 6.0,
+    "e1.mix": 6.0,
+    "e1.out": 6.0,
+    "e2.expand": 6.0,
+    "e2.mix": 6.0,
+    "e2.out": 6.0,
+    "e3.expand": 6.0,
+    "e3.mix": 6.0,
+    "e3.out": 6.0,
+    "mid.expand": 6.0,
+    "mid.mix": 6.0,
+    "mid.out": 6.0,
+    "d3.expand": 6.0,
+    "d3.mix": 6.0,
+    "d3.out": 6.0,
+    "d2.expand": 6.0,
+    "d2.mix": 6.0,
+    "d2.out": 6.0,
+    "d1.expand": 4.3643622398376465,
+    "d1.mix": 6.0,
+    "d1.out": 6.0,
+    "head": 34.55158233642578
+  },
+  "activation_scales": {
+    "input": 1.0,
+    "e1.expand": 0.047244094488188976,
+    "e1.mix": 0.047244094488188976,
+    "e1.out": 0.047244094488188976,
+    "e2.expand": 0.047244094488188976,
+    "e2.mix": 0.047244094488188976,
+    "e2.out": 0.047244094488188976,
+    "e3.expand": 0.047244094488188976,
+    "e3.mix": 0.047244094488188976,
+    "e3.out": 0.047244094488188976,
+    "mid.expand": 0.047244094488188976,
+    "mid.mix": 0.047244094488188976,
+    "mid.out": 0.047244094488188976,
+    "d3.expand": 0.047244094488188976,
+    "d3.mix": 0.047244094488188976,
+    "d3.out": 0.047244094488188976,
+    "d2.expand": 0.047244094488188976,
+    "d2.mix": 0.047244094488188976,
+    "d2.out": 0.047244094488188976,
+    "d1.expand": 0.03436505700659564,
+    "d1.mix": 0.047244094488188976,
+    "d1.out": 0.047244094488188976,
+    "head": 0.0010544627929449074
+  },
+  "zero_point": 0,
+  "policy": "per-node symmetric activation max calibration; no normalization change"
+}

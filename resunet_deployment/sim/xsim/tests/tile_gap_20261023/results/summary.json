@@ -1,0 +1,14 @@
+{
+  "commit_before_change": "43d7309",
+  "simulation": {
+    "sim_pwstream_after": "PASS",
+    "sim_pwstream_op12": "PASS",
+    "syntax": "PASS"
+  },
+  "cycles": {
+    "lobe_e1.expand": {"before": 6430, "after": 6305},
+    "tumor_d3.expand": {"before": 158774, "after": 158767},
+    "lobe_mid_expand": {"before": 8905, "after": 8905}
+  },
+  "cleanup": {"large_generated_files_deleted": true, "threshold_bytes": 10485760}
+}

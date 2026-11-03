@@ -1,0 +1,8 @@
+{
+  "state": "complete",
+  "task": "Airway",
+  "completed_epochs": 31,
+  "best_epoch": 27,
+  "metadata_repaired": true,
+  "time": "2026-10-08T09:50:49.677203+00:00"
+}

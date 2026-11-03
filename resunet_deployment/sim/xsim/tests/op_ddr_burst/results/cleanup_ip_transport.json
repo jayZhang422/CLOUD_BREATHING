@@ -1,0 +1,22 @@
+[
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_ddr_burst\\behav\\xsim\\quantized_params_rom.mif",
+    "Length": 2974400
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_ddr_burst\\behav\\xsim\\sim_trace_baseline.csv",
+    "Length": 8629459
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_ddr_burst\\behav\\xsim\\sim_trace.csv",
+    "Length": 3011856
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_ddr_burst\\behav\\xsim\\tb_op_ddr_burst_behav.wdb",
+    "Length": 2966601
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_ddr_burst\\behav\\xsim\\waveform.vcd",
+    "Length": 11038196
+  }
+]

@@ -1,0 +1,8 @@
+Vivado MCP session vivado-20261014-191254-47650bbf
+Project Model_Deployment; source top top
+synth_1=Out-of-date NEEDS_REFRESH=1
+impl_1=Out-of-date NEEDS_REFRESH=1
+Simulation closed. sim_1 top=tb_op_rom; INCLUDE_DIRS={}; options=-testplusarg CASE_LIST=cases_fast.txt; runtime=0ns
+New tb_op_mem_cdc file is simulation-only.
+No synth/implementation/bitstream launched.
+Top syntax xvlog exit=0. XDC Tcl info complete=1 (syntax completeness only; netlist object coverage pending).

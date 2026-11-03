@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "point_count": 4096,
+      "candidates": 3,
+      "pl_calls": 1,
+      "parity_pass": true
+    },
+    {
+      "point_count": 4097,
+      "candidates": 3,
+      "pl_calls": 2,
+      "parity_pass": true
+    },
+    {
+      "point_count": 4494,
+      "candidates": 3,
+      "pl_calls": 2,
+      "parity_pass": true
+    },
+    {
+      "point_count": 8192,
+      "candidates": 3,
+      "pl_calls": 2,
+      "parity_pass": true
+    },
+    {
+      "point_count": 9672,
+      "candidates": 3,
+      "pl_calls": 3,
+      "parity_pass": true
+    },
+    {
+      "point_count": 16385,
+      "candidates": 3,
+      "pl_calls": 5,
+      "parity_pass": true
+    }
+  ],
+  "cpu_fallback_count": 0,
+  "cancelled_then_recovered": true,
+  "timed_out_then_recovered": true
+}

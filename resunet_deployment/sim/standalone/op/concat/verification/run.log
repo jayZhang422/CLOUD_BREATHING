@@ -1,0 +1,20 @@
+[TB PASSED] minimum words=2 cycles=19 requestStalls=5 outputStalls=3 reset=0
+[TB PASSED] odd words=273 cycles=1313 requestStalls=87 outputStalls=145 reset=0
+[TB PASSED] full64 words=49152 cycles=98308 requestStalls=0 outputStalls=0 reset=0
+[TB PASSED] full128 words=196608 cycles=393220 requestStalls=0 outputStalls=0 reset=0
+[TB PASSED] full256 words=393216 cycles=786436 requestStalls=0 outputStalls=0 reset=0
+[TB PASSED] full512 words=786432 cycles=1572868 requestStalls=0 outputStalls=0 reset=0
+[TB PASSED] reset_request words=459 cycles=2243 requestStalls=153 outputStalls=210 reset=1
+[TB PASSED] reset_response words=459 cycles=2290 requestStalls=179 outputStalls=249 reset=1
+[TB PASSED] reset_output words=459 cycles=2293 requestStalls=142 outputStalls=239 reset=1
+[TB PASSED] lobe_d3 words=768 cycles=3796 requestStalls=272 outputStalls=391 reset=0
+[TB PASSED] lobe_d2 words=1536 cycles=7454 requestStalls=521 outputStalls=773 reset=0
+[TB PASSED] lobe_d1 words=3072 cycles=14964 requestStalls=1035 outputStalls=1566 reset=0
+[TB PASSED] airway_d3 words=768 cycles=3737 requestStalls=257 outputStalls=376 reset=0
+[TB PASSED] airway_d2 words=1536 cycles=7406 requestStalls=504 outputStalls=707 reset=0
+[TB PASSED] airway_d1 words=3072 cycles=14768 requestStalls=1070 outputStalls=1536 reset=0
+[TB PASSED] vessel_d3 words=768 cycles=3684 requestStalls=224 outputStalls=428 reset=0
+[TB PASSED] vessel_d2 words=1536 cycles=7419 requestStalls=490 outputStalls=786 reset=0
+[TB PASSED] vessel_d1 words=3072 cycles=14936 requestStalls=1082 outputStalls=1538 reset=0
+- tb_concat.sv:42: Verilog $finish
+[TB PASSED] 全部数据验证一致 cases=18 words=1443188 bytes=23091008 cycles=2937190

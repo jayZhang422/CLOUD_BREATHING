@@ -1,0 +1,17 @@
+Time resolution is 1 ps
+Block Memory Generator module tb_batch45_bounds_pw.g_shared.dut.project.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_batch45_bounds_pw.g_shared.dut.project.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_batch45_bounds_pw.g_shared.dut.project.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_batch45_bounds_pw.g_shared.dut.project.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_batch45_bounds_pw.g_shared.dut.skip.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_batch45_bounds_pw.g_shared.dut.skip.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_batch45_bounds_pw.g_shared.dut.skip.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_batch45_bounds_pw.g_shared.dut.skip.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[CASE PASSED] PW bound_positive outputs=68 run_cycles=5575 side=0
+[CASE PASSED] PW bound_negative outputs=68 run_cycles=5576 side=1
+[CASE PASSED] PW bound_negative outputs=68 run_cycles=5562 side=0
+[CASE PASSED] PW bound_positive outputs=68 run_cycles=5562 side=1
+[DRIVER PASSED] PW cases=2 read_stalls=272 output_stalls=60 shared-dot-Golden
+[DRIVER PASSED] PW cases=2 read_stalls=272 output_stalls=55 shared-dot-Golden
+[TB PASSED] PW two independent branches, SHARED=1, 4 full signed INT8 bound cases, contention=3246
+$finish called at time : 93120 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/RTL_Slim_Batch45/tb_batch45_bounds_pw.sv" Line 387

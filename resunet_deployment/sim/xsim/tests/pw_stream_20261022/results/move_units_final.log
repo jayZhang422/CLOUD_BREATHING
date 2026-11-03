@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+[TB PASSED] 全部数据验证一致 runs=2 max_credit=8 blocked=7792 reset_inflight=1 errors_drained=1
+$finish called at time : 52096 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Move_Clock/tb_move_units.sv" Line 117

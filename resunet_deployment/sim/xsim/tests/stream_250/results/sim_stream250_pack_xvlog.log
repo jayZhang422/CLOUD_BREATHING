@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_write_queue_fifo/sim/op_write_queue_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_write_queue_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op_pw_pack_bram/sim/op_pw_pack_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_pw_pack_bram

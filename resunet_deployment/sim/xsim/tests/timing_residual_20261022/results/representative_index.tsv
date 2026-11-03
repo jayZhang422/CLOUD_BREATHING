@@ -1,0 +1,15 @@
+category	slack	startpoint	endpoint	levels	logic_ns	net_ns
+0	-0.227	g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw_shared/project/run_r_cout_reg[3]/C	g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1877]/CE	9	0.990	2.968
+1	-0.221	g_ethernet.u_op_board/u_service/u_engine/d_r_reg[5]/C	g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw_shared/project/quantRequest_rData_mac_0_reg[18]/CE	9	0.871	3.191
+2	-0.206	g_ethernet.u_op_board/u_service/u_engine/u_reader/state_r_reg[1]/C	g_ethernet.u_op_board/u_service/u_engine/u_move_reader/u_responses/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENARDEN	12	1.179	2.610
+3	-0.191	g_ethernet.u_op_board/u_service/u_engine/FSM_sequential_state_r_reg[3]/C	g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg_0_31_224_237/RAMA/I	8	0.666	3.360
+4	-0.113	g_ethernet.u_op_board/u_service/u_engine/d_r_reg[4]_replica/C	g_ethernet.u_op_board/u_service/u_engine/u_reader/address_r_reg[29]/D	15	1.426	2.641
+5	-0.141	g_ethernet.u_op_board/u_service/u_engine/FSM_sequential_state_r_reg[1]/C	g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[158]/R	9	0.807	3.021
+6	-0.108	g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw_shared/project/run_r_cout_reg[3]/C	g_ethernet.u_op_board/u_service/u_engine/input_count_r_reg[10]/CE	12	1.235	2.689
+7	-0.103	g_ethernet.u_op_board/u_service/u_engine/d_r_reg[3]_rep__8/C	g_ethernet.u_op_board/u_service/u_engine/u_bank/u_add/index_r_reg[11]/CE	9	0.906	3.083
+8	-0.116	g_ethernet.u_op_board/u_service/u_engine/d_r_reg[5]/C	g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw_shared/skip/pwWeightBank/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/DINADIN[0]	4	0.469	3.387
+9	-0.068	g_ethernet.u_op_board/u_service/u_engine/d_r_reg[5]/C	g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw_shared/project/issueGroup_r_reg[2]/CE	11	1.093	2.819
+10	-0.076	g_ethernet.u_op_board/u_service/u_engine/d_r_reg[5]/C	g_ethernet.u_op_board/u_mem_cdc/u_responses/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgb.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENARDEN	10	0.732	3.056
+11	-0.061	g_ethernet.u_op_board/u_service/u_engine/d_r_reg[64]/C	g_ethernet.u_op_board/u_service/u_engine/tile_words_r_reg[1]/CE	5	0.635	3.110
+12	-0.101	g_ethernet.u_op_board/u_service/u_engine/u_reader/state_r_reg[1]/C	g_ethernet.u_op_board/u_service/u_engine/u_bank/u_core_4/lineMem_1_reg_1/ENBWREN	5	0.511	3.224
+13	-0.097	g_ethernet.u_op_board/u_service/u_engine/result_bytes_o_reg[5]/C	g_ethernet.u_op_board/u_service/status_r_reg[0]/CE	14	1.458	2.324

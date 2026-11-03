@@ -1,0 +1,153 @@
+{
+  "status": "production_candidate_functionally_verified_physical_timing_pending",
+  "target_compute_hz": 250000000,
+  "scope": {
+    "hardware_cycle_baseline": "RTL same-condition baseline and host snapshot integration complete; new board measurements pending",
+    "dataflow_and_structural_timing_changes": "production-integrated and self-checking regressions passed",
+    "physical_250mhz_acceptance": "pending user synthesis, implementation and board validation",
+    "bulk_bin_transfer_and_autonomous_batch": "deferred by user",
+    "synthesis_launched": false,
+    "ooc_synthesis_launched": false,
+    "implementation_launched": false,
+    "bitstream_generated": false
+  },
+  "mcp": {
+    "endpoint": "http://127.0.0.1:8088",
+    "session_id": "vivado-20261021-211731-c8441e4a",
+    "rtl_simulator": "XSim",
+    "all_rtl_simulations_via_mcp": true,
+    "official_ip_operations_via_mcp": true
+  },
+  "changes": [
+    "op11/PW/op12 shared streaming writeback with response-drained completion fence",
+    "official BRAM double-bank P4-to-P16 pack and segmented DDR addresses",
+    "tile-boundary precomputation and registered performance events",
+    "PW registered weight group bases and mask-before-multiply stage",
+    "DW3/DW5/Add ready cuts; DW5 BRAM operand stage",
+    "four Scala-generated RTL files synchronized to production",
+    "suite performance snapshots after RELEASE and original wall timing; old firmware fallback"
+  ],
+  "ip": {
+    "name": "op_pw_pack_bram",
+    "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+    "write_width_a": 32,
+    "write_width_b": 128,
+    "read_width_b": 128,
+    "nominal_bram36": 2,
+    "resolved_bug": "B-port address alias with mismatched B write/read widths"
+  },
+  "verification": [
+    {
+      "test": "board/service/ROM/DDR RPC",
+      "cases": 21,
+      "result": "PASS",
+      "log": "results/sim_stream250_rpc_simulate.log",
+      "line": 116,
+      "note": "before final counter13 semantic correction"
+    },
+    {
+      "test": "pack and segmented writer",
+      "cases": 6,
+      "result": "PASS",
+      "log": "results/sim_stream250_pack_simulate.log",
+      "line": 9
+    },
+    {
+      "test": "PW contention and stalls",
+      "runs": 22,
+      "result": "PASS",
+      "log": "results/sim_tile_pw_stall_simulate.log",
+      "line": 39
+    },
+    {
+      "test": "PW reset during prefetch and restart",
+      "runs": 12,
+      "result": "PASS",
+      "log": "results/sim_tile_pw_restart_simulate.log",
+      "line": 27
+    },
+    {
+      "test": "op12 frozen/current fast+slow DDR",
+      "cases": 2,
+      "runners": 4,
+      "result": "PASS",
+      "log": "results/sim_stream250_op12_compare_simulate.log",
+      "line": 66
+    },
+    {
+      "test": "final RPC with independently checked writer_stall",
+      "cases": 5,
+      "result": "PASS",
+      "log": "results/final_rpc_simulate.log",
+      "line": 52
+    },
+    {
+      "test": "production top compile and elaborate",
+      "result": "PASS",
+      "log": "results/top_elaborate.log",
+      "line": 274,
+      "note": "not synthesis"
+    },
+    {
+      "test": "relevant host diagnostics tests",
+      "tests": 5,
+      "result": "PASS",
+      "log": "results/python_current_tests.log"
+    }
+  ],
+  "broader_python_suite": {
+    "passed": 22,
+    "total": 24,
+    "unresolved": "2 preexisting missing historical FullNet fixtures; full suite not claimed passing"
+  },
+  "cycle_comparison": {
+    "units": "compute clock cycles measured in RTL simulation",
+    "rpc_file": "results/rpc_cycle_comparison.json",
+    "op12_file": "results/op12_cycle_comparison.json",
+    "physical_board_speedup_claimed": false,
+    "small_phase_variations_treated_as_flat": true
+  },
+  "old_routed_timing": {
+    "wns_ns": -1.069,
+    "tns_ns": -4715.842,
+    "setup_failing_endpoints": 19080,
+    "whs_ns": 0.003,
+    "new_candidate_timing_available": false
+  },
+  "old_resources": {
+    "lut": 66272,
+    "ff": 84378,
+    "clb": 15162,
+    "bram_tile": 322,
+    "uram": 36,
+    "dsp": 1232,
+    "new_candidate_resources_available": false
+  },
+  "project": {
+    "top": "top",
+    "default_compute_250mhz": true,
+    "simulation_fileset": "sim_1",
+    "simulation_top": "tb_mkdc",
+    "test_sources_in_synthesis": [],
+    "pack_ip_locked": false,
+    "temporary_stream250_filesets_removed": true
+  },
+  "cleanup": {
+    "status": "incomplete_automatic_review_rejection",
+    "reason": "blocked by policy",
+    "remaining_runtime_directories": 2,
+    "remaining_runtime_files": 122,
+    "remaining_runtime_bytes": 123224281,
+    "remaining_runtime_mib": 117.52,
+    "additional_native_log_copies_approx_mib": 43,
+    "details": "results/cleanup_pending.json",
+    "no_alternative_deletion_bypass": true
+  },
+  "handoff": {
+    "document": "verification.md",
+    "command": "python .\\fixed_fpga_benchmark.py suite --case-dir .\\output\\ct_01 --tasks vessel tumor lobe airway --host 192.168.1.10 --port 8080 --bind 192.168.1.102 --repeat 3 --run-timeout 120",
+    "working_directory": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\script\\python\\BIN_UDP",
+    "lobe_golden": "existing independent Golden",
+    "other_models": "repeat SHA and prior consistency; independent accuracy not claimed"
+  }
+}

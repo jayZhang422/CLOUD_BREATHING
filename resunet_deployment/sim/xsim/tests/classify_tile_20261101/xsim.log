@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sun Nov  1 17:59:06 2026
+# Process ID         : 35240
+# Current directory  : E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Classify_Tile_20261101
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/ctile_mcp/xsim_script.tcl}
+# Log file           : E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Classify_Tile_20261101/xsim.log
+# Journal file       : E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Classify_Tile_20261101\xsim.jou
+# Running On         : MSI
+# Platform           : Windows 11
+# Operating System   : 22631
+# Processor Detail   : Intel(R) Core(TM) i7-14700HX
+# CPU Frequency      : 2304 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 16940 MB
+# Swap memory        : 23622 MB
+# Total Virtual      : 40563 MB
+# Available Virtual  : 15672 MB
+#-----------------------------------------------------------
+source xsim.dir/ctile_mcp/xsim_script.tcl
+# xsim {ctile_mcp} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+[CASE PASSED] classify tile   ORI=1 BIT=5 CH=1 MAP=0 PIX=8192 ERR=1 cycles=1014 reads=13 writes=0
+[CASE PASSED] classify tile   ORI=2 BIT=5 CH=1 MAP=0 PIX=8192 ERR=2 cycles=5137 reads=65 writes=0
+[CASE PASSED] classify legacy ORI=1 BIT=5 CH=1 MAP=0 PIX=8192 ERR=1 cycles=9887 reads=148 writes=6
+[CASE PASSED] classify tile   ORI=1 BIT=5 CH=1 MAP=1 PIX=8192 ERR=0 cycles=172915 reads=2498 writes=512
+[CASE PASSED] classify tile   ORI=2 BIT=0 CH=5 MAP=1 PIX=8192 ERR=0 cycles=175820 reads=1986 writes=512
+[CASE PASSED] classify tile   ORI=1 BIT=0 CH=5 MAP=0 PIX=8192 ERR=0 cycles=186391 reads=4162 writes=512
+[CASE PASSED] classify tile   ORI=1 BIT=6 CH=2 MAP=0 PIX=16384 ERR=0 cycles=378055 reads=9284 writes=1024
+[CASE PASSED] classify tile   ORI=2 BIT=8 CH=1 MAP=2 PIX=8192 ERR=0 cycles=390871 reads=8770 writes=512
+[CASE PASSED] classify legacy ORI=0 BIT=6 CH=2 MAP=1 PIX=8192 ERR=0 cycles=434443 reads=5120 writes=512
+[CASE PASSED] classify legacy ORI=2 BIT=0 CH=5 MAP=1 PIX=8192 ERR=0 cycles=618753 reads=8046 writes=512
+[CASE PASSED] classify legacy ORI=1 BIT=5 CH=1 MAP=1 PIX=8192 ERR=0 cycles=619314 reads=8620 writes=512
+[CASE PASSED] classify legacy ORI=2 BIT=8 CH=1 MAP=2 PIX=8192 ERR=0 cycles=796849 reads=11840 writes=512
+[CASE PASSED] classify legacy ORI=1 BIT=0 CH=5 MAP=0 PIX=8192 ERR=0 cycles=810209 reads=11520 writes=512
+[TILE PERF] case1 ORI1 BIT0 CH5  tile=186391 legacy=810209 speedup 4.35x (tile reads 4162, legacy reads 11520)
+[TILE PERF] case2 ORI1 BIT5 CH1  tile=172915 legacy=619314 speedup 3.58x (tile reads 2498, legacy reads 8620)
+[TILE PERF] case3 ORI2 BIT8 CH1  tile=390871 legacy=796849 speedup 2.04x (tile reads 8770, legacy reads 11840)
+[TILE PERF] case4 ORI2 BIT0 CH5  tile=175820 legacy=618753 speedup 3.52x (tile reads 1986, legacy reads 8046)
+[TB PASSED] 全部数据验证一致 tile=5 legacy=5 error=3 cycles=810225
+$finish called at time : 3240900 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Classify_Tile_20261101/tb_volume_classify_tile.sv" Line 295
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:57 . Memory (MB): peak = 238.035 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Nov  1 18:00:06 2026...

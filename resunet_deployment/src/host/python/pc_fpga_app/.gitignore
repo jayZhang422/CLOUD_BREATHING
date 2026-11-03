@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+output/
+source/
+assets/source_manifest.json
+*.pyc

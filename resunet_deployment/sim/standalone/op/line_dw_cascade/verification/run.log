@@ -1,0 +1,1 @@
+[TB PASSED] cascaded_windows=128 line3_latency=10 line5_latency=21 dw3_values=2048 dw5_values=2048 merge_values=2048 input_stalls=822 linebuffer_stalls=155 dw_stalls=457 merge_output_stalls=13

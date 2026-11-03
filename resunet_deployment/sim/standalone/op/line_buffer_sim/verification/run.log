@@ -1,0 +1,153 @@
+[info] welcome to sbt 1.10.2 (Eclipse Adoptium Java 17.0.20.1)
+[info] loading project definition from /home/jayzhang/Op_Compile/project
+[info] loading settings for project op_compile from build.sbt ...
+[info] set current project to op_compile (in build file:/home/jayzhang/Op_Compile/)
+[info] compiling 1 Scala source to /home/jayzhang/Op_Compile/target/scala-2.13/classes ...
+[info] done compiling
+[info] running (fork) LineBufferSim 
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 1986.0MiB
+[info] [Runtime] Current date : 2026.10.09 21:07:39
+[info] [Progress] at 0.000 : Elaborate components
+[info] [Progress] at 0.282 : Checks and transforms
+[info] [Progress] at 0.404 : Generate Verilog to verification/small_k3/simWorkspace/tmp/job_1
+[info] [Done] at 0.464
+[info] [Progress] Simulation workspace in /home/jayzhang/Op_Compile/verification/small_k3/simWorkspace/LineBuffer
+[info] [Progress] Verilator compilation started
+[info] [info] Found cached verilator binaries
+[info] [Progress] Verilator compilation done in 435.191 ms
+[info] [Progress] Start LineBuffer small_k3 simulation with seed 20261009
+[info] [TB PASSED] small_k3 全部数据验证一致 windows=768 cells=6912 cycles=1721 inputStalls=462 outputStalls=400
+[info] [Done] Simulation done in 160.878 ms
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 1986.0MiB
+[info] [Runtime] Current date : 2026.10.09 21:07:40
+[info] [Progress] at 1.098 : Elaborate components
+[info] [Progress] at 1.115 : Checks and transforms
+[info] [Progress] at 1.155 : Generate Verilog to verification/small_k5/simWorkspace/tmp/job_2
+[info] [Done] at 1.184
+[info] [Progress] Simulation workspace in /home/jayzhang/Op_Compile/verification/small_k5/simWorkspace/LineBuffer
+[info] [Progress] Verilator compilation started
+[info] [Progress] Verilator compilation done in 3293.084 ms
+[info] [Progress] Start LineBuffer small_k5 simulation with seed 20261010
+[info] [TB PASSED] small_k5 全部数据验证一致 windows=768 cells=19200 cycles=2128 inputStalls=723 outputStalls=416
+[info] [Done] Simulation done in 114.246 ms
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 1986.0MiB
+[info] [Runtime] Current date : 2026.10.09 21:07:44
+[info] [Progress] at 4.617 : Elaborate components
+[info] [Progress] at 4.624 : Checks and transforms
+[info] [Progress] at 4.638 : Generate Verilog to verification/odd_k3/simWorkspace/tmp/job_3
+[info] [Done] at 4.649
+[info] [Progress] Simulation workspace in /home/jayzhang/Op_Compile/verification/odd_k3/simWorkspace/LineBuffer
+[info] [Progress] Verilator compilation started
+[info] [Progress] Verilator compilation done in 3326.862 ms
+[info] [Progress] Start LineBuffer odd_k3 simulation with seed 20261011
+[info] [TB PASSED] odd_k3 全部数据验证一致 windows=273 cells=2457 cycles=742 inputStalls=196 outputStalls=115
+[info] [Done] Simulation done in 32.256 ms
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 1986.0MiB
+[info] [Runtime] Current date : 2026.10.09 21:07:47
+[info] [Progress] at 8.051 : Elaborate components
+[info] [Progress] at 8.067 : Checks and transforms
+[info] [Progress] at 8.086 : Generate Verilog to verification/odd_k5/simWorkspace/tmp/job_4
+[info] [Done] at 8.098
+[info] [Progress] Simulation workspace in /home/jayzhang/Op_Compile/verification/odd_k5/simWorkspace/LineBuffer
+[info] [Progress] Verilator compilation started
+[info] [Progress] Verilator compilation done in 3510.592 ms
+[info] [Progress] Start LineBuffer odd_k5 simulation with seed 20261012
+[info] [TB PASSED] odd_k5 全部数据验证一致 windows=273 cells=6825 cycles=1084 inputStalls=386 outputStalls=175
+[info] [Done] Simulation done in 47.881 ms
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 1986.0MiB
+[info] [Runtime] Current date : 2026.10.09 21:07:51
+[info] [Progress] at 11.698 : Elaborate components
+[info] [Progress] at 11.711 : Checks and transforms
+[info] [Progress] at 11.722 : Generate Verilog to verification/minimum_k3/simWorkspace/tmp/job_5
+[info] [Done] at 11.731
+[info] [Progress] Simulation workspace in /home/jayzhang/Op_Compile/verification/minimum_k3/simWorkspace/LineBuffer
+[info] [Progress] Verilator compilation started
+[info] [Progress] Verilator compilation done in 3211.105 ms
+[info] [Progress] Start LineBuffer minimum_k3 simulation with seed 20261013
+[info] [TB PASSED] minimum_k3 全部数据验证一致 windows=3 cells=27 cycles=90 inputStalls=37 outputStalls=27
+[info] [Done] Simulation done in 8.831 ms
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 1986.0MiB
+[info] [Runtime] Current date : 2026.10.09 21:07:54
+[info] [Progress] at 15.000 : Elaborate components
+[info] [Progress] at 15.007 : Checks and transforms
+[info] [Progress] at 15.020 : Generate Verilog to verification/minimum_k5/simWorkspace/tmp/job_6
+[info] [Done] at 15.030
+[info] [Progress] Simulation workspace in /home/jayzhang/Op_Compile/verification/minimum_k5/simWorkspace/LineBuffer
+[info] [Progress] Verilator compilation started
+[info] [Progress] Verilator compilation done in 3035.654 ms
+[info] [Progress] Start LineBuffer minimum_k5 simulation with seed 20261014
+[info] [TB PASSED] minimum_k5 全部数据验证一致 windows=3 cells=75 cycles=153 inputStalls=58 outputStalls=13
+[info] [Done] Simulation done in 23.251 ms
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 1986.0MiB
+[info] [Runtime] Current date : 2026.10.09 21:07:57
+[info] [Progress] at 18.136 : Elaborate components
+[info] [Progress] at 18.142 : Checks and transforms
+[info] [Progress] at 18.151 : Generate Verilog to verification/tall_k5/simWorkspace/tmp/job_7
+[info] [Done] at 18.158
+[info] [Progress] Simulation workspace in /home/jayzhang/Op_Compile/verification/tall_k5/simWorkspace/LineBuffer
+[info] [Progress] Verilator compilation started
+[info] [Progress] Verilator compilation done in 3517.515 ms
+[info] [Progress] Start LineBuffer tall_k5 simulation with seed 20261015
+[info] [TB PASSED] tall_k5 全部数据验证一致 windows=861 cells=21525 cycles=2432 inputStalls=1040 outputStalls=553
+[info] [Done] Simulation done in 108.273 ms
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 1986.0MiB
+[info] [Runtime] Current date : 2026.10.09 21:08:01
+[info] [Progress] at 21.963 : Elaborate components
+[info] [Progress] at 21.969 : Checks and transforms
+[info] [Progress] at 21.977 : Generate Verilog to verification/full_k3/simWorkspace/tmp/job_8
+[info] [Done] at 21.985
+[info] [Progress] Simulation workspace in /home/jayzhang/Op_Compile/verification/full_k3/simWorkspace/LineBuffer
+[info] [Progress] Verilator compilation started
+[info] [Progress] Verilator compilation done in 3422.011 ms
+[info] [Progress] Start LineBuffer full_k3 simulation with seed 20261016
+[info] [TB PASSED] full_k3 全部数据验证一致 windows=262144 cells=2359296 cycles=268843 inputStalls=1535 outputStalls=0
+[info] [Done] Simulation done in 5398.699 ms
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 1986.0MiB
+[info] [Runtime] Current date : 2026.10.09 21:08:10
+[info] [Progress] at 30.938 : Elaborate components
+[info] [Progress] at 30.942 : Checks and transforms
+[info] [Progress] at 30.950 : Generate Verilog to verification/full_k5/simWorkspace/tmp/job_9
+[info] [Done] at 30.957
+[info] [Progress] Simulation workspace in /home/jayzhang/Op_Compile/verification/full_k5/simWorkspace/LineBuffer
+[info] [Progress] Verilator compilation started
+[info] [Progress] Verilator compilation done in 3281.645 ms
+[info] [Progress] Start LineBuffer full_k5 simulation with seed 20261017
+[info] [TB PASSED] full_k5 全部数据验证一致 windows=262144 cells=6553600 cycles=274019 inputStalls=3076 outputStalls=0
+[info] [Done] Simulation done in 9422.642 ms
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 1986.0MiB
+[info] [Runtime] Current date : 2026.10.09 21:08:23
+[info] [Progress] at 43.835 : Elaborate components
+[info] [Progress] at 43.839 : Checks and transforms
+[info] [Progress] at 43.843 : Generate Verilog to verification/stress_k3/simWorkspace/tmp/job_10
+[info] [Done] at 43.848
+[info] [Progress] Simulation workspace in /home/jayzhang/Op_Compile/verification/stress_k3/simWorkspace/LineBuffer
+[info] [Progress] Verilator compilation started
+[info] [Progress] Verilator compilation done in 3275.006 ms
+[info] [Progress] Start LineBuffer stress_k3 simulation with seed 20261018
+[info] [TB PASSED] stress_k3 全部数据验证一致 windows=524288 cells=4718592 cycles=944192 inputStalls=239833 outputStalls=285065
+[info] [Done] Simulation done in 16989.800 ms
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 1986.0MiB
+[info] [Runtime] Current date : 2026.10.09 21:08:44
+[info] [Progress] at 64.341 : Elaborate components
+[info] [Progress] at 64.345 : Checks and transforms
+[info] [Progress] at 64.352 : Generate Verilog to verification/stress_k5/simWorkspace/tmp/job_11
+[info] [Done] at 64.357
+[info] [Progress] Simulation workspace in /home/jayzhang/Op_Compile/verification/stress_k5/simWorkspace/LineBuffer
+[info] [Progress] Verilator compilation started
+[info] [Progress] Verilator compilation done in 3196.086 ms
+[info] [Progress] Start LineBuffer stress_k5 simulation with seed 20261019
+[info] [TB PASSED] stress_k5 全部数据验证一致 windows=524288 cells=13107200 cycles=951072 inputStalls=243742 outputStalls=285356
+[info] [Done] Simulation done in 23756.603 ms
+[info] [TB PASSED] ALL cases=11 windows=1575813 cells=26795709
+[success] Total time: 95 s (01:35), completed Oct 9, 2026, 9:09:11 PM

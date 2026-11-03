@@ -1,0 +1,156 @@
+# ethernet   2026-11-02T14:29:35+08:00
+# Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+# cmd: bash -c make selftest && make drop
+mkdir -p build_cache/obj_dir results
+verilator --cc --exe --build -O2 --trace --Mdir build_cache/obj_dir -Wno-WIDTH -Wno-UNUSED -Wno-UNDRIVEN -Wno-CASEINCOMPLETE -Wno-DECLFILENAME -Wno-VARHIDDEN -Wno-PINMISSING -I../../../src/rtl/ethernet/udp -I../../../src/rtl/ethernet/arp --top-module eth_top rtl/crc32_iso_hdlc.sv rtl/protocol_parser.sv rtl/protocol_builder.sv rtl/eth_top.sv ../../../src/rtl/ethernet/udp/udp_rx.v ../../../src/rtl/ethernet/udp/udp_tx.v ../../../src/rtl/ethernet/arp/crc32_d8.v tb/sim_main.cpp
+make[1]: Entering directory '/tmp/sim.74qE83/sim/standalone/ethernet/build_cache/obj_dir'
+g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -Os  -c -o sim_main.o ../../tb/sim_main.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated.o /usr/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vcd_c.o /usr/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_threads.o /usr/share/verilator/include/verilated_threads.cpp
+python3 /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Veth_top.cpp Veth_top___024root__DepSet_h0c15e98a__0.cpp Veth_top___024root__DepSet_h2163ba09__0.cpp Veth_top__Trace__0.cpp Veth_top__ConstPool_0.cpp Veth_top___024root__Slow.cpp Veth_top___024root__DepSet_h0c15e98a__0__Slow.cpp Veth_top___024root__DepSet_h2163ba09__0__Slow.cpp Veth_top__Syms.cpp Veth_top__Trace__0__Slow.cpp Veth_top__TraceDecls__0__Slow.cpp > Veth_top__ALL.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o Veth_top__ALL.o Veth_top__ALL.cpp
+echo "" > Veth_top__ALL.verilator_deplist.tmp
+g++    sim_main.o verilated.o verilated_vcd_c.o verilated_threads.o Veth_top__ALL.a    -pthread -lpthread -latomic   -o Veth_top
+rm Veth_top__ALL.verilator_deplist.tmp
+make[1]: Leaving directory '/tmp/sim.74qE83/sim/standalone/ethernet/build_cache/obj_dir'
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.344 MB sources in 8 modules, into 0.566 MB in 11 C++ files needing 0.000 MB
+- Verilator: Walltime 7.175 s (elab=0.005, cvt=0.046, bld=7.110); cpu 0.065 s on 1 threads; alloced 16.676 MB
+mkdir -p results
+./build_cache/obj_dir/Veth_top --selftest --trace
+%Warning: previous dump at t=1, requesting t=1, dump call ignored
+%Warning: (above warning repeated 29 times in total; verilator VCD duplicate-time dumps, harmless)
+================================================================
+ CT-FPGA 以太网收发链路 内建自测
+ 整卷: 1 层, 256 包, whole_crc32=0xF4ADDD60
+================================================================
+
+[1] IMAGE_BEGIN -> 期望 ACK(ACCEPTED=0x00)
+    [ OK ] IMAGE_BEGIN Body = 76 字节
+%Warning: previous dump at t=30, requesting t=30, dump call ignored
+%Warning: (above warning repeated 278 times in total; verilator VCD duplicate-time dumps, harmless)
+    [ OK ] Msg_Type = ACK(0x81)
+    [ OK ] Transfer_ID 回显
+    [ OK ] ACK Body = 8 字节
+    [ OK ] Acked_Msg_Type = IMAGE_BEGIN
+    [ OK ] Status = ACCEPTED(0x00)
+    [ OK ] Acked_Sequence = 0 (IMAGE_BEGIN 的序号)
+
+[2] 256 × IMAGE_DATA -> 期望不回帧, 计数=256
+%Warning: previous dump at t=308, requesting t=308, dump call ignored
+%Warning: (above warning repeated 348064 times in total; verilator VCD duplicate-time dumps, harmless)
+    FPGA 计数 rx_pkt_cnt_o = 256 (期望 256)
+    [ OK ] 收到的 IMAGE_DATA 数 = 实际发送数
+    [ OK ] 无 CRC 错帧
+
+[3] BATCH_END -> 期望 BATCH_STATUS + 缺包位图
+%Warning: previous dump at t=348372, requesting t=348372, dump call ignored
+%Warning: (above warning repeated 298 times in total; verilator VCD duplicate-time dumps, harmless)
+    [ OK ] Msg_Type = BATCH_STATUS(0x83)
+    [ OK ] Body = 16 + 32(位图) = 48 字节
+    [ OK ] Batch_ID = 0
+    [ OK ] Expected_Packets = 256
+    [ OK ] Received_Packets = 实际收到数
+    [ OK ] Bitmap_Bytes = 32
+    [ OK ] Status = COMPLETE(0x00)
+    FPGA 位图报缺失 0 个包, 本地丢了 0 个包
+    [ OK ] 缺包位图与本地丢包集合完全一致
+
+[4] IMAGE_END -> 期望 IMAGE_READY
+%Warning: previous dump at t=348670, requesting t=348670, dump call ignored
+%Warning: (above warning repeated 270 times in total; verilator VCD duplicate-time dumps, harmless)
+    [ OK ] Msg_Type = IMAGE_READY(0x84)
+    [ OK ] Body = 32 字节
+    Status=0x00 Slices=1 Packets=256 Bytes=262144
+    [ OK ] Received_Slices = 1
+    [ OK ] Received_Packets = 实收数
+    [ OK ] Received_Bytes = 262144
+    [ OK ] Status = READY_OK(0x00)
+
+[5] INFER_TRIGGER -> 期望 INFER_DONE(0xDEADBEEF)
+%Warning: previous dump at t=348940, requesting t=348940, dump call ignored
+%Warning: (above warning repeated 242 times in total; verilator VCD duplicate-time dumps, harmless)
+    [ OK ] Msg_Type = INFER_DONE(0x82)
+    [ OK ] Body = 16 字节
+    [ OK ] Task_ID 回显
+    [ OK ] Status = OK(0x00)
+    [ OK ] Result = 0xDEADBEEF
+
+================================================================
+ 自测结束: 全部通过 (失败项 0)
+ 仿真推进周期数: 349182
+================================================================
+================================================================
+ 仿真完成! 波形文件: results/wave.vcd
+ 查看波形: gtkwave results/wave.vcd &
+================================================================
+mkdir -p results
+./build_cache/obj_dir/Veth_top --selftest --drop-mod 8 --trace
+%Warning: previous dump at t=1, requesting t=1, dump call ignored
+%Warning: (above warning repeated 29 times in total; verilator VCD duplicate-time dumps, harmless)
+================================================================
+ CT-FPGA 以太网收发链路 内建自测
+ 整卷: 1 层, 256 包, whole_crc32=0xF4ADDD60
+ 故意丢包: 每 8 个包丢 1 个 (第二包号为 index % 8 == 7)
+================================================================
+
+[1] IMAGE_BEGIN -> 期望 ACK(ACCEPTED=0x00)
+    [ OK ] IMAGE_BEGIN Body = 76 字节
+%Warning: previous dump at t=30, requesting t=30, dump call ignored
+%Warning: (above warning repeated 278 times in total; verilator VCD duplicate-time dumps, harmless)
+    [ OK ] Msg_Type = ACK(0x81)
+    [ OK ] Transfer_ID 回显
+    [ OK ] ACK Body = 8 字节
+    [ OK ] Acked_Msg_Type = IMAGE_BEGIN
+    [ OK ] Status = ACCEPTED(0x00)
+    [ OK ] Acked_Sequence = 0 (IMAGE_BEGIN 的序号)
+
+[2] 256 × IMAGE_DATA -> 期望不回帧, 计数=256
+%Warning: previous dump at t=308, requesting t=308, dump call ignored
+%Warning: (above warning repeated 305056 times in total; verilator VCD duplicate-time dumps, harmless)
+    FPGA 计数 rx_pkt_cnt_o = 224 (期望 224)
+    [ OK ] 收到的 IMAGE_DATA 数 = 实际发送数
+    [ OK ] 无 CRC 错帧
+
+[3] BATCH_END -> 期望 BATCH_STATUS + 缺包位图
+%Warning: previous dump at t=305364, requesting t=305364, dump call ignored
+%Warning: (above warning repeated 298 times in total; verilator VCD duplicate-time dumps, harmless)
+    [ OK ] Msg_Type = BATCH_STATUS(0x83)
+    [ OK ] Body = 16 + 32(位图) = 48 字节
+    [ OK ] Batch_ID = 0
+    [ OK ] Expected_Packets = 256
+    [ OK ] Received_Packets = 实际收到数
+    [ OK ] Bitmap_Bytes = 32
+    [ OK ] Status = MISSING(0x01)
+    FPGA 位图报缺失 32 个包, 本地丢了 32 个包
+    [ OK ] 缺包位图与本地丢包集合完全一致
+
+[4] IMAGE_END -> 期望 IMAGE_READY
+%Warning: previous dump at t=305662, requesting t=305662, dump call ignored
+%Warning: (above warning repeated 270 times in total; verilator VCD duplicate-time dumps, harmless)
+    [ OK ] Msg_Type = IMAGE_READY(0x84)
+    [ OK ] Body = 32 字节
+    Status=0x01 Slices=1 Packets=224 Bytes=262144
+    [ OK ] Received_Slices = 1
+    [ OK ] Received_Packets = 实收数
+    [ OK ] Received_Bytes = 262144
+    [ OK ] Status = MISSING(0x01)
+
+[5] INFER_TRIGGER -> 期望 INFER_DONE(0xDEADBEEF)
+%Warning: previous dump at t=305932, requesting t=305932, dump call ignored
+%Warning: (above warning repeated 242 times in total; verilator VCD duplicate-time dumps, harmless)
+    [ OK ] Msg_Type = INFER_DONE(0x82)
+    [ OK ] Body = 16 字节
+    [ OK ] Task_ID 回显
+    [ OK ] Status = OK(0x00)
+    [ OK ] Result = 0xDEADBEEF
+
+================================================================
+ 自测结束: 全部通过 (失败项 0)
+ 仿真推进周期数: 306174
+================================================================
+================================================================
+ 丢包测试完成! 波形文件: results/wave.vcd
+================================================================
+# exit=0

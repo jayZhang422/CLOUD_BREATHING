@@ -1,0 +1,18 @@
+Time resolution is 1 ps
+Block Memory Generator module tb_decoder_d3.u_bounds.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_decoder_d3.dut.u_service.u_engine.u_bank.u_pw.pwWeightUram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_decoder_d3.rom.u_rom.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[SEED] 20261017
+[REGRESSION] cases_max.txt
+[CASE PASS] read_only_coefficients
+[CASE PASS] image_metadata_snapshot_and_online_rejection
+[CASE PASS] DW_P16_descriptor_rejection cases=6
+[CASE PASS] uram_all_6144_addresses latency=1 hold=4095/4096/6143
+[CASE PASS] Upsample descriptor rejection cases=9
+[CASE] up_256x256_g1 cycle=17301
+[CASE PASS] up_256x256_g1 bytes=4194304 mac_bytes=0 cycle=18152709
+[COVERAGE] Upsample output_words=262144 stalled_cycles=5387280
+[TB PASSED] 全部数据验证一致 cases=1 cycles=18152709 rom_reads=0 ddr_reads=327744 ddr_writes=262144
+$finish called at time : 54458128 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Decoder_D3/tb_decoder_d3.sv" Line 468

@@ -1,0 +1,28 @@
+Time resolution is 1 ps
+Block Memory Generator module tb_tile_pw(LONG_STALL=1'b1,RESTART=1'b1).g_shared.dut.project.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_tile_pw(LONG_STALL=1'b1,RESTART=1'b1).g_shared.dut.project.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_tile_pw(LONG_STALL=1'b1,RESTART=1'b1).g_shared.dut.project.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_tile_pw(LONG_STALL=1'b1,RESTART=1'b1).g_shared.dut.project.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_tile_pw(LONG_STALL=1'b1,RESTART=1'b1).g_shared.dut.project.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_tile_pw(LONG_STALL=1'b1,RESTART=1'b1).g_shared.dut.skip.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_tile_pw(LONG_STALL=1'b1,RESTART=1'b1).g_shared.dut.skip.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_tile_pw(LONG_STALL=1'b1,RESTART=1'b1).g_shared.dut.skip.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_tile_pw(LONG_STALL=1'b1,RESTART=1'b1).g_shared.dut.skip.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_tile_pw(LONG_STALL=1'b1,RESTART=1'b1).g_shared.dut.skip.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[CASE PASSED] PW lobe_e1.expand outputs=4096 run_cycles=9115 side=0
+[CASE PASSED] PW lobe_e1.expand outputs=4096 run_cycles=9112 side=0
+[CASE PASSED] PW lobe_mid.project outputs=512 run_cycles=2416 side=0
+[CASE PASSED] PW tumor_mid.project outputs=2048 run_cycles=22724 side=0
+[CASE PASSED] PW tumor_d3.expand outputs=4096 run_cycles=57554 side=0
+[CASE PASSED] PW tumor_head outputs=1024 run_cycles=19359 side=0
+[CASE PASSED] PW directed_17_5_19 outputs=38 run_cycles=255 side=0
+[CASE PASSED] PW directed_191_127_17 outputs=544 run_cycles=3501 side=0
+[CASE PASSED] PW directed_192_128_33 outputs=1056 run_cycles=5890 side=0
+[CASE PASSED] PW directed_768_512_1 outputs=128 run_cycles=2200 side=0
+[CASE PASSED] PW directed_767_511_3 outputs=384 run_cycles=7438 side=0
+[CASE PASSED] PW shift0_signed_saturation outputs=14 run_cycles=71 side=0
+[COVERAGE] side=0 completed_runs=12 reset_during_prefetch=1
+[DRIVER PASSED] PW cases=11 read_stalls=1773 output_stalls=12147 shared-dot-Golden
+[OVERLAP] input project=5841 skip=0 output project=338 skip=0
+[TB PASSED] PW tile Golden runs=12 restart=1 contention=0
+$finish called at time : 1323080 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/PW_DoubleBuffer/tb_tile_pw.sv" Line 376

@@ -1,0 +1,13 @@
+{
+  "data_dir": "path/to/ct_dicom_dir_or_zip",
+  "case_dir": "output/ct_01",
+  "host": "192.168.1.10",
+  "port": 8080,
+  "bind": "192.168.1.102",
+  "timeout": 1.0,
+  "image_base": 4194304,
+  "batch_slices": 1,
+  "iterations": 15,
+  "passband": 0.08,
+  "max_faces": 150000
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "simset": "sim_fuse_up_engine",
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_fuse_up_engine\\behav\\xsim",
+    "MiB": 330.92
+  },
+  {
+    "simset": "sim_fuse_up_rpc",
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_fuse_up_rpc\\behav\\xsim",
+    "MiB": 457.61
+  },
+  {
+    "simset": "sim_pwstream_op12",
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_op12\\behav\\xsim",
+    "MiB": 107.55
+  },
+  {
+    "simset": "sim_run_drain",
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_run_drain\\behav\\xsim",
+    "MiB": 138.42
+  },
+  {
+    "simset": "sim_run_drain_before",
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_run_drain_before\\behav\\xsim",
+    "MiB": 93.34
+  }
+]

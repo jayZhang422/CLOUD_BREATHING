@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGA/ESDC/lung_planer/build/work/lung_planner/lung_planner.gen/sources_1/ip/dpm_fp_sqrt/sim/dpm_fp_sqrt.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dpm_fp_sqrt'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGA/ESDC/lung_planer/build/work/lung_planner/lung_planner.gen/sources_1/ip/dpm_fp_divide/sim/dpm_fp_divide.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dpm_fp_divide'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGA/ESDC/lung_planer/build/work/lung_planner/lung_planner.gen/sources_1/ip/dpm_fp_mul/sim/dpm_fp_mul.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dpm_fp_mul'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/FPGA/ESDC/lung_planer/build/work/lung_planner/lung_planner.gen/sources_1/ip/dpm_fp_add/sim/dpm_fp_add.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dpm_fp_add'

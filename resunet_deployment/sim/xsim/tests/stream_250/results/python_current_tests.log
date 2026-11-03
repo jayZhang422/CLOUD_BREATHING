@@ -1,0 +1,29 @@
+[CYCLES head] total=100, load=20, run=70, output_stall=3, DDR_wait=5, hardware=0.000001s
+[RUN 1/1 SLICE 0] upload=0.000s, FPGA=0.000s, read=0.000s, wall=0.000s, sha256=cbe2268747c9c8072c7f9926f2288f270637dc55bb9d14d3368361d5e47d25be
+[AVERAGE SLICE 0] FPGA=0.000s, wall=0.000s (1 runs)
+[CYCLES head] total=100, load=20, run=70, output_stall=3, DDR_wait=5, hardware=0.000001s
+[RUN 1/3 SLICE 68] upload=0.000s, FPGA=0.000s, read=0.000s, wall=0.000s, sha256=cbe2268747c9c8072c7f9926f2288f270637dc55bb9d14d3368361d5e47d25be
+[CYCLES head] total=100, load=20, run=70, output_stall=3, DDR_wait=5, hardware=0.000001s
+[RUN 1/3 SLICE 136] upload=0.000s, FPGA=0.000s, read=0.000s, wall=0.000s, sha256=cbe2268747c9c8072c7f9926f2288f270637dc55bb9d14d3368361d5e47d25be
+[CYCLES head] total=100, load=20, run=70, output_stall=3, DDR_wait=5, hardware=0.000001s
+[RUN 1/3 SLICE 204] upload=0.000s, FPGA=0.000s, read=0.000s, wall=0.000s, sha256=cbe2268747c9c8072c7f9926f2288f270637dc55bb9d14d3368361d5e47d25be
+[CYCLES head] total=100, load=20, run=70, output_stall=3, DDR_wait=5, hardware=0.000001s
+[RUN 2/3 SLICE 68] upload=0.000s, FPGA=0.000s, read=0.000s, wall=0.000s, sha256=cbe2268747c9c8072c7f9926f2288f270637dc55bb9d14d3368361d5e47d25be
+[CYCLES head] total=100, load=20, run=70, output_stall=3, DDR_wait=5, hardware=0.000001s
+[RUN 2/3 SLICE 136] upload=0.000s, FPGA=0.000s, read=0.000s, wall=0.000s, sha256=cbe2268747c9c8072c7f9926f2288f270637dc55bb9d14d3368361d5e47d25be
+[CYCLES head] total=100, load=20, run=70, output_stall=3, DDR_wait=5, hardware=0.000001s
+[RUN 2/3 SLICE 204] upload=0.000s, FPGA=0.000s, read=0.000s, wall=0.000s, sha256=cbe2268747c9c8072c7f9926f2288f270637dc55bb9d14d3368361d5e47d25be
+[CYCLES head] total=100, load=20, run=70, output_stall=3, DDR_wait=5, hardware=0.000001s
+[RUN 3/3 SLICE 68] upload=0.000s, FPGA=0.000s, read=0.000s, wall=0.000s, sha256=cbe2268747c9c8072c7f9926f2288f270637dc55bb9d14d3368361d5e47d25be
+[CYCLES head] total=100, load=20, run=70, output_stall=3, DDR_wait=5, hardware=0.000001s
+[RUN 3/3 SLICE 136] upload=0.000s, FPGA=0.000s, read=0.000s, wall=0.000s, sha256=cbe2268747c9c8072c7f9926f2288f270637dc55bb9d14d3368361d5e47d25be
+[CYCLES head] total=100, load=20, run=70, output_stall=3, DDR_wait=5, hardware=0.000001s
+[RUN 3/3 SLICE 204] upload=0.000s, FPGA=0.000s, read=0.000s, wall=0.000s, sha256=cbe2268747c9c8072c7f9926f2288f270637dc55bb9d14d3368361d5e47d25be
+[AVERAGE SLICE 68] FPGA=0.000s, wall=0.000s (3 runs)
+[AVERAGE SLICE 136] FPGA=0.000s, wall=0.000s (3 runs)
+[AVERAGE SLICE 204] FPGA=0.000s, wall=0.000s (3 runs)
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.210s
+
+OK

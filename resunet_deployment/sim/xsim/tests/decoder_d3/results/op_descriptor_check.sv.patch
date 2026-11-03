@@ -1,0 +1,29 @@
+--- before/op_descriptor_check.sv
++++ after/op_descriptor_check.sv
+@@ -61,7 +61,7 @@
+     assign param_words_o = {16'd0,og4_r};
+ 
+     always_comb begin
+-        fields_ok_w = descriptor_r[7:0] >= 8'd1 && descriptor_r[7:0] <= 8'd9 &&
++        fields_ok_w = descriptor_r[7:0] >= 8'd1 && descriptor_r[7:0] <= 8'd10 &&
+             descriptor_r[47:32] >= 16'd1 && descriptor_r[47:32] <= 16'd512 &&
+             descriptor_r[63:48] >= 16'd1 && descriptor_r[63:48] <= 16'd512 &&
+             descriptor_r[79:64] >= 16'd1 && descriptor_r[79:64] <= 16'd32 &&
+@@ -86,6 +86,9 @@
+                 $signed(descriptor_r[95:88]) <= $signed(descriptor_r[103:96]);
+             8'd7: fields_ok_w = fields_ok_w && descriptor_r[79:64] == 16'd1;
+             8'd8, 8'd9: fields_ok_w = fields_ok_w && weights_w[5:0] == 6'd0;
++            // 最近邻2倍：描述尺寸为输入，输出宽高最大512；禁止截断257..512。
++            8'd10: fields_ok_w = fields_ok_w && descriptor_r[47:32] <= 16'd256 &&
++                descriptor_r[63:48] <= 16'd256;
+             default: ;
+         endcase
+         if (descriptor_r[7:0] != 8'd1) fields_ok_w = fields_ok_w && descriptor_r[15:8] == 8'd0;
+@@ -152,6 +155,7 @@
+                     if (descriptor_r[8]) a_bytes_r <= {32'd0,descriptor_r[351:320]} << 18;
+                 end
+                 8'd2: q_bytes_r <= pool_words_r << 4;
++                8'd10: q_bytes_r <= plain_words_r << 6; // 每个P16输入复制为4个P16输出
+                 8'd3: q_bytes_r <= (plain_words_r << 7) + (plain_words_r << 4);
+                 8'd4: q_bytes_r <= (plain_words_r << 8) + (plain_words_r << 7) + (plain_words_r << 4);
+                 8'd5: begin

@@ -1,0 +1,160 @@
+{
+  "format": "pc-fpga-volume-job-v2",
+  "status": "prepared",
+  "input": {
+    "file": "input/ct_volume_int8.bin",
+    "metadata": "input/metadata.json",
+    "dtype": "int8",
+    "layout": "Z,Y,X",
+    "shape": [
+      245,
+      512,
+      512
+    ],
+    "bytes": 64225280,
+    "sha256": "77264e9adc501ad28052575ab5d743b727d36a6f502828cb95aec26811fa7324",
+    "crc32": 3182805175,
+    "ddr_base": 4194304,
+    "batch_slices": 1
+  },
+  "compact_bin": {
+    "file": "input/ct_volume_vol2.bin",
+    "bytes": 152630464,
+    "sha256": "ea070bc34e90ddcc357ddb193db9ec0a6672ce47b58f24fcf4c1d109b257c3e0",
+    "header_bytes": 176,
+    "views": [
+      {
+        "name": "native",
+        "direction": 0,
+        "base": 4194304,
+        "planes": 245,
+        "width": 512,
+        "height": 512,
+        "row_stride": 512,
+        "plane_stride": 262144,
+        "bytes": 64225280,
+        "file_offset": 192
+      },
+      {
+        "name": "lobe",
+        "direction": 0,
+        "base": 68419584,
+        "planes": 204,
+        "width": 231,
+        "height": 231,
+        "row_stride": 256,
+        "plane_stride": 59136,
+        "bytes": 12063744,
+        "file_offset": 64225472
+      },
+      {
+        "name": "lobe_t",
+        "direction": 0,
+        "base": 80483328,
+        "planes": 204,
+        "width": 232,
+        "height": 232,
+        "row_stride": 256,
+        "plane_stride": 59392,
+        "bytes": 12115968,
+        "source": "lobe",
+        "orientation": 2,
+        "file_offset": 76289216
+      },
+      {
+        "name": "native_t",
+        "direction": 0,
+        "base": 396886016,
+        "planes": 245,
+        "width": 512,
+        "height": 512,
+        "row_stride": 512,
+        "plane_stride": 262144,
+        "bytes": 64225280,
+        "source": "native",
+        "orientation": 1,
+        "file_offset": 88405184
+      }
+    ],
+    "layout_version": 4,
+    "transposed": true,
+    "lobe_resampling": "align-corners Q16/RNE, one final signed RNE, INT8 saturation"
+  },
+  "models": [
+    "lobe",
+    "airway",
+    "vessel",
+    "tumor"
+  ],
+  "result_contract": {
+    "format": "ct-segmentation-bitmask-v2",
+    "dtype": "uint16",
+    "byte_order": "little_endian",
+    "layout": "Z,Y,X",
+    "shape": [
+      245,
+      512,
+      512
+    ],
+    "bytes": 128450560,
+    "channels": [
+      "LeftUpperLobe",
+      "LeftLowerLobe",
+      "RightUpperLobe",
+      "RightMiddleLobe",
+      "RightLowerLobe",
+      "Bronchus",
+      "PulmonaryArtery",
+      "PulmonaryVenous",
+      "LungTumor"
+    ],
+    "channel_bits": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "reserved_bits": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "coordinate_system": "DICOM LPS millimetres",
+    "affine_z_y_x_to_lps_mm": [
+      [
+        0.0,
+        0.0,
+        0.673828,
+        -161.89
+      ],
+      [
+        0.0,
+        0.673828,
+        0.0,
+        -148.748
+      ],
+      [
+        1.25,
+        0.0,
+        0.0,
+        -535.907
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "execution": "VOL2 compact BIN upload; START/QUERY/READ/RELEASE"
+}

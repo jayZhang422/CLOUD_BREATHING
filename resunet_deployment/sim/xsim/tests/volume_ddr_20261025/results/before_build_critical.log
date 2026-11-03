@@ -1,0 +1,2 @@
+248: CRITICAL WARNING: [Designutils 20-1307] Command 'if' is not supported in the xdc constraint file. [E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/constraint/Op_Coeff_Rom_Fanout.xdc:6]
+1621: CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.

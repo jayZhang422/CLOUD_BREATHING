@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# xsim v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Thu Oct 22 12:59:54 2026
+# Process ID         : 28932
+# Current directory  : E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_op12_handoff/behav/xsim
+# Command line       : xsim.exe -log baseline.log -mode tcl -source {xsim.dir/tb_handoff_behav/xsim_script.tcl}
+# Log file           : E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_op12_handoff/behav/xsim/baseline.log
+# Journal file       : E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_op12_handoff/behav/xsim\xsim.jou
+# Running On         : MSI
+# Platform           : Windows 11
+# Operating System   : 22631
+# Processor Detail   : Intel(R) Core(TM) i7-14700HX
+# CPU Frequency      : 2304 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 16940 MB
+# Swap memory        : 19327 MB
+# Total Virtual      : 36268 MB
+# Available Virtual  : 14314 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_handoff_behav/xsim_script.tcl
+# xsim {tb_handoff_behav} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+Block Memory Generator module tb_handoff.runner.dut.u_bank.u_p12_project_mem.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_handoff.runner.dut.u_bank.u_p12_skip_mem.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_handoff.runner.dut.u_bank.u_pw_shared.project.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_handoff.runner.dut.u_bank.u_pw_shared.project.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_handoff.runner.dut.u_bank.u_pw_shared.project.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_handoff.runner.dut.u_bank.u_pw_shared.project.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_handoff.runner.dut.u_bank.u_pw_shared.project.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_handoff.runner.dut.u_bank.u_pw_shared.skip.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_handoff.runner.dut.u_bank.u_pw_shared.skip.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_handoff.runner.dut.u_bank.u_pw_shared.skip.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_handoff.runner.dut.u_bank.u_pw_shared.skip.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_handoff.runner.dut.u_bank.u_pw_shared.skip.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_handoff.runner.dut.u_pw_pack.u_tiles.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Error: HANDOFF_RACE cycle=8636 tile=0 group=0 source=1
+Time: 34542 ns  Iteration: 0  Process: /tb_handoff/runner/Always98_702  Scope: tb_handoff.runner  File: C:/Users/32001/AppData/Local/Temp/codex_op12_handoff_20261022/tb_handoff.sv Line: 102
+$stop called at time : 34542 ns : File "C:/Users/32001/AppData/Local/Temp/codex_op12_handoff_20261022/tb_handoff.sv" Line 103
+exit
+INFO: xsimkernel Simulation Memory Usage: 249520 KB (Peak: 249520 KB), Simulation CPU Usage: 125 ms
+INFO: [Common 17-206] Exiting xsim at Thu Oct 22 12:59:59 2026...

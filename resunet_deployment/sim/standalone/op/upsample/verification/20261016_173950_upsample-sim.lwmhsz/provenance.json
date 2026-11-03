@@ -1,0 +1,170 @@
+[
+  {
+    "task": "lobe",
+    "node": "mid.out",
+    "shape": [
+      1,
+      128,
+      4,
+      4
+    ],
+    "source": "doc/模型内容/quantization/20261011_ptq_qat_v2/lobe/ptq/export/golden_synthetic_32x32/mid.out.bin",
+    "sha256": "f59da23af8d90e8d9b63fafffa18ecf587577ce293c195fe9e189529cae08e63",
+    "contract_sha256": "fe1820a2dd947855ba2403cd527118f8a59cffc47b331574e3f693d5c711f2d0",
+    "scale_preserved": 0.047244094488188976
+  },
+  {
+    "task": "lobe",
+    "node": "d3.out",
+    "shape": [
+      1,
+      64,
+      8,
+      8
+    ],
+    "source": "doc/模型内容/quantization/20261011_ptq_qat_v2/lobe/ptq/export/golden_synthetic_32x32/d3.out.bin",
+    "sha256": "24c3143d38c2b9d980cc509d81e19c939f29aa97872e3327e923b85e27128a83",
+    "contract_sha256": "fe1820a2dd947855ba2403cd527118f8a59cffc47b331574e3f693d5c711f2d0",
+    "scale_preserved": 0.047244094488188976
+  },
+  {
+    "task": "lobe",
+    "node": "d2.out",
+    "shape": [
+      1,
+      32,
+      16,
+      16
+    ],
+    "source": "doc/模型内容/quantization/20261011_ptq_qat_v2/lobe/ptq/export/golden_synthetic_32x32/d2.out.bin",
+    "sha256": "0cdfe541a924b7faaea8d614298ac84876119ccbf61c7f7e7dcb72be131af67f",
+    "contract_sha256": "fe1820a2dd947855ba2403cd527118f8a59cffc47b331574e3f693d5c711f2d0",
+    "scale_preserved": 0.047244094488188976
+  },
+  {
+    "task": "airway",
+    "node": "mid.out",
+    "shape": [
+      1,
+      128,
+      4,
+      4
+    ],
+    "source": "doc/模型内容/quantization/20261011_ptq_qat_v2/airway/ptq/export/golden_synthetic_32x32/mid.out.bin",
+    "sha256": "9fe092f9085dacbe1859d328e20c265c81fd93134591b4b094ce700bf57cda4c",
+    "contract_sha256": "6148b67f9b76589fc9941dfdb829ac4d2b8bb335646be2f12f2b0bfc53ca7dc0",
+    "scale_preserved": 0.047244094488188976
+  },
+  {
+    "task": "airway",
+    "node": "d3.out",
+    "shape": [
+      1,
+      64,
+      8,
+      8
+    ],
+    "source": "doc/模型内容/quantization/20261011_ptq_qat_v2/airway/ptq/export/golden_synthetic_32x32/d3.out.bin",
+    "sha256": "ea196a57072ec144e36ff80ab78d2284516d9648a24e3b73458652227115d19f",
+    "contract_sha256": "6148b67f9b76589fc9941dfdb829ac4d2b8bb335646be2f12f2b0bfc53ca7dc0",
+    "scale_preserved": 0.047244094488188976
+  },
+  {
+    "task": "airway",
+    "node": "d2.out",
+    "shape": [
+      1,
+      32,
+      16,
+      16
+    ],
+    "source": "doc/模型内容/quantization/20261011_ptq_qat_v2/airway/ptq/export/golden_synthetic_32x32/d2.out.bin",
+    "sha256": "a40fb63fbf161fa5657cf2e9f4581d637f4fc8f3105c71ed0bbd37afc5e9d726",
+    "contract_sha256": "6148b67f9b76589fc9941dfdb829ac4d2b8bb335646be2f12f2b0bfc53ca7dc0",
+    "scale_preserved": 0.047244094488188976
+  },
+  {
+    "task": "vessel",
+    "node": "mid.out",
+    "shape": [
+      1,
+      128,
+      4,
+      4
+    ],
+    "source": "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/golden_synthetic_32x32/mid.out.bin",
+    "sha256": "696c70ad6a8b0b41abf9150aa095d2b498bf6be3948b0198c23d176ac88c9886",
+    "contract_sha256": "6371779fac9ca9d27cf2a931b06c2d28e2ec7214a57df6de81a911dab59d6279",
+    "scale_preserved": 0.047244094488188976
+  },
+  {
+    "task": "vessel",
+    "node": "d3.out",
+    "shape": [
+      1,
+      64,
+      8,
+      8
+    ],
+    "source": "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/golden_synthetic_32x32/d3.out.bin",
+    "sha256": "f66c8be1b2752aaee89080eb94d94aa17b50ca1f151d8c6110b56db68942cb39",
+    "contract_sha256": "6371779fac9ca9d27cf2a931b06c2d28e2ec7214a57df6de81a911dab59d6279",
+    "scale_preserved": 0.047244094488188976
+  },
+  {
+    "task": "vessel",
+    "node": "d2.out",
+    "shape": [
+      1,
+      32,
+      16,
+      16
+    ],
+    "source": "doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/golden_synthetic_32x32/d2.out.bin",
+    "sha256": "75b1a5c667212573db958785c54a281f3a60daeb5be6de25d64099e6c6ba5ad3",
+    "contract_sha256": "6371779fac9ca9d27cf2a931b06c2d28e2ec7214a57df6de81a911dab59d6279",
+    "scale_preserved": 0.047244094488188976
+  },
+  {
+    "task": "tumor",
+    "node": "mid.out",
+    "shape": [
+      1,
+      512,
+      4,
+      4
+    ],
+    "source": "doc/模型内容/quantization/20261012_tumor_base64_epoch70_v1/tumor/ptq/export/golden_synthetic_32x32/mid.out.bin",
+    "sha256": "e1bd8c2456a88d724e77360b3882f02325ef77882c0596e26d557d9d9ade0019",
+    "contract_sha256": "42a25fd503eae8692ddd0171d9274cd43d47c0aa400e257a6dfb14060058b5e5",
+    "scale_preserved": 0.047244094488188976
+  },
+  {
+    "task": "tumor",
+    "node": "d3.out",
+    "shape": [
+      1,
+      256,
+      8,
+      8
+    ],
+    "source": "doc/模型内容/quantization/20261012_tumor_base64_epoch70_v1/tumor/ptq/export/golden_synthetic_32x32/d3.out.bin",
+    "sha256": "2bdf84af8f22107b8a8ebe14dd95ceaefc6c95f0c022490366ea4079f4295000",
+    "contract_sha256": "42a25fd503eae8692ddd0171d9274cd43d47c0aa400e257a6dfb14060058b5e5",
+    "scale_preserved": 0.047244094488188976
+  },
+  {
+    "task": "tumor",
+    "node": "d2.out",
+    "shape": [
+      1,
+      128,
+      16,
+      16
+    ],
+    "source": "doc/模型内容/quantization/20261012_tumor_base64_epoch70_v1/tumor/ptq/export/golden_synthetic_32x32/d2.out.bin",
+    "sha256": "7a8489c5fdaebb7e81bfbfc079eebf570c147c546b45a4d286cf60b7b62d921d",
+    "contract_sha256": "42a25fd503eae8692ddd0171d9274cd43d47c0aa400e257a6dfb14060058b5e5",
+    "scale_preserved": 0.047244094488188976
+  }
+]

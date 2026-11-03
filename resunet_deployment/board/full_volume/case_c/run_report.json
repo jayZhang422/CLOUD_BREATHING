@@ -1,0 +1,4489 @@
+{
+  "status": "complete",
+  "stage": "all",
+  "hardware_used": true,
+  "upload": {
+    "status": "compact_uploaded",
+    "transfer_id": 3257581645,
+    "input_sha256": "77264e9adc501ad28052575ab5d743b727d36a6f502828cb95aec26811fa7324",
+    "compact_sha256": "ea070bc34e90ddcc357ddb193db9ec0a6672ce47b58f24fcf4c1d109b257c3e0",
+    "sections": [
+      {
+        "name": "native",
+        "direction": 0,
+        "base": 4194304,
+        "planes": 245,
+        "width": 512,
+        "height": 512,
+        "row_stride": 512,
+        "plane_stride": 262144,
+        "bytes": 64225280
+      },
+      {
+        "name": "lobe",
+        "direction": 0,
+        "base": 68419584,
+        "planes": 204,
+        "width": 231,
+        "height": 231,
+        "row_stride": 256,
+        "plane_stride": 59136,
+        "bytes": 12063744
+      },
+      {
+        "name": "lobe_t",
+        "direction": 0,
+        "base": 80483328,
+        "planes": 204,
+        "width": 232,
+        "height": 232,
+        "row_stride": 256,
+        "plane_stride": 59392,
+        "bytes": 12115968,
+        "source": "lobe",
+        "orientation": 2
+      },
+      {
+        "name": "native_t",
+        "direction": 0,
+        "base": 396886016,
+        "planes": 245,
+        "width": 512,
+        "height": 512,
+        "row_stride": 512,
+        "plane_stride": 262144,
+        "bytes": 64225280,
+        "source": "native",
+        "orientation": 1
+      }
+    ],
+    "note": "VOL2 sections uploaded; native INT8 source remains in the case as compatibility baseline.",
+    "upload_seconds": 50.48194357,
+    "upload_mib_s": 2.8833986970145493,
+    "frames_sent": 149054,
+    "retransmits": 0
+  },
+  "program": {
+    "format": "pc-fpga-volume-program-v2",
+    "header_hex": "564f4c3202000000000020088a75000000004000f5000000000000100000a8070000000000000000000000000000000000000000000000000000000000000000",
+    "commands": 30090,
+    "schedule_sha256": "15c2578cd8efc87bba28ff68b9db5eee076ac84a388c930e2b27e9393ef298ce",
+    "maps_sha256": "3722b443552527a83f8a967dfea65ddcab8a16b69205ea35f7a829261c7674f0",
+    "input_sha256": "77264e9adc501ad28052575ab5d743b727d36a6f502828cb95aec26811fa7324",
+    "compact_sha256": "ea070bc34e90ddcc357ddb193db9ec0a6672ce47b58f24fcf4c1d109b257c3e0",
+    "models": [
+      {
+        "model": "lobe",
+        "grid": [
+          204,
+          231,
+          231
+        ],
+        "commands": 6569,
+        "stages_per_slice": 30,
+        "contract_sha256": "fe1820a2dd947855ba2403cd527118f8a59cffc47b331574e3f693d5c711f2d0"
+      },
+      {
+        "model": "airway",
+        "grid": [
+          245,
+          512,
+          512
+        ],
+        "commands": 7840,
+        "stages_per_slice": 30,
+        "contract_sha256": "6148b67f9b76589fc9941dfdb829ac4d2b8bb335646be2f12f2b0bfc53ca7dc0"
+      },
+      {
+        "model": "vessel",
+        "grid": [
+          245,
+          512,
+          512
+        ],
+        "commands": 7840,
+        "stages_per_slice": 30,
+        "contract_sha256": "6371779fac9ca9d27cf2a931b06c2d28e2ec7214a57df6de81a911dab59d6279"
+      },
+      {
+        "model": "tumor",
+        "grid": [
+          245,
+          512,
+          512
+        ],
+        "commands": 7840,
+        "stages_per_slice": 30,
+        "contract_sha256": "42a25fd503eae8692ddd0171d9274cd43d47c0aa400e257a6dfb14060058b5e5"
+      }
+    ]
+  },
+  "result": {
+    "format": "ct-segmentation-bitmask-v2",
+    "dtype": "uint16",
+    "byte_order": "little_endian",
+    "layout": "Z,Y,X",
+    "shape": [
+      245,
+      512,
+      512
+    ],
+    "bytes": 128450560,
+    "channels": [
+      "LeftUpperLobe",
+      "LeftLowerLobe",
+      "RightUpperLobe",
+      "RightMiddleLobe",
+      "RightLowerLobe",
+      "Bronchus",
+      "PulmonaryArtery",
+      "PulmonaryVenous",
+      "LungTumor"
+    ],
+    "channel_bits": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "reserved_bits": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "coordinate_system": "DICOM LPS millimetres",
+    "affine_z_y_x_to_lps_mm": [
+      [
+        0.0,
+        0.0,
+        0.673828,
+        -161.89
+      ],
+      [
+        0.0,
+        0.673828,
+        0.0,
+        -148.748
+      ],
+      [
+        1.25,
+        0.0,
+        0.0,
+        -535.907
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "file": "segmentation_uint16.bin",
+    "order": "C",
+    "sha256": "34bc5043518fe2c4b9050353a6c139edeacfb5928e650bb022ecee5ad461bc0d",
+    "ddr_released": true,
+    "semantics": "FPGA classification, native CT grid, no mesh processing applied",
+    "provenance": {
+      "result_ready": {
+        "format": "pc-fpga-result-ready-v2",
+        "state": "complete",
+        "transfer_id": 3257581645,
+        "input_sha256": "77264e9adc501ad28052575ab5d743b727d36a6f502828cb95aec26811fa7324",
+        "tasks": [
+          "lobe",
+          "airway",
+          "vessel",
+          "tumor"
+        ],
+        "elapsed_seconds": 364.12165635599996,
+        "schedule_sha256": "15c2578cd8efc87bba28ff68b9db5eee076ac84a388c930e2b27e9393ef298ce",
+        "result": {
+          "format": "ct-segmentation-bitmask-v2",
+          "dtype": "uint16",
+          "byte_order": "little_endian",
+          "layout": "Z,Y,X",
+          "shape": [
+            245,
+            512,
+            512
+          ],
+          "bytes": 128450560,
+          "channels": [
+            "LeftUpperLobe",
+            "LeftLowerLobe",
+            "RightUpperLobe",
+            "RightMiddleLobe",
+            "RightLowerLobe",
+            "Bronchus",
+            "PulmonaryArtery",
+            "PulmonaryVenous",
+            "LungTumor"
+          ],
+          "channel_bits": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "reserved_bits": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "coordinate_system": "DICOM LPS millimetres",
+          "affine_z_y_x_to_lps_mm": [
+            [
+              0.0,
+              0.0,
+              0.673828,
+              -161.89
+            ],
+            [
+              0.0,
+              0.673828,
+              0.0,
+              -148.748
+            ],
+            [
+              1.25,
+              0.0,
+              0.0,
+              -535.907
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "ddr_base": 268435456
+        },
+        "integrity": "V1 CRC32 per READ frame; local SHA256 after complete readback"
+      },
+      "input_sha256": "77264e9adc501ad28052575ab5d743b727d36a6f502828cb95aec26811fa7324"
+    },
+    "receive_seconds": 12.699100524000073,
+    "receive_mib_s": 9.646352335875457
+  },
+  "bin2stl": {
+    "stage": "BIN2STL",
+    "status": "complete",
+    "source_sha256": "34bc5043518fe2c4b9050353a6c139edeacfb5928e650bb022ecee5ad461bc0d",
+    "coordinate_system": "DICOM LPS millimetres",
+    "affine_z_y_x_to_lps_mm": [
+      [
+        0.0,
+        0.0,
+        0.673828,
+        -161.89
+      ],
+      [
+        0.0,
+        0.673828,
+        0.0,
+        -148.748
+      ],
+      [
+        1.25,
+        0.0,
+        0.0,
+        -535.907
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "ct_reference": {
+      "metadata": "input/metadata.json",
+      "file": "input/ct_volume_int8.bin",
+      "sha256": "77264e9adc501ad28052575ab5d743b727d36a6f502828cb95aec26811fa7324"
+    },
+    "synthetic_mask_only": false,
+    "objects": [
+      {
+        "name": "LeftUpperLobe",
+        "category": "lobes",
+        "raw_voxels": 1559141,
+        "voxels": 1573766,
+        "repair": {
+          "operation": "largest lobe, 1.0 mm closing, hole fill",
+          "minimum_component_voxels": 1,
+          "closing_radius_mm": 1.0,
+          "reference_supported_component_selection": false
+        },
+        "mask_file": "masks/LeftUpperLobe.npy",
+        "mask_sha256": "3ec205146bf2bde9e5435daf0d9a19320b078146574078b412a4913721a427de",
+        "status": "exported",
+        "file": "lobes/LeftUpperLobe.stl",
+        "sha256": "09d2d017b0630a244ad4e3320a76d85b826ecfdc2038203a7f4374753ea438aa",
+        "triangles": 323740,
+        "volume_mm3": 892916.4022248024,
+        "surface": {
+          "path": "stl/raw/lobes/LeftUpperLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 0,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 0.0,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 10,
+            "removed_surface_components": 9,
+            "removed_surface_volume_mm3": 6.361348056984105
+          },
+          "output_faces": 323740,
+          "output_quality": {
+            "triangles": 323740,
+            "vertices": 161868,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 892916.4022248024,
+            "bounds_lps_mm": [
+              [
+                14.316021919250488,
+                -50.706024169921875,
+                -477.7820129394531
+              ],
+              [
+                124.82381439208984,
+                96.1884765625,
+                -251.53199768066406
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "name": "LeftLowerLobe",
+        "category": "lobes",
+        "raw_voxels": 1248902,
+        "voxels": 1261584,
+        "repair": {
+          "operation": "largest lobe, 1.0 mm closing, hole fill",
+          "minimum_component_voxels": 1,
+          "closing_radius_mm": 1.0,
+          "reference_supported_component_selection": false
+        },
+        "mask_file": "masks/LeftLowerLobe.npy",
+        "mask_sha256": "7d6f500d6725c0d9b024bc74cf6ebbdcc1376eaf24e3d15a40107f329bd29893",
+        "status": "exported",
+        "file": "lobes/LeftLowerLobe.stl",
+        "sha256": "00e1c3b779530dbc8b1d2cab7956919a80b33969ba2efe2cbdefc84e3b1a80ba",
+        "triangles": 263008,
+        "volume_mm3": 715798.0240101244,
+        "surface": {
+          "path": "stl/raw/lobes/LeftLowerLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 0,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 0.0,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 20,
+            "removed_surface_components": 17,
+            "removed_surface_volume_mm3": 10.121401369476573
+          },
+          "output_faces": 263008,
+          "output_quality": {
+            "triangles": 263008,
+            "vertices": 131506,
+            "surface_components": 3,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 715798.0240101244,
+            "bounds_lps_mm": [
+              [
+                24.423442840576172,
+                -23.752906799316406,
+                -484.0320129394531
+              ],
+              [
+                124.82381439208984,
+                109.6650390625,
+                -307.7820129394531
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "name": "RightUpperLobe",
+        "category": "lobes",
+        "raw_voxels": 1293229,
+        "voxels": 1305946,
+        "repair": {
+          "operation": "largest lobe, 1.0 mm closing, hole fill",
+          "minimum_component_voxels": 1,
+          "closing_radius_mm": 1.0,
+          "reference_supported_component_selection": false
+        },
+        "mask_file": "masks/RightUpperLobe.npy",
+        "mask_sha256": "595ab05656ff7a7fe89d6b170f75dabb2dafed12916718d4417e4c8c6b19ad59",
+        "status": "exported",
+        "file": "lobes/RightUpperLobe.stl",
+        "sha256": "95facb2827815ce321db5c5034fbc83371b0eadfa1ef915aad6b09d6373317d4",
+        "triangles": 320236,
+        "volume_mm3": 740827.9733470781,
+        "surface": {
+          "path": "stl/raw/lobes/RightUpperLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 0,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 0.0,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 7,
+            "removed_surface_components": 4,
+            "removed_surface_volume_mm3": 2.0810357955933534
+          },
+          "output_faces": 320236,
+          "output_quality": {
+            "triangles": 320236,
+            "vertices": 160070,
+            "surface_components": 3,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 740827.9733470781,
+            "bounds_lps_mm": [
+              [
+                -96.8656005859375,
+                -41.94626235961914,
+                -434.0320129394531
+              ],
+              [
+                19.706645965576172,
+                96.1884765625,
+                -251.53199768066406
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "name": "RightMiddleLobe",
+        "category": "lobes",
+        "raw_voxels": 354802,
+        "voxels": 355846,
+        "repair": {
+          "operation": "largest lobe, 1.0 mm closing, hole fill",
+          "minimum_component_voxels": 1,
+          "closing_radius_mm": 1.0,
+          "reference_supported_component_selection": false
+        },
+        "mask_file": "masks/RightMiddleLobe.npy",
+        "mask_sha256": "fafee926c6a5aa91631c7cb2365680f8babe1646674e556351998821c10de05f",
+        "status": "exported",
+        "file": "lobes/RightMiddleLobe.stl",
+        "sha256": "fff23cccaf13933c4618c94424ed2d62b4c6dca234ed27dc4d99860e73cbf086",
+        "triangles": 168460,
+        "volume_mm3": 201752.158777437,
+        "surface": {
+          "path": "stl/raw/lobes/RightMiddleLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 0,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 0.0,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 11,
+            "removed_surface_components": 10,
+            "removed_surface_volume_mm3": 17.97258187103336
+          },
+          "output_faces": 168460,
+          "output_quality": {
+            "triangles": 168460,
+            "vertices": 84212,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 201752.158777437,
+            "bounds_lps_mm": [
+              [
+                -92.1488037109375,
+                -44.64157485961914,
+                -469.0320129394531
+              ],
+              [
+                -0.5081940293312073,
+                44.9775505065918,
+                -351.5320129394531
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "name": "RightLowerLobe",
+        "category": "lobes",
+        "raw_voxels": 1352172,
+        "voxels": 1367463,
+        "repair": {
+          "operation": "largest lobe, 1.0 mm closing, hole fill",
+          "minimum_component_voxels": 1,
+          "closing_radius_mm": 1.0,
+          "reference_supported_component_selection": false
+        },
+        "mask_file": "masks/RightLowerLobe.npy",
+        "mask_sha256": "a3095d563e2ef9c5d37408f845519ad64c894af58527962b46bc94e0a60acc21",
+        "status": "exported",
+        "file": "lobes/RightLowerLobe.stl",
+        "sha256": "3ed8e587b953e4cc947aac324d68a7aac304e12c1f55735a57a1d0bc434e1507",
+        "triangles": 297548,
+        "volume_mm3": 775852.9485748108,
+        "surface": {
+          "path": "stl/raw/lobes/RightLowerLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 0,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 0.0,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 8,
+            "removed_surface_components": 7,
+            "removed_surface_volume_mm3": 9.979512565231676
+          },
+          "output_faces": 297548,
+          "output_quality": {
+            "triangles": 297548,
+            "vertices": 148764,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 775852.9485748108,
+            "bounds_lps_mm": [
+              [
+                -98.2132568359375,
+                -35.88180923461914,
+                -484.0320129394531
+              ],
+              [
+                15.663678169250488,
+                108.3173828125,
+                -305.2820129394531
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "name": "Bronchus",
+        "category": "airway",
+        "raw_voxels": 49277,
+        "voxels": 40383,
+        "repair": {
+          "operation": "CT-constrained 1.5 mm closing and local bridges; retain branches >=50 voxels",
+          "minimum_component_voxels": 50,
+          "closing_radius_mm": 1.5,
+          "maximum_bridge_distance_mm": 2.5,
+          "accepted_bridges": 227,
+          "reference_supported_component_selection": false,
+          "connected_display": {
+            "accepted_bridges": [
+              {
+                "component_voxels": 334,
+                "gap_mm": 4.61813876555902,
+                "path_length_mm": 6.4453119999999995,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 143,
+                "gap_mm": 3.4860542937803722,
+                "path_length_mm": 5.1953119999999995,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 100,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 94,
+                "gap_mm": 3.262419811447179,
+                "path_length_mm": 4.61914,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 73,
+                "gap_mm": 3.435862064270745,
+                "path_length_mm": 4.042968,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 59,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 58,
+                "gap_mm": 2.9189417185909625,
+                "path_length_mm": 4.521484,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 18,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 16,
+                "gap_mm": 1.3476559846297294,
+                "path_length_mm": 1.347656,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 4,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 4,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 1.347656,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 2,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              }
+            ],
+            "unresolved_components": 10,
+            "withheld_voxels": 8641,
+            "retained_prediction_voxels": 40123,
+            "added_bridge_voxels": 260,
+            "retained_unconnected_components": 0,
+            "retained_unconnected_voxels": 0,
+            "remaining_face_connected_components": 1,
+            "retain_unconnected_minimum_mm3": null,
+            "maximum_bridge_distance_mm": 6.0,
+            "before_voxels": 48764,
+            "withheld_mask": "stl/raw/review_withheld/Bronchus_withheld.npy"
+          }
+        },
+        "mask_file": "masks/Bronchus.npy",
+        "mask_sha256": "3a6a9f0e0017da249dc3f9186893d7076321749b1a8fc8c199106fd51f9e0dd7",
+        "status": "exported",
+        "file": "airway/Bronchus.stl",
+        "sha256": "090473870e988034fa225cb59993688c9fa57154a75ea12d8dbee356ceee8f69",
+        "triangles": 56144,
+        "volume_mm3": 22546.866671694163
+      },
+      {
+        "name": "PulmonaryArtery",
+        "category": "vessels",
+        "raw_voxels": 226270,
+        "voxels": 211387,
+        "repair": {
+          "operation": "CT-constrained 1.5 mm closing and local bridges; retain branches >=50 voxels",
+          "minimum_component_voxels": 50,
+          "closing_radius_mm": 1.5,
+          "maximum_bridge_distance_mm": 2.5,
+          "accepted_bridges": 108,
+          "reference_supported_component_selection": false,
+          "connected_display": {
+            "accepted_bridges": [
+              {
+                "component_voxels": 2907,
+                "gap_mm": 3.8691844985839112,
+                "path_length_mm": 4.716796,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 52,
+                "gap_mm": 2.0214840211729763,
+                "path_length_mm": 5.673828,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 12,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 3,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 3,
+                "gap_mm": 1.5718104870641603,
+                "path_length_mm": 2.5976559999999997,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 2,
+                "gap_mm": 1.5718104870641603,
+                "path_length_mm": 2.5976559999999997,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 2,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 1.347656,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 1.347656,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 1.347656,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 3,
+                "gap_mm": 0.0,
+                "path_length_mm": 0.0,
+                "tube_radius_mm": 1.3
+              }
+            ],
+            "unresolved_components": 107,
+            "withheld_voxels": 14596,
+            "retained_prediction_voxels": 211318,
+            "added_bridge_voxels": 69,
+            "retained_unconnected_components": 1,
+            "retained_unconnected_voxels": 3,
+            "remaining_face_connected_components": 2,
+            "retain_unconnected_minimum_mm3": null,
+            "maximum_bridge_distance_mm": 6.0,
+            "before_voxels": 225914,
+            "withheld_mask": "stl/raw/review_withheld/PulmonaryArtery_withheld.npy"
+          }
+        },
+        "mask_file": "masks/PulmonaryArtery.npy",
+        "mask_sha256": "69eced1fc143eb970fdac3b1f53be84d5fc8993c7ed0f62e74dfbdbfd1aa9795",
+        "status": "exported",
+        "file": "vessels/PulmonaryArtery.stl",
+        "sha256": "c852c281cc45520e33d76bcefbedadb020a9049900e1b1956b1039de98353ee3",
+        "triangles": 292932,
+        "volume_mm3": 118170.78842192086
+      },
+      {
+        "name": "PulmonaryVenous",
+        "category": "vessels",
+        "raw_voxels": 307567,
+        "voxels": 292276,
+        "repair": {
+          "operation": "CT-constrained 1.5 mm closing and local bridges; retain branches >=50 voxels",
+          "minimum_component_voxels": 50,
+          "closing_radius_mm": 1.5,
+          "maximum_bridge_distance_mm": 2.5,
+          "accepted_bridges": 114,
+          "reference_supported_component_selection": false,
+          "island_cleanup": {
+            "operation": "remove small isolated candidates; protect long slender branches",
+            "minimum_volume_mm3": 500,
+            "protected_branch_minimum_extent_mm": 25,
+            "protected_branch_minimum_pca_elongation": 3,
+            "components_before": 126,
+            "components_after": 14,
+            "removed_components": 112,
+            "removed_voxels": 21587
+          },
+          "connected_display": {
+            "accepted_bridges": [
+              {
+                "component_voxels": 3399,
+                "gap_mm": 3.5935504360351094,
+                "path_length_mm": 4.61914,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 240,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 7.792968000000002,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 72,
+                "gap_mm": 1.9058733708766304,
+                "path_length_mm": 2.695312,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 51,
+                "gap_mm": 2.8401014796112034,
+                "path_length_mm": 3.8476559999999997,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 14,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 13,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 7,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 3,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 2.5,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 3,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 2,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 2,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 2.5976559999999997,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 2,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 2.5,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 2.5,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 1.3476559846297294,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 1.5718104870641603,
+                "path_length_mm": 2.5976559999999997,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              }
+            ],
+            "unresolved_components": 668,
+            "withheld_voxels": 23110,
+            "retained_prediction_voxels": 291239,
+            "added_bridge_voxels": 1037,
+            "retained_unconnected_components": 7,
+            "retained_unconnected_voxels": 7166,
+            "remaining_face_connected_components": 8,
+            "retain_unconnected_minimum_mm3": 20.0,
+            "maximum_bridge_distance_mm": 6.0,
+            "far_bridge": {
+              "maximum_gap_mm": 16.0,
+              "tube_radius_mm": 1.5,
+              "remaining_components": 8,
+              "bridges": [
+                {
+                  "component_voxels": 82,
+                  "gap_mm": 0.9529366854383152,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 3166,
+                  "gap_mm": 12.946084533028824,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 542,
+                  "gap_mm": 1.4200507398056017,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 554,
+                  "gap_mm": 1.4200507398056017,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 830,
+                  "gap_mm": 7.352470771552459,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 413,
+                  "gap_mm": 7.9166153220134605,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 359,
+                  "gap_mm": 1.4200507398056017,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 109,
+                  "gap_mm": 0.9529366854383152,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 452,
+                  "gap_mm": 6.029187734374186,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 764,
+                  "gap_mm": 4.558444166957253,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 3665,
+                  "gap_mm": 5.380725738472112,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 485,
+                  "gap_mm": 1.4200507398056017,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 569,
+                  "gap_mm": 11.434678026611227,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 1,
+                  "gap_mm": 0.9529366854383152,
+                  "round": 1
+                }
+              ],
+              "skipped_beyond_gap": 0,
+              "skipped_blocked_by_other_structure": 7
+            },
+            "before_voxels": 314349,
+            "withheld_mask": "stl/raw/review_withheld/PulmonaryVenous_withheld.npy"
+          }
+        },
+        "mask_file": "masks/PulmonaryVenous.npy",
+        "mask_sha256": "05ac337a2656680d25c159c501797b8e165c6802ffb21b98f042b9df47a77a8a",
+        "status": "exported",
+        "file": "vessels/PulmonaryVenous.stl",
+        "sha256": "bc0062e3becdeaa65a06e94f55bd27487b57a4978af379af75124d759b7741a1",
+        "triangles": 463468,
+        "volume_mm3": 163040.26316481453
+      },
+      {
+        "name": "LungTumor",
+        "category": "tumor",
+        "raw_voxels": 9168,
+        "voxels": 5635,
+        "repair": {
+          "operation": "close and bridge small gaps, then display only the largest connected tumor candidate",
+          "minimum_component_voxels": 5,
+          "distant_component_minimum_voxels": 50,
+          "closing_radius_mm": 1.5,
+          "maximum_bridge_distance_mm": 3.0,
+          "accepted_bridges": 4,
+          "display_largest_candidate_only": true,
+          "removed_disconnected_components": 8,
+          "removed_disconnected_voxels": 4049,
+          "reference_supported_component_selection": false
+        },
+        "mask_file": "masks/LungTumor.npy",
+        "mask_sha256": "54a5516f99334f3ddeadb50940b7902579e6a06c76eb40bd8225240ad9ae2a9b",
+        "status": "exported",
+        "file": "tumor/LungTumor.stl",
+        "sha256": "46e5338997b4b5c027da75fed0095e4a4268b343600b9764061a81056ee1dfc0",
+        "triangles": 9204,
+        "volume_mm3": 3169.60672738433
+      }
+    ],
+    "joint_lobe_repair": {
+      "maximum_fill_distance_mm": 2.5,
+      "closing_radius_mm": 3.0,
+      "maximum_added_fraction_per_lobe": 0.01,
+      "boundary_sigma_mm": 1.5,
+      "maximum_boundary_change_fraction_per_lobe": 0.01,
+      "lungs": [
+        {
+          "labels": [
+            1,
+            2
+          ],
+          "candidate_voxels": 29712,
+          "added_voxels_per_lobe": {
+            "1": 15566,
+            "2": 12263
+          },
+          "boundary_changed_voxels_per_lobe": {
+            "1": 5095,
+            "2": 5095
+          }
+        },
+        {
+          "labels": [
+            3,
+            4,
+            5
+          ],
+          "candidate_voxels": 34760,
+          "added_voxels_per_lobe": {
+            "3": 12893,
+            "4": 3508,
+            "5": 13318
+          },
+          "boundary_changed_voxels_per_lobe": {
+            "3": 7028,
+            "4": 3548,
+            "5": 3486
+          }
+        }
+      ],
+      "added_voxels": 57544,
+      "changed_existing_labels": 12126
+    }
+  },
+  "smooth": {
+    "stage": "Smooth",
+    "status": "complete",
+    "coordinate_system": "DICOM LPS millimetres",
+    "source_manifest_sha256": "3d53eddbaf0b39d72a745b5da762cf8ce87595765a24c943639e5706465e313d",
+    "parameters": {
+      "lobe_iterations": 60,
+      "lobe_passband": 0.001,
+      "lobe_maximum_move_mm": 2.5,
+      "iterations": 15,
+      "passband": 0.08,
+      "reduction_applied": false,
+      "vessel_thickness_refinement": "not ported (Python-only: skeleton-based adaptive smoothing)"
+    },
+    "objects": [
+      {
+        "name": "LeftUpperLobe",
+        "category": "lobes",
+        "raw_voxels": 1559141,
+        "voxels": 1573766,
+        "repair": {
+          "operation": "largest lobe, 1.0 mm closing, hole fill",
+          "minimum_component_voxels": 1,
+          "closing_radius_mm": 1.0,
+          "reference_supported_component_selection": false
+        },
+        "status": "processed",
+        "file": "lobes/LeftUpperLobe.stl",
+        "sha256": "04087d91cade730d95fa4c3129ff83bf620208858c7b4dd29ce780bdf059e5dd",
+        "triangles": 323740,
+        "volume_mm3": 891860.8297535308,
+        "surface": {
+          "path": "stl/raw/lobes/LeftUpperLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 0,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 0.0,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 10,
+            "removed_surface_components": 9,
+            "removed_surface_volume_mm3": 6.361348056984105
+          },
+          "output_faces": 323740,
+          "output_quality": {
+            "triangles": 323740,
+            "vertices": 161868,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 892916.4022248024,
+            "bounds_lps_mm": [
+              [
+                14.316021919250488,
+                -50.706024169921875,
+                -477.7820129394531
+              ],
+              [
+                124.82381439208984,
+                96.1884765625,
+                -251.53199768066406
+              ]
+            ]
+          }
+        },
+        "smoothing": {
+          "path": "stl/smooth/lobes/LeftUpperLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 60,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 2.553777493748655,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 10,
+            "removed_surface_components": 9,
+            "removed_surface_volume_mm3": 0.03671072597422287
+          },
+          "output_faces": 323740,
+          "output_quality": {
+            "triangles": 323740,
+            "vertices": 161868,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 891860.8297535308,
+            "bounds_lps_mm": [
+              [
+                14.20197582244873,
+                -50.85734939575195,
+                -478.0235900878906
+              ],
+              [
+                125.0181655883789,
+                96.09410095214844,
+                -251.3325653076172
+              ]
+            ]
+          }
+        },
+        "source_sha256": "09d2d017b0630a244ad4e3320a76d85b826ecfdc2038203a7f4374753ea438aa",
+        "before": {
+          "triangles": 323740,
+          "vertices": 161868,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 892916.4022248024,
+          "bounds_lps_mm": [
+            [
+              14.316021919250488,
+              -50.706024169921875,
+              -477.7820129394531
+            ],
+            [
+              124.82381439208984,
+              96.1884765625,
+              -251.53199768066406
+            ]
+          ]
+        },
+        "after": {
+          "triangles": 323740,
+          "vertices": 161868,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 891860.8297535308,
+          "bounds_lps_mm": [
+            [
+              14.20197582244873,
+              -50.85734939575195,
+              -478.0235900878906
+            ],
+            [
+              125.0181655883789,
+              96.09410095214844,
+              -251.3325653076172
+            ]
+          ]
+        },
+        "volume_change_percent": -0.11821627071040286
+      },
+      {
+        "name": "LeftLowerLobe",
+        "category": "lobes",
+        "raw_voxels": 1248902,
+        "voxels": 1261584,
+        "repair": {
+          "operation": "largest lobe, 1.0 mm closing, hole fill",
+          "minimum_component_voxels": 1,
+          "closing_radius_mm": 1.0,
+          "reference_supported_component_selection": false
+        },
+        "status": "processed",
+        "file": "lobes/LeftLowerLobe.stl",
+        "sha256": "742adc31d185c67c300bbb066131771d9ca1159abbe4273242657d30707563e6",
+        "triangles": 262772,
+        "volume_mm3": 715070.3854046674,
+        "surface": {
+          "path": "stl/raw/lobes/LeftLowerLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 0,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 0.0,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 20,
+            "removed_surface_components": 17,
+            "removed_surface_volume_mm3": 10.121401369476573
+          },
+          "output_faces": 263008,
+          "output_quality": {
+            "triangles": 263008,
+            "vertices": 131506,
+            "surface_components": 3,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 715798.0240101244,
+            "bounds_lps_mm": [
+              [
+                24.423442840576172,
+                -23.752906799316406,
+                -484.0320129394531
+              ],
+              [
+                124.82381439208984,
+                109.6650390625,
+                -307.7820129394531
+              ]
+            ]
+          }
+        },
+        "smoothing": {
+          "path": "stl/smooth/lobes/LeftLowerLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 60,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 2.553777493748655,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 20,
+            "removed_surface_components": 19,
+            "removed_surface_volume_mm3": 0.07572213749874952
+          },
+          "output_faces": 262772,
+          "output_quality": {
+            "triangles": 262772,
+            "vertices": 131384,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 715070.3854046674,
+            "bounds_lps_mm": [
+              [
+                24.387554168701172,
+                -23.12162971496582,
+                -483.61798095703125
+              ],
+              [
+                124.91248321533203,
+                109.78058624267578,
+                -308.10870361328125
+              ]
+            ]
+          }
+        },
+        "source_sha256": "00e1c3b779530dbc8b1d2cab7956919a80b33969ba2efe2cbdefc84e3b1a80ba",
+        "before": {
+          "triangles": 263008,
+          "vertices": 131506,
+          "surface_components": 3,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 715798.0240101244,
+          "bounds_lps_mm": [
+            [
+              24.423442840576172,
+              -23.752906799316406,
+              -484.0320129394531
+            ],
+            [
+              124.82381439208984,
+              109.6650390625,
+              -307.7820129394531
+            ]
+          ]
+        },
+        "after": {
+          "triangles": 262772,
+          "vertices": 131384,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 715070.3854046674,
+          "bounds_lps_mm": [
+            [
+              24.387554168701172,
+              -23.12162971496582,
+              -483.61798095703125
+            ],
+            [
+              124.91248321533203,
+              109.78058624267578,
+              -308.10870361328125
+            ]
+          ]
+        },
+        "volume_change_percent": -0.10165417911893737
+      },
+      {
+        "name": "RightUpperLobe",
+        "category": "lobes",
+        "raw_voxels": 1293229,
+        "voxels": 1305946,
+        "repair": {
+          "operation": "largest lobe, 1.0 mm closing, hole fill",
+          "minimum_component_voxels": 1,
+          "closing_radius_mm": 1.0,
+          "reference_supported_component_selection": false
+        },
+        "status": "processed",
+        "file": "lobes/RightUpperLobe.stl",
+        "sha256": "3ada1676d5876a0f9761003de138d40a8949e88deed920d3551584399c1dfee5",
+        "triangles": 319952,
+        "volume_mm3": 739459.4876462303,
+        "surface": {
+          "path": "stl/raw/lobes/RightUpperLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 0,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 0.0,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 7,
+            "removed_surface_components": 4,
+            "removed_surface_volume_mm3": 2.0810357955933534
+          },
+          "output_faces": 320236,
+          "output_quality": {
+            "triangles": 320236,
+            "vertices": 160070,
+            "surface_components": 3,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 740827.9733470781,
+            "bounds_lps_mm": [
+              [
+                -96.8656005859375,
+                -41.94626235961914,
+                -434.0320129394531
+              ],
+              [
+                19.706645965576172,
+                96.1884765625,
+                -251.53199768066406
+              ]
+            ]
+          }
+        },
+        "smoothing": {
+          "path": "stl/smooth/lobes/RightUpperLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 60,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 2.553777493748655,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 7,
+            "removed_surface_components": 6,
+            "removed_surface_volume_mm3": 0.31557726139628456
+          },
+          "output_faces": 319952,
+          "output_quality": {
+            "triangles": 319952,
+            "vertices": 159924,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 739459.4876462303,
+            "bounds_lps_mm": [
+              [
+                -96.46137237548828,
+                -41.031898498535156,
+                -434.1129455566406
+              ],
+              [
+                19.05353546142578,
+                96.2318115234375,
+                -251.1976776123047
+              ]
+            ]
+          }
+        },
+        "source_sha256": "95facb2827815ce321db5c5034fbc83371b0eadfa1ef915aad6b09d6373317d4",
+        "before": {
+          "triangles": 320236,
+          "vertices": 160070,
+          "surface_components": 3,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 740827.9733470781,
+          "bounds_lps_mm": [
+            [
+              -96.8656005859375,
+              -41.94626235961914,
+              -434.0320129394531
+            ],
+            [
+              19.706645965576172,
+              96.1884765625,
+              -251.53199768066406
+            ]
+          ]
+        },
+        "after": {
+          "triangles": 319952,
+          "vertices": 159924,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 739459.4876462303,
+          "bounds_lps_mm": [
+            [
+              -96.46137237548828,
+              -41.031898498535156,
+              -434.1129455566406
+            ],
+            [
+              19.05353546142578,
+              96.2318115234375,
+              -251.1976776123047
+            ]
+          ]
+        },
+        "volume_change_percent": -0.1847238157955844
+      },
+      {
+        "name": "RightMiddleLobe",
+        "category": "lobes",
+        "raw_voxels": 354802,
+        "voxels": 355846,
+        "repair": {
+          "operation": "largest lobe, 1.0 mm closing, hole fill",
+          "minimum_component_voxels": 1,
+          "closing_radius_mm": 1.0,
+          "reference_supported_component_selection": false
+        },
+        "status": "processed",
+        "file": "lobes/RightMiddleLobe.stl",
+        "sha256": "b83fbbe024161e71f5815400f676cecde0a84f0ca1f7d6ebd28dc4e485ab59e7",
+        "triangles": 168460,
+        "volume_mm3": 201106.6353829549,
+        "surface": {
+          "path": "stl/raw/lobes/RightMiddleLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 0,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 0.0,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 11,
+            "removed_surface_components": 10,
+            "removed_surface_volume_mm3": 17.97258187103336
+          },
+          "output_faces": 168460,
+          "output_quality": {
+            "triangles": 168460,
+            "vertices": 84212,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 201752.158777437,
+            "bounds_lps_mm": [
+              [
+                -92.1488037109375,
+                -44.64157485961914,
+                -469.0320129394531
+              ],
+              [
+                -0.5081940293312073,
+                44.9775505065918,
+                -351.5320129394531
+              ]
+            ]
+          }
+        },
+        "smoothing": {
+          "path": "stl/smooth/lobes/RightMiddleLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 60,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 2.553777493748655,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 11,
+            "removed_surface_components": 10,
+            "removed_surface_volume_mm3": 0.08994205128336283
+          },
+          "output_faces": 168460,
+          "output_quality": {
+            "triangles": 168460,
+            "vertices": 84212,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 201106.6353829549,
+            "bounds_lps_mm": [
+              [
+                -91.95661926269531,
+                -43.875770568847656,
+                -468.66632080078125
+              ],
+              [
+                -0.7118939757347107,
+                44.99989700317383,
+                -351.87030029296875
+              ]
+            ]
+          }
+        },
+        "source_sha256": "fff23cccaf13933c4618c94424ed2d62b4c6dca234ed27dc4d99860e73cbf086",
+        "before": {
+          "triangles": 168460,
+          "vertices": 84212,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 201752.158777437,
+          "bounds_lps_mm": [
+            [
+              -92.1488037109375,
+              -44.64157485961914,
+              -469.0320129394531
+            ],
+            [
+              -0.5081940293312073,
+              44.9775505065918,
+              -351.5320129394531
+            ]
+          ]
+        },
+        "after": {
+          "triangles": 168460,
+          "vertices": 84212,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 201106.6353829549,
+          "bounds_lps_mm": [
+            [
+              -91.95661926269531,
+              -43.875770568847656,
+              -468.66632080078125
+            ],
+            [
+              -0.7118939757347107,
+              44.99989700317383,
+              -351.87030029296875
+            ]
+          ]
+        },
+        "volume_change_percent": -0.3199586058428294
+      },
+      {
+        "name": "RightLowerLobe",
+        "category": "lobes",
+        "raw_voxels": 1352172,
+        "voxels": 1367463,
+        "repair": {
+          "operation": "largest lobe, 1.0 mm closing, hole fill",
+          "minimum_component_voxels": 1,
+          "closing_radius_mm": 1.0,
+          "reference_supported_component_selection": false
+        },
+        "status": "processed",
+        "file": "lobes/RightLowerLobe.stl",
+        "sha256": "0bde85373c29bb3f47dfd9b39a8e9e2ab4dbe87f6e44c89ee975b239fc38fb70",
+        "triangles": 297548,
+        "volume_mm3": 775336.6243023693,
+        "surface": {
+          "path": "stl/raw/lobes/RightLowerLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 0,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 0.0,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 8,
+            "removed_surface_components": 7,
+            "removed_surface_volume_mm3": 9.979512565231676
+          },
+          "output_faces": 297548,
+          "output_quality": {
+            "triangles": 297548,
+            "vertices": 148764,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 775852.9485748108,
+            "bounds_lps_mm": [
+              [
+                -98.2132568359375,
+                -35.88180923461914,
+                -484.0320129394531
+              ],
+              [
+                15.663678169250488,
+                108.3173828125,
+                -305.2820129394531
+              ]
+            ]
+          }
+        },
+        "smoothing": {
+          "path": "stl/smooth/lobes/RightLowerLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 60,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 2.553777493748655,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 8,
+            "removed_surface_components": 7,
+            "removed_surface_volume_mm3": 0.018707953520799857
+          },
+          "output_faces": 297548,
+          "output_quality": {
+            "triangles": 297548,
+            "vertices": 148764,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 775336.6243023693,
+            "bounds_lps_mm": [
+              [
+                -97.9106216430664,
+                -35.255680084228516,
+                -483.4822082519531
+              ],
+              [
+                15.310263633728027,
+                108.49911499023438,
+                -305.22308349609375
+              ]
+            ]
+          }
+        },
+        "source_sha256": "3ed8e587b953e4cc947aac324d68a7aac304e12c1f55735a57a1d0bc434e1507",
+        "before": {
+          "triangles": 297548,
+          "vertices": 148764,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 775852.9485748108,
+          "bounds_lps_mm": [
+            [
+              -98.2132568359375,
+              -35.88180923461914,
+              -484.0320129394531
+            ],
+            [
+              15.663678169250488,
+              108.3173828125,
+              -305.2820129394531
+            ]
+          ]
+        },
+        "after": {
+          "triangles": 297548,
+          "vertices": 148764,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 775336.6243023693,
+          "bounds_lps_mm": [
+            [
+              -97.9106216430664,
+              -35.255680084228516,
+              -483.4822082519531
+            ],
+            [
+              15.310263633728027,
+              108.49911499023438,
+              -305.22308349609375
+            ]
+          ]
+        },
+        "volume_change_percent": -0.0665492440790394
+      },
+      {
+        "name": "Bronchus",
+        "category": "airway",
+        "raw_voxels": 49277,
+        "voxels": 40383,
+        "repair": {
+          "operation": "CT-constrained 1.5 mm closing and local bridges; retain branches >=50 voxels",
+          "minimum_component_voxels": 50,
+          "closing_radius_mm": 1.5,
+          "maximum_bridge_distance_mm": 2.5,
+          "accepted_bridges": 227,
+          "reference_supported_component_selection": false,
+          "connected_display": {
+            "accepted_bridges": [
+              {
+                "component_voxels": 334,
+                "gap_mm": 4.61813876555902,
+                "path_length_mm": 6.4453119999999995,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 143,
+                "gap_mm": 3.4860542937803722,
+                "path_length_mm": 5.1953119999999995,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 100,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 94,
+                "gap_mm": 3.262419811447179,
+                "path_length_mm": 4.61914,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 73,
+                "gap_mm": 3.435862064270745,
+                "path_length_mm": 4.042968,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 59,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 58,
+                "gap_mm": 2.9189417185909625,
+                "path_length_mm": 4.521484,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 18,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 16,
+                "gap_mm": 1.3476559846297294,
+                "path_length_mm": 1.347656,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 4,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 4,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 1.347656,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 2,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              }
+            ],
+            "unresolved_components": 10,
+            "withheld_voxels": 8641,
+            "retained_prediction_voxels": 40123,
+            "added_bridge_voxels": 260,
+            "retained_unconnected_components": 0,
+            "retained_unconnected_voxels": 0,
+            "remaining_face_connected_components": 1,
+            "retain_unconnected_minimum_mm3": null,
+            "maximum_bridge_distance_mm": 6.0,
+            "before_voxels": 48764,
+            "withheld_mask": "stl/raw/review_withheld/Bronchus_withheld.npy"
+          }
+        },
+        "status": "processed",
+        "file": "airway/Bronchus.stl",
+        "sha256": "2c1ce307d84bb10680adbd031ca9d41a60fee923003e72a4ddc6838aee11443c",
+        "triangles": 55696,
+        "volume_mm3": 20775.697076133627,
+        "surface": {
+          "path": "stl/smooth/.tmp_smooth/Bronchus.stl",
+          "triangles": 55696,
+          "vertices": 27836,
+          "bounds_lps_mm": [
+            [
+              -60.15510892646407,
+              -13.99452063486288,
+              -430.92590003681187
+            ],
+            [
+              24.77548052679444,
+              72.95426424914552,
+              -230.28209536743168
+            ]
+          ],
+          "volume_mm3": 20609.082510281976,
+          "mesh_smoothing_iterations": 0,
+          "surface_gaussian_sigma_mm": 0.7,
+          "preserve_voxel_connectivity": true,
+          "volume_compensated_surface_field": false,
+          "skeleton_clamp": false,
+          "iso_level_mm": 0.0,
+          "iso_level_floor_mm": -1000000000.0,
+          "surface_gaussian_sigma_z_mm": 1.1
+        },
+        "smoothing": {
+          "path": "stl/smooth/airway/Bronchus.stl",
+          "algorithm": "Model surface cleanup + Windowed Sinc (no reduction)",
+          "volume_preservation": false,
+          "surface_smoothing": "VTK Windowed Sinc",
+          "surface_smoothing_iterations": 15,
+          "surface_smoothing_passband": 0.08,
+          "source_faces": 55696,
+          "original_source_faces": 55696,
+          "removed_coincident_internal_faces": 0,
+          "largest_surface_only": true,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 20.0,
+            "surface_components_before_filter": 1,
+            "removed_surface_components": 0,
+            "removed_surface_volume_mm3": 0.0
+          },
+          "reduction_applied": false,
+          "output_faces": 55696,
+          "source_quality": {
+            "triangles": 55696,
+            "vertices": 27836,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 20609.082510282235,
+            "bounds_lps_mm": [
+              [
+                -60.15510940551758,
+                -13.99452018737793,
+                -430.9259033203125
+              ],
+              [
+                24.775480270385742,
+                72.95426177978516,
+                -230.28208923339844
+              ]
+            ]
+          },
+          "output_quality": {
+            "triangles": 55696,
+            "vertices": 27836,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 20775.697076133627,
+            "bounds_lps_mm": [
+              [
+                -60.25193405151367,
+                -14.101028442382813,
+                -431.1114196777344
+              ],
+              [
+                24.876632690429688,
+                73.05659484863281,
+                -230.2803497314453
+              ]
+            ]
+          },
+          "volume_change_percent": 0.8084521267177402
+        },
+        "source_sha256": "090473870e988034fa225cb59993688c9fa57154a75ea12d8dbee356ceee8f69",
+        "before": {
+          "triangles": 56144,
+          "vertices": 28058,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 22546.866671694163,
+          "bounds_lps_mm": [
+            [
+              -60.478885650634766,
+              -14.319314002990723,
+              -431.5320129394531
+            ],
+            [
+              25.09726905822754,
+              73.27832794189453,
+              -230.28199768066406
+            ]
+          ]
+        },
+        "after": {
+          "triangles": 55696,
+          "vertices": 27836,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 20775.697076133627,
+          "bounds_lps_mm": [
+            [
+              -60.25193405151367,
+              -14.101028442382813,
+              -431.1114196777344
+            ],
+            [
+              24.876632690429688,
+              73.05659484863281,
+              -230.2803497314453
+            ]
+          ]
+        },
+        "volume_change_percent": -7.8555021473742155
+      },
+      {
+        "name": "PulmonaryArtery",
+        "category": "vessels",
+        "raw_voxels": 226270,
+        "voxels": 211387,
+        "repair": {
+          "operation": "CT-constrained 1.5 mm closing and local bridges; retain branches >=50 voxels",
+          "minimum_component_voxels": 50,
+          "closing_radius_mm": 1.5,
+          "maximum_bridge_distance_mm": 2.5,
+          "accepted_bridges": 108,
+          "reference_supported_component_selection": false,
+          "connected_display": {
+            "accepted_bridges": [
+              {
+                "component_voxels": 2907,
+                "gap_mm": 3.8691844985839112,
+                "path_length_mm": 4.716796,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 52,
+                "gap_mm": 2.0214840211729763,
+                "path_length_mm": 5.673828,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 12,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 3,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 3,
+                "gap_mm": 1.5718104870641603,
+                "path_length_mm": 2.5976559999999997,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 2,
+                "gap_mm": 1.5718104870641603,
+                "path_length_mm": 2.5976559999999997,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 2,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 1.347656,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 1.347656,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 1.347656,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 3,
+                "gap_mm": 0.0,
+                "path_length_mm": 0.0,
+                "tube_radius_mm": 1.3
+              }
+            ],
+            "unresolved_components": 107,
+            "withheld_voxels": 14596,
+            "retained_prediction_voxels": 211318,
+            "added_bridge_voxels": 69,
+            "retained_unconnected_components": 1,
+            "retained_unconnected_voxels": 3,
+            "remaining_face_connected_components": 2,
+            "retain_unconnected_minimum_mm3": null,
+            "maximum_bridge_distance_mm": 6.0,
+            "before_voxels": 225914,
+            "withheld_mask": "stl/raw/review_withheld/PulmonaryArtery_withheld.npy"
+          }
+        },
+        "status": "processed",
+        "file": "vessels/PulmonaryArtery.stl",
+        "sha256": "fadc410dafd416f70a817d58bd445aaf958db71c2423d9a27231e4d05647e02e",
+        "triangles": 261072,
+        "volume_mm3": 108845.45129669642,
+        "surface": {
+          "path": "stl/smooth/.tmp_smooth/PulmonaryArtery.stl",
+          "triangles": 261096,
+          "vertices": 130546,
+          "bounds_lps_mm": [
+            [
+              -85.85629805610505,
+              -27.74974478736581,
+              -459.8728789927291
+            ],
+            [
+              111.13664325560565,
+              93.96533713786577,
+              -275.61011916925327
+            ]
+          ],
+          "volume_mm3": 109218.92551205937,
+          "mesh_smoothing_iterations": 10,
+          "surface_gaussian_sigma_mm": 1.0,
+          "preserve_voxel_connectivity": true,
+          "volume_compensated_surface_field": true,
+          "skeleton_clamp": true,
+          "iso_level_mm": -0.12,
+          "iso_level_floor_mm": -0.12,
+          "surface_gaussian_sigma_z_mm": 1.5
+        },
+        "smoothing": {
+          "path": "stl/smooth/vessels/PulmonaryArtery.stl",
+          "algorithm": "Model surface cleanup + Windowed Sinc (no reduction)",
+          "volume_preservation": false,
+          "surface_smoothing": "VTK Windowed Sinc",
+          "surface_smoothing_iterations": 30,
+          "surface_smoothing_passband": 0.05,
+          "source_faces": 261072,
+          "original_source_faces": 261096,
+          "removed_coincident_internal_faces": 0,
+          "largest_surface_only": true,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 20.0,
+            "surface_components_before_filter": 1,
+            "removed_surface_components": 0,
+            "removed_surface_volume_mm3": 0.0
+          },
+          "reduction_applied": false,
+          "output_faces": 261072,
+          "source_quality": {
+            "triangles": 261072,
+            "vertices": 130532,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 109218.90874484523,
+            "bounds_lps_mm": [
+              [
+                -85.8563003540039,
+                -27.749744415283203,
+                -459.87286376953125
+              ],
+              [
+                111.13664245605469,
+                93.96533966064453,
+                -275.610107421875
+              ]
+            ]
+          },
+          "output_quality": {
+            "triangles": 261072,
+            "vertices": 130532,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 108845.45129669642,
+            "bounds_lps_mm": [
+              [
+                -85.800537109375,
+                -27.704904556274414,
+                -459.76727294921875
+              ],
+              [
+                110.95901489257813,
+                93.88607025146484,
+                -275.70703125
+              ]
+            ]
+          },
+          "volume_change_percent": -0.3419347917321458
+        },
+        "source_sha256": "c852c281cc45520e33d76bcefbedadb020a9049900e1b1956b1039de98353ee3",
+        "before": {
+          "triangles": 292932,
+          "vertices": 146460,
+          "surface_components": 2,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 118170.78842192086,
+          "bounds_lps_mm": [
+            [
+              -86.0843505859375,
+              -29.143529891967773,
+              -460.2820129394531
+            ],
+            [
+              111.34725189208984,
+              94.1669921875,
+              -275.2820129394531
+            ]
+          ]
+        },
+        "after": {
+          "triangles": 261072,
+          "vertices": 130532,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 108845.45129669642,
+          "bounds_lps_mm": [
+            [
+              -85.800537109375,
+              -27.704904556274414,
+              -459.76727294921875
+            ],
+            [
+              110.95901489257813,
+              93.88607025146484,
+              -275.70703125
+            ]
+          ]
+        },
+        "volume_change_percent": -7.8914063701842725
+      },
+      {
+        "name": "PulmonaryVenous",
+        "category": "vessels",
+        "raw_voxels": 307567,
+        "voxels": 292276,
+        "repair": {
+          "operation": "CT-constrained 1.5 mm closing and local bridges; retain branches >=50 voxels",
+          "minimum_component_voxels": 50,
+          "closing_radius_mm": 1.5,
+          "maximum_bridge_distance_mm": 2.5,
+          "accepted_bridges": 114,
+          "reference_supported_component_selection": false,
+          "island_cleanup": {
+            "operation": "remove small isolated candidates; protect long slender branches",
+            "minimum_volume_mm3": 500,
+            "protected_branch_minimum_extent_mm": 25,
+            "protected_branch_minimum_pca_elongation": 3,
+            "components_before": 126,
+            "components_after": 14,
+            "removed_components": 112,
+            "removed_voxels": 21587
+          },
+          "connected_display": {
+            "accepted_bridges": [
+              {
+                "component_voxels": 3399,
+                "gap_mm": 3.5935504360351094,
+                "path_length_mm": 4.61914,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 240,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 7.792968000000002,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 72,
+                "gap_mm": 1.9058733708766304,
+                "path_length_mm": 2.695312,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 51,
+                "gap_mm": 2.8401014796112034,
+                "path_length_mm": 3.8476559999999997,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 14,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 13,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 7,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 3,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 2.5,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 3,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 2,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 2,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 2.5976559999999997,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 2,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 2.5,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 2.5,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 1.3476559846297294,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 1.5718104870641603,
+                "path_length_mm": 2.5976559999999997,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              }
+            ],
+            "unresolved_components": 668,
+            "withheld_voxels": 23110,
+            "retained_prediction_voxels": 291239,
+            "added_bridge_voxels": 1037,
+            "retained_unconnected_components": 7,
+            "retained_unconnected_voxels": 7166,
+            "remaining_face_connected_components": 8,
+            "retain_unconnected_minimum_mm3": 20.0,
+            "maximum_bridge_distance_mm": 6.0,
+            "far_bridge": {
+              "maximum_gap_mm": 16.0,
+              "tube_radius_mm": 1.5,
+              "remaining_components": 8,
+              "bridges": [
+                {
+                  "component_voxels": 82,
+                  "gap_mm": 0.9529366854383152,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 3166,
+                  "gap_mm": 12.946084533028824,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 542,
+                  "gap_mm": 1.4200507398056017,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 554,
+                  "gap_mm": 1.4200507398056017,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 830,
+                  "gap_mm": 7.352470771552459,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 413,
+                  "gap_mm": 7.9166153220134605,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 359,
+                  "gap_mm": 1.4200507398056017,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 109,
+                  "gap_mm": 0.9529366854383152,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 452,
+                  "gap_mm": 6.029187734374186,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 764,
+                  "gap_mm": 4.558444166957253,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 3665,
+                  "gap_mm": 5.380725738472112,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 485,
+                  "gap_mm": 1.4200507398056017,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 569,
+                  "gap_mm": 11.434678026611227,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 1,
+                  "gap_mm": 0.9529366854383152,
+                  "round": 1
+                }
+              ],
+              "skipped_beyond_gap": 0,
+              "skipped_blocked_by_other_structure": 7
+            },
+            "before_voxels": 314349,
+            "withheld_mask": "stl/raw/review_withheld/PulmonaryVenous_withheld.npy"
+          }
+        },
+        "status": "processed",
+        "file": "vessels/PulmonaryVenous.stl",
+        "sha256": "ece92a7ab5a3ae6f7035b96013df1b6b3ec7c4fd4d30e86ad4d6689c6708834a",
+        "triangles": 404792,
+        "volume_mm3": 145782.94496206474,
+        "surface": {
+          "path": "stl/smooth/.tmp_smooth/PulmonaryVenous.stl",
+          "triangles": 404872,
+          "vertices": 202308,
+          "bounds_lps_mm": [
+            [
+              -85.87743073588476,
+              -33.67786740663989,
+              -467.37331927944797
+            ],
+            [
+              111.83039004000271,
+              98.81395087354262,
+              -266.83456398069603
+            ]
+          ],
+          "volume_mm3": 146136.72751905725,
+          "mesh_smoothing_iterations": 10,
+          "surface_gaussian_sigma_mm": 1.0,
+          "preserve_voxel_connectivity": true,
+          "volume_compensated_surface_field": true,
+          "skeleton_clamp": true,
+          "iso_level_mm": -0.12,
+          "iso_level_floor_mm": -0.12,
+          "surface_gaussian_sigma_z_mm": 1.5
+        },
+        "smoothing": {
+          "path": "stl/smooth/vessels/PulmonaryVenous.stl",
+          "algorithm": "Model surface cleanup + Windowed Sinc (no reduction)",
+          "volume_preservation": false,
+          "surface_smoothing": "VTK Windowed Sinc",
+          "surface_smoothing_iterations": 30,
+          "surface_smoothing_passband": 0.05,
+          "source_faces": 404792,
+          "original_source_faces": 404872,
+          "removed_coincident_internal_faces": 0,
+          "largest_surface_only": false,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 20.0,
+            "surface_components_before_filter": 20,
+            "removed_surface_components": 9,
+            "removed_surface_volume_mm3": 0.0027132443220129346
+          },
+          "reduction_applied": false,
+          "output_faces": 404792,
+          "source_quality": {
+            "triangles": 404792,
+            "vertices": 202250,
+            "surface_components": 11,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 146136.72480581835,
+            "bounds_lps_mm": [
+              [
+                -85.87743377685547,
+                -33.6778678894043,
+                -467.3733215332031
+              ],
+              [
+                111.83039093017578,
+                98.81394958496094,
+                -266.8345642089844
+              ]
+            ]
+          },
+          "output_quality": {
+            "triangles": 404792,
+            "vertices": 202250,
+            "surface_components": 11,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 145782.94496206474,
+            "bounds_lps_mm": [
+              [
+                -85.7969970703125,
+                -33.630836486816406,
+                -467.4259338378906
+              ],
+              [
+                111.6851806640625,
+                98.7784423828125,
+                -266.7427673339844
+              ]
+            ]
+          },
+          "volume_change_percent": -0.24208825278088097
+        },
+        "source_sha256": "bc0062e3becdeaa65a06e94f55bd27487b57a4978af379af75124d759b7741a1",
+        "before": {
+          "triangles": 463468,
+          "vertices": 231298,
+          "surface_components": 27,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 163040.26316481453,
+          "bounds_lps_mm": [
+            [
+              -86.0843505859375,
+              -33.86032485961914,
+              -469.0320129394531
+            ],
+            [
+              112.02108001708984,
+              100.2314453125,
+              -266.5320129394531
+            ]
+          ]
+        },
+        "after": {
+          "triangles": 404792,
+          "vertices": 202250,
+          "surface_components": 11,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 145782.94496206474,
+          "bounds_lps_mm": [
+            [
+              -85.7969970703125,
+              -33.630836486816406,
+              -467.4259338378906
+            ],
+            [
+              111.6851806640625,
+              98.7784423828125,
+              -266.7427673339844
+            ]
+          ]
+        },
+        "volume_change_percent": -10.584697220038631
+      },
+      {
+        "name": "LungTumor",
+        "category": "tumor",
+        "raw_voxels": 9168,
+        "voxels": 5635,
+        "repair": {
+          "operation": "close and bridge small gaps, then display only the largest connected tumor candidate",
+          "minimum_component_voxels": 5,
+          "distant_component_minimum_voxels": 50,
+          "closing_radius_mm": 1.5,
+          "maximum_bridge_distance_mm": 3.0,
+          "accepted_bridges": 4,
+          "display_largest_candidate_only": true,
+          "removed_disconnected_components": 8,
+          "removed_disconnected_voxels": 4049,
+          "reference_supported_component_selection": false
+        },
+        "status": "processed",
+        "file": "tumor/LungTumor.stl",
+        "sha256": "263d9e7ec9fc1cb86c83ac49c91f21f9e87e97f320d9525aaf3caf92e9204662",
+        "triangles": 2000,
+        "volume_mm3": 3185.7423564791693,
+        "surface": {
+          "path": "stl/smooth/.tmp_smooth/LungTumor.stl",
+          "triangles": 8044,
+          "vertices": 4024,
+          "bounds_lps_mm": [
+            [
+              21.936418873827844,
+              -28.38377005082675,
+              -536.7052769634935
+            ],
+            [
+              46.14477944770013,
+              11.298026778639072,
+              -525.1961256340732
+            ]
+          ],
+          "volume_mm3": 3190.5021422942896,
+          "mesh_smoothing_iterations": 5,
+          "surface_gaussian_sigma_mm": 1.0,
+          "preserve_voxel_connectivity": false,
+          "volume_compensated_surface_field": true,
+          "skeleton_clamp": false,
+          "iso_level_mm": 0.4332474023103714,
+          "iso_level_floor_mm": -1000000000.0,
+          "surface_gaussian_sigma_z_mm": 1.0
+        },
+        "smoothing": {
+          "path": "stl/smooth/tumor/LungTumor.stl",
+          "algorithm": "Model surface cleanup + Windowed Sinc (no reduction)",
+          "volume_preservation": false,
+          "surface_smoothing": "VTK Windowed Sinc",
+          "surface_smoothing_iterations": 15,
+          "surface_smoothing_passband": 0.08,
+          "source_faces": 8044,
+          "original_source_faces": 8044,
+          "removed_coincident_internal_faces": 0,
+          "largest_surface_only": true,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 1,
+            "removed_surface_components": 0,
+            "removed_surface_volume_mm3": 0.0
+          },
+          "reduction_applied": false,
+          "output_faces": 8044,
+          "source_quality": {
+            "triangles": 8044,
+            "vertices": 4024,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 3190.5021422945047,
+            "bounds_lps_mm": [
+              [
+                21.936418533325195,
+                -28.383769989013672,
+                -536.7052612304688
+              ],
+              [
+                46.144779205322266,
+                11.298027038574219,
+                -525.1961059570313
+              ]
+            ]
+          },
+          "output_quality": {
+            "triangles": 8044,
+            "vertices": 4024,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 3189.1823015072378,
+            "bounds_lps_mm": [
+              [
+                21.927947998046875,
+                -28.356586456298828,
+                -536.7116088867188
+              ],
+              [
+                46.10472106933594,
+                11.265522956848145,
+                -525.2186279296875
+              ]
+            ]
+          },
+          "volume_change_percent": -0.04136780758647873
+        },
+        "tumor_reduction": {
+          "target_faces": 2000,
+          "faces_before": 8044,
+          "accepted": true,
+          "faces_after": 2000,
+          "volume_change_percent": -0.10786291603470666
+        },
+        "source_sha256": "46e5338997b4b5c027da75fed0095e4a4268b343600b9764061a81056ee1dfc0",
+        "before": {
+          "triangles": 9204,
+          "vertices": 4604,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 3169.60672738433,
+          "bounds_lps_mm": [
+            [
+              20.380474090576172,
+              -29.143529891967773,
+              -536.531982421875
+            ],
+            [
+              46.659767150878906,
+              11.959978103637695,
+              -524.031982421875
+            ]
+          ]
+        },
+        "after": {
+          "triangles": 2000,
+          "vertices": 1002,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 3185.7423564791693,
+          "bounds_lps_mm": [
+            [
+              21.866079330444336,
+              -28.32121467590332,
+              -536.7108764648438
+            ],
+            [
+              46.10738754272461,
+              11.266181945800781,
+              -525.2181396484375
+            ]
+          ]
+        },
+        "volume_change_percent": 0.5090735375916866
+      }
+    ]
+  },
+  "cut": {
+    "stage": "Cut",
+    "status": "complete",
+    "source_manifest_sha256": "72efb90487313d9fbf8d5e0eff80988b2d53cc94523a44a39a719066537afa9c",
+    "coordinate_system": "DICOM LPS millimetres",
+    "max_total_volume_change": 0.05,
+    "parameters": {
+      "max_faces": 150000
+    },
+    "objects": [
+      {
+        "name": "LeftUpperLobe",
+        "category": "lobes",
+        "raw_voxels": 1559141,
+        "voxels": 1573766,
+        "repair": {
+          "operation": "largest lobe, 1.0 mm closing, hole fill",
+          "minimum_component_voxels": 1,
+          "closing_radius_mm": 1.0,
+          "reference_supported_component_selection": false
+        },
+        "status": "processed",
+        "file": "lobes/LeftUpperLobe.stl",
+        "sha256": "e8859eb3ff7e65a3c276781104eae8be34201fdd02379b23f6ec088bdcfbd4f0",
+        "triangles": 150000,
+        "volume_mm3": 891853.0204192371,
+        "surface": {
+          "path": "stl/raw/lobes/LeftUpperLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 0,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 0.0,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 10,
+            "removed_surface_components": 9,
+            "removed_surface_volume_mm3": 6.361348056984105
+          },
+          "output_faces": 323740,
+          "output_quality": {
+            "triangles": 323740,
+            "vertices": 161868,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 892916.4022248024,
+            "bounds_lps_mm": [
+              [
+                14.316021919250488,
+                -50.706024169921875,
+                -477.7820129394531
+              ],
+              [
+                124.82381439208984,
+                96.1884765625,
+                -251.53199768066406
+              ]
+            ]
+          }
+        },
+        "smoothing": {
+          "path": "stl/smooth/lobes/LeftUpperLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 60,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 2.553777493748655,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 10,
+            "removed_surface_components": 9,
+            "removed_surface_volume_mm3": 0.03671072597422287
+          },
+          "output_faces": 323740,
+          "output_quality": {
+            "triangles": 323740,
+            "vertices": 161868,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 891860.8297535308,
+            "bounds_lps_mm": [
+              [
+                14.20197582244873,
+                -50.85734939575195,
+                -478.0235900878906
+              ],
+              [
+                125.0181655883789,
+                96.09410095214844,
+                -251.3325653076172
+              ]
+            ]
+          }
+        },
+        "source_sha256": "04087d91cade730d95fa4c3129ff83bf620208858c7b4dd29ce780bdf059e5dd",
+        "before": {
+          "triangles": 323740,
+          "vertices": 161868,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 891860.8297535308,
+          "bounds_lps_mm": [
+            [
+              14.20197582244873,
+              -50.85734939575195,
+              -478.0235900878906
+            ],
+            [
+              125.0181655883789,
+              96.09410095214844,
+              -251.3325653076172
+            ]
+          ]
+        },
+        "after": {
+          "triangles": 150000,
+          "vertices": 74998,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 891853.0204192371,
+          "bounds_lps_mm": [
+            [
+              14.206778526306152,
+              -50.856075286865234,
+              -478.0235900878906
+            ],
+            [
+              125.01858520507813,
+              96.09200286865234,
+              -251.3292999267578
+            ]
+          ]
+        },
+        "volume_change_percent": -0.0008756225223893743,
+        "target_faces": 150000,
+        "used_target_faces": 150000
+      },
+      {
+        "name": "LeftLowerLobe",
+        "category": "lobes",
+        "raw_voxels": 1248902,
+        "voxels": 1261584,
+        "repair": {
+          "operation": "largest lobe, 1.0 mm closing, hole fill",
+          "minimum_component_voxels": 1,
+          "closing_radius_mm": 1.0,
+          "reference_supported_component_selection": false
+        },
+        "status": "processed",
+        "file": "lobes/LeftLowerLobe.stl",
+        "sha256": "4edfda4ad678a23c1c0c32d11e14c16338245a74da432e3c89e0892992ce94ed",
+        "triangles": 150000,
+        "volume_mm3": 715068.9193737486,
+        "surface": {
+          "path": "stl/raw/lobes/LeftLowerLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 0,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 0.0,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 20,
+            "removed_surface_components": 17,
+            "removed_surface_volume_mm3": 10.121401369476573
+          },
+          "output_faces": 263008,
+          "output_quality": {
+            "triangles": 263008,
+            "vertices": 131506,
+            "surface_components": 3,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 715798.0240101244,
+            "bounds_lps_mm": [
+              [
+                24.423442840576172,
+                -23.752906799316406,
+                -484.0320129394531
+              ],
+              [
+                124.82381439208984,
+                109.6650390625,
+                -307.7820129394531
+              ]
+            ]
+          }
+        },
+        "smoothing": {
+          "path": "stl/smooth/lobes/LeftLowerLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 60,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 2.553777493748655,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 20,
+            "removed_surface_components": 19,
+            "removed_surface_volume_mm3": 0.07572213749874952
+          },
+          "output_faces": 262772,
+          "output_quality": {
+            "triangles": 262772,
+            "vertices": 131384,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 715070.3854046674,
+            "bounds_lps_mm": [
+              [
+                24.387554168701172,
+                -23.12162971496582,
+                -483.61798095703125
+              ],
+              [
+                124.91248321533203,
+                109.78058624267578,
+                -308.10870361328125
+              ]
+            ]
+          }
+        },
+        "source_sha256": "742adc31d185c67c300bbb066131771d9ca1159abbe4273242657d30707563e6",
+        "before": {
+          "triangles": 262772,
+          "vertices": 131384,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 715070.3854046674,
+          "bounds_lps_mm": [
+            [
+              24.387554168701172,
+              -23.12162971496582,
+              -483.61798095703125
+            ],
+            [
+              124.91248321533203,
+              109.78058624267578,
+              -308.10870361328125
+            ]
+          ]
+        },
+        "after": {
+          "triangles": 150000,
+          "vertices": 74998,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 715068.9193737486,
+          "bounds_lps_mm": [
+            [
+              24.387554168701172,
+              -23.12162971496582,
+              -483.61798095703125
+            ],
+            [
+              124.91248321533203,
+              109.7821273803711,
+              -308.10870361328125
+            ]
+          ]
+        },
+        "volume_change_percent": -0.00020501910702463988,
+        "target_faces": 150000,
+        "used_target_faces": 150000
+      },
+      {
+        "name": "RightUpperLobe",
+        "category": "lobes",
+        "raw_voxels": 1293229,
+        "voxels": 1305946,
+        "repair": {
+          "operation": "largest lobe, 1.0 mm closing, hole fill",
+          "minimum_component_voxels": 1,
+          "closing_radius_mm": 1.0,
+          "reference_supported_component_selection": false
+        },
+        "status": "processed",
+        "file": "lobes/RightUpperLobe.stl",
+        "sha256": "9d8c2c736a4429cea55cc2c460410dbba89741464c0971699c817b2642911dc8",
+        "triangles": 150000,
+        "volume_mm3": 739449.5438472715,
+        "surface": {
+          "path": "stl/raw/lobes/RightUpperLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 0,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 0.0,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 7,
+            "removed_surface_components": 4,
+            "removed_surface_volume_mm3": 2.0810357955933534
+          },
+          "output_faces": 320236,
+          "output_quality": {
+            "triangles": 320236,
+            "vertices": 160070,
+            "surface_components": 3,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 740827.9733470781,
+            "bounds_lps_mm": [
+              [
+                -96.8656005859375,
+                -41.94626235961914,
+                -434.0320129394531
+              ],
+              [
+                19.706645965576172,
+                96.1884765625,
+                -251.53199768066406
+              ]
+            ]
+          }
+        },
+        "smoothing": {
+          "path": "stl/smooth/lobes/RightUpperLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 60,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 2.553777493748655,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 7,
+            "removed_surface_components": 6,
+            "removed_surface_volume_mm3": 0.31557726139628456
+          },
+          "output_faces": 319952,
+          "output_quality": {
+            "triangles": 319952,
+            "vertices": 159924,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 739459.4876462303,
+            "bounds_lps_mm": [
+              [
+                -96.46137237548828,
+                -41.031898498535156,
+                -434.1129455566406
+              ],
+              [
+                19.05353546142578,
+                96.2318115234375,
+                -251.1976776123047
+              ]
+            ]
+          }
+        },
+        "source_sha256": "3ada1676d5876a0f9761003de138d40a8949e88deed920d3551584399c1dfee5",
+        "before": {
+          "triangles": 319952,
+          "vertices": 159924,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 739459.4876462303,
+          "bounds_lps_mm": [
+            [
+              -96.46137237548828,
+              -41.031898498535156,
+              -434.1129455566406
+            ],
+            [
+              19.05353546142578,
+              96.2318115234375,
+              -251.1976776123047
+            ]
+          ]
+        },
+        "after": {
+          "triangles": 150000,
+          "vertices": 74948,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 739449.5438472715,
+          "bounds_lps_mm": [
+            [
+              -96.46304321289063,
+              -41.03963088989258,
+              -434.1129455566406
+            ],
+            [
+              19.05353546142578,
+              96.23307800292969,
+              -251.1976776123047
+            ]
+          ]
+        },
+        "volume_change_percent": -0.0013447388430232188,
+        "target_faces": 150000,
+        "used_target_faces": 150000
+      },
+      {
+        "name": "RightMiddleLobe",
+        "category": "lobes",
+        "raw_voxels": 354802,
+        "voxels": 355846,
+        "repair": {
+          "operation": "largest lobe, 1.0 mm closing, hole fill",
+          "minimum_component_voxels": 1,
+          "closing_radius_mm": 1.0,
+          "reference_supported_component_selection": false
+        },
+        "status": "processed",
+        "file": "lobes/RightMiddleLobe.stl",
+        "sha256": "2c71d3ef52bca080d5fb2d721aa202e0fba15eed9d005c43ec9f9cad47d80f9f",
+        "triangles": 150000,
+        "volume_mm3": 201106.65039400788,
+        "surface": {
+          "path": "stl/raw/lobes/RightMiddleLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 0,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 0.0,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 11,
+            "removed_surface_components": 10,
+            "removed_surface_volume_mm3": 17.97258187103336
+          },
+          "output_faces": 168460,
+          "output_quality": {
+            "triangles": 168460,
+            "vertices": 84212,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 201752.158777437,
+            "bounds_lps_mm": [
+              [
+                -92.1488037109375,
+                -44.64157485961914,
+                -469.0320129394531
+              ],
+              [
+                -0.5081940293312073,
+                44.9775505065918,
+                -351.5320129394531
+              ]
+            ]
+          }
+        },
+        "smoothing": {
+          "path": "stl/smooth/lobes/RightMiddleLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 60,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 2.553777493748655,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 11,
+            "removed_surface_components": 10,
+            "removed_surface_volume_mm3": 0.08994205128336283
+          },
+          "output_faces": 168460,
+          "output_quality": {
+            "triangles": 168460,
+            "vertices": 84212,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 201106.6353829549,
+            "bounds_lps_mm": [
+              [
+                -91.95661926269531,
+                -43.875770568847656,
+                -468.66632080078125
+              ],
+              [
+                -0.7118939757347107,
+                44.99989700317383,
+                -351.87030029296875
+              ]
+            ]
+          }
+        },
+        "source_sha256": "b83fbbe024161e71f5815400f676cecde0a84f0ca1f7d6ebd28dc4e485ab59e7",
+        "before": {
+          "triangles": 168460,
+          "vertices": 84212,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 201106.6353829549,
+          "bounds_lps_mm": [
+            [
+              -91.95661926269531,
+              -43.875770568847656,
+              -468.66632080078125
+            ],
+            [
+              -0.7118939757347107,
+              44.99989700317383,
+              -351.87030029296875
+            ]
+          ]
+        },
+        "after": {
+          "triangles": 150000,
+          "vertices": 74982,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 201106.65039400788,
+          "bounds_lps_mm": [
+            [
+              -91.95661926269531,
+              -43.87712860107422,
+              -468.66632080078125
+            ],
+            [
+              -0.7118939757347107,
+              44.99989700317383,
+              -351.87030029296875
+            ]
+          ]
+        },
+        "volume_change_percent": 7.4642256153723e-06,
+        "target_faces": 150000,
+        "used_target_faces": 150000
+      },
+      {
+        "name": "RightLowerLobe",
+        "category": "lobes",
+        "raw_voxels": 1352172,
+        "voxels": 1367463,
+        "repair": {
+          "operation": "largest lobe, 1.0 mm closing, hole fill",
+          "minimum_component_voxels": 1,
+          "closing_radius_mm": 1.0,
+          "reference_supported_component_selection": false
+        },
+        "status": "processed",
+        "file": "lobes/RightLowerLobe.stl",
+        "sha256": "34d90e474ad5d41e431f7b69587e00ac8d54ea876d466db03e0a8eace4ca0140",
+        "triangles": 150000,
+        "volume_mm3": 775334.354163858,
+        "surface": {
+          "path": "stl/raw/lobes/RightLowerLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 0,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 0.0,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 8,
+            "removed_surface_components": 7,
+            "removed_surface_volume_mm3": 9.979512565231676
+          },
+          "output_faces": 297548,
+          "output_quality": {
+            "triangles": 297548,
+            "vertices": 148764,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 775852.9485748108,
+            "bounds_lps_mm": [
+              [
+                -98.2132568359375,
+                -35.88180923461914,
+                -484.0320129394531
+              ],
+              [
+                15.663678169250488,
+                108.3173828125,
+                -305.2820129394531
+              ]
+            ]
+          }
+        },
+        "smoothing": {
+          "path": "stl/smooth/lobes/RightLowerLobe.stl",
+          "algorithm": "Joint discrete marching cubes + Windowed Sinc",
+          "surface_smoothing_iterations": 60,
+          "surface_smoothing_passband": 0.001,
+          "maximum_move_mm": 2.5,
+          "measured_maximum_move_mm": 2.553777493748655,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 8,
+            "removed_surface_components": 7,
+            "removed_surface_volume_mm3": 0.018707953520799857
+          },
+          "output_faces": 297548,
+          "output_quality": {
+            "triangles": 297548,
+            "vertices": 148764,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 775336.6243023693,
+            "bounds_lps_mm": [
+              [
+                -97.9106216430664,
+                -35.255680084228516,
+                -483.4822082519531
+              ],
+              [
+                15.310263633728027,
+                108.49911499023438,
+                -305.22308349609375
+              ]
+            ]
+          }
+        },
+        "source_sha256": "0bde85373c29bb3f47dfd9b39a8e9e2ab4dbe87f6e44c89ee975b239fc38fb70",
+        "before": {
+          "triangles": 297548,
+          "vertices": 148764,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 775336.6243023693,
+          "bounds_lps_mm": [
+            [
+              -97.9106216430664,
+              -35.255680084228516,
+              -483.4822082519531
+            ],
+            [
+              15.310263633728027,
+              108.49911499023438,
+              -305.22308349609375
+            ]
+          ]
+        },
+        "after": {
+          "triangles": 150000,
+          "vertices": 74990,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 775334.354163858,
+          "bounds_lps_mm": [
+            [
+              -97.9106216430664,
+              -35.25857162475586,
+              -483.4822082519531
+            ],
+            [
+              15.30534839630127,
+              108.50233459472656,
+              -305.2239074707031
+            ]
+          ]
+        },
+        "volume_change_percent": -0.000292793922040957,
+        "target_faces": 150000,
+        "used_target_faces": 150000
+      },
+      {
+        "name": "Bronchus",
+        "category": "airway",
+        "raw_voxels": 49277,
+        "voxels": 40383,
+        "repair": {
+          "operation": "CT-constrained 1.5 mm closing and local bridges; retain branches >=50 voxels",
+          "minimum_component_voxels": 50,
+          "closing_radius_mm": 1.5,
+          "maximum_bridge_distance_mm": 2.5,
+          "accepted_bridges": 227,
+          "reference_supported_component_selection": false,
+          "connected_display": {
+            "accepted_bridges": [
+              {
+                "component_voxels": 334,
+                "gap_mm": 4.61813876555902,
+                "path_length_mm": 6.4453119999999995,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 143,
+                "gap_mm": 3.4860542937803722,
+                "path_length_mm": 5.1953119999999995,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 100,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 94,
+                "gap_mm": 3.262419811447179,
+                "path_length_mm": 4.61914,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 73,
+                "gap_mm": 3.435862064270745,
+                "path_length_mm": 4.042968,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 59,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 58,
+                "gap_mm": 2.9189417185909625,
+                "path_length_mm": 4.521484,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 18,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 16,
+                "gap_mm": 1.3476559846297294,
+                "path_length_mm": 1.347656,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 4,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 4,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 1.347656,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 2,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              }
+            ],
+            "unresolved_components": 10,
+            "withheld_voxels": 8641,
+            "retained_prediction_voxels": 40123,
+            "added_bridge_voxels": 260,
+            "retained_unconnected_components": 0,
+            "retained_unconnected_voxels": 0,
+            "remaining_face_connected_components": 1,
+            "retain_unconnected_minimum_mm3": null,
+            "maximum_bridge_distance_mm": 6.0,
+            "before_voxels": 48764,
+            "withheld_mask": "stl/raw/review_withheld/Bronchus_withheld.npy"
+          }
+        },
+        "status": "processed",
+        "file": "airway/Bronchus.stl",
+        "sha256": "d6e7f21efee537f749eafa3cc2d293ed247bc0a06cd9152858948b70a30cb2b6",
+        "triangles": 55696,
+        "volume_mm3": 20775.697076133627,
+        "surface": {
+          "path": "stl/smooth/.tmp_smooth/Bronchus.stl",
+          "triangles": 55696,
+          "vertices": 27836,
+          "bounds_lps_mm": [
+            [
+              -60.15510892646407,
+              -13.99452063486288,
+              -430.92590003681187
+            ],
+            [
+              24.77548052679444,
+              72.95426424914552,
+              -230.28209536743168
+            ]
+          ],
+          "volume_mm3": 20609.082510281976,
+          "mesh_smoothing_iterations": 0,
+          "surface_gaussian_sigma_mm": 0.7,
+          "preserve_voxel_connectivity": true,
+          "volume_compensated_surface_field": false,
+          "skeleton_clamp": false,
+          "iso_level_mm": 0.0,
+          "iso_level_floor_mm": -1000000000.0,
+          "surface_gaussian_sigma_z_mm": 1.1
+        },
+        "smoothing": {
+          "path": "stl/smooth/airway/Bronchus.stl",
+          "algorithm": "Model surface cleanup + Windowed Sinc (no reduction)",
+          "volume_preservation": false,
+          "surface_smoothing": "VTK Windowed Sinc",
+          "surface_smoothing_iterations": 15,
+          "surface_smoothing_passband": 0.08,
+          "source_faces": 55696,
+          "original_source_faces": 55696,
+          "removed_coincident_internal_faces": 0,
+          "largest_surface_only": true,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 20.0,
+            "surface_components_before_filter": 1,
+            "removed_surface_components": 0,
+            "removed_surface_volume_mm3": 0.0
+          },
+          "reduction_applied": false,
+          "output_faces": 55696,
+          "source_quality": {
+            "triangles": 55696,
+            "vertices": 27836,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 20609.082510282235,
+            "bounds_lps_mm": [
+              [
+                -60.15510940551758,
+                -13.99452018737793,
+                -430.9259033203125
+              ],
+              [
+                24.775480270385742,
+                72.95426177978516,
+                -230.28208923339844
+              ]
+            ]
+          },
+          "output_quality": {
+            "triangles": 55696,
+            "vertices": 27836,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 20775.697076133627,
+            "bounds_lps_mm": [
+              [
+                -60.25193405151367,
+                -14.101028442382813,
+                -431.1114196777344
+              ],
+              [
+                24.876632690429688,
+                73.05659484863281,
+                -230.2803497314453
+              ]
+            ]
+          },
+          "volume_change_percent": 0.8084521267177402
+        },
+        "source_sha256": "2c1ce307d84bb10680adbd031ca9d41a60fee923003e72a4ddc6838aee11443c",
+        "before": {
+          "triangles": 55696,
+          "vertices": 27836,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 20775.697076133627,
+          "bounds_lps_mm": [
+            [
+              -60.25193405151367,
+              -14.101028442382813,
+              -431.1114196777344
+            ],
+            [
+              24.876632690429688,
+              73.05659484863281,
+              -230.2803497314453
+            ]
+          ]
+        },
+        "after": {
+          "triangles": 55696,
+          "vertices": 27836,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 20775.697076133627,
+          "bounds_lps_mm": [
+            [
+              -60.25193405151367,
+              -14.101028442382813,
+              -431.1114196777344
+            ],
+            [
+              24.876632690429688,
+              73.05659484863281,
+              -230.2803497314453
+            ]
+          ]
+        },
+        "volume_change_percent": 0.0,
+        "target_faces": 150000,
+        "used_target_faces": 150000
+      },
+      {
+        "name": "PulmonaryArtery",
+        "category": "vessels",
+        "raw_voxels": 226270,
+        "voxels": 211387,
+        "repair": {
+          "operation": "CT-constrained 1.5 mm closing and local bridges; retain branches >=50 voxels",
+          "minimum_component_voxels": 50,
+          "closing_radius_mm": 1.5,
+          "maximum_bridge_distance_mm": 2.5,
+          "accepted_bridges": 108,
+          "reference_supported_component_selection": false,
+          "connected_display": {
+            "accepted_bridges": [
+              {
+                "component_voxels": 2907,
+                "gap_mm": 3.8691844985839112,
+                "path_length_mm": 4.716796,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 52,
+                "gap_mm": 2.0214840211729763,
+                "path_length_mm": 5.673828,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 12,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 3,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 3,
+                "gap_mm": 1.5718104870641603,
+                "path_length_mm": 2.5976559999999997,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 2,
+                "gap_mm": 1.5718104870641603,
+                "path_length_mm": 2.5976559999999997,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 2,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 1.347656,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 1.347656,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 1.347656,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 3,
+                "gap_mm": 0.0,
+                "path_length_mm": 0.0,
+                "tube_radius_mm": 1.3
+              }
+            ],
+            "unresolved_components": 107,
+            "withheld_voxels": 14596,
+            "retained_prediction_voxels": 211318,
+            "added_bridge_voxels": 69,
+            "retained_unconnected_components": 1,
+            "retained_unconnected_voxels": 3,
+            "remaining_face_connected_components": 2,
+            "retain_unconnected_minimum_mm3": null,
+            "maximum_bridge_distance_mm": 6.0,
+            "before_voxels": 225914,
+            "withheld_mask": "stl/raw/review_withheld/PulmonaryArtery_withheld.npy"
+          }
+        },
+        "status": "processed",
+        "file": "vessels/PulmonaryArtery.stl",
+        "sha256": "a61a80f3240fe9fb3e3cebc19393a01a4baffebe8eeb11a2721d6622c178d61d",
+        "triangles": 150000,
+        "volume_mm3": 108819.81369576766,
+        "surface": {
+          "path": "stl/smooth/.tmp_smooth/PulmonaryArtery.stl",
+          "triangles": 261096,
+          "vertices": 130546,
+          "bounds_lps_mm": [
+            [
+              -85.85629805610505,
+              -27.74974478736581,
+              -459.8728789927291
+            ],
+            [
+              111.13664325560565,
+              93.96533713786577,
+              -275.61011916925327
+            ]
+          ],
+          "volume_mm3": 109218.92551205937,
+          "mesh_smoothing_iterations": 10,
+          "surface_gaussian_sigma_mm": 1.0,
+          "preserve_voxel_connectivity": true,
+          "volume_compensated_surface_field": true,
+          "skeleton_clamp": true,
+          "iso_level_mm": -0.12,
+          "iso_level_floor_mm": -0.12,
+          "surface_gaussian_sigma_z_mm": 1.5
+        },
+        "smoothing": {
+          "path": "stl/smooth/vessels/PulmonaryArtery.stl",
+          "algorithm": "Model surface cleanup + Windowed Sinc (no reduction)",
+          "volume_preservation": false,
+          "surface_smoothing": "VTK Windowed Sinc",
+          "surface_smoothing_iterations": 30,
+          "surface_smoothing_passband": 0.05,
+          "source_faces": 261072,
+          "original_source_faces": 261096,
+          "removed_coincident_internal_faces": 0,
+          "largest_surface_only": true,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 20.0,
+            "surface_components_before_filter": 1,
+            "removed_surface_components": 0,
+            "removed_surface_volume_mm3": 0.0
+          },
+          "reduction_applied": false,
+          "output_faces": 261072,
+          "source_quality": {
+            "triangles": 261072,
+            "vertices": 130532,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 109218.90874484523,
+            "bounds_lps_mm": [
+              [
+                -85.8563003540039,
+                -27.749744415283203,
+                -459.87286376953125
+              ],
+              [
+                111.13664245605469,
+                93.96533966064453,
+                -275.610107421875
+              ]
+            ]
+          },
+          "output_quality": {
+            "triangles": 261072,
+            "vertices": 130532,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 108845.45129669642,
+            "bounds_lps_mm": [
+              [
+                -85.800537109375,
+                -27.704904556274414,
+                -459.76727294921875
+              ],
+              [
+                110.95901489257813,
+                93.88607025146484,
+                -275.70703125
+              ]
+            ]
+          },
+          "volume_change_percent": -0.3419347917321458
+        },
+        "source_sha256": "fadc410dafd416f70a817d58bd445aaf958db71c2423d9a27231e4d05647e02e",
+        "before": {
+          "triangles": 261072,
+          "vertices": 130532,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 108845.45129669642,
+          "bounds_lps_mm": [
+            [
+              -85.800537109375,
+              -27.704904556274414,
+              -459.76727294921875
+            ],
+            [
+              110.95901489257813,
+              93.88607025146484,
+              -275.70703125
+            ]
+          ]
+        },
+        "after": {
+          "triangles": 150000,
+          "vertices": 74996,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 108819.81369576766,
+          "bounds_lps_mm": [
+            [
+              -85.79461669921875,
+              -27.704904556274414,
+              -459.75439453125
+            ],
+            [
+              110.9334487915039,
+              93.92819213867188,
+              -275.70703125
+            ]
+          ]
+        },
+        "volume_change_percent": -0.02355413168243503,
+        "target_faces": 150000,
+        "used_target_faces": 150000
+      },
+      {
+        "name": "PulmonaryVenous",
+        "category": "vessels",
+        "raw_voxels": 307567,
+        "voxels": 292276,
+        "repair": {
+          "operation": "CT-constrained 1.5 mm closing and local bridges; retain branches >=50 voxels",
+          "minimum_component_voxels": 50,
+          "closing_radius_mm": 1.5,
+          "maximum_bridge_distance_mm": 2.5,
+          "accepted_bridges": 114,
+          "reference_supported_component_selection": false,
+          "island_cleanup": {
+            "operation": "remove small isolated candidates; protect long slender branches",
+            "minimum_volume_mm3": 500,
+            "protected_branch_minimum_extent_mm": 25,
+            "protected_branch_minimum_pca_elongation": 3,
+            "components_before": 126,
+            "components_after": 14,
+            "removed_components": 112,
+            "removed_voxels": 21587
+          },
+          "connected_display": {
+            "accepted_bridges": [
+              {
+                "component_voxels": 3399,
+                "gap_mm": 3.5935504360351094,
+                "path_length_mm": 4.61914,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 240,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 7.792968000000002,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 72,
+                "gap_mm": 1.9058733708766304,
+                "path_length_mm": 2.695312,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 51,
+                "gap_mm": 2.8401014796112034,
+                "path_length_mm": 3.8476559999999997,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 14,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 13,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 7,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 3,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 2.5,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 3,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 2,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 2,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 2.5976559999999997,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 2,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 2.5,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 2.5,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 1.3476559846297294,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 1.5718104870641603,
+                "path_length_mm": 2.5976559999999997,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 0.9529366854383152,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              },
+              {
+                "component_voxels": 1,
+                "gap_mm": 1.4200507398056017,
+                "path_length_mm": 1.9238279999999999,
+                "tube_radius_mm": 1.3
+              }
+            ],
+            "unresolved_components": 668,
+            "withheld_voxels": 23110,
+            "retained_prediction_voxels": 291239,
+            "added_bridge_voxels": 1037,
+            "retained_unconnected_components": 7,
+            "retained_unconnected_voxels": 7166,
+            "remaining_face_connected_components": 8,
+            "retain_unconnected_minimum_mm3": 20.0,
+            "maximum_bridge_distance_mm": 6.0,
+            "far_bridge": {
+              "maximum_gap_mm": 16.0,
+              "tube_radius_mm": 1.5,
+              "remaining_components": 8,
+              "bridges": [
+                {
+                  "component_voxels": 82,
+                  "gap_mm": 0.9529366854383152,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 3166,
+                  "gap_mm": 12.946084533028824,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 542,
+                  "gap_mm": 1.4200507398056017,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 554,
+                  "gap_mm": 1.4200507398056017,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 830,
+                  "gap_mm": 7.352470771552459,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 413,
+                  "gap_mm": 7.9166153220134605,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 359,
+                  "gap_mm": 1.4200507398056017,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 109,
+                  "gap_mm": 0.9529366854383152,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 452,
+                  "gap_mm": 6.029187734374186,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 764,
+                  "gap_mm": 4.558444166957253,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 3665,
+                  "gap_mm": 5.380725738472112,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 485,
+                  "gap_mm": 1.4200507398056017,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 569,
+                  "gap_mm": 11.434678026611227,
+                  "round": 0
+                },
+                {
+                  "component_voxels": 1,
+                  "gap_mm": 0.9529366854383152,
+                  "round": 1
+                }
+              ],
+              "skipped_beyond_gap": 0,
+              "skipped_blocked_by_other_structure": 7
+            },
+            "before_voxels": 314349,
+            "withheld_mask": "stl/raw/review_withheld/PulmonaryVenous_withheld.npy"
+          }
+        },
+        "status": "processed",
+        "file": "vessels/PulmonaryVenous.stl",
+        "sha256": "6eddd7f57da15d937ec8a82ee322d85fc07e199cbe24962b09d13b98ab94bdbd",
+        "triangles": 150000,
+        "volume_mm3": 145659.8587572484,
+        "surface": {
+          "path": "stl/smooth/.tmp_smooth/PulmonaryVenous.stl",
+          "triangles": 404872,
+          "vertices": 202308,
+          "bounds_lps_mm": [
+            [
+              -85.87743073588476,
+              -33.67786740663989,
+              -467.37331927944797
+            ],
+            [
+              111.83039004000271,
+              98.81395087354262,
+              -266.83456398069603
+            ]
+          ],
+          "volume_mm3": 146136.72751905725,
+          "mesh_smoothing_iterations": 10,
+          "surface_gaussian_sigma_mm": 1.0,
+          "preserve_voxel_connectivity": true,
+          "volume_compensated_surface_field": true,
+          "skeleton_clamp": true,
+          "iso_level_mm": -0.12,
+          "iso_level_floor_mm": -0.12,
+          "surface_gaussian_sigma_z_mm": 1.5
+        },
+        "smoothing": {
+          "path": "stl/smooth/vessels/PulmonaryVenous.stl",
+          "algorithm": "Model surface cleanup + Windowed Sinc (no reduction)",
+          "volume_preservation": false,
+          "surface_smoothing": "VTK Windowed Sinc",
+          "surface_smoothing_iterations": 30,
+          "surface_smoothing_passband": 0.05,
+          "source_faces": 404792,
+          "original_source_faces": 404872,
+          "removed_coincident_internal_faces": 0,
+          "largest_surface_only": false,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 20.0,
+            "surface_components_before_filter": 20,
+            "removed_surface_components": 9,
+            "removed_surface_volume_mm3": 0.0027132443220129346
+          },
+          "reduction_applied": false,
+          "output_faces": 404792,
+          "source_quality": {
+            "triangles": 404792,
+            "vertices": 202250,
+            "surface_components": 11,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 146136.72480581835,
+            "bounds_lps_mm": [
+              [
+                -85.87743377685547,
+                -33.6778678894043,
+                -467.3733215332031
+              ],
+              [
+                111.83039093017578,
+                98.81394958496094,
+                -266.8345642089844
+              ]
+            ]
+          },
+          "output_quality": {
+            "triangles": 404792,
+            "vertices": 202250,
+            "surface_components": 11,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 145782.94496206474,
+            "bounds_lps_mm": [
+              [
+                -85.7969970703125,
+                -33.630836486816406,
+                -467.4259338378906
+              ],
+              [
+                111.6851806640625,
+                98.7784423828125,
+                -266.7427673339844
+              ]
+            ]
+          },
+          "volume_change_percent": -0.24208825278088097
+        },
+        "source_sha256": "ece92a7ab5a3ae6f7035b96013df1b6b3ec7c4fd4d30e86ad4d6689c6708834a",
+        "before": {
+          "triangles": 404792,
+          "vertices": 202250,
+          "surface_components": 11,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 145782.94496206474,
+          "bounds_lps_mm": [
+            [
+              -85.7969970703125,
+              -33.630836486816406,
+              -467.4259338378906
+            ],
+            [
+              111.6851806640625,
+              98.7784423828125,
+              -266.7427673339844
+            ]
+          ]
+        },
+        "after": {
+          "triangles": 150000,
+          "vertices": 74854,
+          "surface_components": 11,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 145659.8587572484,
+          "bounds_lps_mm": [
+            [
+              -85.78646850585938,
+              -33.728858947753906,
+              -467.49346923828125
+            ],
+            [
+              111.77413940429688,
+              98.7410888671875,
+              -266.7427673339844
+            ]
+          ]
+        },
+        "volume_change_percent": -0.08443114168694699,
+        "target_faces": 150000,
+        "used_target_faces": 150000
+      },
+      {
+        "name": "LungTumor",
+        "category": "tumor",
+        "raw_voxels": 9168,
+        "voxels": 5635,
+        "repair": {
+          "operation": "close and bridge small gaps, then display only the largest connected tumor candidate",
+          "minimum_component_voxels": 5,
+          "distant_component_minimum_voxels": 50,
+          "closing_radius_mm": 1.5,
+          "maximum_bridge_distance_mm": 3.0,
+          "accepted_bridges": 4,
+          "display_largest_candidate_only": true,
+          "removed_disconnected_components": 8,
+          "removed_disconnected_voxels": 4049,
+          "reference_supported_component_selection": false
+        },
+        "status": "processed",
+        "file": "tumor/LungTumor.stl",
+        "sha256": "acf9b5e071ab7730c31f0bc2f5a529d6b4e7b51023a773de27087a225cb6562f",
+        "triangles": 2000,
+        "volume_mm3": 3185.7423564791693,
+        "surface": {
+          "path": "stl/smooth/.tmp_smooth/LungTumor.stl",
+          "triangles": 8044,
+          "vertices": 4024,
+          "bounds_lps_mm": [
+            [
+              21.936418873827844,
+              -28.38377005082675,
+              -536.7052769634935
+            ],
+            [
+              46.14477944770013,
+              11.298026778639072,
+              -525.1961256340732
+            ]
+          ],
+          "volume_mm3": 3190.5021422942896,
+          "mesh_smoothing_iterations": 5,
+          "surface_gaussian_sigma_mm": 1.0,
+          "preserve_voxel_connectivity": false,
+          "volume_compensated_surface_field": true,
+          "skeleton_clamp": false,
+          "iso_level_mm": 0.4332474023103714,
+          "iso_level_floor_mm": -1000000000.0,
+          "surface_gaussian_sigma_z_mm": 1.0
+        },
+        "smoothing": {
+          "path": "stl/smooth/tumor/LungTumor.stl",
+          "algorithm": "Model surface cleanup + Windowed Sinc (no reduction)",
+          "volume_preservation": false,
+          "surface_smoothing": "VTK Windowed Sinc",
+          "surface_smoothing_iterations": 15,
+          "surface_smoothing_passband": 0.08,
+          "source_faces": 8044,
+          "original_source_faces": 8044,
+          "removed_coincident_internal_faces": 0,
+          "largest_surface_only": true,
+          "surface_fragment_filter": {
+            "minimum_surface_volume_mm3": 5.0,
+            "surface_components_before_filter": 1,
+            "removed_surface_components": 0,
+            "removed_surface_volume_mm3": 0.0
+          },
+          "reduction_applied": false,
+          "output_faces": 8044,
+          "source_quality": {
+            "triangles": 8044,
+            "vertices": 4024,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 3190.5021422945047,
+            "bounds_lps_mm": [
+              [
+                21.936418533325195,
+                -28.383769989013672,
+                -536.7052612304688
+              ],
+              [
+                46.144779205322266,
+                11.298027038574219,
+                -525.1961059570313
+              ]
+            ]
+          },
+          "output_quality": {
+            "triangles": 8044,
+            "vertices": 4024,
+            "surface_components": 1,
+            "boundary_edges": 0,
+            "nonmanifold_edges": 0,
+            "boundary_nonmanifold_edges": 0,
+            "volume_mm3": 3189.1823015072378,
+            "bounds_lps_mm": [
+              [
+                21.927947998046875,
+                -28.356586456298828,
+                -536.7116088867188
+              ],
+              [
+                46.10472106933594,
+                11.265522956848145,
+                -525.2186279296875
+              ]
+            ]
+          },
+          "volume_change_percent": -0.04136780758647873
+        },
+        "tumor_reduction": {
+          "target_faces": 2000,
+          "faces_before": 8044,
+          "accepted": true,
+          "faces_after": 2000,
+          "volume_change_percent": -0.10786291603470666
+        },
+        "source_sha256": "263d9e7ec9fc1cb86c83ac49c91f21f9e87e97f320d9525aaf3caf92e9204662",
+        "before": {
+          "triangles": 2000,
+          "vertices": 1002,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 3185.7423564791693,
+          "bounds_lps_mm": [
+            [
+              21.866079330444336,
+              -28.32121467590332,
+              -536.7108764648438
+            ],
+            [
+              46.10738754272461,
+              11.266181945800781,
+              -525.2181396484375
+            ]
+          ]
+        },
+        "after": {
+          "triangles": 2000,
+          "vertices": 1002,
+          "surface_components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "boundary_nonmanifold_edges": 0,
+          "volume_mm3": 3185.7423564791693,
+          "bounds_lps_mm": [
+            [
+              21.866079330444336,
+              -28.32121467590332,
+              -536.7108764648438
+            ],
+            [
+              46.10738754272461,
+              11.266181945800781,
+              -525.2181396484375
+            ]
+          ]
+        },
+        "volume_change_percent": 0.0,
+        "target_faces": 150000,
+        "used_target_faces": 150000
+      }
+    ]
+  }
+}

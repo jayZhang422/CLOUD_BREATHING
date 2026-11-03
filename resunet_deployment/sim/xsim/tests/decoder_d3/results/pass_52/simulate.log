@@ -1,0 +1,117 @@
+Time resolution is 1 ps
+Block Memory Generator module tb_mkdc.u_bounds.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_mkdc.dut.u_service.u_engine.u_bank.u_pw.pwWeightUram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_mkdc.rom.u_rom.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[REGRESSION] cases_all.txt
+[CASE PASS] read_only_coefficients
+[CASE PASS] image_metadata_snapshot_and_online_rejection
+[CASE PASS] DW_P16_descriptor_rejection cases=6
+[CASE] vessel_mid_expand cycle=4437
+[CASE PASS] uram_all_6144_addresses latency=1 hold=4095/4096/6143
+[CASE PASS] vessel_mid_expand bytes=2048 mac_bytes=0 cycle=72131
+[CASE] vessel_mid_dw3 cycle=72131
+[CASE PASS] vessel_mid_dw3 bytes=8192 mac_bytes=0 cycle=142891
+[CASE] vessel_mid_dw5 cycle=142891
+[CASE PASS] vessel_mid_dw5 bytes=8192 mac_bytes=0 cycle=221203
+[CASE] vessel_mid_mix cycle=221203
+[CASE PASS] vessel_mid_mix bytes=2048 mac_bytes=0 cycle=263835
+[CASE] vessel_mid_project cycle=263835
+[CASE PASS] vessel_mid_project bytes=8192 mac_bytes=0 cycle=389683
+[CASE] vessel_mid_skip cycle=389683
+[CASE PASS] vessel_mid_skip bytes=8192 mac_bytes=0 cycle=496787
+[CASE] vessel_mid_out cycle=496787
+[CASE PASS] vessel_mid_out bytes=2048 mac_bytes=0 cycle=539427
+[CASE] airway_mid_expand cycle=539427
+[CASE PASS] airway_mid_expand bytes=2048 mac_bytes=0 cycle=607104
+[CASE] airway_mid_dw3 cycle=607104
+[CASE PASS] airway_mid_dw3 bytes=8192 mac_bytes=0 cycle=677891
+[CASE] airway_mid_dw5 cycle=677891
+[CASE PASS] airway_mid_dw5 bytes=8192 mac_bytes=0 cycle=756176
+[CASE] airway_mid_mix cycle=756176
+[CASE PASS] airway_mid_mix bytes=2048 mac_bytes=0 cycle=798835
+[CASE] airway_mid_project cycle=798835
+[CASE PASS] airway_mid_project bytes=8192 mac_bytes=0 cycle=924728
+[CASE] airway_mid_skip cycle=924728
+[CASE PASS] airway_mid_skip bytes=8192 mac_bytes=0 cycle=1031805
+[CASE] airway_mid_out cycle=1031805
+[CASE PASS] airway_mid_out bytes=2048 mac_bytes=0 cycle=1074448
+[CASE] lobe_mid_expand cycle=1074448
+[CASE PASS] lobe_mid_expand bytes=2048 mac_bytes=0 cycle=1142123
+[CASE] lobe_mid_dw3 cycle=1142123
+[CASE PASS] lobe_mid_dw3 bytes=8192 mac_bytes=0 cycle=1212883
+[CASE] lobe_mid_dw5 cycle=1212883
+[CASE PASS] lobe_mid_dw5 bytes=8192 mac_bytes=0 cycle=1291195
+[CASE] lobe_mid_mix cycle=1291195
+[CASE PASS] lobe_mid_mix bytes=2048 mac_bytes=0 cycle=1333827
+[CASE] lobe_mid_project cycle=1333827
+[CASE PASS] lobe_mid_project bytes=8192 mac_bytes=0 cycle=1459675
+[CASE] lobe_mid_skip cycle=1459675
+[CASE PASS] lobe_mid_skip bytes=8192 mac_bytes=0 cycle=1566779
+[CASE] lobe_mid_out cycle=1566779
+[CASE PASS] lobe_mid_out bytes=2048 mac_bytes=0 cycle=1609419
+[CASE] tumor_mid_expand cycle=1609419
+[CASE PASS] tumor_mid_expand bytes=8192 mac_bytes=0 cycle=1994464
+[CASE] tumor_mid_dw3 cycle=1994464
+[CASE PASS] tumor_mid_dw3 bytes=32768 mac_bytes=0 cycle=2265531
+[CASE] tumor_mid_dw5 cycle=2265531
+[CASE PASS] tumor_mid_dw5 bytes=32768 mac_bytes=0 cycle=2556536
+[CASE] tumor_mid_mix cycle=2556536
+[CASE PASS] tumor_mid_mix bytes=8192 mac_bytes=0 cycle=2716235
+[CASE] tumor_mid_project cycle=2716235
+[CASE PASS] tumor_mid_project bytes=32768 mac_bytes=0 cycle=3520576
+[CASE] tumor_mid_skip cycle=3520576
+[CASE PASS] tumor_mid_skip bytes=32768 mac_bytes=0 cycle=4063272
+[CASE] tumor_mid_out cycle=4063272
+[CASE PASS] tumor_mid_out bytes=8192 mac_bytes=0 cycle=4222971
+[CASE] legacy_airway_e1_fast cycle=4222971
+[CASE PASS] legacy_airway_e1_fast bytes=256 mac_bytes=1024 cycle=4240861
+[CASE] legacy_lobe_e1_fast cycle=4240861
+[CASE PASS] legacy_lobe_e1_fast bytes=256 mac_bytes=1024 cycle=4258752
+[CASE] legacy_vessel_e1_fast cycle=4258752
+[CASE PASS] legacy_vessel_e1_fast bytes=256 mac_bytes=1024 cycle=4276648
+[CASE] legacy_tumor_e1_fast cycle=4276648
+[CASE PASS] legacy_tumor_e1_fast bytes=1024 mac_bytes=4096 cycle=4341504
+[CASE] legacy_pool_from_tumor_pw_fast cycle=4341504
+[CASE PASS] legacy_pool_from_tumor_pw_fast bytes=256 mac_bytes=0 cycle=4347821
+[CASE] legacy_concat_pool_fast cycle=4347821
+[CASE PASS] legacy_concat_pool_fast bytes=512 mac_bytes=0 cycle=4354453
+[CASE] legacy_pw_from_concat_rom_fast cycle=4354453
+[CASE PASS] legacy_pw_from_concat_rom_fast bytes=1024 mac_bytes=0 cycle=4425584
+[CASE] legacy_tumor_mid_expand_frozen cycle=4425584
+[CASE PASS] legacy_tumor_mid_expand_frozen bytes=2048 mac_bytes=8192 cycle=4724856
+[CASE] legacy_tumor_d3_expand cycle=4724856
+[CASE PASS] legacy_tumor_d3_expand bytes=1024 mac_bytes=4096 cycle=5051373
+[CASE] legacy_airway_head cycle=5051373
+[CASE PASS] legacy_airway_head bytes=32 mac_bytes=64 cycle=5054472
+[CASE] legacy_lobe_head cycle=5054472
+[CASE PASS] legacy_lobe_head bytes=64 mac_bytes=128 cycle=5059416
+[CASE] legacy_vessel_head cycle=5059416
+[CASE PASS] legacy_vessel_head bytes=32 mac_bytes=64 cycle=5062520
+[CASE] legacy_tumor_head cycle=5062520
+[CASE PASS] legacy_tumor_head bytes=32 mac_bytes=64 cycle=5066875
+[CASE] legacy_tumor_mid_mix cycle=5066875
+[CASE PASS] legacy_tumor_mid_mix bytes=2048 mac_bytes=0 cycle=5117021
+[CASE] legacy_pool_odd_two_groups cycle=5117021
+[CASE PASS] legacy_pool_odd_two_groups bytes=64 mac_bytes=0 cycle=5120904
+[CASE] legacy_linebuffer3 cycle=5120904
+[CASE PASS] legacy_linebuffer3 bytes=1728 mac_bytes=0 cycle=5136541
+[CASE] legacy_linebuffer5 cycle=5136541
+[CASE PASS] legacy_linebuffer5 bytes=1600 mac_bytes=0 cycle=5150147
+[CASE] legacy_shuffle16 cycle=5150147
+[CASE PASS] legacy_shuffle16 bytes=64 mac_bytes=0 cycle=5152776
+[CASE] legacy_pool_groups32 cycle=5152776
+[CASE PASS] legacy_pool_groups32 bytes=1024 mac_bytes=0 cycle=5182595
+[CASE] legacy_linebuffer3_groups32 cycle=5182595
+[CASE PASS] legacy_linebuffer3_groups32 bytes=27648 mac_bytes=0 cycle=5400763
+[CASE] legacy_linebuffer5_groups32 cycle=5400763
+[CASE PASS] legacy_linebuffer5_groups32 bytes=51200 mac_bytes=0 cycle=5792592
+[CASE] edge_dw3_1x1_g1 cycle=5792592
+[CASE PASS] edge_dw3_1x1_g1 bytes=64 mac_bytes=0 cycle=5795224
+[CASE] edge_dw5_5x3_g3 cycle=5795224
+[CASE PASS] edge_dw5_5x3_g3 bytes=2880 mac_bytes=0 cycle=5823235
+[CASE] edge_pw_raw_p16_multitile cycle=5823235
+[CASE PASS] edge_pw_raw_p16_multitile bytes=4224 mac_bytes=0 cycle=5870053
+[TB PASSED] 全部数据验证一致 cases=52 cycles=5870053 rom_reads=4912 ddr_reads=71998 ddr_writes=22196
+$finish called at time : 17610160 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/MKDC/tb_mkdc.sv" Line 355

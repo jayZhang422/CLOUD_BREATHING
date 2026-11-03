@@ -1,0 +1,22 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/src/rtl/lung_distance_math.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lung_distance_math
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/src/rtl/lung_point_aabb_distance_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lung_point_aabb_distance_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/src/rtl/lung_point_triangle_distance_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lung_point_triangle_distance_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/src/rtl/lung_ray_aabb_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lung_ray_aabb_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/src/rtl/lung_ray_mesh_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lung_ray_mesh_axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/src/rtl/lung_ray_triangle_stage3_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lung_ray_triangle_stage3_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/src/rtl/lung_ray_union_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lung_ray_union_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/src/rtl/lung_ray_volume_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lung_ray_volume_core
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/src/rtl/lung_unsigned_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lung_unsigned_divider
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA/ESDC/lung_planer/sim/tb/tb_lung_ray_mesh_bvh.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_lung_ray_mesh_bvh
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/build/work/lung_planner/lung_planner.sim/sim_ray_mesh/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

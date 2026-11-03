@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+[TB PASSED] 全部数据验证一致 fast_edges=398 safe_edges=198 relock=1
+$finish called at time : 2059498 ps : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Move_Clock/tb_compute_clock.sv" Line 32

@@ -1,0 +1,35 @@
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_op_rom.rom.u_rom.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[CASE PASS] read_only_coefficients
+[CASE] airway_e1 cycle=128
+[CASE PASS] airway_e1 bytes=16384 mac_bytes=65536 cycle=374811
+[CASE] lobe_e1 cycle=374811
+[CASE PASS] lobe_e1 bytes=16384 mac_bytes=65536 cycle=749494
+[CASE] vessel_e1 cycle=749494
+[CASE PASS] vessel_e1 bytes=16384 mac_bytes=65536 cycle=1124175
+[CASE] tumor_e1 cycle=1124175
+[CASE PASS] tumor_e1 bytes=65536 mac_bytes=262144 cycle=2577011
+[CASE] pool_from_tumor_pw cycle=2577011
+[CASE PASS] pool_from_tumor_pw bytes=16384 mac_bytes=0 cycle=2688276
+[CASE] concat_pool cycle=2688276
+[CASE PASS] concat_pool bytes=32768 mac_bytes=0 cycle=2827743
+[CASE] pw_from_concat_rom cycle=2827743
+[CASE PASS] pw_from_concat_rom bytes=65536 mac_bytes=0 cycle=3400179
+[CASE] tumor_mid_expand_frozen cycle=3400179
+[CASE PASS] tumor_mid_expand_frozen bytes=2048 mac_bytes=8192 cycle=3516064
+[CASE] tumor_d3_expand cycle=3516064
+[CASE PASS] tumor_d3_expand bytes=1024 mac_bytes=4096 cycle=3642979
+[CASE] airway_head cycle=3642979
+[CASE PASS] airway_head bytes=32 mac_bytes=64 cycle=3644620
+[CASE] lobe_head cycle=3644620
+[CASE PASS] lobe_head bytes=64 mac_bytes=128 cycle=3646450
+[CASE] vessel_head cycle=3646450
+[CASE PASS] vessel_head bytes=32 mac_bytes=64 cycle=3648088
+[CASE] tumor_head cycle=3648088
+[CASE PASS] tumor_head bytes=32 mac_bytes=64 cycle=3649728
+[CASE] tumor_mid_mix cycle=3649728
+Error: DDR Golden tumor_mid_mix/golden.hex byte=0 expected=00 actual=ff cycle=3663852
+Time: 36638520 ns  Iteration: 0  Process: /tb_op_rom/compare_result/Block176_164  Scope: tb_op_rom.compare_result.Block176_164  File: E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Op_ROM/tb_op_rom.sv Line: 177
+$stop called at time : 36638520 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Op_ROM/tb_op_rom.sv" Line 177

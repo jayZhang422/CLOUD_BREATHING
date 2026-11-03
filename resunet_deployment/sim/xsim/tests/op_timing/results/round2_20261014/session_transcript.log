@@ -1,0 +1,807 @@
+set q [list project [current_project] design [current_design -quiet] time [clock format [clock seconds] -format {%Y-%m-%d %H:%M:%S %Z}]]; foreach r {synth_1 impl_1} {lappend q $r; foreach p {STATUS PROGRESS NEEDS_REFRESH DIRECTORY STATS.WNS STATS.TNS STATS.WHS STATS.THS} {lappend q $p [get_property $p [get_runs $r]]}}; set q
+INFO: [MCP 00-100] ===MCP_CMD_START:1791970965088461300-29===
+open_checkpoint {E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.runs/impl_1/top_physopt.dcp}
+Command: open_checkpoint E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.runs/impl_1/top_physopt.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 10423.039 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/2026.1/Vivado/data/ip'.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 10423.039 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7148 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'u_ddr4/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/cal_RESET_n[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'u_ddr4/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/cal_RESET_n[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'u_ddr4/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/sys_clk_in' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.561 . Memory (MB): peak = 10423.039 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.287 . Memory (MB): peak = 10423.039 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 10423.039 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 10423.039 ; gain = 0.000
+Read placeStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 10423.039 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 10423.039 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.696 . Memory (MB): peak = 10423.039 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 10423.039 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 10423.039 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 10423.039 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 590 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 101 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 7 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  IOBUFDS => IOBUFDS (DIFFINBUF, IBUFCTRL, INV, OBUFT(x2)): 4 instances
+  IOBUFE3 => IOBUFE3 (IBUFCTRL, INBUF, OBUFT_DCIEN): 36 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 31 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF(x2)): 1 instance 
+  OBUFTDS => OBUFTDS_DUAL_BUF (INV, OBUFT(x2)): 4 instances
+  RAM16X1S => RAM32X1S (RAMS32): 282 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 113 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 3 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2026.1 (64-bit) build 6511674
+open_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:01:38 . Memory (MB): peak = 11252.406 ; gain = 829.367
+INFO: [MCP 00-101] ===MCP_CMD_END:1791970965088461300-29:0===
+INFO: [MCP 00-100] ===MCP_CMD_START:1791971088224502500-30===
+set r2dir {E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Op_Timing/results/round2_20261014}; report_timing -delay_type max -max_paths 40 -nworst 1 -input_pins -file $r2dir/physopt_setup.rpt; report_timing -delay_type min -max_paths 10 -nworst 1 -file $r2dir/physopt_hold.rpt; set p [get_timing_paths -max_paths 1]; report_property $p
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 40 -nworst 1 -delay_type max -sort_by slack.
+report_timing: Time (s): cpu = 00:00:33 ; elapsed = 00:01:00 . Memory (MB): peak = 11771.531 ; gain = 0.000
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: min.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 10 -nworst 1 -delay_type min -sort_by slack.
+Property                Type    Read-only  Value
+ARRIVAL_TIME            double  true       8.185
+CLASS                   string  true       timing_path
+CLOCK_PESSIMISM         double  true       -0.293
+CORNER                  string  true       Slow
+DATAPATH_DELAY          double  true       3.946
+DATAPATH_LOGIC_DELAY    double  true       1.145
+DATAPATH_NET_DELAY      double  true       2.801
+DELAY_TYPE              string  true       max
+ENDPOINT_CLOCK          clock   true       mmcm_clkout0
+ENDPOINT_CLOCK_DELAY    double  true       4.415
+ENDPOINT_CLOCK_EDGE     double  true       3.000
+ENDPOINT_CLOCK_ROOT     string  true       X1Y1
+ENDPOINT_PIN            pin     true       g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/fillGroup_r_reg[0]/CE
+EXCEPTION               string  true       
+GROUP                   string  true       mmcm_clkout0
+LOGIC_LEVELS            int     true       15
+MAX_FANOUT              int     true       27
+NAME                    string  true       {g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/tileBase_r_reg[1]/C --> g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/fillGroup_r_reg[0]/CE}
+REQUIRED_TIME           double  true       7.005
+REQUIREMENT             double  true       3.000
+ROUTABLE_NETS           int     true       unset***
+SKEW                    double  true       -0.116
+SLACK                   double  true       -1.180
+SLR_CROSSINGS           int     true       0
+STARTPOINT_CLOCK        clock   true       mmcm_clkout0
+STARTPOINT_CLOCK_DELAY  double  true       4.239
+STARTPOINT_CLOCK_EDGE   double  true       0.000
+STARTPOINT_CLOCK_ROOT   string  true       X1Y1
+STARTPOINT_PIN          pin     true       g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw/tileBase_r_reg[1]/C
+UNCERTAINTY             double  true       0.057
+INFO: [MCP 00-101] ===MCP_CMD_END:1791971088224502500-30:0===
+INFO: [MCP 00-100] ===MCP_CMD_START:1791971187774858600-31===
+foreach {label pattern} {pw *u_bank/u_pw/* add *u_bank/u_add/* k3 *u_bank/u_core_3/* k5 *u_bank/u_core_4/* concat *u_bank/u_concat/* reader *u_reader/*} {set cells [get_cells -hier -filter "NAME =~ $pattern && IS_SEQUENTIAL"]; if {[llength $cells]} {report_timing -delay_type max -to $cells -max_paths 3 -nworst 1 -input_pins -file $r2dir/physopt_${label}.rpt}}; set f [open $r2dir/design_provenance.txt w]; puts $f [list checkpoint [current_design] part [get_property PART [current_design]] vio_cells [get_cells -quiet -hier -filter {REF_NAME == vio_0}] pw_bram [llength [get_cells -hier -filter {NAME =~ *u_bank/u_pw/* && REF_NAME =~ RAMB*}]] pw_uram [llength [get_cells -hier -filter {NAME =~ *u_bank/u_pw/* && REF_NAME =~ URAM*}]] dsp [llength [get_cells -hier -filter {REF_NAME == DSP48E2}]]]; close $f; set r2dir
+INFO: [Timing 38-78] ReportTimingParams: -to_pins  -max_paths 3 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-78] ReportTimingParams: -to_pins  -max_paths 3 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-78] ReportTimingParams: -to_pins  -max_paths 3 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-78] ReportTimingParams: -to_pins  -max_paths 3 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-78] ReportTimingParams: -to_pins  -max_paths 3 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-78] ReportTimingParams: -to_pins  -max_paths 3 -nworst 1 -delay_type max -sort_by slack.
+INFO: [MCP 00-101] ===MCP_CMD_END:1791971187774858600-31:0===
+INFO: [MCP 00-100] ===MCP_CMD_START:1791971243684406400-32===
+foreach {label pattern} {add_internal *u_bank/u_add/* pw_requant *u_bank/u_pw/requant/*} {set cells [get_cells -hier -filter "NAME =~ $pattern && IS_SEQUENTIAL"]; report_timing -delay_type max -from $cells -to $cells -max_paths 3 -nworst 1 -input_pins -file $r2dir/physopt_${label}.rpt}; report_timing -delay_type max -from [get_cells -hier -filter {NAME =~ *u_bank/u_concat/* && IS_SEQUENTIAL}] -max_paths 1 -input_pins -file $r2dir/physopt_concat_out.rpt; report_timing -delay_type max -from [get_cells -hier -filter {NAME =~ *u_bank/u_core_4/* && IS_SEQUENTIAL}] -max_paths 1 -input_pins -file $r2dir/physopt_k5_out.rpt; set r2dir
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -to_pins  -max_paths 3 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -to_pins  -max_paths 3 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+INFO: [MCP 00-101] ===MCP_CMD_END:1791971243684406400-32:0===
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+list projects [get_projects] current [current_project] design [current_design] runs [get_runs -quiet]
+INFO: [MCP 00-100] ===MCP_CMD_START:1791971501048814300-33===
+close_project
+close_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 11771.531 ; gain = 0.000
+INFO: [MCP 00-101] ===MCP_CMD_END:1791971501048814300-33:0===
+INFO: [MCP 00-100] ===MCP_CMD_START:1791971516825373000-34===
+open_checkpoint {E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.runs/impl_1/top_routed.dcp}
+Command: open_checkpoint E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.runs/impl_1/top_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 11771.531 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/2026.1/Vivado/data/ip'.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 11771.531 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7148 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'u_ddr4/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/cal_RESET_n[0]' is not directly connected to top level port. 'DRIVE' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'u_ddr4/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/cal_RESET_n[0]' is not directly connected to top level port. 'SLEW' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'u_ddr4/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/sys_clk_in' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.360 . Memory (MB): peak = 11771.531 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.469 . Memory (MB): peak = 11771.531 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 11771.531 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 11771.531 ; gain = 0.000
+Read placeStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 11771.531 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 11771.531 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 11771.531 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 11771.531 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 11771.531 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.128 . Memory (MB): peak = 11771.531 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 590 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 101 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 7 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  IOBUFDS => IOBUFDS (DIFFINBUF, IBUFCTRL, INV, OBUFT(x2)): 4 instances
+  IOBUFE3 => IOBUFE3 (IBUFCTRL, INBUF, OBUFT_DCIEN): 36 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 31 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF(x2)): 1 instance 
+  OBUFTDS => OBUFTDS_DUAL_BUF (INV, OBUFT(x2)): 4 instances
+  RAM16X1S => RAM32X1S (RAMS32): 282 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 113 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 3 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2026.1 (64-bit) build 6511674
+open_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:01:30 . Memory (MB): peak = 11771.531 ; gain = 0.000
+INFO: [MCP 00-101] ===MCP_CMD_END:1791971516825373000-34:0===
+INFO: [MCP 00-100] ===MCP_CMD_START:1791971639744227900-35===
+set r2dir {E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Op_Timing/results/round2_20261014}; report_timing -delay_type max -max_paths 30 -nworst 1 -input_pins -file $r2dir/routed_setup.rpt; foreach {label pattern} {pw *u_bank/u_pw/* add *u_bank/u_add/* k3 *u_bank/u_core_3/* k5 *u_bank/u_core_4/* concat *u_bank/u_concat/* reader *u_reader/* rom *u_coeff_rom/* engine *u_service/u_engine/*} {set cells [get_cells -hier -filter "NAME =~ $pattern && IS_SEQUENTIAL"]; report_timing -delay_type max -to $cells -max_paths 2 -nworst 1 -input_pins -file $r2dir/routed_${label}.rpt}; foreach {label pattern} {add_internal *u_bank/u_add/* pw_requant *u_bank/u_pw/requant/*} {set cells [get_cells -hier -filter "NAME =~ $pattern && IS_SEQUENTIAL"]; report_timing -delay_type max -from $cells -to $cells -max_paths 2 -nworst 1 -input_pins -file $r2dir/routed_${label}.rpt}; foreach {label pattern} {k3_out *u_bank/u_core_3/* k5_out *u_bank/u_core_4/* concat_out *u_bank/u_concat/*} {report_timing -delay_type max -from [get_cells -hier -filter "NAME =~ $pattern && IS_SEQUENTIAL"] -max_paths 1 -input_pins -file $r2dir/routed_${label}.rpt}; set r2dir
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 30 -nworst 1 -delay_type max -sort_by slack.
+report_timing: Time (s): cpu = 00:00:04 ; elapsed = 00:00:47 . Memory (MB): peak = 11771.531 ; gain = 0.000
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -to_pins  -max_paths 2 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -to_pins  -max_paths 2 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -to_pins  -max_paths 2 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -to_pins  -max_paths 2 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -to_pins  -max_paths 2 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -to_pins  -max_paths 2 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -to_pins  -max_paths 2 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -to_pins  -max_paths 2 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -to_pins  -max_paths 2 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -to_pins  -max_paths 2 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+INFO: [MCP 00-101] ===MCP_CMD_END:1791971639744227900-35:0===
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+INFO: [MCP 00-100] ===MCP_CMD_START:1791971856724449400-36===
+report_timing -delay_type max -from [get_cells -hier -filter {NAME =~ *u_weight_uram/* && REF_NAME =~ URAM*}] -max_paths 1 -input_pins -file $r2dir/routed_uram_product.rpt; report_timing -delay_type max -from [get_cells -hier -filter {NAME =~ *u_coeff_rom/* && REF_NAME =~ RAMB*}] -max_paths 1 -input_pins -file $r2dir/routed_rom_data.rpt; report_timing -delay_type max -from [get_cells -hier -filter {NAME =~ *u_bridge/* && IS_SEQUENTIAL}] -max_paths 1 -input_pins -file $r2dir/routed_ethernet_preserved.rpt; set p [get_timing_paths -max_paths 1]; list final_design [current_design] worst_slack [get_property SLACK $p]
+get_cells: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 11771.531 ; gain = 0.000
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+INFO: [MCP 00-101] ===MCP_CMD_END:1791971856724449400-36:0===
+INFO: [MCP 00-100] ===MCP_CMD_START:1791971899795935000-37===
+close_project
+close_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 11771.531 ; gain = 0.000
+INFO: [MCP 00-101] ===MCP_CMD_END:1791971899795935000-37:0===
+current_project Model_Deployment; set fs [get_filesets sim_1]; set r2_sim_props {}; foreach p {TOP INCLUDE_DIRS xsim.simulate.xsim.more_options xsim.simulate.runtime xsim.simulate.log_all_signals xsim.simulate.wdb} {lappend r2_sim_props $p [get_property $p $fs]}; set f [open {E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Op_Timing/results/round2_20261014/sim_properties_before.txt} w]; puts $f $r2_sim_props; close $f; list project [current_project] part [get_property PART [current_project]] simulator [get_property target_simulator [current_project]] sim_props $r2_sim_props impl_status [get_property STATUS [get_runs impl_1]]
+INFO: [MCP 00-100] ===MCP_CMD_START:1791971934635598800-38===
+set fs [get_filesets sim_1]; set t {E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Op_Timing/tb_op_reader_timing.sv}; if {![llength [get_files -quiet $t]]} {add_files -fileset sim_1 -norecurse $t}; set_property top tb_op_reader_timing $fs; set_property INCLUDE_DIRS {E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Op_Timing} $fs; set_property -name xsim.simulate.xsim.more_options -value {} -objects $fs; set_property xsim.simulate.runtime 0ns $fs; update_compile_order -fileset sim_1; launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-3458] The update_compile_order command is not intended for use in the GUI, where compile order updates occur based on project changes and the hierarchy update settings. No update performed.
+Command: launch_simulation  -simset sim_1 -mode behavioral
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Wed Oct 14 17:58:54 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_op_reader_timing'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/2026.1/Vivado/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/2026.1/Vivado/data/xsim/xsim.ini' copied to run dir:'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'ddr4_0'...
+Generating merged BMM file for the design top 'ddr4_0'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_op_reader_timing' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim/quantized_params_rom.mif'
+INFO: [SIM-utils-43] Exported 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim/quantized_params_rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_op_reader_timing_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_feature_reader.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_feature_reader
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Op_Timing/tb_op_reader_timing.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_op_reader_timing
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_op_reader_timing_behav xil_defaultlib.tb_op_reader_timing xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_op_reader_timing_behav xil_defaultlib.tb_op_reader_timing xil_defaultlib.glbl -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.op_feature_reader
+Compiling module xil_defaultlib.tb_op_reader_timing
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_op_reader_timing_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_op_reader_timing_behav -key {Behavioral:sim_1:Functional:tb_op_reader_timing} -tclbatch {tb_op_reader_timing.tcl} -protoinst "protoinst_files/bd_9054.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_9054.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_9054.protoinst for the following reason(s):
+There are no instances of module "bd_9054" in the design.
+
+Time resolution is 1 ps
+source tb_op_reader_timing.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 0ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_op_reader_timing_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 11771.531 ; gain = 0.000
+INFO: [MCP 00-101] ===MCP_CMD_END:1791971934635598800-38:0===
+update_compile_order -fileset sim_1
+INFO: [MCP 00-100] ===MCP_CMD_START:1791971968530670200-39===
+run 300us
+[TB PASSED] 全部数据验证一致 reader_cases=95 beats=108 cycles=2394
+$finish called at time : 7182 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Op_Timing/tb_op_reader_timing.sv" Line 99
+INFO: [MCP 00-101] ===MCP_CMD_END:1791971968530670200-39:0===
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_reader_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_reader_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+INFO: [MCP 00-100] ===MCP_CMD_START:1791971992302919600-40===
+close_sim -force
+INFO: [Simtcl 6-16] Simulation closed
+INFO: [MCP 00-101] ===MCP_CMD_END:1791971992302919600-40:0===
+INFO: [MCP 00-100] ===MCP_CMD_START:1791971994432446400-41===
+set_property top tb_op_timing [get_filesets sim_1]; launch_simulation -simset sim_1 -mode behavioral
+Command: launch_simulation  -simset sim_1 -mode behavioral
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Wed Oct 14 17:59:54 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_op_timing'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/2026.1/Vivado/tps/boost_1_72_0'
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_reader_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_reader_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_reader_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_reader_timing.sv:]
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/2026.1/Vivado/data/xsim/xsim.ini' copied to run dir:'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'ddr4_0'...
+Generating merged BMM file for the design top 'ddr4_0'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_op_timing' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim/quantized_params_rom.mif'
+INFO: [SIM-utils-43] Exported 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim/quantized_params_rom.coe'
+ERROR: [Common 17-180] Spawn failed: �����ɹ���ɡ�
+
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_op_timing_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Op_Timing/tb_op_timing.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_op_timing
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_op_timing_behav xil_defaultlib.tb_op_timing xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_op_timing_behav xil_defaultlib.tb_op_timing xil_defaultlib.glbl -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.op_descriptor_check
+Compiling module xil_defaultlib.op_feature_writer
+Compiling module xil_defaultlib.tb_op_timing
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_op_timing_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_op_timing_behav -key {Behavioral:sim_1:Functional:tb_op_timing} -tclbatch {tb_op_timing.tcl} -protoinst "protoinst_files/bd_9054.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_9054.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_9054.protoinst for the following reason(s):
+There are no instances of module "bd_9054" in the design.
+
+Time resolution is 1 ps
+source tb_op_timing.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/tb_op_timing/descriptor_mem" to the wave window because it has 514048 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/tb_op_timing/descriptor_golden" to the wave window because it has 225900 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/tb_op_timing/writer_stimulus" to the wave window because it has 1970528 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/tb_op_timing/writer_golden" to the wave window because it has 954129 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 0ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_op_timing_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 11771.531 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+INFO: [MCP 00-101] ===MCP_CMD_END:1791971994432446400-41:1===
+update_compile_order -fileset sim_1
+INFO: [MCP 00-100] ===MCP_CMD_START:1791972018089980600-42===
+run 301us; current_time
+[CASE PASS] descriptor_cases=1004 hold_and_reset=PASS
+[CASE PASS] writer_cases=608 beats=2991 offsets=32 error_and_reset=PASS
+[TB PASSED] 全部数据验证一致 descriptor_cases=1004 writer_cases=608 beats=2991 cycles=24932
+$finish called at time : 74794600 ps : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Op_Timing/tb_op_timing.sv" Line 143
+INFO: [MCP 00-101] ===MCP_CMD_END:1791972018089980600-42:0===
+INFO: [MCP 00-100] ===MCP_CMD_START:1791972036079514100-43===
+close_sim -force; set_property top tb_op_rom [get_filesets sim_1]; set_property -name xsim.simulate.xsim.more_options -value {-testplusarg CASE_LIST=cases_round2.txt} -objects [get_filesets sim_1]
+INFO: [Simtcl 6-16] Simulation closed
+INFO: [MCP 00-101] ===MCP_CMD_END:1791972036079514100-43:0===
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_reader_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_reader_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+INFO: [MCP 00-100] ===MCP_CMD_START:1791972038337169300-44===
+launch_simulation -simset sim_1 -mode behavioral
+Command: launch_simulation  -simset sim_1 -mode behavioral
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Wed Oct 14 18:00:38 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_op_rom'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/2026.1/Vivado/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/2026.1/Vivado/data/xsim/xsim.ini' copied to run dir:'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'ddr4_0'...
+Generating merged BMM file for the design top 'ddr4_0'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_op_rom' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim/quantized_params_rom.mif'
+INFO: [SIM-utils-43] Exported 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim/quantized_params_rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_op_rom_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/quantized_params_rom/sim/quantized_params_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module quantized_params_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/pw_weight_uram/sim/pw_weight_uram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pw_weight_uram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/ElementAdd/ElementAdd_p16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ElementAdd_p16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/LineBuffer/LineBuffer_3x3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LineBuffer_3x3
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/LineBuffer/LineBuffer_5x5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LineBuffer_5x5
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/MaxPool/MaxPool2d_512x512_c16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MaxPool2d_512x512_c16
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/PW/PwMac.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PwMac
+INFO: [VRFC 10-311] analyzing module PwRequant
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/Shuffle/channel_shuffle.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module channel_shuffle
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/Concat/concat.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module concat
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Ethernet/protocol/crc32_iso_hdlc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crc32_iso_hdlc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/op_board.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_board
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_coeff_rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_coeff_rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_coeff_split.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_coeff_split
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_core_bank.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_core_bank
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_ddr_port.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_ddr_port
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_descriptor_check.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_descriptor_check
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_engine
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_feature_reader.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_feature_reader
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_feature_writer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_feature_writer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_service.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_service
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_transport.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module op_transport
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sources_1/new/Ethernet/protocol/protocol_builder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module protocol_builder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Op_ROM/tb_op_rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_op_rom
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_13 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_op_rom_behav xil_defaultlib.tb_op_rom xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_13 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_op_rom_behav xil_defaultlib.tb_op_rom xil_defaultlib.glbl -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_13.BLK_MEM_GEN_v8_4_output_stage(C_...
+Compiling module blk_mem_gen_v8_4_13.BLK_MEM_GEN_v8_4_softecc_output_...
+Compiling module blk_mem_gen_v8_4_13.BLK_MEM_GEN_v8_4_mem_module(C_FA...
+Compiling module blk_mem_gen_v8_4_13.blk_mem_gen_v8_4_13(C_FAMILY="ki...
+Compiling module xil_defaultlib.pw_weight_uram
+Compiling module xil_defaultlib.crc32_iso_hdlc
+Compiling module xil_defaultlib.protocol_builder(BODY_MAX=1040)
+Compiling module xil_defaultlib.op_transport
+Compiling module xil_defaultlib.op_descriptor_check
+Compiling module xil_defaultlib.PwRequant
+Compiling module xil_defaultlib.PwMac
+Compiling module xil_defaultlib.MaxPool2d_512x512_c16
+Compiling module xil_defaultlib.LineBuffer_3x3
+Compiling module xil_defaultlib.LineBuffer_5x5
+Compiling module xil_defaultlib.concat
+Compiling module xil_defaultlib.ElementAdd_p16
+Compiling module xil_defaultlib.channel_shuffle
+Compiling module xil_defaultlib.op_core_bank
+Compiling module xil_defaultlib.op_feature_reader
+Compiling module xil_defaultlib.op_feature_writer
+Compiling module xil_defaultlib.op_engine
+Compiling module xil_defaultlib.op_service
+Compiling module xil_defaultlib.op_coeff_split
+Compiling module xil_defaultlib.op_ddr_port
+Compiling module xil_defaultlib.op_board
+Compiling module blk_mem_gen_v8_4_13.BLK_MEM_GEN_v8_4_output_stage(C_...
+Compiling module blk_mem_gen_v8_4_13.BLK_MEM_GEN_v8_4_output_stage(C_...
+Compiling module blk_mem_gen_v8_4_13.BLK_MEM_GEN_v8_4_softecc_output_...
+Compiling module blk_mem_gen_v8_4_13.BLK_MEM_GEN_v8_4_mem_module(C_FA...
+Compiling module blk_mem_gen_v8_4_13.blk_mem_gen_v8_4_13(C_FAMILY="ki...
+Compiling module xil_defaultlib.quantized_params_rom
+Compiling module xil_defaultlib.op_coeff_rom
+Compiling module xil_defaultlib.tb_op_rom
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_op_rom_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 11771.531 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_op_rom_behav -key {Behavioral:sim_1:Functional:tb_op_rom} -tclbatch {tb_op_rom.tcl} -protoinst "protoinst_files/bd_9054.protoinst" -log {simulate.log} -testplusarg CASE_LIST=cases_round2.txt"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_9054.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_9054.protoinst for the following reason(s):
+There are no instances of module "bd_9054" in the design.
+
+Time resolution is 1 ps
+source tb_op_rom.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 0ns
+Block Memory Generator module tb_op_rom.u_bounds.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_op_rom.dut.u_service.u_engine.u_bank.u_pw.pwWeightUram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_op_rom.rom.u_rom.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[REGRESSION] cases_round2.txt
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_op_rom_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 11771.531 ; gain = 0.000
+INFO: [MCP 00-101] ===MCP_CMD_END:1791972038337169300-44:0===
+update_compile_order -fileset sim_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_reader_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_reader_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_reader_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_reader_timing.sv:]
+INFO: [MCP 00-100] ===MCP_CMD_START:1791972078662351500-45===
+run 4ms; current_time
+[CASE PASS] read_only_coefficients
+[CASE PASS] image_metadata_snapshot_and_online_rejection
+[CASE] airway_e1_fast cycle=1664
+[CASE PASS] uram_all_6144_addresses latency=1 hold=4095/4096/6143
+[CASE PASS] airway_e1_fast bytes=256 mac_bytes=1024 cycle=15128
+[CASE] lobe_e1_fast cycle=15128
+[CASE PASS] lobe_e1_fast bytes=256 mac_bytes=1024 cycle=28595
+[CASE] vessel_e1_fast cycle=28595
+[CASE PASS] vessel_e1_fast bytes=256 mac_bytes=1024 cycle=42059
+[CASE] tumor_e1_fast cycle=42059
+[CASE PASS] tumor_e1_fast bytes=1024 mac_bytes=4096 cycle=89381
+[CASE] pool_from_tumor_pw_fast cycle=89381
+[CASE PASS] pool_from_tumor_pw_fast bytes=256 mac_bytes=0 cycle=94259
+[CASE] concat_pool_fast cycle=94259
+[CASE PASS] concat_pool_fast bytes=512 mac_bytes=0 cycle=99357
+[CASE] pw_from_concat_rom_fast cycle=99357
+[CASE PASS] pw_from_concat_rom_fast bytes=1024 mac_bytes=0 cycle=142093
+[CASE] tumor_mid_expand_frozen cycle=142093
+[CASE PASS] tumor_mid_expand_frozen bytes=2048 mac_bytes=8192 cycle=334008
+[CASE] tumor_d3_expand cycle=334008
+[CASE PASS] tumor_d3_expand bytes=1024 mac_bytes=4096 cycle=527656
+[CASE] airway_head cycle=527656
+[CASE PASS] airway_head bytes=32 mac_bytes=64 cycle=530651
+[CASE] lobe_head cycle=530651
+[CASE PASS] lobe_head bytes=64 mac_bytes=128 cycle=534187
+[CASE] vessel_head cycle=534187
+[CASE PASS] vessel_head bytes=32 mac_bytes=64 cycle=537179
+[CASE] tumor_head cycle=537179
+[CASE PASS] tumor_head bytes=32 mac_bytes=64 cycle=540168
+[CASE] tumor_mid_mix cycle=540168
+[CASE PASS] tumor_mid_mix bytes=2048 mac_bytes=0 cycle=570413
+[CASE] pool_odd_two_groups cycle=570413
+[CASE PASS] pool_odd_two_groups bytes=64 mac_bytes=0 cycle=572957
+[CASE] linebuffer3 cycle=572957
+[CASE PASS] linebuffer3 bytes=1728 mac_bytes=0 cycle=585251
+[CASE] linebuffer5 cycle=585251
+[CASE PASS] linebuffer5 bytes=1600 mac_bytes=0 cycle=596819
+[CASE] shuffle16 cycle=596819
+[CASE PASS] shuffle16 bytes=64 mac_bytes=0 cycle=599363
+[CASE] pool_groups32 cycle=599363
+[CASE PASS] pool_groups32 bytes=1024 mac_bytes=0 cycle=616061
+[CASE] linebuffer3_groups32 cycle=616061
+[CASE PASS] linebuffer3_groups32 bytes=27648 mac_bytes=0 cycle=800152
+[CASE] linebuffer5_groups32 cycle=800152
+[CASE PASS] linebuffer5_groups32 bytes=51200 mac_bytes=0 cycle=1134549
+[CASE] tumor_e1_round2 cycle=1134549
+run: Time (s): cpu = 00:01:03 ; elapsed = 00:03:40 . Memory (MB): peak = 11771.531 ; gain = 0.000
+INFO: [MCP 00-101] ===MCP_CMD_END:1791972078662351500-45:0===
+INFO: [MCP 00-100] ===MCP_CMD_START:1791972336882910300-46===
+run 2ms; current_time
+[CASE PASS] tumor_e1_round2 bytes=6400 mac_bytes=25600 cycle=1419176
+[CASE] pool_from_tumor_pw_round2 cycle=1419176
+[CASE PASS] pool_from_tumor_pw_round2 bytes=1600 mac_bytes=0 cycle=1439432
+[CASE] concat_pool_round2 cycle=1439432
+[CASE PASS] concat_pool_round2 bytes=3200 mac_bytes=0 cycle=1468096
+[CASE] pw_from_concat_rom_round2 cycle=1468096
+[CASE PASS] pw_from_concat_rom_round2 bytes=6400 mac_bytes=0 cycle=1586491
+[TB PASSED] 全部数据验证一致 cases=25 cycles=1586491 rom_reads=13386 ddr_reads=15999 ddr_writes=10812
+$finish called at time : 4759472 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Op_ROM/tb_op_rom.sv" Line 312
+run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:55 . Memory (MB): peak = 11771.531 ; gain = 0.000
+INFO: [MCP 00-101] ===MCP_CMD_END:1791972336882910300-46:0===
+INFO: [MCP 00-100] ===MCP_CMD_START:1791972444209863800-47===
+close_sim -force; set_property top tb_op_timing [get_filesets sim_1]; set_property -name xsim.simulate.xsim.more_options -value {} -objects [get_filesets sim_1]
+INFO: [Simtcl 6-16] Simulation closed
+INFO: [MCP 00-101] ===MCP_CMD_END:1791972444209863800-47:0===
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_reader_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_reader_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_reader_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_reader_timing.sv:]
+INFO: [MCP 00-100] ===MCP_CMD_START:1791972446623627900-48===
+launch_simulation -simset sim_1 -mode behavioral; current_time
+Command: launch_simulation  -simset sim_1 -mode behavioral
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Wed Oct 14 18:07:26 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_op_timing'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/2026.1/Vivado/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/2026.1/Vivado/data/xsim/xsim.ini' copied to run dir:'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'ddr4_0'...
+Generating merged BMM file for the design top 'ddr4_0'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_op_timing' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim/quantized_params_rom.mif'
+INFO: [SIM-utils-43] Exported 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim/quantized_params_rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_op_timing_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_op_timing_behav xil_defaultlib.tb_op_timing xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_op_timing_behav xil_defaultlib.tb_op_timing xil_defaultlib.glbl -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.op_descriptor_check
+Compiling module xil_defaultlib.op_feature_writer
+Compiling module xil_defaultlib.tb_op_timing
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_op_timing_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_op_timing_behav -key {Behavioral:sim_1:Functional:tb_op_timing} -tclbatch {tb_op_timing.tcl} -protoinst "protoinst_files/bd_9054.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_9054.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/bd_9054.protoinst for the following reason(s):
+There are no instances of module "bd_9054" in the design.
+
+Time resolution is 1 ps
+source tb_op_timing.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/tb_op_timing/descriptor_mem" to the wave window because it has 514048 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/tb_op_timing/descriptor_golden" to the wave window because it has 225900 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/tb_op_timing/writer_stimulus" to the wave window because it has 1970528 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/tb_op_timing/writer_golden" to the wave window because it has 954129 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 0ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_op_timing_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 0ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 11771.531 ; gain = 0.000
+INFO: [MCP 00-101] ===MCP_CMD_END:1791972446623627900-48:0===
+INFO: [MCP 00-100] ===MCP_CMD_START:1791972457203897700-49===
+run 302us; current_time
+[CASE PASS] descriptor_cases=1004 hold_and_reset=PASS
+[CASE PASS] writer_cases=608 beats=2991 offsets=32 error_and_reset=PASS
+[TB PASSED] 全部数据验证一致 descriptor_cases=1004 writer_cases=608 beats=2991 cycles=24932
+$finish called at time : 74794600 ps : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Op_Timing/tb_op_timing.sv" Line 143
+INFO: [MCP 00-101] ===MCP_CMD_END:1791972457203897700-49:0===
+update_compile_order -fileset sim_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_reader_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_reader_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_reader_timing.sv:]
+INFO: [MCP 00-100] ===MCP_CMD_START:1791972506534488000-50===
+close_sim -force; foreach {p v} $r2_sim_props {set_property -name $p -value $v -objects [get_filesets sim_1]}; set f [open {E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Op_Timing/results/round2_20261014/final_session_status.txt} w]; puts $f [list project [current_project] top [get_property TOP [get_filesets sources_1]] sim_top [get_property TOP [get_filesets sim_1]] sim_args [get_property xsim.simulate.xsim.more_options [get_filesets sim_1]] synth_status [get_property STATUS [get_runs synth_1]] synth_refresh [get_property NEEDS_REFRESH [get_runs synth_1]] impl_status [get_property STATUS [get_runs impl_1]] impl_refresh [get_property NEEDS_REFRESH [get_runs impl_1]] time [clock format [clock seconds] -format {%Y-%m-%d %H:%M:%S %Z}]]; close $f; current_project
+INFO: [Simtcl 6-16] Simulation closed
+INFO: [MCP 00-101] ===MCP_CMD_END:1791972506534488000-50:0===
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_reader_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_reader_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_reader_timing.sv:]
+ERROR: [Common 17-180] Spawn failed: �����ɹ���ɡ�
+
+update_compile_order -fileset sim_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_reader_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_reader_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_ROM\tb_op_rom.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Op_Timing\tb_op_timing.sv:]

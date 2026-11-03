@@ -1,0 +1,118 @@
+{
+  "sources": [
+    {
+      "source": "E:\\Pycharm_Prj\\Model\\prj\\src\\stl\\lung_ct_to_stl.py",
+      "source_sha256": "ad2fd6d019d3ce364dceb08d5dee8759fb19e8aac8d435d0ee0d7755be814590",
+      "local": "reference.py",
+      "identical_functions": [
+        "body_mask",
+        "ellipsoid",
+        "keep_largest",
+        "mesh_quality",
+        "remove_small_surfaces",
+        "taubin_smooth",
+        "write_stl"
+      ],
+      "adapted_functions": [],
+      "local_sha256": "02e84713521b062aae824718e78400a770e1989ef76b7aec586863fac7fe4575"
+    },
+    {
+      "source": "E:\\Pycharm_Prj\\Model\\prj\\src\\stl\\chest_ct_to_stl.py",
+      "source_sha256": "370fd582fea33488c6fe4e99b80e9a719538db0f226058a1799eec71673c95af",
+      "local": "repair.py",
+      "identical_functions": [
+        "adjust_lobe_boundaries",
+        "connect_nearby",
+        "reference_components",
+        "remove_small",
+        "repair_joint_lobes",
+        "repair_mask"
+      ],
+      "adapted_functions": [],
+      "local_sha256": "868f2b6842d9cf8dbcb4edcfd0498668fb88832786e5bbcd519892c672df5772"
+    },
+    {
+      "source": "E:\\Pycharm_Prj\\Model\\prj\\src\\stl\\branch_repair.py",
+      "source_sha256": "a689238c45462ed56a51b550aaf1b28a7b41e34d66001464499b62b8512ad1da",
+      "local": "branch_repair.py",
+      "identical_functions": [
+        "filter_vein_islands",
+        "repair_branches"
+      ],
+      "adapted_functions": [],
+      "local_sha256": "0064ffb94e70d81d0c052a698b63ee9ab735c5f3f1aa0926598be875bf5b17cf"
+    },
+    {
+      "source": "E:\\Pycharm_Prj\\Model\\prj\\src\\stl\\lobe_surface.py",
+      "source_sha256": "77cf3fac5ba08f0b2f353d2258e6b40c9f95bf3290af84960b531b2bbe89101f",
+      "local": "lobe_surface.py",
+      "identical_functions": [
+        "repair_lobe_envelope"
+      ],
+      "adapted_functions": [
+        "write_joint_lobes"
+      ],
+      "local_sha256": "236ff539746a21be7fb1b6e4060e1cd0ac5eb49a4b4a5fddac5699bad3f430fd"
+    },
+    {
+      "source": "E:\\Pycharm_Prj\\Model\\prj\\src\\stl\\vessel_surface.py",
+      "source_sha256": "1f79d4e2296572b1d8ff34f4c6a85c9ff525b4121a348ba791585faab1fd9504",
+      "local": "vessel_surface.py",
+      "identical_functions": [
+        "component_volumes",
+        "interior_clearance",
+        "read_stl",
+        "refine_stl",
+        "skeleton_geometry"
+      ],
+      "adapted_functions": [],
+      "local_sha256": "106354cf25f01e036588512e96204b94ff7bd592eabbaeff47e911895b13b574"
+    },
+    {
+      "source": "E:/Pycharm_Prj/Model/prj/src/stl/lung_ct_to_stl.py",
+      "local": "surface.py",
+      "local_sha256": "51b4ebee8c3c155cc1b5775ea9ffc064656a335361bff90b6615ef2efa20b7b4",
+      "adaptation": "decimate_stl surface cleanup and Sinc only; Quadric reduction removed; existing Cut left unchanged"
+    }
+  ],
+  "scope_check": {
+    "changed_existing_files": [
+      "main.py",
+      "README.md",
+      "pc_fpga/mesh/reference.py",
+      "pc_fpga/mesh/stages.py"
+    ],
+    "cut_unchanged": true,
+    "main_mesh_only": true,
+    "other_existing_files_verified_unchanged": 270
+  },
+  "synthetic_model_surface_comparison": [
+    {
+      "name": "Bronchus",
+      "faces": 2168,
+      "max_vertex_distance_mm": 0.0
+    },
+    {
+      "name": "PulmonaryArtery",
+      "faces": 2168,
+      "max_vertex_distance_mm": 0.0
+    },
+    {
+      "name": "PulmonaryVenous",
+      "faces": 2168,
+      "max_vertex_distance_mm": 0.0
+    },
+    {
+      "name": "LungTumor",
+      "faces": 2104,
+      "max_vertex_distance_mm": 0.0
+    }
+  ],
+  "tests": {
+    "passed": 15,
+    "failed": 0,
+    "evidence": "verification_tests.txt",
+    "real_fpga_used": false,
+    "real_patient_full_volume_run": false
+  }
+}

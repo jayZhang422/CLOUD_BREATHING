@@ -1,0 +1,73 @@
+Time resolution is 1 ps
+Block Memory Generator module tb_fuse_up_rpc.dut.u_transport.u_request_ram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_transport.u_reply_ram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_p12_project_mem.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_p12_skip_mem.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank_4.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank_5.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank_6.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank_7.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwResultRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwResultRam_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.project.pwParamBram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank_4.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank_5.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank_6.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank_7.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwResultRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwResultRam_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwParamBram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_op12_add_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_engine.u_pw_pack.u_tiles.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_service.u_perf_memory.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_port.g_memory[0].u_write_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_port.g_memory[0].u_read_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_port.g_memory[1].u_write_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_fuse_up_rpc.dut.u_port.g_memory[1].u_read_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_fuse_up_rpc.rom.u_rom.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[REGRESSION] E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Hotspot_PE32_20261024/fuse_rpc_cases.txt
+[CASE PASS] read_only_coefficients
+[CASE PASS] image_metadata_snapshot_and_online_rejection
+[CASE PASS] DW_P16_descriptor_rejection cases=6
+[CASE PASS] RPC_RAM all_32_lengths upload_read_backpressure invalid_lengths control_errors
+[CASE] fuse_tiny cycle=239624
+[TIMING] fuse_tiny hardware_cycles=252 read_bursts=3 read_bytes=2304
+[PERF] fuse_tiny hardware_cycles=252 load=0 run=170 output_blocked=0
+[CASE PASS] fuse_tiny bytes=128 mac_bytes=0 cycle=245557
+[CASE] fuse_odd cycle=245557
+[TIMING] fuse_odd hardware_cycles=616 read_bursts=14 read_bytes=5120
+[PERF] fuse_odd hardware_cycles=616 load=0 run=514 output_blocked=0
+[CASE PASS] fuse_odd bytes=2880 mac_bytes=0 cycle=275509
+[CASE] fuse_groups32 cycle=275509
+[TIMING] fuse_groups32 hardware_cycles=22837 read_bursts=90 read_bytes=86016
+[PERF] fuse_groups32 hardware_cycles=22837 load=0 run=22752 output_blocked=1574
+[CASE PASS] fuse_groups32 bytes=131072 mac_bytes=0 cycle=327437
+[CASE] fuse_d1_small cycle=327437
+[TIMING] fuse_d1_small hardware_cycles=7828 read_bursts=32 read_bytes=26624
+[PERF] fuse_d1_small hardware_cycles=7828 load=0 run=7745 output_blocked=1362
+[CASE PASS] fuse_d1_small bytes=49152 mac_bytes=0 cycle=359325
+[CASE] fuse_tumor_d1 cycle=359325
+[TIMING] fuse_tumor_d1 hardware_cycles=30981 read_bursts=104 read_bytes=100352
+[PERF] fuse_tumor_d1 hardware_cycles=30981 load=0 run=30897 output_blocked=5933
+[CASE PASS] fuse_tumor_d1 bytes=196608 mac_bytes=0 cycle=421941
+[CASE] fuse_d1_row cycle=421941
+[TIMING] fuse_d1_row hardware_cycles=31413 read_bursts=104 read_bytes=100352
+[PERF] fuse_d1_row hardware_cycles=31413 load=0 run=31329 output_blocked=3596
+[CASE PASS] fuse_d1_row bytes=196608 mac_bytes=0 cycle=485893
+[TB PASSED] 全部数据验证一致 cases=6 cycles=485893 rom_reads=0 ddr_reads=427 ddr_writes=596
+$finish called at time : 1457680 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Fuse_UpConcat_20261024/tb_fuse_up_rpc.sv" Line 467
+INFO: xsimkernel Simulation Memory Usage: 105248 KB (Peak: 105248 KB), Simulation CPU Usage: 5561 ms

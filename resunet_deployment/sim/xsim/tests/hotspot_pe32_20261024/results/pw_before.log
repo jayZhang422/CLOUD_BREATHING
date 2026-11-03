@@ -1,0 +1,52 @@
+Time resolution is 1 ps
+Block Memory Generator module tb_hotspot_pw.dut.u_bank.u_p12_project_mem.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_hotspot_pw.dut.u_bank.u_p12_skip_mem.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_hotspot_pw.dut.u_bank.u_pw_shared.project.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_hotspot_pw.dut.u_bank.u_pw_shared.project.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_hotspot_pw.dut.u_bank.u_pw_shared.project.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_hotspot_pw.dut.u_bank.u_pw_shared.project.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_hotspot_pw.dut.u_bank.u_pw_shared.project.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_hotspot_pw.dut.u_bank.u_pw_shared.project.pwResultRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_hotspot_pw.dut.u_bank.u_pw_shared.project.pwParamBram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_hotspot_pw.dut.u_bank.u_pw_shared.skip.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_hotspot_pw.dut.u_bank.u_pw_shared.skip.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_hotspot_pw.dut.u_bank.u_pw_shared.skip.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_hotspot_pw.dut.u_bank.u_pw_shared.skip.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_hotspot_pw.dut.u_bank.u_pw_shared.skip.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_hotspot_pw.dut.u_bank.u_pw_shared.skip.pwResultRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_hotspot_pw.dut.u_bank.u_pw_shared.skip.pwParamBram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_hotspot_pw.dut.u_op12_add_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_hotspot_pw.dut.u_pw_pack.u_tiles.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[CASE PASSED] compute192 mode=0 bytes=4096 mac=0 tokens=256 total_cycles=5648 run_cycles=3564
+[CASE PASSED] compute384 mode=0 bytes=8192 mac=0 tokens=512 total_cycles=21208 run_cycles=13204
+[CASE PASSED] compute768 mode=0 bytes=16384 mac=0 tokens=1024 total_cycles=82280 run_cycles=50916
+[CASE PASSED] p16_low mode=0 bytes=1056 mac=0 tokens=66 total_cycles=362 run_cycles=198
+[CASE PASSED] p16_tail mode=0 bytes=608 mac=0 tokens=38 total_cycles=388 run_cycles=204
+[CASE PASSED] p8_head1 mode=0 bytes=272 mac=0 tokens=17 total_cycles=140 run_cycles=116
+[CASE PASSED] p8_head5 mode=0 bytes=528 mac=0 tokens=33 total_cycles=190 run_cycles=146
+[CASE PASSED] p8_tail mode=0 bytes=912 mac=0 tokens=57 total_cycles=394 run_cycles=210
+[CASE PASSED] p8_max mode=0 bytes=1024 mac=0 tokens=64 total_cycles=64684 run_cycles=1960
+[CASE PASSED] p16_max mode=0 bytes=512 mac=0 tokens=32 total_cycles=64681 run_cycles=1957
+[CASE PASSED] raw4_tail mode=0 bytes=1824 mac=0 tokens=114 total_cycles=1439 run_cycles=1255
+[CASE PASSED] raw16 mode=0 bytes=2176 mac=0 tokens=136 total_cycles=1719 run_cycles=1475
+[CASE PASSED] debug8 mode=0 bytes=608 mac=1824 tokens=114 total_cycles=2237 run_cycles=1939
+[CASE PASSED] debug16 mode=0 bytes=912 mac=1824 tokens=114 total_cycles=2123 run_cycles=1939
+[CASE PASSED] reload1 mode=0 bytes=16 mac=0 tokens=1 total_cycles=74 run_cycles=50
+[CASE PASSED] compute192 mode=1 bytes=4096 mac=0 tokens=256 total_cycles=8719 run_cycles=4926
+[CASE PASSED] compute384 mode=1 bytes=8192 mac=0 tokens=512 total_cycles=28847 run_cycles=14295
+[CASE PASSED] compute768 mode=1 bytes=16384 mac=0 tokens=1024 total_cycles=110162 run_cycles=53080
+[CASE PASSED] p16_low mode=1 bytes=1056 mac=0 tokens=66 total_cycles=737 run_cycles=439
+[CASE PASSED] p16_tail mode=1 bytes=608 mac=0 tokens=38 total_cycles=725 run_cycles=398
+[CASE PASSED] p8_head1 mode=1 bytes=272 mac=0 tokens=17 total_cycles=270 run_cycles=225
+[CASE PASSED] p8_head5 mode=1 bytes=528 mac=0 tokens=33 total_cycles=385 run_cycles=301
+[CASE PASSED] p8_tail mode=1 bytes=912 mac=0 tokens=57 total_cycles=835 run_cycles=491
+[CASE PASSED] p8_max mode=1 bytes=1024 mac=0 tokens=64 total_cycles=116252 run_cycles=2098
+[CASE PASSED] p16_max mode=1 bytes=512 mac=0 tokens=32 total_cycles=116271 run_cycles=2101
+[CASE PASSED] raw4_tail mode=1 bytes=1824 mac=0 tokens=114 total_cycles=1690 run_cycles=1357
+[CASE PASSED] raw16 mode=1 bytes=2176 mac=0 tokens=136 total_cycles=2023 run_cycles=1575
+[CASE PASSED] debug8 mode=1 bytes=608 mac=1824 tokens=114 total_cycles=2588 run_cycles=2101
+[CASE PASSED] debug16 mode=1 bytes=912 mac=1824 tokens=114 total_cycles=2442 run_cycles=2108
+[CASE PASSED] reload1 mode=1 bytes=16 mac=0 tokens=1 total_cycles=112 run_cycles=69
+[TB PASSED] 30 engine Golden cases P8/P16/RAW/debug stress=0 resets=0 stalls=159115 out_stalls=11290
+$finish called at time : 2560324 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Hotspot_PE32_20261024/tb_hotspot_pw.sv" Line 131
+INFO: xsimkernel Simulation Memory Usage: 62284 KB (Peak: 62284 KB), Simulation CPU Usage: 13311 ms

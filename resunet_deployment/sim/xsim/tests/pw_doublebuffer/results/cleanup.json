@@ -1,0 +1,251 @@
+{
+  "completed": true,
+  "previous_removed_bytes": 385911288,
+  "final_removed_bytes": 1145178206,
+  "final_files": [
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_pw_stall/behav/xsim/quantized_params_rom.coe",
+      "bytes": 869504
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_pw_stall/behav/xsim/quantized_params_rom.mif",
+      "bytes": 2974400
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_pw_stall/behav/xsim/sim_trace_project.csv",
+      "bytes": 22551776
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_pw_stall/behav/xsim/sim_trace_skip.csv",
+      "bytes": 22845826
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_pw_stall/behav/xsim/tb_tile_pw_behav.wdb",
+      "bytes": 3222513
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_pw_stall/behav/xsim/waveform.vcd",
+      "bytes": 7624105
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_pw_stall/behav/xsim/xsim.dir/tb_tile_pw_behav/xsim.dbg",
+      "bytes": 2115608
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_pw_stall/behav/xsim/xsim.dir/tb_tile_pw_behav/xsim.xdbg",
+      "bytes": 5987552
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_pw_stall/behav/xsim/xsim.dir/tb_tile_pw_behav/xsimk.exe",
+      "bytes": 2435202
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_pw_restart/behav/xsim/quantized_params_rom.coe",
+      "bytes": 869504
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_pw_restart/behav/xsim/quantized_params_rom.mif",
+      "bytes": 2974400
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_pw_restart/behav/xsim/sim_trace_project.csv",
+      "bytes": 18437985
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_pw_restart/behav/xsim/tb_tile_pw_behav.wdb",
+      "bytes": 2213099
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_pw_restart/behav/xsim/waveform.vcd",
+      "bytes": 6088212
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_pw_restart/behav/xsim/xsim.dir/tb_tile_pw_behav/xsim.dbg",
+      "bytes": 2112208
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_pw_restart/behav/xsim/xsim.dir/tb_tile_pw_behav/xsim.xdbg",
+      "bytes": 5979312
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_pw_restart/behav/xsim/xsim.dir/tb_tile_pw_behav/xsimk.exe",
+      "bytes": 2457437
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_op12/behav/xsim/quantized_params_rom.coe",
+      "bytes": 869504
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_op12/behav/xsim/quantized_params_rom.mif",
+      "bytes": 2974400
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_op12/behav/xsim/sim_trace_fast_before.csv",
+      "bytes": 9140528
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_op12/behav/xsim/sim_trace_fast.csv",
+      "bytes": 9122005
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_op12/behav/xsim/sim_trace_slow_before.csv",
+      "bytes": 15999832
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_op12/behav/xsim/sim_trace_slow.csv",
+      "bytes": 16062127
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_op12/behav/xsim/tb_tile_op12_behav.wdb",
+      "bytes": 15965187
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_op12/behav/xsim/waveform.vcd",
+      "bytes": 13491630
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_op12/behav/xsim/xsim.dir/tb_tile_op12_behav/xsim.dbg",
+      "bytes": 15648920
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_op12/behav/xsim/xsim.dir/tb_tile_op12_behav/xsim.mem",
+      "bytes": 3112609
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_op12/behav/xsim/xsim.dir/tb_tile_op12_behav/xsim.reloc",
+      "bytes": 4489538
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_op12/behav/xsim/xsim.dir/tb_tile_op12_behav/xsim.xdbg",
+      "bytes": 83260072
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_op12/behav/xsim/xsim.dir/tb_tile_op12_behav/xsimk.exe",
+      "bytes": 7597503
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_op12/behav/xsim/xsim.dir/xil_defaultlib/@dw5x5.sdb",
+      "bytes": 1433471
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_continuous_rpc/behav/xsim/quantized_params_rom.coe",
+      "bytes": 869504
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_continuous_rpc/behav/xsim/quantized_params_rom.mif",
+      "bytes": 2974400
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_continuous_rpc/behav/xsim/sim_trace.csv",
+      "bytes": 70716407
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_continuous_rpc/behav/xsim/tb_continuous_rpc_behav.wdb",
+      "bytes": 105883535
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_continuous_rpc/behav/xsim/waveform.vcd",
+      "bytes": 1093991
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_continuous_rpc/behav/xsim/xsim.dir/tb_continuous_rpc_behav/xsim.dbg",
+      "bytes": 6510168
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_continuous_rpc/behav/xsim/xsim.dir/tb_continuous_rpc_behav/xsim.reloc",
+      "bytes": 1317914
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_continuous_rpc/behav/xsim/xsim.dir/tb_continuous_rpc_behav/xsim.xdbg",
+      "bytes": 22035024
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_continuous_rpc/behav/xsim/xsim.dir/tb_continuous_rpc_behav/xsimk.exe",
+      "bytes": 6381354
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_continuous_rpc/behav/xsim/xsim.dir/xil_defaultlib/@dw5x5.sdb",
+      "bytes": 1433471
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_rpc/behav/xsim/quantized_params_rom.coe",
+      "bytes": 869504
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_rpc/behav/xsim/quantized_params_rom.mif",
+      "bytes": 2974400
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_rpc/behav/xsim/sim_trace.csv",
+      "bytes": 99327488
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_rpc/behav/xsim/tb_tile_rpc_behav.wdb",
+      "bytes": 145966852
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_rpc/behav/xsim/waveform.vcd",
+      "bytes": 1742911
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_rpc/behav/xsim/xsim.dir/tb_tile_rpc_behav/xsim.dbg",
+      "bytes": 6510160
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_rpc/behav/xsim/xsim.dir/tb_tile_rpc_behav/xsim.reloc",
+      "bytes": 1317914
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_rpc/behav/xsim/xsim.dir/tb_tile_rpc_behav/xsim.xdbg",
+      "bytes": 22035024
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_rpc/behav/xsim/xsim.dir/tb_tile_rpc_behav/xsimk.exe",
+      "bytes": 6381354
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_rpc/behav/xsim/xsim.dir/xil_defaultlib/@dw5x5.sdb",
+      "bytes": 1433471
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_rpc_before/behav/xsim/quantized_params_rom.coe",
+      "bytes": 869504
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_rpc_before/behav/xsim/quantized_params_rom.mif",
+      "bytes": 2974400
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_rpc_before/behav/xsim/sim_trace.csv",
+      "bytes": 110053361
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_rpc_before/behav/xsim/tb_tile_rpc_before_behav.wdb",
+      "bytes": 173602152
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_rpc_before/behav/xsim/waveform.vcd",
+      "bytes": 1733024
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_rpc_before/behav/xsim/xsim.dir/tb_tile_rpc_before_behav/xsim.dbg",
+      "bytes": 6389424
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_rpc_before/behav/xsim/xsim.dir/tb_tile_rpc_before_behav/xsim.reloc",
+      "bytes": 1293646
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_rpc_before/behav/xsim/xsim.dir/tb_tile_rpc_before_behav/xsim.xdbg",
+      "bytes": 21875256
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_rpc_before/behav/xsim/xsim.dir/tb_tile_rpc_before_behav/xsimk.exe",
+      "bytes": 6253153
+    },
+    {
+      "path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_tile_rpc_before/behav/xsim/xsim.dir/xil_defaultlib/@dw5x5.sdb",
+      "bytes": 1433471
+    }
+  ]
+}

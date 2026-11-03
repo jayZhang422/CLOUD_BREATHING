@@ -1,0 +1,103 @@
+{
+  "deleted": false,
+  "approval_rejection": "blocked by policy",
+  "simulation_closed": true,
+  "directories": [
+    {
+      "directory": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_rtl_slim_pw",
+      "total_bytes": 63006794,
+      "large_files": [
+        {
+          "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_rtl_slim_pw\\behav\\xsim\\quantized_params_rom.mif",
+          "bytes": 2974400
+        },
+        {
+          "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_rtl_slim_pw\\behav\\xsim\\sim_trace.csv",
+          "bytes": 19890725
+        },
+        {
+          "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_rtl_slim_pw\\behav\\xsim\\tb_rtl_slim_pw_behav.wdb",
+          "bytes": 12268342
+        },
+        {
+          "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_rtl_slim_pw\\behav\\xsim\\waveform.vcd",
+          "bytes": 7541740
+        },
+        {
+          "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_rtl_slim_pw\\behav\\xsim\\xsim.dir\\tb_rtl_slim_pw_behav\\xsim.dbg",
+          "bytes": 2707664
+        },
+        {
+          "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_rtl_slim_pw\\behav\\xsim\\xsim.dir\\tb_rtl_slim_pw_behav\\xsim.xdbg",
+          "bytes": 7046304
+        },
+        {
+          "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_rtl_slim_pw\\behav\\xsim\\xsim.dir\\tb_rtl_slim_pw_behav\\xsimk.exe",
+          "bytes": 2623723
+        },
+        {
+          "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_rtl_slim_pw\\behav\\xsim\\xsim.dir\\xil_defaultlib\\@pw@mac.sdb",
+          "bytes": 1082776
+        },
+        {
+          "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_rtl_slim_pw\\behav\\xsim\\xsim.dir\\xil_defaultlib\\@pw@mac_before.sdb",
+          "bytes": 1148179
+        }
+      ]
+    },
+    {
+      "directory": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_rtl_slim_op12",
+      "total_bytes": 138301102,
+      "large_files": [
+        {
+          "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_rtl_slim_op12\\behav\\xsim\\quantized_params_rom.mif",
+          "bytes": 2974400
+        },
+        {
+          "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_rtl_slim_op12\\behav\\xsim\\sim_trace.csv",
+          "bytes": 20722873
+        },
+        {
+          "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_rtl_slim_op12\\behav\\xsim\\tb_rtl_slim_op12_behav.wdb",
+          "bytes": 21740019
+        },
+        {
+          "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_rtl_slim_op12\\behav\\xsim\\waveform.vcd",
+          "bytes": 15298669
+        },
+        {
+          "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_rtl_slim_op12\\behav\\xsim\\xsim.dir\\tb_rtl_slim_op12_behav\\xsim.dbg",
+          "bytes": 9705272
+        },
+        {
+          "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_rtl_slim_op12\\behav\\xsim\\xsim.dir\\tb_rtl_slim_op12_behav\\xsim.mem",
+          "bytes": 1686025
+        },
+        {
+          "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_rtl_slim_op12\\behav\\xsim\\xsim.dir\\tb_rtl_slim_op12_behav\\xsim.reloc",
+          "bytes": 2412624
+        },
+        {
+          "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_rtl_slim_op12\\behav\\xsim\\xsim.dir\\tb_rtl_slim_op12_behav\\xsim.xdbg",
+          "bytes": 44371760
+        },
+        {
+          "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_rtl_slim_op12\\behav\\xsim\\xsim.dir\\tb_rtl_slim_op12_behav\\xsimk.exe",
+          "bytes": 5443013
+        },
+        {
+          "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_rtl_slim_op12\\behav\\xsim\\xsim.dir\\xil_defaultlib\\@dw5x5.sdb",
+          "bytes": 1433471
+        },
+        {
+          "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_rtl_slim_op12\\behav\\xsim\\xsim.dir\\xil_defaultlib\\@pw@mac.sdb",
+          "bytes": 1082776
+        },
+        {
+          "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_rtl_slim_op12\\behav\\xsim\\xsim.dir\\xil_defaultlib\\@pw@mac_before.sdb",
+          "bytes": 1148179
+        }
+      ]
+    }
+  ]
+}

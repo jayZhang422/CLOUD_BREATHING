@@ -1,0 +1,16 @@
+minimum: inputs=12 outputs=3
+odd: inputs=45 outputs=6
+odd_width: inputs=208 outputs=48
+odd_height: inputs=208 outputs=48
+narrow: inputs=68 outputs=16
+short: inputs=68 outputs=16
+full64: inputs=49152 outputs=12288
+full128: inputs=16384 outputs=4096
+full256: inputs=65536 outputs=16384
+full512: inputs=262144 outputs=65536
+stress512: inputs=524288 outputs=131072
+reset_mid: inputs=506 outputs=110
+reset_stalled: inputs=506 outputs=110
+max_groups: inputs=8192 outputs=2048
+signed_edges: inputs=48 outputs=12
+odd_tail: inputs=25 outputs=4

@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+[CASE PASS] Add quant 192 configs 3264 outputs shift0..63 ties signed extremes join backpressure
+[CASE PASS] PW quant 8192 vectors shift0..63 negative ties INT64 wrap saturation mask raw
+[TB PASSED] quantization all offline Golden vectors matched
+$finish called at time : 131192 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/RTL_Slim_Batch45/tb_batch45_quant.sv" Line 343

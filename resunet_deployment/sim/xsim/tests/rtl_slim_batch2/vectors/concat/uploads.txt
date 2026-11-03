@@ -1,0 +1,2 @@
+02000000 48 sim/xsim/tests/rtl_slim_batch2/vectors/concat/input.hex
+02200000 48 sim/xsim/tests/rtl_slim_batch2/vectors/concat/input_b.hex

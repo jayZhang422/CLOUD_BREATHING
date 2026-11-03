@@ -1,0 +1,7 @@
+{
+  "status": "blocked",
+  "removed_files": 0,
+  "reason": "Automatic approval review rejected both scoped PowerShell artifact/snapshot cleanup and removal of one explicitly named sim_trace.csv; returned only blocked by policy.",
+  "inventory": "cleanup_plan.json",
+  "remaining_MiB_approx": 1127.84
+}

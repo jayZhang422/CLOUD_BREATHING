@@ -1,0 +1,22 @@
+[info] welcome to sbt 1.10.2 (Eclipse Adoptium Java 17.0.20.1)
+[info] loading project definition from /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Line_Buffer_sim/project
+[info] loading settings for project line_buffer_sim from build.sbt ...
+[info] set current project to line_buffer_sim (in build file:/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Line_Buffer_sim/)
+[info] compiling 3 Scala sources to /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Line_Buffer_sim/target/scala-2.13/classes ...
+[info] done compiling
+[info] running (fork) LineBufferGen 
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 1986.0MiB
+[info] [Runtime] Current date : 2026.10.09 21:28:01
+[info] [Progress] at 0.000 : Elaborate components
+[info] [Progress] at 0.992 : Checks and transforms
+[info] [Progress] at 1.157 : Generate Verilog to .
+[info] [Done] at 1.378
+[info] [Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[info] [Runtime] JVM max memory : 1986.0MiB
+[info] [Runtime] Current date : 2026.10.09 21:28:02
+[info] [Progress] at 1.380 : Elaborate components
+[info] [Progress] at 1.405 : Checks and transforms
+[info] [Progress] at 1.441 : Generate Verilog to .
+[info] [Done] at 1.557
+[success] Total time: 12 s, completed Oct 9, 2026, 9:28:02 PM

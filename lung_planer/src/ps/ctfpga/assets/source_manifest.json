@@ -1,0 +1,56 @@
+[
+  {
+    "source": "E:\\Pycharm_Prj\\Model\\prj\\src\\io\\dicom_ct.py",
+    "destination": "pc_fpga/ct/dicom_ct.py",
+    "source_sha256": "8a0f373937d5373006f312738074e53b2d6b237f90f8aadcdf48c62e9338f89f",
+    "adaptation": "unchanged",
+    "local_sha256": "1fb03b0041115a3b3c5134eb5f63d52b8b36f8a2a923c0df73c6f46721235ce6"
+  },
+  {
+    "source": "E:\\Pycharm_Prj\\Model\\prj\\src\\io\\prediction_io.py",
+    "destination": "pc_fpga/ct/prediction_io.py",
+    "source_sha256": "1c3605a37d14cea6a0f67dddad18db905335e4f6e171863ea113f92a363a0fb6",
+    "adaptation": "unchanged",
+    "local_sha256": "cf105d8c5b2a9e0194e028fbf86f7a5567709313e3d7ac789b54ad6ef6d02cf1"
+  },
+  {
+    "source": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\script\\python\\BIN_UDP\\src\\protocol.py",
+    "destination": "pc_fpga/ethernet/protocol.py",
+    "source_sha256": "e9db10d0a63195b50b0fff2b571b6905fb31c46110bdbf920a01aed51bc53528",
+    "adaptation": "local package imports only",
+    "local_sha256": "676ff2afd2fde476fda761f48e8a53ebe752894f8f37fd9bc307ccb5779c2c6a"
+  },
+  {
+    "source": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\script\\python\\BIN_UDP\\src\\udp_link.py",
+    "destination": "pc_fpga/ethernet/udp_link.py",
+    "source_sha256": "dcbdaba3dce0a1743fd1694db5188816d0e8000cc9f8d324d7bda4475e3e14af",
+    "adaptation": "local package imports only",
+    "local_sha256": "e7759269e2d49f2f3599bd276965789e009134de2f3ff8cee6699f978f5084ee"
+  },
+  {
+    "source": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\script\\python\\BIN_UDP\\src\\sender.py",
+    "destination": "pc_fpga/ethernet/sender.py",
+    "source_sha256": "31597fc7579ac6e12705bd3f4662180cb31d3762b752e2eb4206dfdd7ba301a2",
+    "adaptation": "Local imports; table progress callback; reject unrelated source peers; wire bytes unchanged",
+    "local_sha256": "cc53681ee7d5faab767354c36188a4a6abd24f40606e0b6a697ce7d0757975d9"
+  },
+  {
+    "source": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\script\\python\\BIN_UDP\\src\\op_client.py",
+    "destination": "pc_fpga/ethernet/op_client.py",
+    "source_sha256": "a043b0b1302292d2352164d877454d0c7380848e4300b0c578bcccaebd378611",
+    "adaptation": "Local imports; extend identity validation to VOL1 START/QUERY/RELEASE/ABORT 0x26..0x29; V1 framing unchanged",
+    "local_sha256": "a42a794ee1c1a80355686979ee0aa758eb79667d90925099a85b4fb738785ac7"
+  },
+  {
+    "source": "E:\\Pycharm_Prj\\Model\\prj\\src\\stl\\lung_ct_to_stl.py",
+    "destination": "pc_fpga/mesh/reference.py",
+    "source_sha256": "ad2fd6d019d3ce364dceb08d5dee8759fb19e8aac8d435d0ee0d7755be814590",
+    "extracted_functions": [
+      "taubin_smooth",
+      "write_stl",
+      "mesh_quality"
+    ],
+    "local_sha256": "882aec92a8703905d5e9a625f4c5f6e02ba1c31286c1509a3825f33ce4444da0",
+    "adaptation": "Extracted pure mesh functions unchanged; no Torch/model imports"
+  }
+]

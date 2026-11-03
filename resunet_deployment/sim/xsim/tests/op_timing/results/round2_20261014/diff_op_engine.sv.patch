@@ -1,0 +1,18 @@
+--- round2-before/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv
++++ prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv
+@@ -295,7 +295,14 @@
+         end
+         if (state_r == RESET_CORE) output_addr_r <= out_base_w;
+         if (output_fire_w) begin
+-            saved_data_r <= bank_data_w; saved_pixel_r <= bank_pixel_w; saved_group_r <= bank_group_w;
++            // 仅捕获本算子的有效宽度，Concat/Add/PW不再驱动3200位公共使能。
++            saved_data_r[127:0] <= bank_data_w[127:0];
++            case (op_w)
++                8'd3: saved_data_r[1151:128] <= bank_data_w[1151:128];
++                8'd4: saved_data_r[3199:128] <= bank_data_w[3199:128];
++                default: ;
++            endcase
++            saved_pixel_r <= bank_pixel_w; saved_group_r <= bank_group_w;
+             saved_output_count_r <= output_count_r;
+             saved_linear_addr_r <= output_addr_r;
+             case (op_w)

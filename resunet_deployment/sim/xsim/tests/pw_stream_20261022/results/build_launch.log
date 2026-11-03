@@ -1,0 +1,12 @@
+2026-10-22 22:49:21 local Vivado time
+Vivado 2026.1, part xcku5p-ffvb676-2-i, production top=top, default sim_1 top=tb_mkdc.
+MCP command: reset_runs synth_1
+MCP command: launch_runs synth_1 impl_1 -jobs 4
+Result: exit_code=0; Launched synth_1, impl_1.
+MCP command: wait_on_runs -timeout 0 synth_1 impl_1
+Result: exit_code=0; zero-minute bounded wait returned while runs continue.
+Evidence: synth_1/runme.log shows synthesis license acquired, Starting synth_design, helper launched PID 20108.
+Evidence: impl_1/top.tcl final phase is route_design; no write_bitstream step.
+Not a completion or timing-closure claim. User requested start once and end.
+Earlier launch with -to_step route_design for mixed synthesis+implementation was rejected before either run started. No duplicate build was launched.
+check_syntax -fileset sources_1: No errors or warning reported.

@@ -1,0 +1,18 @@
+[
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_op12_handoff",
+    "bytes": 405005065.0
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_op12_regression",
+    "bytes": 118257496.0
+  },
+  {
+    "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_op12_rpc",
+    "bytes": 142462449.0
+  },
+  {
+    "path": "C:\\Users\\32001\\AppData\\Local\\Temp\\codex_op12_handoff_20261022",
+    "bytes": 21052891.0
+  }
+]

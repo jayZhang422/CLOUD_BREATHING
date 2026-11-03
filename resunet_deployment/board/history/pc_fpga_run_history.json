@@ -1,0 +1,344 @@
+{
+  "title": "PC_FPGA 实验迭代与中间证据摘要",
+  "generated_at": "2026-10-30",
+  "purpose": "保留 PC 到 FPGA 整卷推理及离线后处理的失败、恢复、性能变化、结果一致性和验证证据，便于后续清理原始输出时追溯迭代过程。",
+  "preservation": {
+    "raw_files_modified": false,
+    "raw_files_moved": false,
+    "raw_files_deleted": false,
+    "summary_name": "output_summary.json"
+  },
+  "scope": {
+    "output_files_before_summary": 182,
+    "output_total_bytes_before_summary": 1952815017,
+    "binary_and_mesh_data": "BIN、NPY、NPZ、STL 等大文件不逐个展开；保留其目录、规模、摘要哈希和报告路径。",
+    "excluded_background": [
+      ".venv 依赖包和 __pycache__ 不作为实验迭代证据逐项罗列。",
+      "source 下的原始影像不复制或展开到摘要。"
+    ]
+  },
+  "experiment_timeline": [
+    {
+      "date": "2026-10-25",
+      "experiment": "2026-10-25 initial full-volume run",
+      "status": "failed_during_reasoning",
+      "stages": {
+        "ct2bin": "245 slices; 1.422 s",
+        "send": "IMAGE_READY verified; 1.937 s",
+        "reasoning": "KeyboardInterrupt after 2520.734 s; receive and post-processing blocked"
+      },
+      "upload": {
+        "payload_mib": 61.25,
+        "throughput_mib_per_second": 60.345,
+        "unique_packets": 62720,
+        "retransmitted_packets": 22,
+        "loss_events": 9
+      },
+      "input_sha256": "84eb6b5922f1b97fd8a51ac03a26429ba6d263d915db87d22590e7d210b93f3c",
+      "program_commands": 30090,
+      "interpretation": "证明整卷输入上传及 IMAGE_READY 校验成功，但不能作为推理或结果回读完成的证据。"
+    },
+    {
+      "date": "2026-10-26",
+      "experiment": "2026-10-26 full-volume run after RTL fix",
+      "status": "complete",
+      "stages": {
+        "ct2bin": "245 slices; 0.172 s",
+        "send": "IMAGE_READY verified; 3.609 s",
+        "reasoning": "30090/30090 commands; 737.203 s",
+        "receive": "128450560/128450560 bytes; 30.984 s",
+        "bin2stl": "9 structures; 99.141 s",
+        "smooth": "9 structures; 42.922 s",
+        "cut": "9 structures; 19.844 s"
+      },
+      "input_sha256": "84eb6b5922f1b97fd8a51ac03a26429ba6d263d915db87d22590e7d210b93f3c",
+      "schedule_sha256": "ea5c02c5bccd4965bb390672e8ee7c689a36960d4511251cd5fc7b8d910ea71c",
+      "result": {
+        "shape_zyx": [245, 512, 512],
+        "bytes": 128450560,
+        "sha256": "c62cecde00a8be2312ef2f1490f2a5e34d9ef5b59a1eb13840e6732313a56cc8",
+        "ddr_released": true
+      },
+      "mesh_evidence": {
+        "raw_triangles_total": 2387626,
+        "smooth_triangles_total": 2380284,
+        "cut_triangles_total": 2032886,
+        "cut_status_counts": {
+          "processed": 5,
+          "kept_source_quality_guard": 4
+        },
+        "maximum_absolute_cut_volume_change_percent": 0.0548
+      },
+      "result_confirmation": "阶段报告、结果清单和本地预测元数据相互对应。"
+    },
+    {
+      "date": "2026-10-27",
+      "experiment": "2026-10-27 VOL2 inference query timeout",
+      "status": "failed_inference_query",
+      "stages": {
+        "ct2bin": "245 slices; 0.28 s",
+        "send": "VOL2 compact views, parameters, and command list uploaded; 15.97 s",
+        "reasoning": "operator RPC 0x27 timed out after 46.51 s; inference snapshot shows 1/30090 commands after 38.156 s"
+      },
+      "program_commands": 30090,
+      "schedule_sha256": "f8821a8a186e0852714086b7f23072edc0e012c06707754f90e65cd374736644",
+      "interpretation": "保留 RPC 查询超时及仅完成 1 条命令的中间状态；不视为推理完成。"
+    },
+    {
+      "date": "2026-10-28",
+      "experiment": "2026-10-28 recovery query attempt",
+      "status": "failed_recovery_query",
+      "stages": {
+        "receive": "operator RPC 0x27 timed out after 8.09 s"
+      },
+      "interpretation": "恢复查询仍超时，目录中没有已完成的结果发布记录。"
+    },
+    {
+      "date": "2026-10-28",
+      "experiment": "2026-10-28 rerun with completed inference",
+      "status": "inference_complete_receive_rejected",
+      "stages": {
+        "ct2bin": "245 slices; 0.28 s",
+        "send": "VOL2 upload; 9.33 s",
+        "reasoning": "30090/30090 commands; 584.906 s",
+        "receive": "Rejected after 0.02 s: prediction already published with mismatched identity"
+      },
+      "input_sha256": "84eb6b5922f1b97fd8a51ac03a26429ba6d263d915db87d22590e7d210b93f3c",
+      "schedule_sha256": "f8821a8a186e0852714086b7f23072edc0e012c06707754f90e65cd374736644",
+      "interpretation": "板端完成推理，但 PC 因已有预测身份不匹配而拒绝本次接收；不能标记为完整端到端成功。"
+    },
+    {
+      "date": "2026-10-29",
+      "experiment": "2026-10-29 Q4 full-volume run",
+      "status": "inference_and_receive_complete_postprocess_failed",
+      "stages": {
+        "ct2bin": "245 slices; 4.47 s",
+        "send": "VOL2 upload; 10.78 s",
+        "reasoning": "30090/30090 commands; 445.844 s",
+        "receive": "128450560/128450560 bytes; 10.64 s",
+        "bin2stl": "Failed after 2.2 s: No module named skimage"
+      },
+      "input_sha256": "84eb6b5922f1b97fd8a51ac03a26429ba6d263d915db87d22590e7d210b93f3c",
+      "schedule_sha256": "1af6efd95a5c0d31ee3088b25a31dc97e842777bd1fa6751027dc170bd745e3a",
+      "result_sha256": "c62cecde00a8be2312ef2f1490f2a5e34d9ef5b59a1eb13840e6732313a56cc8",
+      "comparison_to_2026_10_26": {
+        "same_input_sha256": true,
+        "same_result_sha256": true,
+        "inference_time_reduction_percent": 39.5,
+        "note": "比较的是报告中的 FPGA reasoning elapsed；清单 SHA256 不同，说明执行计划版本有变化。哈希一致只证明结果字节一致，不等价于独立 Golden 验证。"
+      },
+      "result_confirmation": "阶段状态、完成命令数、回读字节数及结果哈希互相对应。"
+    },
+    {
+      "date": "2026-10-30",
+      "experiment": "2026-10-30 offline post-processing rerun",
+      "status": "offline_postprocess_complete",
+      "hardware_used": false,
+      "stages": {
+        "bin2stl": "153.47 s",
+        "smooth": "41.55 s",
+        "cut": "21.08 s"
+      },
+      "mesh_evidence": {
+        "raw_triangles_total": 2387626,
+        "smooth_triangles_total": 2380284,
+        "cut_triangles_total": 2032886,
+        "cut_status_counts": {
+          "processed": 5,
+          "kept_source_quality_guard": 4
+        },
+        "maximum_absolute_cut_volume_change_percent": 0.0548
+      },
+      "interpretation": "名称含 ref_cpp_compare，但保留的运行报告只证明离线 BIN2STL/Smooth/Cut 完成，没有记录 C++ 与 Python 数值对比结论；不据此宣称参考实现比对通过。"
+    }
+  ],
+  "offline_demo": {
+    "cases": ["2026-10-25 initial synthetic demo", "2026-10-25 final synthetic demo"],
+    "synthetic_only": true,
+    "structures": 9,
+    "raw_triangles": 19512,
+    "cut_triangles": 4500,
+    "maximum_absolute_cut_volume_change_percent": 0.4744,
+    "boundary_and_nonmanifold_edges": 0,
+    "all_components_preserved": true,
+    "record_basis": "演示运行汇总、逐阶段网格统计与控制台记录。",
+    "limitation": "合成演示只验证网格处理和质量守卫，不代表真实 CT 的分割准确率或 FPGA 推理性能。"
+  },
+  "software_verification": {
+    "recorded_run": {
+      "date": "2026-10-25",
+      "python": "3.12.10",
+      "tests_run": 7,
+      "failures": 0,
+      "errors": 0,
+      "syntax_checked_files": 18,
+      "network": "内存替身；没有连接 FPGA",
+      "status": "PASS",
+      "record_basis": "本地测试汇总与 unittest 输出记录。"
+    },
+    "documentation_note": "项目说明另记有 10 项 PC 自校验；保存的测试输出记录为 7 项通过，不将两者合并成同一次测试。"
+  },
+  "resource_and_timing_metrics": {
+    "recorded": [
+      "CT2BIN/Send/Reasoning/Receive/BIN2STL/Smooth/Cut 阶段墙钟时间",
+      "上传吞吐、包重传与丢包事件",
+      "整卷命令数、完成命令数和 FPGA reasoning 等待时间",
+      "输出字节数及输入/输出 SHA256",
+      "STL 三角形数、体积变化、拓扑质量守卫状态"
+    ],
+    "not_recorded": [
+      "FPGA LUT/FF/DSP/BRAM/URAM 资源利用率",
+      "WNS/TNS/关键路径时序 slack",
+      "独立于 host/PC 协议等待的纯硬件周期数"
+    ],
+    "timing_boundary": "Reasoning 时间是报告记录的 FPGA RPC RUN/QUERY 完成等待，不应与 PC 阶段墙钟时间或硬件时钟周期混为一谈。"
+  },
+  "evidence_summary": [
+    "整卷首次运行的中断状态、上传统计和输入哈希。",
+    "RTL 修正后的完整推理、结果回读、输出哈希及后处理指标。",
+    "RPC 超时、恢复尝试、结果身份不匹配等失败中间状态。",
+    "相同输入下不同执行计划的推理耗时和结果一致性记录。",
+    "离线网格后处理的阶段耗时、面数、体积变化与质量守卫状态。",
+    "合成演示和 PC 单元测试的通过记录。"
+  ],
+  "limitations": [
+    "输出哈希相同表示文件字节一致；除非报告明确提供独立 Golden 对照，不能据此声称语义正确或 Golden 验证通过。",
+    "10 月 29 日推理性能改善伴随执行清单版本变化，当前目录证据不足以单独归因到某一项 RTL/算法优化。",
+    "10 月 30 日 ref_cpp_compare 目前只有离线后处理记录，没有 C++ 对比报告或数值结论。",
+    "BIN/NPY/NPZ/STL 等大文件仍保留在原始目录；摘要本身不能替代这些中间结果文件。"
+  ],
+  "append_only_evidence_2026_11_01": {
+    "anonymization": "病例仅标记为 A、B 及运行序号，不包含姓名或源影像路径。",
+    "artifact_inventory": {
+      "case_groups": 2,
+      "completed_full_volume_inferences": 5,
+      "contents": "原始 INT8 CT 体数据、VOL2 紧凑输入、uint16 分割位图结果，以及任务清单、运行状态、结果校验和性能计数 JSON。",
+      "post_processing": "这 5 份记录均停在结果回读阶段；BIN2STL、Smooth、Cut 未执行。"
+    },
+    "link_check": {
+      "status": "PASS",
+      "checks": [
+        "结果区 0x1C000000 的 1024 B 写入/读回一致。",
+        "扩展区起点 0x20000000 的 1024 B 写入/读回一致。",
+        "扩展区末端 0x2FFFFC00 的 1024 B 写入/读回一致；检查范围止于 0x30000000。",
+        "链路自检全部通过。"
+      ]
+    },
+    "inference_metric_basis": {
+      "reasoning_seconds": "来自硬件推理完成状态中的 elapsed_seconds。",
+      "operator_gather_classify_seconds": "由对应 cycle 计数除以 250 MHz 计算，保留三位小数；用于拆分观察，不与 RPC 总耗时完全等同。",
+      "cache_hit_rate": "hits / (hits + misses)。",
+      "gather_counts": "硬件状态记录的请求数、等待周期数和最大在途请求数。"
+    },
+    "cases": [
+      {
+        "case": "A",
+        "slice_count": 334,
+        "shape_zyx": [334, 512, 512],
+        "spacing_zyx_mm": [1.0, 0.80078125, 0.80078125],
+        "input_sha256": "95fe9273ccb85e62bb0bcab2ac1407fc9dfb25826f9bc5794289469fab40a716",
+        "output": {
+          "format": "ct-segmentation-bitmask-v2",
+          "dtype": "uint16",
+          "bytes": 175112192,
+          "sha256": "3304aa80c4360e87973e116a167f50bb89a455a25e1b0b8de5f432aed8bb0ebb",
+          "channels": [
+            "LeftUpperLobe",
+            "LeftLowerLobe",
+            "RightUpperLobe",
+            "RightMiddleLobe",
+            "RightLowerLobe",
+            "Bronchus",
+            "PulmonaryArtery",
+            "PulmonaryVenous",
+            "LungTumor"
+          ],
+          "channel_bits": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+          "semantics": "原生 CT 网格上的 FPGA 分割位图；尚未进行网格后处理。"
+        },
+        "models": ["lobe", "airway", "vessel", "tumor"],
+        "runs": [
+          {
+            "run": "A-01",
+            "status": "complete",
+            "vol2_layout_version": 3,
+            "completed_commands": "39312/39312",
+            "reasoning_seconds": 769.015,
+            "receive_seconds": 13.110,
+            "cycle_breakdown_seconds": {"operator": 428.553, "gather": 202.243, "classify": 138.145},
+            "compact_cache": {"hits": 304105886, "misses": 534124822, "hit_rate_percent": 36.28},
+            "gather": {"read_requests": 923809302, "write_requests": 182452224, "request_stall_cycles": 0, "response_wait_cycles": 74435062121, "pending_peak": 4}
+          },
+          {
+            "run": "A-02",
+            "status": "complete",
+            "vol2_layout_version": 4,
+            "completed_commands": "39312/39312",
+            "reasoning_seconds": 596.172,
+            "receive_seconds": 13.578,
+            "cycle_breakdown_seconds": {"operator": 428.370, "gather": 30.221, "classify": 137.471},
+            "compact_cache": {"hits": 812009886, "misses": 26220822, "hit_rate_percent": 96.87},
+            "gather": {"read_requests": 415905302, "write_requests": 182452224, "request_stall_cycles": 0, "response_wait_cycles": 33426132818, "pending_peak": 4}
+          },
+          {
+            "run": "A-03",
+            "status": "complete",
+            "vol2_layout_version": 4,
+            "completed_commands": "39312/39312",
+            "reasoning_seconds": 596.922,
+            "receive_seconds": 13.406,
+            "cycle_breakdown_seconds": {"operator": 428.813, "gather": 30.234, "classify": 137.654},
+            "compact_cache": {"hits": 812009886, "misses": 26220822, "hit_rate_percent": 96.87},
+            "gather": {"read_requests": 415905302, "write_requests": 182452224, "request_stall_cycles": 0, "response_wait_cycles": 33475121786, "pending_peak": 4}
+          },
+          {
+            "run": "A-04",
+            "status": "complete",
+            "vol2_layout_version": 4,
+            "completed_commands": "39312/39312",
+            "reasoning_seconds": 486.625,
+            "receive_seconds": 13.578,
+            "cycle_breakdown_seconds": {"operator": 415.213, "gather": 30.227, "classify": 41.076},
+            "compact_cache": {"hits": 812009886, "misses": 26220822, "hit_rate_percent": 96.87},
+            "gather": {"read_requests": 206997654, "write_requests": 182452224, "request_stall_cycles": 0, "response_wait_cycles": 10705044978, "pending_peak": 8}
+          }
+        ]
+      },
+      {
+        "case": "B",
+        "slice_count": 245,
+        "shape_zyx": [245, 512, 512],
+        "spacing_zyx_mm": [1.25, 0.8125, 0.8125],
+        "input_sha256": "84eb6b5922f1b97fd8a51ac03a26429ba6d263d915db87d22590e7d210b93f3c",
+        "output_sha256": "c62cecde00a8be2312ef2f1490f2a5e34d9ef5b59a1eb13840e6732313a56cc8",
+        "output_bytes": 128450560,
+        "run": {
+          "label": "B-01",
+          "status": "complete",
+          "vol2_layout_version": 4,
+          "completed_commands": "30090/30090",
+          "reasoning_seconds": 364.500,
+          "receive_seconds": 9.640,
+          "cycle_breakdown_seconds": {"operator": 311.606, "gather": 22.629, "classify": 30.154},
+          "compact_cache": {"hits": 605784900, "misses": 19540428, "hit_rate_percent": 96.88},
+          "gather": {"read_requests": 152302988, "write_requests": 139132928, "request_stall_cycles": 0, "response_wait_cycles": 7944191005, "pending_peak": 8}
+        }
+      }
+    ],
+    "tumor_stage_profile": {
+      "runs": ["A-03", "A-04", "B-01"],
+      "snapshots_per_run": 60,
+      "coverage": "每次记录 30 个算子阶段、2 个末端切片；A 为 332/333 层，B 为 243/244 层。",
+      "clock_mhz": {"compute": 250.0, "ddr": 333.333},
+      "operator_stage_sum_per_sample_slice_ms": 779.2,
+      "captured_read_errors": 0,
+      "scope_note": "单个 tumor 模型采样切片的阶段计数，不是整卷推理时间。"
+    },
+    "observations": [
+      "病例 A 的 4 次运行输出 SHA256 完全相同，均完成 39312 条命令。",
+      "A-01 使用 VOL2 layout v3，缓存命中率 36.28%、gather 约 202.2 s；layout v4 的 A-02 至 A-04 命中率为 96.87%、gather 约 30.2 s。该差异是观测结果，不单独证明某一项改动的因果贡献。",
+      "A-04 相比 A-03 推理时间由 596.922 s 降到 486.625 s，约减少 18.5%；cycle 拆分显示主要差异在 classify（约 137.7 s 降至 41.1 s），gather 约 30.2 s。",
+      "病例 B 的输入和输出哈希与既有 2026-10-26 完整运行记录一致；哈希一致仅证明字节一致，不替代独立 Golden 正确性验证。"
+    ]
+  }
+}

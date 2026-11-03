@@ -1,0 +1,280 @@
+--- before/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv
++++ after/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv
+@@ -7,6 +7,8 @@
+     input logic clk_i, // 时钟域输入
+     input logic rst_n_i, // 异步低有效控制复位
+     input logic run_valid_i, // 握手有效，阻塞期间保持载荷
++    input logic check_valid_i, // 描述检查请求，保持到 check_done_o
++    output logic check_done_o, // 描述检查完成，结果保持到下一次检查
+     output logic run_ready_o, // 握手接收许可
+     output logic descriptor_ok_o, // 任务配置或协议控制字段
+     input logic abort_i, // 任务配置或协议控制字段
+@@ -33,17 +35,22 @@
+     typedef enum logic [3:0] {IDLE, RESET_CORE, CLEAR, CONFIGURE,
+         LOAD_WEIGHTS, LOAD_PARAMS, LOAD_ADD, START, RUN, FINISH} state_t;
+     state_t state_r, state_nxt;
+-    typedef enum logic [2:0] {O_IDLE, O_Q_REQUEST, O_Q_WAIT, O_MAC_REQUEST, O_MAC_WAIT} output_state_t;
++    typedef enum logic [3:0] {O_IDLE, O_INDEX, O_PIXEL, O_ADDRESS,
++        O_Q_REQUEST, O_Q_WAIT, O_MAC_REQUEST, O_MAC_WAIT} output_state_t;
+     output_state_t output_r, output_nxt;
+     logic [511:0] d_r;
+     logic [7:0] op_w;
+     logic [9:0] cin_w, cout_w;
+-    logic [15:0] candidate_cin_w, candidate_cout_w;
+     logic [9:0] width_w, height_w;
+     logic [5:0] groups_w, group_r;
+     logic [31:0] pixels_w, input_count_r, output_count_r, load_count_r, clear_addr_r;
+     logic [31:0] saved_output_count_r;
+     logic [31:0] weight_words_w, param_words_w, total_inputs_w;
++    logic [31:0] pixels_r, total_inputs_r, weight_words_r, param_words_r, words_b_r;
++    logic [31:0] checked_pixels_w, checked_inputs_w, checked_weights_w, checked_params_w, checked_words_b_w;
++    logic [31:0] group_pixel_base_r, output_addr_r, saved_linear_addr_r;
++    logic [30:0] saved_q_addr_r, saved_mac_addr_r;
++    logic [31:0] q_index_r, mac_index_r, q_pixel_r, mac_pixel_r;
+     logic [31:0] base_a_w, base_b_w, out_base_w, mac_base_w, weight_base_w, param_base_w;
+     logic online_w, debug_w, raw_w, int16_w, core_done_r, error_r, aborted_r;
+     logic [2047:0] add_params_r;
+@@ -83,107 +90,32 @@
+     assign raw_w = d_r[10]; assign int16_w = d_r[11];
+     assign cin_w = d_r[431:416] == 16'd0 ? {2'd0,d_r[23:16]} : d_r[425:416];
+     assign cout_w = d_r[447:432] == 16'd0 ? {2'd0,d_r[31:24]} : d_r[441:432];
+-    assign candidate_cin_w = descriptor_i[431:416] == 16'd0 ? {8'd0,descriptor_i[23:16]} : descriptor_i[431:416];
+-    assign candidate_cout_w = descriptor_i[447:432] == 16'd0 ? {8'd0,descriptor_i[31:24]} : descriptor_i[447:432];
+     assign width_w = d_r[41:32]; assign height_w = d_r[57:48];
+     assign groups_w = d_r[69:64];
+-    assign pixels_w = {22'd0,width_w} * {22'd0,height_w};
++    assign pixels_w = pixels_r;
+     assign base_a_w = d_r[159:128]; assign base_b_w = d_r[191:160];
+     assign out_base_w = d_r[223:192]; assign mac_base_w = d_r[255:224];
+     assign weight_base_w = d_r[287:256]; assign param_base_w = d_r[319:288];
+-    assign weight_words_w = (({22'd0,cout_w}+32'd3)>>2) * (({22'd0,cin_w}+32'd15)>>4);
+-    assign param_words_w = ({22'd0,cout_w}+32'd3)>>2;
+-    assign total_inputs_w = pixels_w * {26'd0,groups_w};
+-
+-    // 边界使用 64bit，禁止 32bit 地址溢出后误判合法。
+-    logic [63:0] p_w, a_bytes_w, b_bytes_w, q_bytes_w, m_bytes_w, weights_bytes_w, params_bytes_w;
+-    logic [63:0] a_w, b_w, q_w, m_w, w_w, par_w;
+-    function automatic logic fits(input logic [63:0] a, input logic [63:0] n);
+-        fits = n != 64'd0 && a + n <= 64'h20000000;
+-    endfunction
+-    function automatic logic overlap(input logic [63:0] a, input logic [63:0] n,
+-        input logic [63:0] b, input logic [63:0] m);
+-        overlap = n != 64'd0 && m != 64'd0 && a < b+m && b < a+n;
+-    endfunction
+-    always_comb begin
+-        p_w = {48'd0,descriptor_i[47:32]} * {48'd0,descriptor_i[63:48]};
+-        a_w = {32'd0,descriptor_i[159:128]}; b_w = {32'd0,descriptor_i[191:160]};
+-        q_w = {32'd0,descriptor_i[223:192]}; m_w = {32'd0,descriptor_i[255:224]};
+-        w_w = {32'd0,descriptor_i[287:256]}; par_w = {32'd0,descriptor_i[319:288]};
+-        a_bytes_w = p_w * {48'd0,descriptor_i[79:64]} * 64'd16;
+-        b_bytes_w = 64'd0; q_bytes_w = a_bytes_w; m_bytes_w = 64'd0;
+-        weights_bytes_w = 64'd0; params_bytes_w = 64'd0;
+-        descriptor_ok_o = descriptor_i[7:0] >= 8'd1 && descriptor_i[7:0] <= 8'd7 &&
+-            descriptor_i[47:32] >= 16'd1 && descriptor_i[47:32] <= 16'd512 &&
+-            descriptor_i[63:48] >= 16'd1 && descriptor_i[63:48] <= 16'd512 &&
+-            descriptor_i[79:64] >= 16'd1 && descriptor_i[79:64] <= 16'd32 &&
+-            a_w[3:0] == 4'd0 && q_w[4:0] == 5'd0 && descriptor_i[15:12] == 4'd0;
+-        case (descriptor_i[7:0])
+-            8'd1: begin
+-                descriptor_ok_o = descriptor_ok_o && candidate_cin_w >= 16'd1 &&
+-                    candidate_cin_w <= 16'd768 && candidate_cout_w >= 16'd1 &&
+-                    candidate_cout_w <= 16'd512 && descriptor_i[87:80] <= 8'd62 &&
+-                    !(descriptor_i[10] && descriptor_i[11]) && w_w[5:0] == 6'd0 && par_w[5:0] == 6'd0;
+-                a_bytes_w = p_w * (({48'd0,candidate_cin_w}+64'd15)>>4) * 64'd16;
+-                q_bytes_w = p_w * (({48'd0,candidate_cout_w}+64'd15)>>4) * 64'd16;
+-                if (descriptor_i[11]) q_bytes_w = p_w * (({48'd0,candidate_cout_w}+64'd3)>>2) * 64'd8;
+-                if (descriptor_i[10]) q_bytes_w = p_w * (({48'd0,candidate_cout_w}+64'd3)>>2) * 64'd16;
+-                if (descriptor_i[9] && !descriptor_i[10]) m_bytes_w = p_w * (({48'd0,candidate_cout_w}+64'd3)>>2) * 64'd16;
+-                weights_bytes_w = (({48'd0,candidate_cout_w}+64'd3)>>2) *
+-                    (({48'd0,candidate_cin_w}+64'd15)>>4) * 64'd64;
+-                params_bytes_w = (({48'd0,candidate_cout_w}+64'd3)>>2) * 64'd64;
+-                if (descriptor_i[8]) begin
+-                    a_bytes_w = {32'd0,descriptor_i[351:320]} * 64'd262144;
+-                    descriptor_ok_o = descriptor_ok_o && candidate_cin_w == 16'd3 &&
+-                        (candidate_cout_w == 16'd16 || candidate_cout_w == 16'd64) && p_w == 64'd262144 && a_w[17:0] == 18'd0 &&
+-                        descriptor_i[351:320] >= 32'd1 && descriptor_i[351:320] <= 32'd1024 &&
+-                        descriptor_i[383:352] < descriptor_i[351:320];
+-                end
+-            end
+-            8'd2: begin
+-                descriptor_ok_o = descriptor_ok_o && descriptor_i[47:32] >= 16'd2 && descriptor_i[63:48] >= 16'd2;
+-                q_bytes_w = ({48'd0,descriptor_i[47:32]}>>1) * ({48'd0,descriptor_i[63:48]}>>1) *
+-                    {48'd0,descriptor_i[79:64]} * 64'd16;
+-            end
+-            8'd3: q_bytes_w = a_bytes_w * 64'd9;
+-            8'd4: q_bytes_w = a_bytes_w * 64'd25;
+-            8'd5: begin
+-                b_bytes_w = p_w * {48'd0,descriptor_i[127:112]} * 64'd16;
+-                q_bytes_w = a_bytes_w + b_bytes_w;
+-                descriptor_ok_o = descriptor_ok_o && descriptor_i[127:112] >= 16'd1 && descriptor_i[127:112] <= 16'd32 && b_w[3:0] == 4'd0;
+-            end
+-            8'd6: begin
+-                a_bytes_w = a_bytes_w * 64'd4; b_bytes_w = a_bytes_w;
+-                params_bytes_w = {48'd0,descriptor_i[79:64]} * 64'd256;
+-                descriptor_ok_o = descriptor_ok_o && a_w[5:0] == 6'd0 && b_w[5:0] == 6'd0 &&
+-                    par_w[5:0] == 6'd0 && descriptor_i[87:80] <= 8'd63 &&
+-                    $signed(descriptor_i[95:88]) <= $signed(descriptor_i[103:96]);
+-            end
+-            default: ;
+-        endcase
+-        if (descriptor_i[7:0] != 8'd1) descriptor_ok_o = descriptor_ok_o && descriptor_i[15:8] == 8'd0;
+-        descriptor_ok_o = descriptor_ok_o && fits(a_w,a_bytes_w) && fits(q_w,q_bytes_w) &&
+-            !overlap(q_w,q_bytes_w,a_w,a_bytes_w) && !overlap(q_w,q_bytes_w,b_w,b_bytes_w) &&
+-            !overlap(q_w,q_bytes_w,w_w,weights_bytes_w) && !overlap(q_w,q_bytes_w,par_w,params_bytes_w);
+-        if (b_bytes_w != 64'd0) descriptor_ok_o = descriptor_ok_o && fits(b_w,b_bytes_w);
+-        if (weights_bytes_w != 64'd0) descriptor_ok_o = descriptor_ok_o &&
+-            w_w >= 64'h00100000 && w_w + weights_bytes_w <= 64'h00300000;
+-        if (params_bytes_w != 64'd0) descriptor_ok_o = descriptor_ok_o &&
+-            par_w >= 64'h00100000 && par_w + params_bytes_w <= 64'h00300000;
+-        if (m_bytes_w != 64'd0) descriptor_ok_o = descriptor_ok_o && m_w[4:0] == 5'd0 && fits(m_w,m_bytes_w) &&
+-            !overlap(m_w,m_bytes_w,a_w,a_bytes_w) && !overlap(m_w,m_bytes_w,b_w,b_bytes_w) &&
+-            !overlap(m_w,m_bytes_w,q_w,q_bytes_w) && !overlap(m_w,m_bytes_w,w_w,weights_bytes_w) &&
+-            !overlap(m_w,m_bytes_w,par_w,params_bytes_w);
+-        if (descriptor_i[7:0] == 8'd7) descriptor_ok_o = descriptor_ok_o && descriptor_i[79:64] == 16'd1;
+-        candidate_bytes_o = q_bytes_w[31:0]; candidate_mac_bytes_o = m_bytes_w[31:0];
+-    end
++    assign weight_words_w = weight_words_r;
++    assign param_words_w = param_words_r;
++    assign total_inputs_w = total_inputs_r;
++
++    // 检查流水独立于已运行任务；新请求检查不会覆盖运行参数。
++    op_descriptor_check u_check (
++        .clk_i(clk_i), .rst_n_i(rst_n_i), .req_valid_i(check_valid_i),
++        .descriptor_i(descriptor_i), .done_o(check_done_o), .ok_o(descriptor_ok_o),
++        .result_bytes_o(candidate_bytes_o), .mac_bytes_o(candidate_mac_bytes_o),
++        .pixels_o(checked_pixels_w), .inputs_o(checked_inputs_w),
++        .weight_words_o(checked_weights_w), .param_words_o(checked_params_w),
++        .words_b_o(checked_words_b_w)
++    );
+ 
+     op_core_bank u_bank (
+         .clk_i(clk_i), .rst_n_i(rst_n_i && state_r != RESET_CORE),
+         .op_i(op_w), .cfg_valid_i(cfg_valid_w), .cfg_ready_o(cfg_ready_w),
+         .cin_i(cin_w), .cout_i(cout_w), .pixels_i(pixels_w[18:0]),
+         .width_i(width_w), .height_i(height_w), .groups_i(groups_w),
+-        .words_b_i(pixels_w * {16'd0,d_r[127:112]}), .shift_i(d_r[85:80]),
++        .words_b_i(words_b_r), .shift_i(d_r[85:80]),
+         .raw_i(raw_w), .int16_i(int16_w), .clamp_min_i(d_r[95:88]), .clamp_max_i(d_r[103:96]),
+         .add_group_i(group_r), .add_last_i(group_r+6'd1 == groups_w), .add_params_i(add_params_r),
+         .weights_valid_i(state_r == LOAD_WEIGHTS && reader_rsp_w), .weights_ready_o(weights_ready_w),
+@@ -267,7 +199,7 @@
+                     reader_mode_w = 2'd1;
+                     reader_req_w = input_count_r < pixels_w;
+                     reader_addr_w = (add_a_valid_r ? base_b_w[30:0] : base_a_w[30:0]) +
+-                        (({25'd0,group_r}*pixels_w[30:0]+input_count_r[30:0])<<6);
++                        ((group_pixel_base_r[30:0]+input_count_r[30:0])<<6);
+                     reader_rsp_ready_w = add_a_valid_r ? bank_b_ready_w : 1'b1;
+                     bank_in_data_w = add_a_r;
+                     bank_in_valid_w = add_a_valid_r;
+@@ -292,29 +224,27 @@
+         case (output_r)
+             O_Q_REQUEST: begin
+                 writer_req_w = 1'b1;
+-                writer_addr_w = out_base_w[30:0] + (saved_output_count_r[26:0]<<4);
++                writer_addr_w = saved_linear_addr_r[30:0];
+                 case (op_w)
+                     8'd1: begin
+                         writer_data_w = 3200'd0;
+                         if (int16_w) begin
+                             writer_bytes_w = 9'd8; writer_data_w[63:0] = saved_data_r[63:0];
+-                            writer_addr_w = out_base_w[30:0] + (({24'd0,saved_group_r}*pixels_w[30:0]+{12'd0,saved_pixel_r})<<3);
++                            writer_addr_w = saved_q_addr_r;
+                         end else begin
+                             writer_bytes_w = 9'd4;
+                             for (int p=0; p<4; p++) writer_data_w[p*8 +: 8] = saved_data_r[p*16 +: 8];
+-                            writer_addr_w = out_base_w[30:0] +
+-                                (({26'd0,saved_group_r[6:2]}*pixels_w[30:0]+{12'd0,saved_pixel_r})<<4) + {27'd0,saved_group_r[1:0],2'd0};
++                            writer_addr_w = saved_q_addr_r;
+                         end
+                     end
+-                    8'd3: begin writer_bytes_w = 9'd144; writer_addr_w = out_base_w[30:0]+saved_output_count_r[30:0]*31'd144; end
+-                    8'd4: begin writer_bytes_w = 9'd400; writer_addr_w = out_base_w[30:0]+saved_output_count_r[30:0]*31'd400; end
++                    8'd3: writer_bytes_w = 9'd144;
++                    8'd4: writer_bytes_w = 9'd400;
+                     default: ;
+                 endcase
+             end
+             O_MAC_REQUEST: begin
+                 writer_req_w = 1'b1; writer_data_w = {3072'd0,saved_mac_r}; writer_bytes_w = 9'd16;
+-                writer_addr_w = (raw_w ? out_base_w[30:0] : mac_base_w[30:0]) +
+-                    (({24'd0,saved_group_r}*pixels_w[30:0]+{12'd0,saved_pixel_r})<<4);
++                writer_addr_w = saved_mac_addr_r;
+             end
+             default: ;
+         endcase
+@@ -326,7 +256,10 @@
+         end
+         output_nxt = output_r;
+         case (output_r)
+-            O_IDLE: if (output_fire_w) output_nxt = op_w == 8'd1 && raw_w ? O_MAC_REQUEST : O_Q_REQUEST;
++            O_IDLE: if (output_fire_w) output_nxt = op_w == 8'd1 ? O_INDEX : O_Q_REQUEST;
++            O_INDEX: output_nxt = O_PIXEL;
++            O_PIXEL: output_nxt = O_ADDRESS;
++            O_ADDRESS: output_nxt = raw_w ? O_MAC_REQUEST : O_Q_REQUEST;
+             O_Q_REQUEST: if (writer_ready_w) output_nxt = O_Q_WAIT;
+             O_Q_WAIT: if (writer_done_w) output_nxt = op_w == 8'd1 && debug_w ? O_MAC_REQUEST : O_IDLE;
+             O_MAC_REQUEST: if (writer_ready_w) output_nxt = O_MAC_WAIT;
+@@ -346,9 +279,30 @@
+     end
+     // 地址计数在握手拍已经递增，保存本拍地址标签，不能写到下一个像素。
+     always_ff @(posedge clk_i) begin
++        // PW 地址乘法、像素偏移、基址加法分拍；DDR 请求仅在地址锁存后发出。
++        if (output_r == O_INDEX) begin
++            q_index_r <= (int16_w ? {25'd0,saved_group_r} : {27'd0,saved_group_r[6:2]}) * pixels_r;
++            mac_index_r <= {25'd0,saved_group_r} * pixels_r;
++        end
++        if (output_r == O_PIXEL) begin
++            q_pixel_r <= q_index_r + {13'd0,saved_pixel_r};
++            mac_pixel_r <= mac_index_r + {13'd0,saved_pixel_r};
++        end
++        if (output_r == O_ADDRESS) begin
++            saved_q_addr_r <= out_base_w[30:0] +
++                (int16_w ? (q_pixel_r[30:0]<<3) : ((q_pixel_r[30:0]<<4) + {27'd0,saved_group_r[1:0],2'd0}));
++            saved_mac_addr_r <= (raw_w ? out_base_w[30:0] : mac_base_w[30:0]) + (mac_pixel_r[30:0]<<4);
++        end
++        if (state_r == RESET_CORE) output_addr_r <= out_base_w;
+         if (output_fire_w) begin
+             saved_data_r <= bank_data_w; saved_pixel_r <= bank_pixel_w; saved_group_r <= bank_group_w;
+             saved_output_count_r <= output_count_r;
++            saved_linear_addr_r <= output_addr_r;
++            case (op_w)
++                8'd3: output_addr_r <= output_addr_r + 32'd144;
++                8'd4: output_addr_r <= output_addr_r + 32'd400;
++                default: output_addr_r <= output_addr_r + 32'd16;
++            endcase
+             for (int p=0; p<4; p++) begin
+                 saved_mac_r[p*32 +: 32] <= bank_mask_w[p] ? bank_mac_w[p*32 +: 32] : 32'd0;
+                 if (op_w == 8'd1 && !bank_mask_w[p]) saved_data_r[p*16 +: 16] <= 16'd0;
+@@ -356,7 +310,12 @@
+         end
+         if (state_r == LOAD_ADD && load_fire_w) add_params_r[load_count_r[1:0]*512 +: 512] <= reader_data_w;
+         if (state_r == RUN && op_w == 8'd6 && in_fire_w && !add_a_valid_r) add_a_r <= reader_data_w;
+-        if (run_valid_i && run_ready_o) d_r <= descriptor_i;
++        if (run_valid_i && run_ready_o) begin
++            d_r <= descriptor_i;
++            pixels_r <= checked_pixels_w; total_inputs_r <= checked_inputs_w;
++            weight_words_r <= checked_weights_w; param_words_r <= checked_params_w;
++            words_b_r <= checked_words_b_w;
++        end
+     end
+     // 顺序流结果统一采用已保存的输出序号。
+     always_comb begin
+@@ -393,7 +352,7 @@
+         end else begin
+             state_r <= state_nxt;
+             if (run_valid_i && run_ready_o) begin
+-                result_bytes_o <= q_bytes_w[31:0]; mac_bytes_o <= m_bytes_w[31:0];
++                result_bytes_o <= candidate_bytes_o; mac_bytes_o <= candidate_mac_bytes_o;
+                 error_r <= 1'b0; aborted_r <= 1'b0;
+             end
+             if (abort_i && busy_o) aborted_r <= 1'b1; // 安全中止：运行到排空边界，状态可查询。
+@@ -432,4 +391,9 @@
+             end
+         end
+     end
++    // Add 的组基址以递增代替运行拍 group×pixels 宽乘法。
++    always_ff @(posedge clk_i) begin
++        if (state_r == RESET_CORE) group_pixel_base_r <= 32'd0;
++        else if (state_r == RUN && state_nxt == LOAD_ADD) group_pixel_base_r <= group_pixel_base_r + pixels_r;
++    end
+ endmodule

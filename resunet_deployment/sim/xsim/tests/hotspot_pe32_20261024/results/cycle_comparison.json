@@ -1,0 +1,314 @@
+[
+  {
+    "operator": "op11",
+    "case": "row512",
+    "mode": 0,
+    "before_cycles": 6216,
+    "after_cycles": 6216,
+    "reduction_percent": 0.0
+  },
+  {
+    "operator": "op11",
+    "case": "groups4",
+    "mode": 0,
+    "before_cycles": 61524,
+    "after_cycles": 24732,
+    "reduction_percent": 59.8
+  },
+  {
+    "operator": "op11",
+    "case": "groups2",
+    "mode": 1,
+    "before_cycles": 11510,
+    "after_cycles": 8461,
+    "reduction_percent": 26.49
+  },
+  {
+    "operator": "op11",
+    "case": "groups32",
+    "mode": 0,
+    "before_cycles": 21382,
+    "after_cycles": 14166,
+    "reduction_percent": 33.75
+  },
+  {
+    "operator": "op11",
+    "case": "pressure8",
+    "mode": 2,
+    "before_cycles": 216457,
+    "after_cycles": 216461,
+    "reduction_percent": -0.0
+  },
+  {
+    "operator": "PW",
+    "case": "compute192",
+    "mode": 0,
+    "before_cycles": 3564,
+    "after_cycles": 1966,
+    "reduction_percent": 44.84
+  },
+  {
+    "operator": "PW",
+    "case": "compute384",
+    "mode": 0,
+    "before_cycles": 13204,
+    "after_cycles": 6918,
+    "reduction_percent": 47.61
+  },
+  {
+    "operator": "PW",
+    "case": "compute768",
+    "mode": 0,
+    "before_cycles": 50916,
+    "after_cycles": 26038,
+    "reduction_percent": 48.86
+  },
+  {
+    "operator": "PW",
+    "case": "p16_low",
+    "mode": 0,
+    "before_cycles": 198,
+    "after_cycles": 173,
+    "reduction_percent": 12.63
+  },
+  {
+    "operator": "PW",
+    "case": "p16_tail",
+    "mode": 0,
+    "before_cycles": 204,
+    "after_cycles": 180,
+    "reduction_percent": 11.76
+  },
+  {
+    "operator": "PW",
+    "case": "p8_head1",
+    "mode": 0,
+    "before_cycles": 116,
+    "after_cycles": 116,
+    "reduction_percent": 0.0
+  },
+  {
+    "operator": "PW",
+    "case": "p8_head5",
+    "mode": 0,
+    "before_cycles": 146,
+    "after_cycles": 146,
+    "reduction_percent": 0.0
+  },
+  {
+    "operator": "PW",
+    "case": "p8_tail",
+    "mode": 0,
+    "before_cycles": 210,
+    "after_cycles": 204,
+    "reduction_percent": 2.86
+  },
+  {
+    "operator": "PW",
+    "case": "p8_max",
+    "mode": 0,
+    "before_cycles": 1960,
+    "after_cycles": 1038,
+    "reduction_percent": 47.04
+  },
+  {
+    "operator": "PW",
+    "case": "p16_max",
+    "mode": 0,
+    "before_cycles": 1957,
+    "after_cycles": 1032,
+    "reduction_percent": 47.27
+  },
+  {
+    "operator": "PW",
+    "case": "raw4_tail",
+    "mode": 0,
+    "before_cycles": 1255,
+    "after_cycles": 1255,
+    "reduction_percent": 0.0
+  },
+  {
+    "operator": "PW",
+    "case": "raw16",
+    "mode": 0,
+    "before_cycles": 1475,
+    "after_cycles": 1475,
+    "reduction_percent": 0.0
+  },
+  {
+    "operator": "PW",
+    "case": "debug8",
+    "mode": 0,
+    "before_cycles": 1939,
+    "after_cycles": 1939,
+    "reduction_percent": 0.0
+  },
+  {
+    "operator": "PW",
+    "case": "debug16",
+    "mode": 0,
+    "before_cycles": 1939,
+    "after_cycles": 1939,
+    "reduction_percent": 0.0
+  },
+  {
+    "operator": "PW",
+    "case": "reload1",
+    "mode": 0,
+    "before_cycles": 50,
+    "after_cycles": 50,
+    "reduction_percent": 0.0
+  },
+  {
+    "operator": "PW",
+    "case": "compute192",
+    "mode": 1,
+    "before_cycles": 4926,
+    "after_cycles": 4572,
+    "reduction_percent": 7.19
+  },
+  {
+    "operator": "PW",
+    "case": "compute384",
+    "mode": 1,
+    "before_cycles": 14295,
+    "after_cycles": 9690,
+    "reduction_percent": 32.21
+  },
+  {
+    "operator": "PW",
+    "case": "compute768",
+    "mode": 1,
+    "before_cycles": 53080,
+    "after_cycles": 28242,
+    "reduction_percent": 46.79
+  },
+  {
+    "operator": "PW",
+    "case": "p16_low",
+    "mode": 1,
+    "before_cycles": 439,
+    "after_cycles": 457,
+    "reduction_percent": -4.1
+  },
+  {
+    "operator": "PW",
+    "case": "p16_tail",
+    "mode": 1,
+    "before_cycles": 398,
+    "after_cycles": 398,
+    "reduction_percent": 0.0
+  },
+  {
+    "operator": "PW",
+    "case": "p8_head1",
+    "mode": 1,
+    "before_cycles": 225,
+    "after_cycles": 225,
+    "reduction_percent": 0.0
+  },
+  {
+    "operator": "PW",
+    "case": "p8_head5",
+    "mode": 1,
+    "before_cycles": 301,
+    "after_cycles": 301,
+    "reduction_percent": 0.0
+  },
+  {
+    "operator": "PW",
+    "case": "p8_tail",
+    "mode": 1,
+    "before_cycles": 491,
+    "after_cycles": 491,
+    "reduction_percent": 0.0
+  },
+  {
+    "operator": "PW",
+    "case": "p8_max",
+    "mode": 1,
+    "before_cycles": 2098,
+    "after_cycles": 1188,
+    "reduction_percent": 43.37
+  },
+  {
+    "operator": "PW",
+    "case": "p16_max",
+    "mode": 1,
+    "before_cycles": 2101,
+    "after_cycles": 1180,
+    "reduction_percent": 43.84
+  },
+  {
+    "operator": "PW",
+    "case": "raw4_tail",
+    "mode": 1,
+    "before_cycles": 1357,
+    "after_cycles": 1362,
+    "reduction_percent": -0.37
+  },
+  {
+    "operator": "PW",
+    "case": "raw16",
+    "mode": 1,
+    "before_cycles": 1575,
+    "after_cycles": 1595,
+    "reduction_percent": -1.27
+  },
+  {
+    "operator": "PW",
+    "case": "debug8",
+    "mode": 1,
+    "before_cycles": 2101,
+    "after_cycles": 2108,
+    "reduction_percent": -0.33
+  },
+  {
+    "operator": "PW",
+    "case": "debug16",
+    "mode": 1,
+    "before_cycles": 2108,
+    "after_cycles": 2108,
+    "reduction_percent": 0.0
+  },
+  {
+    "operator": "PW",
+    "case": "reload1",
+    "mode": 1,
+    "before_cycles": 69,
+    "after_cycles": 63,
+    "reduction_percent": 8.7
+  },
+  {
+    "operator": "op12",
+    "case": "small_tail",
+    "mode": 0,
+    "before_cycles": 1478,
+    "after_cycles": 882,
+    "reduction_percent": 40.32
+  },
+  {
+    "operator": "op12",
+    "case": "small_tail",
+    "mode": 1,
+    "before_cycles": 1821,
+    "after_cycles": 1283,
+    "reduction_percent": 29.54
+  },
+  {
+    "operator": "op12",
+    "case": "max_banks",
+    "mode": 0,
+    "before_cycles": 183472,
+    "after_cycles": 154832,
+    "reduction_percent": 15.61
+  },
+  {
+    "operator": "op12",
+    "case": "max_banks",
+    "mode": 1,
+    "before_cycles": 264655,
+    "after_cycles": 236198,
+    "reduction_percent": 10.75
+  }
+]

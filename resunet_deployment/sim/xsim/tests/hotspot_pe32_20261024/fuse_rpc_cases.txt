@@ -1,0 +1,6 @@
+fuse_tiny 128 0
+fuse_odd 2880 0
+fuse_groups32 131072 0
+fuse_d1_small 49152 0
+fuse_tumor_d1 196608 0
+fuse_d1_row 196608 0

@@ -1,0 +1,22 @@
+[
+  {
+    "path": "script\\scala\\PW\\pwmac.scala",
+    "sha256": "3403ebfebb870c2ca2f4e1023615835be75a8b22b76c342816339479734ff08a"
+  },
+  {
+    "path": "prj\\Model_Deployment.srcs\\sources_1\\new\\Op\\PW\\pwmac.v",
+    "sha256": "9e20b1b2f2f0e6baef07af99807a7b152fa434617adde53d559b7a430f30239d"
+  },
+  {
+    "path": "sim\\Op_Sim\\PW\\rtl\\pwmac.v",
+    "sha256": "9e20b1b2f2f0e6baef07af99807a7b152fa434617adde53d559b7a430f30239d"
+  },
+  {
+    "path": "prj\\Model_Deployment.srcs\\sources_1\\new\\Op\\control\\op_core_bank.sv",
+    "sha256": "03585138aa80bc37c273687ee31ef21a9f7c18a287728d216919096f39e9c05d"
+  },
+  {
+    "path": "prj\\Model_Deployment.xpr",
+    "sha256": "48b0287c383d52d45fd1d05d291fd3acca84f941ee31d2e3b116abe5c1f1f81e"
+  }
+]

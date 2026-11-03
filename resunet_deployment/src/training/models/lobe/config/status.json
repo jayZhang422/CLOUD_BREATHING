@@ -1,0 +1,7 @@
+{
+  "state": "complete",
+  "completed_epoch": 20,
+  "total_epochs": 20,
+  "best_epoch": 12,
+  "best_union_dice": 0.9805237207625986
+}

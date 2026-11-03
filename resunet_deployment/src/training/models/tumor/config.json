@@ -1,0 +1,41 @@
+{
+  "version": "base64_supervised_mixed_patient_v1",
+  "model": "base64 MKDC + MaxPool + ReLU6",
+  "base": 64,
+  "channels": [
+    64,
+    128,
+    256,
+    512
+  ],
+  "blocks_per_stage": 1,
+  "parameters": 1353921,
+  "initialization": "seeded PyTorch default initialization; no base16 weights loaded",
+  "input_contract": "unchanged signed INT8 [z-1,z,z+1] direct float32, native spacing",
+  "split_source": "/root/autodl-tmp/lung_training/tumor_mkdc_v1/runs/resunet_mkdc_relu6_dsbalanced_pw8_20e_v1/patient_split.json",
+  "split_sha256": "5efc80cacd72a6c035e25ef5a233feb0c8ae6ee6b222fc862c3954db6f0b9f67",
+  "epochs": 100,
+  "lr": 0.0003,
+  "lr_floor": 2.9999999999999997e-06,
+  "schedule": "100-epoch cosine",
+  "seed": 20261011,
+  "batch_size": 8,
+  "sampling": "4 distinct Task06 + 4 distinct NSCLC patients per batch; shuffled patient cycles; alternating positive/negative slices per patient; 1176 batches/epoch",
+  "optimizer": "fresh Adam; model and BN initialized from scratch",
+  "bn": "trainable affine and running statistics; original default momentum=0.1",
+  "loss": "existing 0.5 voxel-balanced BCE + 0.5 soft Dice; no teacher; clip=1; AMP init_scale=1024",
+  "best_rule": "mean of Task06 and NSCLC validation Global Dice",
+  "early_stopping": false,
+  "test_policy": "test excluded from optimization, checkpoint selection, and inference in this run",
+  "cache_metadata_sha256": {
+    "Task06": "6df804b71d0fecf841d286aefa36b29e4606f36e318ce664ce7ad6354ec5ab78",
+    "NSCLC": "512cd6400874760c5f741304c2dba153fbb12c8809a8f468be3e247186acb333"
+  },
+  "source_sha256": {
+    "train_base64.py": "d04513dc4239f0ad0222008ab7aa0dad2a4e13a53e204822b7b084d7983c754a",
+    "tumor_model.py": "3e6f4539fa189a220ddd61a76fe2302485073b801def5ea980758a9878dbfc0a",
+    "train_task06_mkdc_finetune_100.py": "7b9e6dc1b155d0f57fb64ec594f44a5dadd7fd3959b4b96225182f2e6b46c98d",
+    "task06_cache_reader_v2.py": "de3289e9f2f950bf954a544f377a84c122d2dd06318371483607d0706a270ade",
+    "task06_tumor_loss_v3.py": "7b1582659757ab94d7e9b4fb48027580d5e497d01cca088058f8d7e66d5b241f"
+  }
+}

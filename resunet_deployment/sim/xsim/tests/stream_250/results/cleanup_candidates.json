@@ -1,0 +1,210 @@
+[
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_pack\\behav\\xsim\\quantized_params_rom.coe",
+    "Length": 869504
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_pack\\behav\\xsim\\quantized_params_rom.mif",
+    "Length": 2974400
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_pack\\behav\\xsim\\sim_trace.csv",
+    "Length": 585240
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_pack\\behav\\xsim\\tb_stream_pack_behav.wdb",
+    "Length": 456431
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_pack\\behav\\xsim\\waveform.vcd",
+    "Length": 881181
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_pack\\behav\\xsim\\xsim.dir\\tb_stream_pack_behav\\xsim.dbg",
+    "Length": 118656
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_pack\\behav\\xsim\\xsim.dir\\tb_stream_pack_behav\\xsim.mem",
+    "Length": 42489
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_pack\\behav\\xsim\\xsim.dir\\tb_stream_pack_behav\\xsim.reloc",
+    "Length": 50607
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_restart\\behav\\xsim\\quantized_params_rom.coe",
+    "Length": 869504
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_restart\\behav\\xsim\\quantized_params_rom.mif",
+    "Length": 2974400
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_restart\\behav\\xsim\\sim_trace_project.csv",
+    "Length": 18462262
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_restart\\behav\\xsim\\tb_tile_pw_behav.wdb",
+    "Length": 2213469
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_restart\\behav\\xsim\\waveform.vcd",
+    "Length": 6096322
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_restart\\behav\\xsim\\xsim.dir\\tb_tile_pw_behav\\xsim.dbg",
+    "Length": 2114904
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_restart\\behav\\xsim\\xsim.dir\\tb_tile_pw_behav\\xsim.mem",
+    "Length": 309016
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_restart\\behav\\xsim\\xsim.dir\\tb_tile_pw_behav\\xsim.reloc",
+    "Length": 367894
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_stall\\behav\\xsim\\quantized_params_rom.coe",
+    "Length": 869504
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_stall\\behav\\xsim\\quantized_params_rom.mif",
+    "Length": 2974400
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_stall\\behav\\xsim\\sim_trace_project.csv",
+    "Length": 22576526
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_stall\\behav\\xsim\\sim_trace_skip.csv",
+    "Length": 22870522
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_stall\\behav\\xsim\\tb_tile_pw_behav.wdb",
+    "Length": 3220354
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_stall\\behav\\xsim\\waveform.vcd",
+    "Length": 7632427
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_stall\\behav\\xsim\\xsim.dir\\tb_tile_pw_behav\\xsim.dbg",
+    "Length": 2118488
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_stall\\behav\\xsim\\xsim.dir\\tb_tile_pw_behav\\xsim.mem",
+    "Length": 342790
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_tile_pw_stall\\behav\\xsim\\xsim.dir\\tb_tile_pw_behav\\xsim.reloc",
+    "Length": 370440
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_op12_compare\\behav\\xsim\\before_trace_fast.csv",
+    "Length": 9122005
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_op12_compare\\behav\\xsim\\before_trace_slow.csv",
+    "Length": 16062127
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_op12_compare\\behav\\xsim\\quantized_params_rom.coe",
+    "Length": 869504
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_op12_compare\\behav\\xsim\\quantized_params_rom.mif",
+    "Length": 2974400
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_op12_compare\\behav\\xsim\\sim_trace_fast.csv",
+    "Length": 8938677
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_op12_compare\\behav\\xsim\\sim_trace_slow.csv",
+    "Length": 15867466
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_op12_compare\\behav\\xsim\\tb_stream250_op12_compare_behav.wdb",
+    "Length": 12954495
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_op12_compare\\behav\\xsim\\waveform.vcd",
+    "Length": 10215461
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_op12_compare\\behav\\xsim\\xsim.dir\\tb_stream250_op12_compare_behav\\xsim.dbg",
+    "Length": 12670720
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_op12_compare\\behav\\xsim\\xsim.dir\\tb_stream250_op12_compare_behav\\xsim.mem",
+    "Length": 2612520
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_op12_compare\\behav\\xsim\\xsim.dir\\tb_stream250_op12_compare_behav\\xsim.reloc",
+    "Length": 3850814
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_baseline_rpc\\behav\\xsim\\quantized_params_rom.coe",
+    "Length": 869504
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_baseline_rpc\\behav\\xsim\\quantized_params_rom.mif",
+    "Length": 2974400
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_baseline_rpc\\behav\\xsim\\sim_trace.csv",
+    "Length": 32925852
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_baseline_rpc\\behav\\xsim\\tb_stream250_baseline_rpc_behav.wdb",
+    "Length": 54498160
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_baseline_rpc\\behav\\xsim\\waveform.vcd",
+    "Length": 467723
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_baseline_rpc\\behav\\xsim\\xsim.dir\\tb_stream250_baseline_rpc_behav\\xsim.dbg",
+    "Length": 5715592
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_baseline_rpc\\behav\\xsim\\xsim.dir\\tb_stream250_baseline_rpc_behav\\xsim.mem",
+    "Length": 859288
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_baseline_rpc\\behav\\xsim\\xsim.dir\\tb_stream250_baseline_rpc_behav\\xsim.reloc",
+    "Length": 1158058
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_rpc\\behav\\xsim\\quantized_params_rom.coe",
+    "Length": 869504
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_rpc\\behav\\xsim\\quantized_params_rom.mif",
+    "Length": 2974400
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_rpc\\behav\\xsim\\sim_trace.csv",
+    "Length": 32508968
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_rpc\\behav\\xsim\\tb_move_rpc_behav.wdb",
+    "Length": 54223592
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_rpc\\behav\\xsim\\waveform.vcd",
+    "Length": 427050
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_rpc\\behav\\xsim\\xsim.dir\\tb_move_rpc_behav\\xsim.dbg",
+    "Length": 5850592
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_rpc\\behav\\xsim\\xsim.dir\\tb_move_rpc_behav\\xsim.mem",
+    "Length": 865268
+  },
+  {
+    "FullName": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_stream250_rpc\\behav\\xsim\\xsim.dir\\tb_move_rpc_behav\\xsim.reloc",
+    "Length": 1170169
+  }
+]

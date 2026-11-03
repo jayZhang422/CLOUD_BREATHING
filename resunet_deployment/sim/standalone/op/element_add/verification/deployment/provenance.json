@@ -1,0 +1,380 @@
+[
+  {
+    "case": "lobe_e1.mix",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/lobe/ptq/export/contract.json",
+    "contract_sha256": "fe1820a2dd947855ba2403cd527118f8a59cffc47b331574e3f693d5c711f2d0",
+    "bias_sha256": "e74b1e191ac5023c68a9fcb4ee9bfd403d3665135f2433053ffd21b96a31c62e",
+    "a_sha256": "f6c69f390cbee500d3cde5b6f184714cddf638b4b7816ebf6a514e1581d40bde",
+    "b_sha256": "280e78d805c0fcccb3835dca4f05113f0fe438e246f50368530849d270af0dd0",
+    "golden_sha256": "671403bde97673151972ca58b6270c7a33a169626ed4ec33098b09ca863432e5"
+  },
+  {
+    "case": "lobe_e1.out",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/lobe/ptq/export/contract.json",
+    "contract_sha256": "fe1820a2dd947855ba2403cd527118f8a59cffc47b331574e3f693d5c711f2d0",
+    "bias_sha256": "d03589bea43528fd24b6482990f2997a20002db90f08fc3ccb14bd59de4aae61",
+    "a_sha256": "eb397c0eaa30a8658cf9fb21b7cd8ee002ff467e5c88c43a2be1c53cf7439cc4",
+    "b_sha256": "c82c94c62d6125f74bef455dbca363cbd35e61e504d9aecfe27cd8cfe86582c0",
+    "golden_sha256": "82dfd09cff8fcad74897e408c825c9bcef89979ded2a9b93c35f14dcf535127a"
+  },
+  {
+    "case": "lobe_e2.mix",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/lobe/ptq/export/contract.json",
+    "contract_sha256": "fe1820a2dd947855ba2403cd527118f8a59cffc47b331574e3f693d5c711f2d0",
+    "bias_sha256": "d564dc6883811731d37bb9116d644778ab76bf8872e99116ec4f052d623c5967",
+    "a_sha256": "fe100e1d081ee5fbdcb6254bf69a27f8f47ba663639c18bc4d068cb3bc14b37f",
+    "b_sha256": "fa8b07efea896680cafc8ac75f563f9ad736e4449c204ac9fe7540e6f48f2442",
+    "golden_sha256": "a401cc22f1d63bc75a2a0e425b044dc52c7d7348df392973ae1e47799f76cbb4"
+  },
+  {
+    "case": "lobe_e2.out",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/lobe/ptq/export/contract.json",
+    "contract_sha256": "fe1820a2dd947855ba2403cd527118f8a59cffc47b331574e3f693d5c711f2d0",
+    "bias_sha256": "f2581684fa3a279b1f9189b5a717dd15cb51876c5bd09ab8749a26aa8ff56f0a",
+    "a_sha256": "d5714e061d57344a307c027ca3e4232999548c1b7a78db1eae853ee1d7af1510",
+    "b_sha256": "5af835bb30bce031538d0e7b9a68d5f0f45bc53d95232061734e604437457829",
+    "golden_sha256": "77c19e6108ab1d41e322e1e2bf00c0e9de1bdd62e3f2ad1bc5f148a0345ed40e"
+  },
+  {
+    "case": "lobe_e3.mix",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/lobe/ptq/export/contract.json",
+    "contract_sha256": "fe1820a2dd947855ba2403cd527118f8a59cffc47b331574e3f693d5c711f2d0",
+    "bias_sha256": "8a4a937c2753bc1f033f3d3a0df38856466b66c211e7804cd5bbdcc4039412be",
+    "a_sha256": "44dd4a9571f966ed64a19f989b4e1e1c0c06c36320dad9aeb86b91a90b61e8c6",
+    "b_sha256": "8833b2bd37a31a3d918e578ca07a09ad381338f558daa385db4989ad4815979f",
+    "golden_sha256": "69287da16f11c921738a67d2cbff6874fa8780e08f72c2f3a2b19228c2e65f0b"
+  },
+  {
+    "case": "lobe_e3.out",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/lobe/ptq/export/contract.json",
+    "contract_sha256": "fe1820a2dd947855ba2403cd527118f8a59cffc47b331574e3f693d5c711f2d0",
+    "bias_sha256": "8bc58e55d61cc33d22e09d86951424d326a799de8036ac0b2e41260262e64232",
+    "a_sha256": "9b6866856b351c0dfba733d4a3fe4873c66b24e261a39733e2a4596739384a48",
+    "b_sha256": "5708d140c698b0c2c208e4db4c9d0145c409ddb0c74150f0ed683c427a4331e7",
+    "golden_sha256": "e9a657db077dc7780c1961bc25c422386002d7cf81e59abbb0a420bda7c318e1"
+  },
+  {
+    "case": "lobe_mid.mix",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/lobe/ptq/export/contract.json",
+    "contract_sha256": "fe1820a2dd947855ba2403cd527118f8a59cffc47b331574e3f693d5c711f2d0",
+    "bias_sha256": "52fc8d456a7c499aeecf4bf4a951bf81b8bbfcdbc2baa6b4032ae86289869126",
+    "a_sha256": "54bc2bbc0dd1d898d19f3592f127256152c069ae535bfbcba3a1e767b5cfc8a1",
+    "b_sha256": "16f2599694a17c7a5eebd30aa78d89b9edcfeaed26ef598c8e2ed69262fe0b67",
+    "golden_sha256": "3c54a6b29759c802bd15a27405e754c7382b59727dbcbbf71b61c1df37b1ff8a"
+  },
+  {
+    "case": "lobe_mid.out",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/lobe/ptq/export/contract.json",
+    "contract_sha256": "fe1820a2dd947855ba2403cd527118f8a59cffc47b331574e3f693d5c711f2d0",
+    "bias_sha256": "9d77d4dbc1ad0e2595adc26ba0473c91ebc99bb442719228c0489581cd2ebf84",
+    "a_sha256": "14bdb4b73e1f6a2686a3810a60515a7139bb48df8103443c0dc5f5f835d21da9",
+    "b_sha256": "b261a3ded623e14cd7d4a43fe7e788660618c095878356e9e5d8c6fb93031704",
+    "golden_sha256": "f59da23af8d90e8d9b63fafffa18ecf587577ce293c195fe9e189529cae08e63"
+  },
+  {
+    "case": "lobe_d3.mix",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/lobe/ptq/export/contract.json",
+    "contract_sha256": "fe1820a2dd947855ba2403cd527118f8a59cffc47b331574e3f693d5c711f2d0",
+    "bias_sha256": "86affd4c2fa8dd93ec5527b7f0bf928146e5b945994b525b68b21c7267594807",
+    "a_sha256": "1153ebf328f6cd6ee4361a750868ea179198f30d27e4ab506e72d7752fc67399",
+    "b_sha256": "7707367790d16cbdda17e32e3f4d7a074df80ac3cef805fc91debb0f8c980783",
+    "golden_sha256": "6596cc128001120b1ebae0ccd7cabdaf80ee2cae24b54623e28f444c25a1e893"
+  },
+  {
+    "case": "lobe_d3.out",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/lobe/ptq/export/contract.json",
+    "contract_sha256": "fe1820a2dd947855ba2403cd527118f8a59cffc47b331574e3f693d5c711f2d0",
+    "bias_sha256": "99b7a4093b0502b43943a3b9a9b76296b720e9bed9d4dded5b12d95ae75a96e9",
+    "a_sha256": "a4dcad1c68dc61d0519ed10410db1ec8c0af772e0f177e66256604eb92cf7029",
+    "b_sha256": "568c46f556776e57df8ff78826a0ef0bd9e1e88428b8f2994f37fb5fad26e513",
+    "golden_sha256": "24c3143d38c2b9d980cc509d81e19c939f29aa97872e3327e923b85e27128a83"
+  },
+  {
+    "case": "lobe_d2.mix",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/lobe/ptq/export/contract.json",
+    "contract_sha256": "fe1820a2dd947855ba2403cd527118f8a59cffc47b331574e3f693d5c711f2d0",
+    "bias_sha256": "6623e7c33f6049a52925844584b814a826c8c36658def396b575734930f3805f",
+    "a_sha256": "194ef991c365444ce0a07049d9330404b5d9f8137356f0bad8a6fafc301b0d75",
+    "b_sha256": "8fce8c11a4815bde31d1da2d180b10da7096937307061b9903c530d60e03aceb",
+    "golden_sha256": "c73317b142672079be223a408520410af774970e773264e4c00ea90f80aeeebd"
+  },
+  {
+    "case": "lobe_d2.out",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/lobe/ptq/export/contract.json",
+    "contract_sha256": "fe1820a2dd947855ba2403cd527118f8a59cffc47b331574e3f693d5c711f2d0",
+    "bias_sha256": "17c26317de2bb0fe93d04776dfa5ace2702fed8d06e50226df99db5f63536209",
+    "a_sha256": "14c41405eef9a20ed9d5388e3120778f4ba04ec9ec6204b56c683b71ff3d263d",
+    "b_sha256": "9e136f8fa51209790130a902017982787649f5a937a7f4187126ed1818187ebc",
+    "golden_sha256": "0cdfe541a924b7faaea8d614298ac84876119ccbf61c7f7e7dcb72be131af67f"
+  },
+  {
+    "case": "lobe_d1.mix",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/lobe/ptq/export/contract.json",
+    "contract_sha256": "fe1820a2dd947855ba2403cd527118f8a59cffc47b331574e3f693d5c711f2d0",
+    "bias_sha256": "b324599be250346b684e0fae4c3ceb447acb52fe914155ff09948f7b60ad3206",
+    "a_sha256": "2f943f11bca0bca817971ca97e79a6c929d47c1fde836f2b626239627a21ece1",
+    "b_sha256": "f38721340a4714ee77ce8386ccc453cfc10fe87ce7e98d052818b63f1cfe1f30",
+    "golden_sha256": "451a493c81bf19837fc8a117d003ea347aa4c7f1e21373fb02c98a9df8a5f84e"
+  },
+  {
+    "case": "lobe_d1.out",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/lobe/ptq/export/contract.json",
+    "contract_sha256": "fe1820a2dd947855ba2403cd527118f8a59cffc47b331574e3f693d5c711f2d0",
+    "bias_sha256": "076e7eb83010938c2bbb17e94fe9ae7c5915c52f21d753ae92a894251d3c25f6",
+    "a_sha256": "5c50bb4a1b29cf1f629293841d9826d36b1f73a2d151192dc300187f43e6f601",
+    "b_sha256": "3d51d53185d369fd876046fd35b02a2597eec8e896a1cdabf808fcbe62e4c948",
+    "golden_sha256": "e30749cffdeea2de9e5c9f1b271b89755fe8e675cd8af7148c86a056bbc6e7b0"
+  },
+  {
+    "case": "vessel_e1.mix",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/contract.json",
+    "contract_sha256": "6371779fac9ca9d27cf2a931b06c2d28e2ec7214a57df6de81a911dab59d6279",
+    "bias_sha256": "6963f6af4113e0b3258677be9470a27bf64f26c300b1be27c7acdd692ba8e895",
+    "a_sha256": "e569691c9b732d3d60bc1c101bbf9d8edc0106ae2655e42d8151b02428bb6643",
+    "b_sha256": "f21a1f3406a77475bd330c8201595027526cfa81a6be3178336b2e66b3032e13",
+    "golden_sha256": "3ca98dd8a9fda41f4993a4f92d032aad58ffb48eeafa50c93839c81b14d99b53"
+  },
+  {
+    "case": "vessel_e1.out",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/contract.json",
+    "contract_sha256": "6371779fac9ca9d27cf2a931b06c2d28e2ec7214a57df6de81a911dab59d6279",
+    "bias_sha256": "c3bd3b5a787d5b74416758223889213493908d54b9eecdcdd24c918b747da28a",
+    "a_sha256": "2746f2b1a77a972c3c0cfa2e5700693eb2a1c6816e8b804f6fe043f225b45836",
+    "b_sha256": "d3eba22819aef7a6623976eeda04b96fbeb4e5a5a28aea960e79a13f7f8582af",
+    "golden_sha256": "7384a4db59a6194969ee38cb96f00cb5fd015b6a9484a3f9b9abeb21a015cfff"
+  },
+  {
+    "case": "vessel_e2.mix",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/contract.json",
+    "contract_sha256": "6371779fac9ca9d27cf2a931b06c2d28e2ec7214a57df6de81a911dab59d6279",
+    "bias_sha256": "23c618d24c1f0a6ecaa9bf3a66e349efce32a024edb9e7ccc25a96d29eeadbd2",
+    "a_sha256": "4fb6a6e64c29b7882740a682a04571e88dd60c4ab1998128c7fc298f800e136d",
+    "b_sha256": "53fbeecac50271400bf9932a75054450949603853dd2a5e247b1da5a8c4e0bf1",
+    "golden_sha256": "10ad15a0c520ae2e61011dbfdd5747e3aad280909af69859794d2df3b85c6c27"
+  },
+  {
+    "case": "vessel_e2.out",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/contract.json",
+    "contract_sha256": "6371779fac9ca9d27cf2a931b06c2d28e2ec7214a57df6de81a911dab59d6279",
+    "bias_sha256": "41431628c2bfa142c4c3ca621b569917fb354ae61800725d164f1ecda5af45ab",
+    "a_sha256": "a9dd9b0c7da4a0da720d0561bf668d023ece3908f60928f75301293e72896f00",
+    "b_sha256": "d01865885c6241fa91c78fd83f5c16932148e5449331f737cb549d7f13ec3d75",
+    "golden_sha256": "567b9897d8f54ff870fc58565baea86f6250073fd113caa610756c43b05bf3bb"
+  },
+  {
+    "case": "vessel_e3.mix",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/contract.json",
+    "contract_sha256": "6371779fac9ca9d27cf2a931b06c2d28e2ec7214a57df6de81a911dab59d6279",
+    "bias_sha256": "b99dc2b7498afa906f8371ec619e897244f66f5d3b4e0987c944bc08cc9da5fa",
+    "a_sha256": "2908ec7959747fd7718b8f0a69b3b26dbeb6820edae2ddf5e019fe4400474fa2",
+    "b_sha256": "dc2b398a4b90ebd5a62d937c8345da0ba606f4f8a393cfb5bb23a59870be0827",
+    "golden_sha256": "2ef6ba4e387f00d5501ea08b6e9ff59a04213152741064af5bb0c3810c04882b"
+  },
+  {
+    "case": "vessel_e3.out",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/contract.json",
+    "contract_sha256": "6371779fac9ca9d27cf2a931b06c2d28e2ec7214a57df6de81a911dab59d6279",
+    "bias_sha256": "d4e3e7d48dea21955a086f6e7b09338e9c34d07c43cf77f48705967fa88403f5",
+    "a_sha256": "947a78837e982de0ea550e2135a4e3dcb92b2c6333feba5f69aa96aa55d4fb0f",
+    "b_sha256": "02e66ea3c0d604818a29ee7e8ddc15d49d73ae131b8ed9808e1d6c334fc03a9d",
+    "golden_sha256": "1e65279bc73cdf7bfda26d6c137f5d9f29cc5c2dbd8d586b4e072f04b0cb79c9"
+  },
+  {
+    "case": "vessel_mid.mix",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/contract.json",
+    "contract_sha256": "6371779fac9ca9d27cf2a931b06c2d28e2ec7214a57df6de81a911dab59d6279",
+    "bias_sha256": "c2e0bcb2e7b6a1dc600c9b5d4b7e12d166c309418f37d2f91ce9b9c5beb23eac",
+    "a_sha256": "957dd643ac1d601d8a1ae9f0f7f47526816436818e141b0db6b18d40bdb0cc60",
+    "b_sha256": "152b46c3a86da522dc05e2069ea43443596e32eed787972958253a972233acef",
+    "golden_sha256": "2017fa1282249026fb31ac30f7624f4dd74c09a7f409ad14db37773ec6f911d7"
+  },
+  {
+    "case": "vessel_mid.out",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/contract.json",
+    "contract_sha256": "6371779fac9ca9d27cf2a931b06c2d28e2ec7214a57df6de81a911dab59d6279",
+    "bias_sha256": "fbc9d2fcb16ecb8625a20c552af042f7615e57b93b871ee2b8446cf796d18572",
+    "a_sha256": "f676a8bcba3f7fb8941e9d9477a4ea0ab91648a0dc8373e0e9c7d9a59b97009d",
+    "b_sha256": "974e279fcc78021f335370cc056414b8f0e11cb33db0a539324b450abdea6be4",
+    "golden_sha256": "696c70ad6a8b0b41abf9150aa095d2b498bf6be3948b0198c23d176ac88c9886"
+  },
+  {
+    "case": "vessel_d3.mix",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/contract.json",
+    "contract_sha256": "6371779fac9ca9d27cf2a931b06c2d28e2ec7214a57df6de81a911dab59d6279",
+    "bias_sha256": "2efcee4781cdad2d9c7c42f2d69b53c137a8a6b565ef2087950ee7d29804dbed",
+    "a_sha256": "33c1767b796693441cc694000765140fae165713cb24a5417350a853a115cab4",
+    "b_sha256": "4f9459ae6034091f9c9f76a34cf617c836bcbdb02bd0818064e237ea5c38708f",
+    "golden_sha256": "3ed0b888ed34f5ea840cfb4515fd2c8615f38f78742e5cde4716826bae98bc48"
+  },
+  {
+    "case": "vessel_d3.out",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/contract.json",
+    "contract_sha256": "6371779fac9ca9d27cf2a931b06c2d28e2ec7214a57df6de81a911dab59d6279",
+    "bias_sha256": "4d7a3d9092d27ba42217d3638a3560c2716f1d4004af864b803876b68d021349",
+    "a_sha256": "0c396c9608afcb0573972da1dff76deb3d7470639a6fee172e973ae54a6ea69e",
+    "b_sha256": "9cfbb0d0d2d7daed70a21ff44d695f70927de245c55d75c3aa96a79c7b142606",
+    "golden_sha256": "f66c8be1b2752aaee89080eb94d94aa17b50ca1f151d8c6110b56db68942cb39"
+  },
+  {
+    "case": "vessel_d2.mix",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/contract.json",
+    "contract_sha256": "6371779fac9ca9d27cf2a931b06c2d28e2ec7214a57df6de81a911dab59d6279",
+    "bias_sha256": "03b38abf65eee8601c9ed07b5e74b5c0a88a83de6e3803052dc64ce79aeb9611",
+    "a_sha256": "8afff63f4196c3dfdfb5d54484ce025da2c453e792c4a746338585f74be812ae",
+    "b_sha256": "446833e79fbf58be043783134ac5e6fbad32ab29fb6fd12e81b8fd146f164bea",
+    "golden_sha256": "2dd9e71f668216837152d0a503541f3afcc9ac55f3c2f432135b9606fbcfda0e"
+  },
+  {
+    "case": "vessel_d2.out",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/contract.json",
+    "contract_sha256": "6371779fac9ca9d27cf2a931b06c2d28e2ec7214a57df6de81a911dab59d6279",
+    "bias_sha256": "4cc752651c319c367477776d0bb171261eaaedfe6a34ef02d47b82fdd8bd1e5a",
+    "a_sha256": "8646163d2c89cb78be0d687e7879c8956da4c8e4ecf4ac6d181c1ad9c05cbef0",
+    "b_sha256": "e8bc1c4d715a3c936b4e05d909a0ddc68f1ba6136450f2288776d289fa2cee1b",
+    "golden_sha256": "75b1a5c667212573db958785c54a281f3a60daeb5be6de25d64099e6c6ba5ad3"
+  },
+  {
+    "case": "vessel_d1.mix",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/contract.json",
+    "contract_sha256": "6371779fac9ca9d27cf2a931b06c2d28e2ec7214a57df6de81a911dab59d6279",
+    "bias_sha256": "39332406d77b3295b20102c59b48b252cc2e6e13d3de23aee6cbfe53db73b13b",
+    "a_sha256": "70b3c0aea19244788cf97736b13dca5986588c6effe9a96a7f0027d271b65b47",
+    "b_sha256": "afff6bb9f05c85bdd31a56b13a3c4c30a232a2dc655e9802e7dfc68906b1bd01",
+    "golden_sha256": "dfde34c30867b62ff6c2320b0f28e3476831c919e77fc90e2e57db22e8c626da"
+  },
+  {
+    "case": "vessel_d1.out",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/vessel/ptq/export/contract.json",
+    "contract_sha256": "6371779fac9ca9d27cf2a931b06c2d28e2ec7214a57df6de81a911dab59d6279",
+    "bias_sha256": "419b59121ae08105d6457047e539f8ffa35d37e266455b50b3c5317505ee307b",
+    "a_sha256": "13494e4c8ac2a8122bcc994e5a77bb30c0463fbe47a1a1a19c9092ce55db388d",
+    "b_sha256": "64f6617e2b818272330cb93a87f2a908ba2215427be340679978672a0805511f",
+    "golden_sha256": "3415aa7072617e4f01ff3b716f5bb8586aff7694581e1bf677731a51806a5154"
+  },
+  {
+    "case": "airway_e1.mix",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/airway/ptq/export/contract.json",
+    "contract_sha256": "6148b67f9b76589fc9941dfdb829ac4d2b8bb335646be2f12f2b0bfc53ca7dc0",
+    "bias_sha256": "06de6daa17e0cc31b0662531a3a194679e77b2899a86f3771db9763c84cd8fde",
+    "a_sha256": "403a125f1faa0f850891e2879ce3b52ed7823d99115e540313e7f4546b6d3b51",
+    "b_sha256": "d8be279b348c637f684504db7b9047a873dbff7459ca9714047177d3e355c45c",
+    "golden_sha256": "c8f45fe13c625ee62d36306c9f9c7f43e0e511f224abce04c7e9bcddb5b5b2c7"
+  },
+  {
+    "case": "airway_e1.out",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/airway/ptq/export/contract.json",
+    "contract_sha256": "6148b67f9b76589fc9941dfdb829ac4d2b8bb335646be2f12f2b0bfc53ca7dc0",
+    "bias_sha256": "2422d53bea3ba81f7d28104ae769dadc2967c4bdb24f0942f4e396b7b15d585b",
+    "a_sha256": "c1af7fcac88ae598f97e61adf465ca8fd384cd67df6d2ed264928e528f865267",
+    "b_sha256": "19389db839b31e5f838a2dcfc34de80868ef81c6c33c5bd6018ec3455b1c2573",
+    "golden_sha256": "2e38f6761ee3f56f792c573f5f4ef9e1b7b5a9d0c071dcef49b4426843d496d3"
+  },
+  {
+    "case": "airway_e2.mix",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/airway/ptq/export/contract.json",
+    "contract_sha256": "6148b67f9b76589fc9941dfdb829ac4d2b8bb335646be2f12f2b0bfc53ca7dc0",
+    "bias_sha256": "0090ea34fb216547c32691672954a5b84770a1a76fe8faafb5125ecb7e4c784a",
+    "a_sha256": "b40c35543f0393caa6bdffb34d4208bf75daa05732ddb56cf8ccddb3549312aa",
+    "b_sha256": "6f4a3614c22d15cc11006c943eacf1975c67b09324bb6841679047a015639944",
+    "golden_sha256": "23c7be7fa81808546718d54937d151574dcd20dc78fffa12564dcfc88aaea891"
+  },
+  {
+    "case": "airway_e2.out",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/airway/ptq/export/contract.json",
+    "contract_sha256": "6148b67f9b76589fc9941dfdb829ac4d2b8bb335646be2f12f2b0bfc53ca7dc0",
+    "bias_sha256": "c24d8ecf3b851ea2713699171c5819792eced13d658b0e7e1abf6ce77bbe8eff",
+    "a_sha256": "bf1fdfe17ecd52060dd56d5f8b8024d212f5aa85293f73a63db566d46ced5dfe",
+    "b_sha256": "e4f04598c5e1f02419df41e5be8d03d72c6b1d84785937065fd89b9e38e38ca8",
+    "golden_sha256": "218b9e020dd6434d5323d8679ad10747329e457b94f181266d12c52299229d38"
+  },
+  {
+    "case": "airway_e3.mix",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/airway/ptq/export/contract.json",
+    "contract_sha256": "6148b67f9b76589fc9941dfdb829ac4d2b8bb335646be2f12f2b0bfc53ca7dc0",
+    "bias_sha256": "227d184c4ef1c2609d679467a9a4f954c8b3a5a943686f8744fad77aef46f35c",
+    "a_sha256": "ed2bbe92a1c4feb2fc4243ec333c0f5bf6cbf142151583b9d46dece539fd6982",
+    "b_sha256": "47a1049985c130ec29086a5840759c51dc48bd193700e974bb37dda0cbf6ecf8",
+    "golden_sha256": "aa8d7faa67caaa417dc09ecc14059698bd8cbbd9ebd933a4a982eb82eebb948e"
+  },
+  {
+    "case": "airway_e3.out",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/airway/ptq/export/contract.json",
+    "contract_sha256": "6148b67f9b76589fc9941dfdb829ac4d2b8bb335646be2f12f2b0bfc53ca7dc0",
+    "bias_sha256": "e79f696dc96990edb4dd31c3619a994b01e675f33757131a8889da9225ed93d6",
+    "a_sha256": "77dac5f0139caaab64faa499348d93307c896d16362914672ad93f867433780d",
+    "b_sha256": "e975fe4083eb1498f2ab58ca117a92a072c26fe6e4a082ccaf524486e7e0dbca",
+    "golden_sha256": "eff08add92e1e4dbc0e0ffd40cabec772623f61edf701d1a1cf58900578ce6f9"
+  },
+  {
+    "case": "airway_mid.mix",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/airway/ptq/export/contract.json",
+    "contract_sha256": "6148b67f9b76589fc9941dfdb829ac4d2b8bb335646be2f12f2b0bfc53ca7dc0",
+    "bias_sha256": "6ebab2fcbd4badb8c558caafe820b826f249a81208f9548da2b7e70b23beb1b0",
+    "a_sha256": "e4cee2d780959a1af17b27388b8e9cce8f7cc5fb7210d5271b7ba916eb985796",
+    "b_sha256": "d5a8a64105929050acd6ae7fc504110970507614d6c3a332a02ee27de21d352d",
+    "golden_sha256": "fdec146b712b77ec5edb29b57a049cd6a34cf38a0e91cd1e96cbbb2c3450d471"
+  },
+  {
+    "case": "airway_mid.out",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/airway/ptq/export/contract.json",
+    "contract_sha256": "6148b67f9b76589fc9941dfdb829ac4d2b8bb335646be2f12f2b0bfc53ca7dc0",
+    "bias_sha256": "32af51d99e7a10ed371bd9d86febbdfc8115470113e8d8b29459090950368e5d",
+    "a_sha256": "6269b4aec4ccddf78864574197eacb3ddca745eeae5bcc17f2b5af50656eb744",
+    "b_sha256": "8dea4af0463b8ee0aaba352c489d7d576a533720ba220563bea65a21c01dd0b8",
+    "golden_sha256": "9fe092f9085dacbe1859d328e20c265c81fd93134591b4b094ce700bf57cda4c"
+  },
+  {
+    "case": "airway_d3.mix",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/airway/ptq/export/contract.json",
+    "contract_sha256": "6148b67f9b76589fc9941dfdb829ac4d2b8bb335646be2f12f2b0bfc53ca7dc0",
+    "bias_sha256": "58bffdb3a60a7b1627fe303f14b075169fe2a47fea85bbb76280d18b271031eb",
+    "a_sha256": "aeeb60da432b2d718606a0e55d962709ce38429e6642518a724b7358322c3623",
+    "b_sha256": "b64314f2da57b2162d8cdbc8eedfd584170ae5d078c4b709e08f302f88ef13ec",
+    "golden_sha256": "55530589270a48d987b8af32b27d3b1327019e30eba6e5fd1accdc1f7e6656ea"
+  },
+  {
+    "case": "airway_d3.out",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/airway/ptq/export/contract.json",
+    "contract_sha256": "6148b67f9b76589fc9941dfdb829ac4d2b8bb335646be2f12f2b0bfc53ca7dc0",
+    "bias_sha256": "9e88668e6b2c6d21a27a6de3173cede1f1af4144d357e579dfa1d3982823320b",
+    "a_sha256": "5ca5c96682e987317cbdcf03abe125e75d58325ed4d0e43f40286e39b24a05c1",
+    "b_sha256": "a73af84a5f51dc95ccb8e3d8b73968a6203833368e7c6faf8b77ff8b36f2b815",
+    "golden_sha256": "ea196a57072ec144e36ff80ab78d2284516d9648a24e3b73458652227115d19f"
+  },
+  {
+    "case": "airway_d2.mix",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/airway/ptq/export/contract.json",
+    "contract_sha256": "6148b67f9b76589fc9941dfdb829ac4d2b8bb335646be2f12f2b0bfc53ca7dc0",
+    "bias_sha256": "1b4ca30f0727b6320705b45f3eec9f4e5fb93ff5c40c654e93cc2ea9ca7edeab",
+    "a_sha256": "9cc765df0add3e0bf63ce07c0cb0cd977d17383032dc26defdf8d564e23f746a",
+    "b_sha256": "bc408647f21948f056e0759188a9602e68a82a7a3b2fb5ffd4c27752ac573fa9",
+    "golden_sha256": "5b8b91e00ca690fb32886ee821c160729efefe32dfb313cbc29c9f3e213703d9"
+  },
+  {
+    "case": "airway_d2.out",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/airway/ptq/export/contract.json",
+    "contract_sha256": "6148b67f9b76589fc9941dfdb829ac4d2b8bb335646be2f12f2b0bfc53ca7dc0",
+    "bias_sha256": "99ebff3da9ac3249eb8e62800fa5858877b4ecf0328be9ba1a32f64769ed0dad",
+    "a_sha256": "566431915a279c750ae3c0c4a2c30196647bee4688c2b36ef2913b3e0377693a",
+    "b_sha256": "726fefdb48bb2e500b5c2a38608a0cf85d704c571eded6a49d86f2d3193f7e68",
+    "golden_sha256": "a40fb63fbf161fa5657cf2e9f4581d637f4fc8f3105c71ed0bbd37afc5e9d726"
+  },
+  {
+    "case": "airway_d1.mix",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/airway/ptq/export/contract.json",
+    "contract_sha256": "6148b67f9b76589fc9941dfdb829ac4d2b8bb335646be2f12f2b0bfc53ca7dc0",
+    "bias_sha256": "594d7fdd3876517f142cf2be570ffbffe5f4288514a3ef65475541a74231964e",
+    "a_sha256": "9a7bccdc879d3d3c041940b26068311735d277f800abac6d4c56f74ba67d08f2",
+    "b_sha256": "0d7f3fb0da4bdf0374f99f8bdec7c0faeb299fd004d4734b099f6991dec11ae7",
+    "golden_sha256": "b6879c4ede559c3dca26ea07e22f577a596652358b3eed88c1b72f4278c272f3"
+  },
+  {
+    "case": "airway_d1.out",
+    "contract": "/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/doc/模型内容/quantization/20261011_ptq_qat_v2/airway/ptq/export/contract.json",
+    "contract_sha256": "6148b67f9b76589fc9941dfdb829ac4d2b8bb335646be2f12f2b0bfc53ca7dc0",
+    "bias_sha256": "c49f020359fa2b4cc82efa88b621eca23b390c5c35941d645e55449ab68de8d1",
+    "a_sha256": "922c31b91de60954906d15f3a77d5c11507e514d30f390b3b5d0de467f2e157b",
+    "b_sha256": "5d77634269cf5d5477f78d6e17620ed8c09b6c8e6714630d4c7ef1c7673c27f9",
+    "golden_sha256": "80c073fb6cd88ee93ed1769c2806d5c645b9c7b857407c6cee7492026366070e"
+  }
+]

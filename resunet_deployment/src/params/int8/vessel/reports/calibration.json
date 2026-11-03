@@ -1,0 +1,376 @@
+{
+  "partition": "train only",
+  "selection": [
+    {
+      "dataset": "hipas",
+      "case": "064",
+      "slices": [
+        0,
+        14,
+        277,
+        309
+      ]
+    },
+    {
+      "dataset": "hipas",
+      "case": "057",
+      "slices": [
+        0,
+        20,
+        232,
+        255
+      ]
+    },
+    {
+      "dataset": "hipas",
+      "case": "119",
+      "slices": [
+        0,
+        32,
+        251,
+        293
+      ]
+    },
+    {
+      "dataset": "hipas",
+      "case": "052",
+      "slices": [
+        0,
+        38,
+        282,
+        297
+      ]
+    },
+    {
+      "dataset": "hipas",
+      "case": "002",
+      "slices": [
+        0,
+        21,
+        270,
+        293
+      ]
+    },
+    {
+      "dataset": "hipas",
+      "case": "031",
+      "slices": [
+        0,
+        21,
+        244,
+        269
+      ]
+    },
+    {
+      "dataset": "hipas",
+      "case": "156",
+      "slices": [
+        0,
+        37,
+        358,
+        389
+      ]
+    },
+    {
+      "dataset": "hipas",
+      "case": "079",
+      "slices": [
+        0,
+        38,
+        293,
+        319
+      ]
+    },
+    {
+      "dataset": "hipas",
+      "case": "078",
+      "slices": [
+        0,
+        25,
+        279,
+        299
+      ]
+    },
+    {
+      "dataset": "hipas",
+      "case": "097",
+      "slices": [
+        0,
+        37,
+        445,
+        471
+      ]
+    },
+    {
+      "dataset": "hipas",
+      "case": "059",
+      "slices": [
+        0,
+        42,
+        250,
+        295
+      ]
+    },
+    {
+      "dataset": "hipas",
+      "case": "076",
+      "slices": [
+        0,
+        4,
+        246,
+        279
+      ]
+    },
+    {
+      "dataset": "hipas",
+      "case": "066",
+      "slices": [
+        0,
+        6,
+        216,
+        253
+      ]
+    },
+    {
+      "dataset": "hipas",
+      "case": "180",
+      "slices": [
+        0,
+        70,
+        255,
+        291
+      ]
+    },
+    {
+      "dataset": "hipas",
+      "case": "046",
+      "slices": [
+        0,
+        27,
+        245,
+        271
+      ]
+    },
+    {
+      "dataset": "hipas",
+      "case": "043",
+      "slices": [
+        0,
+        74,
+        286,
+        317
+      ]
+    },
+    {
+      "dataset": "parse",
+      "case": "PA000016",
+      "slices": [
+        0,
+        22,
+        262,
+        294
+      ]
+    },
+    {
+      "dataset": "parse",
+      "case": "PA000056",
+      "slices": [
+        0,
+        19,
+        304,
+        330
+      ]
+    },
+    {
+      "dataset": "parse",
+      "case": "PA000036",
+      "slices": [
+        0,
+        43,
+        250,
+        281
+      ]
+    },
+    {
+      "dataset": "parse",
+      "case": "PA000162",
+      "slices": [
+        0,
+        60,
+        315,
+        341
+      ]
+    },
+    {
+      "dataset": "parse",
+      "case": "PA000203",
+      "slices": [
+        0,
+        26,
+        246,
+        276
+      ]
+    },
+    {
+      "dataset": "parse",
+      "case": "PA000235",
+      "slices": [
+        0,
+        2,
+        221,
+        253
+      ]
+    },
+    {
+      "dataset": "parse",
+      "case": "PA000296",
+      "slices": [
+        0,
+        43,
+        281,
+        317
+      ]
+    },
+    {
+      "dataset": "parse",
+      "case": "PA000237",
+      "slices": [
+        0,
+        28,
+        298,
+        324
+      ]
+    },
+    {
+      "dataset": "parse",
+      "case": "PA000234",
+      "slices": [
+        0,
+        18,
+        263,
+        288
+      ]
+    },
+    {
+      "dataset": "parse",
+      "case": "PA000124",
+      "slices": [
+        0,
+        41,
+        281,
+        308
+      ]
+    },
+    {
+      "dataset": "parse",
+      "case": "PA000024",
+      "slices": [
+        0,
+        2,
+        236,
+        255
+      ]
+    },
+    {
+      "dataset": "parse",
+      "case": "PA000273",
+      "slices": [
+        0,
+        66,
+        281,
+        301
+      ]
+    },
+    {
+      "dataset": "parse",
+      "case": "PA000317",
+      "slices": [
+        0,
+        46,
+        310,
+        340
+      ]
+    },
+    {
+      "dataset": "parse",
+      "case": "PA000027",
+      "slices": [
+        0,
+        54,
+        308,
+        337
+      ]
+    },
+    {
+      "dataset": "parse",
+      "case": "PA000242",
+      "slices": [
+        0,
+        60,
+        300,
+        324
+      ]
+    },
+    {
+      "dataset": "parse",
+      "case": "PA000300",
+      "slices": [
+        0,
+        38,
+        277,
+        336
+      ]
+    }
+  ],
+  "activation_max_abs": {
+    "e1.expand": 6.0,
+    "e1.mix": 6.0,
+    "e1.out": 6.0,
+    "e2.expand": 6.0,
+    "e2.mix": 6.0,
+    "e2.out": 6.0,
+    "e3.expand": 6.0,
+    "e3.mix": 6.0,
+    "e3.out": 6.0,
+    "mid.expand": 6.0,
+    "mid.mix": 6.0,
+    "mid.out": 6.0,
+    "d3.expand": 6.0,
+    "d3.mix": 6.0,
+    "d3.out": 6.0,
+    "d2.expand": 6.0,
+    "d2.mix": 6.0,
+    "d2.out": 6.0,
+    "d1.expand": 6.0,
+    "d1.mix": 6.0,
+    "d1.out": 6.0,
+    "head": 66.64904022216797
+  },
+  "activation_scales": {
+    "input": 1.0,
+    "e1.expand": 0.047244094488188976,
+    "e1.mix": 0.047244094488188976,
+    "e1.out": 0.047244094488188976,
+    "e2.expand": 0.047244094488188976,
+    "e2.mix": 0.047244094488188976,
+    "e2.out": 0.047244094488188976,
+    "e3.expand": 0.047244094488188976,
+    "e3.mix": 0.047244094488188976,
+    "e3.out": 0.047244094488188976,
+    "mid.expand": 0.047244094488188976,
+    "mid.mix": 0.047244094488188976,
+    "mid.out": 0.047244094488188976,
+    "d3.expand": 0.047244094488188976,
+    "d3.mix": 0.047244094488188976,
+    "d3.out": 0.047244094488188976,
+    "d2.expand": 0.047244094488188976,
+    "d2.mix": 0.047244094488188976,
+    "d2.out": 0.047244094488188976,
+    "d1.expand": 0.047244094488188976,
+    "d1.mix": 0.047244094488188976,
+    "d1.out": 0.047244094488188976,
+    "head": 0.0020340293655863513
+  },
+  "zero_point": 0,
+  "policy": "per-node symmetric activation max calibration; no normalization change"
+}

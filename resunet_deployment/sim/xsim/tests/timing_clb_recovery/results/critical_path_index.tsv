@@ -1,0 +1,11 @@
+slack	start	end
+-0.829	g_ethernet.u_op_board/u_service/u_engine/d_r_reg[7]_replica/C	g_ethernet.u_op_board/u_service/u_engine/load_count_r_reg[17]/CE
+-0.519	g_ethernet.u_op_board/u_service/u_engine/d_r_reg[7]_replica/C	g_ethernet.u_op_board/u_service/u_engine/add_a_r_reg[152]/CE
+-0.495	g_ethernet.u_op_board/u_service/u_engine/d_r_reg[7]_replica/C	g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1610]/CE
+-0.722	g_ethernet.u_op_board/u_service/u_engine/d_r_reg[7]_replica/C	g_ethernet.u_op_board/u_service/u_engine/group_pixel_base_r_reg[13]/CE
+-0.799	g_ethernet.u_op_board/u_service/u_engine/d_r_reg[7]_replica/C	g_ethernet.u_op_board/u_service/u_engine/tile_base_r_reg[16]/D
+-0.559	g_ethernet.u_op_board/u_service/u_engine/u_reader/mode_r_reg[0]/C	g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[0]/CE
+-0.481	g_ethernet.u_op_board/u_service/u_engine/u_reader/mode_r_reg[0]/C	g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/goreg_dm.dout_i_reg[116]/CE
+-0.543	g_ethernet.u_op_board/u_service/u_engine/d_r_reg[7]_replica/C	g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw_shared/project/requant/sum_translated_rData_info_mac_0_reg[7]/CE
+-0.562	g_ethernet.u_op_board/u_service/body_r_reg[8]/C	g_ethernet.u_op_board/u_transport/u_reply_ram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/DINBDIN[3]
+-0.402	g_ethernet.u_op_board/u_service/u_engine/FSM_sequential_state_r_reg[0]/C	g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg_0_31_154_167/RAME_D1/I

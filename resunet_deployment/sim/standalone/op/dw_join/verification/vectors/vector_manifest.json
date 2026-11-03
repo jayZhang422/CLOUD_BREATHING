@@ -1,0 +1,21 @@
+{
+  "source": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\doc\\\u6a21\u578b\u5185\u5bb9\\quantization\\20261011_ptq_qat_v2\\vessel\\ptq\\export",
+  "shape": [
+    1,
+    128,
+    4,
+    4
+  ],
+  "groups": 8,
+  "shift": 24,
+  "clamp": [
+    0,
+    127
+  ],
+  "shared_stimulus": "../DW3x3/verification/vectors/stimulus.hex == ../DW5x5/verification/vectors/stimulus.hex",
+  "merge_golden_sha256": "2eb0db0b208a580b69d79314210af908cd0b158fb592a0b55efdc3ac4377abcf",
+  "merge_params_a_sha256": "1942e77ed19d4617ba7e15a29937172f134364d4197c46a8d0080f4ea9393689",
+  "merge_params_b_sha256": "6001f9fe9a0e185cf144157fd7266459d56b54390e26ee91d163921e59736427",
+  "merge_bias_sha256": "d835c6e6690040c18161be7c9f4cd65984f614eae717da9ecb061fb5d2351bec",
+  "frozen_mid_mix_sha256": "2017fa1282249026fb31ac30f7624f4dd74c09a7f409ad14db37773ec6f911d7"
+}

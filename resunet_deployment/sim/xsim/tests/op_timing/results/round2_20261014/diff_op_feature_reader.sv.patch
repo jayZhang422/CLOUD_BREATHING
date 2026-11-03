@@ -1,0 +1,89 @@
+--- round2-before/prj/Model_Deployment.srcs/sources_1/new/Op/control/op_feature_reader.sv
++++ prj/Model_Deployment.srcs/sources_1/new/Op/control/op_feature_reader.sv
+@@ -23,11 +23,12 @@
+     output logic [30:0] mem_addr_o, // 地址字段，单位按模块接口约定
+     input logic [255:0] mem_rsp_data_i // 数据载荷，低位承载首字节或首 lane
+ );
+-    typedef enum logic [2:0] {IDLE, LOOKUP, REQUEST, RETURN, FINISH} state_t;
++    typedef enum logic [2:0] {IDLE, SLICE, SLICE_BASE, ADDRESS,
++        LOOKUP, REQUEST, RETURN, FINISH} state_t;
+     state_t state_r, state_nxt;
+     logic [1:0] mode_r, part_r;
+-    logic [30:0] base_r, address_w;
+-    logic [31:0] pixel_r, z_w;
++    logic [30:0] base_r, slice_base_r, address_r;
++    logic [31:0] pixel_r, z_w, z_r;
+     logic [255:0] cache_r[0:2];
+     logic [30:0] cache_addr_r[0:2];
+     logic [2:0] cache_valid_r;
+@@ -40,29 +41,26 @@
+             2'd2: z_w = center_i + 32'd1 >= slices_i ? slices_i - 32'd1 : center_i + 32'd1;
+             default: ;
+         endcase
+-        address_w = base_r;
+-        case (mode_r)
+-            2'd1: address_w = base_r + (part_r == 2'd0 ? 31'd0 : 31'd32);
+-            2'd2: address_w = base_r + (z_w[12:0] << 18) + pixel_r[30:0];
+-            default: ;
+-        endcase
+         hit_w = mode_r == 2'd2 && cache_valid_r[part_r] &&
+-                cache_addr_r[part_r] == {address_w[30:5],5'd0};
++                cache_addr_r[part_r] == {address_r[30:5],5'd0};
+         last_w = mode_r == 2'd0 || (mode_r == 2'd1 && part_r == 2'd1) ||
+                  (mode_r == 2'd2 && part_r == 2'd2);
+         req_ready_o = state_r == IDLE;
+         rsp_valid_o = state_r == FINISH;
+         rsp_data_o = result_r; rsp_error_o = error_r;
+         mem_valid_o = state_r == REQUEST;
+-        mem_addr_o = {address_w[30:5],5'd0};
++        mem_addr_o = {address_r[30:5],5'd0};
+         mem_rsp_ready_o = state_r == RETURN;
+         state_nxt = state_r;
+         case (state_r)
+-            IDLE: if (req_valid_i) state_nxt = LOOKUP;
+-            LOOKUP: if (hit_w) state_nxt = last_w ? FINISH : LOOKUP;
++            IDLE: if (req_valid_i) state_nxt = SLICE;
++            SLICE: state_nxt = SLICE_BASE;
++            SLICE_BASE: state_nxt = ADDRESS;
++            ADDRESS: state_nxt = LOOKUP;
++            LOOKUP: if (hit_w) state_nxt = last_w ? FINISH : SLICE;
+                     else state_nxt = REQUEST;
+             REQUEST: if (mem_ready_i) state_nxt = RETURN;
+-            RETURN: if (mem_rsp_valid_i) state_nxt = last_w ? FINISH : LOOKUP;
++            RETURN: if (mem_rsp_valid_i) state_nxt = last_w ? FINISH : SLICE;
+             FINISH: if (rsp_ready_i) state_nxt = IDLE;
+             default: state_nxt = IDLE;
+         endcase
+@@ -88,17 +86,28 @@
+         end
+     end
+     always_ff @(posedge clk_i) begin
++        // 切片钳位、切片基址、像素加法和cache比较分拍，等待DDR期间地址保持。
++        if (state_r == SLICE) z_r <= z_w;
++        if (state_r == SLICE_BASE) begin
++            case (mode_r)
++                2'd1: slice_base_r <= base_r + (part_r == 2'd0 ? 31'd0 : 31'd32);
++                2'd2: slice_base_r <= base_r + {z_r[12:0],18'd0};
++                default: slice_base_r <= base_r;
++            endcase
++        end
++        if (state_r == ADDRESS)
++            address_r <= slice_base_r + (mode_r == 2'd2 ? pixel_r[30:0] : 31'd0);
+         if (state_r == IDLE && req_valid_i) result_r <= 512'd0;
+         if (state_r == LOOKUP && hit_w)
+-            result_r[part_r*8 +: 8] <= cache_r[part_r][address_w[4:0]*8 +: 8];
++            result_r[part_r*8 +: 8] <= cache_r[part_r][address_r[4:0]*8 +: 8];
+         if (state_r == RETURN && mem_rsp_valid_i) begin
+             case (mode_r)
+-                2'd0: result_r[127:0] <= address_w[4] ? mem_rsp_data_i[255:128] : mem_rsp_data_i[127:0];
++                2'd0: result_r[127:0] <= address_r[4] ? mem_rsp_data_i[255:128] : mem_rsp_data_i[127:0];
+                 2'd1: result_r[part_r*256 +: 256] <= mem_rsp_data_i;
+                 2'd2: begin
+-                    result_r[part_r*8 +: 8] <= mem_rsp_data_i[address_w[4:0]*8 +: 8];
++                    result_r[part_r*8 +: 8] <= mem_rsp_data_i[address_r[4:0]*8 +: 8];
+                     cache_r[part_r] <= mem_rsp_data_i;
+-                    cache_addr_r[part_r] <= {address_w[30:5],5'd0};
++                    cache_addr_r[part_r] <= {address_r[30:5],5'd0};
+                 end
+                 default: ;
+             endcase

@@ -1,0 +1,153 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "D:/Xilinx/2026.1/Vivado/data/rsb/busdef" --include "../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/map" --include "../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/ip_top" --include "../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal" \
+"../../../../Model_Deployment.gen/sources_1/ip/vio_0/sim/vio_0.v" \
+"../../../../Model_Deployment.gen/sources_1/ip/quantized_params_rom/sim/quantized_params_rom.v" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/bd_0/ip/ip_6/sim/bd_9054_lmb_bram_I_0.v" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/bd_0/ip/ip_9/sim/bd_9054_second_lmb_bram_I_0.v" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/bd_0/sim/bd_9054.v" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/ip_0/sim/ddr4_0_microblaze_mcs.v" \
+
+sv xil_defaultlib  --include "D:/Xilinx/2026.1/Vivado/data/rsb/busdef" --include "../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/map" --include "../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/ip_top" --include "../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/phy/ddr4_0_phy_ddr4.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy_behav.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/iob/ddr4_phy_v2_2_iob_byte.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/iob/ddr4_phy_v2_2_iob.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/clocking/ddr4_phy_v2_2_pll.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_tristate_wrapper.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_riuor_wrapper.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_control_wrapper.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_byte_wrapper.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_bitslice_wrapper.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/ip_top/ddr4_0_phy.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_wtr.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_ref.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_rd_wr.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_periodic.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_group.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_ecc_merge_enc.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_ecc_gen.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_ecc_fi_xor.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_ecc_dec_fix.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_ecc_buf.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_ecc.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_ctl.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_cmd_mux_c.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_cmd_mux_ap.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_arb_p.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_arb_mux_p.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_arb_c.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_arb_a.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_act_timer.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc_act_rank.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/controller/ddr4_v2_2_mc.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/ui/ddr4_v2_2_ui_wr_data.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/ui/ddr4_v2_2_ui_rd_data.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/ui/ddr4_v2_2_ui_cmd.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/ui/ddr4_v2_2_ui.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_ar_channel.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_aw_channel.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_b_channel.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_cmd_arbiter.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_cmd_fsm.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_cmd_translator.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_fifo.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_incr_cmd.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_r_channel.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_w_channel.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_wr_cmd_fsm.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_wrap_cmd.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_a_upsizer.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_register_slice.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axi_upsizer.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_axic_register_slice.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_carry_and.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_carry_latch_and.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_carry_latch_or.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_carry_or.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_command_fifo.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_comparator.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_comparator_sel.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_comparator_sel_static.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_r_upsizer.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi/ddr4_v2_2_w_upsizer.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi_ctrl/ddr4_v2_2_axi_ctrl_addr_decode.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi_ctrl/ddr4_v2_2_axi_ctrl_read.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi_ctrl/ddr4_v2_2_axi_ctrl_reg_bank.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi_ctrl/ddr4_v2_2_axi_ctrl_reg.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi_ctrl/ddr4_v2_2_axi_ctrl_top.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/axi_ctrl/ddr4_v2_2_axi_ctrl_write.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/clocking/ddr4_v2_2_infrastructure.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_xsdb_bram.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_write.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_wr_byte.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_wr_bit.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_sync.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_read.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_rd_en.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_pi.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_mc_odt.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_debug_microblaze.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_cplx_data.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_cplx.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_config_rom.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_addr_decode.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_top.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal_xsdb_arbiter.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_cal.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_chipscope_xsdb_slave.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_dp_AB9.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/ip_top/ddr4_0_ddr4.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/ip_top/ddr4_0_ddr4_mem_intfc.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_0_ddr4_cal_riu.sv" \
+
+verilog xil_defaultlib  --include "D:/Xilinx/2026.1/Vivado/data/rsb/busdef" --include "../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/map" --include "../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/ip_top" --include "../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal/ddr4_v2_2_30_cs_ver_inc.v" \
+
+sv xil_defaultlib  --include "D:/Xilinx/2026.1/Vivado/data/rsb/busdef" --include "../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/map" --include "../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/ip_top" --include "../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/ip_top/ddr4_0.sv" \
+"../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/tb/ddr4_0_microblaze_mcs_0.sv" \
+
+verilog xil_defaultlib  --include "D:/Xilinx/2026.1/Vivado/data/rsb/busdef" --include "../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/map" --include "../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/ip_top" --include "../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal" \
+"../../../../Model_Deployment.srcs/sources_1/new/Op/ElementAdd/elementadd_p16.v" \
+"../../../../Model_Deployment.srcs/sources_1/new/Op/LineBuffer/linebuffer_3x3.v" \
+"../../../../Model_Deployment.srcs/sources_1/new/Op/LineBuffer/linebuffer_5x5.v" \
+"../../../../Model_Deployment.srcs/sources_1/new/Op/MaxPool/maxpool2d_512x512_c16.v" \
+"../../../../Model_Deployment.srcs/sources_1/new/Op/PW/pwmac.v" \
+"../../../../Model_Deployment.srcs/sources_1/new/DDR/aq_axi_master.v" \
+"../../../../Model_Deployment.srcs/sources_1/new/Ethernet/arp/arp.v" \
+"../../../../Model_Deployment.srcs/sources_1/new/Ethernet/arp/arp_rx.v" \
+"../../../../Model_Deployment.srcs/sources_1/new/Ethernet/arp/arp_tx.v" \
+"../../../../Model_Deployment.srcs/sources_1/new/Ethernet/arp/crc32_d8.v" \
+"../../../../Model_Deployment.srcs/sources_1/new/Ethernet/gmii_to_rgmii/rgmii_rx.v" \
+"../../../../Model_Deployment.srcs/sources_1/new/Ethernet/gmii_to_rgmii/rgmii_tx.v" \
+"../../../../Model_Deployment.srcs/sources_1/new/Ethernet/udp/udp_rx.v" \
+"../../../../Model_Deployment.srcs/sources_1/new/Ethernet/udp/udp_tx.v" \
+
+sv xil_defaultlib  --include "D:/Xilinx/2026.1/Vivado/data/rsb/busdef" --include "../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/ip_1/rtl/map" --include "../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/ip_top" --include "../../../../Model_Deployment.gen/sources_1/ip/ddr4_0/rtl/cal" \
+"../../../../Model_Deployment.srcs/sources_1/new/Op/Shuffle/channel_shuffle.sv" \
+"../../../../Model_Deployment.srcs/sources_1/new/Op/Concat/concat.sv" \
+"../../../../Model_Deployment.srcs/sources_1/new/Ethernet/protocol/crc32_iso_hdlc.sv" \
+"../../../../Model_Deployment.srcs/sources_1/new/Ethernet/protocol/eth_protocol_core.sv" \
+"../../../../Model_Deployment.srcs/sources_1/new/Ethernet/eth_rgmii_top.sv" \
+"../../../../Model_Deployment.srcs/sources_1/new/Ethernet/ethernet_ddr_bridge.sv" \
+"../../../../Model_Deployment.srcs/sources_1/new/Op/op_board.sv" \
+"../../../../Model_Deployment.srcs/sources_1/new/Op/control/op_coeff_rom.sv" \
+"../../../../Model_Deployment.srcs/sources_1/new/Op/control/op_coeff_split.sv" \
+"../../../../Model_Deployment.srcs/sources_1/new/Op/control/op_core_bank.sv" \
+"../../../../Model_Deployment.srcs/sources_1/new/Op/control/op_ddr_port.sv" \
+"../../../../Model_Deployment.srcs/sources_1/new/Op/control/op_engine.sv" \
+"../../../../Model_Deployment.srcs/sources_1/new/Op/control/op_feature_reader.sv" \
+"../../../../Model_Deployment.srcs/sources_1/new/Op/control/op_feature_writer.sv" \
+"../../../../Model_Deployment.srcs/sources_1/new/Op/control/op_service.sv" \
+"../../../../Model_Deployment.srcs/sources_1/new/Op/control/op_transport.sv" \
+"../../../../Model_Deployment.srcs/sources_1/new/Ethernet/protocol/protocol_builder.sv" \
+"../../../../Model_Deployment.srcs/sources_1/new/Ethernet/protocol/protocol_parser.sv" \
+"../../../../Model_Deployment.srcs/sources_1/new/top.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,3 @@
+02000000 65536 sim/xsim/tests/pw_doublebuffer/vectors/tumor_head/stimulus.hex
+08000000 256 sim/xsim/tests/pw_doublebuffer/vectors/tumor_head/weights.hex
+08180000 64 sim/xsim/tests/pw_doublebuffer/vectors/tumor_head/params.hex

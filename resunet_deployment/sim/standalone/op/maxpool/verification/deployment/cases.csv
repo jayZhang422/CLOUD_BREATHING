@@ -1,0 +1,17 @@
+case,width,height,groups,seed,mode
+minimum,2,2,3,20261011,random
+odd,5,3,3,20261012,random
+odd_width,13,8,2,20261013,random
+odd_height,8,13,2,20261014,random
+narrow,2,17,2,20261015,random
+short,17,2,2,20261016,random
+full64,64,64,12,20261017,continuous
+full128,128,128,1,20261018,continuous
+full256,256,256,1,20261019,continuous
+full512,512,512,1,20261020,continuous
+stress512,512,512,2,20261021,random
+reset_mid,23,11,2,20261022,reset_mid
+reset_stalled,23,11,2,20261023,reset_stalled
+max_groups,16,16,12,20261024,random
+signed_edges,4,4,3,20261025,random
+odd_tail,5,5,1,20261026,tail_stall

@@ -1,0 +1,1 @@
+checkpoint checkpoint_top_physopt part xcku5p-ffvb676-2-i vio_cells {} pw_bram 12 pw_uram 16 dsp 104

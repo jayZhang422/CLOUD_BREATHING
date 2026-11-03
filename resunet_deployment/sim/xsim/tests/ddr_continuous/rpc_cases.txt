@@ -1,0 +1,13 @@
+lobe_mid_expand 2048 0
+lobe_mid_mix 2048 0
+lobe_mid_project 8192 0
+lobe_mid_out 2048 0
+legacy_lobe_head 64 128
+legacy_pool_odd_two_groups 64 0
+legacy_pool_groups32 1024 0
+tumor_mid_expand 8192 0
+legacy_tumor_e1_fast 1024 4096
+upsample 384 0
+concat 96 0
+fused_dw11 784 0
+pw_tail_clear 48 0

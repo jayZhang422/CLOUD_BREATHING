@@ -1,0 +1,100 @@
+--- /dev/null
++++ prj/Model_Deployment.srcs/sources_1/new/Op/control/op_mem_cdc.sv
+@@ -0,0 +1,97 @@
++`timescale 1ns/1ps
++// 【文件类型：.sv】单在途 DDR 事务跨域；请求/响应总线保持到往返 toggle 握手完成。
++// 两端复位必须共同异步断言、各域同步释放；复位取消尚未完成的事务。
++module op_mem_cdc (
++    input  logic         compute_clk_i,         // 125MHz 计算域
++    input  logic         compute_rst_n_i,       // 计算域复位
++    input  logic         ui_clk_i,              // DDR UI 域
++    input  logic         ui_rst_n_i,            // UI 域复位
++    input  logic         req_valid_i,           // 计算域请求
++    output logic         req_ready_o,           // 完成上次响应后接收下一请求
++    input  logic         req_write_i,           // 写事务
++    input  logic [30:0]  req_addr_i,            // 字节地址
++    input  logic [255:0] req_data_i,            // 写数据
++    input  logic [31:0]  req_mask_i,            // 字节掩码
++    output logic         rsp_valid_o,           // 计算域响应，支持反压
++    input  logic         rsp_ready_i,           // 响应接收许可
++    output logic [255:0] rsp_data_o,            // 读数据
++    output logic         rsp_error_o,           // 事务错误
++    output logic         ui_req_valid_o,        // UI 域请求
++    input  logic         ui_req_ready_i,        // UI 接收许可
++    output logic         ui_req_write_o,        // UI 写事务
++    output logic [30:0]  ui_req_addr_o,         // UI 字节地址
++    output logic [255:0] ui_req_data_o,         // UI 写数据
++    output logic [31:0]  ui_req_mask_o,         // UI 字节掩码
++    input  logic         ui_rsp_valid_i,        // UI 域响应
++    output logic         ui_rsp_ready_o,        // UI 响应接收许可
++    input  logic [255:0] ui_rsp_data_i,         // UI 读数据
++    input  logic         ui_rsp_error_i,        // UI 事务错误
++    output logic         active_ui_o            // 包含尚未交给 DDR 的请求
++);
++    typedef enum logic [1:0] {IDLE, REQUEST, RESPONSE} state_t;
++    state_t state_r, state_nxt;
++    logic request_toggle_r, response_toggle_r, busy_r;
++    (* ASYNC_REG = "TRUE" *) logic request_sync1_r, request_sync2_r;
++    (* ASYNC_REG = "TRUE" *) logic response_sync1_r, response_sync2_r;
++    logic [319:0] request_payload_r, ui_request_r;
++    logic [256:0] response_payload_r, compute_response_r;
++
++    assign req_ready_o = !busy_r;
++    assign {rsp_error_o, rsp_data_o} = compute_response_r;
++    assign {ui_req_write_o, ui_req_addr_o, ui_req_data_o, ui_req_mask_o} = ui_request_r;
++    assign ui_req_valid_o = state_r == REQUEST;
++    assign ui_rsp_ready_o = state_r == RESPONSE;
++    assign active_ui_o = state_r != IDLE || request_sync2_r != response_toggle_r;
++
++    always_ff @(posedge compute_clk_i or negedge compute_rst_n_i) begin
++        if (!compute_rst_n_i) begin
++            response_sync1_r <= 1'b0; response_sync2_r <= 1'b0;
++            request_toggle_r <= 1'b0; busy_r <= 1'b0; rsp_valid_o <= 1'b0;
++        end else begin
++            response_sync1_r <= response_toggle_r;
++            response_sync2_r <= response_sync1_r;
++            if (req_valid_i && req_ready_o) begin
++                request_toggle_r <= !request_toggle_r;
++                busy_r <= 1'b1;
++            end
++            if (busy_r && !rsp_valid_o && response_sync2_r == request_toggle_r)
++                rsp_valid_o <= 1'b1;
++            if (rsp_valid_o && rsp_ready_i) begin
++                rsp_valid_o <= 1'b0; busy_r <= 1'b0;
++            end
++        end
++    end
++    // 数据不打两拍：源端冻结总线，目的端只在已同步的完成通知后采样一次。
++    always_ff @(posedge compute_clk_i) begin
++        if (req_valid_i && req_ready_o)
++            request_payload_r <= {req_write_i, req_addr_i, req_data_i, req_mask_i};
++        if (busy_r && !rsp_valid_o && response_sync2_r == request_toggle_r)
++            compute_response_r <= response_payload_r;
++    end
++    always_ff @(posedge ui_clk_i or negedge ui_rst_n_i) begin
++        if (!ui_rst_n_i) begin
++            request_sync1_r <= 1'b0; request_sync2_r <= 1'b0;
++            response_toggle_r <= 1'b0; state_r <= IDLE;
++        end else begin
++            request_sync1_r <= request_toggle_r;
++            request_sync2_r <= request_sync1_r;
++            state_r <= state_nxt;
++            if (ui_rsp_valid_i && ui_rsp_ready_o) response_toggle_r <= request_sync2_r;
++        end
++    end
++    always_comb begin
++        state_nxt = state_r;
++        case (state_r)
++            IDLE: if (request_sync2_r != response_toggle_r) state_nxt = REQUEST;
++            REQUEST: if (ui_req_ready_i) state_nxt = RESPONSE;
++            RESPONSE: if (ui_rsp_valid_i) state_nxt = IDLE;
++            default: state_nxt = IDLE;
++        endcase
++    end
++    always_ff @(posedge ui_clk_i) begin
++        if (state_r == IDLE && request_sync2_r != response_toggle_r)
++            ui_request_r <= request_payload_r;
++        if (ui_rsp_valid_i && ui_rsp_ready_o)
++            response_payload_r <= {ui_rsp_error_i, ui_rsp_data_i};
++    end
++endmodule

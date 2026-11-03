@@ -1,0 +1,5 @@
+337: INFO: [Vivado 12-4796] No errors or warning reported.
+2830: INFO: [Vivado 12-4796] No errors or warning reported.
+7748: INFO: [Vivado 12-4796] No errors or warning reported.
+7756: set fanout_regs [get_cells -hier -quiet -filter {NAME =~ *u_coeff_rom/word_addr_r_reg*}]; set fanout_nets [get_nets -quiet -of_objects [get_pins -quiet -of_objects $fanout_regs -filter {REF_PIN_NAME == Q}]]; set_property MAX_FANOUT_MODE CLOCK_REGION $fanout_nets; set_property FORCE_MAX_FANOUT 16 $fanout_nets; list coeff_registers [llength $fanout_regs] coeff_nets [llength $fanout_nets] mode [lsort -unique [get_property MAX_FANOUT_MODE $fanout_nets]] limit [lsort -unique [get_property FORCE_MAX_FANOUT $fanout_nets]]
+7767: INFO: [Vivado 12-4796] No errors or warning reported.

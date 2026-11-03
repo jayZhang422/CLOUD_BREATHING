@@ -1,0 +1,5 @@
+[CASE PASSED] engine debug=1 case=E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/MKDC/vectors/legacy_linebuffer3 bytes=1728 mac=0 cycles=618 exact_cycle_equivalence
+[CASE PASSED] engine debug=1 case=E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/MKDC/vectors/legacy_linebuffer5 bytes=1600 mac=0 cycles=507 exact_cycle_equivalence
+[CASE PASSED] engine debug=1 case=E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/RTL_Slim_Batch2/vectors/lobe_mid_dw3 bytes=8192 mac=0 cycles=4074 exact_cycle_equivalence
+[CASE PASSED] engine debug=1 case=E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/RTL_Slim_Batch2/vectors/lobe_mid_dw5 bytes=8192 mac=0 cycles=5792 exact_cycle_equivalence
+[TB PASSED] engine debug=1 cases=4 stalls=1570 exact_cycle_equivalence

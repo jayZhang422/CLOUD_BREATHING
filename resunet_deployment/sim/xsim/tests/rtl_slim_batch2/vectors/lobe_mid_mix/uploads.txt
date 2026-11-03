@@ -1,0 +1,2 @@
+03200000 8192 sim/xsim/tests/mkdc/vectors/lobe_mid_dw3/golden.hex
+03300000 8192 sim/xsim/tests/mkdc/vectors/lobe_mid_dw5/golden.hex

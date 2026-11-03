@@ -1,0 +1,73 @@
+[FULLNET INPUT] uploaded P16 bytes=16384 at 0x01000000
+[FULLNET TASK 0] 000_e1.expand
+[CASE PASS] uram_all_6144_addresses latency=1 hold=4095/4096/6143
+[FULLNET TASK 1] 001_e1.dw3
+[FULLNET TASK 2] 002_e1.dw5
+[FULLNET TASK 3] 003_e1.mix
+[FULLNET TASK 4] 004_e1.project
+[FULLNET TASK 5] 005_e1.skip
+[FULLNET TASK 6] 006_e1.out
+[FULLNET TASK 7] 007_pool1
+[FULLNET TASK 8] 008_e2.expand
+[RESET PASS] between e1/pool and e2
+[FULLNET TASK 9] 009_e2.dw3
+[FULLNET TASK 10] 010_e2.dw5
+[FULLNET TASK 11] 011_e2.mix
+[FULLNET TASK 12] 012_e2.project
+[FULLNET TASK 13] 013_e2.skip
+[FULLNET TASK 14] 014_e2.out
+[FULLNET TASK 15] 015_pool2
+[FULLNET TASK 16] 016_e3.expand
+[FULLNET TASK 17] 017_e3.dw3
+[FULLNET TASK 18] 018_e3.dw5
+[FULLNET TASK 19] 019_e3.mix
+[FULLNET TASK 20] 020_e3.project
+[FULLNET TASK 21] 021_e3.skip
+[FULLNET TASK 22] 022_e3.out
+[FULLNET TASK 23] 023_pool3
+[FULLNET TASK 24] 024_mid.expand
+[FULLNET TASK 25] 025_mid.dw3
+[FULLNET TASK 26] 026_mid.dw5
+[FULLNET TASK 27] 027_mid.mix
+[FULLNET TASK 28] 028_mid.project
+[FULLNET TASK 29] 029_mid.skip
+[FULLNET TASK 30] 030_mid.out
+[FULLNET TASK 31] 031_d3.up
+[FULLNET TASK 32] 032_d3.concat
+[SKIP PRESERVED] e3 encoder skip base=02200000 bytes=4096
+[FULLNET TASK 33] 033_d3.expand
+[FULLNET TASK 34] 034_d3.dw3
+[FULLNET TASK 35] 035_d3.dw5
+[FULLNET TASK 36] 036_d3.mix
+[FULLNET TASK 37] 037_d3.project
+[FULLNET TASK 38] 038_d3.skip
+[FULLNET TASK 39] 039_d3.out
+[FULLNET TASK 40] 040_d2.up
+[FULLNET TASK 41] 041_d2.concat
+[SKIP PRESERVED] e2 encoder skip base=02100000 bytes=8192
+[FULLNET TASK 42] 042_d2.expand
+[FULLNET TASK 43] 043_d2.dw3
+[FULLNET TASK 44] 044_d2.dw5
+[FULLNET TASK 45] 045_d2.mix
+[FULLNET TASK 46] 046_d2.project
+[FULLNET TASK 47] 047_d2.skip
+[FULLNET TASK 48] 048_d2.out
+[FULLNET TASK 49] 049_d1.up
+[FULLNET TASK 50] 050_d1.concat
+[SKIP PRESERVED] e1 encoder skip base=02000000 bytes=16384
+[FULLNET TASK 51] 051_d1.expand
+[FULLNET TASK 52] 052_d1.dw3
+[FULLNET TASK 53] 053_d1.dw5
+[FULLNET TASK 54] 054_d1.mix
+[FULLNET TASK 55] 055_d1.project
+[FULLNET TASK 56] 056_d1.skip
+[FULLNET TASK 57] 057_d1.out
+[FULLNET TASK 58] 058_head
+[FULLNET COVERAGE] tasks=59 up_words=3584 up_stall_cycles=72500
+[TB PASSED] FullNet vessel base16 32x32 Golden exact tasks=59 cycles=7356256 rom_reads=4176 ddr_reads=126016 ddr_writes=77248
+$finish called at time : 22068768 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/FullNet/tb_fullnet.sv" Line 449
+run: Time (s): cpu = 00:00:08 ; elapsed = 00:01:28 . Memory (MB): peak = 7946.441 ; gain = 72.770
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:01:30 . Memory (MB): peak = 7946.441 ; gain = 72.770
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_fullnet_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 70ms
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:01:42 . Memory (MB): peak = 7946.441 ; gain = 72.770

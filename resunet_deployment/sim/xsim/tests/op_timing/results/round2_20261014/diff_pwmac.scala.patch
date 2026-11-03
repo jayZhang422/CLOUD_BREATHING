@@ -1,0 +1,208 @@
+--- round2-before/script/scala/PW/PwMac.scala
++++ script/scala/PW/PwMac.scala
+@@ -23,6 +23,7 @@
+ }
+ case class PwTag() extends Bundle {
+   val pixel = UInt(19 bits)
++  val localPixel = UInt(4 bits) // 块内索引随流水携带，累加端不再减tileBase。
+   val group = UInt(7 bits)
+   val mask = Bits(4 bits)
+   val first = Bool()
+@@ -69,19 +70,40 @@
+   sum_w.info := product.info
+   for (p <- 0 until 4) sum_w.value(p) := (product.value(p) + product.info.bias(p)).resize(64)
+   val sum = product.translateWith(sum_w).m2sPipe()
++  // 右移/余数、舍入判定、宽加一分别打拍，避免比较链串接64位进位链。
++  val divide_w = new Bundle {
++    val info = PwQuantInput()
++    val whole = Vec(SInt(64 bits), 4)
++    val remainder = Vec(UInt(64 bits), 4)
++    val half = UInt(64 bits)
++  }
++  divide_w.info := sum.info
++  val remainderMask_w = ((U(1, 64 bits) |<< sum.info.shift) - U(1, 64 bits)).resize(64)
++  divide_w.half := U(1, 64 bits) |<< (sum.info.shift - U(1, 6 bits))
++  for (p <- 0 until 4) {
++    // 算术右移得到向下取整商；非负余数确保负数 tie 也按最近偶数舍入。
++    divide_w.whole(p) := (sum.value(p) >> sum.info.shift).resize(64)
++    divide_w.remainder(p) := sum.value(p).asUInt & remainderMask_w
++  }
++  val divide = sum.translateWith(divide_w).m2sPipe()
++  val decision_w = new Bundle {
++    val info = PwQuantInput()
++    val whole = Vec(SInt(64 bits), 4)
++    val increment = Bits(4 bits)
++  }
++  decision_w.info := divide.info
++  decision_w.whole := divide.whole
++  for (p <- 0 until 4) {
++    decision_w.increment(p) := divide.info.shift =/= 0 &&
++      (divide.remainder(p) > divide.half || (divide.remainder(p) === divide.half && divide.whole(p)(0)))
++  }
++  val decision = divide.translateWith(decision_w).m2sPipe()
+   val round_w = PwQuantWork()
+-  round_w.info := sum.info
+-  val remainderMask_w = ((U(1, 64 bits) |<< sum.info.shift) - U(1, 64 bits)).resize(64)
+-  val half_w = U(1, 64 bits) |<< (sum.info.shift - U(1, 6 bits))
+-  for (p <- 0 until 4) {
+-    // 算术右移得到向下取整商；非负余数确保负数 tie 也按最近偶数舍入。
+-    val floor_w = (sum.value(p) >> sum.info.shift).resize(64)
+-    val remainder_w = sum.value(p).asUInt & remainderMask_w
+-    val increment_w = sum.info.shift =/= 0 &&
+-      (remainder_w > half_w || (remainder_w === half_w && floor_w(0)))
+-    round_w.value(p) := (floor_w + increment_w.asUInt.resize(64).asSInt).resize(64)
+-  }
+-  val rounded = sum.translateWith(round_w).m2sPipe()
++  round_w.info := decision.info
++  for (p <- 0 until 4) {
++    round_w.value(p) := (decision.whole(p) + decision.increment(p).asUInt.resize(64).asSInt).resize(64)
++  }
++  val rounded = decision.translateWith(round_w).m2sPipe()
+   val result_w = PwResult()
+   result_w.pixel := rounded.info.tag.pixel
+   result_w.group := rounded.info.tag.group
+@@ -139,6 +161,8 @@
+   val FILL = U(3, 3 bits)
+   val ISSUE = U(4, 3 bits)
+   val DRAIN = U(5, 3 bits)
++  val PREPARE = U(6, 3 bits)
++  val TILE_READY = U(7, 3 bits)
+   val state_r = Reg(UInt(3 bits)) init(0)
+   val run_r = Reg(PwRun())
+   // 组计数器保存总组数，标签计数器保存从零开始的组号。
+@@ -149,6 +173,10 @@
+   val weightTotal_r = Reg(UInt(log2Up(config.WEIGHT_DEPTH + 1) bits))
+   val tileBase_r = Reg(UInt(19 bits)) init(0)
+   val tileCount_r = Reg(UInt(5 bits)) init(0)
++  val remaining_r = Reg(UInt(19 bits))
++  val tileLastPixel_r = Reg(UInt(19 bits))
++  val fillGroupBase_r = Reg(UInt(32 bits))
++  val fillReadAddr_r = Reg(UInt(32 bits))
+   val fillGroup_r = Reg(UInt(log2Up(config.IG + 1) bits)) init(0)
+   val fillPixel_r = Reg(UInt(5 bits)) init(0)
+   val waiting_r = Reg(Bool()) init(False)
+@@ -184,17 +212,28 @@
+   io.start_i.ready := state_r === READY && !io.cfg_i.valid
+   when(io.start_i.fire) {
+     tileBase_r := 0
+-    tileCount_r := Mux(run_r.pixels > config.tilePixels, U(config.tilePixels, 5 bits), run_r.pixels.resize(5))
++    remaining_r := run_r.pixels
++    state_r := PREPARE
++  }
++  // 块边界计算独立于输出握手；每块只增加两个准备周期。
++  when(state_r === PREPARE) {
++    tileCount_r := Mux(remaining_r > config.tilePixels, U(config.tilePixels, 5 bits), remaining_r.resize(5))
+     fillGroup_r := 0
+     fillPixel_r := 0
++    fillGroupBase_r := tileBase_r.resized
++    fillReadAddr_r := tileBase_r.resized
+     waiting_r := False
++    state_r := TILE_READY
++  }
++  when(state_r === TILE_READY) {
++    tileLastPixel_r := tileBase_r + tileCount_r - U(1, 19 bits)
+     state_r := FILL
+   }
+ 
+   val inputMem = Mem(Bits(128 bits), config.INPUT_DEPTH)
+   inputMem.addAttribute("ram_style", "block")
+   io.rd_o.valid := state_r === FILL && !waiting_r
+-  io.rd_o.payload := (fillGroup_r * run_r.pixels + tileBase_r + fillPixel_r).resize(32)
++  io.rd_o.payload := fillReadAddr_r
+   io.rsp_i.ready := state_r === FILL && waiting_r
+   when(io.rd_o.fire) { waiting_r := True }
+   val fillAddress_w = (fillGroup_r * U(config.tilePixels, 5 bits) + fillPixel_r).resize(log2Up(config.INPUT_DEPTH))
+@@ -208,8 +247,15 @@
+         issueInput_r := 0
+         issuePixel_r := 0
+         state_r := ISSUE
+-      } otherwise { fillGroup_r := fillGroup_r + 1 }
+-    } otherwise { fillPixel_r := fillPixel_r + 1 }
++      } otherwise {
++        fillGroup_r := fillGroup_r + 1
++        fillGroupBase_r := fillGroupBase_r + run_r.pixels
++        fillReadAddr_r := fillGroupBase_r + run_r.pixels
++      }
++    } otherwise {
++      fillPixel_r := fillPixel_r + 1
++      fillReadAddr_r := fillReadAddr_r + 1
++    }
+   }
+ 
+   case class ReadData() extends Bundle {
+@@ -219,6 +265,7 @@
+   val request = Stream(ReadData())
+   request.valid := state_r === ISSUE
+   request.tag.pixel := tileBase_r + issuePixel_r
++  request.tag.localPixel := issuePixel_r.resized
+   request.tag.group := issueGroup_r
+   for (p <- 0 until 4) request.tag.mask(p) := (issueGroup_r.resize(10) * 4 + p) < run_r.cout.resize(10)
+   request.tag.first := issueInput_r === 0
+@@ -261,16 +308,28 @@
+     val tag = PwTag()
+     val values = Vec(Vec(SInt(16 bits), 16), 4)
+   }
++  // 官方URAM保持一拍读配置；在IP外捕获操作数和标签后再乘法。
++  val operands_w = new Bundle {
++    val tag = PwTag()
++    val input = Bits(128 bits)
++    val weights = Vec(Bits(128 bits), 4)
++    val mask = Bits(16 bits)
++  }
++  operands_w.tag := response.tag
++  operands_w.input := inputData_w
++  operands_w.weights := weights_w
++  for (lane <- 0 until 16)
++    operands_w.mask(lane) := (response.inputGroup.resize(10) * 16 + lane) < run_r.cin.resize(10)
++  val operands = response.translateWith(operands_w).m2sPipe()
+   val products_w = Products()
+-  products_w.tag := response.tag
++  products_w.tag := operands.tag
+   for (p <- 0 until 4; lane <- 0 until 16) {
+-    val input_w = inputData_w(lane * 8, 8 bits).asSInt
+-    val weight_w = weights_w(p)(lane * 8, 8 bits).asSInt
++    val input_w = operands.input(lane * 8, 8 bits).asSInt
++    val weight_w = operands.weights(p)(lane * 8, 8 bits).asSInt
+     // 首层3通道及非整组输入：掩码在乘法入口应用，填充值不会参与累加。
+-    val validLane_w = (response.inputGroup.resize(10) * 16 + lane) < run_r.cin.resize(10)
+-    products_w.values(p)(lane) := Mux(validLane_w, input_w, S(0, 8 bits)) * weight_w
+-  }
+-  val products = response.translateWith(products_w).m2sPipe()
++    products_w.values(p)(lane) := Mux(operands.mask(lane), input_w, S(0, 8 bits)) * weight_w
++  }
++  val products = operands.translateWith(products_w).m2sPipe()
+   case class Reduce(count: Int, width: Int) extends Bundle {
+     val tag = PwTag()
+     val values = Vec(Vec(SInt(width bits), count), 4)
+@@ -297,7 +356,7 @@
+ 
+   // 小块累加寄存器：每像素4路32bit，仅握手成功时更新；首输入组覆盖旧值。
+   val acc_r = Vec(Vec.fill(config.tilePixels)(Reg(SInt(32 bits))), 4)
+-  val localPixel_w = (dot.tag.pixel - tileBase_r).resize(log2Up(config.tilePixels max 2))
++  val localPixel_w = dot.tag.localPixel.resize(log2Up(config.tilePixels max 2))
+   val quantRequest = Stream(new Bundle {
+     val tag = PwTag()
+     val mac = Vec(SInt(32 bits), 4)
+@@ -335,19 +394,15 @@
+   io.output_o << requant.io.output_o
+   // 只有最终结果被下游接收，才可覆写本块缓存或允许切换参数。
+   val lastTileOutput_w = io.output_o.group === ogCount_r - 1 &&
+-    io.output_o.pixel === tileBase_r + tileCount_r - 1
++    io.output_o.pixel === tileLastPixel_r
+   when(io.output_o.fire && lastTileOutput_w) {
+     when(io.output_o.last) {
+       done_r := True
+       state_r := READY
+     } otherwise {
+-      val remaining_w = run_r.pixels - tileBase_r - tileCount_r
+       tileBase_r := tileBase_r + tileCount_r
+-      tileCount_r := Mux(remaining_w > config.tilePixels, U(config.tilePixels, 5 bits), remaining_w.resize(5))
+-      fillGroup_r := 0
+-      fillPixel_r := 0
+-      waiting_r := False
+-      state_r := FILL
++      remaining_r := remaining_r - tileCount_r
++      state_r := PREPARE
+     }
+   }
+ }

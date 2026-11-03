@@ -1,0 +1,12 @@
+{
+  "status": "partial_cleanup_blocked",
+  "reason": "Automatic approval review rejected the recursive deletion command: blocked by policy. No deletion retry was attempted.",
+  "temporary_filesets_removed": ["sim_codex_op12_cache_20261022", "sim_codex_cache_rpc_20261022"],
+  "remaining_generated_directories": [
+    {"path": "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.sim/sim_codex_cache_rpc_20261022", "files": 1, "bytes": 14364, "reparse_points": 0, "removed": false},
+    {"path": "E:/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Line_DW_Cascade/simWorkspace/LineDwCascadeTop", "files": 5, "bytes": 7690624, "reparse_points": 0, "removed": false}
+  ],
+  "remaining_bytes": 7704988,
+  "tracked_csv_preserved": true,
+  "simulation_configuration_restored": true
+}

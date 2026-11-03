@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"exit_code\": 0,\n  \"output\": \"foreach r [get_runs {synth_1 impl_1}] {puts \\\"$r status=[get_property STATUS $r] progress=[get_property PROGRESS $r]\\\"}; puts \\\"top=[get_property TOP [get_filesets sources_1]] sim=[current_fileset -simset]\\\"\\nsynth_1 status=Running synth_design... progress=0%\\nimpl_1 status=Queued... progress=0%\\ntop=top sim=sim_1\\nINFO: [MCP 00-101]\",\n  \"task_progress\": \"2/4: 启动综合和实现后交付 (active, 40s)\"\n}"
+    }
+  ]
+}

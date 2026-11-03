@@ -1,0 +1,45 @@
+{
+  "task": "<task_name>",
+  "source": {
+    "checkpoint": "<relative/path/to/checkpoint>",
+    "sha256": "<sha256 of training artifact>",
+    "framework": "<pytorch x.y / brevitas x.y>"
+  },
+  "weights": "signed INT8 [-127,127], per output channel",
+  "features": "signed INT8, zero_point=0, per activation node",
+  "input_contract": "<dtype>, <preprocess steps>, rounding=<rint|floor>, external padding=<value>",
+  "mac": "INT32; convolution padding integer <zero_point>",
+  "rescale": "INT64; checked bound <2**62; signed RNE",
+  "logits": "<dtype>; decision=<rule, e.g. q>=0>",
+  "activation_scales": {
+    "input": 1.0
+  },
+  "convolutions": {
+    "<layer>": {
+      "file": "<layer>.weight.i8.bin",
+      "shape": [0, 0, 0, 0],
+      "layout": "OIHW",
+      "groups": 1,
+      "padding": 0,
+      "stride": 1
+    }
+  },
+  "merges": {
+    "<layer>": {
+      "shift": 24,
+      "bits": 8,
+      "relu6": false,
+      "bias_file": "<layer>.bias_fixed.i64.bin",
+      "multipliers": [[0]],
+      "formula": "RNE((sum(INT32_acc_i * multiplier_i) + bias_fixed) / 2**shift), then clamp"
+    }
+  },
+  "graph": "<layer order and data sources, one line per block>",
+  "packing": {
+    "lanes": 16,
+    "lane_bits": 8,
+    "lane0": "LSB",
+    "byte_order": "little_endian",
+    "invalid_lane_fill": "<value or 'masked'>"
+  }
+}

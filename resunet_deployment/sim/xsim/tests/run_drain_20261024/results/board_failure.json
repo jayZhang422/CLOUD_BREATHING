@@ -1,0 +1,43 @@
+{
+  "status": "failed",
+  "models": [
+    {
+      "status": "failed",
+      "manifest": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\script\\python\\BIN_UDP\\output\\ct_01\\fixed_benchmark\\all_models_fused_residual\\vessel.json",
+      "source_manifest_sha256": "d4098a67f767199552b0e2a8c8dc8eebe2fe1bfa2d6c6474eb2e4492669d9a0c",
+      "execution_schedule_sha256": "d182b32d668c7605bfb255a126f6b842757fdc8468703bd4a0b85ce10c306469",
+      "execution_stages": 30,
+      "profile": "fused_residual",
+      "task": "vessel",
+      "head_layout": "group8,Y,X,lane8 INT16",
+      "fused_up_concat": "d1",
+      "inputs": [
+        {
+          "slice": 163,
+          "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\script\\python\\BIN_UDP\\output\\ct_01\\fixed_benchmark\\all_models_fused_residual\\vessel_input_p16_int8.bin",
+          "sha256": "331641e11b7af18bce8d147d1f02643bc8ee137777f7c205bdf78987f8e45b87"
+        }
+      ],
+      "runs": [],
+      "timing_scope": "PC wall time; FPGA run time is the sum of RUN+STATUS RPC waits",
+      "active": {
+        "repeat": 0,
+        "slice": 163,
+        "stage": "e1.mix",
+        "completed_stages": [
+          {
+            "name": "e1.expand",
+            "op": 1,
+            "run_wait_seconds": 0.021063000000140164,
+            "read_seconds": 0.0
+          }
+        ]
+      },
+      "error": "operator run did not drain before deadline"
+    }
+  ],
+  "per_model": [],
+  "timing_scope": "Same fixed plane repeated per model; parameter upload/preprocessing excluded from per-run means. FPGA time includes RUN+STATUS RPC and polling.",
+  "validation_scope": "Repeat SHA256 consistency; Golden checked only when supplied in manifest.",
+  "error": "operator run did not drain before deadline"
+}

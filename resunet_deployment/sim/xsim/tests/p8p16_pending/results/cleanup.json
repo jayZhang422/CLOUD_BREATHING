@@ -1,0 +1,157 @@
+{
+  "simsets": [
+    "sim_p8p16_engine",
+    "sim_p8p16_rpc",
+    "sim_p8p16_before",
+    "sim_p8p16_stress",
+    "sim_p8p16_compat",
+    "sim_pwstream_op12"
+  ],
+  "bytes_removed": 1100186215,
+  "removed": [
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_engine\\behav\\xsim\\xsim.dir",
+      "bytes": 56065710
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_engine\\behav\\xsim\\sim_trace.csv",
+      "bytes": 29940261
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_engine\\behav\\xsim\\tb_p8p16_engine_behav.wdb",
+      "bytes": 40341282
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_engine\\behav\\xsim\\waveform.vcd",
+      "bytes": 17709538
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_rpc\\behav\\xsim\\xsim.dir",
+      "bytes": 62701217
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_rpc\\behav\\xsim\\sim_trace.csv",
+      "bytes": 135065347
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_rpc\\behav\\xsim\\tb_p8p16_rpc_behav.wdb",
+      "bytes": 220158671
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_rpc\\behav\\xsim\\waveform.vcd",
+      "bytes": 1949043
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_before\\behav\\xsim\\xsim.dir",
+      "bytes": 46863690
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_before\\behav\\xsim\\sim_trace.csv",
+      "bytes": 30398139
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_before\\behav\\xsim\\tb_p8p16_before_behav.wdb",
+      "bytes": 40182772
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_before\\behav\\xsim\\waveform.vcd",
+      "bytes": 17858763
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_stress\\behav\\xsim\\xsim.dir",
+      "bytes": 56082030
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_stress\\behav\\xsim\\sim_trace.csv",
+      "bytes": 34672240
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_stress\\behav\\xsim\\tb_p8p16_engine_behav.wdb",
+      "bytes": 36887492
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_stress\\behav\\xsim\\waveform.vcd",
+      "bytes": 18130941
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_compat\\behav\\xsim\\xsim.dir",
+      "bytes": 25690830
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_compat\\behav\\xsim\\sim_trace_project.csv",
+      "bytes": 16487253
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_compat\\behav\\xsim\\tb_tile_pw_p8compat_behav.wdb",
+      "bytes": 3364361
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_compat\\behav\\xsim\\waveform.vcd",
+      "bytes": 5351791
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_op12\\behav\\xsim\\xsim.dir",
+      "bytes": 87041068
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_op12\\behav\\xsim\\sim_trace_fast.csv",
+      "bytes": 10442792
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_op12\\behav\\xsim\\sim_trace_slow.csv",
+      "bytes": 15091274
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_op12\\behav\\xsim\\tb_pwstream_op12_behav.wdb",
+      "bytes": 9291567
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_op12\\behav\\xsim\\waveform.vcd",
+      "bytes": 12345521
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.srcs\\sim_1\\new\\P8P16_Pending\\results\\baseline_ip.tcldict.after.log",
+      "bytes": 7055192
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.srcs\\sim_1\\new\\P8P16_Pending\\results\\baseline_ip.tcldict.before.log",
+      "bytes": 7041657
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.srcs\\sim_1\\new\\P8P16_Pending\\results\\ip_final_readback.tcldict.after.log",
+      "bytes": 7201827
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.srcs\\sim_1\\new\\P8P16_Pending\\results\\ip_final_readback.tcldict.before.log",
+      "bytes": 7201395
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.srcs\\sim_1\\new\\P8P16_Pending\\results\\p8p16_config_param_ip.21172.367837298618.tcldict.after.log",
+      "bytes": 6797576
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.srcs\\sim_1\\new\\P8P16_Pending\\results\\p8p16_config_param_ip.21172.367837298618.tcldict.before.log",
+      "bytes": 6797577
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.srcs\\sim_1\\new\\P8P16_Pending\\results\\p8p16_create_param_ip.21172.367575589348.tcldict.after.log",
+      "bytes": 6783991
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.srcs\\sim_1\\new\\P8P16_Pending\\results\\p8p16_create_param_ip.21172.367575589348.tcldict.before.log",
+      "bytes": 6783992
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.srcs\\sim_1\\new\\P8P16_Pending\\results\\syntax_final.tcldict.after.log",
+      "bytes": 7202868
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.srcs\\sim_1\\new\\P8P16_Pending\\results\\syntax_final.tcldict.before.log",
+      "bytes": 7202793
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.srcs\\sim_1\\new\\P8P16_Pending\\tb_p8p16_smoke.sv",
+      "bytes": 3754
+    }
+  ]
+}

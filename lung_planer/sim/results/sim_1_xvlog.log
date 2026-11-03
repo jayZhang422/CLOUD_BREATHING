@@ -1,0 +1,24 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/src/rtl/dual_plane_boundary_extract.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dual_plane_boundary_extract
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/src/rtl/dual_plane_bvh_classify.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dual_plane_bvh_classify
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/src/rtl/dual_plane_fp64_accumulator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dual_plane_fp64_accumulator
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/src/rtl/dual_plane_fp64_alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dual_plane_fp64_alu
+INFO: [VRFC 10-311] analyzing module dual_plane_fp64_epoch_alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/src/rtl/dual_plane_mesh_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dual_plane_mesh_axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/src/rtl/dual_plane_mesh_geometry.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dual_plane_mesh_geometry
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/src/rtl/dual_plane_polygon_reduce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dual_plane_polygon_reduce
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/src/rtl/dual_plane_segment_integral.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dual_plane_segment_integral
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/src/rtl/dual_plane_triangle_clip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dual_plane_triangle_clip
+INFO: [VRFC 10-311] analyzing module dual_plane_distance_batch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA/ESDC/lung_planer/sim/tb/tb_dual_plane_mesh_axi.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_dual_plane_mesh_axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/ESDC/lung_planer/build/work/lung_planner/lung_planner.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

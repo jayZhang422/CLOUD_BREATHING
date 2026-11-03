@@ -1,0 +1,3 @@
+shared op12 small_tail bytes=1056 writes=1056 run_cycles=3077 independent-Golden
+shared op12 max_banks bytes=8704 writes=8704 run_cycles=254116 independent-Golden
+[RUNNER PASSED] op12 cases=2 mem_stalls=0 p12_max_addr=2047 add_checks=970

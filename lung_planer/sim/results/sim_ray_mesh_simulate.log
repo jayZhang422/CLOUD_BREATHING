@@ -1,0 +1,12 @@
+Time resolution is 1 ps
+RAY_MESH_DATASET_PASS convex rays=190 reads=5862
+RAY_MESH_DATASET_PASS nonconvex rays=190 reads=7470
+RAY_MESH_DATASET_PASS hits_exact_128 rays=1 reads=7947
+RAY_MESH_DATASET_PASS hits_over_128 rays=1 reads=8433
+RAY_MESH_DATASET_PASS hits_runtime_limit rays=1 reads=8469
+RAY_MESH_DATASET_PASS wide_difference rays=1 reads=8475
+RAY_MESH_DATASET_PASS true_t_overflow rays=1 reads=8481
+RAY_MESH_DATASET_PASS near_parallel_miss rays=1 reads=8484
+RAY_MESH_RTL_PASS golden_rays=386 repeated_jobs=100 timeout=1 abort_drain=1 invalid_bvh=1 stack_overflow=1 rresp=1 keep_tlast=1 reset=1
+$finish called at time : 6872690 ns : File "E:/FPGA/ESDC/lung_planer/sim/tb/tb_lung_ray_mesh_bvh.v" Line 191
+INFO: xsimkernel Simulation Memory Usage: 40476 KB (Peak: 40476 KB), Simulation CPU Usage: 31578 ms

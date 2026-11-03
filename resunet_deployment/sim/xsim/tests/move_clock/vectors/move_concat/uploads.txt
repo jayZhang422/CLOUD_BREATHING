@@ -1,0 +1,2 @@
+02000000 16384 sim/xsim/tests/move_clock/vectors/move_concat/input.hex
+02200010 24576 sim/xsim/tests/move_clock/vectors/move_concat/input_b.hex

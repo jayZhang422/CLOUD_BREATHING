@@ -1,0 +1,53 @@
+--- before/script\scala\DW5x5\Dw5x5.scala
++++ script\scala\DW5x5\Dw5x5.scala
+@@ -91,6 +91,7 @@
+ }
+ 
+ class Dw5x5(config: Dw5x5Config = Dw5x5Config()) extends Component {
++  addAttribute("use_dsp", "yes")
+   val io = new Bundle {
+     val cfg_i = slave Stream(Dw5x5Run(config))
+     val weights_i = slave Stream(Bits(config.WEIGHT_BITS bits))
+@@ -164,17 +165,19 @@
+     req_valid_r := False
+   }
+ 
++  // BRAM输出先寄存，再进入DSP；s2mPipe切断向上游广播的组合ready。
++  val multiplyInput = operands.m2sPipe().s2mPipe()
+   val products_w = Dw5Products(config)
+-  products_w.tag := operands.tag
+-  products_w.params := operands.params
++  products_w.tag := multiplyInput.tag
++  products_w.params := multiplyInput.params
+   for (lane <- 0 until config.lanes; tap <- 0 until 25) {
+     val row = tap / 5
+     val col = tap % 5
+-    val pixel = operands.window(row)(col)(lane * 8, 8 bits).asSInt
+-    val weight = operands.weights((lane * 25 + tap) * 8, 8 bits).asSInt
++    val pixel = multiplyInput.window(row)(col)(lane * 8, 8 bits).asSInt
++    val weight = multiplyInput.weights((lane * 25 + tap) * 8, 8 bits).asSInt
+     products_w.values(lane)(tap) := pixel * weight
+   }
+-  val products = operands.translateWith(products_w).m2sPipe()
++  val products = multiplyInput.translateWith(products_w).m2sPipe()
+ 
+   // 25 项平衡归约：13 -> 7 -> 4 -> 2 -> 1，每级独立寄存器切断组合路径。
+   val reduce13_w = Dw5Reduce(config, 13, 17)
+@@ -199,7 +202,7 @@
+   for (lane <- 0 until config.lanes; i <- 0 until 3)
+     reduce4_w.values(lane)(i) := reduce7.values(lane)(2 * i).resize(19) + reduce7.values(lane)(2 * i + 1).resize(19)
+   for (lane <- 0 until config.lanes) reduce4_w.values(lane)(3) := reduce7.values(lane)(6).resize(19)
+-  val reduce4 = reduce7.translateWith(reduce4_w).m2sPipe()
++  val reduce4 = reduce7.translateWith(reduce4_w).m2sPipe().s2mPipe()
+ 
+   val reduce2_w = Dw5Reduce(config, 2, 20)
+   reduce2_w.tag := reduce4.tag
+@@ -222,7 +225,7 @@
+   quantInput_w.raw := run_r.raw
+   for (lane <- 0 until config.lanes) quantInput_w.mac(lane) := dot.values(lane)(0).resize(32)
+   quantInput_w.params := dot.params
+-  val quantInput = dot.translateWith(quantInput_w).m2sPipe()
++  val quantInput = dot.translateWith(quantInput_w).m2sPipe().s2mPipe()
+ 
+   val product_w = Dw5QuantProduct(config)
+   product_w.tag := quantInput.tag

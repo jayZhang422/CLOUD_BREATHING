@@ -1,0 +1,288 @@
+{
+  "version": "20261011_ptq_qat_v2",
+  "completed_utc": "2026-10-11T05:23:22.572916+00:00",
+  "policy": "每个数据集 union 和每个有监督类别 Dice 下降 <= 0.02 绝对值；仅据验证集选择版本",
+  "originals_unchanged": true,
+  "integer_selfcheck": {
+    "status": "PASS",
+    "independent_integer_checks": 13944,
+    "cuda_mac": "FP32 exact integer carrier; TF32 and AMP disabled; <2**24 proof enforced"
+  },
+  "mac_spatial_check": {
+    "status": "PASS",
+    "checked_elements": 216384
+  },
+  "tasks": {
+    "lobe": {
+      "original_epoch": 12,
+      "original_sha256": "8cd857837ce113469fdfb0753a9f706cb969f6b4b7d43ad48aa0c055f47af342",
+      "selected": "PTQ",
+      "precision_pass": true,
+      "qat_executed": false,
+      "export": "lobe/ptq/export",
+      "frozen_binary_verification": {
+        "status": "PASS",
+        "device": "cpu",
+        "checked_files": 133,
+        "checked_nodes": 65,
+        "checked_elements": 574464,
+        "parameters": "actual INT8 weight bins and contract INT64 bias/multiplier/shift; no FP32 reconstruction",
+        "scope": "synthetic 32x32; software verification, not RTL or board acceptance",
+        "receipt": "previous verify_export.py CLI result observed in this run"
+      },
+      "full_512_synthetic_verification": {
+        "status": "PASS",
+        "shape": [
+          1,
+          3,
+          512,
+          512
+        ],
+        "seed": 20261011,
+        "source": "synthetic; no patient CT or label",
+        "checked_output_elements": 1310720,
+        "seconds": 2.61,
+        "scope": "full 512x512 network integer output from actual frozen binary parameters, CPU/CUDA bit exact"
+      },
+      "datasets": {
+        "lobe": {
+          "case_count": 57,
+          "slice_count": 14095,
+          "dice_gate_pass": true,
+          "fp32_union": {
+            "dice": 0.9804872804084811,
+            "precision": 0.9869379646025491,
+            "recall": 0.9741203727436135,
+            "tp": 47639915,
+            "fp": 630510,
+            "fn": 1265658,
+            "positive_layers": 6525,
+            "hit_positive_layers": 6426,
+            "positive_layer_recall": 0.9848275862068966
+          },
+          "integer_union": {
+            "dice": 0.9806196219922931,
+            "precision": 0.9872377445756326,
+            "recall": 0.974089640049816,
+            "tp": 47638412,
+            "fp": 615833,
+            "fn": 1267161,
+            "positive_layers": 6525,
+            "hit_positive_layers": 6427,
+            "positive_layer_recall": 0.9849808429118774
+          },
+          "comparison": {
+            "union": {
+              "dice_drop": -0.00013234158381203454,
+              "recall_drop": 3.073269379749721e-05
+            },
+            "lung_upper_lobe_left": {
+              "dice_drop": 0.00016577575551834922,
+              "recall_drop": -0.0014174828366346759
+            },
+            "lung_lower_lobe_left": {
+              "dice_drop": -0.00056740845913128,
+              "recall_drop": 0.0005104559858091218
+            },
+            "lung_upper_lobe_right": {
+              "dice_drop": 0.0012347589792109925,
+              "recall_drop": -0.0009433382130547008
+            },
+            "lung_middle_lobe_right": {
+              "dice_drop": 0.0002535982377748214,
+              "recall_drop": 0.000363343907049285
+            },
+            "lung_lower_lobe_right": {
+              "dice_drop": -0.0019878320187433074,
+              "recall_drop": 0.000784434485128771
+            }
+          }
+        }
+      }
+    },
+    "airway": {
+      "original_epoch": 27,
+      "original_sha256": "f0141e0a3579d33b3d781abe10d3f403a22d8673c263e9aca78ff85854df75ce",
+      "selected": "PTQ",
+      "precision_pass": true,
+      "qat_executed": false,
+      "export": "airway/ptq/export",
+      "frozen_binary_verification": {
+        "status": "PASS",
+        "device": "cpu",
+        "checked_files": 133,
+        "checked_nodes": 65,
+        "checked_elements": 566272,
+        "parameters": "actual INT8 weight bins and contract INT64 bias/multiplier/shift; no FP32 reconstruction",
+        "scope": "synthetic 32x32; software verification, not RTL or board acceptance"
+      },
+      "full_512_synthetic_verification": {
+        "status": "PASS",
+        "shape": [
+          1,
+          3,
+          512,
+          512
+        ],
+        "seed": 20261011,
+        "source": "synthetic; no patient CT or label",
+        "checked_output_elements": 262144,
+        "seconds": 1.83,
+        "scope": "full 512x512 network integer output from actual frozen binary parameters, CPU/CUDA bit exact"
+      },
+      "datasets": {
+        "airway": {
+          "case_count": 42,
+          "slice_count": 29043,
+          "dice_gate_pass": true,
+          "fp32_union": {
+            "dice": 0.9012868476784751,
+            "precision": 0.8706894017687535,
+            "recall": 0.93411310601681,
+            "tp": 5983341,
+            "fp": 888617,
+            "fn": 422030,
+            "positive_layers": 19280,
+            "hit_positive_layers": 19043,
+            "positive_layer_recall": 0.9877074688796681
+          },
+          "integer_union": {
+            "dice": 0.9009181294809164,
+            "precision": 0.8743716843230969,
+            "recall": 0.9291269779689576,
+            "tp": 5951403,
+            "fp": 855088,
+            "fn": 453968,
+            "positive_layers": 19280,
+            "hit_positive_layers": 19021,
+            "positive_layer_recall": 0.9865663900414938
+          },
+          "comparison": {
+            "union": {
+              "dice_drop": 0.00036871819755868174,
+              "recall_drop": 0.004986128047852367
+            },
+            "airway": {
+              "dice_drop": 0.00036871819755868174,
+              "recall_drop": 0.004986128047852367
+            }
+          }
+        }
+      }
+    },
+    "vessel": {
+      "original_epoch": 18,
+      "original_sha256": "35b490975de4b22f895498d90f573f273d7590f5c1d1aaa77a2b8a0f5c998c29",
+      "selected": "PTQ",
+      "precision_pass": true,
+      "qat_executed": false,
+      "export": "vessel/ptq/export",
+      "frozen_binary_verification": {
+        "status": "PASS",
+        "device": "cpu",
+        "checked_files": 133,
+        "checked_nodes": 65,
+        "checked_elements": 568320,
+        "parameters": "actual INT8 weight bins and contract INT64 bias/multiplier/shift; no FP32 reconstruction",
+        "scope": "synthetic 32x32; software verification, not RTL or board acceptance"
+      },
+      "full_512_synthetic_verification": {
+        "status": "PASS",
+        "shape": [
+          1,
+          3,
+          512,
+          512
+        ],
+        "seed": 20261011,
+        "source": "synthetic; no patient CT or label",
+        "checked_output_elements": 524288,
+        "seconds": 1.93,
+        "scope": "full 512x512 network integer output from actual frozen binary parameters, CPU/CUDA bit exact"
+      },
+      "datasets": {
+        "hipas": {
+          "case_count": 20,
+          "slice_count": 6340,
+          "dice_gate_pass": true,
+          "fp32_union": {
+            "dice": 0.8572700417696988,
+            "precision": 0.8661661241175194,
+            "recall": 0.848554838633789,
+            "tp": 15005002,
+            "fp": 2318467,
+            "fn": 2678006,
+            "positive_layers": 4819,
+            "hit_positive_layers": 4759,
+            "positive_layer_recall": 0.9875492840838348
+          },
+          "integer_union": {
+            "dice": 0.8570336427983749,
+            "precision": 0.8677335821901233,
+            "recall": 0.846594369012331,
+            "tp": 14970335,
+            "fp": 2281890,
+            "fn": 2712673,
+            "positive_layers": 4819,
+            "hit_positive_layers": 4756,
+            "positive_layer_recall": 0.9869267482880265
+          },
+          "comparison": {
+            "union": {
+              "dice_drop": 0.0002363989713238812,
+              "recall_drop": 0.0019604696214580164
+            },
+            "artery": {
+              "dice_drop": 0.0011808261855983382,
+              "recall_drop": 0.0007004010420661455
+            },
+            "vein": {
+              "dice_drop": 0.00027230657384835766,
+              "recall_drop": 0.003726416487642825
+            }
+          }
+        },
+        "parse": {
+          "case_count": 13,
+          "slice_count": 3934,
+          "dice_gate_pass": true,
+          "fp32_union": {
+            "dice": 0.7320830036875782,
+            "precision": 0.6748220834455434,
+            "recall": 0.7999625093664183,
+            "tp": 3204917,
+            "fp": 1544360,
+            "fn": 801417,
+            "positive_layers": 2990,
+            "hit_positive_layers": 2879,
+            "positive_layer_recall": 0.962876254180602
+          },
+          "integer_union": {
+            "dice": 0.7322229726442616,
+            "precision": 0.6748897945779353,
+            "recall": 0.8002016307177584,
+            "tp": 3205875,
+            "fp": 1544345,
+            "fn": 800459,
+            "positive_layers": 2990,
+            "hit_positive_layers": 2879,
+            "positive_layer_recall": 0.962876254180602
+          },
+          "comparison": {
+            "union": {
+              "dice_drop": -0.000139968956683445,
+              "recall_drop": -0.00023912135134007695
+            },
+            "artery": {
+              "dice_drop": -0.000139968956683445,
+              "recall_drop": -0.00023912135134007695
+            }
+          }
+        }
+      }
+    }
+  },
+  "accepted": true,
+  "case_count": 132,
+  "slice_count": 53412
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "file": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_1\\behav\\xsim\\sim_trace.csv",
+    "bytes": 88880630
+  },
+  {
+    "file": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_1\\behav\\xsim\\waveform.vcd",
+    "bytes": 8758689
+  },
+  {
+    "file": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_1\\behav\\xsim\\tb_op_rom_behav.wdb",
+    "bytes": 262148641
+  }
+]

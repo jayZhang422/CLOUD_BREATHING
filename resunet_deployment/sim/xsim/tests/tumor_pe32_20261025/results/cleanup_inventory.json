@@ -1,0 +1,22 @@
+[
+  {
+    "directory": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_hotspot_pw\\behav\\xsim",
+    "traceBytes": 130016104.0,
+    "snapshotBytes": 65586342.0
+  },
+  {
+    "directory": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_hotspot_pw_stress\\behav\\xsim",
+    "traceBytes": 127366317.0,
+    "snapshotBytes": 65589688.0
+  },
+  {
+    "directory": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_pwstream_op12\\behav\\xsim",
+    "traceBytes": 45258121.0,
+    "snapshotBytes": 101756811.0
+  },
+  {
+    "directory": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_p8p16_rpc\\behav\\xsim",
+    "traceBytes": 226583733.0,
+    "snapshotBytes": 73231243.0
+  }
+]

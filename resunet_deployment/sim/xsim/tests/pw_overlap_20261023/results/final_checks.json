@@ -1,0 +1,61 @@
+{
+  "reader.log": {
+    "passed": true,
+    "pass_lines": [
+      "[TB PASSED] reader 128 ordered P16,64 reads,two sources,8 credits,long stalls,reset cancellation,error clear"
+    ]
+  },
+  "after_rpc.log": {
+    "passed": true,
+    "pass_lines": [
+      "[TB PASSED] \u934f\u3129\u5134\u93c1\u7248\u5d41\u6960\u5c83\u7609\u6d93\ufffd\u9477\ufffd cases=8 cycles=1045504 rom_reads=960 ddr_reads=1042 ddr_writes=131"
+    ]
+  },
+  "full21.log": {
+    "passed": true,
+    "pass_lines": [
+      "[TB PASSED] \u934f\u3129\u5134\u93c1\u7248\u5d41\u6960\u5c83\u7609\u6d93\ufffd\u9477\ufffd cases=21 cycles=1026224 rom_reads=1032 ddr_reads=662 ddr_writes=256"
+    ]
+  },
+  "tile_stall.log": {
+    "passed": true,
+    "pass_lines": [
+      "[TB PASSED] PW tile Golden runs=22 restart=0 contention=103172"
+    ]
+  },
+  "tile_restart.log": {
+    "passed": true,
+    "pass_lines": [
+      "[TB PASSED] PW tile Golden runs=12 restart=1 contention=0"
+    ]
+  },
+  "op12.log": {
+    "passed": true,
+    "pass_lines": [
+      "[TB PASSED] \u934f\u3129\u5134\u93c1\u7248\u5d41\u6960\u5c83\u7609\u6d93\ufffd\u9477\ufffd op12 two frozen Golden cases fast+slow DDR 250MHz"
+    ]
+  },
+  "rtl": {
+    "identical": true,
+    "sha256": "da5fc23d141d346564b7fe9b75d9ecc110ae23259f82f1bf92e9c3bd24d3b6ce",
+    "dsp_attributes": 256
+  },
+  "large_trace_outputs_remaining": [],
+  "synthesis_started_by_this_batch": false,
+  "implementation_started_by_this_batch": false,
+  "new_physical_timing_available": false,
+  "rom_fanout_binding": {
+    "candidate_selector_matched_registers": 16,
+    "candidate_selector_matched_nets": 16,
+    "physical_properties_applied_to_old_checkpoint": false,
+    "physical_replication_verified": false,
+    "constraint_used_in_implementation": true,
+    "constraint_used_in_synthesis": false,
+    "constraint_processing_order": "LATE",
+    "note": "Only selector membership was confirmed on the existing checkpoint. Apply/replication and timing require next implementation."
+  },
+  "default_simulation": "sim_1 / tb_mkdc, confirmed after diagnostic design was closed",
+  "new_ip_run": "pw_result_bram_synth_1 registered, Not started",
+  "temporary_move_plusarg_restored": true,
+  "old_checkpoint_closed": true
+}

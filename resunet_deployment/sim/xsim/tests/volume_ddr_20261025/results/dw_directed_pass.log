@@ -1,0 +1,24 @@
+3624: Block Memory Generator module tb_hotspot_dw.dut.u_bank.u_pw_shared.skip.pwWeightBank_7.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+3625: Block Memory Generator module tb_hotspot_dw.dut.u_bank.u_pw_shared.skip.pwResultRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+3626: Block Memory Generator module tb_hotspot_dw.dut.u_bank.u_pw_shared.skip.pwResultRam_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+3627: Block Memory Generator module tb_hotspot_dw.dut.u_op12_add_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+3628: Block Memory Generator module tb_hotspot_dw.dut.u_pw_pack.u_tiles.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+3629: [CASE PASSED] row512 mode=0 words=2048 cycles=6216
+3630: [CASE PASSED] groups4 mode=0 words=8192 cycles=24732
+3631: [CASE PASSED] groups2 mode=1 words=558 cycles=8559
+3632: [CASE PASSED] groups32 mode=0 words=1632 cycles=14135
+3633: [CASE PASSED] pressure8 mode=2 words=4096 cycles=216498
+3634: [TB PASSED] op11 Golden groups1/2/4/32, independent branch handshakes
+3635: $finish called at time : 1080952 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Hotspot_PE32_20261024/tb_hotspot_dw.sv" Line 122
+3636: run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:49 . Memory (MB): peak = 12726.852 ; gain = 159.684
+3637: xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:57 . Memory (MB): peak = 12726.852 ; gain = 261.902
+3638: INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_hotspot_dw_behav' loaded.
+3639: INFO: [USF-XSim-97] XSim simulation ran for 48ms
+3640: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:01:41 . Memory (MB): peak = 12726.852 ; gain = 273.859
+3641: INFO: [MCP 00-101] ===MCP_CMD_END:1792911157756080300-4:0===
+3642: update_compile_order -fileset sim_1
+3643: WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Hotspot_PE32_20261024\tb_hotspot_dw.sv:]
+3644: WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\P8P16_Pending\tb_p8p16_rpc.sv:]
+3645: WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\PW_Stream_20261022\tb_pwstream_op12.sv:]
+3646: WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Hotspot_PE32_20261024\tb_hotspot_pw.sv:]
+3647: WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:\FPGA_Prj\Xilinx\Model_Deployment\prj\Model_Deployment.srcs\sim_1\new\Hotspot_PE32_20261024\tb_hotspot_dw.sv:]

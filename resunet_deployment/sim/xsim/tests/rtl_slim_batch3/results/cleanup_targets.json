@@ -1,0 +1,17 @@
+[
+  {
+    "Path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_batch3_pw",
+    "Bytes": 80046142.0,
+    "Files": 58
+  },
+  {
+    "Path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_batch3_op12",
+    "Bytes": 147194750.0,
+    "Files": 89
+  },
+  {
+    "Path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_batch3_op12_fast",
+    "Bytes": 130578549.0,
+    "Files": 88
+  }
+]

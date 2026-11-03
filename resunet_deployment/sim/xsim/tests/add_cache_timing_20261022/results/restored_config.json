@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"elapsed_seconds\": 1.044,\n  \"exit_code\": 0,\n  \"output\": \"CURRENT_SIMSET=sim_1\\nSIM_TOP=tb_mkdc\\nSIM_GENERIC=\\nSIM_RUNTIME=0ns\\nSYNTH_TOP=top\\nSYNTH_GENERIC=\\nTEMP_SIMSETS=\",\n  \"task_progress\": \"3/5: 清理产物、恢复仿真配置并形成交付记录 (active, 6s)\"\n}"
+    }
+  ]
+}

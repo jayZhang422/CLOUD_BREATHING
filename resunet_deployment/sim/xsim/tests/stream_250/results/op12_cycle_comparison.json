@@ -1,0 +1,30 @@
+[
+  {
+    "case": "small_tail",
+    "mode": "fast",
+    "before": 2131,
+    "after": 1788,
+    "reduction_percent": 16.1
+  },
+  {
+    "case": "small_tail",
+    "mode": "slow",
+    "before": 2781,
+    "after": 2427,
+    "reduction_percent": 12.73
+  },
+  {
+    "case": "max_banks",
+    "mode": "fast",
+    "before": 159563,
+    "after": 156775,
+    "reduction_percent": 1.75
+  },
+  {
+    "case": "max_banks",
+    "mode": "slow",
+    "before": 280615,
+    "after": 277642,
+    "reduction_percent": 1.06
+  }
+]

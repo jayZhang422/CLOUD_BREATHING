@@ -1,0 +1,44 @@
+{
+  "CT2BIN": {
+    "status": "Queue",
+    "start": "--",
+    "elapsed_seconds": 0.0,
+    "detail": ""
+  },
+  "Send": {
+    "status": "Queue",
+    "start": "--",
+    "elapsed_seconds": 0.0,
+    "detail": ""
+  },
+  "Reasoning": {
+    "status": "Queue",
+    "start": "--",
+    "elapsed_seconds": 0.0,
+    "detail": ""
+  },
+  "Receive": {
+    "status": "Done",
+    "start": "2026-11-02T11:14:10+0800",
+    "elapsed_seconds": 19.083842245999904,
+    "detail": "175112192/175112192 bytes"
+  },
+  "BIN2STL": {
+    "status": "Queue",
+    "start": "--",
+    "elapsed_seconds": 0.0,
+    "detail": ""
+  },
+  "Smooth": {
+    "status": "Queue",
+    "start": "--",
+    "elapsed_seconds": 0.0,
+    "detail": ""
+  },
+  "Cut": {
+    "status": "Queue",
+    "start": "--",
+    "elapsed_seconds": 0.0,
+    "detail": ""
+  }
+}

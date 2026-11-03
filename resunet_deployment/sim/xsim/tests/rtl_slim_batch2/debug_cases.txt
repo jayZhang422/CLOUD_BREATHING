@@ -1,0 +1,4 @@
+sim/xsim/tests/mkdc/vectors/legacy_linebuffer3 1728 0
+sim/xsim/tests/mkdc/vectors/legacy_linebuffer5 1600 0
+sim/xsim/tests/rtl_slim_batch2/vectors/lobe_mid_dw3 8192 0
+sim/xsim/tests/rtl_slim_batch2/vectors/lobe_mid_dw5 8192 0

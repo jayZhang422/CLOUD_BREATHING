@@ -1,0 +1,44 @@
+{
+  "CT2BIN": {
+    "status": "Done",
+    "start": "2026-11-02T17:06:54+0800",
+    "elapsed_seconds": 8.598937867000004,
+    "detail": "245 slices; job.json ready"
+  },
+  "Send": {
+    "status": "Done",
+    "start": "2026-11-02T17:07:07+0800",
+    "elapsed_seconds": 53.70566346300001,
+    "detail": "VOL2 compact views, parameters, and DDR command list uploaded"
+  },
+  "Reasoning": {
+    "status": "Done",
+    "start": "2026-11-02T17:08:00+0800",
+    "elapsed_seconds": 364.3221462810001,
+    "detail": "FPGA 30086/30090; tumor slice 244 d1.out; 363.8s"
+  },
+  "Receive": {
+    "status": "Done",
+    "start": "2026-11-02T17:14:05+0800",
+    "elapsed_seconds": 12.880630693999933,
+    "detail": "128450560/128450560 bytes"
+  },
+  "BIN2STL": {
+    "status": "Done",
+    "start": "2026-11-02T17:14:18+0800",
+    "elapsed_seconds": 75.11544979500002,
+    "detail": "mask repair + joint lobes; LPS mm"
+  },
+  "Smooth": {
+    "status": "Done",
+    "start": "2026-11-02T17:15:33+0800",
+    "elapsed_seconds": 225.97548117600002,
+    "detail": "9/9 LungTumor"
+  },
+  "Cut": {
+    "status": "Done",
+    "start": "2026-11-02T17:19:19+0800",
+    "elapsed_seconds": 92.93808138300005,
+    "detail": "Target <= 150000 faces/object"
+  }
+}

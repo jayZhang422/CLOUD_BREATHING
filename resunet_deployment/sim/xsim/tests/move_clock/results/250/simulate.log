@@ -1,0 +1,142 @@
+Time resolution is 1 ps
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_transport.u_request_ram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_transport.u_reply_ram.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_p12_project_mem.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_p12_skip_mem.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_pw_shared.project.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_pw_shared.project.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwInputTileRam.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank_1.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank_2.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_pw_shared.skip.pwWeightBank_3.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[0].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[1].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[2].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[3].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[4].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[5].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[6].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[7].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[8].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[9].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[10].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[11].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[12].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[13].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[14].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[15].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[16].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[17].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[18].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[19].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[20].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[21].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[22].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[23].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_engine.u_bank.u_dw5.g_dw5.u_dw.g_dw5_weight_bank[24].u_weight_bank.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_service.u_perf_memory.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_port.g_memory[0].u_write_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_port.g_memory[0].u_read_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_port.g_memory[1].u_write_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).dut.u_port.g_memory[1].u_read_cache.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb_move_rpc(FAST=1'b1).rom.u_rom.inst.native_mem_module.blk_mem_gen_v8_4_13_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+[CASE PASS] read_only_coefficients
+[CASE PASS] image_metadata_snapshot_and_online_rejection
+[CASE PASS] DW_P16_descriptor_rejection cases=6
+[CASE PASS] RPC_RAM all_32_lengths upload_read_backpressure invalid_lengths control_errors
+[CASE] lobe_mid_expand cycle=232696
+[TIMING] lobe_mid_expand hardware_cycles=12350
+[PERF] lobe_mid_expand hardware_cycles=12350 load=6240 run=6023 output_blocked=4536
+[CASE PASS] lobe_mid_expand bytes=2048 mac_bytes=0 cycle=270832
+[CASE] lobe_mid_mix cycle=270832
+[TIMING] lobe_mid_mix hardware_cycles=7938
+[PERF] lobe_mid_mix hardware_cycles=7938 load=1248 run=6598 output_blocked=0
+[CASE PASS] lobe_mid_mix bytes=2048 mac_bytes=0 cycle=302288
+[CASE] lobe_mid_project cycle=302288
+[TIMING] lobe_mid_project hardware_cycles=18655
+[PERF] lobe_mid_project hardware_cycles=18655 load=11232 run=7336 output_blocked=4536
+[CASE PASS] lobe_mid_project bytes=8192 mac_bytes=0 cycle=401288
+[CASE] lobe_mid_out cycle=401288
+[TIMING] lobe_mid_out hardware_cycles=7935
+[PERF] lobe_mid_out hardware_cycles=7935 load=1248 run=6595 output_blocked=0
+[CASE PASS] lobe_mid_out bytes=2048 mac_bytes=0 cycle=432744
+[CASE] legacy_lobe_head cycle=432744
+[TIMING] legacy_lobe_head hardware_cycles=540
+[PERF] legacy_lobe_head hardware_cycles=540 load=156 run=251 output_blocked=105
+[CASE PASS] legacy_lobe_head bytes=64 mac_bytes=128 cycle=439600
+[CASE] legacy_pool_odd_two_groups cycle=439600
+[TIMING] legacy_pool_odd_two_groups hardware_cycles=182
+[PERF] legacy_pool_odd_two_groups hardware_cycles=182 load=0 run=108 output_blocked=0
+[CASE PASS] legacy_pool_odd_two_groups bytes=64 mac_bytes=0 cycle=445008
+[CASE] legacy_pool_groups32 cycle=445008
+[TIMING] legacy_pool_groups32 hardware_cycles=1051
+[PERF] legacy_pool_groups32 hardware_cycles=1051 load=0 run=966 output_blocked=0
+[CASE PASS] legacy_pool_groups32 bytes=1024 mac_bytes=0 cycle=459640
+[CASE] tumor_mid_expand cycle=459640
+[TIMING] tumor_mid_expand hardware_cycles=83894
+[PERF] tumor_mid_expand hardware_cycles=83894 load=53875 run=29932 output_blocked=18144
+[CASE PASS] tumor_mid_expand bytes=8192 mac_bytes=0 cycle=645480
+[CASE] legacy_tumor_e1_fast cycle=645480
+[TIMING] legacy_tumor_e1_fast hardware_cycles=5328
+[PERF] legacy_tumor_e1_fast hardware_cycles=5328 load=789 run=4375 output_blocked=3825
+[CASE PASS] legacy_tumor_e1_fast bytes=1024 mac_bytes=4096 cycle=700688
+[CASE] upsample cycle=700688
+[TIMING] upsample hardware_cycles=199
+[PERF] upsample hardware_cycles=199 load=0 run=116 output_blocked=0
+[CASE PASS] upsample bytes=384 mac_bytes=0 cycle=708725
+[CASE] concat cycle=708725
+[TIMING] concat hardware_cycles=193
+[PERF] concat hardware_cycles=193 load=0 run=118 output_blocked=0
+[CASE PASS] concat bytes=96 mac_bytes=0 cycle=714397
+[CASE] fused_dw11 cycle=714397
+[TIMING] fused_dw11 hardware_cycles=1536
+[PERF] fused_dw11 hardware_cycles=1536 load=617 run=794 output_blocked=181
+[CASE PASS] fused_dw11 bytes=784 mac_bytes=0 cycle=727192
+[CASE] pw_tail_clear cycle=727192
+[TIMING] pw_tail_clear hardware_cycles=437
+[PERF] pw_tail_clear hardware_cycles=437 load=162 run=179 output_blocked=45
+[CASE PASS] pw_tail_clear bytes=48 mac_bytes=0 cycle=732600
+[CASE] move_pool_512 cycle=732600
+[TIMING] move_pool_512 hardware_cycles=8911
+[PERF] move_pool_512 hardware_cycles=8911 load=0 run=8826 output_blocked=0
+[CASE PASS] move_pool_512 bytes=16384 mac_bytes=0 cycle=888704
+[CASE] move_pool_odd cycle=888704
+[TIMING] move_pool_odd hardware_cycles=285
+[PERF] move_pool_odd hardware_cycles=285 load=0 run=207 output_blocked=0
+[CASE PASS] move_pool_odd bytes=192 mac_bytes=0 cycle=895168
+[CASE] move_up_256 cycle=895168
+[CASE PASS] RX_clock_paused compute_cycles=1000 accepted_inputs=138
+[TIMING] move_up_256 hardware_cycles=16112
+[PERF] move_up_256 hardware_cycles=16112 load=0 run=16028 output_blocked=3469
+[CASE PASS] move_up_256 bytes=131072 mac_bytes=0 cycle=938648
+[CASE] move_up_tail cycle=938648
+[TIMING] move_up_tail hardware_cycles=222
+[PERF] move_up_tail hardware_cycles=222 load=0 run=134 output_blocked=0
+[CASE PASS] move_up_tail bytes=576 mac_bytes=0 cycle=948269
+[CASE] move_concat cycle=948269
+[TIMING] move_concat hardware_cycles=8252
+[PERF] move_concat hardware_cycles=8252 load=0 run=8167 output_blocked=0
+[CASE PASS] move_concat bytes=40960 mac_bytes=0 cycle=981056
+[CASE] move_concat_tail cycle=981056
+[TIMING] move_concat_tail hardware_cycles=272
+[PERF] move_concat_tail hardware_cycles=272 load=0 run=183 output_blocked=0
+[CASE PASS] move_concat_tail bytes=576 mac_bytes=0 cycle=990677
+[CASE] move_concat_odd cycle=990677
+[TIMING] move_concat_odd hardware_cycles=266
+[PERF] move_concat_odd hardware_cycles=266 load=0 run=161 output_blocked=0
+[CASE PASS] move_concat_odd bytes=432 mac_bytes=0 cycle=999237
+[CASE] move_pool_single cycle=999237
+[TIMING] move_pool_single hardware_cycles=165
+[PERF] move_pool_single hardware_cycles=165 load=0 run=84 output_blocked=0
+[CASE PASS] move_pool_single bytes=16 mac_bytes=0 cycle=1004381
+[TB PASSED] 全部数据验证一致 cases=21 cycles=1004381 rom_reads=1032 ddr_reads=440 ddr_writes=256
+$finish called at time : 3013144 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Move_Clock/tb_move_rpc.sv" Line 459
+INFO: xsimkernel Simulation Memory Usage: 233088 KB (Peak: 233088 KB), Simulation CPU Usage: 3624 ms

@@ -1,0 +1,8 @@
+run,case,slices,vol2_layout,commands,reasoning_s,receive_s,operator_s,gather_s,classify_s,cache_hit_pct,pending_peak,output_sha256_prefix,source
+A-01,A,334,3,39312/39312,769.015,13.11,428.553,202.243,138.145,36.28,4,3304aa80,history/pc_fpga_run_history.json
+A-02,A,334,4,39312/39312,596.172,13.578,428.37,30.221,137.471,96.87,4,3304aa80,history/pc_fpga_run_history.json
+A-03,A,334,4,39312/39312,596.922,13.406,428.813,30.234,137.654,96.87,4,3304aa80,history/pc_fpga_run_history.json
+A-04,A,334,4,39312/39312,486.625,13.578,415.213,30.227,41.076,96.87,8,3304aa80,history/pc_fpga_run_history.json
+B-01,B,245,4,30090/30090,364.5,9.64,311.606,22.629,30.154,96.88,8,c62cecde,history/pc_fpga_run_history.json
+A-05,A,334,n/a,39312/39312,487.069,18.735,415.269,30.226,41.009,96.87,n/a,3304aa80,full_volume/case_a
+C-01,C,245,n/a,30090/30090,364.088,12.699,311.606,22.207,30.098,96.87,n/a,34bc5043,full_volume/case_c

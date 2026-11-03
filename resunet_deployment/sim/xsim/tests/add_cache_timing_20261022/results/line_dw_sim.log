@@ -1,0 +1,39 @@
+[info] entering thin client - BEEP WHIRR
+[info] starting sbt server in the background
+[info] use 'sbt shutdown' to shutdown the server
+[info]  
+[info] welcome to sbt 2.0.10 (Eclipse Adoptium Java 17.0.20.1)
+[info] loading project definition from /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Line_DW_Cascade/project
+[info] set current project to line_dw_cascade (in build file:/mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Line_DW_Cascade/)
+[info] compiling 5 Scala sources to /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Line_DW_Cascade/target/out/jvm/scala-2.13.14/line_dw_cascade/classes ...
+[info] done compiling
+[info] running (fork) LineDwCascadeSim 
+[Runtime] SpinalHDL v1.12.3    git head : 591e64062329e5e2e2b81f4d52422948053edb97
+[Runtime] JVM max memory : 2048.0MiB
+[Runtime] Current date : 2026.10.22 16:47:59
+[Progress] at 0.000 : Elaborate components
+[Progress] at 1.492 : Checks and transforms
+[Progress] at 2.085 : Generate Verilog to ./simWorkspace/tmp/job_1
+[Warning] 9612 signals were pruned. You can call printPruned on the backend report to get more informations.
+[Done] at 2.712
+[Progress] Simulation workspace in /mnt/e/FPGA_Prj/Xilinx/Model_Deployment/sim/Op_Sim/Line_DW_Cascade/./simWorkspace/LineDwCascadeTop
+[Progress] Verilator compilation started
+[Progress] Verilator compilation done in 111925.693 ms
+[Progress] Start LineDwCascadeTop test simulation with seed 544598327
+[Error] Simulation failed at time=1310
+Exception in thread "main" spinal.sim.SimFailure: LineBuffer3 padding/window mismatch index=28 group=1 row=3 col=0 cell=0,0 expected=0x0 actual=0x500003a000000003000000000 window=[500003a000000003000000000,130000002c000000003300000000,1a00000030000000003e00000000,2400003c000000002c00000c00,15000031000000002100000000,c000031000000002f00000000,0,0,0] inputCycles=[29,50,51,52,53,56,57,58]
+	at spinal.core.sim.package$.simFailure(package.scala:214)
+	at LineDwCascadeSim$.fail(LineDwCascadeSim.scala:164)
+	at LineDwCascadeSim$.$anonfun$new$20(LineDwCascadeSim.scala:351)
+	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:190)
+	at LineDwCascadeSim$.$anonfun$new$19(LineDwCascadeSim.scala:347)
+	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:190)
+	at LineDwCascadeSim$.$anonfun$new$16(LineDwCascadeSim.scala:347)
+	at LineDwCascadeSim$.$anonfun$new$16$adapted(LineDwCascadeSim.scala:264)
+	at spinal.core.sim.SimCompiled.$anonfun$doSimApi$2(SimBootstraps.scala:626)
+	at spinal.sim.SimManager.threadBody$1(SimManager.scala:246)
+	at spinal.sim.SimManager.$anonfun$run$1(SimManager.scala:249)
+	at spinal.sim.SimThread.$anonfun$jvmThread$1(SimThread.scala:90)
+	at spinal.sim.JvmThread.run(SimManager.scala:51)
+[error] sbt server disconnected
+Exception in thread "sbt-serverconnection-0" nonzero exit code returned from runner: 1[0J

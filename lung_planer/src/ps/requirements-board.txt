@@ -1,0 +1,7 @@
+# Versions already reported installed on KV260 in the separate frontend venv.
+# Documentation only: launch.sh does not run pip or touch the PYNQ environment.
+PySide6==6.7.3
+numpy==1.26.4
+pydicom==3.0.2
+Pillow==11.3.0
+psutil==7.2.2

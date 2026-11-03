@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"exit_code\": 0,\n  \"output\": \"TOP_GENERIC=\\nRPC_GENERIC=FAST=1\\nSIM1_RUNTIME=0ns\\nPART=xcku5p-ffvb676-2-i\\nIP_LOCKED=0\\nIP_FILE=e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op12_add_cache_bram/doc/blk_mem_gen_v8_4_changelog.txt EXISTS=1\\nIP_FILE=e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op12_add_cache_bram/op12_add_cache_bram.vho EXISTS=1\\nIP_FILE=e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op12_add_cache_bram/op12_add_cache_bram.veo EXISTS=1\\nIP_FILE=e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op12_add_cache_bram/op12_add_cache_bram_sv.sveo EXISTS=1\\nIP_FILE=e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op12_add_cache_bram/simulation/blk_mem_gen_v8_4.v EXISTS=1\\nIP_FILE=e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op12_add_cache_bram/sim/op12_add_cache_bram.v EXISTS=1\\nIP_FILE=e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op12_add_cache_bram/op12_add_cache_bram_ooc.xdc EXISTS=1\\nIP_FILE=e:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.gen/sources_1/ip/op12_add_cache_bram/synth/op12_add_cache_bram.vhd EXISTS=1\",\n  \"task_progress\": \"2/5: MCP 自校验回归、周期对照和生产接入检查 (active, 17m3s) | Next: 清理产物、恢复仿真配置并形成交付记录\"\n}"
+    }
+  ]
+}

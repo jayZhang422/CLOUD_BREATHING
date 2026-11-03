@@ -1,0 +1,80 @@
+{
+  "scope": "Explicit named simulation waveform/CSV files only; no source, vector, PASS evidence or historical output deleted",
+  "removed_files": 12,
+  "removed_bytes": 414007483,
+  "entries": [
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_1\\behav\\xsim\\sim_rx_trace.csv",
+      "before_bytes": 32368619,
+      "removed": true
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_1\\behav\\xsim\\sim_trace_fast.csv",
+      "before_bytes": 8929652,
+      "removed": true
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_1\\behav\\xsim\\sim_trace_slow.csv",
+      "before_bytes": 13576421,
+      "removed": true
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_1\\behav\\xsim\\sim_trace.csv",
+      "before_bytes": 264074,
+      "removed": true
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_1\\behav\\xsim\\waveform.vcd",
+      "before_bytes": 935,
+      "removed": true
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_1\\behav\\xsim\\tb_ethernet_ddr_behav.wdb",
+      "before_bytes": 85358480,
+      "removed": true
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_1\\behav\\xsim\\tb_hotspot_dw_behav.wdb",
+      "before_bytes": 23986091,
+      "removed": true
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_1\\behav\\xsim\\tb_pwstream_op12_behav.wdb",
+      "before_bytes": 11393072,
+      "removed": true
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_1\\behav\\xsim\\tb_volume_board_behav.wdb",
+      "before_bytes": 8529258,
+      "removed": true
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_1\\behav\\xsim\\tb_volume_rpc_behav.wdb",
+      "before_bytes": 221043096,
+      "removed": true
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_1\\behav\\xsim\\tb_volume_scheduler_behav.wdb",
+      "before_bytes": 8154167,
+      "removed": true
+    },
+    {
+      "path": "E:\\FPGA_Prj\\Xilinx\\Model_Deployment\\prj\\Model_Deployment.sim\\sim_1\\behav\\xsim\\tb_volume_transform_behav.wdb",
+      "before_bytes": 403618,
+      "removed": true
+    }
+  ],
+  "retained_snapshots": [
+    "tb_ethernet_ddr_behav",
+    "tb_hotspot_dw_behav",
+    "tb_mkdc_behav",
+    "tb_op_reader_timing_behav",
+    "tb_pwstream_op12_behav",
+    "tb_volume_board_behav",
+    "tb_volume_rpc_behav",
+    "tb_volume_scheduler_behav",
+    "tb_volume_transform_behav",
+    "xil_defaultlib"
+  ],
+  "policy_note": "Batch recursive directory deletion rejected by automatic policy; explicit file-only deletion succeeded. Snapshot directories retained."
+}

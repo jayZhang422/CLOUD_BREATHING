@@ -1,0 +1,58 @@
+{
+  "verdict": "PASS",
+  "golden_cases": 66,
+  "new_cases": 14,
+  "legacy_cases": 52,
+  "result_bytes": 4727904,
+  "mac_bytes": 19776,
+  "runs": [
+    {
+      "verdict": "PASS",
+      "exit_code": 0,
+      "cases": 13,
+      "seed": 20261016,
+      "ui_cycles": 2437696,
+      "up_words_including_aborted": 4489,
+      "up_stall_cycles": 91737,
+      "simulation_ns": 7313088,
+      "evidence": "pass_quick/simulate.log"
+    },
+    {
+      "verdict": "PASS",
+      "exit_code": 0,
+      "cases": 1,
+      "seed": 20261017,
+      "ui_cycles": 18152709,
+      "up_words": 262144,
+      "up_stall_cycles": 5387280,
+      "result_bytes": 4194304,
+      "simulation_ns": 54458128,
+      "evidence": "pass_max/simulate.log"
+    },
+    {
+      "verdict": "PASS",
+      "exit_code": 0,
+      "cases": 52,
+      "ui_cycles": 5870053,
+      "result_bytes": 371744,
+      "mac_bytes": 19776,
+      "simulation_ns": 17610160,
+      "rom_reads": 4912,
+      "ddr_reads": 71998,
+      "ddr_writes": 22196,
+      "evidence": "pass_52/simulate.log"
+    }
+  ],
+  "existing_pc_ethernet_ddr_and_weights_unchanged": true,
+  "generated_upsample_identical": true,
+  "trace_csv_read": false,
+  "synthesis_implementation_bitstream_executed": false,
+  "sta_125mhz_verified": false,
+  "cleanup": {
+    "removed_bytes": 3380478679,
+    "remaining_small_artifacts_bytes": 18151681,
+    "recursive_directory_cleanup": "rejected by automatic approval: blocked by policy",
+    "explicit_large_file_cleanup": "success",
+    "waveform_and_trace_files_remaining": 0
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "seed": 20261014,
+  "descriptor_cases": 1004,
+  "valid_descriptors": 562,
+  "writer_cases": 608,
+  "writer_beats": 2991,
+  "offsets": 32,
+  "sha256": {
+    "descriptors.hex": "35345dc7b229d43dacd176276f503d7249a2515f22561903afec7a89dd6640fd",
+    "descriptor_golden.hex": "02fe147c57e5b81be2281d1101628cc20d79a550c548b93fb5175583c8616bf0",
+    "writer_golden.hex": "d81770a68d1259f79c103d8cd0b1e214bde72317d61d60ccabfc65ff6789d4f0",
+    "writer_stimulus.hex": "6b6ed57874df19db888f51892b4c24eb86ef86ce1fce5453dcc89940eb599efe"
+  }
+}

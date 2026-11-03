@@ -1,0 +1,15 @@
+run 2ms
+[CACHE PASSED] small_tail enabled=1 fast=1 Add_reads_32B=16 bytes=512
+[CASE PASSED] shared op12 small_tail bytes=1056 writes=1056 run_cycles=884 independent-Golden
+[CACHE PASSED] small_tail enabled=1 fast=0 Add_reads_32B=16 bytes=512
+[CASE PASSED] shared op12 small_tail bytes=1056 writes=1056 run_cycles=1283 independent-Golden
+[CACHE PASSED] max_banks enabled=1 fast=1 Add_reads_32B=256 bytes=8192
+[CASE PASSED] shared op12 max_banks bytes=8704 writes=8704 run_cycles=154834 independent-Golden
+[RUNNER PASSED] op12 cases=2 mem_stalls=13371 p12_max_addr=511 add_checks=610 independent-Golden
+[CACHE PASSED] max_banks enabled=1 fast=0 Add_reads_32B=256 bytes=8192
+[CASE PASSED] shared op12 max_banks bytes=8704 writes=8704 run_cycles=236198 independent-Golden
+[RUNNER PASSED] op12 cases=2 mem_stalls=71146 p12_max_addr=511 add_checks=610 independent-Golden
+[TB PASSED] 全部数据验证一致 op12 two frozen Golden cases fast+slow DDR 250MHz
+$finish called at time : 950060 ns : File "E:/FPGA_Prj/Xilinx/Model_Deployment/prj/Model_Deployment.srcs/sim_1/new/Hotspot_PE32_20261024/tb_hotspot_op12.sv" Line 227
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:01:24 . Memory (MB): peak = 4113.215 ; gain = 0.000
+INFO: [MCP 00-101] ===MCP_CMD_END:1793006091438492000-33:0===

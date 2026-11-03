@@ -1,0 +1,2158 @@
+[
+  {
+    "slack_ns": -0.198,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[517]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 16
+  },
+  {
+    "slack_ns": -0.198,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[530]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 170
+  },
+  {
+    "slack_ns": -0.198,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[590]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 324
+  },
+  {
+    "slack_ns": -0.198,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[681]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 478
+  },
+  {
+    "slack_ns": -0.198,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[631]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 632
+  },
+  {
+    "slack_ns": -0.198,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[785]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 786
+  },
+  {
+    "slack_ns": -0.198,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[962]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 940
+  },
+  {
+    "slack_ns": -0.198,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[989]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 1094
+  },
+  {
+    "slack_ns": -0.186,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[693]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 1248
+  },
+  {
+    "slack_ns": -0.184,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[29]/D",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 1402
+  },
+  {
+    "slack_ns": -0.182,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[181]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 1568
+  },
+  {
+    "slack_ns": -0.182,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[21]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 1722
+  },
+  {
+    "slack_ns": -0.181,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1205]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 1876
+  },
+  {
+    "slack_ns": -0.175,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[309]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 2030
+  },
+  {
+    "slack_ns": -0.173,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[789]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 2184
+  },
+  {
+    "slack_ns": -0.173,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[119]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 2338
+  },
+  {
+    "slack_ns": -0.157,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[565]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 2496
+  },
+  {
+    "slack_ns": -0.126,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[100]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 2650
+  },
+  {
+    "slack_ns": -0.126,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[265]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 2804
+  },
+  {
+    "slack_ns": -0.126,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[358]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 2958
+  },
+  {
+    "slack_ns": -0.126,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[478]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 3112
+  },
+  {
+    "slack_ns": -0.125,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[26]/D",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 3266
+  },
+  {
+    "slack_ns": -0.115,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[576]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 3432
+  },
+  {
+    "slack_ns": -0.115,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[777]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 3586
+  },
+  {
+    "slack_ns": -0.115,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[779]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 3740
+  },
+  {
+    "slack_ns": -0.115,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[804]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 3894
+  },
+  {
+    "slack_ns": -0.114,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[533]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 4048
+  },
+  {
+    "slack_ns": -0.111,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1007]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 4202
+  },
+  {
+    "slack_ns": -0.111,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[841]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 4356
+  },
+  {
+    "slack_ns": -0.111,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[856]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 4510
+  },
+  {
+    "slack_ns": -0.111,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[990]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 4664
+  },
+  {
+    "slack_ns": -0.104,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[426]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/half_r_reg/D",
+    "category": "stream writer start",
+    "report_line": 4818
+  },
+  {
+    "slack_ns": -0.103,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1045]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 4980
+  },
+  {
+    "slack_ns": -0.099,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[277]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 5134
+  },
+  {
+    "slack_ns": -0.097,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[712]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 5288
+  },
+  {
+    "slack_ns": -0.097,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[715]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 5442
+  },
+  {
+    "slack_ns": -0.097,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[807]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 5596
+  },
+  {
+    "slack_ns": -0.097,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[821]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 5750
+  },
+  {
+    "slack_ns": -0.096,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[768]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 5904
+  },
+  {
+    "slack_ns": -0.095,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[774]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 6058
+  },
+  {
+    "slack_ns": -0.095,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[776]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 6212
+  },
+  {
+    "slack_ns": -0.095,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[802]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 6366
+  },
+  {
+    "slack_ns": -0.09,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[27]/D",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 6520
+  },
+  {
+    "slack_ns": -0.085,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[426]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/error_o_reg/D",
+    "category": "stream writer start",
+    "report_line": 6686
+  },
+  {
+    "slack_ns": -0.085,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1173]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 6848
+  },
+  {
+    "slack_ns": -0.083,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[28]/D",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 7002
+  },
+  {
+    "slack_ns": -0.076,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1717]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 7168
+  },
+  {
+    "slack_ns": -0.075,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[661]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 7322
+  },
+  {
+    "slack_ns": -0.074,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1557]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 7476
+  },
+  {
+    "slack_ns": -0.073,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1742]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 7630
+  },
+  {
+    "slack_ns": -0.073,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1777]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 7784
+  },
+  {
+    "slack_ns": -0.073,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1781]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 7938
+  },
+  {
+    "slack_ns": -0.073,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1872]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 8092
+  },
+  {
+    "slack_ns": -0.072,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[53]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 8246
+  },
+  {
+    "slack_ns": -0.071,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[606]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 8400
+  },
+  {
+    "slack_ns": -0.071,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[608]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 8554
+  },
+  {
+    "slack_ns": -0.071,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[713]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 8708
+  },
+  {
+    "slack_ns": -0.071,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[716]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 8862
+  },
+  {
+    "slack_ns": -0.071,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[740]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 9016
+  },
+  {
+    "slack_ns": -0.071,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[895]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 9170
+  },
+  {
+    "slack_ns": -0.066,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[169]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 9324
+  },
+  {
+    "slack_ns": -0.066,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[292]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 9478
+  },
+  {
+    "slack_ns": -0.066,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[321]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 9632
+  },
+  {
+    "slack_ns": -0.066,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[353]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 9786
+  },
+  {
+    "slack_ns": -0.066,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[405]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 9940
+  },
+  {
+    "slack_ns": -0.066,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[477]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 10094
+  },
+  {
+    "slack_ns": -0.066,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[486]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 10248
+  },
+  {
+    "slack_ns": -0.066,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[499]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 10402
+  },
+  {
+    "slack_ns": -0.064,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1010]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 10556
+  },
+  {
+    "slack_ns": -0.064,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[688]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 10710
+  },
+  {
+    "slack_ns": -0.064,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[761]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 10864
+  },
+  {
+    "slack_ns": -0.064,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[772]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 11018
+  },
+  {
+    "slack_ns": -0.064,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[729]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 11172
+  },
+  {
+    "slack_ns": -0.064,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[749]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 11326
+  },
+  {
+    "slack_ns": -0.064,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[913]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 11480
+  },
+  {
+    "slack_ns": -0.064,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[970]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 11634
+  },
+  {
+    "slack_ns": -0.063,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[7]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_responses/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENARDEN",
+    "category": "PW response backpressure",
+    "report_line": 11788
+  },
+  {
+    "slack_ns": -0.062,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[103]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 11958
+  },
+  {
+    "slack_ns": -0.062,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[54]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 12116
+  },
+  {
+    "slack_ns": -0.061,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/part_r_reg[0]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 12274
+  },
+  {
+    "slack_ns": -0.061,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1356]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 12432
+  },
+  {
+    "slack_ns": -0.061,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1395]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 12586
+  },
+  {
+    "slack_ns": -0.061,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1453]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 12740
+  },
+  {
+    "slack_ns": -0.061,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1504]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 12894
+  },
+  {
+    "slack_ns": -0.06,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/part_r_reg[1]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 13048
+  },
+  {
+    "slack_ns": -0.06,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[127]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 13206
+  },
+  {
+    "slack_ns": -0.06,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[62]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 13364
+  },
+  {
+    "slack_ns": -0.06,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[78]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 13522
+  },
+  {
+    "slack_ns": -0.059,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[18]/D",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 13680
+  },
+  {
+    "slack_ns": -0.055,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 13842
+  },
+  {
+    "slack_ns": -0.055,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 13992
+  },
+  {
+    "slack_ns": -0.055,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 14142
+  },
+  {
+    "slack_ns": -0.054,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 14292
+  },
+  {
+    "slack_ns": -0.054,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 14442
+  },
+  {
+    "slack_ns": -0.054,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 14592
+  },
+  {
+    "slack_ns": -0.053,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[106]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 14742
+  },
+  {
+    "slack_ns": -0.053,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[71]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 14900
+  },
+  {
+    "slack_ns": -0.053,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 15058
+  },
+  {
+    "slack_ns": -0.053,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 15208
+  },
+  {
+    "slack_ns": -0.053,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 15358
+  },
+  {
+    "slack_ns": -0.052,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 15508
+  },
+  {
+    "slack_ns": -0.052,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 15658
+  },
+  {
+    "slack_ns": -0.052,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 15808
+  },
+  {
+    "slack_ns": -0.052,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[51]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 15958
+  },
+  {
+    "slack_ns": -0.052,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[99]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 16116
+  },
+  {
+    "slack_ns": -0.051,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1324]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 16274
+  },
+  {
+    "slack_ns": -0.051,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1454]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 16428
+  },
+  {
+    "slack_ns": -0.051,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1515]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 16582
+  },
+  {
+    "slack_ns": -0.051,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1523]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 16736
+  },
+  {
+    "slack_ns": -0.05,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1006]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 16890
+  },
+  {
+    "slack_ns": -0.05,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1021]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 17044
+  },
+  {
+    "slack_ns": -0.05,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[527]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 17198
+  },
+  {
+    "slack_ns": -0.05,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[672]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 17352
+  },
+  {
+    "slack_ns": -0.049,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 17506
+  },
+  {
+    "slack_ns": -0.049,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 17656
+  },
+  {
+    "slack_ns": -0.049,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 17806
+  },
+  {
+    "slack_ns": -0.049,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 17956
+  },
+  {
+    "slack_ns": -0.049,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[196]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 18106
+  },
+  {
+    "slack_ns": -0.049,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[354]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 18260
+  },
+  {
+    "slack_ns": -0.049,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[493]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 18414
+  },
+  {
+    "slack_ns": -0.049,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 18568
+  },
+  {
+    "slack_ns": -0.049,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 18718
+  },
+  {
+    "slack_ns": -0.049,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 18868
+  },
+  {
+    "slack_ns": -0.049,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 19018
+  },
+  {
+    "slack_ns": -0.049,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[724]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 19168
+  },
+  {
+    "slack_ns": -0.049,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[727]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 19322
+  },
+  {
+    "slack_ns": -0.049,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[730]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 19476
+  },
+  {
+    "slack_ns": -0.049,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[840]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 19630
+  },
+  {
+    "slack_ns": -0.048,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 19784
+  },
+  {
+    "slack_ns": -0.048,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 19934
+  },
+  {
+    "slack_ns": -0.048,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 20084
+  },
+  {
+    "slack_ns": -0.048,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 20234
+  },
+  {
+    "slack_ns": -0.048,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 20384
+  },
+  {
+    "slack_ns": -0.048,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 20534
+  },
+  {
+    "slack_ns": -0.048,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 20684
+  },
+  {
+    "slack_ns": -0.048,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 20834
+  },
+  {
+    "slack_ns": -0.048,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 20984
+  },
+  {
+    "slack_ns": -0.048,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 21134
+  },
+  {
+    "slack_ns": -0.048,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 21284
+  },
+  {
+    "slack_ns": -0.048,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 21434
+  },
+  {
+    "slack_ns": -0.047,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1252]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 21584
+  },
+  {
+    "slack_ns": -0.047,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1345]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 21738
+  },
+  {
+    "slack_ns": -0.047,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/state_r_reg[1]/C",
+    "destination": "g_ethernet.u_op_board/u_service/status_r_reg[1]/CE",
+    "category": "service status CE",
+    "report_line": 21892
+  },
+  {
+    "slack_ns": -0.047,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/state_r_reg[1]/C",
+    "destination": "g_ethernet.u_op_board/u_service/status_r_reg[2]/CE",
+    "category": "service status CE",
+    "report_line": 22030
+  },
+  {
+    "slack_ns": -0.046,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 22168
+  },
+  {
+    "slack_ns": -0.046,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 22318
+  },
+  {
+    "slack_ns": -0.046,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 22468
+  },
+  {
+    "slack_ns": -0.046,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 22618
+  },
+  {
+    "slack_ns": -0.044,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[72]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 22768
+  },
+  {
+    "slack_ns": -0.044,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[95]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 22926
+  },
+  {
+    "slack_ns": -0.044,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[643]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 23084
+  },
+  {
+    "slack_ns": -0.044,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[660]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 23238
+  },
+  {
+    "slack_ns": -0.044,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[679]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 23392
+  },
+  {
+    "slack_ns": -0.044,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[732]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 23546
+  },
+  {
+    "slack_ns": -0.041,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[122]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 23700
+  },
+  {
+    "slack_ns": -0.041,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1813]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 23858
+  },
+  {
+    "slack_ns": -0.04,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[76]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 24012
+  },
+  {
+    "slack_ns": -0.039,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 24170
+  },
+  {
+    "slack_ns": -0.039,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 24320
+  },
+  {
+    "slack_ns": -0.039,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 24470
+  },
+  {
+    "slack_ns": -0.039,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 24620
+  },
+  {
+    "slack_ns": -0.038,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 24770
+  },
+  {
+    "slack_ns": -0.038,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 24920
+  },
+  {
+    "slack_ns": -0.038,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 25070
+  },
+  {
+    "slack_ns": -0.038,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 25220
+  },
+  {
+    "slack_ns": -0.036,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[109]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 25370
+  },
+  {
+    "slack_ns": -0.036,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[243]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 25524
+  },
+  {
+    "slack_ns": -0.036,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[495]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 25678
+  },
+  {
+    "slack_ns": -0.036,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[82]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 25832
+  },
+  {
+    "slack_ns": -0.035,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[7]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_dw5/weights_r_reg[823]/D",
+    "category": "DW5 weight input",
+    "report_line": 25986
+  },
+  {
+    "slack_ns": -0.034,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1042]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 26112
+  },
+  {
+    "slack_ns": -0.034,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1195]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 26266
+  },
+  {
+    "slack_ns": -0.034,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1327]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 26420
+  },
+  {
+    "slack_ns": -0.034,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1392]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 26574
+  },
+  {
+    "slack_ns": -0.033,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/d_r_reg[7]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_responses/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENARDEN",
+    "category": "PW response backpressure",
+    "report_line": 26728
+  },
+  {
+    "slack_ns": -0.03,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_reader/part_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[3]/D",
+    "category": "legacy reader cache selection",
+    "report_line": 26898
+  },
+  {
+    "slack_ns": -0.029,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw_shared/project/weightWriteData_r_reg[297]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw_shared/skip/pwWeightBank_1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/DINADIN[0]",
+    "category": "shared project/skip weight register routing",
+    "report_line": 27040
+  },
+  {
+    "slack_ns": -0.028,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1346]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 27146
+  },
+  {
+    "slack_ns": -0.027,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[0]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 27300
+  },
+  {
+    "slack_ns": -0.027,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[1]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 27458
+  },
+  {
+    "slack_ns": -0.027,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[2]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 27616
+  },
+  {
+    "slack_ns": -0.027,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[4]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 27774
+  },
+  {
+    "slack_ns": -0.027,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[301]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 27932
+  },
+  {
+    "slack_ns": -0.027,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[303]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 28086
+  },
+  {
+    "slack_ns": -0.027,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1233]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 28240
+  },
+  {
+    "slack_ns": -0.027,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1238]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 28394
+  },
+  {
+    "slack_ns": -0.027,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1248]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 28548
+  },
+  {
+    "slack_ns": -0.027,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1288]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 28702
+  },
+  {
+    "slack_ns": -0.027,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1131]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 28856
+  },
+  {
+    "slack_ns": -0.027,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1169]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 29010
+  },
+  {
+    "slack_ns": -0.027,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1197]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 29164
+  },
+  {
+    "slack_ns": -0.027,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1323]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 29318
+  },
+  {
+    "slack_ns": -0.025,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/state_r_reg[1]/C",
+    "destination": "g_ethernet.u_op_board/u_service/status_r_reg[0]/CE",
+    "category": "service status CE",
+    "report_line": 29472
+  },
+  {
+    "slack_ns": -0.024,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1291]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 29610
+  },
+  {
+    "slack_ns": -0.024,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1326]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 29764
+  },
+  {
+    "slack_ns": -0.024,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1399]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 29918
+  },
+  {
+    "slack_ns": -0.024,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1412]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 30072
+  },
+  {
+    "slack_ns": -0.024,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[130]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 30226
+  },
+  {
+    "slack_ns": -0.024,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[262]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 30380
+  },
+  {
+    "slack_ns": -0.024,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[271]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 30534
+  },
+  {
+    "slack_ns": -0.024,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[288]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 30688
+  },
+  {
+    "slack_ns": -0.023,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 30842
+  },
+  {
+    "slack_ns": -0.023,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 30992
+  },
+  {
+    "slack_ns": -0.023,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 31142
+  },
+  {
+    "slack_ns": -0.023,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 31292
+  },
+  {
+    "slack_ns": -0.022,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[172]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 31442
+  },
+  {
+    "slack_ns": -0.022,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[174]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 31596
+  },
+  {
+    "slack_ns": -0.022,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[47]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 31750
+  },
+  {
+    "slack_ns": -0.021,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 31904
+  },
+  {
+    "slack_ns": -0.021,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 32054
+  },
+  {
+    "slack_ns": -0.021,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 32204
+  },
+  {
+    "slack_ns": -0.021,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 32354
+  },
+  {
+    "slack_ns": -0.021,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw_shared/project/weightWriteData_r_reg[297]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw_shared/skip/pwWeightBank/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/DINADIN[0]",
+    "category": "shared project/skip weight register routing",
+    "report_line": 32504
+  },
+  {
+    "slack_ns": -0.019,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1090]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 32610
+  },
+  {
+    "slack_ns": -0.019,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1147]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 32764
+  },
+  {
+    "slack_ns": -0.019,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1347]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 32918
+  },
+  {
+    "slack_ns": -0.019,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1527]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 33072
+  },
+  {
+    "slack_ns": -0.019,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw_shared/project/weightWriteData_r_reg[294]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw_shared/skip/pwWeightBank/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/DINBDIN[30]",
+    "category": "shared project/skip weight register routing",
+    "report_line": 33226
+  },
+  {
+    "slack_ns": -0.019,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/state_r_reg[0]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 33332
+  },
+  {
+    "slack_ns": -0.018,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1312]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 33486
+  },
+  {
+    "slack_ns": -0.018,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1451]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 33640
+  },
+  {
+    "slack_ns": -0.018,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1458]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 33794
+  },
+  {
+    "slack_ns": -0.018,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1512]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 33948
+  },
+  {
+    "slack_ns": -0.018,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1301]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 34102
+  },
+  {
+    "slack_ns": -0.017,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[852]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 34256
+  },
+  {
+    "slack_ns": -0.017,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[902]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 34410
+  },
+  {
+    "slack_ns": -0.017,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[906]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 34564
+  },
+  {
+    "slack_ns": -0.017,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[979]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 34718
+  },
+  {
+    "slack_ns": -0.016,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[19]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 34872
+  },
+  {
+    "slack_ns": -0.016,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[347]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 35026
+  },
+  {
+    "slack_ns": -0.016,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[454]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 35180
+  },
+  {
+    "slack_ns": -0.016,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[99]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 35334
+  },
+  {
+    "slack_ns": -0.016,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw_shared/project/weightWriteData_r_reg[297]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw_shared/skip/pwWeightBank_1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/DINADIN[0]",
+    "category": "shared project/skip weight register routing",
+    "report_line": 35488
+  },
+  {
+    "slack_ns": -0.016,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[246]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 35594
+  },
+  {
+    "slack_ns": -0.016,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[250]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 35748
+  },
+  {
+    "slack_ns": -0.016,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[480]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 35902
+  },
+  {
+    "slack_ns": -0.016,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[482]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 36056
+  },
+  {
+    "slack_ns": -0.014,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[30]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 36210
+  },
+  {
+    "slack_ns": -0.014,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[195]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 36368
+  },
+  {
+    "slack_ns": -0.014,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[327]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 36522
+  },
+  {
+    "slack_ns": -0.014,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[421]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 36676
+  },
+  {
+    "slack_ns": -0.014,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[464]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 36830
+  },
+  {
+    "slack_ns": -0.014,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[229]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 36984
+  },
+  {
+    "slack_ns": -0.014,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[348]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 37138
+  },
+  {
+    "slack_ns": -0.014,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[363]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 37292
+  },
+  {
+    "slack_ns": -0.014,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[492]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 37446
+  },
+  {
+    "slack_ns": -0.014,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[739]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 37600
+  },
+  {
+    "slack_ns": -0.014,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[746]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 37754
+  },
+  {
+    "slack_ns": -0.014,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[885]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 37908
+  },
+  {
+    "slack_ns": -0.014,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[963]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 38062
+  },
+  {
+    "slack_ns": -0.012,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw_shared/project/weightWriteData_r_reg[196]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_bank/u_pw_shared/skip/pwWeightBank_2/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/prim_noinit.ram/DEVICE_8SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/DINBDIN[7]",
+    "category": "shared project/skip weight register routing",
+    "report_line": 38216
+  },
+  {
+    "slack_ns": -0.012,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1245]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 38322
+  },
+  {
+    "slack_ns": -0.012,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1405]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 38476
+  },
+  {
+    "slack_ns": -0.012,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1444]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 38630
+  },
+  {
+    "slack_ns": -0.012,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1455]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 38784
+  },
+  {
+    "slack_ns": -0.011,
+    "source": "g_ethernet.u_coeff_rom/word_addr_r_reg[11]/C",
+    "destination": "g_ethernet.u_coeff_rom/u_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[56].ram.r/prim_init.ram/DEVICE_8SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[14]",
+    "category": "ROM address routing",
+    "report_line": 38938
+  },
+  {
+    "slack_ns": -0.01,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1914]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 39044
+  },
+  {
+    "slack_ns": -0.01,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1924]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 39198
+  },
+  {
+    "slack_ns": -0.01,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[2008]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 39352
+  },
+  {
+    "slack_ns": -0.01,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[2045]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 39506
+  },
+  {
+    "slack_ns": -0.009,
+    "source": "g_ethernet.u_coeff_rom/word_addr_r_reg[11]/C",
+    "destination": "g_ethernet.u_coeff_rom/u_rom/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/prim_init.ram/DEVICE_8SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[14]",
+    "category": "ROM address routing",
+    "report_line": 39660
+  },
+  {
+    "slack_ns": -0.009,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1685]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 39766
+  },
+  {
+    "slack_ns": -0.008,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 39920
+  },
+  {
+    "slack_ns": -0.008,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 40070
+  },
+  {
+    "slack_ns": -0.008,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 40220
+  },
+  {
+    "slack_ns": -0.007,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 40370
+  },
+  {
+    "slack_ns": -0.007,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 40520
+  },
+  {
+    "slack_ns": -0.007,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 40670
+  },
+  {
+    "slack_ns": -0.006,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1077]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 40820
+  },
+  {
+    "slack_ns": -0.005,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[809]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 40974
+  },
+  {
+    "slack_ns": -0.005,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[879]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 41128
+  },
+  {
+    "slack_ns": -0.005,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[907]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 41282
+  },
+  {
+    "slack_ns": -0.005,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[983]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 41436
+  },
+  {
+    "slack_ns": -0.005,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[110]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 41590
+  },
+  {
+    "slack_ns": -0.005,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[43]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 41748
+  },
+  {
+    "slack_ns": -0.005,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[64]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 41906
+  },
+  {
+    "slack_ns": -0.005,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[87]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 42064
+  },
+  {
+    "slack_ns": -0.004,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 42222
+  },
+  {
+    "slack_ns": -0.004,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 42372
+  },
+  {
+    "slack_ns": -0.004,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 42522
+  },
+  {
+    "slack_ns": -0.004,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 42672
+  },
+  {
+    "slack_ns": -0.004,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 42822
+  },
+  {
+    "slack_ns": -0.004,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 42972
+  },
+  {
+    "slack_ns": -0.004,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 43122
+  },
+  {
+    "slack_ns": -0.004,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 43272
+  },
+  {
+    "slack_ns": -0.004,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 43422
+  },
+  {
+    "slack_ns": -0.004,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 43572
+  },
+  {
+    "slack_ns": -0.003,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 43722
+  },
+  {
+    "slack_ns": -0.003,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 43872
+  },
+  {
+    "slack_ns": -0.003,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 44022
+  },
+  {
+    "slack_ns": -0.003,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 44172
+  },
+  {
+    "slack_ns": -0.003,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[126]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 44322
+  },
+  {
+    "slack_ns": -0.003,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[84]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 44480
+  },
+  {
+    "slack_ns": -0.003,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 44638
+  },
+  {
+    "slack_ns": -0.003,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 44788
+  },
+  {
+    "slack_ns": -0.003,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_move_writer/u_results/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 44938
+  },
+  {
+    "slack_ns": -0.002,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 45088
+  },
+  {
+    "slack_ns": -0.002,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 45238
+  },
+  {
+    "slack_ns": -0.002,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_writer/u_write_queue/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 45388
+  },
+  {
+    "slack_ns": -0.002,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1845]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 45538
+  },
+  {
+    "slack_ns": -0.001,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[3]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 45692
+  },
+  {
+    "slack_ns": -0.001,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[5]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 45850
+  },
+  {
+    "slack_ns": -0.001,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[6]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 46008
+  },
+  {
+    "slack_ns": -0.001,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_pw_reader/u_requests/U0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/u_reader/result_r_reg[7]/CE",
+    "category": "PW request reuse and shared arbitration",
+    "report_line": 46166
+  },
+  {
+    "slack_ns": -0.001,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1772]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 46324
+  },
+  {
+    "slack_ns": -0.001,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1787]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 46478
+  },
+  {
+    "slack_ns": -0.001,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[1920]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 46632
+  },
+  {
+    "slack_ns": -0.001,
+    "source": "g_ethernet.u_op_board/u_service/u_engine/u_bank/p12_weight_count_r_reg[0]/C",
+    "destination": "g_ethernet.u_op_board/u_service/u_engine/add_params_r_reg[2026]/CE",
+    "category": "op12 phase and Add CE",
+    "report_line": 46786
+  }
+]

@@ -1,0 +1,4 @@
+02000000 784 sim/xsim/tests/rtl_slim_batch2/vectors/fused_dw11/input.hex
+08000000 144 sim/xsim/tests/rtl_slim_batch2/vectors/fused_dw11/weights_a.hex
+08001000 400 sim/xsim/tests/rtl_slim_batch2/vectors/fused_dw11/weights_b.hex
+08002000 256 sim/xsim/tests/rtl_slim_batch2/vectors/fused_dw11/params_data.hex

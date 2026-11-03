@@ -1,0 +1,38 @@
+[CASE PASS] read_only_coefficients
+[CASE] pw_seed
+[CASE PASS] pw_seed
+[CASE] pool_from_pw
+[CASE PASS] pool_from_pw
+[CASE] concat_chain
+[CASE PASS] concat_chain
+[CASE] pw_after_concat
+[CASE PASS] pw_after_concat
+[CASE] tumor_d3_expand_frozen_pixel0
+[CASE PASS] tumor_d3_expand_frozen_pixel0
+[CASE] pw_base64
+[CASE PASS] pw_base64
+[CASE] pw_max_768_512
+[CASE PASS] pw_max_768_512
+[CASE] pw_tail_767_511
+[CASE PASS] pw_tail_767_511
+[CASE] pool_odd_two_groups
+[CASE PASS] pool_odd_two_groups
+[CASE] linebuffer3
+[CASE PASS] linebuffer3
+[CASE] linebuffer5
+[CASE PASS] linebuffer5
+[CASE] element_add_two_groups
+[CASE PASS] element_add_two_groups
+[CASE] shuffle16
+[CASE PASS] shuffle16
+[CASE] pool_groups32
+[CASE PASS] pool_groups32
+[CASE] linebuffer3_groups32
+[CASE PASS] linebuffer3_groups32
+[CASE] linebuffer5_groups32
+[CASE PASS] linebuffer5_groups32
+[CASE] element_add_groups32
+[CASE PASS] element_add_groups32
+[CASE] pw_switch_back
+[CASE PASS] pw_switch_back
+[TB PASSED] all joint cases matched golden data

@@ -1,0 +1,52 @@
+# 操作系统与编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+
+# 仿真与综合产物（均可由仓库中的脚本重新生成）
+# 注意：不要在这里忽略 *.log、*.bin、*.pt、*.bit。
+# 仓库中的运行日志、整数 Golden、冻结权重和 build/flash 下的比特流是提交内容。
+target/
+project/target/
+project/project/
+.bsp/
+obj_dir/
+xsim.dir/
+simWorkspace/
+.Xil/
+*.jou
+*.wdb
+*.vcd
+*.fst
+*.pb
+*.sdb
+*.hex
+*.bin.gz
+# lung_planer 的合成准入向量是 deploy.sh 上板所需，必须提交
+!lung_planer/data/board_vectors/**/*.hex
+
+# Vivado 重建产物（build/create_project.tcl、run_flow.tcl 的输出目录）
+resunet_deployment/build/vivado/
+resunet_deployment/build/out/
+resunet_deployment/build/ethernet_only/
+
+# 上位机运行输出
+resunet_deployment/src/host/python/pc_fpga_app/output/
+
+# 患者数据：真实 CT 不得入库
+*.dcm
+*.nii
+*.nii.gz
+*.mha

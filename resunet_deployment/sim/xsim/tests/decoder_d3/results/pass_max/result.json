@@ -1,0 +1,11 @@
+{
+  "verdict": "PASS",
+  "exit_code": 0,
+  "cases": 1,
+  "seed": 20261017,
+  "ui_cycles": 18152709,
+  "up_words": 262144,
+  "up_stall_cycles": 5387280,
+  "result_bytes": 4194304,
+  "simulation_ns": 54458128
+}

@@ -1,0 +1,18 @@
+Time resolution is 1 ps
+AXIL_READBACK_STROBE_PASS
+DISTANCE_CASE_PASS case=0 queries=50 cycles=10924 reads=283
+DISTANCE_CASE_PASS case=1 queries=50 cycles=149964 reads=3076
+DISTANCE_CASE_PASS case=2 queries=50 cycles=5082030 reads=18347
+DISTANCE_CASE_PASS case=3 queries=50 cycles=7167868 reads=34442
+DISTANCE_CASE_PASS case=4 queries=50 cycles=9510 reads=251
+DISTANCE_CASE_PASS case=5 queries=50 cycles=7216734 reads=34496
+ERROR_CASE_PASS flag=00000001 cycles=0
+ERROR_CASE_PASS flag=00000002 cycles=1
+ERROR_CASE_PASS flag=00000004 cycles=1
+ERROR_CASE_PASS flag=00000008 cycles=13
+ERROR_CASE_PASS flag=00000010 cycles=203
+ERROR_CASE_PASS flag=00000020 cycles=59
+ERROR_CASE_PASS flag=00000040 cycles=13
+CENTERLINE_DISTANCE_CORE_TEST_PASS
+$finish called at time : 196388470 ns : File "E:/FPGA/ESDC/lung_planer/sim/tb/tb_centerline_distance_core.sv" Line 222
+INFO: xsimkernel Simulation Memory Usage: 27744 KB (Peak: 27744 KB), Simulation CPU Usage: 16702 ms
